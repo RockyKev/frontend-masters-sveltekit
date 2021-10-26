@@ -33,7 +33,8 @@
 	/>
 </svelte:head>
 
-<article class="article has-tombstone">
+<article class="article">
+<!-- <article class="article has-tombstone"> -->
 	<Breadcrumbs />
 	<h1>{title}</h1>
 	<div class="article-info">
