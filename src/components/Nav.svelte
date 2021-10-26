@@ -23,21 +23,10 @@
 		aria-current={$home.isCurrent ? "page" : undefined}
 		sveltekit:prefetch
 	>
-		<Logo size="2em" color="var(--color-primary-400)" />
+		<Logo size="2em" />
 	</a>
 	<div class="divider" aria-hidden="true" />
 	<ul>
-		<li>
-			<a
-				href="/work"
-				class="nav-link"
-				aria-current={$work.isCurrent ? "page" : undefined}
-				class:navigating-to={$work.navigatingTo}
-				sveltekit:prefetch
-			>
-				work
-			</a>
-		</li>
 		<li>
 			<a
 				href="/blog"
@@ -46,7 +35,7 @@
 				class:navigating-to={$blog.navigatingTo}
 				sveltekit:prefetch
 			>
-				blog
+				Notes
 			</a>
 		</li>
 		<li>
@@ -57,8 +46,48 @@
 				class:navigating-to={$about.navigatingTo}
 				sveltekit:prefetch
 			>
-				about
+				About
 			</a>
+		</li>
+		<li>
+			<!-- <a
+				href="/work"
+				class="nav-link"
+				aria-current={$work.isCurrent ? "page" : undefined}
+				class:navigating-to={$work.navigatingTo}
+				sveltekit:prefetch
+			>
+				work
+			</a> -->
+			<a
+			href="https://www.heyitsrocky.com/"
+			class="nav-link"
+			aria-current={$work.isCurrent ? "page" : undefined}
+			class:navigating-to={$work.navigatingTo}
+			sveltekit:prefetch
+		>
+			HeyItsRocky 
+		</a>
+		</li>
+		<li>
+			<!-- <a
+				href="/work"
+				class="nav-link"
+				aria-current={$work.isCurrent ? "page" : undefined}
+				class:navigating-to={$work.navigatingTo}
+				sveltekit:prefetch
+			>
+				work
+			</a> -->
+			<a
+			href="https://til.heyitsrocky.com/"
+			class="nav-link"
+			aria-current={$work.isCurrent ? "page" : undefined}
+			class:navigating-to={$work.navigatingTo}
+			sveltekit:prefetch
+		>
+			Today I learned 
+		</a>
 		</li>
 	</ul>
 </nav>

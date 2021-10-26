@@ -6,10 +6,21 @@
 
 <section class="landing">
 	<h1>
-		Hi, I'm <br /> Cassidy Bandy
-		<Logo size="0.9em" color="var(--color-primary-400)" />
+		Frontend Masters <br> Notetaking Blog
+		<Logo size="1.2em" />
 	</h1>
+
 	<p>
+		Writing up notes as I get them from Frontend Masters!
+	</p>
+	<p>
+		Hey Naas!
+	</p>
+
+	<p>
+		~Rocky		
+	</p>
+	<!-- <p>
 		I'm a full-stack engineer based in UT, USA. I care about CSS, typography,
 		accessibility and cute things.
 	</p>
@@ -24,10 +35,10 @@
 			target="_blank"
 			rel="noopener">SourceStrike</a
 		>.
-	</p>
+	</p> -->
 	<hr class="bold" />
 	<ul class="links">
-		<li>
+		<!-- <li>
 			<a
 				href="https://github.com/c-bandy"
 				title="GitHub profile"
@@ -38,7 +49,13 @@
 				<span>GitHub</span>
 				<Icon path={mdiOpenInNew} />
 			</a>
-		</li>
+		</li> -->
+		<a
+		href="/blog"
+		class="nav-link"
+		>
+		Jump straight to the Notes
+	</a>
 	</ul>
 </section>
 
@@ -49,6 +66,11 @@
 
 	h1 :global(.svg-icon) {
 		top: 0.15em; /* visual balance */
+	}
+
+	h1 {
+		display: flex;
+	    align-items: flex-end;
 	}
 
 	hr {

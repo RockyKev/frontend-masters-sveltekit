@@ -29,10 +29,10 @@
 </script>
 
 <svelte:head>
-	<title>Cassidy Bandy</title>
+	<title>Frontend Masters Blog</title>
 	<Meta
-		title="Cassidy Bandy"
-		description="Cassidy Bandy is a full-stack engineer based in UT, USA."
+		title="FEmasters Notes"
+		description="My notes for FEmasters"
 		image="/embed.png"
 		isRoot={true}
 	/>
@@ -40,7 +40,7 @@
 
 <div class="container">
 	<Landing />
-	<Work {projects} />
+	<!-- <Work {projects} /> -->
 </div>
 
 <style lang="postcss">

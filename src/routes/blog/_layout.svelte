@@ -7,7 +7,7 @@
 	import Meta from "$components/Meta.svelte"
 	import Breadcrumbs from "$components/Breadcrumbs.svelte"
 	// @ts-ignore
-	import { width, height, src } from "../../portrait.jpg?w=28&webp&meta"
+	// import { width, height, src } from "../../portrait.jpg?w=28&webp&meta"
 	import { BASE_URL } from "$lib/url"
 
 	/** @type {string} */
@@ -38,14 +38,14 @@
 	<h1>{title}</h1>
 	<div class="article-info">
 		<a href="/about" class="author">
-			<img
+			<!-- <img
 				{src}
 				alt="Cassidy's portrait"
 				aria-hidden="true"
 				style="width: {width}px; height: {height}px"
 				class="portrait"
-			/>
-			<span>Cassidy Bandy</span>
+			/> -->
+			<span>Hey Its Rocky</span>
 		</a>
 		<span class="separator">·</span>
 		<time datetime={created}>{friendlyDate(created)}</time>
