@@ -1,5 +1,6 @@
 import sveltePreprocess from "svelte-preprocess"
 import vercel from "@sveltejs/adapter-vercel"
+import netlify from "@sveltejs/adapter-netlify"
 import mdsvexPkg from "mdsvex"
 const { mdsvex } = mdsvexPkg
 import mdsvexConfig from "./mdsvex.config.js"
@@ -13,7 +14,8 @@ const config = {
 	extensions: [".svelte", ".svelte.md"],
 
 	kit: {
-		adapter: vercel(),
+		// adapter: vercel(),
+		adapter: netlify(),
 		prerender: {
 			enabled: true,
 			entries: ["*"],
