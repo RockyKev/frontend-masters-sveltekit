@@ -27,7 +27,7 @@
 </script>
 
 <svelte:head>
-	<title>Work · Cassidy Bandy</title>
+	<title>Work · Rocky Kev</title>
 </svelte:head>
 
 <article class="article">

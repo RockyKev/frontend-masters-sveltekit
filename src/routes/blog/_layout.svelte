@@ -25,7 +25,7 @@
 </script>
 
 <svelte:head>
-	<title>{`${title} · Blog · Cassidy Bandy`}</title>
+	<title>{`${title} · FE-NOTES · Rocky Kev`}</title>
 	<Meta
 		{title}
 		description={summary}

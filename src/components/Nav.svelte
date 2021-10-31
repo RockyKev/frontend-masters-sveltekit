@@ -38,7 +38,7 @@
 				Notes
 			</a>
 		</li>
-		<li>
+		<!-- <li>
 			<a
 				href="/about"
 				class="nav-link"
@@ -48,7 +48,7 @@
 			>
 				About
 			</a>
-		</li>
+		</li> -->
 		<li>
 			<!-- <a
 				href="/work"
