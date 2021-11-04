@@ -10,6 +10,8 @@ coverImageUrl: /media/projects/type-kana/session.jpg
   export { load }
 </script>
 
+Course: Week One - Getting Started with JavaScript, v2
+Instructor: Kyle Simpson
 ## Programming Primer
 The Three Pillars of JS in Kyle Simpson's class are: 
 

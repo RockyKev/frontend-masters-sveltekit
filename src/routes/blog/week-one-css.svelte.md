@@ -10,12 +10,25 @@ coverImageUrl: /media/projects/type-kana/session.jpg
   export { load }
 </script>
 
+Course: https://frontendmasters.com/courses/css-grids-flexbox
+Instructor: Jen Kramer
+
 ## Floats
-after float, you must clear
-floats requires you to use "magic math", like 97% instead of 100%.
+After float, you must clear
+
+Using the psuedo after table hack.
+
+```css
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+```
+
+Floats requires you to use "magic math", like 97% instead of 100%.
 margin 4%, you'll have to do all this weird math.
-using the psuedo afte table hack 
-https://i.postimg.cc/pLv2HnGZ/image.png
+
 
 ## Flexbox
 made in 2009
@@ -63,6 +76,8 @@ Modern responsive design using `<picture>` tag.
 
 ## CSS Grid
 
+
+**Support**
 `@support` tag
 If the browser supports the new feature, use it. 
 That's IF the browser even has the `@support` tag, but that was like 2 years ago. 
@@ -75,3 +90,15 @@ That's IF the browser even has the `@support` tag, but that was like 2 years ago
 }
 ```
 https://developer.mozilla.org/en-US/docs/Web/CSS/@supports
+
+
+**Grid Properties**
+
+fr - fragments
+
+```css
+.myClass {
+  grid-template-columns: [col1] 40px [col2] 3fr;
+  grid-template-rows: 50% 25vh auto;
+}
+```

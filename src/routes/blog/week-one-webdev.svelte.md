@@ -10,7 +10,8 @@ coverImageUrl: /media/projects/type-kana/session.jpg
   export { load }
 </script>
 
-Course: 
+Course: https://frontendmasters.com/courses/web-development-v2/
+Instructor: Brian Holt
 
 ## Using Ajax and Node.js
 
