@@ -1,6 +1,6 @@
 ---
 title: Week Three - Intro to Dev Tools
-created: 2021-11-08T00:00:00
+created: 2021-11-10T00:00:00
 summary: Introduction to Dev Tools, v3
 coverImageUrl: /media/projects/type-kana/session.jpg
 ---
@@ -9,6 +9,9 @@ coverImageUrl: /media/projects/type-kana/session.jpg
   import { load } from "./_load"
   export { load }
 </script>
+
+https://github.com/jkup/mastering-chrome-devtools
+
 
 ## Elements tab
 
@@ -31,9 +34,29 @@ color: #00000; // shift click will switch it to another type like hgb or whateve
 
 ## Memory Tab
 
+You can dump JS memory sessions in there.
+
+## Performance Tab
+
+If there's a red line, it means it's dropped a frame.
+
+
 ## Network Tab
 
-You can dump JS memory sessions in there.
+**6 resources gathered rule**
+Six simutanous requests
+As of right now, we can get 6 resources at a time.
+If you have 20 images, it'll get the first 6, then move down.
+
+Of course things are picked up by priority.
+
+**priority column**
+You can sort it by what is coming up. 
+HTML CSS are vital things. Then after page load is JS.
+
+Override it by moving things to the head.
+Preload/defer images.
+
 
 ## Sources tab
 
@@ -59,4 +82,76 @@ Say you're using Vue and don't need Vue's libs to show when you're debugging.
 **Testing your Android directly with Chrome**
 
 
-## Network Performance
+
+## Network Tab
+
+
+## Random things to read:
+
+The cost of Javascript
+https://medium.com/reloading/javascript-start-up-performance-69200f43b201
+![](https://miro.medium.com/max/2000/1*GuWInZljjvtDpdeT6O0emA.png)
+
+
+**Testing the speed of a node application**
+
+Because node is just a wrapper behind the V8 engine.
+`node --inspect server/server.js`
+![](https://i.imgur.com/CuEB6qx.png)
+
+
+**Speed testing performance**
+To test how fast something is in different parts of the world
+
+```js
+performance.mark("Start");
+
+for (let i = 0; i < 100000000; i++) {
+  // do nothing
+}
+
+performance.mark("End");
+
+performance.measure("Frontend Masters Chrome Devtools", "Start", "End");
+
+performance.getEntriesByType("measure");
+
+const resources = performance.getEntriesByType("resource");
+const paints = performance.getEntriesByType("paint");
+const navigations = performance.getEntriesByType("navigation");
+```
+
+Then go to the performance Tab and you can actually see the performance numbers.
+
+The performance api is what devtools is using. 
+
+**Rail Philosophy**
+
+Response
+Animation
+Idle
+Load
+
+**What can slow down a website**
+
+Backend: 
+* Database
+* Server itself
+* Network
+* Compression (gzip and brotli)
+
+Front End:
+* Large bundle
+* Too many files
+* Images or JS not async
+* big images
+* Unused JS/CSS
+* CSS in Document Body
+* Not using browser caching
+
+**Optimizing JS**
+Chrome always tells you that there's JS that's being unused. But you never know if it's something else will trigger it.
+It's better to use bundlers.
+
+**Paint reflashing**
+![](https://i.imgur.com/T20vn0m.png)
