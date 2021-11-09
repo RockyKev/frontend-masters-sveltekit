@@ -1,6 +1,6 @@
 ---
 title: Week Three - Intro to Linux and Command Line
-created: 2021-11-09T00:00:00
+created: 2021-11-07T00:00:00
 summary: Complete Intro to Linux and the Command-Line
 coverImageUrl: /media/projects/type-kana/session.jpg
 ---
