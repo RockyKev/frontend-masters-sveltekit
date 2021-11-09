@@ -1,6 +1,6 @@
 ---
 title: Week Three - Intro to Dev Tools
-created: 2021-11-10T00:00:00
+created: 2021-11-6T00:00:00
 summary: Introduction to Dev Tools, v3
 coverImageUrl: /media/projects/type-kana/session.jpg
 ---
