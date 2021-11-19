@@ -615,8 +615,8 @@ try {
 }
 
 ```
-```bash
 
+```bash
 PS \testing> node lib.spec.mjs
 
     add()
@@ -657,7 +657,6 @@ This is to publish a npm package.
 2. `npm publish`
 
 
-
 How it looks https://www.npmjs.com/package/scott-reddit-cli
 
 
@@ -677,3 +676,13 @@ And I might not be great at it, but I'm no longer foreign. And that's kinda how 
 
 > [00:02:41]
 So that's just some of the tips that I wanted to pass on to you and I don't know if that'll work or not, but that's just how I do things. Other than that, I can leave you with some really cool JavaScript projects or NodeJS projects that I think are really cool.
+
+
+**When to Upgrade NPM packages?**
+
+Only upgrade when you need it. 
+`npm update [packagename]`
+
+Like major updates, there might be a lot of refactors to get there.
+
+
