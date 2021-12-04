@@ -259,8 +259,8 @@ user1.increment();
 
 What does the new keyword do?
 
-1. Create a this: {}
-2. bonds the __proto__ bond with the main function.
+1. Create a this: `{}`
+2. bonds the `__proto__` bond with the main function.
 3. returns the value 
 
 With the `new` keyword, it'll automatically add the bits of code automatically.
@@ -746,7 +746,7 @@ We are replacing `paidUserCreator()`'s `__proto__` with the `userCreator`'s `__p
 The hard part: 
 when we do `userCreator.call(this)`
 
-this: {} <--> instead of being set to the auto-created object, it'll throw the the object inside the this.
+`this: {}` -- instead of being set to the auto-created object, it'll throw the the object inside the this.
 
 ![](https://i.imgur.com/n2cjDpP.png)
 
