@@ -13559,7 +13559,7 @@ function add_attribute(name2, value, boolean) {
 }
 function afterUpdate() {
 }
-var css$g = {
+var css$f = {
   code: "#svelte-announcer.svelte-9z6sc{position:absolute;left:0;top:0;clip:rect(0 0 0 0);-webkit-clip-path:inset(50%);clip-path:inset(50%);overflow:hidden;white-space:nowrap;width:1px;height:1px}",
   map: null
 };
@@ -13584,7 +13584,7 @@ var Root = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.props_1(props_1);
   if ($$props.props_2 === void 0 && $$bindings.props_2 && props_2 !== void 0)
     $$bindings.props_2(props_2);
-  $$result.css.add(css$g);
+  $$result.css.add(css$f);
   {
     stores.page.set(page2);
   }
@@ -13611,7 +13611,7 @@ var user_hooks = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module"
 });
-var template = ({ head, body }) => '<!DOCTYPE html>\r\n<html lang="en">\r\n	<head>\r\n		<meta charset="utf-8" />\r\n		<meta name="viewport" content="width=device-width, initial-scale=1.0" />\r\n\r\n		<link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />\r\n\r\n		<!-- Favicon -->\r\n		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />\r\n		<link rel="apple-touch-icon" href="/logo-192.png" />\r\n		<link rel="mask-icon" href="/favicon.svg" color="#bd84bc" />\r\n\r\n		<!-- Fonts	-->\r\n		<link rel="preconnect" href="https://fonts.gstatic.com" />\r\n		<link\r\n			rel="stylesheet"\r\n			defer\r\n			href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"\r\n		/>\r\n\r\n		<!-- Svelte head	-->\r\n		' + head + "\r\n	</head>\r\n\r\n	<body>\r\n		" + body + "\r\n	</body>\r\n</html>\r\n";
+var template = ({ head, body }) => '<!DOCTYPE html>\r\n<html lang="en">\r\n	<head>\r\n		<meta charset="utf-8" />\r\n		<meta name="viewport" content="width=device-width, initial-scale=1.0" />\r\n\r\n		<link rel="manifest" href="/site.manifest" crossorigin="use-credentials" />\r\n\r\n		<!-- Favicon -->\r\n		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />\r\n		<link rel="apple-touch-icon" href="/android-chrome-192x182" />\r\n		<link rel="mask-icon" href="/favicon.ico" color="#bd84bc" />\r\n\r\n		<!-- Fonts	-->\r\n		<link rel="preconnect" href="https://fonts.gstatic.com" />\r\n		<link\r\n			rel="stylesheet"\r\n			defer\r\n			href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"\r\n		/>\r\n\r\n		<!-- Svelte head	-->\r\n		' + head + "\r\n	</head>\r\n\r\n	<body>\r\n		" + body + "\r\n	</body>\r\n</html>\r\n";
 var options = null;
 var default_settings = { paths: { "base": "", "assets": "" } };
 function init(settings = default_settings) {
@@ -13622,9 +13622,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-572db1c6.js",
+      file: assets + "/_app/start-2c415bb0.js",
       css: [assets + "/_app/assets/start-c446e5f0.css"],
-      js: [assets + "/_app/start-572db1c6.js", assets + "/_app/chunks/vendor-2c44c089.js"]
+      js: [assets + "/_app/start-2c415bb0.js", assets + "/_app/chunks/vendor-2c44c089.js"]
     },
     fetched: void 0,
     floc: false,
@@ -13654,7 +13654,7 @@ function init(settings = default_settings) {
 var d = (s2) => s2.replace(/%23/g, "#").replace(/%3[Bb]/g, ";").replace(/%2[Cc]/g, ",").replace(/%2[Ff]/g, "/").replace(/%3[Ff]/g, "?").replace(/%3[Aa]/g, ":").replace(/%40/g, "@").replace(/%26/g, "&").replace(/%3[Dd]/g, "=").replace(/%2[Bb]/g, "+").replace(/%24/g, "$");
 var empty = () => ({});
 var manifest = {
-  assets: [{ "file": "embed.png", "size": 99062, "type": "image/png" }, { "file": "favicon.svg", "size": 495, "type": "image/svg+xml" }, { "file": "logo-192.png", "size": 5069, "type": "image/png" }, { "file": "logo-512.png", "size": 8587, "type": "image/png" }, { "file": "manifest.json", "size": 560, "type": "application/json" }, { "file": "maskable-192.png", "size": 3856, "type": "image/png" }, { "file": "maskable-512.png", "size": 7655, "type": "image/png" }, { "file": "media/open-in-new.svg", "size": 362, "type": "image/svg+xml" }, { "file": "media/projects/portfolio-site-2021/cover.png", "size": 53738, "type": "image/png" }, { "file": "media/projects/portfolio-site-2021/link-preview.png", "size": 87731, "type": "image/png" }, { "file": "media/projects/type-kana/select-kana.mov", "size": 4495308, "type": "video/quicktime" }, { "file": "media/projects/type-kana/session.jpg", "size": 50026, "type": "image/jpeg" }, { "file": "media/projects/type-kana/session.mov", "size": 765222, "type": "video/quicktime" }, { "file": "media/tombstone.svg", "size": 351, "type": "image/svg+xml" }],
+  assets: [{ "file": "android-chrome-192x192.png", "size": 13476, "type": "image/png" }, { "file": "android-chrome-512x512.png", "size": 28706, "type": "image/png" }, { "file": "apple-touch-icon.png", "size": 12263, "type": "image/png" }, { "file": "embed.png", "size": 99062, "type": "image/png" }, { "file": "favicon-16x16.png", "size": 802, "type": "image/png" }, { "file": "favicon-32x32.png", "size": 1741, "type": "image/png" }, { "file": "favicon.ico", "size": 15406, "type": "image/vnd.microsoft.icon" }, { "file": "favicon.svg", "size": 495, "type": "image/svg+xml" }, { "file": "logo-192.png", "size": 5069, "type": "image/png" }, { "file": "logo-512.png", "size": 8587, "type": "image/png" }, { "file": "manifest-orig.json", "size": 560, "type": "application/json" }, { "file": "maskable-192.png", "size": 3856, "type": "image/png" }, { "file": "maskable-512.png", "size": 7655, "type": "image/png" }, { "file": "media/open-in-new.svg", "size": 362, "type": "image/svg+xml" }, { "file": "media/projects/portfolio-site-2021/cover.png", "size": 53738, "type": "image/png" }, { "file": "media/projects/portfolio-site-2021/link-preview.png", "size": 87731, "type": "image/png" }, { "file": "media/projects/type-kana/select-kana.mov", "size": 4495308, "type": "video/quicktime" }, { "file": "media/projects/type-kana/session.jpg", "size": 50026, "type": "image/jpeg" }, { "file": "media/projects/type-kana/session.mov", "size": 765222, "type": "video/quicktime" }, { "file": "media/tombstone.svg", "size": 351, "type": "image/svg+xml" }, { "file": "site.webmanifest", "size": 263, "type": "application/manifest+json" }],
   layout: "src/routes/__layout.svelte",
   error: "src/routes/__error.svelte",
   routes: [
@@ -13727,30 +13727,135 @@ var manifest = {
     },
     {
       type: "page",
-      pattern: /^\/blog\/portfolio-site-2021\/?$/,
+      pattern: /^\/blog\/week-three-intro-linux-command\/?$/,
       params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/portfolio-site-2021.svelte.md"],
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-three-intro-linux-command.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
       type: "page",
-      pattern: /^\/blog\/svelte-kit-mdsvex\/?$/,
+      pattern: /^\/blog\/week-four-intro-to-serverless\/?$/,
       params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/svelte-kit-mdsvex.svelte.md"],
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-four-intro-to-serverless.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
       type: "page",
-      pattern: /^\/blog\/week-one-blogpost\/?$/,
+      pattern: /^\/blog\/week-six-code-transformation\/?$/,
       params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/week-one-blogpost.svelte.md"],
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-six-code-transformation.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
       type: "page",
-      pattern: /^\/blog\/type-kana\/?$/,
+      pattern: /^\/blog\/week-three-intro-dev-tools\/?$/,
       params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/type-kana.svelte.md"],
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-three-intro-dev-tools.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-five-hard-parts-ooj\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-five-hard-parts-ooj.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-eight-css-in-depth\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-eight-css-in-depth.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/vue-mastery-vue3-forms\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/vue-mastery-vue3-forms.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-six-js-hard-parts\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-six-js-hard-parts.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-two-accessibility\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-two-accessibility.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-two-js-functional\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-two-js-functional.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-five-js-testing\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-five-js-testing.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-five-debugging\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-five-debugging.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-four-nodejs-v2\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-four-nodejs-v2.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-one-javascript\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-one-javascript.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-seven-deep-js\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-seven-deep-js.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-four-api-dev\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-four-api-dev.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-one-webdev\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-one-webdev.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-three-seo\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-three-seo.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-one-css\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-one-css.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
@@ -13828,17 +13933,62 @@ var module_lookup = {
   "src/routes/blog/index.svelte": () => Promise.resolve().then(function() {
     return index$1;
   }),
-  "src/routes/blog/portfolio-site-2021.svelte.md": () => Promise.resolve().then(function() {
-    return portfolioSite2021_svelte;
+  "src/routes/blog/week-three-intro-linux-command.svelte.md": () => Promise.resolve().then(function() {
+    return weekThreeIntroLinuxCommand_svelte;
   }),
-  "src/routes/blog/svelte-kit-mdsvex.svelte.md": () => Promise.resolve().then(function() {
-    return svelteKitMdsvex_svelte;
+  "src/routes/blog/week-four-intro-to-serverless.svelte.md": () => Promise.resolve().then(function() {
+    return weekFourIntroToServerless_svelte;
   }),
-  "src/routes/blog/week-one-blogpost.svelte.md": () => Promise.resolve().then(function() {
-    return weekOneBlogpost_svelte;
+  "src/routes/blog/week-six-code-transformation.svelte.md": () => Promise.resolve().then(function() {
+    return weekSixCodeTransformation_svelte;
   }),
-  "src/routes/blog/type-kana.svelte.md": () => Promise.resolve().then(function() {
-    return typeKana_svelte$1;
+  "src/routes/blog/week-three-intro-dev-tools.svelte.md": () => Promise.resolve().then(function() {
+    return weekThreeIntroDevTools_svelte;
+  }),
+  "src/routes/blog/week-five-hard-parts-ooj.svelte.md": () => Promise.resolve().then(function() {
+    return weekFiveHardPartsOoj_svelte;
+  }),
+  "src/routes/blog/week-eight-css-in-depth.svelte.md": () => Promise.resolve().then(function() {
+    return weekEightCssInDepth_svelte;
+  }),
+  "src/routes/blog/vue-mastery-vue3-forms.svelte.md": () => Promise.resolve().then(function() {
+    return vueMasteryVue3Forms_svelte;
+  }),
+  "src/routes/blog/week-six-js-hard-parts.svelte.md": () => Promise.resolve().then(function() {
+    return weekSixJsHardParts_svelte;
+  }),
+  "src/routes/blog/week-two-accessibility.svelte.md": () => Promise.resolve().then(function() {
+    return weekTwoAccessibility_svelte;
+  }),
+  "src/routes/blog/week-two-js-functional.svelte.md": () => Promise.resolve().then(function() {
+    return weekTwoJsFunctional_svelte;
+  }),
+  "src/routes/blog/week-five-js-testing.svelte.md": () => Promise.resolve().then(function() {
+    return weekFiveJsTesting_svelte;
+  }),
+  "src/routes/blog/week-five-debugging.svelte.md": () => Promise.resolve().then(function() {
+    return weekFiveDebugging_svelte;
+  }),
+  "src/routes/blog/week-four-nodejs-v2.svelte.md": () => Promise.resolve().then(function() {
+    return weekFourNodejsV2_svelte;
+  }),
+  "src/routes/blog/week-one-javascript.svelte.md": () => Promise.resolve().then(function() {
+    return weekOneJavascript_svelte;
+  }),
+  "src/routes/blog/week-seven-deep-js.svelte.md": () => Promise.resolve().then(function() {
+    return weekSevenDeepJs_svelte;
+  }),
+  "src/routes/blog/week-four-api-dev.svelte.md": () => Promise.resolve().then(function() {
+    return weekFourApiDev_svelte;
+  }),
+  "src/routes/blog/week-one-webdev.svelte.md": () => Promise.resolve().then(function() {
+    return weekOneWebdev_svelte;
+  }),
+  "src/routes/blog/week-three-seo.svelte.md": () => Promise.resolve().then(function() {
+    return weekThreeSeo_svelte;
+  }),
+  "src/routes/blog/week-one-css.svelte.md": () => Promise.resolve().then(function() {
+    return weekOneCss_svelte;
   }),
   "src/routes/work/index.svelte": () => Promise.resolve().then(function() {
     return index;
@@ -13850,7 +14000,7 @@ var module_lookup = {
     return typeKana_svelte;
   })
 };
-var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-3a62ad59.js", "css": ["assets/pages/__layout.svelte-df3fc26e.css"], "js": ["pages/__layout.svelte-3a62ad59.js", "chunks/vendor-2c44c089.js", "chunks/stores-32a54f2b.js", "chunks/Logo-1cfb9048.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-a683aa11.js", "css": [], "js": ["pages/__error.svelte-a683aa11.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-b1e9876b.js", "css": ["assets/pages/index.svelte-a8b03bef.css", "assets/Icon.svelte_svelte&type=style&lang-bab488b2.css"], "js": ["pages/index.svelte-b1e9876b.js", "chunks/vendor-2c44c089.js", "chunks/Logo-1cfb9048.js", "chunks/Meta-1cf9ade0.js"], "styles": [] }, "src/routes/playground.svelte": { "entry": "pages/playground.svelte-b22e1d43.js", "css": ["assets/pages/playground.svelte-50ac7720.css"], "js": ["pages/playground.svelte-b22e1d43.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/about/index.svelte": { "entry": "pages/about/index.svelte-3e5401ab.js", "css": ["assets/pages/about/index.svelte-cbd7d511.css", "assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/index.svelte-3e5401ab.js", "chunks/vendor-2c44c089.js", "pages/about/HiddenText.svelte-bea2d578.js"], "styles": [] }, "src/routes/about/HiddenText.svelte": { "entry": "pages/about/HiddenText.svelte-bea2d578.js", "css": ["assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/HiddenText.svelte-bea2d578.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-32422f35.js", "css": ["assets/pages/work/index.svelte-219f8bae.css"], "js": ["pages/blog/index.svelte-32422f35.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/blog/portfolio-site-2021.svelte.md": { "entry": "pages/blog/portfolio-site-2021.svelte.md-23719c09.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/portfolio-site-2021.svelte.md-23719c09.js", "chunks/vendor-2c44c089.js", "chunks/_layout-fa129d57.js", "chunks/dateTime-524e104e.js", "chunks/Meta-1cf9ade0.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/svelte-kit-mdsvex.svelte.md": { "entry": "pages/blog/svelte-kit-mdsvex.svelte.md-817469b4.js", "css": ["assets/pages/blog/svelte-kit-mdsvex.svelte.md-84b92e3b.css", "assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/svelte-kit-mdsvex.svelte.md-817469b4.js", "chunks/vendor-2c44c089.js", "chunks/_layout-fa129d57.js", "chunks/dateTime-524e104e.js", "chunks/Meta-1cf9ade0.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-blogpost.svelte.md": { "entry": "pages/blog/week-one-blogpost.svelte.md-dc974f3c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-blogpost.svelte.md-dc974f3c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-fa129d57.js", "chunks/dateTime-524e104e.js", "chunks/Meta-1cf9ade0.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/type-kana.svelte.md": { "entry": "pages/blog/type-kana.svelte.md-d984f345.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/type-kana.svelte.md-d984f345.js", "chunks/vendor-2c44c089.js", "chunks/_layout-fa129d57.js", "chunks/dateTime-524e104e.js", "chunks/Meta-1cf9ade0.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/work/index.svelte": { "entry": "pages/work/index.svelte-cc287c6d.js", "css": ["assets/pages/work/index.svelte-219f8bae.css"], "js": ["pages/work/index.svelte-cc287c6d.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/portfolio-site.svelte.md": { "entry": "pages/work/portfolio-site.svelte.md-e065602b.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/portfolio-site.svelte.md-e065602b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/type-kana.svelte.md": { "entry": "pages/work/type-kana.svelte.md-74b86795.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/type-kana.svelte.md-74b86795.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] } };
+var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-79e4c8a6.js", "css": ["assets/pages/__layout.svelte-df3fc26e.css"], "js": ["pages/__layout.svelte-79e4c8a6.js", "chunks/vendor-2c44c089.js", "chunks/stores-32a54f2b.js", "chunks/Logo-1cfb9048.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-a683aa11.js", "css": [], "js": ["pages/__error.svelte-a683aa11.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-a4187db2.js", "css": ["assets/pages/index.svelte-a8b03bef.css", "assets/Icon.svelte_svelte&type=style&lang-bab488b2.css"], "js": ["pages/index.svelte-a4187db2.js", "chunks/vendor-2c44c089.js", "chunks/Logo-1cfb9048.js", "chunks/Meta-2661041d.js"], "styles": [] }, "src/routes/playground.svelte": { "entry": "pages/playground.svelte-b22e1d43.js", "css": ["assets/pages/playground.svelte-50ac7720.css"], "js": ["pages/playground.svelte-b22e1d43.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/about/index.svelte": { "entry": "pages/about/index.svelte-3e5401ab.js", "css": ["assets/pages/about/index.svelte-cbd7d511.css", "assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/index.svelte-3e5401ab.js", "chunks/vendor-2c44c089.js", "pages/about/HiddenText.svelte-bea2d578.js"], "styles": [] }, "src/routes/about/HiddenText.svelte": { "entry": "pages/about/HiddenText.svelte-bea2d578.js", "css": ["assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/HiddenText.svelte-bea2d578.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-bb7708ee.js", "css": ["assets/pages/work/index.svelte-219f8bae.css"], "js": ["pages/blog/index.svelte-bb7708ee.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/blog/week-three-intro-linux-command.svelte.md": { "entry": "pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-intro-to-serverless.svelte.md": { "entry": "pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-code-transformation.svelte.md": { "entry": "pages/blog/week-six-code-transformation.svelte.md-cc118b02.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-code-transformation.svelte.md-cc118b02.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-dev-tools.svelte.md": { "entry": "pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-hard-parts-ooj.svelte.md": { "entry": "pages/blog/week-five-hard-parts-ooj.svelte.md-2743238f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-hard-parts-ooj.svelte.md-2743238f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eight-css-in-depth.svelte.md": { "entry": "pages/blog/week-eight-css-in-depth.svelte.md-efcd0118.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eight-css-in-depth.svelte.md-efcd0118.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/vue-mastery-vue3-forms.svelte.md": { "entry": "pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-js-hard-parts.svelte.md": { "entry": "pages/blog/week-six-js-hard-parts.svelte.md-4cc93065.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-js-hard-parts.svelte.md-4cc93065.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-accessibility.svelte.md": { "entry": "pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-js-functional.svelte.md": { "entry": "pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-js-testing.svelte.md": { "entry": "pages/blog/week-five-js-testing.svelte.md-36258fff.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-js-testing.svelte.md-36258fff.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-debugging.svelte.md": { "entry": "pages/blog/week-five-debugging.svelte.md-7d214faa.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-debugging.svelte.md-7d214faa.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-nodejs-v2.svelte.md": { "entry": "pages/blog/week-four-nodejs-v2.svelte.md-dd0a88ab.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-nodejs-v2.svelte.md-dd0a88ab.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-javascript.svelte.md": { "entry": "pages/blog/week-one-javascript.svelte.md-a27291ec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-javascript.svelte.md-a27291ec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-seven-deep-js.svelte.md": { "entry": "pages/blog/week-seven-deep-js.svelte.md-509677bc.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-seven-deep-js.svelte.md-509677bc.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-api-dev.svelte.md": { "entry": "pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-webdev.svelte.md": { "entry": "pages/blog/week-one-webdev.svelte.md-086e16a9.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-webdev.svelte.md-086e16a9.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-seo.svelte.md": { "entry": "pages/blog/week-three-seo.svelte.md-d64b209b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-seo.svelte.md-d64b209b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-css.svelte.md": { "entry": "pages/blog/week-one-css.svelte.md-48262997.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-css.svelte.md-48262997.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/work/index.svelte": { "entry": "pages/work/index.svelte-e7922153.js", "css": ["assets/pages/work/index.svelte-219f8bae.css"], "js": ["pages/work/index.svelte-e7922153.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/portfolio-site.svelte.md": { "entry": "pages/work/portfolio-site.svelte.md-e065602b.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/portfolio-site.svelte.md-e065602b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/type-kana.svelte.md": { "entry": "pages/work/type-kana.svelte.md-74b86795.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/type-kana.svelte.md-74b86795.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] } };
 async function load_component(file) {
   const { entry, css: css2, js, styles } = metadata_lookup[file];
   return {
@@ -13964,14 +14114,44 @@ var cipher = /* @__PURE__ */ Object.freeze({
   ceasar
 });
 var get$3 = async () => {
-  const modules = Object.entries({ "./portfolio-site-2021.svelte.md": () => Promise.resolve().then(function() {
-    return portfolioSite2021_svelte;
-  }), "./svelte-kit-mdsvex.svelte.md": () => Promise.resolve().then(function() {
-    return svelteKitMdsvex_svelte;
-  }), "./type-kana.svelte.md": () => Promise.resolve().then(function() {
-    return typeKana_svelte$1;
-  }), "./week-one-blogpost.svelte.md": () => Promise.resolve().then(function() {
-    return weekOneBlogpost_svelte;
+  const modules = Object.entries({ "./vue-mastery-vue3-forms.svelte.md": () => Promise.resolve().then(function() {
+    return vueMasteryVue3Forms_svelte;
+  }), "./week-eight-css-in-depth.svelte.md": () => Promise.resolve().then(function() {
+    return weekEightCssInDepth_svelte;
+  }), "./week-five-debugging.svelte.md": () => Promise.resolve().then(function() {
+    return weekFiveDebugging_svelte;
+  }), "./week-five-hard-parts-ooj.svelte.md": () => Promise.resolve().then(function() {
+    return weekFiveHardPartsOoj_svelte;
+  }), "./week-five-js-testing.svelte.md": () => Promise.resolve().then(function() {
+    return weekFiveJsTesting_svelte;
+  }), "./week-four-api-dev.svelte.md": () => Promise.resolve().then(function() {
+    return weekFourApiDev_svelte;
+  }), "./week-four-intro-to-serverless.svelte.md": () => Promise.resolve().then(function() {
+    return weekFourIntroToServerless_svelte;
+  }), "./week-four-nodejs-v2.svelte.md": () => Promise.resolve().then(function() {
+    return weekFourNodejsV2_svelte;
+  }), "./week-one-css.svelte.md": () => Promise.resolve().then(function() {
+    return weekOneCss_svelte;
+  }), "./week-one-javascript.svelte.md": () => Promise.resolve().then(function() {
+    return weekOneJavascript_svelte;
+  }), "./week-one-webdev.svelte.md": () => Promise.resolve().then(function() {
+    return weekOneWebdev_svelte;
+  }), "./week-seven-deep-js.svelte.md": () => Promise.resolve().then(function() {
+    return weekSevenDeepJs_svelte;
+  }), "./week-six-code-transformation.svelte.md": () => Promise.resolve().then(function() {
+    return weekSixCodeTransformation_svelte;
+  }), "./week-six-js-hard-parts.svelte.md": () => Promise.resolve().then(function() {
+    return weekSixJsHardParts_svelte;
+  }), "./week-three-intro-dev-tools.svelte.md": () => Promise.resolve().then(function() {
+    return weekThreeIntroDevTools_svelte;
+  }), "./week-three-intro-linux-command.svelte.md": () => Promise.resolve().then(function() {
+    return weekThreeIntroLinuxCommand_svelte;
+  }), "./week-three-seo.svelte.md": () => Promise.resolve().then(function() {
+    return weekThreeSeo_svelte;
+  }), "./week-two-accessibility.svelte.md": () => Promise.resolve().then(function() {
+    return weekTwoAccessibility_svelte;
+  }), "./week-two-js-functional.svelte.md": () => Promise.resolve().then(function() {
+    return weekTwoJsFunctional_svelte;
   }) });
   const posts2 = await (0, import_p_map.default)(modules, async ([filename, module2]) => {
     const { metadata: metadata2 } = await module2();
@@ -14194,14 +14374,13 @@ function derived(stores, fn, initial_value) {
     };
   });
 }
-var css$f = {
+var css$e = {
   code: 'nav.svelte-1vlitnp{display:flex;align-items:center;margin:calc(1.5 * var(--line-space)) 0}.logo.svelte-1vlitnp .svg-icon{display:flex}.divider.svelte-1vlitnp{height:1em;width:1px;background:var(--color-text-200);margin:0 2em;flex-shrink:0}ul.svelte-1vlitnp{display:flex}li.svelte-1vlitnp{display:block;position:relative;cursor:pointer}li.svelte-1vlitnp:not(:last-of-type){margin-right:1.5em}.nav-link.svelte-1vlitnp{display:block;padding:0.5em 0;position:relative}.nav-link.svelte-1vlitnp::after{content:"";display:block;position:absolute;height:2px;width:0;bottom:0;background-color:var(--color-primary-400);transition:width 70ms var(--standard-curve)}.nav-link.svelte-1vlitnp:hover::after{width:33%}.nav-link[aria-current].svelte-1vlitnp::after,.nav-link.navigating-to.svelte-1vlitnp::after{width:100% !important}@-webkit-keyframes svelte-1vlitnp-load{0%{background-position:0% 0%}50%{background-position:100% 0%}100%{background-position:0% 0%}}@keyframes svelte-1vlitnp-load{0%{background-position:0% 0%}50%{background-position:100% 0%}100%{background-position:0% 0%}}.nav-link.navigating-to.svelte-1vlitnp::after{background:linear-gradient(\r\n				90deg,\r\n				var(--color-primary-400),\r\n				var(--color-primary-200),\r\n				var(--color-primary-400)\r\n			);background-size:300% 300%;-webkit-animation:1s infinite svelte-1vlitnp-load var(--deceleration-curve);animation:1s infinite svelte-1vlitnp-load var(--deceleration-curve)}',
   map: null
 };
 var Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $home, $$unsubscribe_home;
   let $blog, $$unsubscribe_blog;
-  let $about, $$unsubscribe_about;
   let $work, $$unsubscribe_work;
   const compass = (pattern) => derived([navigating, page], ([$navigating, $page]) => ({
     isCurrent: !$navigating && pattern.test($page.path),
@@ -14213,19 +14392,16 @@ var Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_work = subscribe(work, (value) => $work = value);
   const blog = compass(/^\/blog/);
   $$unsubscribe_blog = subscribe(blog, (value) => $blog = value);
-  const about = compass(/^\/about/);
-  $$unsubscribe_about = subscribe(about, (value) => $about = value);
-  $$result.css.add(css$f);
+  compass(/^\/about/);
+  $$result.css.add(css$e);
   $$unsubscribe_home();
   $$unsubscribe_blog();
-  $$unsubscribe_about();
   $$unsubscribe_work();
   return `<nav role="${"navigation"}" class="${"svelte-1vlitnp"}"><a href="${"/"}" title="${"home"}" class="${"logo svelte-1vlitnp"}"${add_attribute("aria-current", $home.isCurrent ? "page" : void 0, 0)} sveltekit:prefetch>${validate_component(Logo, "Logo").$$render($$result, { size: "2em" }, {}, {})}</a>
 	<div class="${"divider svelte-1vlitnp"}" aria-hidden="${"true"}"></div>
 	<ul class="${"svelte-1vlitnp"}"><li class="${"svelte-1vlitnp"}"><a href="${"/blog"}" class="${["nav-link svelte-1vlitnp", $blog.navigatingTo ? "navigating-to" : ""].join(" ").trim()}"${add_attribute("aria-current", $blog.isCurrent ? "page" : void 0, 0)} sveltekit:prefetch>Notes
 			</a></li>
-		<li class="${"svelte-1vlitnp"}"><a href="${"/about"}" class="${["nav-link svelte-1vlitnp", $about.navigatingTo ? "navigating-to" : ""].join(" ").trim()}"${add_attribute("aria-current", $about.isCurrent ? "page" : void 0, 0)} sveltekit:prefetch>About
-			</a></li>
+		
 		<li class="${"svelte-1vlitnp"}">
 			<a href="${"https://www.heyitsrocky.com/"}" class="${["nav-link svelte-1vlitnp", $work.navigatingTo ? "navigating-to" : ""].join(" ").trim()}"${add_attribute("aria-current", $work.isCurrent ? "page" : void 0, 0)} sveltekit:prefetch>HeyItsRocky 
 		</a></li>
@@ -14234,7 +14410,7 @@ var Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 		</a></li></ul>
 </nav>`;
 });
-var css$e = {
+var css$d = {
   code: ".loading-track.svelte-137jwhg{position:fixed;top:0;left:0;height:2px;width:0%;background:var(--color-primary-400);transition:width 7s cubic-bezier(0.05, 1, 0.22, 1)}.loading-track.finished.svelte-137jwhg{transition-duration:500ms;transition-timing-function:var(--standard-curve)}",
   map: null
 };
@@ -14302,18 +14478,18 @@ var Loading_bar = create_ssr_component(($$result, $$props, $$bindings, slots) =>
       endLoading();
     }
   });
-  $$result.css.add(css$e);
+  $$result.css.add(css$d);
   $$unsubscribe_progress();
   return `${isVisible ? `<div class="${["loading-track svelte-137jwhg", $progress === 1 ? "finished" : ""].join(" ").trim()}"${add_attribute("style", `width: ${100 * $progress}%`, 0)} aria-hidden="${"true"}"></div>` : ``}`;
 });
-var css$d = {
+var css$c = {
   code: ".container.svelte-pncc3n{max-width:60em;margin:0 auto}main.svelte-pncc3n{position:relative}",
   map: null
 };
 var _layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   getStores();
   let element;
-  $$result.css.add(css$d);
+  $$result.css.add(css$c);
   return `
 
 ${validate_component(Loading_bar, "LoadingBar").$$render($$result, {}, {}, {})}
@@ -14351,7 +14527,7 @@ var __error = /* @__PURE__ */ Object.freeze({
   "default": _error,
   load: load$5
 });
-var css$c = {
+var css$b = {
   code: ".svg-icon.svelte-1gcz6jb{display:inline-block;vertical-align:baseline;position:relative}",
   map: null
 };
@@ -14380,15 +14556,15 @@ var Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.title(title);
   if ($$props.ariaHidden === void 0 && $$bindings.ariaHidden && ariaHidden !== void 0)
     $$bindings.ariaHidden(ariaHidden);
-  $$result.css.add(css$c);
+  $$result.css.add(css$b);
   return `<svg class="${"svg-icon svelte-1gcz6jb"}"${add_attribute("width", width2, 0)}${add_attribute("height", height2, 0)} role="${"img"}"${add_attribute("viewBox", viewBox, 0)}${add_attribute("aria-hidden", ariaHidden || title === void 0, 0)}>${title ? `<title>${escape(title)}</title>` : ``}<path${add_attribute("d", path, 0)}${add_attribute("fill", color, 0)}></path></svg>`;
 });
-var css$b = {
+var css$a = {
   code: ".landing.svelte-txcweu.svelte-txcweu{grid-area:landing}h1.svelte-txcweu .svg-icon{top:0.15em}h1.svelte-txcweu.svelte-txcweu{display:flex;align-items:flex-end}hr.svelte-txcweu.svelte-txcweu{width:4em;margin:0;margin-bottom:var(--line-space)}ul.links.svelte-txcweu.svelte-txcweu{display:flex;flex-direction:column;list-style-type:none;margin-bottom:var(--line-space)}ul.links.svelte-txcweu a.svelte-txcweu{display:flex;align-items:center;float:left}ul.links.svelte-txcweu a.svelte-txcweu:hover{text-decoration:underline}",
   map: null
 };
 var Landing = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$b);
+  $$result.css.add(css$a);
   return `<section class="${"landing svelte-txcweu"}"><h1 class="${"svelte-txcweu"}">Frontend Masters <br> Notetaking Blog
 		${validate_component(Logo, "Logo").$$render($$result, { size: "1.2em" }, {}, {})}</h1>
 
@@ -14465,7 +14641,7 @@ var Meta = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 <meta name="${"description"}"${add_attribute("content", description, 0)}>
 <meta name="${"theme-color"}" content="${"#bd84bc"}">
 
-${!isRoot ? `<meta property="${"og:site_name"}" content="${"Cassidy Bandy"}">` : ``}
+${!isRoot ? `<meta property="${"og:site_name"}" content="${"Rocky Kev"}">` : ``}
 <meta property="${"og:type"}" content="${"website"}">
 <meta property="${"og:title"}"${add_attribute("content", title, 0)}>
 <meta property="${"og:description"}"${add_attribute("content", description, 0)}>
@@ -14476,7 +14652,7 @@ ${image ? `<meta property="${"og:image"}"${add_attribute("content", image, 0)}>`
 <meta name="${"twitter:description"}"${add_attribute("content", description, 0)}>
 ${image ? `<meta name="${"twitter:image"}"${add_attribute("content", image, 0)}>` : ``}`;
 });
-var css$a = {
+var css$9 = {
   code: '.container.svelte-1wko6af{display:grid;grid-template-columns:1fr 1fr;grid-template-areas:"landing work";-webkit-column-gap:calc(2 * var(--line-space));column-gap:calc(2 * var(--line-space))}@media screen and (min-width: 45em) and (max-width: 60em){.container.svelte-1wko6af{grid-template-columns:4fr 5fr\r\n	}}@media screen and (max-width: 45em){.container.svelte-1wko6af{grid-template-columns:1fr;grid-template-areas:"landing"\r\n				"work"\r\n	}}',
   map: null
 };
@@ -14526,7 +14702,7 @@ var Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { projects } = $$props;
   if ($$props.projects === void 0 && $$bindings.projects && projects !== void 0)
     $$bindings.projects(projects);
-  $$result.css.add(css$a);
+  $$result.css.add(css$9);
   return `${$$result.head += `${$$result.title = `<title>Frontend Masters Blog</title>`, ""}${validate_component(Meta, "Meta").$$render($$result, {
     title: "FEmasters Notes",
     description: "My notes for FEmasters",
@@ -14544,12 +14720,12 @@ var index$3 = /* @__PURE__ */ Object.freeze({
   "default": Routes,
   load: load$4
 });
-var css$9 = {
+var css$8 = {
   code: "article.svelte-1inbeq0{min-height:150vh}",
   map: null
 };
 var Playground = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$9);
+  $$result.css.add(css$8);
   return `<article class="${"svelte-1inbeq0"}"><h1>Heading 1</h1>
 	<h2>Heading 2</h2>
 	<h3>Heading 3</h3>
@@ -14615,12 +14791,12 @@ var portrait = {
   aspect,
   src: src2
 };
-var css$8 = {
+var css$7 = {
   code: "div.svelte-vfo2dy{display:inline-block}",
   map: null
 };
 var HiddenText = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  $$result.css.add(css$8);
+  $$result.css.add(css$7);
   return `<div class="${"hidden-text svelte-vfo2dy"}"${add_attribute("tabindex", 0, 0)} aria-live="${"polite"}">${`${slots.hidden ? slots.hidden({}) : ``}`}
 </div>`;
 });
@@ -14629,13 +14805,13 @@ var HiddenText$1 = /* @__PURE__ */ Object.freeze({
   [Symbol.toStringTag]: "Module",
   "default": HiddenText
 });
-var css$7 = {
+var css$6 = {
   code: '.portrait.svelte-191yj6c.svelte-191yj6c{border-radius:100%;float:left;margin-right:2em;margin-bottom:1em}.title.svelte-191yj6c h2.svelte-191yj6c{margin-bottom:0}.tagline.svelte-191yj6c.svelte-191yj6c{color:var(--color-text-300);margin-bottom:var(--line-space)}@media(max-width: 30rem){.portrait.svelte-191yj6c.svelte-191yj6c{display:block;float:none;margin-left:auto;margin-right:auto;margin-bottom:calc(0.5 * var(--line-space))}.title.svelte-191yj6c.svelte-191yj6c{text-align:center}}[slot="hidden"].svelte-191yj6c.svelte-191yj6c{cursor:pointer;background:var(--color-secondary-200);color:var(--color-secondary-200-text)}@-webkit-keyframes svelte-191yj6c-flash{from{background:var(--color-secondary-400);color:var(--color-secondary-400-text)}to{background:transparent;color:inherit}}@keyframes svelte-191yj6c-flash{from{background:var(--color-secondary-400);color:var(--color-secondary-400-text)}to{background:transparent;color:inherit}}[slot="visible"].svelte-191yj6c.svelte-191yj6c{-webkit-animation:svelte-191yj6c-flash 1s var(--standard-curve);animation:svelte-191yj6c-flash 1s var(--standard-curve);border:1px dashed var(--color-text-100)}',
   map: null
 };
 var About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   ceasar("axeeh", 7) + "@" + ceasar("jhzz", -7) + "." + ceasar("fhx", 7);
-  $$result.css.add(css$7);
+  $$result.css.add(css$6);
   return `${$$result.head += `${$$result.title = `<title>About \xB7 Cassidy Bandy</title>`, ""}`, ""}
 
 <article class="${"article"}"><h1>About</h1>
@@ -14682,7 +14858,7 @@ var index$2 = /* @__PURE__ */ Object.freeze({
   [Symbol.toStringTag]: "Module",
   "default": About
 });
-var css$6 = {
+var css$5 = {
   code: ".quiet.svelte-174vvkc{color:var(--color-text-300)}",
   map: null
 };
@@ -14732,8 +14908,8 @@ var Blog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { posts: posts2 } = $$props;
   if ($$props.posts === void 0 && $$bindings.posts && posts2 !== void 0)
     $$bindings.posts(posts2);
-  $$result.css.add(css$6);
-  return `${$$result.head += `${$$result.title = `<title>Blog \xB7 Cassidy Bandy</title>`, ""}`, ""}
+  $$result.css.add(css$5);
+  return `${$$result.head += `${$$result.title = `<title>Blog \xB7 Rocky Kev</title>`, ""}`, ""}
 
 <article class="${"article"}"><h1>Blog</h1>
 	<ul class="${"list"}">${each(posts2, (post) => `<li><a href="${"/blog/" + escape(post.slug)}" class="${"text-link"}">${escape(post.title)}</a>
@@ -14764,7 +14940,7 @@ var load$2 = async ({ fetch: fetch2, page: page2 }) => {
     };
   }
 };
-var css$5 = {
+var css$4 = {
   code: ".breadcrumbs.svelte-vv8rl4.svelte-vv8rl4{font-weight:600;text-transform:uppercase;letter-spacing:0.05em;line-height:1;color:var(--color-text-300)}.breadcrumbs.svelte-vv8rl4 a.svelte-vv8rl4:hover{text-decoration:underline}",
   map: null
 };
@@ -14772,14 +14948,14 @@ var Breadcrumbs = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let segments;
   let $page, $$unsubscribe_page;
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
-  $$result.css.add(css$5);
+  $$result.css.add(css$4);
   segments = $page.path.slice(1).split("/").slice(0, -1);
   $$unsubscribe_page();
   return `<nav class="${"breadcrumbs svelte-vv8rl4"}" aria-label="${"Breadcrumbs"}">${each(segments, (segment, i) => `<a${add_attribute("href", "/" + segments.slice(0, i + 1).join("/"), 0)} sveltekit:prefetch class="${"svelte-vv8rl4"}">${escape(segment)}</a>
 		<span>/ </span>`)}
 </nav>`;
 });
-var css$4 = {
+var css$3 = {
   code: "h1.svelte-1g4v19m.svelte-1g4v19m{margin:calc(0.5 * var(--line-space)) 0}.article-info.svelte-1g4v19m.svelte-1g4v19m{color:var(--color-text-300);margin-bottom:var(--line-space);display:flex;align-items:center}.article-info.svelte-1g4v19m>.svelte-1g4v19m:not(:first-child){margin-left:1ch}.author.svelte-1g4v19m.svelte-1g4v19m{display:flex}.author.svelte-1g4v19m:hover .svelte-1g4v19m{text-decoration:underline}",
   map: null
 };
@@ -14802,8 +14978,8 @@ var Layout$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.coverImageUrl(coverImageUrl);
   if ($$props.relatedProjects === void 0 && $$bindings.relatedProjects && relatedProjects2 !== void 0)
     $$bindings.relatedProjects(relatedProjects2);
-  $$result.css.add(css$4);
-  return `${$$result.head += `${$$result.title = `<title>${escape(`${title} \xB7 Blog \xB7 Cassidy Bandy`)}</title>`, ""}${validate_component(Meta, "Meta").$$render($$result, {
+  $$result.css.add(css$3);
+  return `${$$result.head += `${$$result.title = `<title>${escape(`${title} \xB7 FE-NOTES \xB7 Rocky Kev`)}</title>`, ""}${validate_component(Meta, "Meta").$$render($$result, {
     title,
     description: summary2,
     image: coverImageUrl && new URL(coverImageUrl, BASE_URL).href
@@ -14826,558 +15002,3218 @@ var Layout$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 				</li>`)}</ul>` : ``}
 </article>`;
 });
-var metadata$5 = {
-  "title": "Crafting the portfolio site",
-  "created": "2021-03-08T00:00:00.000Z",
-  "summary": "Updated portfolio website for 2021. Built with Sapper and Svelte.",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg",
-  "tags": ["portfolio-site-2021"],
-  "relatedProjectSlugs": ["portfolio-site"]
+var metadata$k = {
+  "title": "Week Three - Intro to Linux and Command Line",
+  "created": "2021-11-07T00:00:00.000Z",
+  "summary": "Complete Intro to Linux and the Command-Line",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
-var Portfolio_site_2021_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$5), {}, {
-    default: () => `<figure><img src="${"/media/projects/portfolio-site-2021/cover.png"}" alt="${"Graphic that has the text 'Making of the 2021 portfolio site' repeated three times, the middle row with linguistic guide lines"}"></figure>
-<p>2021 is a big year for me. Not only did I leave my 3 year position at
-<a href="${"https://tiqqe.com/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">TIQQE</a>, but I moved to a completely new country! I wanted
-to represent this change in my life with a new brand that represents how both me
-and my skills have evolved in the recent years.</p>
-<h2 id="${"dive-into-sapper"}"><a href="${"#dive-into-sapper"}">Dive into Sapper</a></h2>
-<blockquote><p>It\u2019s worth noting that this site no longer uses Sapper and has now migrated to
-its successor, <a href="${"https://kit.svelte.dev/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">SvelteKit</a>.</p></blockquote>
-<p>Since I really enjoyed using Svelte for my <a href="${"/projects/type-kana"}" class="${"text-link"}">last project</a>,
-Sapper felt like a natural progression to create a website with server side
-rendering. Sapper comes with isomorphic rendering, meaning that markup renders
-both on the server and in the browser in order to be as fast and as efficient as
-possible.</p>
-<p>The concept behind Sapper is extremely simple --- every page on your site is a
-rendered Svelte component. To set up a route, all you have to do is add a Svelte
-component inside <code>src/routes</code>. Your file structure in the <code>routes</code> directory
-matches the url path. For example,
-<code>src/routes/projects/portfolio-site-2021.svelte</code> would match this page.</p>
-<p>A nice benefit from doing rendering on the server is that you can have dynamic
-routes that are based of external data. I used this technique to set <code>&lt;meta&gt;</code>
-tags that render link-embeds for dynamic routes:</p>
-<h3 id="${"projectstype-kanajson"}"><a href="${"#projectstype-kanajson"}">/projects/type-kana.json</a></h3>
-<pre class="${"language-json"}"><!-- HTML_TAG_START -->${`<code class="language-json"><span class="token punctuation">&#123;</span>
-	<span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Type Kana"</span><span class="token punctuation">,</span>
-	<span class="token property">"slug"</span><span class="token operator">:</span> <span class="token string">"type-kana"</span><span class="token punctuation">,</span>
-	<span class="token property">"date"</span><span class="token operator">:</span> <span class="token string">"2020-08-02"</span><span class="token punctuation">,</span>
-	<span class="token property">"summary"</span><span class="token operator">:</span> <span class="token string">"A quiz app to help you learn hiragana and katakana, the Japanese syllabaries. Powered by Svelte."</span><span class="token punctuation">,</span>
-	<span class="token property">"coverImageUrl"</span><span class="token operator">:</span> <span class="token string">"https://cass.moe/media/projects/type-kana/session.jpg"</span><span class="token punctuation">,</span>
-	<span class="token property">"link"</span><span class="token operator">:</span> <span class="token string">"https://type-kana.cass.moe/"</span><span class="token punctuation">,</span>
-	<span class="token property">"repo"</span><span class="token operator">:</span> <span class="token string">"https://github.com/c-bandy/type-kana"</span><span class="token punctuation">,</span>
-	<span class="token property">"articleUrl"</span><span class="token operator">:</span> <span class="token string">"/articles/type-kana.md"</span>
-<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
-<h3 id="${"projectsslugsvelte"}"><a href="${"#projectsslugsvelte"}">/projects/[slug].svelte</a></h3>
-<p>This file renders as a route to any url that matches <code>/projects/*</code>. You
-can read about how this works on <a href="${"https://sapper.svelte.dev/docs#Pages"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">Sapper\u2019s documentation page</a>.</p>
-<pre class="${"language-svelte"}"><!-- HTML_TAG_START -->${`<code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">context</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
-	<span class="token comment">// the preload function is special -- it runs before regular rendering and</span>
-	<span class="token comment">// assigns its return value to the component's exported variables</span>
-	<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">preload</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> params <span class="token punctuation">&#125;</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-		<span class="token comment">// the &#96;slug&#96; parameter is available because</span>
-		<span class="token comment">// this file is called [slug].svelte</span>
-		<span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">projects/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>params<span class="token punctuation">.</span>slug<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">.json</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span>
-		<span class="token keyword">const</span> project <span class="token operator">=</span> <span class="token keyword">await</span> res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+var Week_three_intro_linux_command_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$k), {}, {
+    default: () => `<p><a href="${"https://btholt.github.io/complete-intro-to-linux-and-the-cli/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://btholt.github.io/complete-intro-to-linux-and-the-cli/</a></p>
+<h2 id="${"the-cli"}"><a href="${"#the-cli"}">The CLI</a></h2>
+<p><strong>WHICH</strong>
+<code>which</code> shows you where the program lives.</p>
+<p><code>which ls</code></p>
+<p><strong>LS</strong></p>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash"><span class="token function">ls</span> -l -a</code>`}<!-- HTML_TAG_END --></pre>
+<p><code>-l</code> show me stats like file
+<code>-a</code> show me hidden files
+<code>--help</code> see all the flags for ls
+<code>ls lsah</code> - show everything and permissions</p>
+<p><strong>BASH HISTORY</strong>
+Your bash history is saved with up/down arrow keys. Which means you shouldn\u2019t save your passwords on it. </p>
+<p>ADD TO TIL:
+Ctrl+R - reverse-search history
+(left and right drops you back into your terminal)</p>
+<p><code>tail ~/.bash_history</code></p>
+<p>It adds it to the bash history when you log out.
+It \u2018buffers\u2019 it in memory. </p>
+<p><strong>COPY AND PASTE</strong></p>
+<p>A malicious person can hide things in your clipboard and force a return.
+So if you copy/paste, it can hide some extra commands, and automatically run it once you paste it in your terminal.</p>
+<p><strong>SIGNALS</strong>
+A notification that you send to the event.
+It\u2019s like a text message that says, \u201CCome over\u201D</p>
+<p><code>Ctrl+C</code> - SIGINT // Stop running</p>
+<p><code>Ctrl + D</code> - SIGQUIT  // Quit the program
+It can only be done in the operating system.</p>
+<p>SIGTERM  // Terminate</p>
+<p>SIGKILL // this is done in the Task Manager</p>
+<figure><img src="${"https://i.imgur.com/lKYFfSl.png"}"></figure>
+<h2 id="${"files-pipes--permissions"}"><a href="${"#files-pipes--permissions"}">Files, Pipes, &amp; Permissions</a></h2>
+<p><strong>Principle of Least Power</strong>
+<code>whoami</code> to find your current user.</p>
+<p><code>cat /etc/passd</code> to find all the users.
+A bunch of users that are not used directly through the interactive GUI.</p>
+<p>Why?</p>
+<p>Those users have a very specific permission.
+Similar to AWS. </p>
+<p><strong>su</strong></p>
+<p><code>su brian</code> switch to user brian</p>
+<figure><img src="${"https://imgs.xkcd.com/comics/incident.png"}"></figure>
+<p><strong>Groups</strong>
+Set groups that can do certain actions. </p>
+<p><strong>read, write, execute everything</strong></p>
+<p>This is the same:</p>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash"><span class="token function">sudo</span> <span class="token function">chmod</span> <span class="token number">777</span> file.txt
+<span class="token function">sudo</span> <span class="token function">chmod</span> <span class="token assign-left variable">u</span><span class="token operator">=</span>rwx,g<span class="token operator">=</span>rwx,o<span class="token operator">=</span>rwx file.txt
 
-		<span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>status <span class="token operator">===</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-			<span class="token keyword">return</span> <span class="token punctuation">&#123;</span> project <span class="token punctuation">&#125;</span> <span class="token comment">// set &#96;project&#96; variable in &lt;script></span>
-		<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
-			<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>status<span class="token punctuation">,</span> res<span class="token punctuation">.</span>message<span class="token punctuation">)</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
-	<span class="token keyword">export</span> <span class="token keyword">let</span> project
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">svelte:</span>head</span><span class="token punctuation">></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:card<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>summary_large_image<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:title<span class="token punctuation">"</span></span> <span class="token attr-name">content=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span>project<span class="token punctuation">.</span>title<span class="token punctuation">&#125;</span></span> <span class="token punctuation">/></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:description<span class="token punctuation">"</span></span> <span class="token attr-name">content=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span>project<span class="token punctuation">.</span>description<span class="token punctuation">&#125;</span></span> <span class="token punctuation">/></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:image<span class="token punctuation">"</span></span> <span class="token attr-name">content=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span>project<span class="token punctuation">.</span>image<span class="token punctuation">&#125;</span></span> <span class="token punctuation">/></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">svelte:</span>head</span><span class="token punctuation">></span></span>
-
-<span class="token comment">&lt;!-- rest of the component goes here --></span></code>`}<!-- HTML_TAG_END --></pre>
-<p>And with all that --- we have set up a link preview for our dynamic route. Now
-when we add more projects all we have to do was edit a JSON file to fill in the
-data.</p>
-<figure><img src="${"/media/projects/portfolio-site-2021/link-preview.png"}" alt="${"What you see when you link the Type Kana project on Twitter. Isn't my baby beautiful?"}" title="${"A screenshot of the link preview for a project as it appears on twitter.com"}"><figcaption>A screenshot of the link preview for a project as it appears on twitter.com</figcaption></figure>
-<p>Of course, you can get as complicated as you want with this pattern. The page
-you\u2019re reading right now <a href="${"/articles/portfolio-site-2021.md"}" class="${"text-link"}">is composed of
-Markdown</a> that gets rendered when you request
-the page.</p>
-<p>Here\u2019s a stripped down version of what that code looks like:</p>
-<pre class="${"language-svelte"}"><!-- HTML_TAG_START -->${`<code class="language-svelte"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">context</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
-	<span class="token keyword">import</span> marked <span class="token keyword">from</span> <span class="token string">"marked"</span>
-
-	<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">preload</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> params <span class="token punctuation">&#125;</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-		<span class="token keyword">const</span> project <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">projects/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>params<span class="token punctuation">.</span>slug<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">.json</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>
-			<span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=></span> res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-		<span class="token punctuation">)</span>
-		<span class="token keyword">const</span> article <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">fetch</span><span class="token punctuation">(</span>project<span class="token punctuation">.</span>articleUrl<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=></span>
-			res<span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-		<span class="token punctuation">)</span>
-
-		<span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
-			project<span class="token punctuation">,</span>
-			html<span class="token operator">:</span> <span class="token function">marked</span><span class="token punctuation">(</span>article<span class="token punctuation">)</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
-<hr>
-<p>There was a lot that I left out to kept this article on the shorter side. If
-you\u2019re interested in learning more, you can check out the source code at the
-link below.</p>`
+<span class="token comment"># user </span>
+<span class="token comment"># group</span>
+<span class="token comment"># other people</span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"environments--processes"}"><a href="${"#environments--processes"}">Environments &amp; Processes</a></h2>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash">$ <span class="token builtin class-name">echo</span> hello my name is <span class="token environment constant">$USER</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>hello my name is ubuntu</p>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash">$ <span class="token assign-left variable"><span class="token environment constant">USER</span></span><span class="token operator">=</span>brian
+$ <span class="token builtin class-name">echo</span> hello my name is <span class="token environment constant">$USER</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>hello my name is brian</p>
+<p>(Note: it only saves it within the session)</p>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash">$ <span class="token assign-left variable">GREETING</span><span class="token operator">=</span><span class="token string">"hello"</span>
+$ <span class="token builtin class-name">echo</span> <span class="token variable">$GREETING</span> <span class="token environment constant">$USER</span>, how are you?</code>`}<!-- HTML_TAG_END --></pre>
+<p>hello ubuntu, how are you?</p>
+<p><strong>Where all the variables are located</strong>
+<code>sudo vi/etc/environment</code></p>
+<p>This is shared by EVERY SINGLE USER.</p>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash"><span class="token assign-left variable">TEST_THING</span><span class="token operator">=</span><span class="token string">"blahblah"</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>so if you open the shell again, $TEST_THING will equal \u201Cblahblah\u201D</p>
+<p><strong>Bash sessions and where to save things</strong>
+use <code>/.bashrc</code> for all changes.</p>
+<p><code>/.bash_profile</code> only runs on start. </p>
+<p><strong>Exit codes</strong>
+<code>date</code>
+This gives us the current date/time.</p>
+<p><code>uptime</code>
+Gives you how long you\u2019ve been on, and logged in users.</p>
+<p><code>echo $?</code>
+<code>0</code></p>
+<p>This gives us the \u2018exit code\u2019. 0 means success.
+If you get a different number, you\u2019ll get some other numbers. </p>
+<ul class="${"list"}"><li>0: means it was successful. Anything other than 0 means it failed</li>
+<li>1: a good general catch-all \u201Cthere was an error\u201D</li>
+<li>2: a bash internal error, meaning you or the program tried to use bash in an incorrect way</li>
+<li>126: Either you don\u2019t have permission or the file isn\u2019t executable</li>
+<li>127: Command not found</li>
+<li>128: The exit command itself had a problem, usually that you provided a non-integer exit code to it</li>
+<li>130: You ended the program with CTRL+C</li>
+<li>137: You ended the program with SIGKILL</li>
+<li>255: Out-of-bounds, you tried to exit with a code larger than 255</li></ul>
+<p><a href="${"https://btholt.github.io/complete-intro-to-linux-and-the-cli/process-operators"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">reference</a></p>
+<h2 id="${"networking--the-internet"}"><a href="${"#networking--the-internet"}">Networking &amp; The Internet</a></h2>
+<p><strong>ssh and sftp</strong>
+If you connect normally via <code>ssh</code>, you can connect via <code>sftp</code>.</p>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash">sftp<span class="token operator">></span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Then you can do <code>pwd</code> &amp; <code>ls</code> for your current directory on the remote.
+Or <code>lpwd</code> and <code>lls</code> for local directory on your host.</p>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash">sftp<span class="token operator">></span> put localfile.txt</code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>permissions</strong></p>
+<p>When you download a script from the internet (script.sh),
+you have to give it execute permissions via chmod.
+NOTE: check the script that it\u2019s not a bad script.</p>
+<p><strong>wget vs curl</strong></p>
+<p>wget is like the COPY of the internet.</p>
+<p>wget will also recursively download things. Like it will look in a html file, and also get javascript, css, etc.</p>
+<p><strong>curl commands</strong></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">$ curl -O https://website.com/thing.txt </code>`}<!-- HTML_TAG_END --></pre>
+<p>-O flag gets the entire <code>thing.txt</code> file and puts it in your root folder.</p>
+<p>POST REQUESTS:</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">$ curl -X POST https://website.com/thing.txt </code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/QcPrZoy.png"}"></figure>
+<p><strong>Dangerous internet</strong></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash</code>`}<!-- HTML_TAG_END --></pre>
+<p>Watch out for that <code>| bash</code> command.
+This is trusted URL. But if this was on JOE\u2019s BLOG, do not execute.</p>
+<p>The workaround:</p>
+<figure><img src="${"https://i.imgur.com/8M2lFqP.png"}"></figure>
+<ol class="${"list"}"><li><p>curl curl -o- URL &gt; my-file.sh</p></li>
+<li><p>cat my-file.sh</p></li></ol>
+<p>The server can switch something underneath you with Bash.</p>
+<h2 id="${"skip-package-management"}"><a href="${"#skip-package-management"}">(Skip) Package Management</a></h2>
+<h2 id="${"shell-scripts"}"><a href="${"#shell-scripts"}">Shell Scripts</a></h2>
+<p><strong>Making a script</strong>
+<code>nano gen_files.sh</code></p>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash"><span class="token function">mkdir</span> -p ~/temp <span class="token comment"># -p mean don't error if it exists in this case, it does other things too</span>
+<span class="token builtin class-name">cd</span> ~/temp
+<span class="token function">touch</span> file<span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">..</span><span class="token number">10</span><span class="token punctuation">&#125;</span>.txt
+<span class="token builtin class-name">echo</span> <span class="token keyword">done</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>To run it: (3 different ways)
+<code>source gen_files.sh</code>
+<code>. gen_files.sh</code>
+<code>bash gen_files.sh</code></p>
+<p><strong>hashbang</strong></p>
+<p>Open gen_files.sh and put this as the very first line. I bold that because it must be the first line.</p>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash"><span class="token shebang important">#! /bin/bash</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>If you add that, you can then change it from <code>gen_files.sh</code>-&gt;<code>gen_files</code>. And then make <code>chmod +x gen_files</code>
+and when you run it <code>./gen_files</code>, it\u2019ll automatically execute.</p>
+<p><strong>path &amp; variables</strong></p>
+<p>echo $PATH</p>
+<h2 id="${"skip-automation--customization"}"><a href="${"#skip-automation--customization"}">(SKIP) Automation &amp; Customization</a></h2>`
   })}`;
 });
-var portfolioSite2021_svelte = /* @__PURE__ */ Object.freeze({
+var weekThreeIntroLinuxCommand_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": Portfolio_site_2021_svelte,
+  "default": Week_three_intro_linux_command_svelte,
+  metadata: metadata$k,
+  load: load$2
+});
+var metadata$j = {
+  "title": "Week Four - Intro to Serverless",
+  "created": "2021-11-22T00:00:00.000Z",
+  "summary": "Modern Search Engine Optimization (SEO)",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_four_intro_to_serverless_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$j), {}, {
+    default: () => `<h2 id="${"serverless-functions"}"><a href="${"#serverless-functions"}">Serverless Functions</a></h2>
+<p>Install netlify @ v2.58.0
+<code>npm i -g netlify-cli@latest</code></p>
+<p>Then <code>ntl dev</code></p>
+<p>Why? It\u2019s the easiest serverless thing. (Also he works there lol)</p>
+<p>Why are we using netlify instead of the base installation?
+Because serverless functions don\u2019t run in the frontend.
+They run in their own separate app.</p>
+<h3 id="${"boop"}"><a href="${"#boop"}">Boop</a></h3>
+<p>in netlify.toml</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">[build]
+  command = &quot;npm run build&quot;
+  publish = &quot;_site&quot;
+  functions = &quot;functions&quot; // this tells netlify to check for a &#96;functions&#96; folder.</code>`}<!-- HTML_TAG_END --></pre>
+<p>We are not writing in toml.</p>
+<p>in functions/boop.js</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// servless functions how to deal with incoming requests.</span>
+<span class="token comment">// and you do that with a handler</span>
+
+exports<span class="token punctuation">.</span><span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+        statusCode<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+        body<span class="token operator">:</span> <span class="token string">'Boop!'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Then to get it to run.
+http://localhost:8888/.netlify/functions/boop</p>
+<h3 id="${"movies"}"><a href="${"#movies"}">Movies</a></h3>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// data/movies.json</span>
+<span class="token punctuation">&#123;</span> 
+  <span class="token operator">...</span> <span class="token comment">// </span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// functions/movies.js</span>
+<span class="token keyword">const</span> movies <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../data/movies.json'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+exports<span class="token punctuation">.</span><span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token keyword">async</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+        statusCode<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+        body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>movies<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token comment">// body: movies,</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Then to see it:
+http://localhost:8888/.netlify/functions/movies</p>
+<h3 id="${"parameters"}"><a href="${"#parameters"}">Parameters</a></h3>
+<p>netlify functions/aws uses event (event.queryStringParameters)
+azure/google functions\u2026 the syntax might be different</p>
+<p>How to grab a query string
+echo? text=\u201CHello!\u201D</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// functions/echo.js</span>
+
+<span class="token comment">// http://localhost:8888/.netlify/functions/echo?text=Hello!&amp;one=1&amp;two=2</span>
+<span class="token comment">// &#123; text: 'Hello!', one: '1', two: '2' </span>
+exports<span class="token punctuation">.</span><span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>queryStringParameters<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token punctuation">&#123;</span> text <span class="token punctuation">&#125;</span> <span class="token operator">=</span> event<span class="token punctuation">.</span>queryStringParameters<span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+        statusCode<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+        body<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">You said: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>text<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span>
+    <span class="token punctuation">&#125;</span>
+
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>A movie lookup:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> movies <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../data/movies.json'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// destructure the event element</span>
+exports<span class="token punctuation">.</span><span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> queryStringParameters <span class="token punctuation">&#125;</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+
+    <span class="token comment">// http://localhost:8888/.netlify/functions/movie-by-id?id=tt2975590</span>
+    <span class="token comment">// should give us Batman v. Booperman</span>
+
+    <span class="token keyword">const</span> <span class="token punctuation">&#123;</span> id <span class="token punctuation">&#125;</span> <span class="token operator">=</span> queryStringParameters<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> movie <span class="token operator">=</span> movies<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token parameter">m</span><span class="token punctuation">)</span> <span class="token operator">=></span> m<span class="token punctuation">.</span>id <span class="token operator">===</span> id<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>movie<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+            statusCode<span class="token operator">:</span> <span class="token number">404</span><span class="token punctuation">,</span>
+            body<span class="token operator">:</span> <span class="token string">'Not Found'</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+        statusCode<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+        body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>movie<span class="token punctuation">)</span>  
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"api-data"}"><a href="${"#api-data"}">API Data</a></h2>
+<h3 id="${"setting-up-a-api-secret"}"><a href="${"#setting-up-a-api-secret"}">Setting up a API Secret</a></h3>
+<p>THis is allowing us to make a api call somewhere else on OMDb API.
+Register for a API key. It\u2019s free.</p>
+<p>How to get a secret key from javascript</p>
+<ol class="${"list"}"><li>inspect the JS Super secret key. </li>
+<li>If you make a api call that\u2019s serverless, you can\u2019t see the headers data?
+The serverless function cannot be seen. So it\u2019s not exposed.</li></ol>
+<p>HEADS UP: </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// this is wrong</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+<span class="token comment">// this is right</span>
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=></span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>The code: </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> <span class="token punctuation">&#123;</span> <span class="token constant">URL</span> <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"url"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// node-specific api</span>
+<span class="token keyword">const</span> fetch <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"node-fetch"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> movies <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"../data/movies.json"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+exports<span class="token punctuation">.</span><span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> api <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span><span class="token string">"https://www.omdbapi.com/"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// add secret API key to the query string</span>
+  api<span class="token punctuation">.</span>searchParams<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">"apikey"</span><span class="token punctuation">,</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">OMDB_API_KEY</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// we make a call to ALL movies, and then wait for everything to come in with the Promise.all.</span>
+  <span class="token comment">// REF: https://www.learnwithjason.dev/blog/keep-async-await-from-blocking-execution/</span>
+  <span class="token comment">// if we awaited at the &#96;return fetch()&#96;, it would be movie, wait for call... movie wait for call. Will take longer.</span>
+  <span class="token comment">// by putting the promise at the beginning, it executes in parallel.</span>
+
+  <span class="token keyword">const</span> promises <span class="token operator">=</span> movies<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">movie</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+    <span class="token comment">// use the movie's IMDB ID to look up the details</span>
+    api<span class="token punctuation">.</span>searchParams<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">"i"</span><span class="token punctuation">,</span> movie<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token function">fetch</span><span class="token punctuation">(</span>api<span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=></span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+        <span class="token keyword">const</span> scores <span class="token operator">=</span> data<span class="token punctuation">.</span>Ratings<span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+          <span class="token operator">...</span>movie<span class="token punctuation">,</span>
+          scores<span class="token punctuation">,</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> moviesWithRatings <span class="token operator">=</span> <span class="token keyword">await</span> Promise<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span>promises<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+    statusCode<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+    body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>moviesWithRatings<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Complete working code with a basic working API, a third party pull, and JSON data inside the project.</p>
+<p><a href="${"https://github.com/RockyKev/fe-masters-intro-serverless/tree/589701be51ea998c52011ae03e25433626d64b08"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/RockyKev/fe-masters-intro-serverless/tree/589701be51ea998c52011ae03e25433626d64b08</a></p>
+<h2 id="${"database--auth"}"><a href="${"#database--auth"}">Database &amp; Auth</a></h2>
+<p>Now we\u2019re going into databases. It\u2019 mashed into the API Data section for some reason.</p>
+<h3 id="${"setting-up-a-quick-database-with-hasura"}"><a href="${"#setting-up-a-quick-database-with-hasura"}">Setting up a Quick Database with Hasura</a></h3>
+<ol class="${"list"}"><li>You\u2019re using Hasura to create a database</li>
+<li>Heroku to do serverless or something i dunno&gt;</li></ol>
+<p>NOTE: The setup is significantly different from what Jason is doing.</p>
+<figure><img src="${"https://i.imgur.com/dcBLNZL.png"}"></figure>
+<figure><img src="${"https://i.imgur.com/3liWG1j.png"}"></figure>
+<h3 id="${"hasura---fetching-data"}"><a href="${"#hasura---fetching-data"}">Hasura - Fetching Data</a></h3>
+<figure><img src="${"https://i.imgur.com/83yJxLB.png"}"></figure>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// functions/util/hasura.js</span>
+
+<span class="token comment">// this can be set up for both get/post</span>
+<span class="token keyword">const</span> fetch <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'node-fetch'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">query</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> query<span class="token punctuation">,</span> variables <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> <span class="token punctuation">&#125;</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+
+    <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">HASURA_API_URL</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+        method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+        headers<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token string">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'application/json'</span><span class="token punctuation">,</span>
+            <span class="token string">'X-Hasura-Admin-Secret'</span><span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">HASURA_ADMIN_SECRET</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span> <span class="token punctuation">&#123;</span> query<span class="token punctuation">,</span> variables <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>    
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=></span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// TODO: in a production app, check if the query is correct and formed. Show helpful info. </span>
+    <span class="token comment">// results.errors</span>
+
+    <span class="token keyword">return</span> result<span class="token punctuation">.</span>data<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// named exports</span>
+exports<span class="token punctuation">.</span>query <span class="token operator">=</span> query<span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Then in your movies.js, update it:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token comment">// movies.js</span>
+<span class="token keyword">const</span> <span class="token punctuation">&#123;</span> <span class="token constant">URL</span> <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"url"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// node-specific api</span>
+<span class="token keyword">const</span> fetch <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"node-fetch"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token punctuation">&#123;</span> query <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"./util/hasura"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// const movies = require("../data/movies.json");</span>
+
+exports<span class="token punctuation">.</span><span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> api <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span><span class="token string">"https://www.omdbapi.com/"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// a GraphQL query</span>
+  <span class="token keyword">const</span> <span class="token punctuation">&#123;</span> movies <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">query</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+    query<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">
+        query &#123;
+            movies &#123;
+                id
+                poster
+                tagline
+                title
+            &#125;
+        &#125;      
+    </span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  api<span class="token punctuation">.</span>searchParams<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">"apikey"</span><span class="token punctuation">,</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">OMDB_API_KEY</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> promises <span class="token operator">=</span> movies<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">movie</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    api<span class="token punctuation">.</span>searchParams<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">"i"</span><span class="token punctuation">,</span> movie<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token function">fetch</span><span class="token punctuation">(</span>api<span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span> <span class="token operator">=></span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">const</span> scores <span class="token operator">=</span> data<span class="token punctuation">.</span>Ratings<span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+          <span class="token operator">...</span>movie<span class="token punctuation">,</span>
+          scores<span class="token punctuation">,</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> moviesWithRatings <span class="token operator">=</span> <span class="token keyword">await</span> Promise<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span>promises<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+    statusCode<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+    body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>moviesWithRatings<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"hasura---posting-data-through-graphiql"}"><a href="${"#hasura---posting-data-through-graphiql"}">Hasura - Posting Data through GraphiQL</a></h3>
+<figure><img src="${"https://i.imgur.com/xbSFk91.png"}"></figure>
+<figure><img src="${"https://i.imgur.com/7qTbq3Y.png"}"></figure>
+<h3 id="${"posting-data-from-the-adminhtml-page"}"><a href="${"#posting-data-from-the-adminhtml-page"}">Posting data from the admin.html page</a></h3>
+<p>So when you visit <code>http://localhost:56237/admin</code></p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Add a New Movie<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>message<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>add-movie<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>id<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>IMDb Movie ID <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>id<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>id<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Title <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tagline<span class="token punctuation">"</span></span>
+    <span class="token punctuation">></span></span>Tagline <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tagline<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tagline<span class="token punctuation">"</span></span>
+  <span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>poster<span class="token punctuation">"</span></span>
+    <span class="token punctuation">></span></span>Poster <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>poster<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>poster<span class="token punctuation">"</span></span>
+  <span class="token punctuation">/></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Add New Movie<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">></span></span>
+
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">handleSubmit</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// TODO: FormData API?</span>
+  <span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FormData</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// serverless function</span>
+  <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'/.netlify/functions/add-movie'</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+    method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+    body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+      id<span class="token operator">:</span> data<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      title<span class="token operator">:</span> data<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'title'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      tagline<span class="token operator">:</span> data<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'tagline'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      poster<span class="token operator">:</span> data<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'poster'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token parameter">response</span><span class="token punctuation">)</span>  <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+      <span class="token comment">// TODO: if something goes wrong, print the error code.</span>
+      <span class="token comment">// but we want to show a 401 if you're not logged in.</span>
+      document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.message'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerText <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">Response: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>response<span class="token punctuation">.</span>status<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span>
+
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+
+document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#add-movie'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'submit'</span><span class="token punctuation">,</span> handleSubmit<span class="token punctuation">)</span>
+
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<blockquote><p>I have created a submission to our serverless function and we\u2019re gonna call it with POST instead of get. And when we call it with POST, that means that it\u2019s not going in as query string parameters.</p></blockquote>
+<blockquote><p>[00:04:10]
+And there\u2019s a reason for that. I don\u2019t want the data in the body to show up in a server log somewhere, right? We don\u2019t want the URL to be called this like, add-movie query string, title, tagline, etc. We want it to be just a call to add-movie and then the body gets sent as a POST body object, which then we\u2019ll grab out once we\u2019re done.</p></blockquote>
+<p>This calls the serverless function <code>add-movie</code>.
+Let\u2019s build that out now.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// const &#123; query &#125; = require('./util/hasura')</span>
+
+exports<span class="token punctuation">.</span><span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+    <span class="token comment">// console.log(event);</span>
+    <span class="token comment">// when you submit, you get something like  body: '&#123;"id":"id","title":"title","tagline":"tagline","poster":"poster"&#125;',</span>
+    <span class="token comment">// So JSON.parse it to make it a nice data object</span>
+    <span class="token keyword">const</span> <span class="token punctuation">&#123;</span> id<span class="token punctuation">,</span> title<span class="token punctuation">,</span> tagline<span class="token punctuation">,</span> poster <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// just so it doesn't time out</span>
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+        statusCode<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+        body<span class="token operator">:</span> <span class="token string">'wip'</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"adding-data-to-the-database"}"><a href="${"#adding-data-to-the-database"}">Adding data to the database</a></h3>
+<figure><img src="${"https://i.imgur.com/WzRJ5A3.png"}"></figure>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token comment">// functions/add-movie.js</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">&#123;</span> query <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"./util/hasura"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+exports<span class="token punctuation">.</span><span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>event<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> <span class="token punctuation">&#123;</span> id<span class="token punctuation">,</span> title<span class="token punctuation">,</span> tagline<span class="token punctuation">,</span> poster <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">query</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+        <span class="token comment">// the String! is a GraphQL 'required' query.</span>
+        query<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">
+            mutation ($poster: String!, $tagline: String!, $title: String!, $id: String!) &#123;
+                insert_movies_one(object: &#123;poster: $poster, tagline: $tagline, title: $title, id: $id&#125;) &#123;
+                id
+                &#125;
+            &#125;        
+        </span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">,</span>
+        variables<span class="token operator">:</span> <span class="token punctuation">&#123;</span> id<span class="token punctuation">,</span> title<span class="token punctuation">,</span> tagline<span class="token punctuation">,</span> poster <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+
+
+    <span class="token comment">// just so it doesn't time out</span>
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+        statusCode<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+        body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"access-control"}"><a href="${"#access-control"}">Access Control</a></h3>
+<p>This locks the ability to visit /admin/ page and edited. It\u2019s not gated.</p>
+<ol class="${"list"}"><li>We\u2019ll be using netlify identify</li></ol>
+<p><code>ntl init</code></p>
+<ol start="${"2"}" class="${"list"}"><li><p>you\u2019ll create a new project and hook it all up with netlify.</p></li>
+<li><p>You now need to hook up your env. files in the netlify app.</p></li>
+<li><p>After doing so, you then need to trigger another deploy. </p></li>
+<li><p>Finally, switch over to Netlify Identity to turn it on.</p></li></ol>
+<figure><img src="${"https://i.imgur.com/4nHUNko.png"}"></figure>
+<ol start="${"6"}" class="${"list"}"><li>We\u2019ll also use the Netlify widget to handle all this.</li></ol>
+<p><a href="${"https://github.com/netlify/netlify-identity-widget"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/netlify/netlify-identity-widget</a></p>
+<ol start="${"7"}" class="${"list"}"><li>Then you grab the widget code and put it all in the page.</li></ol>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html">// login.html
+  
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">data-netlify-identity-button</span><span class="token punctuation">></span></span>Login<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://identity.netlify.com/v1/netlify-identity-widget.js<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>    </code>`}<!-- HTML_TAG_END --></pre>
+<ol start="${"8"}" class="${"list"}"><li>Finally we create an account, and it\u2019ll exist on the Netlify side.</li></ol>
+<div><figure><img src="${"https://i.imgur.com/BQlrOtz.png"}"></figure><figure><img src="${"https://i.imgur.com/6lgozqd.png"}"></figure></div>
+<figure><img src="${"https://i.imgur.com/ewE5tFL.png"}"></figure>
+<p>Now to handle login and logout</p>
+<p>In the admin panel, where you can add new data.
+It\u2019ll redirect you to the login page if you\u2019re not logged in.</p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token comment">&lt;!-- // admin.html --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#logout<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>logout<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Log Out<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">function</span> <span class="token function">handleIdentityEvent</span><span class="token punctuation">(</span><span class="token parameter">user</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+  <span class="token comment">// if you are a user, then keep you here</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>user <span class="token operator">&amp;&amp;</span> user<span class="token punctuation">.</span>token<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token comment">// otherwise redirect you</span>
+  window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>pathname <span class="token operator">=</span> <span class="token string">'/login/'</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+window<span class="token punctuation">.</span>netlifyIdentity<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'init'</span><span class="token punctuation">,</span> handleIdentityEvent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+window<span class="token punctuation">.</span>netlifyIdentity<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'logout'</span><span class="token punctuation">,</span> handleIdentityEvent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.logout'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+  event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  window<span class="token punctuation">.</span>netlifyIdentity<span class="token punctuation">.</span><span class="token function">logout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<p>In the login page, where you login via netlify.
+If you are logged in, it\u2019ll redirect you to the admin page.</p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">function</span> <span class="token function">handleLogin</span><span class="token punctuation">(</span><span class="token parameter">user</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>user <span class="token operator">||</span> <span class="token operator">!</span>user<span class="token punctuation">.</span>token<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token comment">// if we get here, it means someone is logged in</span>
+    window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>pathname <span class="token operator">=</span> <span class="token string">"/admin/"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  window<span class="token punctuation">.</span>netlifyIdentity<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"init"</span><span class="token punctuation">,</span> handleLogin<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  window<span class="token punctuation">.</span>netlifyIdentity<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"login"</span><span class="token punctuation">,</span> handleLogin<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<p>NOTE: If the redirect stuff is broken on local, it\u2019s because your local site isn\u2019t linked with your netlify.
+This only works once you \u201Clog in\u201D already, as Netlify Identify is a Netlify.com thing.</p>
+<h3 id="${"avoiding-malicious-users"}"><a href="${"#avoiding-malicious-users"}">Avoiding malicious users</a></h3>
+<blockquote><p>[00:00:00]
+Have somebody was being mischievous, they could figure out what our serverless function was. And then they could just skip this UI altogether, and they could just post to that serverless function, which we don\u2019t want. We wanna control access all the way, and so what we\u2019re gonna do is we\u2019re gonna modify our admin a little bit.</p></blockquote>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+
+<span class="token comment">// admin.html</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">handleSubmit</span><span class="token punctuation">(</span><span class="token parameter">event</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// we are now getting a JWT token here</span>
+    <span class="token comment">// then in the serverless function, pass it in the headers</span>
+  <span class="token keyword">const</span> <span class="token punctuation">&#123;</span> access_token <span class="token punctuation">&#125;</span> <span class="token operator">=</span> window<span class="token punctuation">.</span>netlifyIdentity<span class="token punctuation">.</span><span class="token function">currentUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>token<span class="token punctuation">;</span>
+
+  <span class="token comment">// TODO: FormData API?</span>
+  <span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FormData</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>target<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// serverless function</span>
+  <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'/.netlify/functions/add-movie'</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+    method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+    headers<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      Authorization<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">Bearer </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>access_token<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+      id<span class="token operator">:</span> data<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'id'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      title<span class="token operator">:</span> data<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'title'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      tagline<span class="token operator">:</span> data<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'tagline'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      poster<span class="token operator">:</span> data<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'poster'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Add to TIL:
+How to parse a JWT: <a href="${"https://jwt.io/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://jwt.io/</a></p>
+<figure><img src="${"https://i.imgur.com/71JYAfx.png"}"></figure>
+<p>Netlify handles it for you using the <code>context</code> param.</p>
+<p>We now update the serverless function.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token comment">// add-movie.js</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">&#123;</span> query <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"./util/hasura"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+exports<span class="token punctuation">.</span><span class="token function-variable function">handler</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">,</span> context</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+    <span class="token keyword">const</span> <span class="token punctuation">&#123;</span> id<span class="token punctuation">,</span> title<span class="token punctuation">,</span> tagline<span class="token punctuation">,</span> poster <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>event<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token punctuation">&#123;</span> user <span class="token punctuation">&#125;</span> <span class="token operator">=</span> context<span class="token punctuation">.</span>clientContext<span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> isLoggedIn <span class="token operator">=</span> user <span class="token operator">&amp;&amp;</span> user<span class="token punctuation">.</span>app_metadata<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> roles <span class="token operator">=</span> user<span class="token punctuation">.</span>app_metadata<span class="token punctuation">.</span>roles <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>isLoggedIn <span class="token operator">||</span> <span class="token operator">!</span>roles<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token string">'admin'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+            statusCode<span class="token operator">:</span> <span class="token number">401</span><span class="token punctuation">,</span>
+            body<span class="token operator">:</span> <span class="token string">'Unauthorized'</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">query</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+        <span class="token comment">// the String! is a GraphQL 'required' query.</span>
+        query<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">
+            mutation ($poster: String!, $tagline: String!, $title: String!, $id: String!) &#123;
+                insert_movies_one(object: &#123;poster: $poster, tagline: $tagline, title: $title, id: $id&#125;) &#123;
+                id
+                &#125;
+            &#125;        
+        </span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">,</span>
+        variables<span class="token operator">:</span> <span class="token punctuation">&#123;</span> id<span class="token punctuation">,</span> title<span class="token punctuation">,</span> tagline<span class="token punctuation">,</span> poster <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    
+
+    <span class="token comment">// just so it doesn't time out</span>
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+        statusCode<span class="token operator">:</span> <span class="token number">200</span><span class="token punctuation">,</span>
+        body<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"use-cases--qa"}"><a href="${"#use-cases--qa"}">Use Cases &amp; Q&amp;A</a></h2>
+<p>ADD TO TIL
+<code>killall node</code> - a sure fire way to kill everything.</p>
+<p>Good user cases:</p>
+<ol class="${"list"}"><li>Contact Us and Newsletter is managed by serverless functions.</li></ol>
+<p>Jason does: <a href="${"https://github.com/jlengstorf/jason.af/blob/main/functions/subscribe.js"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/jlengstorf/jason.af/blob/main/functions/subscribe.js</a></p>
+<ol start="${"2"}" class="${"list"}"><li>Reactions and interactions:
+The add to like post, or count visitors?
+<a href="${"https://www.joshwcomeau.com/css/introducing-shadow-palette-generator/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.joshwcomeau.com/css/introducing-shadow-palette-generator/</a></li></ol>
+<ol start="${"3"}" class="${"list"}"><li><p>Parallel Processing:
+tl;dr: say your gatsby site takes a lot of processes.
+You can use a bunch of serverless functions (running many many machines at once) to create this end goal.
+<a href="${"https://www.npmjs.com/package/gatsby-parallel-runner"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.npmjs.com/package/gatsby-parallel-runner</a></p></li>
+<li><p>Add listeners on Twitch
+<a href="${"https://github.com/learnwithjason/learnwithjason.dev/tree/main/functions"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/learnwithjason/learnwithjason.dev/tree/main/functions</a></p></li>
+<li><p>Starbucks uses their shopcart as a sererless function. </p></li>
+<li><p>Stripe Subscriptions
+<a href="${"https://github.com/stripe-samples/netlify-stripe-subscriptions/blob/main/functions/identity-signup.js"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/stripe-samples/netlify-stripe-subscriptions/blob/main/functions/identity-signup.js</a></p></li></ol>
+<p><a href="${"https://www.netlify.com/blog/2020/07/13/manage-subscriptions-and-protect-content-with-stripe/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.netlify.com/blog/2020/07/13/manage-subscriptions-and-protect-content-with-stripe/</a></p>
+<ol start="${"7"}" class="${"list"}"><li>Crawl the web</li></ol>`
+  })}`;
+});
+var weekFourIntroToServerless_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_four_intro_to_serverless_svelte,
+  metadata: metadata$j,
+  load: load$2
+});
+var metadata$i = {
+  "title": "DRAFT Week Six - Code Transformation",
+  "created": "2020-12-01T00:00:00.000Z",
+  "summary": "Javascript Code Transformation and Linting with ASTs",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_six_code_transformation_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$i), {}, {})}`;
+});
+var weekSixCodeTransformation_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_six_code_transformation_svelte,
+  metadata: metadata$i,
+  load: load$2
+});
+var metadata$h = {
+  "title": "Week Three - Intro to Dev Tools",
+  "created": "2021-11-06T00:00:00.000Z",
+  "summary": "Introduction to Dev Tools, v3",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_three_intro_dev_tools_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$h), {}, {
+    default: () => `<p><a href="${"https://github.com/jkup/mastering-chrome-devtools"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/jkup/mastering-chrome-devtools</a></p>
+<h2 id="${"elements-tab"}"><a href="${"#elements-tab"}">Elements tab</a></h2>
+<figure><img src="${"https://i.imgur.com/lck2C4c.png"}"></figure>
+<figure><img src="${"https://i.imgur.com/HmYRXjP.png"}"></figure>
+<p><strong>Event listener</strong>
+Select element and you can see event listeners</p>
+<p><strong>shift click on color</strong>
+color: #00000; // shift click will switch it to another type like hgb or whatever</p>
+<h2 id="${"memory-tab"}"><a href="${"#memory-tab"}">Memory Tab</a></h2>
+<p>You can dump JS memory sessions in there.</p>
+<h2 id="${"performance-tab"}"><a href="${"#performance-tab"}">Performance Tab</a></h2>
+<p>If there\u2019s a red line, it means it\u2019s dropped a frame.</p>
+<h2 id="${"network-tab"}"><a href="${"#network-tab"}">Network Tab</a></h2>
+<p><strong>6 resources gathered rule</strong>
+Six simutanous requests
+As of right now, we can get 6 resources at a time.
+If you have 20 images, it\u2019ll get the first 6, then move down.</p>
+<p>Of course things are picked up by priority.</p>
+<p><strong>priority column</strong>
+You can sort it by what is coming up.
+HTML CSS are vital things. Then after page load is JS.</p>
+<p>Override it by moving things to the head.
+Preload/defer images.</p>
+<h2 id="${"sources-tab"}"><a href="${"#sources-tab"}">Sources tab</a></h2>
+<p>Creates a workspace so you can \u2018save\u2019 the browser state. </p>
+<p>Doesnt work well with JS frontends.</p>
+<p><strong>Debugging</strong>
+You can set it to break only on specific URLs when you\u2019re fetching data.</p>
+<figure><img src="${"https://i.imgur.com/cmREdC1.png"}"></figure>
+<figure><img src="${"https://i.imgur.com/sRAj1H2.png"}"></figure>
+<figure><img src="${"https://i.imgur.com/2EOa6YZ.png"}"></figure>
+<p><strong>Testing your Android directly with Chrome</strong></p>
+<h2 id="${"network-tab-1"}"><a href="${"#network-tab-1"}">Network Tab</a></h2>
+<h2 id="${"random-things-to-read"}"><a href="${"#random-things-to-read"}">Random things to read:</a></h2>
+<figure><img src="${"https://miro.medium.com/max/2000/1*GuWInZljjvtDpdeT6O0emA.png"}"></figure>
+<p><strong>Testing the speed of a node application</strong></p>
+<figure><img src="${"https://i.imgur.com/CuEB6qx.png"}"></figure>
+<p><strong>Speed testing performance</strong>
+To test how fast something is in different parts of the world</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">performance<span class="token punctuation">.</span><span class="token function">mark</span><span class="token punctuation">(</span><span class="token string">"Start"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">100000000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// do nothing</span>
+<span class="token punctuation">&#125;</span>
+
+performance<span class="token punctuation">.</span><span class="token function">mark</span><span class="token punctuation">(</span><span class="token string">"End"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+performance<span class="token punctuation">.</span><span class="token function">measure</span><span class="token punctuation">(</span><span class="token string">"Frontend Masters Chrome Devtools"</span><span class="token punctuation">,</span> <span class="token string">"Start"</span><span class="token punctuation">,</span> <span class="token string">"End"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+performance<span class="token punctuation">.</span><span class="token function">getEntriesByType</span><span class="token punctuation">(</span><span class="token string">"measure"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> resources <span class="token operator">=</span> performance<span class="token punctuation">.</span><span class="token function">getEntriesByType</span><span class="token punctuation">(</span><span class="token string">"resource"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> paints <span class="token operator">=</span> performance<span class="token punctuation">.</span><span class="token function">getEntriesByType</span><span class="token punctuation">(</span><span class="token string">"paint"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> navigations <span class="token operator">=</span> performance<span class="token punctuation">.</span><span class="token function">getEntriesByType</span><span class="token punctuation">(</span><span class="token string">"navigation"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Then go to the performance Tab and you can actually see the performance numbers.</p>
+<p>The performance api is what devtools is using. </p>
+<p><strong>Rail Philosophy</strong></p>
+<p>Response
+Animation
+Idle
+Load</p>
+<p><strong>What can slow down a website</strong></p>
+<p>Backend: </p>
+<ul class="${"list"}"><li>Database</li>
+<li>Server itself</li>
+<li>Network</li>
+<li>Compression (gzip and brotli)</li></ul>
+<p>Front End:</p>
+<ul class="${"list"}"><li>Large bundle</li>
+<li>Too many files</li>
+<li>Images or JS not async</li>
+<li>big images</li>
+<li>Unused JS/CSS</li>
+<li>CSS in Document Body</li>
+<li>Not using browser caching</li></ul>
+<p><strong>Optimizing JS</strong>
+Chrome always tells you that there\u2019s JS that\u2019s being unused. But you never know if it\u2019s something else will trigger it.
+It\u2019s better to use bundlers.</p>
+<figure><img src="${"https://i.imgur.com/T20vn0m.png"}"></figure>`
+  })}`;
+});
+var weekThreeIntroDevTools_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_three_intro_dev_tools_svelte,
+  metadata: metadata$h,
+  load: load$2
+});
+var metadata$g = {
+  "title": "Week Six - JS Object Oriented",
+  "created": "2021-11-27T00:00:00.000Z",
+  "summary": "The Hard Parts of Object Oriented JavaScript",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_five_hard_parts_ooj_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$g), {}, {
+    default: () => `<h2 id="${"intro"}"><a href="${"#intro"}">Intro</a></h2>
+<p>Slides: <a href="${"https://static.frontendmasters.com/resources/2018-10-03-javascript-hard-parts-oop/javascript-hard-parts-oop.pdf"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://static.frontendmasters.com/resources/2018-10-03-javascript-hard-parts-oop/javascript-hard-parts-oop.pdf</a></p>
+<p>OOJ is a way to organize our code as it gets more complex, so it\u2019s not procedure.</p>
+<p>It\u2019s about combining things into a \u2018package\u2019. Put all the scores.</p>
+<p>The goal of OOJ object oriented javascript is can we find a way to bundle up all of our functions the same way.</p>
+<figure><img src="${"https://i.imgur.com/wSU6ZTu.png"}"></figure>
+<h2 id="${"object-creation"}"><a href="${"#object-creation"}">Object Creation</a></h2>
+<p>This is the best way to organize code.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">"Phil"</span><span class="token punctuation">,</span>
+  score<span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span> 
+  <span class="token function-variable function">increment</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    user1<span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> user <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token comment">// user = &#123;&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Generate objects using a function</p>
+<p>The issue with this: But hard to add features we\u2019re gonna see, and fundamentally untenable in terms of whether it\u2019s going to be performant in terms of memory.</p>
+<p>Using this:
+user1000 will also have the <code>increment: function() { ... }</code> copied.</p>
+<p>That\u2019s 1000 versions of the same function.
+Not at all memory performant.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> score</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> newUser <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+  newUser<span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  newUser<span class="token punctuation">.</span>score <span class="token operator">=</span> score<span class="token punctuation">;</span>
+  newUser<span class="token punctuation">.</span><span class="token function-variable function">increment</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    newUser<span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> newUser<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token string">"Phil"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> user2 <span class="token operator">=</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token string">"Julia"</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+user1<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Thread of execution
+Execution context </p>
+<p>What makes this untenable is that the functionality is IDENTICAL. <code>newUser.increment()</code> is it\u2019s own instance.
+It\u2019s creating it\u2019s own version of it.</p>
+<p>What we want is a \u2018global\u2019 space where it can find <code>increment()</code></p>
+<h2 id="${"prototype--new"}"><a href="${"#prototype--new"}">Prototype &amp; New</a></h2>
+<p>It\u2019s better to store one a single item. </p>
+<figure><img src="${"https://i.imgur.com/paVyhxt.png"}"></figure>
+<p>The goal of Object Oriented Javascript is:
+can we bundle up the relevant functionality and relevant data that applies to it?</p>
+<p>Not go out and find it in another file somewhere in the ether. That it\u2019s bundled up in the code.</p>
+<p>BEFORE</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> score</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> newUser <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+  newUser<span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  newUser<span class="token punctuation">.</span>score <span class="token operator">=</span> score<span class="token punctuation">;</span>
+  newUser<span class="token punctuation">.</span><span class="token function-variable function">increment</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    newUser<span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> newUser<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token string">"Phil"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> user2 <span class="token operator">=</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token string">"Julia"</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+user1<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>NOTE: This will answer one of the popular senior dev question \u2014 how does the <code>new</code> keyword work</p>
+<p>AFTER</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> score</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> newUser <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>userFunctionStore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  newUser<span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  newUser<span class="token punctuation">.</span>score <span class="token operator">=</span> score<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> newUser<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> userFunctionStore <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token function-variable function">increment</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">login</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"You're logged in"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token string">"Phil"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> user2 <span class="token operator">=</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token string">"Julia"</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+user1<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p><code>user.increment()</code> is a hidden properties of objects is <code>__proto__</code> dunderstore (double understore) \u2014</p>
+<p>It goes to the hidden reference. It\u2019s making a link, a reference, to the prototype. It bonds up.
+It does NOT store it in the object. It\u2019s referencing.</p>
+<p>To run <code>user.increment()</code>:</p>
+<ol class="${"list"}"><li>Javascript starts by looking for <code>increment()</code></li>
+<li>It will see an error, which then moves into the <code>__proto__</code></li>
+<li>It sees it\u2019s in there, and grabs that and uses it.</li></ol>
+<p>This is Javascript\u2019s prototypal nature.</p>
+<p>This is the underlining feature of Object Oriented Javascript.</p>
+<p>NOTE:
+This is it.
+Everything else is using the above, but cleaner.
+This is Javascript under the hood. </p>
+<figure><img src="${"https://i.imgur.com/C1yM0a3.png"}"></figure>
+<p>Other languages do this for us. </p>
+<p>JS engineers said, \u201CWell give you a tool for that\u201D.
+Javascript gives us a <code>new</code> keyword to make it.</p>
+<p>We just hand-creating the \u2018bond\u2019. </p>
+<h3 id="${"new--this-keyword"}"><a href="${"#new--this-keyword"}">New &amp; this keyword</a></h3>
+<figure><img src="${"https://i.imgur.com/jg6kyyw.png"}"></figure>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">userCreator</span><span class="token punctuation">(</span><span class="token string">"phil"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>The <code>new</code> keyword will automatically get a bond with the new functions.</p>
+<p>Is there some place we can put those <code>userFunctionStore</code> functions?</p>
+<h3 id="${"functions-are-both-objects--functions"}"><a href="${"#functions-are-both-objects--functions"}">functions are both objects &amp; functions</a></h3>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">multiplyBy2</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> num<span class="token operator">*</span><span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+multiplyBy2<span class="token punctuation">.</span>stored <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token function">multiplyBy2</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment">// 6</span>
+
+
+multiplyBy2<span class="token punctuation">.</span>stored<span class="token punctuation">;</span> <span class="token comment">// 5</span>
+multiplyBy2<span class="token punctuation">.</span>prototype<span class="token punctuation">;</span> <span class="token comment">// &#123;&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>They become function-object combos.</p>
+<p>It\u2019s a very rare case you\u2019ll use a function and all of it\u2019s object bits.
+But you will in Object Oriented Javascript.</p>
+<figure><img src="${"https://i.imgur.com/guWpR6n.png"}"></figure>
+<p>So we can put functions inside the <code>function--object</code>, and put it inside the function\u2019s <code>prototype</code>. </p>
+<h3 id="${"the-new-keyword--how-to-share-functions-with-prototype"}"><a href="${"#the-new-keyword--how-to-share-functions-with-prototype"}">The new Keyword &amp; How to Share functions with prototype</a></h3>
+<figure><img src="${"https://i.imgur.com/AKL8qif.png"}"></figure>
+<p>BEFORE: This was our changes to create a shared function box</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> score</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> newUser <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>userFunctionStore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  newUser<span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  newUser<span class="token punctuation">.</span>score <span class="token operator">=</span> score<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> newUser<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> userFunctionStore <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token function-variable function">increment</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">login</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"You're logged in"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token string">"Phil"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> user2 <span class="token operator">=</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token string">"Julia"</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+user1<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>AFTER</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// it can also be UserCreator. It's just a regular function no magic.</span>
+<span class="token keyword">function</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> score</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>score <span class="token operator">=</span> score<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+userCreator<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">increment</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+userCreator<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">login</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"login"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserCreator</span><span class="token punctuation">(</span><span class="token string">"Eva"</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+user1<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>What does the new keyword do?</p>
+<ol class="${"list"}"><li>Create a this: <code>{}</code></li>
+<li>bonds the <code>__proto__</code> bond with the main function.</li>
+<li>returns the value </li></ol>
+<p>With the <code>new</code> keyword, it\u2019ll automatically add the bits of code automatically.</p>
+<p><code>user1 = new UserCreator(&quot;Eva&quot;, 9)</code></p>
+<p>The <code>new</code> keyword creates this extra link.
+And that <code>__prototype__</code> is pointing to the <code>UserCreator.prototype.increment()</code></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">this</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+  __proto__<span class="token operator">:</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>This then gives it a fancy name called \u2018Classes\u2019.</p>
+<h3 id="${"review-of-new"}"><a href="${"#review-of-new"}">Review of New</a></h3>
+<p>Devs need to let others know that we have to use a <code>new</code> keyword in a function. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token keyword">function</span> <span class="token function">UserCreator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span> <span class="token comment">//... &#125;</span>
+<span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserCreator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>If you fail to use the <code>new</code> keyword, then it doesn\u2019t create a <code>this</code> correctly and fails.
+So devs help each other out by using Capital camelcase.</p>
+<p><code>this</code> is known as a implicit parameters.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">this</span><span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token comment">// similar to user1.score++</span>
+
+<span class="token comment">// if you're on user20, it'll be user20.score++</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>The simple rule of <code>this</code>, it will refer to the <code>this</code> object INSIDE the function/object/etc.</p>
+<p>Sequence of events:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserCreator</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+user1<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<ol class="${"list"}"><li><p>we\u2019re looking for the global of <code>user1</code></p></li>
+<li><p>we then look for the <code>increment()</code> function inside</p></li></ol>
+<p><code>user1.increment()</code> is known as a implicit parameters.</p>
+<ol start="${"3"}" class="${"list"}"><li><p>Since user1 doesn\u2019t have a increment() function, it\u2019ll then\u2026</p></li>
+<li><p>Move up to the userCreator function-object, and check if increment() exists there.</p></li>
+<li><p>It successfully finds an <code>increment()</code></p></li></ol>
+<p>A bad thing to say, \u201CLook into the prototype\u201D.
+Prototype is not a magic word. <strong>proto</strong> IS a more accurate term.
+A user can rename <code>prototype</code> to something else. It\u2019s not accurate.</p>
+<h3 id="${"a-gotcha-bug-in-oop"}"><a href="${"#a-gotcha-bug-in-oop"}">A Gotcha bug in OOP</a></h3>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// it can also be UserCreator. It's just a regular function no magic.</span>
+<span class="token keyword">function</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> score</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>score <span class="token operator">=</span> score<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+userCreator<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">increment</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">function</span> <span class="token function">add1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token comment">// const add1 = function() &#123; this.score++&#125;</span>
+  <span class="token function">add1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+
+userCreator<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">login</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"login"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserCreator</span><span class="token punctuation">(</span><span class="token string">"Eva"</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+user1<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Look at <code>this.score++</code>, which is on <code>add1()</code></p>
+<p>What actually happens is:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">userCreator<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">increment</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">function</span> <span class="token function">add1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">// This is NOT pointing to the object.</span>
+    <span class="token comment">// It's pointing to user1.add1() - user1 is not this. </span>
+    <span class="token comment">// this is some random ass window!</span>
+    <span class="token comment">// it'll return N/A</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token comment">// const add1 = function() &#123; this.score++&#125;</span>
+  <span class="token function">add1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>How they hacked it?
+Some weird shit like \u2014 using a <code>that</code>.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">user1<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>user1
+  add1<span class="token operator">:</span> <span class="token punctuation">[</span>f<span class="token punctuation">]</span>
+  that<span class="token operator">:</span> <span class="token keyword">this</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>The easier way is to use arrow functions!</p>
+<h3 id="${"arrow-functions"}"><a href="${"#arrow-functions"}">Arrow functions</a></h3>
+<p>Arrow functions will point <code>this</code> to where the function was saved.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">userCreator<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">increment</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">add1</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>
+  <span class="token function">add1</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>This is a new best practice. Not the <code>that: this</code> process.</p>
+<p>Performance -
+Lexical status scoping: lexical means <code>position on the page</code>. So it gets destroyed after being called.
+<code>add1()</code> gets destroyed right after it\u2019s finished.</p>
+<h2 id="${"class-keyword"}"><a href="${"#class-keyword"}">Class keyword</a></h2>
+<figure><img src="${"https://i.imgur.com/mmGoH7K.png"}"></figure>
+<p>Syntatic sugar</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">UserCreator</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> score</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>score <span class="token operator">=</span> score<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token class-name">UserCreator</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">increment</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token class-name">UserCreator</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">login</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"login"</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserCreator</span><span class="token punctuation">(</span><span class="token string">"Eva"</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+user1<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>This is exactly the same thing. Nothing has changed.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">class</span> <span class="token class-name">UserCreator</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">constructor</span> <span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> score</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>score <span class="token operator">=</span> score<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"login"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserCreator</span><span class="token punctuation">(</span><span class="token string">"Eva"</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+user1<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/mGI5SSb.png"}"></figure>
+<ol class="${"list"}"><li>Yellow parts - declare the variables</li>
+<li>Blue parts - add the \u2018stored functions\u2019 so you can use it.</li>
+<li>The white part - make a instance of that class.</li></ol>
+<p>Classical programming do not put functions inside the <code>prototype</code> space.</p>
+<p>QUESTION:
+What happens when I want to build \u2018paid\u2019 users?
+They get new functions that are different from regular users.</p>
+<p>I can use the rest of the <code>users</code> stuff.</p>
+<p>This is called \u201CSubclassing\u201D</p>
+<h2 id="${"default-prototype-chain"}"><a href="${"#default-prototype-chain"}">Default Prototype Chain</a></h2>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  num<span class="token operator">:</span> <span class="token number">3</span>
+<span class="token punctuation">&#125;</span>
+
+obj<span class="token punctuation">.</span>num <span class="token comment">// 3</span>
+obj<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span><span class="token string">"num"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Where does this method &#96;hasOwnProperty&#96; come from?</span>
+
+<span class="token class-name">Object</span><span class="token punctuation">.</span>prototype<span class="token punctuation">;</span> <span class="token comment">// &#123; hasOwnProperty: FUNCTION &#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>In other words\u2026 we\u2019re \u2018cloning\u2019 Object, that has all these other sweet functions inside it\u2019s <code>prototype</code>. </p>
+<figure><img src="${"https://i.imgur.com/didwhVG.png"}"></figure>
+<p>So what happens if you use </p>
+<p><code>multiplyBy2.increase()</code>?</p>
+<ol class="${"list"}"><li><p>It looks in the <code>multiplyBy2</code> function list. Doesn\u2019t exist.</p></li>
+<li><p>It then moves into the <code>function</code> and their own <code>prototypes</code>. Nothing.</p></li></ol>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span><span class="token operator">:</span> 
+  call<span class="token punctuation">,</span> bind<span class="token punctuation">,</span> apply<span class="token punctuation">,</span> __proto__</code>`}<!-- HTML_TAG_END --></pre>
+<ol start="${"3"}" class="${"list"}"><li>It now moves even higher to Object\u2019s prototypes\u2026</li></ol>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">Object: 
+  hasOwnProperty, __proto__</code>`}<!-- HTML_TAG_END --></pre>
+<ol start="${"4"}" class="${"list"}"><li>Doesn\u2019t exist either!</li></ol>
+<p>Now we\u2019re showing <code>null</code>. </p>
+<p>WARNING:
+<a href="${"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto</a></p>
+<p><code>Object.prototype.__proto__</code></p>
+<p>no longer recommended.</p>
+<blockquote><p>Warning: While Object.prototype.<strong>proto</strong> is supported today in most browsers, its existence and exact behavior has only been standardized in the ECMAScript 2015 specification as a legacy feature to ensure compatibility for web browsers. For better support, use Object.getPrototypeOf() instead.</p></blockquote>
+<h2 id="${"things-you-should-be-able-to-answer-at-some-point"}"><a href="${"#things-you-should-be-able-to-answer-at-some-point"}">Things you should be able to answer at some point</a></h2>
+<ul class="${"list"}"><li>I know what a variable is</li>
+<li>I created a function before</li>
+<li>I\u2019ve added a CSS style before</li>
+<li>I have implemented a sort algorithm (bubble, merge, etc)</li>
+<li>I can add a method to an object\u2019s prototype</li>
+<li>I understand the event loop in JavaScript</li>
+<li>I understand callback functions</li>
+<li>I\u2019ve implemented <code>filter</code> from scratch</li>
+<li>I can handle collisions in hash tables</li></ul>
+<h2 id="${"subclassing-with-factory-functions"}"><a href="${"#subclassing-with-factory-functions"}">Subclassing with Factory Functions</a></h2>
+<figure><img src="${"https://i.imgur.com/U797B3H.png"}"></figure>
+<p>tldr:
+You can split user into moderator &amp; paid user.
+THey have different functions.
+But they share functions too!</p>
+<p>Inherit in JS is inaccurate, since it\u2019s not inheriting</p>
+<p>In JS: it\u2019s searching up the prototype chain.
+but in the spirit of inheritance, it\u2019s correct. It\u2019s being able to \u2018get this data\u2019. Or the right to look it up</p>
+<h3 id="${"creating-a-subclass-with-factory-functions"}"><a href="${"#creating-a-subclass-with-factory-functions"}">Creating a Subclass with Factory Functions</a></h3>
+<figure><img src="${"https://i.imgur.com/rEI8KCQ.png"}"></figure>
+<p>solution 2 is known as a factory function. It produces.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// This method, you MUST return it since it has to create the object.</span>
+<span class="token comment">// This is the factory function</span>
+<span class="token keyword">function</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> score</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> newUser <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>userFunctions<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  newUser<span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  newUser<span class="token punctuation">.</span>score <span class="token operator">=</span> score<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> newUser<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span> 
+
+
+<span class="token keyword">const</span> userFunctions <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token function-variable function">sayName</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"I'm "</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span> 
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">increment</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token string">"Phil"</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+user1<span class="token punctuation">.</span><span class="token function">sayName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "I am Phil". This is grabbed from the userFunctions!</span>
+
+
+<span class="token comment">// Now we're creating the 2 different versions!</span>
+<span class="token comment">// We want a very specific TYPE of user.</span>
+<span class="token keyword">function</span> <span class="token function">paidUserCreator</span><span class="token punctuation">(</span><span class="token parameter">paidName<span class="token punctuation">,</span> paidScore<span class="token punctuation">,</span> accountBalance</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// create a instance of the userCreator!</span>
+  <span class="token keyword">const</span> newPaidUser <span class="token operator">=</span> <span class="token function">userCreator</span><span class="token punctuation">(</span>paidName<span class="token punctuation">,</span> paidScore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// has all the user stuff, plus a BONUS property!</span>
+  Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span>newPaidUser<span class="token punctuation">,</span> paidUserFunction<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  newPaidUser<span class="token punctuation">.</span>accountBalance <span class="token operator">=</span> accountBalance<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> newPaidUser<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> paidUserFunctions <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token function-variable function">increaseBalance</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>accountBalance<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+Object<span class="token punctuation">.</span><span class="token function">setPrototypeOf</span><span class="token punctuation">(</span>paidUserFunctions<span class="token punctuation">,</span> userFunctions<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> paidUser1 <span class="token operator">=</span> <span class="token function">paidUserCreator</span><span class="token punctuation">(</span><span class="token string">"Allyssa"</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+paidUser1<span class="token punctuation">.</span><span class="token function">increaseBalance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+paidUser1<span class="token punctuation">.</span><span class="token function">sayName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// I am Allyssa</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Sequence of Events:
+<code>Object.setPrototypeOf(newPaidUser, paidUserFunction)</code></p>
+<ol class="${"list"}"><li><p><code>paidUser1.increaseBalance();</code> first looks for local function <code>increaseBalance()</code>;</p></li>
+<li><p>Not there. So it\u2019s look in <code>paidUserFunctions()</code></p></li>
+<li><p>BINGO! Had it not existed there, it would have checked <code>userCreator()</code>, and then <code>userFunctions()</code>;</p></li></ol>
+<p>Senior dev question:
+Tell me how subclasses work under the hood?</p>
+<p>It\u2019s all about digging up the prototype chain.</p>
+<h3 id="${"call-and-apply"}"><a href="${"#call-and-apply"}">Call() and Apply()</a></h3>
+<p>This is the way you should really do it\u2026</p>
+<p>We\u2019re creating a <code>userCreator()</code> functions. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  num<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> 
+  <span class="token function-variable function">increment</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>num <span class="token operator">++</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> otherObj <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  num<span class="token operator">:</span> <span class="token number">10</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+obj<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// obj.num now 4</span>
+obj<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>otherObj<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// otherObj.num now 11</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Sequence of events:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">obj<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>otherObj<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// otherObj.num now 11</span></code>`}<!-- HTML_TAG_END --></pre>
+<ol class="${"list"}"><li><p>Loading the memory. We\u2019re starting from right to left.</p></li>
+<li><p>We get <code>otherObj</code></p></li>
+<li><p>We see there\u2019s a <code>call()</code>.</p></li></ol>
+<p>functions have a <code>prototype</code>, that has <code>call()</code>. So it\u2019s not a mystery where it\u2019s coming from.
+functions create a <code>this: {}</code> behind the scenes.
+The <code>call()</code> function changes what this is pointed to.</p>
+<ol start="${"4"}" class="${"list"}"><li><p>We move over and we see that <code>obj.increment</code> is a reference of <code>this.num++</code>. </p></li>
+<li><p><code>call()</code> says <code>this</code> is actually <code>otherObj</code>. So it\u2019s really saying:</p></li></ol>
+<p><code>otherObj.num++</code></p>
+<p>ADD TO TIL:
+And if passes params to it if there\u2019s anything past the comma</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">  userCreator.call(this, paidName, paidScore);
+  // userCreator.apply(this, [paidName, paidScore])
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>apply is the array version of it</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// obj</span>
+<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  num<span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span> 
+  <span class="token function-variable function">increment</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">param1<span class="token punctuation">,</span> param2<span class="token punctuation">,</span> param3<span class="token operator">...</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+    <span class="token comment">//... </span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+obj<span class="token punctuation">.</span><span class="token function">increment</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token string">'otherObj'</span><span class="token punctuation">,</span> param1<span class="token punctuation">,</span> param2<span class="token punctuation">,</span> param3<span class="token punctuation">)</span>
+
+
+</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"subclassing-with-new-and-call"}"><a href="${"#subclassing-with-new-and-call"}">Subclassing with New and Call</a></h2>
+<p>Solution 3 is similar to how React implements it before ES6!</p>
+<p>REMINDER: functions are actually function-object combo.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">userCreator</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> score</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>score <span class="token operator">=</span> score
+<span class="token punctuation">&#125;</span>
+
+userCreator<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">sayName</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"I'm "</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+userCreator<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">increment</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserCreator</span><span class="token punctuation">(</span><span class="token string">"Phil"</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> user2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">UserCreator</span><span class="token punctuation">(</span><span class="token string">"Tim"</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+user1<span class="token punctuation">.</span><span class="token function">sayName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// now we're on the Paid User side</span>
+<span class="token comment">// when you create 'new', it returns for free!</span>
+<span class="token keyword">function</span> <span class="token function">paidUserCreator</span><span class="token punctuation">(</span> <span class="token parameter">paidName<span class="token punctuation">,</span> paidScore<span class="token punctuation">,</span> accountBalance</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">userCreator</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> paidName<span class="token punctuation">,</span> paidScore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// userCreator.apply(this, [paidName, paidScore])</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>accountBalance <span class="token operator">=</span> accountBalance<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+paidUserCreator<span class="token punctuation">.</span>prototype <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>userCreator<span class="token punctuation">.</span>prototype<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+paidUserCreator<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">increaseBalance</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>accountBalance<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> paidUser1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">paidUserCreator</span><span class="token punctuation">(</span><span class="token string">"Allysa"</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+paidUser1<span class="token punctuation">.</span><span class="token function">increaseBalance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+paidUser1<span class="token punctuation">.</span><span class="token function">sayName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// I'm Allyssa</span></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/ztZKFvX.png"}"></figure>
+<p>What\u2019s happening in <code>paidUserCreator()</code>?</p>
+<p>Normally, <code>paidUserCreator()</code> is a function + Object combo.</p>
+<p>In the Object is a nice, blank <code>__proto__</code>.
+But \u2014since we did the <code>call()</code> function - we are binding <code>paidUserCreator()</code> to it\u2019s parent.</p>
+<p>We are replacing <code>paidUserCreator()</code>\u2019s <code>__proto__</code> with the <code>userCreator</code>\u2019s <code>__proto__</code>, all because of that call() function.</p>
+<p>The hard part:
+when we do <code>userCreator.call(this)</code></p>
+<p><code>this: {}</code> \u2014 instead of being set to the auto-created object, it\u2019ll throw the the object inside the this.</p>
+<figure><img src="${"https://i.imgur.com/n2cjDpP.png"}"></figure>
+<p>You can pass any object into that <code>.call()</code> or <code>.apply()</code>.</p>
+<h2 id="${"subclassing-with-class-extends-and-super"}"><a href="${"#subclassing-with-class-extends-and-super"}">Subclassing with class, extends, and super</a></h2>
+<p>Now to explain how React works! (The ES6 versions)</p>
+<p>The final approach of Object Orient \u201CPretend\u201D style.</p>
+<p>We\u2019ll figure out how extend() and super() works under the hood</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token comment">// lefthand side</span>
+<span class="token keyword">class</span> <span class="token class-name">userCreator</span><span class="token punctuation">&#123;</span>
+  <span class="token function">constructor</span> <span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> score</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>score <span class="token operator">=</span> score<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token function">sayName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"I am "</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>score<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">userCreator</span><span class="token punctuation">(</span><span class="token string">"Phil"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> user2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">userCreator</span><span class="token punctuation">(</span><span class="token string">"Tim"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+user1<span class="token punctuation">.</span><span class="token function">sayName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// right side</span>
+<span class="token keyword">class</span> <span class="token class-name">paidUserCreator</span> <span class="token keyword">extends</span> <span class="token class-name">userCreator</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token parameter">paidName<span class="token punctuation">,</span> paidScore<span class="token punctuation">,</span> accountBalance</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>paidName<span class="token punctuation">,</span> paidScore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>accountBalance <span class="token operator">=</span> accountBalance<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token function">increaseBalance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>accountBalance<span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token keyword">const</span> paidUser1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">paidUserCreator</span><span class="token punctuation">(</span><span class="token string">"Alyssa"</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  paidUser1<span class="token punctuation">.</span><span class="token function">increaseBalance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  paidUser1<span class="token punctuation">.</span><span class="token function">sayName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"whats-happening-when-we-create-with-new"}"><a href="${"#whats-happening-when-we-create-with-new"}">What\u2019s happening when we create with new</a></h3>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> user1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">userCreator</span><span class="token punctuation">(</span><span class="token string">"Phil"</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<ol class="${"list"}"><li>the new key word means new things happen</li>
+<li>It first creates a <code>this: {}</code></li>
+<li>Inside of <code>this: {}</code>, it points the <code>constructor</code> data, and links to the <code>prototype</code> set of functions in the original class (or function!) </li>
+<li>Finally it returns the object.</li></ol>
+<p>It becomes this:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">this</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">"Phil"</span><span class="token punctuation">,</span>
+  score<span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>
+  __proto__<span class="token operator">:</span> <span class="token punctuation">[</span>sayName <span class="token operator">&amp;</span> increment<span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"whats-happening-with-extend"}"><a href="${"#whats-happening-with-extend"}">What\u2019s happening with extend?</a></h3>
+<p>Extends helps us make that bond with the <code>prototype</code> functions.</p>
+<p>Also, before\u2026 we used a <code>.call()</code> to create it.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">paidUserCreator</span><span class="token punctuation">(</span> <span class="token parameter">paidName<span class="token punctuation">,</span> paidScore<span class="token punctuation">,</span> accountBalance</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">userCreator</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> paidName<span class="token punctuation">,</span> paidScore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// userCreator.apply(this, [paidName, paidScore])</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>accountBalance <span class="token operator">=</span> accountBalance<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p><code>super()</code> does it for us now!
+It actually gets born into the original function.
+There\u2019s no side effects in the other way. That was a JS-team implicit thing.</p>
+<p>think of it like <code>super(x, y)</code> is set to <code>new userCreator(x, y)</code></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">paidUser1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">paidUserCreator</span><span class="token punctuation">(</span><span class="token string">"Allyssa"</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<ol class="${"list"}"><li>it passes the <code>super( paidName, paidScore)</code> to the userCreator function and returns it into the <code>this</code></li>
+<li>inside the <code>super()</code>, it creates a new execution function\u2026</li>
+<li>It then sets the <strong>proto</strong> to <code>paidUserCreator</code></li></ol>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+paidUser1<span class="token punctuation">.</span><span class="token function">increaseBalance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<ol class="${"list"}"><li>It first checks itself for increaseBalance()</li>
+<li>It wouldn\u2019t be there, because otherwise we\u2019re duplicating it everywhere.</li>
+<li>It\u2019s instead, it\u2019s on <code>paidUserCreator()</code>\u2019s prototype chain</li></ol>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">paidUser1<span class="token punctuation">.</span><span class="token function">sayName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<ol class="${"list"}"><li>It checks itself. Not there.</li>
+<li>It goes up the <code>paidUserCreator()</code>. Not there.</li>
+<li>It now goes up even higher, to <code>userCreator()</code></li></ol>`
+  })}`;
+});
+var weekFiveHardPartsOoj_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_five_hard_parts_ooj_svelte,
+  metadata: metadata$g,
+  load: load$2
+});
+var metadata$f = {
+  "title": "DRAFT Week Eight - CSS In Depth",
+  "created": "2020-12-01T00:00:00.000Z",
+  "summary": "CSS In-Depth, v2",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_eight_css_in_depth_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$f), {}, {})}`;
+});
+var weekEightCssInDepth_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_eight_css_in_depth_svelte,
+  metadata: metadata$f,
+  load: load$2
+});
+var metadata$e = {
+  "title": "Vue Mastery - Vue 3 Forms",
+  "created": "2021-11-14T00:00:00.000Z",
+  "summary": "Vue Mastery Vue 3 Forms",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Vue_mastery_vue3_forms_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$e), {}, {
+    default: () => `<h2 id="${"vue-3-forms"}"><a href="${"#vue-3-forms"}">Vue 3 Forms</a></h2>
+<p>Source: <a href="${"https://www.vuemastery.com/courses/vue3-forms/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.vuemastery.com/courses/vue3-forms/</a></p>
+<h3 id><a href="${"#"}"></a></h3>
+<p>End result: <a href="${"https://github.com/Code-Pop/Vue-3-Forms/tree/l5-end"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/Code-Pop/Vue-3-Forms/tree/l5-end</a></p>
+<figure><img src="${"https://i.imgur.com/ZuKq7PO.png"}"></figure>
+<pre class="${"language-vue"}"><!-- HTML_TAG_START -->${`<code class="language-vue">
+// components/BaseCheckbox.vue
+&lt;template&gt;
+  &lt;input
+    type=&quot;checkbox&quot;
+    :checked=&quot;modelValue&quot;
+    @change=&quot;$emit(&#39;update:modelValue&#39;, $event.target.checked)&quot;
+    class=&quot;field&quot;
+  /&gt;
+  &lt;label v-if=&quot;label&quot;&gt;&#123;&#123; label &#125;&#125;&lt;/label&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default &#123;
+  props: &#123;
+    label: &#123;
+      type: String,
+      default: &#39;&#39;
+    &#125;,
+    modelValue: &#123;
+      type: Boolean,
+      default: false
+    &#125;
+  &#125;
+&#125;
+&lt;/script&gt;
+
+// views/SimpleForm.vue
+
+</code>`}<!-- HTML_TAG_END --></pre>`
+  })}`;
+});
+var vueMasteryVue3Forms_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Vue_mastery_vue3_forms_svelte,
+  metadata: metadata$e,
+  load: load$2
+});
+var metadata$d = {
+  "title": "DRAFT Week Six - Javascript The Hard Parts",
+  "created": "2020-12-01T00:00:00.000Z",
+  "summary": "JavaScript The Hard Parts, v2",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_six_js_hard_parts_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$d), {}, {})}`;
+});
+var weekSixJsHardParts_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_six_js_hard_parts_svelte,
+  metadata: metadata$d,
+  load: load$2
+});
+var metadata$c = {
+  "title": "Week Two - Accessibility",
+  "created": "2021-11-06T00:00:00.000Z",
+  "summary": "Website Accessibility, v2",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_two_accessibility_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$c), {}, {
+    default: () => `<h2 id="${"what-is-it"}"><a href="${"#what-is-it"}">What is it</a></h2>
+<p>The curb cut effect.</p>
+<p>The Curb-Cut Effect, in its essence, asserts that an investment in one group can cascade out and up and be a substantial investment in the broader well-being of a nation \u2014 one whose policies and practices create an equitable economy, a healthy community of opportunity, and just society.</p>
+<h2 id="${"screen-readers"}"><a href="${"#screen-readers"}">screen readers</a></h2>
+<p><strong>Web Content Accessibility Guidelines (WCAG)</strong>
+This is what companies have to meet. </p>
+<p>WCAG specifies three different conformance levels they are:</p>
+<ul class="${"list"}"><li>A (lowest)</li>
+<li>AA (mid range)</li>
+<li>and AAA (highest)</li></ul>
+<p>WebAIM is trying to distill it in human ways. </p>
+<h2 id="${"accessible-html"}"><a href="${"#accessible-html"}">accessible html</a></h2>
+<p><strong>Pictures</strong>
+You don\u2019t need \u201Cpicture of\u201D or \u201Cimage of\u201D. Rule of thumb is explain the image to a blind person if they were in the room.</p>
+<p>You can also put a empty alt text so your image skips over. It\u2019s decorative.</p>
+<p><strong>Turn on screen reader</strong>
+Option ctrl U // Voice over
+links/headings/</p>
+<p>Labels do everything you can do.
+Aria-label is for everything else.</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">The label tag can only works with &quot;labelable&quot; elements. Those include:
+
+&lt;button&gt;
+&lt;input&gt;
+&lt;keygen&gt;
+&lt;meter&gt;
+&lt;output&gt;
+&lt;progress&gt;
+&lt;select&gt;
+&lt;textarea&gt;
+If you ever need to label an element not on that list, use aria-label instead.</code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Make direct screen reader only statements.</strong></p>
+<p>Sometimes you\u2019ll want to communicate with a screen reader directly! One cool example is announcing to screen reader users that you offer accessibility features! In that case you can make some HTML and wrap it in a visually hidden class.</p>
+<p>For example on twitter: (all made up)</p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>visuallyhidden<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    Hi we have a set of custom hotkeys for visual-impared people.
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+  <span class="token selector">.visuallyhidden</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">top</span><span class="token punctuation">:</span> -500px<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>       </code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Buttons</strong></p>
+<p>This is a shitty button by the way.
+Don\u2019t make buttons with div.</p>
+<ol class="${"list"}"><li>We start with a div</li></ol>
+<p><code>&lt;div onclick=&quot;alert(&#39;hello&#39;)&quot;&gt;Click me!&lt;/div&gt;</code></p>
+<ol start="${"2"}" class="${"list"}"><li>We could give it an ARIA role - (more on ARIA later)
+This will let screen readers know the element can be clicked.</li></ol>
+<p><code>&lt;div role=&quot;button&quot; onclick=&quot;alert(&#39;hello&#39;)&quot;&gt;Click me!&lt;/div&gt;</code></p>
+<ol start="${"3"}" class="${"list"}"><li>We could give it a tabindex
+This will allow keyboard only users to tab to it.</li></ol>
+<p><code>&lt;div tabindex=&quot;0&quot; role=&quot;button&quot; onclick=&quot;alert(&#39;hello&#39;)&quot;&gt;Click me!&lt;/div&gt;</code></p>
+<ol start="${"4"}" class="${"list"}"><li>Don\u2019t forget about keyboard only users!</li></ol>
+<p><code>&lt;div tabindex=&quot;0&quot; role=&quot;button&quot; onclick=&quot;alert(&#39;hello&#39;)&quot; onkeyup=&quot;alert(&#39;hello&#39;)&quot;&gt;Click me!&lt;/div&gt;</code></p>
+<ol start="${"5"}" class="${"list"}"><li>Don\u2019t forget about screen reader users either!</li></ol>
+<p><code>&lt;div aria-label=&quot;Alert the word hello&quot; tabindex=&quot;0&quot; role=&quot;button&quot; onclick=&quot;alert(&#39;hello&#39;)&quot; onkeyup=&quot;alert(&#39;hello&#39;)&quot;&gt;Click me!&lt;/div&gt;</code></p>
+<h2 id="${"aria"}"><a href="${"#aria"}">aria</a></h2>
+<p>w3 spec (like javascript) which are accessibility helpers. Add specifically for accessibility. A role attribute.</p>
+<p>The ARIA spec provides us with great tools for labelling and describing any element we want. They are:</p>
+<p>aria-label
+aria-labelledby
+aria-describedby</p>
+<p><strong>What is the difference between labelledby and describedby?</strong>
+A label provides essential information about an object, while a description provides extended information that the user might need.</p>
+<p><strong>If you make your own custom checkbox</strong></p>
+<p>use the <code>role</code>
+<a href="${"https://www.w3.org/TR/html-aria/#aria-table"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.w3.org/TR/html-aria/#aria-table</a></p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>percent-loaded<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>progressbar<span class="token punctuation">"</span></span> <span class="token attr-name">aria-valuenow</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>75<span class="token punctuation">"</span></span>
+     <span class="token attr-name">aria-valuemin</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">aria-valuemax</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>100<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>targetting</strong></p>
+<p>CSS Selectors</p>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css">  <span class="token selector">.dropdown[aria-expanded="false"] .icon::after</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">'\u25B6'</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token selector">.dropdown[aria-expanded="true"] .icon::after</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">'\u25BC'</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>live regions</strong></p>
+<p>Add to TIL:
+If you had dynamic content that changes, and you want the screen reader to re-read things if it changes.</p>
+<p><code>&lt;div aria-live=&quot;assertive&quot;&gt;Waiting for a ride&lt;/div&gt;</code></p>
+<p>One of my favorite APIs, the value that you pass in to aria-live is a politeness setting. You can pass in:</p>
+<p>assertive - will interrupt whatever it\u2019s doing to announce.
+polite - will announce the live region update when it next idles.
+off - will not read the update.</p>
+<h2 id="${"focus-management"}"><a href="${"#focus-management"}">focus management</a></h2>
+<p>Things you can steal:
+<strong>1: Keyboard Shortcuts</strong></p>
+<figure><img src="${"https://i.imgur.com/dxx44Zv.png"}"></figure>
+<p><strong>2: skip links</strong></p>
+<figure><img src="${"https://i.imgur.com/lfVyM4a.png"}"></figure>
+<p>Press tab and a special command hits up
+Skip links
+Skip links help users skip over large headers and navigation and jump right into the \u201Cmain\u201D content of your site. When a user hits tab for the first time, a button will appear and offer users to jump right to the main section.</p>
+<p><strong>Shift tabbing</strong>
+tab = go forward
+shift-tab = go back</p>
+<p><strong>Tab index</strong>
+You can add the tabindex attribute to any element like this:</p>
+<p><code>&lt;div tabindex=&quot;0&quot;&gt;I&#39;m focusable&lt;/div&gt;</code></p>
+<p><code>negative</code>: value means that the element should be focusable, but should not be reachable via sequential keyboard navigation;</p>
+<p><code>0</code>:  means that the element should be focusable and reachable via sequential keyboard navigation</p>
+<p><code>a positive value</code> means should be focusable and reachable via sequential keyboard navigation;
+If several elements share the same tabindex, their relative order follows their relative position in the document.</p>
+<p><strong>get the active element in JS</strong></p>
+<p>Sometimes, especially on single page applications, it\u2019s helpful to store the currently focused element before a page transition so you can return to it later.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">    <span class="token comment">// A modal is about to be opened</span>
+          <span class="token comment">// Store the current news item</span>
+          <span class="token keyword">const</span> currentItem <span class="token operator">=</span> document<span class="token punctuation">.</span>activeElement<span class="token punctuation">;</span>
+          <span class="token comment">// Open the modal</span>
+          <span class="token comment">// On modal close, refocus on the news item they had open</span>
+          currentItem<span class="token punctuation">.</span><span class="token function">focus</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        
+      </code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Tab Trapping</strong>
+Locks all the accessibility if you\u2019re in a modal. </p>
+<p>Grabs first element and last element within the modale.</p>
+<p>Then with the key down event in JS, have it switch focus on first or last. </p>
+<h2 id="${"visual-considerations"}"><a href="${"#visual-considerations"}">visual considerations</a></h2>
+<p>System level APIS
+Using the new <code>prefer</code> api</p>
+<p>For example: of they can get seizures.</p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html">   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>animation<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>animated box<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        
+      
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+        
+<span class="token selector">.animation</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">animation</span><span class="token punctuation">:</span> pulse 1s linear infinite both<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span>prefers-reduced-motion<span class="token punctuation">)</span></span> <span class="token punctuation">&#123;</span>
+  <span class="token selector">.animation</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">animation-name</span><span class="token punctuation">:</span> dissolve<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Or preer color scheme:</p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        ...
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+  <span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">prefers-color-scheme</span><span class="token punctuation">:</span> dark<span class="token punctuation">)</span></span> <span class="token punctuation">&#123;</span>
+    <span class="token selector">.wrapper</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">background</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token atrule"><span class="token rule">@media</span> <span class="token punctuation">(</span><span class="token property">prefers-color-scheme</span><span class="token punctuation">:</span> light<span class="token punctuation">)</span></span> <span class="token punctuation">&#123;</span>
+    <span class="token selector">.wrapper</span> <span class="token punctuation">&#123;</span>
+      <span class="token property">background</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>        </code>`}<!-- HTML_TAG_END --></pre>
+<ol class="${"list"}"><li>Check their cache to see if they\u2019re using light or dark already taggled</li>
+<li>Check their system </li></ol>
+<h2 id="${"tooling"}"><a href="${"#tooling"}">tooling</a></h2>
+<p>Use linters
+eslint-plugin-vuejs-accessiblility</p>
+<p>Use design systems like
+Adobe\u2019s react spectrum
+google material design</p>
+<p>chrome extension</p>
+<p>axe dev tools
+<a href="${"https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US</a></p>`
+  })}`;
+});
+var weekTwoAccessibility_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_two_accessibility_svelte,
+  metadata: metadata$c,
+  load: load$2
+});
+var metadata$b = {
+  "title": "Week Two - JavaScript Functional",
+  "created": "2021-11-02T00:00:00.000Z",
+  "summary": "JavaScript From Fundamentals to Functional JS, v2",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_two_js_functional_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$b), {}, {
+    default: () => `<h2 id="${"intro---javascript-from-fundamentals-to-functional-js"}"><a href="${"#intro---javascript-from-fundamentals-to-functional-js"}">Intro - JavaScript: From Fundamentals to Functional JS</a></h2>
+<p>The differences:
+OOP is about the noun.
+Functional programming is about the verb. </p>
+<p>For example:
+OOP building a house, doors, windows.
+Functional programming building a house, opening and closing.</p>
+<p>TODO: Search:
+Observable streams(?) \u2014 this?
+think of lambda and ramda underscope</p>
+<h2 id="${"objects"}"><a href="${"#objects"}">Objects</a></h2>
+<p><strong>Primitive vs Non-primitives</strong>
+Primitive values get passed by value (Number, String, Boolean, Undefined, Null and Symbol). </p>
+<p>Non-primitive values get passed by reference. (Objects such as functions and arrays are referred to as non-primitive values)
+Non-primitive values return the copy instead of return the original, because of reference/value.</p>
+<p><strong>Dot Notation versus Brackets</strong></p>
+<p>We use the . notation (obj.name).
+Reminder that ob keys are always always strings</p>
+<p>dots vs brackets</p>
+<figure><img src="${"https://i.imgur.com/H87frS2.png"}"></figure>
+<p><strong>Object Jawns</strong>
+array is just a special type of object.
+it has properties
+it is indexed \u2014 numeric indices
+can loop and do all sorts of things</p>
+<p>Reminder that object keys are always always strings!
+Also that you should use strings for keys.
+But you can do some crazy shit like this:</p>
+<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript"><span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span> <span class="token comment">// remember that const </span>
+x<span class="token punctuation">[</span><span class="token number">2</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"words"</span> <span class="token comment">// which gives you x: &#123;"4": "words"&#125;</span>
+
+x<span class="token punctuation">[</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span> <span class="token keyword">return</span> <span class="token string">"stack"</span><span class="token punctuation">&#125;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"other"</span> <span class="token comment">// IFFEE x: &#123;"stack": "other Words"&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>this is acceptable. </p>
+<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript">
+<span class="token comment">// ES5</span>
+<span class="token keyword">const</span> dataES5 <span class="token operator">=</span> <span class="token punctuation">&#123;</span> 
+  name<span class="token operator">:</span> <span class="token string">"dave"</span><span class="token punctuation">,</span> 
+  <span class="token function-variable function">speak</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"speak"</span><span class="token punctuation">&#125;</span> 
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// ES6</span>
+<span class="token keyword">const</span> dataES6 <span class="token operator">=</span> <span class="token punctuation">&#123;</span> 
+  name<span class="token operator">:</span> <span class="token string">"dave"</span><span class="token punctuation">,</span> 
+  <span class="token function">speak</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"speak"</span><span class="token punctuation">&#125;</span> 
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Method Versus Property</strong>
+property -&gt; x.length
+method -&gt; x.pop(1) // see how it has ()</p>
+<h2 id="${"list-transformations"}"><a href="${"#list-transformations"}">List Transformations</a></h2>
+<p>nothing. No notes taking.</p>
+<h2 id="${"foreach-function"}"><a href="${"#foreach-function"}">.forEach() Function</a></h2>
+<p>.forEach \u2014 this is really good, where she breaks down the _.each function </p>
+<p>Recreating the each function from Underscore <a href="${"https://underscorejs.org/#each"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">Each function</a></p>
+<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript"><span class="token keyword">const</span> _ <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+_<span class="token punctuation">.</span><span class="token function-variable function">each</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">list<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+  <span class="token comment">// if array</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+    <span class="token comment">// loop through the array</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> list<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token comment">// run the callback with each item</span>
+      <span class="token function">callback</span><span class="token punctuation">(</span>list<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">,</span> list<span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+
+  <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+
+    <span class="token comment">// else if object</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">in</span> list<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token function">callback</span><span class="token punctuation">(</span>list<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">,</span> key<span class="token punctuation">,</span> list<span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+
+<span class="token comment">// TO TEST:</span>
+<span class="token comment">// remember that&#96;callback&#96; is a function that you bring in.</span>
+<span class="token function">_each</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'johnny'</span><span class="token punctuation">,</span> <span class="token string">'steve'</span><span class="token punctuation">,</span> <span class="token string">'doggo'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> i<span class="token punctuation">,</span> list</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>list<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>name<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> is younger than </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>list<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>name<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> is older than </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>list<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>_. will always respond with a object</p>
+<h2 id="${"map-function"}"><a href="${"#map-function"}">.map() Function</a></h2>
+<p>HOT TIP add to TIL:
+Very often the docs is running the code they are promoting,
+most libs have the lib live on their own site, so you can open up console.log and test it.
+<code>$[h1]</code></p>
+<p>Another hot tip: Test if the result of a function by wrapping it:</p>
+<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript"><span class="token keyword">const</span> weapons <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'candlestick'</span><span class="token punctuation">,</span> <span class="token string">'knife'</span><span class="token punctuation">,</span> <span class="token string">'lead pipe'</span><span class="token punctuation">]</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">makeBroken</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">broken </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>item<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// What is the result type of map?</span>
+Array<span class="token punctuation">.</span>isArray<span class="token punctuation">[</span>_<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>weapons<span class="token punctuation">,</span> makeBroken<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token comment">// true</span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"filter-function"}"><a href="${"#filter-function"}">.filter() Function</a></h2>
+<p>.filter
+how to create a filter function yourself
+<a href="${"https://i.imgur.com/EFB0e9w.png"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://i.imgur.com/EFB0e9w.png</a></p>
+<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript">
+<span class="token keyword">const</span> _ <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+_<span class="token punctuation">.</span><span class="token function-variable function">filter</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">arr<span class="token punctuation">,</span> cb</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  
+  <span class="token comment">// create a new array</span>
+  <span class="token keyword">const</span> storage <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// loop through the array</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> arr<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+    <span class="token comment">// check if cb is true</span>
+    <span class="token comment">// if true, push into array</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">cb</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">,</span> arr<span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      storage<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token keyword">return</span> storage<span class="token punctuation">;</span>  
+
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"functions-in-depth"}"><a href="${"#functions-in-depth"}">Functions in-depth</a></h2>
+<p>COOL TIP: </p>
+<p><code>$</code> is a value in jquery. it has methods, like <code>$().hide()</code>.</p>
+<p><strong>Side Effect</strong>
+A side effect is anything that reaches beyond the initial function and changes something outside. like <code>console.log</code></p>
+<p>For example: Anything modifying the DOM is creating a side effect. </p>
+<p><strong>Functions are objects</strong>
+functions are objects. so this is totally legal. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token keyword">const</span> <span class="token function-variable function">theFunction</span> <span class="token operator">=</span> <span class="token parameter">statement</span> <span class="token operator">=></span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>statement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+theFunction<span class="token punctuation">.</span>thing <span class="token operator">=</span> <span class="token string">"i'm just data"</span>
+
+<span class="token function">theFunction</span><span class="token punctuation">(</span><span class="token string">'output to console.log'</span><span class="token punctuation">)</span>
+theFunction<span class="token punctuation">.</span>thing<span class="token punctuation">;</span> <span class="token comment">// i'm just data</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Arguments</strong></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// Using arguments </span>
+
+<span class="token comment">// Array-like object</span>
+<span class="token keyword">const</span> <span class="token function-variable function">constructArr</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+  <span class="token keyword">const</span> fakeArr <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// arguments is a JS THING</span>
+  <span class="token keyword">const</span> realArr <span class="token operator">=</span> Array<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// arguments is a JS THING</span>
+
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// will spit out the arguments passed</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"array.isArray(arguments)"</span><span class="token punctuation">,</span> Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>arguments<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// false</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"array.isArray(fakeArr)"</span><span class="token punctuation">,</span> Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>fakeArr<span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment">// true</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"array.isArray(realArr)"</span><span class="token punctuation">,</span> Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>realArr<span class="token punctuation">)</span><span class="token punctuation">)</span>   <span class="token comment">// true</span>
+  
+  fakeArr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'the billards room?'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> fakeArr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token function">constructArr</span><span class="token punctuation">(</span><span class="token string">'was'</span><span class="token punctuation">,</span> <span class="token string">'it'</span><span class="token punctuation">,</span> <span class="token string">'in'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"scopes"}"><a href="${"#scopes"}">Scopes</a></h2>
+<p>no comments</p>
+<h2 id="${"callbacks"}"><a href="${"#callbacks"}">Callbacks</a></h2>
+<p><strong>higher order functions:</strong>
+Take a function as a input or returns a function</p>
+<p>An example of passing arguments:</p>
+<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript"><span class="token keyword">const</span> <span class="token function-variable function">ifElse</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> functionIfTrue<span class="token punctuation">,</span> functionIfFalse<span class="token punctuation">,</span> <span class="token operator">...</span>args</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span> <span class="token comment">// ['yep', 'hi', 'bye']</span>
+  <span class="token keyword">return</span> state <span class="token operator">?</span> <span class="token function">functionIfTrue</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">functionIfFalse</span><span class="token punctuation">(</span><span class="token operator">...</span>args<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token function">ifElse</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span> fn1<span class="token punctuation">,</span> fn2<span class="token punctuation">,</span> <span class="token string">'yep'</span><span class="token punctuation">,</span> <span class="token string">'hi'</span><span class="token punctuation">,</span> <span class="token string">'bye'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>An example of callback:</p>
+<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript"><span class="token keyword">const</span> <span class="token function-variable function">increment</span> <span class="token operator">=</span> <span class="token parameter">n</span> <span class="token operator">=></span> n <span class="token operator">+</span> <span class="token number">1</span>
+<span class="token keyword">const</span> <span class="token function-variable function">square</span> <span class="token operator">=</span> <span class="token parameter">n</span> <span class="token operator">=></span> n <span class="token operator">*</span> n
+
+<span class="token keyword">const</span> <span class="token function-variable function">doMath</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">n<span class="token punctuation">,</span> func</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token function">func</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>
+<span class="token comment">// same as const doMath = function(n, func) => &#123; return func(n) &#125;</span>
+
+<span class="token function">doMath</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> square<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">doMath</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> increment<span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Recreating Reduce</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">reduce</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">list<span class="token punctuation">,</span> cb<span class="token punctuation">,</span> initial</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">let</span> memo <span class="token operator">=</span> initial<span class="token punctuation">;</span> <span class="token comment">// 2</span>
+
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> list<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// i === 1</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">===</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span> memo <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      memo <span class="token operator">=</span> list<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+      memo <span class="token operator">=</span> <span class="token function">cb</span><span class="token punctuation">(</span>list<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> memo<span class="token punctuation">)</span> <span class="token comment">// 3 + 2</span>
+    <span class="token punctuation">&#125;</span>  
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token keyword">return</span> memo<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">v<span class="token punctuation">,</span> sum</span><span class="token punctuation">)</span> <span class="token operator">=></span> v <span class="token operator">+</span> sum<span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"functional-utilities"}"><a href="${"#functional-utilities"}">Functional Utilities</a></h2>
+<p><strong>Currying</strong>
+Break a argument pack by number of arguments. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">var</span> <span class="token function-variable function">abc</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">var</span> curried <span class="token operator">=</span> _<span class="token punctuation">.</span><span class="token function">curry</span><span class="token punctuation">(</span>abc<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">curried</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment">// => [1, 2, 3]</span>
+<span class="token function">curried</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token comment">// => [1, 2, 3]</span></code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Composing</strong>
+Take two functions and combine them.
+It fires the result of one into the result of the other. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">consider</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">I think it could be... </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>name<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">exclaim</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">statement</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>statement<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">!</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> blame <span class="token operator">=</span> _<span class="token punctuation">.</span><span class="token function">compose</span><span class="token punctuation">(</span>consider<span class="token punctuation">,</span> exclaim<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">blame</span><span class="token punctuation">(</span><span class="token string">'you'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// the result is:</span>
+<span class="token comment">// I think it could be... YOU!</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"advanced-scope-closure"}"><a href="${"#advanced-scope-closure"}">Advanced Scope: Closure</a></h2>
+<p>An example of closure - step by step</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token keyword">const</span> <span class="token function-variable function">myAlert</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> x <span class="token operator">=</span> <span class="token string">"Help! I think i found a clue!"</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">alerter</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>x<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> CLUE #</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span><span class="token operator">++</span>count<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> alerter<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> funcAlert <span class="token operator">=</span> <span class="token function">myAlert</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> funcAlert2 <span class="token operator">=</span> <span class="token function">myAlert</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+funcAlert<span class="token punctuation">;</span> <span class="token comment">// if you called it like this</span>
+<span class="token comment">// result: () => &#123;</span>
+<span class="token comment">//     alert(&#96;$&#123;x&#125;$&#123;++count&#125;&#96;);</span>
+<span class="token comment">//   &#125;</span>
+
+<span class="token function">funcAlert</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// called like this</span>
+<span class="token comment">// result: POPUP: HELP! I think i found a clue! CLUE #1</span>
+<span class="token comment">// in other words, it's calling "alerter" with your "()"</span>
+
+<span class="token function">funcAlert</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// called like this</span>
+<span class="token comment">// result: it will fire the first alerter(). But then, it'll try to fire again as undefined.</span>
+<span class="token comment">// funcAlert(...) is not a function</span>
+
+<span class="token comment">// finally - count keeps getting incremented!</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Some advance stuff: </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// all this is doing is counting the name + weapon, then return true/false </span>
+<span class="token keyword">const</span> <span class="token function-variable function">newClue</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> length <span class="token operator">=</span> name<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token parameter">weapon</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">let</span> clue <span class="token operator">=</span> length <span class="token operator">+</span> weapon<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token operator">!</span><span class="token operator">!</span><span class="token punctuation">(</span>clue <span class="token operator">%</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// invoking</span>
+<span class="token keyword">const</span> didGreenDoItWithA <span class="token operator">=</span> <span class="token function">newClue</span><span class="token punctuation">(</span><span class="token string">'Green'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// this is the 'name' argument</span>
+
+<span class="token function">didGreenDoItWithA</span><span class="token punctuation">(</span><span class="token string">'iron mallet'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// this is passed as the 'weapon' argument</span></code>`}<!-- HTML_TAG_END --></pre>`
+  })}`;
+});
+var weekTwoJsFunctional_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_two_js_functional_svelte,
+  metadata: metadata$b,
+  load: load$2
+});
+var metadata$a = {
+  "title": "Week Five - JS Testing",
+  "created": "2021-12-03T00:00:00.000Z",
+  "summary": "JavaScript Testing Practices and Principles",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_five_js_testing_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$a), {}, {
+    default: () => `<h2 id="${"intro-to-testing"}"><a href="${"#intro-to-testing"}">Intro to Testing</a></h2>
+<p>SLIDES: <a href="${"https://slides.com/kentcdodds/testing-principles#/1"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/kentcdodds/testing-principles#/1</a></p>
+<p>Goals:</p>
+<ol class="${"list"}"><li>Explain the fundamentals</li>
+<li>Writing tests</li>
+<li>Test</li></ol>
+<p>Will avoid the tech-specific stuff</p>
+<p>Repo:
+git clone <a href="${"https://github.com/kentcdodds/testing-workshop.git"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/kentcdodds/testing-workshop.git</a>
+cd testing-workshop
+npm run setup \u2014silent</p>
+<h3 id="${"typechecking"}"><a href="${"#typechecking"}">Typechecking</a></h3>
+<p>(TypeScript) - You can remove a whole set of bug categories with static typing.
+ESLint is supposed to catch bugs.
+Prettier is supposed to clean up things. </p>
+<figure><img src="${"https://i.imgur.com/Mgy8xh8.png"}"></figure>
+<h3 id="${"unit-tests"}"><a href="${"#unit-tests"}">Unit tests</a></h3>
+<figure><img src="${"https://i.imgur.com/yzO0Vmi.png"}"></figure>
+<h3 id="${"integration-testing"}"><a href="${"#integration-testing"}">Integration Testing</a></h3>
+<figure><img src="${"https://i.imgur.com/8wIwNAc.png"}"></figure>
+<h3 id="${"end-to-end-testing"}"><a href="${"#end-to-end-testing"}">End to end testing</a></h3>
+<p>Pull it up and make it as close to you as possible</p>
+<h3 id="${"quick-example-of-a-test"}"><a href="${"#quick-example-of-a-test"}">Quick example of a test</a></h3>
+<p>This is the most fundamental example of a test!</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// this is purposely written wrong.</span>
+<span class="token keyword">const</span> <span class="token function-variable function">sum</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=></span> a <span class="token operator">-</span> b
+
+<span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">sum</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> expected <span class="token operator">=</span> <span class="token number">10</span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>result <span class="token operator">!==</span> expected<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span>
+    <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">the result of </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>result<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> is not equal to the expected of </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>expected<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>When you see testing libraries do this:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'subtract subtracts numbers'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">subtract</span><span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> expected <span class="token operator">=</span> <span class="token number">4</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span>expected<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>It really looks like this:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token parameter">title<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
+    <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">\u2713 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>title<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">x </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>title<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"creating-a-test-factory"}"><a href="${"#creating-a-test-factory"}">Creating a test factory</a></h3>
+<figure><img src="${"https://i.imgur.com/I4fQZxf.png"}"></figure>
+<p>PRO:
+Easier to add to the test.</p>
+<p>CON:
+You have the title contain the specific data.</p>
+<p>How Jest finds test files:
+a folder name <code>__tests__</code></p>
+<figure><img src="${"https://i.imgur.com/BS6heu4.png"}"></figure>
+<p>Method 1: separate the <code>test</code> folder and the <code>src</code> folder
+Method 2: Inside the <code>src</code> folder, are your tests.</p>
+<h3 id="${"where-to-put-tests"}"><a href="${"#where-to-put-tests"}">Where to put tests?</a></h3>
+<p>\u201CPlace files as close to where they\u2019re relevant as possible.\u201D</p>
+<h3 id="${"code-coverage"}"><a href="${"#code-coverage"}">Code Coverage?</a></h3>
+<p>IT creates a coverage directory (called Istabul)</p>
+<p>It\u2019s often a management mandate to create a 100% code coverage.
+Which is a HUGE diminish returns.
+That last 10% is always hard to maintain and not worth it.</p>
+<figure><img src="${"https://i.imgur.com/d52r2Ro.png"}"></figure>
+<p>The code coverage doesn\u2019t also give us confidence.
+It\u2019s more of a indicator of \u201CWhat code has coverage\u201D.</p>
+<p>It\u2019s not telling you what you need to do, what\u2019s important. It\u2019s just covering surface level.
+<a href="${"https://docs.cypress.io/guides/tooling/code-coverage#Full-stack-code-coverage"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://docs.cypress.io/guides/tooling/code-coverage#Full-stack-code-coverage</a></p>
+<p>You\u2019re better off to:
+\u201CTest software the way your user uses your software\u201D</p>
+<h2 id="${"unit-testing"}"><a href="${"#unit-testing"}">Unit testing</a></h2>
+<p>A long time ago, it used to be \u2018one assertion per test\u2019.
+A testing framework allows you to add a bunch of assertions and group them together, because it\u2019ll show you which one failed.</p>
+<figure><img src="${"https://i.imgur.com/8OHVJZ6.png"}"></figure>
+<p>So an example of testing login:</p>
+<p>Your tests should resemble how the user uses it.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// from a separate file</span>
+<span class="token keyword">function</span> <span class="token function">isPasswordAllowed</span><span class="token punctuation">(</span><span class="token parameter">password</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> password<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">6</span> <span class="token operator">&amp;&amp;</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">d</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>password<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">D</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>password<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+
+
+<span class="token comment">// main test file</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span>isPasswordAllowed<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'file'</span><span class="token punctuation">;</span>
+
+<span class="token function">test</span><span class="token punctuation">(</span><span class="token string">'isPasswordAllowed only allows some passwords'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">isPasswordAllowed</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">isPasswordAllowed</span><span class="token punctuation">(</span><span class="token string">'fffffffffff'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">isPasswordAllowed</span><span class="token punctuation">(</span><span class="token string">'999999999'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
+  <span class="token function">expect</span><span class="token punctuation">(</span><span class="token function">isPasswordAllowed</span><span class="token punctuation">(</span><span class="token string">'asdfj.@sdfkj'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"mocks"}"><a href="${"#mocks"}">Mocks</a></h2>
+<p>It means \u201Cto fake something\u201D.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> winner <span class="token operator">=</span> <span class="token function">thumbWar</span><span class="token punctuation">(</span><span class="token string">'Ken Wheeler'</span><span class="token punctuation">,</span> <span class="token string">'Kent C. Dodds'</span><span class="token punctuation">)</span>
+
+<span class="token function">expect</span><span class="token punctuation">(</span>winner<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toBe</span><span class="token punctuation">(</span><span class="token string">'Kent C Dodds'</span><span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>He had to hack the <code>thumbwar</code> function a bit to make it work.</p>
+<blockquote><p>What is mock testing?
+Mocking means creating a fake version of an external or internal service that can stand in for the real one, helping your tests run more quickly and more reliably. When your implementation interacts with an object\u2019s properties, rather than its function or behavior, a mock can be used.
+<a href="${"https://circleci.com/blog/how-to-test-software-part-i-mocking-stubbing-and-contract-testing/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://circleci.com/blog/how-to-test-software-part-i-mocking-stubbing-and-contract-testing/</a></p></blockquote>
+<p>ROCKY NOTES: This isn\u2019t very good at all.
+Not the chapter, but this method of testing and using Jest.</p>
+<p>For example - each test is mutating things and leaving side effects that can affect other tests.
+So he\u2019s having to write \u2018functions\u2019 to clean up a test after it\u2019s finished, which is\u2026 a problem with the testing software, not the code.
+Cypress isolates each test without having to clean it up.</p>
+<p>Another key note:
+Kent even literally says he avoids this style of testing (mock testing) because it\u2019s not similar to what the end user is doing.</p>
+<h2 id="${"testing-practices"}"><a href="${"#testing-practices"}">Testing Practices</a></h2>
+<p>Reminder on promises:
+await/async</p>
+<p>Functions that need to wait for a response:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">theFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token operator">...</span> <span class="token punctuation">&#125;</span>
+
+<span class="token comment">//then to call the function</span>
+<span class="token keyword">await</span> <span class="token function">theFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Something I like that\u2019s he\u2019s doing is creating a placeholder request/response and shapes it.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> req<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    body<span class="token operator">:</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+
+  <span class="token comment">// a bunch of object assign stuff</span>
+
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>\u201CI like testing where i can slice the unit as much of the dependencies as I can to make as pure as possible so I have a lot of confidence when I test.\u201D</p>
+<h3 id="${"test-driven-development"}"><a href="${"#test-driven-development"}">Test Driven Development</a></h3>
+<figure><img src="${"https://i.imgur.com/u72cndq.png"}"></figure>
+<p>Red -&gt; Green -&gt; Refactor.</p>
+<ol class="${"list"}"><li>You write some code in your code to fail.</li>
+<li>Then fix your source code to pass. </li>
+<li>Then update either your src/test.</li></ol>
+<p>TDD has a great place with pure functions.
+You can create a list of this is allowed, this is allowed\u2026 and just keep growing your list.
+If I was writing a utility library, then TDD is great.</p>
+<p>Where it doesn\u2019t work very well, it\u2019s trickier\u2026 is UI.
+If you\u2019re not certain what things look like\u2026 you can\u2019t write test code to make it look like that.</p>
+<h3 id="${"readme-driven-development"}"><a href="${"#readme-driven-development"}">Readme Driven Development</a></h3>
+<p>I (Kent) use RDD \u2014
+Readme Driven Development. Where I write the documentation of how I expect to work, then match it with the code.</p>
+<h2 id="${"integration-testing-1"}"><a href="${"#integration-testing-1"}">Integration Testing</a></h2>
+<p>The difference between in Integration and unit testing is limited:
+Integration doesn\u2019t use mocking.
+It starts up a server, and hits the server itself.</p>`
+  })}`;
+});
+var weekFiveJsTesting_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_five_js_testing_svelte,
+  metadata: metadata$a,
+  load: load$2
+});
+var metadata$9 = {
+  "title": "Week Five - Debugging",
+  "created": "2020-12-04T00:00:00.000Z",
+  "summary": "Javascript Debugging and Fixing Common JavaScript Errors",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_five_debugging_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$9), {}, {
+    default: () => `<h2 id="${"debugging-javascript"}"><a href="${"#debugging-javascript"}">Debugging Javascript</a></h2>
+<p>Random shit:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token string">'\u{1F4A9}'</span><span class="token punctuation">.</span>length <span class="token comment">// 2 because it's unicode counting</span>
+
+<span class="token number">0.1</span> <span class="token operator">+</span> <span class="token number">0.2</span> <span class="token comment">// JS floating point operations have issues with overflow rounding percision</span>
+
+<span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token number">2016</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">31</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2016 July 1 -- this is saying June 31st, which doesn't exist... which overflows to July 1.</span>
+
+<span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token function">Array</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [0, 1, [undefined, undefined]]</span>
+
+<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [1, 10, 5] because it treats it as strings</span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"how-to-fix-bugs"}"><a href="${"#how-to-fix-bugs"}">How to fix Bugs</a></h2>
+<p>A generic tool:
+Identify, Isolate, Resolve, Prevent.</p>
+<p><strong>Identity:</strong></p>
+<p><strong>Isolate:</strong></p>
+<p><strong>Resolve:</strong></p>
+<p><strong>Prevent:</strong>
+Regression Tests</p>
+<h2 id="${"design-for-debuggability"}"><a href="${"#design-for-debuggability"}">Design for Debuggability</a></h2>`
+  })}`;
+});
+var weekFiveDebugging_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_five_debugging_svelte,
+  metadata: metadata$9,
+  load: load$2
+});
+var metadata$8 = {
+  "title": "Week Four - Intro to NodeJS",
+  "created": "2021-11-17T00:00:00.000Z",
+  "summary": "Introduction to Node.js, V2",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_four_nodejs_v2_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$8), {}, {
+    default: () => `<h1 id="${"introduction-to-nodejs-v2"}"><a href="${"#introduction-to-nodejs-v2"}">Introduction to Node.js, V2</a></h1>
+<p><a href="${"https://intro-to-nodejs-v2-site.vercel.app/lesson/00-welcome"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://intro-to-nodejs-v2-site.vercel.app/lesson/00-welcome</a></p>
+<p><strong>Use-cases</strong></p>
+<ul class="${"list"}"><li>API\u2019s and servers</li>
+<li>Databases (there\u2019s some DBs build in node)</li>
+<li>CLIs</li>
+<li>Building Tools</li>
+<li>Automations</li>
+<li>Basic Scripting</li>
+<li>GPU shopping bots</li></ul>
+<p>OS-level language.</p>
+<p>There\u2019s no browser or visual rendered.</p>
+<p>Browser website is just one big string, and you can test it.</p>
+<p>Node - long controversal history
+had split to become IO.js </p>
+<p>what things they can bring into node.
+when new global JS features, node has to decide.
+Like they wont bring in browser-specific features.</p>
+<p>Node vs deno
+Like Node.js, written in typescripts.
+takes best packages of node so it\u2019s built in. Like testing, building.</p>
+<h2 id="${"basic-components"}"><a href="${"#basic-components"}">Basic Components</a></h2>
+<p><strong>Globals</strong></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>global<span class="token punctuation">)</span> <span class="token comment">// showing the window</span>
+
+
+__dirname <span class="token comment">// current directory</span>
+
+__filename
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>process<span class="token punctuation">)</span> <span class="token comment">// a swiss army knife. Obj about the program. </span>
+                    <span class="token comment">// everything where the env variables are stored, even the computer</span>
+
+<span class="token comment">// modules</span>
+<span class="token string">"exports"</span>
+<span class="token string">"module"</span>
+<span class="token string">"require"</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Modules</strong>
+Modules are reusable chunks.
+It encapuslates each file in it\u2019s own closure.</p>
+<p>Now there\u2019s two modules. <code>js</code> &amp; <code>mjs</code></p>
+<p><strong>COMMONJS</strong></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// index.js</span>
+<span class="token keyword">const</span> <span class="token function-variable function">action</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello there"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> action 
+
+
+<span class="token comment">// app.js</span>
+<span class="token keyword">const</span> action <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./index'</span><span class="token punctuation">)</span>
+<span class="token function">action</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token comment">// in node cli</span>
+<span class="token comment">// node app.js</span>
+<span class="token comment">// $ Hello There</span></code>`}<!-- HTML_TAG_END --></pre>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// index.mjs</span>
+<span class="token comment">// creates a named export</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">action</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello there"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+
+<span class="token comment">// app.mjs</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> action <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./index.mjs'</span><span class="token punctuation">;</span>
+
+<span class="token function">action</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// in node cli</span>
+<span class="token comment">// node app.js</span>
+<span class="token comment">// $ Hello There</span></code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>File System</strong></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token comment">// index.mjs</span>
+<span class="token keyword">import</span> fs <span class="token keyword">from</span> <span class="token string">"fs"</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fs<span class="token punctuation">)</span>
+
+<span class="token comment">// result</span>
+ appendFile<span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> appendFile<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  appendFileSync<span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> appendFileSync<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  access<span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> access<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  accessSync<span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> accessSync<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  chown<span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> chown<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  chownSync<span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> chownSync<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  chmod<span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> chmod<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  chmodSync<span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> chmodSync<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  close<span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> close<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  closeSync<span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> closeSync<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  copyFile<span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> copyFile<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  copyFileSync<span class="token operator">:</span> <span class="token punctuation">[</span>Function<span class="token operator">:</span> copyFileSync<span class="token punctuation">]</span><span class="token punctuation">,</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>notice that there\u2019s a sync version of it.
+Because everything in node is async, the alternative is async.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// index.mjs</span>
+<span class="token keyword">import</span> fs <span class="token keyword">from</span> <span class="token string">"fs/promises"</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fs<span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>This is the promise version. </p>
+<p>__dirname \u2014 you don\u2019t actually have access this to in mjs</p>
+<p>BUFFER
+PS G:\\Development\\frontend-masters-temp\\node-js-v2&gt; node index.mjs
+<code>&lt;Buffer 3c 21 44 4f 43 54 59 50 45 20 68 74 6d 6c 3e 0d 0a 3c 68 74 6d 6c 20 6c 61 6e 67 3d 22 65 6e 22 3e 0d 0a 3c 68 65 61 64 3e 0d 0a 20 20 3c 6d 65 74 61 ... 220 more bytes&gt;</code></p>
+<p>It\u2019s better to stream a file than load the whole file into memory.</p>
+<p>HOW DOES ASYNC WORK IN JAVASCRIPT
+readFile &amp; writeFile are async functions.
+If you don\u2019t wait for readFile to work\u2026 it\u2019ll fail on the next stage.
+You can also </p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>X-UA-Compatible<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>IE=edge<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>&#123;title&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>&#123;body&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> readFile<span class="token punctuation">,</span> writeFile <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"fs/promises"</span>
+
+<span class="token comment">// 1 - read the file &amp; we need to wait for it to response</span>
+
+<span class="token comment">// the commonJS method</span>
+<span class="token comment">// but we don't have access to __dirname in moduleJS</span>
+<span class="token comment">// const template = await readFile(__dirname, "/template.html")</span>
+
+<span class="token comment">// the module js version </span>
+<span class="token comment">// readFile takes the data, and the encoding.</span>
+<span class="token keyword">let</span> template <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">readFile</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span><span class="token string">'template.html'</span><span class="token punctuation">,</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>template<span class="token punctuation">)</span> <span class="token comment">// creates it in buffer format if there's no encoding.</span>
+<span class="token comment">// console.log(template.toString()) // turns it into html format</span>
+
+
+<span class="token comment">// 2 - what data should we replace</span>
+
+
+<span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+    title<span class="token operator">:</span> <span class="token string">"Learn Node.js"</span><span class="token punctuation">,</span>
+    body<span class="token operator">:</span> <span class="token string">"This is the final HTML"</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token punctuation">[</span>key<span class="token punctuation">,</span> value<span class="token punctuation">]</span> <span class="token keyword">of</span> Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    template <span class="token operator">=</span> template<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">&#123;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>key<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">&#125;</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">,</span> value<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+
+
+<span class="token keyword">await</span> <span class="token function">writeFile</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span><span class="token string">'index.html'</span><span class="token punctuation">,</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">,</span> template<span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Error Handling</strong></p>
+<p>VIA: <a href="${"https://intro-to-nodejs-v2-site.vercel.app/lesson/07-error-handling"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://intro-to-nodejs-v2-site.vercel.app/lesson/07-error-handling</a></p>
+<p>You prob don\u2019t want your app to crash and burn when there\u2019s an error.
+Like, if your API is set up and takes an error, it shouldn\u2019t kill your app.</p>
+<p>When a exception is thrown in Node.js, the current process will exit with a code of 1.
+This effectively errors out and stops your programing completely. You can manually do this with:</p>
+<p><code>process.exit(1)</code>
+Don\u2019t do this. It\u2019s a system level. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span>readFile<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"fs"</span>
+
+<span class="token comment">// This is the callback way. </span>
+<span class="token comment">// Add a error callback, otherwise return the data.</span>
+<span class="token function">readFile</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span><span class="token string">'app.mj'</span><span class="token punctuation">,</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"im in the readFile"</span><span class="token punctuation">)</span>
+
+        <span class="token comment">// handle the error</span>
+        console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+
+        <span class="token comment">// if you want it to crash, throw err</span>
+        <span class="token keyword">throw</span> err
+    <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+        <span class="token comment">// return the data</span>
+
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+
+<span class="token comment">// This is with promises</span>
+<span class="token comment">// No need for callback</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span>readFile <span class="token keyword">as</span> readFilePromises<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"fs/promises"</span>
+
+<span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"im in the readFilePromises"</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">readFilePromises</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span><span class="token string">'app.mj'</span><span class="token punctuation">,</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+    <span class="token comment">// if you want it to crash, throw err</span>
+    <span class="token comment">// throw err</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Global way - this is if you don\u2019t have access to the code directly.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+process<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'uncaughtException'</span><span class="token punctuation">,</span> cb<span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Errors and Async Q&amp;A</strong></p>
+<p>ERROR Vs EXCEPTION
+An error can CAUSE an exception.</p>
+<p>If you \u2018throw\u2019 the error, it can raise an exception.
+The error alone is just an object.</p>
+<p>Exceptions are like the highest level.
+If you get an error, you can speak to the manager.
+Versus an error is just complaining in the first place.</p>
+<p>AWAIT
+Is await blocking the thread?
+So why aren\u2019t we using synchronous?</p>
+<p>Await is giving the illusion of blocking the code.
+What\u2019s actually happen, it actually becomes a generator.
+It\u2019s a async for-loop. Like putting your code into a callback. It\u2019s the same functionality.
+Async/Await was to solve a visual problem.</p>
+<p>Promises (or Callbacks), already solve the functional problem - I want this code to run after thsi code.</p>
+<p>Promise is supposed to make it look nicer.</p>
+<p>Frontend never had the problem with promises. You didn\u2019t make 20 API calls and 20 event handler calls nestled into each otehr.
+But then backend did. It was when backend interacted with a bunch of different apis and had to wait for other APIs to be ready and they saw all these crazy async patterns.
+promises were somewhat to keep something flat.</p>
+<p>But the <code>.then</code> was still not flat enough, so that\u2019s why async/await is still doing.</p>
+<p>CAN YOU MOVE ON DURING AN AWAIT?
+No.
+Because the next line won\u2019t execute until the read line comes back with a result or throws an error.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">  <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">readFilePromises</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span><span class="token string">'app.mj'</span><span class="token punctuation">,</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>It won\u2019t even be read/scene. it\u2019s like a callback.</p>
+<p>It won\u2019t even be read and wanting to be seen. Because it\u2019s the equivalent of putting it in a callback. It just won\u2019t happen. So no you cannot continue to process something that defeats the purpose of the await. If you want to continue processing something while something else is happening in the background, then you won\u2019t use async await you will use a callback or you use dot then.</p>
+<h2 id="${"packages"}"><a href="${"#packages"}">Packages</a></h2>
+<p><code>npm install --help</code></p>
+<p><strong>Creating a local Packages &amp; npm</strong></p>
+<p>A package is just a bunch of modules put together to make it work.</p>
+<p>Node Package Manager (NPM) is bundled with node.</p>
+<p><a href="${"https://intro-to-nodejs-v2-site.vercel.app/lesson/08-packages"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://intro-to-nodejs-v2-site.vercel.app/lesson/08-packages</a></p>
+<p>To create your first package:</p>
+<ol class="${"list"}"><li><code>npm init</code></li></ol>
+<p>package name: it\u2019s what it\u2019ll be called on npm. Must be unique.
+entry point: what file to start at.
+test command: </p>
+<ol start="${"2"}" class="${"list"}"><li></li></ol>
+<p><strong>How to find and install packages</strong></p>
+<p>NPM -&gt; search -&gt; Mongo DB</p>
+<p>Things I look for:</p>
+<ol class="${"list"}"><li>Make sure it\u2019s relatively updated.</li>
+<li>See the sourcecode </li>
+<li>Try to see if this was a active project</li></ol>
+<p>Remember that packages have packages.
+dependencies. in <code>node_modules</code></p>
+<p><strong>Using npm packages</strong></p>
+<p>If you\u2019re installing things and you need to read the source code in node_modules, you might be better off finding another package.</p>
+<p>NPM VS YARN</p>
+<p>Npm was in a state of not being updated. It didn\u2019t have packagelock.json</p>
+<p>Yarn was better.
+Soon after, npm does the same thing as yarn now if not better.</p>
+<p>So remember you can do shit like this:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> _ <span class="token keyword">from</span> <span class="token string">"lodash"</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>_<span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// in the terminal
+
+$ node index.mjs</code>`}<!-- HTML_TAG_END --></pre>
+<p>The difference in import</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> app <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"./app.js"</span>
+
+<span class="token keyword">import</span> _ <span class="token keyword">from</span> <span class="token string">"lodash"</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>The <code>./</code> means that it\u2019s a local file.
+The lack of that means it\u2019s a node_module lib.</p>
+<p>WHAT IS NPX</p>
+<p>npm install is global
+You can install things global.
+<code>npm install -g yarn</code></p>
+<p>Sometimes there are some global CLIs, some global tools that you don\u2019t want to install.
+But you need some functionality out of them for there is a one off thing.
+Maybe it\u2019s a scaffolding tool.
+Maybe it\u2019s a deployment tool, but it\u2019s just something you don\u2019t really wanna keep around, but you do need to run it right quick.</p>
+<p><code>npx yarn add lodash</code></p>
+<p>That is saying for npx to tell yarn to install lodash for me.</p>
+<p>It runs that specific tool without actually installing yarn.</p>
+<p>DEPENECENIES VS DEV DEPENVCIES
+The difference \u2014
+how and when it\u2019s installed.
+We\u2019ll go there in test section.</p>
+<p><strong>Running npm Scripts</strong></p>
+<p>If it gets complicated, move the npm script into a js file.</p>
+<h2 id="${"cli"}"><a href="${"#cli"}">CLI</a></h2>
+<p><a href="${"https://intro-to-nodejs-v2-site.vercel.app/lesson/09-clis"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://intro-to-nodejs-v2-site.vercel.app/lesson/09-clis</a></p>
+<p>any command that runs in the terminal is a CLI.</p>
+<p>This allows you to run it from the CLI</p>
+<pre class="${"language-reddit.mjs"}"><!-- HTML_TAG_START -->${`<code class="language-reddit.mjs">#! /usr/bin/env node </code>`}<!-- HTML_TAG_END --></pre>
+<p>As it tells the terminal what environment it\u2019s running from. </p>
+<p>Add a <code>bin</code> to your package.json</p>
+<blockquote><p>So in this case, because this is a CLI and this application is not meant to be consumed by an import. I wouldn\u2019t expect you to npm install my CLI, and then import it into your app, unless I explicitly said hey you can also use this CLI programmatically, by importing it.</p></blockquote>
+<blockquote><p>Most of the time, that\u2019s just extra work for developers, so they don\u2019t always do that, so it\u2019s usually just only consumed by a CLI. So in that case, this main field probably just gets ignored, right? This main field is only for when someone\u2019s importing, or requiring your application, whereas in this case, it\u2019s a CLI and we don\u2019t plan on having programmatic access.</p></blockquote>
+<blockquote><p>So you could think of this as like the main field when it comes to the CLI and not this so you can kind of ignore that, so I just wanted to clear that up. So now we have the bin here and then the last thing we need to do is, we need to install our own CLI on our computer.</p></blockquote>
+<p>If it sees that bin command, it\u2019ll do that.</p>
+<p>npm is going to create a symlink.</p>
+<p><code>npm uninstall -g</code> can often fix a lot of problems.</p>
+<p>CLI STUFF
+<code>console.log(process.argv)</code></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token constant">PS</span> <span class="token constant">G</span><span class="token operator">:</span>Development\frontend<span class="token operator">-</span>masters<span class="token operator">-</span>temp&#92;node<span class="token operator">-</span>js<span class="token operator">-</span>v2&#92;reddit<span class="token operator">-</span>cli<span class="token operator">></span> node reddit<span class="token punctuation">.</span>mjs
+<span class="token punctuation">[</span>
+  <span class="token string">'C:\\Program Files&#92;nodejs&#92;node.exe'</span><span class="token punctuation">,</span>
+  <span class="token string">'G:\\Development\\frontend-masters-temp&#92;node-js-v2&#92;reddit-cli&#92;reddit.mjs'</span>
+<span class="token punctuation">]</span></code>`}<!-- HTML_TAG_END --></pre>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">PS G:Development\frontend-masters-temp&#92;node-js-v2&#92;reddit-cli&gt; node reddit.mjs hello --print     
+[
+  &#39;C:\\Program Files&#92;nodejs&#92;node.exe&#39;,
+  &#39;G:\\Development\\frontend-masters-temp&#92;node-js-v2&#92;reddit-cli&#92;reddit.mjs&#39;,
+  &#39;hello&#39;,
+  &#39;--print&#39;
+]
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>This piece of code is a CLI to get a random post from reddit with the reddit api
+<a href="${"https://www.reddit.com/.json"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.reddit.com/.json</a></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">reddit<span class="token punctuation">.</span>mjs
+
+#<span class="token operator">!</span> <span class="token operator">/</span>usr<span class="token operator">/</span>bin<span class="token operator">/</span>env node 
+
+<span class="token keyword">import</span> fetch <span class="token keyword">from</span> <span class="token string">'node-fetch'</span>
+<span class="token keyword">import</span> open <span class="token keyword">from</span> <span class="token string">'open'</span>
+<span class="token keyword">import</span> yargs <span class="token keyword">from</span> <span class="token string">'yargs'</span>
+
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"hey im in the reddit cli"</span><span class="token punctuation">)</span>
+
+<span class="token comment">// this puts arguments (flags) that you can get.</span>
+<span class="token keyword">const</span> <span class="token punctuation">&#123;</span>argv<span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token function">yargs</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>argv<span class="token punctuation">)</span>
+
+<span class="token comment">// https://www.reddit.com/.json</span>
+<span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token string">'https://www.reddit.com/.json'</span>
+
+<span class="token comment">// fetch doesn't return the data. It returns the response.</span>
+<span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+<span class="token keyword">const</span> data <span class="token operator">=</span> <span class="token keyword">await</span> res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> children <span class="token operator">=</span> data<span class="token punctuation">.</span>data<span class="token punctuation">.</span>children
+<span class="token keyword">const</span> randomPost <span class="token operator">=</span> children<span class="token punctuation">[</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> children<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> link <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">https://reddit.com</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>randomPost<span class="token punctuation">.</span>data<span class="token punctuation">.</span>permalink<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span>
+<span class="token keyword">const</span> subreddit <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>randomPost<span class="token punctuation">.</span>data<span class="token punctuation">.</span>subreddit_name_prefixed<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span>
+
+<span class="token keyword">if</span> <span class="token punctuation">(</span>argv<span class="token punctuation">.</span>print<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">
+        title: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>randomPost<span class="token punctuation">.</span>data<span class="token punctuation">.</span>title<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">,
+        link: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>link<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">,
+        subreddit: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>subreddit<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">
+    </span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+    <span class="token function">open</span><span class="token punctuation">(</span>link<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// console.log(data);</span>
+
+
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>ADD TO TIL:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+
+<span class="token keyword">const</span> o <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  u<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    l<span class="token operator">:</span> <span class="token punctuation">&#123;</span> course<span class="token operator">:</span> <span class="token string">'node.js'</span><span class="token punctuation">,</span> a<span class="token operator">:</span> <span class="token punctuation">&#123;</span> b<span class="token operator">:</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// how to avoid [object object]</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>o<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"servers"}"><a href="${"#servers"}">Servers</a></h2>
+<p><a href="${"https://intro-to-nodejs-v2-site.vercel.app/lesson/10-servers"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://intro-to-nodejs-v2-site.vercel.app/lesson/10-servers</a></p>
+<p>Node.js has access to OS level functionality.</p>
+<blockquote><p>Node.js has access to OS level functionality, like networking tools. This allows us to build very capable servers. Mixed with the fact that Node.js is single threaded and runs an even loop for async tasks, Node.js is widely used for API\u2019s that need to respond fast and don\u2019t require heavy CPU intensive work.</p></blockquote>
+<p>Using the hard way: </p>
+<blockquote><p>Node.js ships with the http module. This module is an abstraction around OS level networking tools. For Node.js, the http module would be considered \u201Clow level\u201D. Let\u2019s create a simple server.</p></blockquote>
+<p><code>http</code> is \u201Clow level\u201D. You might say that nothing in node is low-level. But this is pretty low-level for node.
+You also shouldn\u2019t use <code>http</code> since it\u2019s very low-level.</p>
+<p>Servers \u2014&gt; it handles a request, and then gives a response.
+Like a server in a restaurant.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// code</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>CLI FRAMEWORKS
+commander <a href="${"https://github.com/tj/commander.js/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/tj/commander.js/</a>
+heroku cli
+oclif - <a href="${"https://blog.heroku.com/open-cli-framework"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://blog.heroku.com/open-cli-framework</a></p>
+<p>WHEN TO USE NODE</p>
+<blockquote><p>So I\u2019ve had some experience with that. And actually, the first language that I ever learned was Ruby that I learned Python. And then I did learn Java, but not for servers, but for android so I don\u2019t really have any server experience there other than my current job now which does use a lot of Java.</p></blockquote>
+<blockquote><p>Yes, I would say, I would always choose node high-level when I don\u2019t have any, high CPU intensive tasks. So things like arithmetic, A.I ,machine learning. Yes, you can do it a node absolutely. But it wasn\u2019t meant for that. And if you tried to do that it\u2019s like trying to squeeze a size 15 shoe in a size 15 foot in a size 10 shoe is just it\u2019s gonna hurt.</p></blockquote>
+<blockquote><p>But you could probably do it. So you better off using node for things like I need a JSON API, I need to query your database and they send back some data, that\u2019s it. It\u2019s a crud API, that\u2019s all that I\u2019m doing. It\u2019s not doing crazy stuff. That\u2019s what you would use node for, cuz it\u2019s able to handle a lot of requests out of the box without any tweaking.</p></blockquote>
+<blockquote><p>That\u2019s what it was built for. So if you\u2019re going for more request per second, and you\u2019re going for the low CPU intensive tasks, and JavaScript, node is a really good choice. In fact, the thing is you don\u2019t really need to unless you\u2019re a billion dollar company where a fraction of performance could cost you hundreds of thousands if not millions of dollars.</p></blockquote>
+<p>WHAT IS MIDDLEWARE?</p>
+<blockquote><p>You can think of middleware as like a little piece of functionality that sits in between what you eventually wanna do with the request and when it came in. It\u2019s like a pipe of plugins that can manipulate the request, it can inspect the request, it can do whatever it wants to the request before it eventually sends it to another middleware or, in this case the controller.</p></blockquote>
+<blockquote><p>It\u2019s like you have a sandwich, one side of the bread would be the client, the other side of the bread would, no, one side of the bread would be the incoming request and other side of bread would be the response. And then somewhere in the middle is the middleware.</p></blockquote>
+<blockquote><p>Like all the stuff that\u2019s in the middle, and then the piece of meat is the controller, right? So the middleware is like all the toppings that just adds all the extra stuff to whatever meat or veggie patty you got going on there, that\u2019s middleware. So body-parser and morgan are those two.</p></blockquote>
+<p>You should never release a production thing without logging.</p>
+<p>When you push data to a express server, the data is just staying in memory.
+If you restart the server, it kills the data.
+You\u2019d need to write it somewhere in the future. (DB, json, etc?)</p>
+<h2 id="${"testing"}"><a href="${"#testing"}">Testing</a></h2>
+<p>One of the more common nodejs things is unit testing and end-to-end testing.</p>
+<p>SUPER LOW LEVEL:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token comment">// mylib.js</span>
+<span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">add</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">num1<span class="token punctuation">,</span> num2</span><span class="token punctuation">)</span> <span class="token operator">=></span> num1 <span class="token operator">+</span> num2
+
+<span class="token comment">// mylib.spec.js</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> add <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./myLib.mjs'</span>
+<span class="token keyword">import</span> assert <span class="token keyword">from</span> <span class="token string">'assert'</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">
+    add() 
+    Should add two numbers
+</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span>
+
+<span class="token comment">// we are assuming that it 1 + 2 will equal to 4, which is incorrect.</span>
+<span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
+    assert<span class="token punctuation">.</span><span class="token function">strictEqual</span><span class="token punctuation">(</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"SUCCESS"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"FAIL"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash">PS <span class="token punctuation"></span>testing<span class="token operator">></span> node lib.spec.mjs
+
+    add<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    Should <span class="token function">add</span> two numbers
+
+FAIL
+AssertionError <span class="token punctuation">[</span>ERR_ASSERTION<span class="token punctuation">]</span>: Expected values to be strictly equal:
+
+<span class="token number">3</span> <span class="token operator">!=</span><span class="token operator">=</span> <span class="token number">4</span>
+
+    at file:///G:/Development/frontend-masters-temp/node-js-v2/testing/lib.spec.mjs:10:12
+    at ModuleJob.run <span class="token punctuation">(</span>internal/modules/esm/module_job.js:152:23<span class="token punctuation">)</span>
+    at async Loader.import <span class="token punctuation">(</span>internal/modules/esm/loader.js:166:24<span class="token punctuation">)</span>
+    at async Object.loadESM <span class="token punctuation">(</span>internal/process/esm_loader.js:68:5<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  generatedMessage: true,
+  code: <span class="token string">'ERR_ASSERTION'</span>,
+  actual: <span class="token number">3</span>,
+  expected: <span class="token number">4</span>,
+  operator: <span class="token string">'strictEqual'</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>JEST:
+THis is all piggybacking off of Jasmine, and grabbing more from Mocha.</p>
+<h2 id="${"deployment"}"><a href="${"#deployment"}">Deployment</a></h2>
+<p><a href="${"https://intro-to-nodejs-v2-site.vercel.app/lesson/12-deployment"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://intro-to-nodejs-v2-site.vercel.app/lesson/12-deployment</a></p>
+<p>This is to publish a npm package.</p>
+<ol class="${"list"}"><li>create an account</li></ol>
+<ol start="${"2"}" class="${"list"}"><li><code>npm publish</code></li></ol>
+<p>How it looks <a href="${"https://www.npmjs.com/package/scott-reddit-cli"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.npmjs.com/package/scott-reddit-cli</a></p>
+<p>Heroku - it\u2019s built on top of AWS but made a lot easier.</p>
+<h2 id="${"wrapup"}"><a href="${"#wrapup"}">Wrapup</a></h2>
+<blockquote><p>[00:01:53]
+Something that I like to do is I like to take a small chunk of time, whether it\u2019s 60 minutes or 90 minutes. Especially in Node and like pick a technology that I\u2019m just not familiar with in Node, whether it\u2019s like streams, WebSockets, HTTPS, a different database. And I\u2019m like, all right, 60 minutes, build the smallest thing you can make with this.</p></blockquote>
+<blockquote><p>[00:02:14]
+Whether it\u2019s following a HelloWorld tutorial on the documentation website, or watching a video. I try to build the smallest thing that I can and I try to do that multiple times. And usually within a week, I really understand that technology to the point where I\u2019m comfortable talking about it, and it\u2019s no longer foreign to me.</p></blockquote>
+<blockquote><p>[00:02:29]
+And I might not be great at it, but I\u2019m no longer foreign. And that\u2019s kinda how I develop my knowledge, and that\u2019s kinda how I move through things. And then when I come across it in the real world, and I use it at work, that\u2019s when I develop a deep knowledge for it.</p></blockquote>
+<blockquote><p>[00:02:41]
+So that\u2019s just some of the tips that I wanted to pass on to you and I don\u2019t know if that\u2019ll work or not, but that\u2019s just how I do things. Other than that, I can leave you with some really cool JavaScript projects or NodeJS projects that I think are really cool.</p></blockquote>
+<p><strong>When to Upgrade NPM packages?</strong></p>
+<p>Only upgrade when you need it.
+<code>npm update [packagename]</code></p>
+<p>Like major updates, there might be a lot of refactors to get there.</p>`
+  })}`;
+});
+var weekFourNodejsV2_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_four_nodejs_v2_svelte,
+  metadata: metadata$8,
+  load: load$2
+});
+var metadata$7 = {
+  "title": "Week One - Getting Started with JavaScript, v2",
+  "created": "2021-10-27T00:00:00.000Z",
+  "summary": "Getting Started with JavaScript, v2. The Three Pillars of JS",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_one_javascript_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$7), {}, {
+    default: () => `<p>Course: Week One - Getting Started with JavaScript, v2
+Instructor: Kyle Simpson</p>
+<h2 id="${"programming-primer"}"><a href="${"#programming-primer"}">Programming Primer</a></h2>
+<p>The Three Pillars of JS in Kyle Simpson\u2019s class are: </p>
+<p>Types &amp; Coercion - How to convert from one to another, checking quality, primatives</p>
+<p>Scope - How data stays within the same space</p>
+<p>this &amp; prototypes - Aligning </p>
+<h2 id="${"types--coercion"}"><a href="${"#types--coercion"}">Types &amp; Coercion</a></h2>
+<p><strong>isNan</strong>
+Something to be aware:
+\u201Cgreeting\u201D is NaN but this is not true \u201Cgreeting\u201D.isNaN</p>
+<p><strong>Coercion</strong></p>
+<p>When you string + number. </p>
+<p>Javascript tries to automagically identify the type based on the first variable.</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">100 + 100 = 200
+&quot;100&quot; + 100 = 100100 because first is string</code>`}<!-- HTML_TAG_END --></pre>
+<p>For example: </p>
+<ul class="${"list"}"><li>It only does numeric math when the first variable is a number.</li>
+<li>It\u2019ll add the strings together when the first variable is a string</li></ul>
+<p>It\u2019s a regrettable choice.</p>
+<p><strong>Double-equals vs triple-equals</strong></p>
+<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript">
+<span class="token comment">// this</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>workshop1<span class="token punctuation">.</span>topic <span class="token operator">===</span> <span class="token keyword">null</span> <span class="token operator">||</span> workshop1<span class="token punctuation">.</span>topic <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
+   <span class="token punctuation">(</span>workshop2<span class="token punctuation">.</span>topic <span class="token operator">===</span> <span class="token keyword">null</span> <span class="token operator">||</span> workshop2<span class="token punctuation">.</span>topic <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+  <span class="token comment">// ... </span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// is the same</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>workshop1<span class="token punctuation">.</span>topic <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span>workshop2<span class="token punctuation">.</span>topic <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+  <span class="token comment">// ... </span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"scope"}"><a href="${"#scope"}">Scope</a></h2>
+<p>The differences:
+<code>undefined</code> - variable that\u2019s been declared but no value given
+<code>undeclared</code> - never been made</p>
+<p><strong>Reducing Scope - The old way:</strong>
+IFEE is a good way to declare a value that you don\u2019t want to change. </p>
+<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript"><span class="token keyword">var</span> teacher <span class="token operator">=</span> <span class="token string">"kyle"</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">(</span> <span class="token keyword">function</span> <span class="token function">anotherTeacher</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">var</span> teacher <span class="token operator">=</span> <span class="token string">"suzy"</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>teacher<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Suzy</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>teacher<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// kyle</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>you can\u2019t change teacher, so it\u2019s like a harden value. </p>
+<p><strong>Reducing Scope - Today, let/const:</strong></p>
+<p>You know, let/const.</p>
+<p><strong>Scoping within closure:</strong></p>
+<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript">
+<span class="token keyword">function</span> <span class="token function">ask</span><span class="token punctuation">(</span><span class="token parameter">question</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token function">holdYourQuestion</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>question<span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">var</span> myQuestion <span class="token operator">=</span> <span class="token function">ask</span><span class="token punctuation">(</span><span class="token string">"What is closure?"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">myQuestion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// What is Closure?</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Think of it like a backpack. It saves the data inside of it.</p>
+<h2 id="${"this--prototypes"}"><a href="${"#this--prototypes"}">this &amp; prototypes</a></h2>
+<p>All objects have a prototype chain</p>
+<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript"><span class="token comment">// Let's create an object o from function F with its own properties a and b:</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">F</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+   <span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+   <span class="token keyword">this</span><span class="token punctuation">.</span>b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// making a copy of F()'s values.</span>
+<span class="token keyword">let</span> o <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">F</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#123;a: 1, b: 2&#125;</span>
+
+<span class="token comment">// add properties in F function's prototype</span>
+<span class="token class-name">F</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>b <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+<span class="token class-name">F</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>c <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+
+<span class="token comment">// see how o doesn't get affected.</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>o<span class="token punctuation">.</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 4</span>
+<span class="token comment">// Is there a 'c' own property on o? No, check its prototype.</span>
+<span class="token comment">// Is there a 'c' own property on o.[[Prototype]]? Yes, its value is 4.</span></code>`}<!-- HTML_TAG_END --></pre>
+<p><a href="${"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain</a></p>`
+  })}`;
+});
+var weekOneJavascript_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_one_javascript_svelte,
+  metadata: metadata$7,
+  load: load$2
+});
+var metadata$6 = {
+  "title": "Week Seven - Deep JS",
+  "created": "2020-12-01T00:00:00.000Z",
+  "summary": "Deep JavaScript Foundations, v3",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_seven_deep_js_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$6), {}, {})}`;
+});
+var weekSevenDeepJs_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_seven_deep_js_svelte,
+  metadata: metadata$6,
+  load: load$2
+});
+var metadata$5 = {
+  "title": "Week Four - Intro to API",
+  "created": "2021-11-18T00:00:00.000Z",
+  "summary": "Modern Search Engine Optimization (SEO)",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_four_api_dev_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$5), {}, {
+    default: () => `<p>Slides: <a href="${"https://slides.com/scotups/api-design-in-node-with-express-v3/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/scotups/api-design-in-node-with-express-v3/</a>
+Repo: <a href="${"https://github.com/FrontendMasters/api-design-node-v3"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/FrontendMasters/api-design-node-v3</a>
+MongoDB hosting: <a href="${"https://mlab.com/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://mlab.com/</a>
+MondoDB in Memory: <a href="${"https://www.npmjs.com/package/mongodb-memory-server"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.npmjs.com/package/mongodb-memory-server</a></p>
+<h2 id="${"introduction"}"><a href="${"#introduction"}">Introduction</a></h2>
+<p>API is: Application programming interface
+They mean REST API. It\u2019s the verb.
+Usually a server on some remote machine that dictates how another application can interact with with some data
+Basic data operations like, Create, Read, Update, Destroy (CRUD)</p>
+<p><strong>Node:</strong>
+Build for high concurrent APIs that are not CPU intensive</p>
+<p>Node.js is Javascript, async and event driven.
+SIngle threaded (can optimize)</p>
+<p>When kept async, Node can handle a high amount of concurrent request.</p>
+<p>Not design for CPU Intensive work (data crunching, ML, big math)</p>
+<p><strong>Express</strong>
+It\u2019s the standard API framework for Node.js</p>
+<p>Handles sockets, route matching, error handling, and more.</p>
+<p>Open source.</p>
+<h2 id="${"express"}"><a href="${"#express"}">Express</a></h2>
+<p>Standard action verbs.
+GET, POST, UPDATE, DELETE</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> message<span class="token operator">:</span> <span class="token string">"hello"</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Insomnia API is a Postman alternative.</p>
+<p><strong>Middleware</strong>
+Middleware is a lsit of functions that execute, in order, before your controllers.</p>
+<p>It\u2019s in the middle of the request &amp; response.</p>
+<ul class="${"list"}"><li>Allow you to execute functions on an incoming request with guaranteed order.</li>
+<li>Great for authenticating, transforming the request, tracking, error handling.</li>
+<li>Middleware can also respond to request like a controller would, but that is not their intent.</li></ul>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// middleware is 'the next'. </span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/data'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"logging"</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Think of a response as a <code>return </code></p>
+<p><strong>Matching route requests</strong></p>
+<p>You\u2019ll often use exact matching, or param matching.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// regex</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/^user/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> message<span class="token operator">:</span> <span class="token string">"hello"</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+<span class="token comment">// glob</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user/*'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> message<span class="token operator">:</span> <span class="token string">"hello"</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+<span class="token comment">// param</span>
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/user/:id'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> message<span class="token operator">:</span> <span class="token string">"hello"</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>POST vs PUT</strong>
+Post is creating something new.
+Put is \u2018putting\u2019 in new information.</p>
+<p><strong>Route Order</strong></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> data<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> data<span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span> <span class="token comment">// this will be the result.</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Router and Sub Routes</strong></p>
+<p><code>const router = express.router()</code></p>
+<p>Why would you use a router?
+if you different authentication strategy. </p>
+<p>[00:04:32]</p>
+<blockquote><blockquote><p>Speaker 2: So why would you use router over app.get?
+Scott Moss: The reason you would use router is if you just didn\u2019t wanna put everything in the same file, honestly. Or if you had, if some part of your API had its own set of rules that you wanted to isolate just for that part of the API, then you would make another router for it.</p></blockquote></blockquote>
+<p>[00:04:56]
+For instance, let\u2019s say you had an API that serves static assets that also serves json, it served this proprietary machine learning thing. And the json one had a different authentication strategy than a machine learning one did, right? So if you added the authentication strategy as middleware to the route, it\u2019ll lock the whole API down.</p>
+<p>[00:05:17]
+That\u2019s not what you want, you need different authentication strategies for different things. So you would make another router for this part of your API, for the json, and register it\u2019s authentication strategy on it\u2019s middleware and then the machine learning one would have it\u2019s authentication strategy on it\u2019s middleware, and they don\u2019t conflict with each other.</p>
+<p><strong>Router Verb Methods</strong></p>
+<p>Instead of creating all the get, post, put, delete\u2026</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span> data<span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">//</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+app<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">//</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>you can use router.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+routes<span class="token punctuation">.</span><span class="token function">router</span><span class="token punctuation">(</span><span class="token string">'/cat/:id'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>item.router.js</strong></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token comment">// item.router.js</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> Router <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'express'</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">controller</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  res<span class="token punctuation">.</span><span class="token function">send</span> <span class="token punctuation">(</span> <span class="token punctuation">&#123;</span> message<span class="token operator">:</span> <span class="token string">'hello'</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">Router</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+router<span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>controller<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>controller<span class="token punctuation">)</span>
+
+<span class="token comment">// /api/item/:id</span>
+router
+  <span class="token punctuation">.</span><span class="token function">route</span><span class="token punctuation">(</span><span class="token string">'/:id'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>controller<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>controller<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>controller<span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> router
+
+<span class="token comment">// server.js</span>
+<span class="token keyword">import</span> itemRouter <span class="token keyword">from</span> <span class="token string">'./resources/item.item.router'</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'/api/item'</span><span class="token punctuation">,</span> itemRouter<span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"data-modeling"}"><a href="${"#data-modeling"}">Data Modeling</a></h2>
+<p>Mongoose for schema.
+The model is what things should look like.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> userSchema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">mongoose<span class="token punctuation">.</span>Schema</span><span class="token punctuation">(</span>
+  <span class="token punctuation">&#123;</span>
+    email<span class="token operator">:</span> String<span class="token punctuation">,</span>
+    name<span class="token operator">:</span> String
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"controllers--models"}"><a href="${"#controllers--models"}">Controllers &amp; Models</a></h2>
+<p>tldr: Controllers are just middleware but with the intent on returning some data.</p>
+<p>Middleware and controllers are the same.</p>
+<p>But Controllers can be anything - like third party library, or Stripe data.</p>
+<p>They are going to return some data.</p>
+<ul class="${"list"}"><li><p>Controllers handle what a Route + Verb combo can access from the DB</p></li>
+<li><p>Think of them as the final middleware in the stack for a request. Their is no intent to proceed to another middleware function after a controller (like a return)</p></li>
+<li><p>Controllers implement the logic that interacts with our DB models</p></li>
+<li><p>Can generalize controllers to work for many models because we\u2019re going with a REST approach which requires CRUD actions on resources</p></li></ul>
+<p><strong>Generalizing CRUD Design Overview</strong></p>
+<p>You\u2019re better off creating
+Create One
+Get One
+Get Many
+Update One
+Delete One</p>
+<p>C - model.create(), new model() //
+R - model.find(), model.findOne(), model.findById() // get one, get many
+U - model.update(), model.findByIdAndUpdate(), model.findOneAndUpdate()
+D - model.remove(), model.findByIdAndUpdate(), model.findOneAndRemove()</p>
+<h2 id="${"auth"}"><a href="${"#auth"}">Auth</a></h2>
+<p>tldr; You can never truly protect an API, but requiring authentication makes it a bit safer</p>
+<p>Your API - will never be entirely safe, but make it hard for them</p>
+<blockquote><p>There\u2019s nothing, cuz your vulnerability are gonna be your users. So either way, your application is just gonna be hacked by somebody if it wants to be. So there really isn\u2019t a safe way, but you can just make it harder for them, and that\u2019s what authentication is gonna do. </p></blockquote>
+<blockquote><p>So authentication is controlling if an incoming request can proceed or not, that\u2019s basically it.</p></blockquote>
+<blockquote><p>[00:01:32]
+Can this request go forward and do what it\u2019s trying to do? That\u2019s authentication at its finest. At least in the context of what we\u2019re gonna be doing. Authorization is controlling if an authenticated request has the correct permissions to access a resource. So after you even authenticate it, we need to see if you\u2019re authorized to do what you\u2019re asking to do.</p></blockquote>
+<blockquote><p>[00:01:52]
+Are you authorized to delete work spaces, are you authorized to change their credit card information, although you are authenticated? So that\u2019s the difference. So that\u2019s like you\u2019re using like some type of roles or something like that. That\u2019s like authorization. Identification is basically, who is this requester? What user is it, what application is it?</p></blockquote>
+<blockquote><p>[00:02:13]
+I need to identify what, who this request is. So, those are the three different things when people, when I hear people say about authentication, they\u2019re really talking about all three of those. They\u2019re just summarizing it with the word Auth. So, that\u2019s basically what it is. What we\u2019re going to be doing is, yeah, basically all three of them.</p></blockquote>
+<p>The THREE:
+Authentication - is controlling if an incoming request can proceed or not</p>
+<p>Authorization - is controlling if an authenticated request has the correct permissions to access a resource</p>
+<p>Identification -  is determining who the requester is</p>
+<p><strong>JWT authentication</strong></p>
+<p>So JWT authentication. They\u2019re basically tokens passed to every single request to check on the auth server.</p>
+<blockquote><p>So if you compare it to something like sessions and cookies on the server, right, that\u2019s a traditional authentication mechanism where, on the server, the server keeps track of sessions stored somewhere.</p></blockquote>
+<blockquote><p>[00:00:20]
+You have some session state where it\u2019s in redis, in memory. Somewhere you\u2019re keeping track of sessions of a user that\u2019s interacted with the database and that\u2019s how you know they are authenticated or not. When they\u2019re not, you get rid of that session. They had to create a new session.</p></blockquote>
+<blockquote><p>[00:00:34]
+So that\u2019s like a stateful authentication method. JWT is the quite opposite. It\u2019s stateless. The server doesn\u2019t keep track of anything. It has no idea what\u2019s happening. They\u2019re not keeping track of who\u2019s asking for anything. All the server does is create a token and gives it to an authenticated requestor.</p></blockquote>
+<blockquote><p>[00:00:51]
+And from that point on, the requestor has to send that token on every single request. It\u2019s stateless. It doesn\u2019t remember what happened last time. You have to send it every single time, and then it checks every single time to see if you\u2019re authenticated. So a JWT authentication is basically a bearer token strategy that allows the API to be stateless with user auth.</p></blockquote>
+<p>They call it a bearer token strategy.</p>
+<p>The API will take the token, and verify it to then return a payload.</p>
+<h2 id="${"wrapup"}"><a href="${"#wrapup"}">Wrapup</a></h2>
+<p>hapi is a framework like express.</p>`
+  })}`;
+});
+var weekFourApiDev_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_four_api_dev_svelte,
   metadata: metadata$5,
   load: load$2
 });
-var css$3 = {
-  code: ".count.svelte-r9iuu8{display:flex;margin-bottom:var(--line-space)}span.svelte-r9iuu8{margin:0 0.5em}",
-  map: null
-};
-var Counter = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let count = 0;
-  $$result.css.add(css$3);
-  return `<div class="${"count svelte-r9iuu8"}"><button type="${"button"}" aria-label="${"decrease count"}">-</button>
-	<span aria-live="${"assertive"}" aria-label="${"count is " + escape(count)}" class="${"svelte-r9iuu8"}">${escape(count)}</span>
-	<button type="${"button"}" aria-label="${"increase count"}">+</button>
-</div>`;
-});
 var metadata$4 = {
-  "title": "MDSveX and Svelte Kit",
-  "created": "2021-05-29T00:00:00.000Z",
-  "summary": "Is it love? It just might be...",
-  "relatedProjectSlugs": ["portfolio-site"]
-};
-var Svelte_kit_mdsvex_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$4), {}, {
-    default: () => `<p>A few weeks ago, I replaced the markdown-based blog setup that was <a href="${"/blog/portfolio-site-2021"}" class="${"text-link"}">previously
-written about</a>. It was due for a make-over with the
-upgrade from Sapper to Svelte Kit. Some of the dependencies was used to make
-that setup work, like <a href="${"https://prismjs.com/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">the code highlighter</a>, is poorly
-modularized. It exists in the global scope, making it a bad fit for Svelte Kit
-which relies heavily on ESM\u2019s import/export for tree shaking and other goodies.</p>
-<p>I was excited to explore how I could solve things better. Through
-experimentation and a lot of help from the <a href="${"https://svelte.dev/chat"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">Svelte Discord
-server</a>, I think I\u2019ve settled on something pretty darn
-good.</p>
-<h2 id="${"enter-mdsvex"}"><a href="${"#enter-mdsvex"}">Enter MDSveX</a></h2>
-<p>MDSveX is Svelte in Markdown. It allows you to write Markdown files that contain
-Svelte components. It\u2019s also a lot more! It is an extensible markdown parser \u2014
-and I\u2019ve found it integrates really nicely with Svelte Kit despite not even
-being designed for it.</p>
-<p>MDSveX comes with the stuff you need from a markdown parser:</p>
-<ul class="${"list"}"><li>A code highlighter automatically highlights code blocks, supporting most
-languages out of the box</li>
-<li>It hooks into the <a href="${"https://github.com/remarkjs/remark"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">remark</a> and
-<a href="${"https://github.com/rehypejs/rehype"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">rehype</a> ecosystems, which let you add
-custom parsing logic</li>
-<li>Front-matter is automatically parsed as metadata, letting you pull it out by
-importing the component (more on this later)</li></ul>
-<p>A typical MDSveX component is defined with the <code>.svx</code> extension. It primarily
-contains Markdown, but it also allows all the Svelte syntax like <code>&lt;script&gt;</code>
-blocks and <code>{curly_braces}</code>.</p>
-<pre class="${"language-markdown"}"><!-- HTML_TAG_START -->${`<code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
-<span class="token font-matter yaml language-yaml">title: My cool counter
-date: 2021-05-20
-summary: A cool counter I made</span>
-<span class="token punctuation">---</span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span>
-  import Count from "./Count.svelte"
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-
-<span class="token title important"><span class="token punctuation">#</span> &#123;title&#125;</span>
-
-Ever want to increment a number? Now you can!
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>Counter</span> <span class="token punctuation">/></span></span></code>`}<!-- HTML_TAG_END --></pre>
-<blockquote><p><strong>My cool counter</strong></p>
-<p>Ever want to increment a number? Now you can!</p>
-${validate_component(Counter, "Counter").$$render($$result, {}, {}, {})}</blockquote>
-<p>Pretty neat, right? Note how the <code>{title}</code> was referenced in the markup. The
-data defined in the front matter can also be accessed as variables in the
-component.</p>
-<p>Because Svelte Kit renders components in <code>src/routes</code> as pages, this file would
-be rendered as a page as well. For example, if you have a file at
-<code>src/routes/blog/my-cool-counter.svx</code> this would result as a page at
-<code>/blog/my-cool-counter</code>.</p>
-<h2 id="${"configuration-and-plugins"}"><a href="${"#configuration-and-plugins"}">Configuration and plugins</a></h2>
-<p>For Svelte Kit, MDSveX plugs in as a preprocessor. MDSveX then transforms all
-<code>.svx</code> files to regular components.</p>
-<p>Here\u2019s a minimal example:</p>
-<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript"><span class="token comment">/* svelte.config.js */</span>
-
-<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> mdsvex <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"mdsvex"</span>
-<span class="token keyword">import</span> sveltePreprocess <span class="token keyword">from</span> <span class="token string">"svelte-preprocess"</span>
-
-<span class="token comment">/** @type &#123;import('@sveltejs/kit').Config&#125; */</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
-	<span class="token comment">// Pick up both .svelte and .svx files</span>
-	extensions<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">".svelte"</span><span class="token punctuation">,</span> <span class="token string">".svx"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-
-	<span class="token comment">// Run mdsvex transformations, then svelte-preprocess</span>
-	preprocess<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">mdsvex</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">sveltePreprocess</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
-<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
-<p>You can further enhance your output by adding <a href="${"https://mdsvex.pngwn.io/docs#remarkplugins--rehypeplugins"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">remark and rehype
-plugins</a> to modify
-the AST before outputting as HTML. For example, here\u2019s a sample of the
-processing on this blog:</p>
-<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript"><span class="token comment">/* svelte.config.js */</span>
-
-<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> mdsvex <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"mdsvex"</span>
-<span class="token keyword">import</span> abbr <span class="token keyword">from</span> <span class="token string">"remark-abbr"</span>
-<span class="token keyword">import</span> urls <span class="token keyword">from</span> <span class="token string">"rehype-urls"</span>
-<span class="token keyword">import</span> slug <span class="token keyword">from</span> <span class="token string">"rehype-slug"</span>
-<span class="token keyword">import</span> autoLinkHeadings <span class="token keyword">from</span> <span class="token string">"rehype-autolink-headings"</span>
-<span class="token keyword">import</span> addClasses <span class="token keyword">from</span> <span class="token string">"rehype-add-classes"</span>
-
-<span class="token keyword">function</span> <span class="token function">processUrl</span><span class="token punctuation">(</span><span class="token parameter">url<span class="token punctuation">,</span> node</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-	<span class="token keyword">if</span> <span class="token punctuation">(</span>node<span class="token punctuation">.</span>tagName <span class="token operator">===</span> <span class="token string">"a"</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-		node<span class="token punctuation">.</span>properties<span class="token punctuation">.</span>class <span class="token operator">=</span> <span class="token string">"text-link"</span>
-
-		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>url<span class="token punctuation">.</span>href<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-			<span class="token comment">// Open external links in new tab</span>
-			node<span class="token punctuation">.</span>properties<span class="token punctuation">.</span>target <span class="token operator">=</span> <span class="token string">"_blank"</span>
-			<span class="token comment">// Fix a security concern with offsite links</span>
-			<span class="token comment">// See: https://web.dev/external-anchors-use-rel-noopener/</span>
-			node<span class="token punctuation">.</span>properties<span class="token punctuation">.</span>rel <span class="token operator">=</span> <span class="token string">"noopener"</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token comment">/** @type &#123;import('@sveltejs/kit').Config&#125; */</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
-	extensions<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">".svelte"</span><span class="token punctuation">,</span> <span class="token string">".svx"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-
-	preprocess<span class="token operator">:</span> <span class="token function">mdsvex</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
-		plugins<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-			remarkPlugins<span class="token operator">:</span> <span class="token punctuation">[</span>abbr<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// adds support for footnote-like abbreviations</span>
-			rehypePlugins<span class="token operator">:</span> <span class="token punctuation">[</span>
-				figure<span class="token punctuation">,</span> <span class="token comment">// convert images into &lt;figure> elements</span>
-				<span class="token punctuation">[</span>urls<span class="token punctuation">,</span> processUrl<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// adds rel and target to &lt;a> elements</span>
-				slug<span class="token punctuation">,</span> <span class="token comment">// adds slug to &lt;h1>-&lt;h6> elements</span>
-				<span class="token punctuation">[</span>autoLinkHeadings<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> behavior<span class="token operator">:</span> <span class="token string">"wrap"</span> <span class="token punctuation">&#125;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// adds a &lt;a> around slugged &lt;h1>-&lt;h6> elements</span>
-				<span class="token punctuation">[</span>addClasses<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> <span class="token string">"ul,ol"</span><span class="token operator">:</span> <span class="token string">"list"</span> <span class="token punctuation">&#125;</span><span class="token punctuation">]</span> <span class="token comment">// add classes to these elements</span>
-			<span class="token punctuation">]</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
-<h2 id="${"layouts"}"><a href="${"#layouts"}">Layouts</a></h2>
-<p>Just like how <code>__layout.svelte</code> wraps around Svelte Kit pages, MDSveX has a way
-to define layouts for <code>.svx</code> files. These are normal Svelte components
-with a <code>&lt;slot&gt;</code>. The slot being where the article goes.</p>
-<pre class="${"language-svelte"}"><!-- HTML_TAG_START -->${`<code class="language-svelte"><span class="token comment">&lt;!-- src/routes/blog/layout.svelte --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
-	<span class="token comment">// These props get filled in from the page's front matter</span>
-	<span class="token keyword">export</span> <span class="token keyword">let</span> title
-	<span class="token keyword">export</span> <span class="token keyword">let</span> coverImageUrl
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token namespace">svelte:</span>head</span><span class="token punctuation">></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span><span class="token language-javascript"><span class="token punctuation">&#123;</span>title<span class="token punctuation">&#125;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:title<span class="token punctuation">"</span></span> <span class="token attr-name">content=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span>title<span class="token punctuation">&#125;</span></span> <span class="token punctuation">/></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:image<span class="token punctuation">"</span></span> <span class="token attr-name">content=</span><span class="token language-javascript"><span class="token punctuation">&#123;</span>coverImageUrl<span class="token punctuation">&#125;</span></span> <span class="token punctuation">/></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token namespace">svelte:</span>head</span><span class="token punctuation">></span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span><span class="token punctuation">></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span><span class="token language-javascript"><span class="token punctuation">&#123;</span>title<span class="token punctuation">&#125;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token punctuation">/></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/blog<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Back to blog index<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
-<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript"><span class="token comment">/* svelte.config.js */</span>
-
-<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> mdsvex <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"mdsvex"</span>
-
-<span class="token comment">/** @type &#123;import('@sveltejs/kit').Config&#125; */</span>
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
-	extensions<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">".svelte"</span><span class="token punctuation">,</span> <span class="token string">".svx"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-
-	preprocess<span class="token operator">:</span> <span class="token function">mdsvex</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
-		<span class="token comment">// This is where the layouts are defined</span>
-		layout<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-			blog<span class="token operator">:</span> <span class="token string">"./src/routes/blog/layout.svelte"</span><span class="token punctuation">,</span>
-			projects<span class="token operator">:</span> <span class="token string">"./src/routes/projects/layout.svelte"</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
-<p>MDSveX will try to guess which layout should be used based on the filename. If
-you have a a blog post at <code>src/routes/blog/my-post.svx</code>, this would use the
-<code>blog</code> layout because the string <code>blog</code> exists in the filename.</p>
-<p>You can also force the layout by defining it in the front matter:</p>
-<pre class="${"language-markdown"}"><!-- HTML_TAG_START -->${`<code class="language-markdown"><span class="token front-matter-block"><span class="token punctuation">---</span>
-<span class="token font-matter yaml language-yaml">layout: article
-title: Article layout example
-coverImageUrl: https://example.com/path/to/my/image.png</span>
-<span class="token punctuation">---</span></span>
-
-I will always use the <span class="token code-snippet code keyword">&#96;article&#96;</span> layout!</code>`}<!-- HTML_TAG_END --></pre>
-<p>Despite having a lot in common, MDSveX layouts currently work as a separate
-system from Svelte Kit\u2019s own <code>__layout.svelte</code>. As I understand this is due to
-technical limitation. It would be cool if MDSveX and Svelte Kit\u2019s layouts could
-be unified in the future. \u{1F427}</p>
-<h2 id="${"rendering-a-list-of-blog-posts"}"><a href="${"#rendering-a-list-of-blog-posts"}">Rendering a list of blog posts</a></h2>
-<p>In order for users to find your blog post, we can provide a list of the posts on
-our site. By utilizing Vite\u2019s
-<a href="${"https://vitejs.dev/guide/features.html#glob-import"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}"><code>import.meta.glob</code></a>, we can
-automatically grab all the <code>.svx</code> files in the current directory. These files
-can be imported as modules, and we can collect metadata from them. Finally, we
-serve the payload as a <a href="${"https://kit.svelte.dev/docs#routing-endpoints"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">Svelte Kit
-endpoint</a>.</p>
-<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">/* src/routes/blog/posts.json.js */</span>
-
-<span class="token keyword">import</span> pMap <span class="token keyword">from</span> <span class="token string">"p-map"</span>
-<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> basename <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"path"</span>
-
-<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-	<span class="token comment">// Import all .svx files in the directory</span>
-	<span class="token keyword">const</span> modules <span class="token operator">=</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span><span class="token function">glob</span><span class="token punctuation">(</span><span class="token string">"./*.svx"</span><span class="token punctuation">)</span>
-
-	<span class="token comment">// Run a map over each module</span>
-
-	<span class="token comment">// Check out the docs for p-map if this looks confusing, it's  basically</span>
-	<span class="token comment">// Array.map(...) but for promises</span>
-	<span class="token keyword">const</span> posts <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">pMap</span><span class="token punctuation">(</span>
-		Object<span class="token punctuation">.</span><span class="token function">entries</span><span class="token punctuation">(</span>modules<span class="token punctuation">)</span><span class="token punctuation">,</span>
-		<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">[</span>filename<span class="token punctuation">,</span> module<span class="token punctuation">]</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-			<span class="token comment">// Import the component. The metadata here is added by MDSveX and mirrors</span>
-			<span class="token comment">// the front matter.</span>
-			<span class="token keyword">const</span> <span class="token punctuation">&#123;</span> metadata <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">module</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-			<span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
-				title<span class="token operator">:</span> metadata<span class="token punctuation">.</span>title<span class="token punctuation">,</span>
-				date<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span>metadata<span class="token punctuation">.</span>date<span class="token punctuation">)</span><span class="token punctuation">,</span>
-				summary<span class="token operator">:</span> metadata<span class="token punctuation">.</span>summary<span class="token punctuation">,</span>
-				slug<span class="token operator">:</span> <span class="token function">basename</span><span class="token punctuation">(</span>filename<span class="token punctuation">,</span> <span class="token string">".svx"</span><span class="token punctuation">)</span> <span class="token comment">// Generate a slug we can link to</span>
-			<span class="token punctuation">&#125;</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">)</span>
-
-	<span class="token comment">// Sort posts by descending date</span>
-	posts<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>a<span class="token punctuation">.</span>date <span class="token operator">></span> b<span class="token punctuation">.</span>date <span class="token operator">?</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-
-	<span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
-		body<span class="token operator">:</span> <span class="token punctuation">&#123;</span> posts <span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
-<p>On requesting <code>GET /blog/posts.json</code> it would return this JSON:</p>
-<pre class="${"language-json"}"><!-- HTML_TAG_START -->${`<code class="language-json"><span class="token punctuation">&#123;</span>
-	<span class="token property">"posts"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
-		<span class="token punctuation">&#123;</span>
-			<span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"So I tried out MDSveX on Svelte Kit"</span><span class="token punctuation">,</span>
-			<span class="token property">"date"</span><span class="token operator">:</span> <span class="token string">"2021-05-19T00:00:00.000Z"</span><span class="token punctuation">,</span>
-			<span class="token property">"summary"</span><span class="token operator">:</span> <span class="token string">"And not too surprisingly I really like it"</span><span class="token punctuation">,</span>
-			<span class="token property">"slug"</span><span class="token operator">:</span> <span class="token string">"svelte-kit-mdsvex"</span>
-		<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-		<span class="token punctuation">&#123;</span>
-			<span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Crafting the portfolio site"</span><span class="token punctuation">,</span>
-			<span class="token property">"date"</span><span class="token operator">:</span> <span class="token string">"2021-02-26T00:00:00.000Z"</span><span class="token punctuation">,</span>
-			<span class="token property">"summary"</span><span class="token operator">:</span> <span class="token string">"Updated portfolio website for 2021. Built with Sapper and Svelte."</span><span class="token punctuation">,</span>
-			<span class="token property">"slug"</span><span class="token operator">:</span> <span class="token string">"portfolio-site-2021"</span>
-		<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-		<span class="token punctuation">&#123;</span>
-			<span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Reimagining Type Kana"</span><span class="token punctuation">,</span>
-			<span class="token property">"date"</span><span class="token operator">:</span> <span class="token string">"2020-08-02T00:00:00.000Z"</span><span class="token punctuation">,</span>
-			<span class="token property">"summary"</span><span class="token operator">:</span> <span class="token string">"A quiz app to help you learn hiragana and katakana, the Japanese syllabaries."</span><span class="token punctuation">,</span>
-			<span class="token property">"slug"</span><span class="token operator">:</span> <span class="token string">"type-kana"</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">]</span>
-<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
-<p>The data could then be fetched in a <a href="${"https://kit.svelte.dev/docs#loading"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">loading
-function</a>, and provided to a page to render
-this as a list of blog posts.</p>
-<h2 id="${"pain-points"}"><a href="${"#pain-points"}">Pain points</a></h2>
-<h3 id="${"typescript"}"><a href="${"#typescript"}">TypeScript</a></h3>
-<p>If you\u2019re familiar working with TypeScript in Svelte, you\u2019ll unfortunately have
-to skip it when it comes to the MDSveX parts of your application. MDSveX does
-not play nice with svelte-preprocess, and will break your whole app if it runs
-into process <code>&lt;script lang=&quot;ts&quot;&gt;</code>. This is tracked in <a href="${"https://github.com/pngwn/MDsveX/issues/116"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">issue
-#116</a>.</p>
-<h3 id="${"loading"}"><a href="${"#loading"}">Loading</a></h3>
-<p><a href="${"https://kit.svelte.dev/docs#loading"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}"><code>load</code></a> can be really useful for fetching
-additional content before component render time. Sometimes, there\u2019s also a case
-for wanting to do this in a MDSveX layout, say if you want to render a list of
-related posts. Unfortunately, load is only supported in components that define a
-page. This means that if you want to fetch some data for <em>each</em> blog post you\u2019d
-have to do something like this inside each <code>.svx</code> file that uses the layout:</p>
-<pre class="${"language-svelte"}"><!-- HTML_TAG_START -->${`<code class="language-svelte"><span class="token comment">&lt;!-- src/routes/blog/my-post.svx --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">context</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>module<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
-	<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> load <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"./_load"</span>
-	<span class="token keyword">export</span> <span class="token punctuation">&#123;</span> load <span class="token punctuation">&#125;</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
-<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript"><span class="token comment">/* src/routes/blog/_load.ts */</span>
-<span class="token keyword">export</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">load</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> fetch<span class="token punctuation">,</span> page <span class="token punctuation">&#125;</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-	<span class="token comment">// /related.json is an endpoint that returns all related blog posts/projects</span>
-	<span class="token keyword">const</span> url <span class="token operator">=</span> page<span class="token punctuation">.</span>path <span class="token operator">+</span> <span class="token string">"/related.json"</span>
-	<span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
-
-	<span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>ok<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-		<span class="token keyword">const</span> <span class="token punctuation">&#123;</span> projects <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token keyword">await</span> res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-
-		<span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
-			props<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-				relatedProjects<span class="token operator">:</span> projects
-			<span class="token punctuation">&#125;</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
-		<span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
-			status<span class="token operator">:</span> res<span class="token punctuation">.</span>status<span class="token punctuation">,</span>
-			error<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">"Failed to fetch "</span> <span class="token operator">+</span> url<span class="token punctuation">)</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
-<pre class="${"language-svelte"}"><!-- HTML_TAG_START -->${`<code class="language-svelte"><span class="token comment">&lt;!-- src/routes/blog/_layout.svelte --></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
-	<span class="token keyword">export</span> <span class="token keyword">let</span> relatedPosts
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
-
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token punctuation">/></span></span>
-
-<span class="token each"><span class="token punctuation">&#123;</span><span class="token keyword">#each</span> <span class="token language-javascript">relatedPosts </span><span class="token keyword">as</span> <span class="token language-javascript">post<span class="token punctuation">&#125;</span></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href="</span>/<span class="token attr-name">blog</span>/<span class="token language-javascript"><span class="token punctuation">&#123;</span>post<span class="token punctuation">.</span>slug<span class="token punctuation">&#125;</span></span><span class="token attr-name">"</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-link<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-			<span class="token language-javascript"><span class="token punctuation">&#123;</span>post<span class="token punctuation">.</span>title<span class="token punctuation">&#125;</span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
-		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>quiet<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>- <span class="token language-javascript"><span class="token punctuation">&#123;</span><span class="token function">friendlyDate</span><span class="token punctuation">(</span>post<span class="token punctuation">.</span>date<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
-	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
-<span class="token each"><span class="token punctuation">&#123;</span><span class="token keyword">/each</span><span class="token punctuation">&#125;</span></span></code>`}<!-- HTML_TAG_END --></pre>
-<p>All of that is kind of roundabout, but it achieves the desired effect.</p>
-<h2 id="${"thats-a-wrap"}"><a href="${"#thats-a-wrap"}">That\u2019s a wrap</a></h2>
-<p>MDSveX helps bridge the gap between a simple personal blog and full blown <abbr title="${"Content management system"}">CMS</abbr>
-powered website. It makes writing new blog posts easy without having to add a
-complex blog writing system to your application. For my use case it\u2019s perfect!</p>
-<p>The source code for the site is available on GitHub, linked below. Check it out
-if you want to learn more.</p>
-<p>That\u2019s all for now!</p>
-`
-  })}`;
-});
-var svelteKitMdsvex_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Svelte_kit_mdsvex_svelte,
-  metadata: metadata$4,
-  load: load$2
-});
-var metadata$3 = {
   "title": "Week One - Web Dev V2",
   "created": "2021-10-25T00:00:00.000Z",
   "summary": "All the notes about Web Dev V2",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
-var Week_one_blogpost_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$3), {}, {
-    default: () => `<h2 id="${"using-ajax-and-nodejs"}"><a href="${"#using-ajax-and-nodejs"}">Using Ajax and Node.js</a></h2>
-<p>other stuff</p>
+var Week_one_webdev_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$4), {}, {
+    default: () => `<p>Course: <a href="${"https://frontendmasters.com/courses/web-development-v2/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/web-development-v2/</a>
+Instructor: Brian Holt</p>
+<h2 id="${"using-ajax-and-nodejs"}"><a href="${"#using-ajax-and-nodejs"}">Using Ajax and Node.js</a></h2>
+<p>Brian Holt\u2019s method of using a Javascript Library:</p>
+<ol class="${"list"}"><li>Grab library via CDN</li>
+<li>steal code, </li>
+<li>bastardize it.</li></ol>
+<pre class="${"language-javascript"}"><!-- HTML_TAG_START -->${`<code class="language-javascript"><span class="token keyword">const</span> popmotion <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'popmotion'</span><span class="token punctuation">)</span> <span class="token comment">// CommonJS - the old way</span>
+<span class="token comment">//  require("./useless") &lt;-- commonjs</span>
+
+use <span class="token keyword">import</span> x from y <span class="token comment">// ES modules - more improved way</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>HOT TIP: In VSCode, hover over the required(), and click on the lightbulb will \u201Cfix\u201D everything for you, using import.</p>
+<p>You can use <code>-y</code> to say yes to all. </p>
+<pre class="${"language-bash"}"><!-- HTML_TAG_START -->${`<code class="language-bash">$ <span class="token function">npm</span> init -y <span class="token punctuation">(</span>yes to all<span class="token punctuation">)</span>
+$ <span class="token function">npm</span> info <span class="token punctuation">[</span>package<span class="token punctuation">]</span> // gives you info on what it is <span class="token keyword">in</span> the terminal</code>`}<!-- HTML_TAG_END --></pre>
 <h2 id="${"learning-git"}"><a href="${"#learning-git"}">Learning Git</a></h2>
-<p>other stuff</p>
+<p><strong>Links</strong></p>
+<p><a href="${"https://www.sourcetreeapp.com/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">SourceTree</a>
+Git GUI.</p>
+<p><a href="${"https://explainshell.com/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">explainshell.com</a>
+It\u2019s like a documentation for bash shell commands </p>
+<p>You can also do this: <code>$ man ls - for manual of ls</code></p>
+<p><a href="${"https://ohshitgit.com/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">ohshitgit</a>
+If you f\u2019 up, here\u2019s some recipes.
+Personally, I feel like it\u2019s better to stick with a GUI.</p>
+<p><a href="${"https://choosealicense.com/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">For your repo</a>
+Let\u2019s you choose what type of license. Work with a community, make it simple, share about improvements, MUST be open source, etc.</p>
+<p>First, attach a LICENSE file in your repo.
+Then, pick a license that aligns with you.</p>
+<p>You have legal support to do things.
+NONCOMMERCIAL - if you steal it, i can bring legal.
+Very few use GNU (copyleft).</p>
+<p><strong>How to make a file:</strong></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">echo &quot;&lt;h1&gt;title&lt;/h1&gt;&quot; &gt; index.html &lt;--- means to make a file</code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>How to exit vim</strong></p>
+<p>1) vi html</p>
+<p>2) i insert mode</p>
+<p>3) esc --- goes to command mode</p>
+<p>4) colon q --- not so fast</p>
+<p>5) colon w --- save</p>
+<p>6) colon wq --- fast and save</p>
 <h2 id="${"using-nodejs"}"><a href="${"#using-nodejs"}">Using Node.js</a></h2>
-<p>other stuff</p>`
+<p>Using Express: <a href="${"https://btholt.github.io/intro-to-web-dev-v2/node"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://btholt.github.io/intro-to-web-dev-v2/node</a></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"express"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"path"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> complements <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token string">"You like nice today"</span><span class="token punctuation">,</span>
+  <span class="token string">"That dress looks nice on you"</span><span class="token punctuation">,</span>
+  <span class="token string">"Have you been working out?"</span><span class="token punctuation">,</span>
+  <span class="token string">"You can do hard things"</span><span class="token punctuation">,</span>
+  <span class="token string">"You've gotten far in this course. You're really smart"</span><span class="token punctuation">,</span>
+  <span class="token string">"You're programming! How cool is that?"</span><span class="token punctuation">,</span>
+  <span class="token string">"I'm really proud of you"</span><span class="token punctuation">,</span>
+  <span class="token string">"You made this"</span><span class="token punctuation">,</span>
+  <span class="token string">"You've learned a lot of things, and that's pretty hard to do"</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">getRandomComplement</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> randomIndex <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> complements<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> complements<span class="token punctuation">[</span>randomIndex<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">express</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">"/"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  res<span class="token punctuation">.</span><span class="token function">sendFile</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">"index.html"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">"/complement"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  res
+    <span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+      complement<span class="token operator">:</span> <span class="token function">getRandomComplement</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token string">"/public"</span><span class="token punctuation">,</span> express<span class="token punctuation">.</span><span class="token function">static</span><span class="token punctuation">(</span><span class="token string">"./public"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">3000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"listening on http://localhost:3000"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>req = request
+res = response
+you have to res.end to end the server call
+express framework to build a quick api
+http is a low-level thing.
+express wrap it with support stuff</p>`
   })}`;
 });
-var weekOneBlogpost_svelte = /* @__PURE__ */ Object.freeze({
+var weekOneWebdev_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": Week_one_blogpost_svelte,
+  "default": Week_one_webdev_svelte,
+  metadata: metadata$4,
+  load: load$2
+});
+var metadata$3 = {
+  "title": "Week Three - Modern SEO",
+  "created": "2021-11-08T00:00:00.000Z",
+  "summary": "Modern Search Engine Optimization (SEO)",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_three_seo_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$3), {}, {
+    default: () => `<h2 id="${"traditional-seo-strategies"}"><a href="${"#traditional-seo-strategies"}">Traditional SEO Strategies</a></h2>
+<p>Traversal through crawlers. </p>
+<p><strong>Page Rank:</strong>
+It\u2019s about your trust factor to a specific topic. </p>
+<p>So if your page is known for both coffee and law, and you get links on mostly coffee shops, you\u2019re not going to get much trust in the law side. </p>
+<p>Linking to your own page makes your topigraphy more enriched. </p>
+<figure><img src="${"https://i.imgur.com/lC18GRn.png"}"></figure>
+<p>It\u2019s cheaper, and more focused. But you\u2019ll have to buy 1000+ keywords to make it work.
+Words that are relevant to your business.</p>
+<p><strong>Instructor: Why is car donation so high?</strong>
+Key words were at $70.
+Because car donations gave you tax breaks at roughly $1200. </p>
+<p><strong>Link Building Campaign</strong>
+Create \u2018key pages\u2019 for popular products &amp; services.
+Like, for Frontendmasters -&gt; Create Junior/Intermediate/Professional tiers.
+Because new courses will always exist, but those keys will always be forever.</p>
+<p><strong>White Hat SEO VS Black Hat SEO</strong>
+JC Penney a few years ago hired a black hat SEO who crushed their ranking from page 1 to page 8.</p>
+<p><a href="${"https://www.nytimes.com/2011/02/13/business/13search.html"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">Reference</a></p>
+<blockquote><p>If you own a Web site, for instance, about Chinese cooking, your site\u2019s Google ranking will improve as other sites link to it. The more links to your site, especially those from other Chinese cooking-related sites, the higher your ranking. In a way, what Google is measuring is your site\u2019s popularity by polling the best-informed online fans of Chinese cooking and counting their links to your site as votes of approval.</p></blockquote>
+<blockquote><p>But even links that have nothing to do with Chinese cooking can bolster your profile if your site is barnacled with enough of them. And here\u2019s where the strategy that aided Penney comes in. Someone paid to have thousands of links placed on hundreds of sites scattered around the Web, all of which lead directly to JCPenney.com.</p></blockquote>
+<blockquote><p>At 7 p.m. Eastern time on Wednesday, J. C. Penney was still the No. 1 result for \u201CSamsonite carry on luggage.\u201D
+Two hours later, it was at No. 71.</p></blockquote>
+<blockquote><p>At 7 p.m. on Wednesday, Penney was No. 1 in searches for \u201Cliving room furniture.\u201D
+By 9 p.m., it had sunk to No. 68.</p></blockquote>
+<p><strong>Removing Bad links</strong>
+Will be penalized.
+Remove link reference from spammy websites.
+Using Google Disavow Tools.
+Elmininate mutual \u2018link exchange\u2019 with other sites.</p>
+<p><strong>Ad Campaigns Pricing</strong></p>
+<p>For apps, there\u2019s CPI - cost per install.
+You add a callback after the install is finished.</p>
+<p><strong>Basic Metadata</strong>
+Keywords don\u2019t matter anymore.</p>
+<h2 id="${"social-metadata"}"><a href="${"#social-metadata"}">Social Metadata</a></h2>
+<p><strong>Facebook OpenGraph</strong>
+<code>&lt;meta property=&quot;og:url&quot; content=&quot;http://www.nytimes...&quot;&gt;</code></p>
+<p>Known as a conanical URL
+usually the desktop version
+no sessions</p>
+<p>The content gives special unique features to the post on Facebook.
+<a href="${"https://developers.facebook.com/docs/sharing/webmasters/#media"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://developers.facebook.com/docs/sharing/webmasters/#media</a></p>
+<p>Open Graph is becoming more common. </p>
+<h2 id="${"structured-data"}"><a href="${"#structured-data"}">Structured Data</a></h2>
+<figure><img src="${"https://i.imgur.com/r4xnWJi.png"}"></figure>
+<p>With metadata, you can control the breadcrumb list. </p>
+<h2 id="${"mobile-optimizations"}"><a href="${"#mobile-optimizations"}">Mobile Optimizations</a></h2>
+<p>Google forked their search index.
+For mobile-specific index versus everything else.
+So you get different search results.</p>
+<figure><img src="${"https://i.imgur.com/ZKde67P.png"}"></figure>
+<p><strong>manifest.json</strong></p>
+<p>It\u2019s a json of special things
+192x size of android
+512x size for android start screen</p>
+<p>theme_color is the color of the app. </p>
+<h2 id="${"accelerated-mobile-pages-amp-project"}"><a href="${"#accelerated-mobile-pages-amp-project"}">Accelerated Mobile Pages (AMP) Project</a></h2>
+<p>AMP keeps third-party JS off the critial path.</p>
+<p>Copy paste a specific meta tag.
+Img tag doesn\u2019t work for AMP.
+Styles are also custom using inline.</p>`
+  })}`;
+});
+var weekThreeSeo_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_three_seo_svelte,
   metadata: metadata$3,
   load: load$2
 });
 var metadata$2 = {
-  "title": "Reimagining Type Kana",
-  "created": "2021-03-04T00:00:00.000Z",
-  "summary": "A quiz app to help you learn hiragana and katakana, the Japanese syllabaries.",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg",
-  "tags": ["type-kana"],
-  "relatedProjectSlugs": ["type-kana"]
+  "title": "Week One - CSS Grids and Flexbox",
+  "created": "2021-10-29T00:00:00.000Z",
+  "summary": "CSS Grids and Flexbox for Responsive Web Design",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
-var Type_kana_svelte$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+var Week_one_css_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$2), {}, {
-    default: () => `<figure><img src="${"/media/projects/type-kana/session.jpg"}" alt="${"Type Kana screenshot that shows a typical gameplay\nsession"}"></figure>
-<p>Type Kana is web app with a goal to help you learn to learn hiragana and
-katakana, the Japanese syllabaries.</p>
-<p>Type Kana takes inspiration from its predecessors, <a href="${"https://lab.fleon.org/type-kana/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">Type
-Kana</a> (will be referred to as \u201Cthe original\u201D)
-and <a href="${"https://realkana.com/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">Real Kana</a>. While they both have their strengths,
-neither was perfect.</p>
-<p>Type Kana aims to be the best way to study <abbr title="${"Collective name for hiragana and katakana"}">kana</abbr>, by
-combining the best features from its predecessors, along with some fresh ideas.
-The end goal is to create a study experience that both functional and pretty,
-and built on the newest standards in web technology.</p>
-<h2 id="${"study-options"}"><a href="${"#study-options"}">Study options</a></h2>
-<p>The first thing I immediately wanted to fix from the original Type Kana is to
-make it more friendly to beginners. The original tests you on the full set of
-katakana or hiragana at time. If, for example, you only know 50% of hiragana,
-then you\u2019d get the wrong answer 50% of the time. This pushes \u201Cyou messed up\u201D
-feedback to the user frequently. This feels punishing to new learners. I strived
-to fix this by allowing the user to pick what they can study.</p>
-<figure><video autoplay loop playsinline muted><source src="${"/media/projects/type-kana/select-kana.mov"}" type="${"video/mp4"}"></video>
-  <figcaption>You can granularly select what to study now. Note the unique effect with 
-    \u201Cboth\u201D selected.
-  </figcaption></figure>
-<p>Something I struggled with was a good way to visually represent that you can
-select any <abbr title="${"Collective name for hiragana and katakana"}">kana</abbr> for the quiz, but while also allowing the user to study both
-pairs in one session. After some brainstorming with a friend, we figured out an
-intuitive solution for this --- When you have \u2018both\u2019 selected and select a <abbr title="${"Collective name for hiragana and katakana"}">kana</abbr>,
-the katakana form first appears, and a short while later the hiragana form drops
-down on top. This communicates a good visual metaphor for what is being
-selected.</p>
-<h2 id="${"the-quiz"}"><a href="${"#the-quiz"}">The quiz</a></h2>
-<figure><video autoplay loop playsinline muted><source src="${"/media/projects/type-kana/session.mov"}" type="${"video/mp4"}"></video>
-  <figcaption>Quiz in action!
-  </figcaption></figure>
-<p>Implementing the quiz itself was pretty straight forward. I started by
-inheriting the clever \u201Ctypewriter\u201D layout that the original Type Kana invented.
-I worked iteratively on this design until I arrived at something pretty and
-functional.</p>
-<p>The quiz comes with some options to tailor your learning experience for you, one
-such feature allows you to retry failed answers. The feature is pretty simple
---- fail an item and it will appear later in the queue for review again. This
-was something that worked really nicely in RealKana, so I borrowed it.</p>
-<p>Another option is the ability to automatically submit your answer without the
-need to press space. It comes in two flavors:</p>
-<ul class="${"list"}"><li><strong>Forgiving</strong> \u2014 Submit if answer is correct.</li>
-<li><strong>Strict</strong> \u2014 Submit if answer is correct <strong>or wrong</strong>.</li></ul>
-<p>The logic for these cases is pretty fun:</p>
-<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">handleInput</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-	<span class="token comment">// get an array of valid answers</span>
-	<span class="token comment">// ["shi", "si"]</span>
-	<span class="token keyword">const</span> answers <span class="token operator">=</span> <span class="token function">getAnswers</span><span class="token punctuation">(</span>currentKana<span class="token punctuation">)</span>
-
-	<span class="token comment">// $settings.autoCommit can have 3 different values:</span>
-	<span class="token comment">// "disabled" | "forgiving" | "strict"</span>
-	<span class="token keyword">if</span> <span class="token punctuation">(</span>
-		<span class="token punctuation">(</span>$settings<span class="token punctuation">.</span>autoCommit <span class="token operator">!==</span> <span class="token string">"disabled"</span> <span class="token operator">&amp;&amp;</span>
-			<span class="token function">isCorrectAnswer</span><span class="token punctuation">(</span>input<span class="token punctuation">,</span> currentKana<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">||</span>
-		<span class="token punctuation">(</span>$settings<span class="token punctuation">.</span>autoCommit <span class="token operator">===</span> <span class="token string">"strict"</span> <span class="token operator">&amp;&amp;</span>
-			<span class="token operator">!</span>answers<span class="token punctuation">.</span><span class="token function">some</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">answer</span><span class="token punctuation">)</span> <span class="token operator">=></span> answer<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span>input<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-	<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-		<span class="token function">handleSubmit</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-	<span class="token punctuation">&#125;</span>
+    default: () => `<p>Course: <a href="${"https://frontendmasters.com/courses/css-grids-flexbox"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/css-grids-flexbox</a>
+Instructor: Jen Kramer</p>
+<h2 id="${"floats"}"><a href="${"#floats"}">Floats</a></h2>
+<p>After float, you must clear</p>
+<p>Using the psuedo after table hack.</p>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css"><span class="token selector">.row::after</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> table<span class="token punctuation">;</span>
+  <span class="token property">clear</span><span class="token punctuation">:</span> both<span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
-<hr>
-<blockquote><p>Since writing, the app is now built using SvelteKit, the successor to Sapper.
-This comes with full <abbr title="${"Progressive web app"}">PWA</abbr> support out of the box, yippee!</p></blockquote>
-<p>In the hopefully not so distant future I would like to look into adding <abbr title="${"Progressive web app"}">PWA</abbr>
-support using Sapper (or <a href="${"https://svelte.dev/blog/whats-the-deal-with-sveltekit"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">whatever its replacement will
-be</a>). This way you
-wouldn\u2019t need an internet connection to be able to use Type Kana, and you could
-install it onto your phone.</p>
-<p>You can check out the project and its source code at the links below.</p>
-`
+<p>Floats requires you to use \u201Cmagic math\u201D, like 97% instead of 100%.
+margin 4%, you\u2019ll have to do all this weird math.</p>
+<h2 id="${"flexbox"}"><a href="${"#flexbox"}">Flexbox</a></h2>
+<p>made in 2009
+2012 was when it became flex.</p>
+<p>If you use a lot of col-class, you can do this</p>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css"><span class="token selector">[class*="col-"]</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">margin-left</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"flexbox-grid"}"><a href="${"#flexbox-grid"}">Flexbox Grid</a></h2>
+<p>Her exercises are assuming 96% total width, so she\u2019s using magic math of 16% gutters and a leftover 4%.</p>
+<p>DON\u2019T DO THAT.
+WTF.
+Stop with the magic numbers.</p>
+<p>There\u2019s <code>gap</code>. </p>
+<h2 id="${"responsive-images"}"><a href="${"#responsive-images"}">Responsive Images</a></h2>
+<p>Image sizes:</p>
+<ul class="${"list"}"><li>Server-side - load big image. Not ideal.</li>
+<li>Server-side - manage multiple version, show based on need. Like WordPress! Good!</li>
+<li>Client-side - manage multiple version, load images with hide/display. Not ideal, since all images will be downloaded.</li>
+<li>Client-side - Javascript library, Good!</li></ul>
+<p>Modern responsive design using <code>&lt;picture&gt;</code> tag.</p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token comment">&lt;!-- media is like media query --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>picture</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">srcset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img/peace-pie-original.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">media</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(min-width: 1200px)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">srcset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img/peace-pie-original.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">media</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(min-width: 1200px)<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>img/peace-pie-150.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>a rainbow colored pie<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>picture</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!-- img is where you place the mobile, alt tag, and fallback --></span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"css-grid"}"><a href="${"#css-grid"}">CSS Grid</a></h2>
+<p><strong>Support</strong>
+<code>@support</code> tag
+If the browser supports the new feature, use it.
+That\u2019s IF the browser even has the <code>@support</code> tag, but that was like 2 years ago. </p>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css"><span class="token atrule"><span class="token rule">@supports</span> <span class="token punctuation">(</span><span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">)</span></span> <span class="token punctuation">&#123;</span>
+  <span class="token selector">div</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p><a href="${"https://developer.mozilla.org/en-US/docs/Web/CSS/@supports"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://developer.mozilla.org/en-US/docs/Web/CSS/@supports</a></p>
+<p><strong>Grid Properties</strong></p>
+<p>fr - fragments</p>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css"><span class="token selector">.myClass</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> [col1] 40px [col2] 3fr<span class="token punctuation">;</span>
+  <span class="token property">grid-template-rows</span><span class="token punctuation">:</span> 50% 25vh auto<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>`
   })}`;
 });
-var typeKana_svelte$1 = /* @__PURE__ */ Object.freeze({
+var weekOneCss_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": Type_kana_svelte$1,
+  "default": Week_one_css_svelte,
   metadata: metadata$2,
   load: load$2
 });
@@ -15432,7 +18268,7 @@ var Work = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.projects === void 0 && $$bindings.projects && projects !== void 0)
     $$bindings.projects(projects);
   $$result.css.add(css$2);
-  return `${$$result.head += `${$$result.title = `<title>Work \xB7 Cassidy Bandy</title>`, ""}`, ""}
+  return `${$$result.head += `${$$result.title = `<title>Work \xB7 Rocky Kev</title>`, ""}`, ""}
 
 <article class="${"article"}"><h1>Work</h1>
 	<ul class="${"list"}">${each(projects, (project) => `<li><a href="${"/work/" + escape(project.slug)}" class="${"text-link"}">${escape(project.name)}</a>

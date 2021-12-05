@@ -1,5 +1,5 @@
 ---
-title: Week Six - JS Object Oriented
+title: Week Five - JS Object Oriented
 created: 2021-11-27T00:00:00
 summary: The Hard Parts of Object Oriented JavaScript
 coverImageUrl: /media/projects/type-kana/session.jpg
