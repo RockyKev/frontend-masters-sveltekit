@@ -1,6 +1,6 @@
 ---
 title: Week Six - Javascript The Hard Parts
-created: 2020-12-05T00:00:00
+created: 2021-12-05T00:00:00
 summary: JavaScript The Hard Parts, v2
 coverImageUrl: /media/projects/type-kana/session.jpg
 ---

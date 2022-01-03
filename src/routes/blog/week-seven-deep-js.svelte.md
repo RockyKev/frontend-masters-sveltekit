@@ -1,6 +1,6 @@
 ---
-title: DRAFT Week Seven - Deep JS
-created: 2020-12-01T00:00:00
+title: Week Seven - Deep JS
+created: 2021-12-12T00:00:00
 summary: Deep JavaScript Foundations, v3 
 coverImageUrl: /media/projects/type-kana/session.jpg
 ---
@@ -363,3 +363,440 @@ A HOUR.
 
 Difference between Typescript and Flow
 https://github.com/niieani/typescript-vs-flowtype
+
+
+## Scope and Typing
+
+### Static Typing
+
+
+
+## Scope
+
+How does Javascript go, "Your Line 10 variable is undefined"
+
+The 4 stages of compiling.
+
+
+In bash, if there's an error in line 4, lines 1, 2, & 3 runs.
+
+Javascript is a compile language.
+The computer compiles the code before running. 
+
+Some say something like Java, it compiles, then it runs. 
+
+Javascript does it too. It interpret's the code, then fires it to the Javascript Engine.
+
+### Compile & Run
+
+Javascript is a TWO-PASS system.
+
+1. Compile Time (Processing or Parsing)
+2. Run time (Executing)
+
+THe first pass: 
+It doesn't ACTUALLY create it. 
+It's actually 'planning the idea' of creating it. 
+It creates a 'treasure map'. 
+
+The second pass:
+When it runs!
+That's where things get assigned.
+So now it follows the treasure map, and does it.
+
+
+
+```js
+
+function otherClass() { // ... }
+
+otherClass();
+```
+
+Remember, functions don't really exist. They exist 'symbolically.'
+
+
+A bad part of Javascript
+
+**Dynamic Global Variables** 
+
+If you declare a variable without declaring it... it automatically creates a auto-global.
+
+**NOTE: This does not work in strict mode**
+
+NEVER EVER auto-create them.
+```js
+var teacher = "Kyle";
+
+function otherClass() {
+    teacher = "Suzy";
+    topic = "React"; // automatically made and thrown in global 
+
+}
+```
+
+
+Type Error: It means that the type is wrong. Like passing a object into a string the wrong way.
+
+Ref error: I cannot find the variable! There was no reference!
+
+Strict mode is not always on. If you're compiling, it always uses Strict Mode.
+
+
+### Diff between undefined vs undeclared
+
+undefined -- It doesn't have a value yet.
+
+undeclared -- Never been formally declared.
+
+
+### Arrow functions
+
+
+KYLE'S OPINION
+(Named) Function Declaration 
+
+is better than
+
+Named Function Expression
+
+is better than 
+
+Anonymous Function Expression
+
+
+```js
+// function declarion
+function getId(id) { // ... }
+
+// named function expression
+const studentId = function getId(id) { // ... }
+
+
+// anon function express
+const studentId = (id) => studentBody.filter(id)
+```
+
+### Scope and Function Expressions
+
+### Advanced Scope
+
+**Lexical scope**
+
+Almost every language with compilers use lexical scope. Bash is not lexical scope.
+
+It's figured out in author time. When you're writing it. 
+
+It's not figured out in run time.
+
+** Dynamic Scope**
+
+It does NOT exist in Javascript!
+
+```js
+
+function ask(question) {
+    console.log(teacher, question); // will get teacher from otherAsk();
+}
+
+function otherAsk() {
+    var teacher = "Suzy";
+}
+```
+
+The Principle of Least Privilege (least exposure)
+
+1. Keep everything private. Sets up a defensive posture.
+
+2. Reduces surface area. Hide it, and you prevent them from access it.
+
+3. You protect yourself from future refactoring. If you use it, my changes will break your code. 
+
+**IIFE Pattern** & **Block Scoping**
+
+It runs because `()()`
+
+```js
+// IIFE
+( function sayTeacher(teacher) {
+    console.log(teacher)
+})("suzy");
+
+// Blocks Scope
+// It's only a block scope with let/const
+{
+    let teacher = "Suzy";
+    console.log(teacher);
+}
+
+```
+
+KYLE'S HOT TAKE: `var` has a place.
+
+He believes `let` should only be used in a few lines of the function.
+
+Where `var` represents a function's variable. 
+
+You can create a 'symantic signal'. 
+
+**Block scoping**
+
+Kyle's idea: 
+
+If using a variable for a few lines, use a block statement.
+
+![](https://i.imgur.com/w3xvKeH.png)
+
+**const problem**
+
+Kyle's take: 
+
+```js
+
+const teachers = ['kyle', 'suzy'];
+teachers[1] = "brian"; // ALLOWED
+
+```
+
+Kyle only uses const only for primitives. Like strings, booleans, numbers. 
+
+
+
+**Hoisting**
+
+It's not actually a real thing. It does not move things. It's a metaphor. 
+
+Kyle's take -- 
+
+It's because people don't want to think about the two-pass process. 
+
+**TDZ**
+
+```js
+teacher = 'Kyle';
+
+const teacher = "Suzy";
+```
+
+So right now, `teacher` is in the dead zone. 
+
+Assignment is a run-time thing. (Stage 2)
+
+
+### Closure
+
+[00:00:46]
+
+> Doug Crawford, has had a lot of really great things that he's done for our industry and a lot of things that he said.
+
+> And when he says something brilliant, he deserves credit for it. Years ago, he had a conference talk that he was giving about computer science things that have been created over the course of the history of computer science. And he was making a point that, essentially, all great ideas take a whole generation of programmers before they get implemented, before they become popular.
+
+> And he gave a variety of examples. And when he went to explain why that phenomenon exists, it was sort of a tongue in cheek kind of response or explanation, which is kind of half-true and half-funny. He said, well, the reason why it takes a full generation is because we're so stubborn.
+
+> We're stuck in our ways. So we have to wait around for all of the current generation to die or retire llll before the new great idea picks up. [LAUGH] Again, it's like half-true and half-funny.
+
+> But he went on to say we know that closure must be truly great cuz it took two full generations to catch on.
+
+It's so powerful that every modern language has closure.
+
+Closure is: 
+1. It's when it's able to remember it's access it's lexical scope. 
+2. Even when it's executed outside that lexical scope.
+
+
+Closure -- it's "closed over" the function. 
+
+Closure doesn't 'close over' a value. 
+It closes over a variable. 
+
+It takes the snapshot of the variable. 
+It "closes over" the variable. 
+
+It's preserving access to variables. 
+
+### Module Pattern
+
+It requires lexical scope.
+And Closure. 
+
+It's a functions and data and putting them into a object.
+
+The module pattern requires a `encapsulation`. Which is a fancy word of hiding data. The idea of visibility. It's public and private data. 
+
+To have a module, you have to hide data. 
+
+
+So take take the same idea
+
+```js
+
+// Not a module pattern
+const workshop = {
+    teacher: "Kyle", 
+    ask(question) {
+        console.log(this.teacher, question);
+    },
+}l
+
+// Classic Module pattern
+const workshop = (function Module(teacher) {
+    var publicAPI = { ask, };
+    function ask(question) {
+        console.log(this.teacher, question);
+    }
+
+    return publicAPI;
+
+})("Kyle");
+
+
+
+// factory function Module Pattern
+function WorkshopModule(teacher) {
+    var publicAPI = { ask };
+    
+    function ask(question) {
+        console.log(this.teacher, question);
+    }
+
+    return publicAPI;
+}
+
+var workshop = WorkshopModule("Kyle"):
+
+// ES6 Modules
+ 
+
+// THE ACTION
+workshop.ask("It's a module, right?"); // Kyle It's a module, right?
+
+```
+
+We can also create a factory function.
+
+
+### Modules
+
+![](https://i.imgur.com/GBfj3wH.png)
+
+Top: Newer ES6 module
+Bottom: old school way. 
+
+
+### Objects
+
+**this**
+
+Whatever the target is.
+
+**Implicit and explicit binding**
+using `workshop.ask.bind(workshop)`
+
+bind does a hardcoded linkage. 
+
+Isn't is better to just write a module and use closure?
+
+
+**new keyword** 
+
+The third way to call a function.
+
+It's to invoke and create a whole new functioning object.
+
+FOUR THINGS IT DOES:
+1. Creates a brand new empty object
+2. Links that object to another object. (Link?)
+3. Invokes the function with `this` set to the new object.
+4. Then if it doesn't return an object, assume return of this.
+
+
+**Default Binding**
+
+The fallback, default to the global. 
+
+**CLasses**
+
+Super
+
+> [00:02:11]
+As a matter of fact, the class system also now has a super keyword in it, which allows you to do relative polymorphism. 
+
+> If you have a child class that defines a method of the same name as a parent class, so called shadowing. If you have one that defines the same method name in a child as in the parent.
+
+> You can refer to the parent from the child by saying super dot, like you see on line 12.
+
+
+
+Classes and Prototypes
+
+The Lexical module system which we had for 20 years. Instead, people want to use the class system like other languages.
+
+
+> The entire class system is built upon this idea that your methods don't exist on your instances, they exist on your prototypes and guess what happens when you say this.ask and you assign it a function? It's no longer on the prototype anymore, it's on your instance.
+
+> [00:05:43]
+So every single time you instantiate a function, you're getting a whole separate copy of all those functions added to every single instance.
+
+
+### Prototypes
+
+> You might remember in our discussion of this keyword that I said that new in front of a function call is a constructor call. That is not the same thing as saying there's a constructor, it is to simply say that that is basically for lack of a better term when you use new in front of a function call it's constructing an object to be used for this binding of that function call.
+
+> So that's where objects come from. They come via new from these constructor calls. And it is often said that in that process of constructing these new objects that it's making that object based on the constructor's prototype.
+
+A "constructor call" makes an object 'based-on' it's own prototype. It's making a 'copy' of the prototype. 
+
+In most langauges, classes are just a blueprint. Kyle's son is a blueprint of him, a copy of him. 
+
+Changing a window in the blueprint does not magically affect the building.
+
+Javascript DOES NOT MAKE A COPY. It makes a LINK to it's own prototype. 
+
+ 
+ Prototype system:
+ 
+ 
+ [[prototype]]
+ ![](https://i.imgur.com/h0YpbrW.png)
+ 
+ So that ask function is NOT copied to the object. It goes up the prototype chain, to the original instance.
+ 
+ 
+
+Dunder Prototype
+__prototype__
+
+> Speaker 2: What happens when you set dunder proto?
+
+> Kyle Simpson: Good question. It is not very common for you to use the Dunder Proto as a setter. It is technically both a getter and a setter. It is almost always used just to reference it. And I would say generally speaking, it's sort of an anti-pattern to rewire the prototype chain of an object.
+
+> [00:02:54]
+But as of ES6, dunder proto is officially also something that can set the proto linkage from one object to a different object. So if you have an object A that's linked over here and then later you decide, I want that object prototype linked over here, you can use dunder proto as a setter to change it.
+
+
+Classical Vs Prototypal Inheritance
+
+CLassical Classes
+
+When you're instantiating, you're copying.
+
+Prototypal Classes
+
+Things are LINKED to, not copying.
+
+Javascript's Behavior Delegation (Not inheritance)
+
+
+**OLOO Pattern**
+
+Objects Linked to Other Objects
+
+Lua and Javascript.
+
+Delegation-oriented design --
+
+Stop thinking of parent/child relationships, and think about peer to peer. 
+
+![](https://i.imgur.com/cyq1xUH.png)
+
+
