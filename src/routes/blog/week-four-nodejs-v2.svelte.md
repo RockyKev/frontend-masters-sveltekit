@@ -11,6 +11,10 @@ coverImageUrl: /media/projects/type-kana/session.jpg
 </script>
 
 
+https://frontendmasters.com/courses/node-js-v2/
+
+Scott Moss
+
 # Introduction to Node.js, V2
 
 https://intro-to-nodejs-v2-site.vercel.app/lesson/00-welcome

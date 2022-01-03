@@ -11,6 +11,9 @@ coverImageUrl: /media/projects/type-kana/session.jpg
 </script>
 
 
+https://frontendmasters.com/courses/javascript-hard-parts-v2/
+Will Sentance
+
 
 ## Javascript Intro
 
@@ -124,7 +127,7 @@ const result = copyArrayAndMultiplyBy2(myArray);
 ```
 
 
-HIgher order Functions to the rescue!
+Higher order Functions to the rescue!
 ```js
 function copyArrayAndManipulate(array, instructions) {
   const output = [];
@@ -145,8 +148,7 @@ const result = copyArrayAndManipulate([1, 2, 3], multiplyBy2);
 
 How do we bottle up a javascript it?
 
-
-Any function tha ttakes a function is a **Higher Order Function**
+Any function tha takes a function is a **Higher Order Function**
 The function we insert is considered the **Callback function**
 
 Keeps it more dry. Because the code is profoundly more reusable. 
