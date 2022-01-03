@@ -10,6 +10,10 @@ coverImageUrl: /media/projects/type-kana/session.jpg
   export { load }
 </script>
 
+CSS In-Depth, v2
+Estelle Weyl
+Slides: https://estelle.github.io/
+
 
 Separation of Concerns
 
@@ -217,22 +221,219 @@ Ignored Properties:
 
 ## Tables
 
+thead - Place to put the title.
 tfooter - it's where you put something like calculations. Such as all the calories in an ice cream list.
 
 Captions - specifies the title of the table. 
 
+if you add border to your tables - it adds a bit of spacing.
+border-collapse - the default behavior is `seperate` of the cell borders. `collapse` will make it like Excel.
+border-spacing - how much space between. 
+
+You can hide shells
+
+empty-cell: show | hide
+it's similar to:
+
+```css
+td:empty, th:empty {
+  visibility: none;
+}
+```
+
+table-layout: auto | fixed (fixed renders faster)
+
+vertical-align - in tables
 
 ## Grid
 
+Flexbox (Oct 2009. Last call working draft is May 14, 2015)
+Grid. (March 2017 fully released) 
+
+`fr` is a relative unit - a fraction. 
+
+It auto-assumes you want 1 fr per row.
+
+The `tracklist` is the layout. 
+
+```css
+div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: <track-list> */
+}
+```
+
+**gap**
+
+`grid-column-gap` - gap between col
+`grid-row-gap` - gap between rows
+`grid-gap` - shorthand
+
+
+**Naming**
+
+Columns and rows are ordered starting with 1. 
+
+```css
+div {
+    grid-template-columns: 1fr [start] repeat(3, 1fr) [mid] repeat(8, 1fr) [end];
+    grid-area: 2 / start / 4 / mid;
+}
+```
+
+**Difference between items/content**
+
+```
+// Containers ---> content
+justify-content: 
+align-content: 
+
+It's aligning the whole row/column. 
+
+// Containers ---> items
+justify-items:
+align-items: 
+
+It's aligning each item within itself. Globally
+```
+
+What about itself?
+```
+// flex & grid items 
+justify-self:
+align-self:
+```
+
 ## Background & Borders
 
-## Gradience
+background is shorthand.
 
-## Transforms
+It actually has
+* background-repeat
+* background-attachment
+* background-position
+* background-color
 
-## Transitions
+**background-clip:** 
+border-box - The background extends to the outside edge of the border (but underneath the border in z-ordering).
+padding-box - The background extends to the outside edge of the padding. No background is drawn beneath the border.
+content-box - The background is painted within (clipped to) the content box.
+text - The background is painted within (clipped to) the foreground text.
 
-## Animations
+![](https://i.imgur.com/FIpPB2b.png)
+
+**background-origin**
+border-box - The background is positioned relative to the border box.
+padding-box -  The background is positioned relative to the padding box.
+content-box - The background is positioned relative to the content box.
+
+![](https://i.imgur.com/WivA9HX.png)
+
+
+## Gradient
+https://estelle.github.io/CSS/gradients/index.html#slide2
+
+![](https://i.imgur.com/6AXwBiK.png)
+
+Color stops and Length units
+```css
+.slide {
+  background-image:
+    linear-gradient(
+      red 0%,
+      orange 20%,
+      yellow 40%,
+      green 60%,
+      blue 80%,
+      purple 100%
+    )
+}
+```
+
+![](https://i.imgur.com/iCLbP2S.png)
+
+```css
+.slide {
+  background-image:
+    linear-gradient(
+      orange 20vh,
+      yellow 40vh,
+      green 60vh,
+      blue 80vh
+    )
+}
+```
+
+![](https://i.imgur.com/4OljjBj.png)
+
+```css
+  .slide {
+    background-image:
+      conic-gradient(
+        orange .20turn,
+        yellow .40turn,
+        green .60turn,
+        blue .80turn
+      )
+  }
+```
+
+![](https://i.imgur.com/KuU0IuE.png)
+
+
+```css
+.slide {
+  background-image:
+    linear-gradient(
+      red 20vh,
+      orange 20vh,
+      yellow 40vh,
+      green 60vh,
+      blue 80vh,
+      purple 80vh
+    )
+}
+```
+
+![](https://i.imgur.com/enGQfcr.png)
+
+```css
+#conic11 {
+  background-image:
+    repeating-conic-gradient(
+      magenta 0 4deg,
+      orange 4deg 8deg
+    );
+}
+```
+![](https://i.imgur.com/Et7UYzu.png)
+
+
+
+## Transforms & Transitions & Animations
+
+![](https://i.imgur.com/WYSinJB.png)
+![](https://i.imgur.com/EQVvK9G.png)
+Typically anything with a number!
 
 ## Other Features
+
+clip-path
+shape-outside
+
+You can stack clip-path/shape-outside to keep curving a shape.
+
+You can also clip-path a URL. 
+
+
+How to add a placeholder cursor in an input
+```css
+  li {line-height: 2; clear: both;}
+  label {display: inline-block; width: 200px;}
+  .shell span {color: pink;}
+  li {font-family: helvetica; font-size: 0.93rem;}
+```
+![](https://i.imgur.com/ZYoJMKY.png)
+
 
