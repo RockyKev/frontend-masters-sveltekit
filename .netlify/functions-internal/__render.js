@@ -13622,9 +13622,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-2c415bb0.js",
+      file: assets + "/_app/start-ad03516a.js",
       css: [assets + "/_app/assets/start-c446e5f0.css"],
-      js: [assets + "/_app/start-2c415bb0.js", assets + "/_app/chunks/vendor-2c44c089.js"]
+      js: [assets + "/_app/start-ad03516a.js", assets + "/_app/chunks/vendor-2c44c089.js"]
     },
     fetched: void 0,
     floc: false,
@@ -13727,6 +13727,97 @@ var manifest = {
     },
     {
       type: "page",
+      pattern: /^\/blog\/draft-week-nine-building-applications-vue-nuxt\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-nine-building-applications-vue-nuxt.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-ten-production-grade-vue-part-2\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-ten-production-grade-vue-part-2.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-thirteen-functional-js-part-2\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-fourteen-functional-light-js\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-fourteen-functional-light-js.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-eleven-complete-intro-react\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-eleven-complete-intro-react.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-twelve-functional-js-part-1\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-nine-production-grade-vue\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-nine-production-grade-vue.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-ten-advanced-vue-features\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-ten-advanced-vue-features.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-ten-vuex-for-intermediate\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-ten-vuex-for-intermediate.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-fourteen-react-storybook\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-fourteen-react-storybook.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-twelve-web-performance\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-twelve-web-performance.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-thirteen-intro-gatsby\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-thirteen-intro-gatsby.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-thirteen-build-game\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-thirteen-build-game.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
       pattern: /^\/blog\/week-three-intro-linux-command\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/week-three-intro-linux-command.svelte.md"],
@@ -13737,6 +13828,27 @@ var manifest = {
       pattern: /^\/blog\/week-four-intro-to-serverless\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/week-four-intro-to-serverless.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-eleven-full-stack\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-eleven-full-stack.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-nine-intro-to-vue\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-nine-intro-to-vue.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/draft-week-twelve-typescript\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-twelve-typescript.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
@@ -13933,11 +14045,59 @@ var module_lookup = {
   "src/routes/blog/index.svelte": () => Promise.resolve().then(function() {
     return index$1;
   }),
+  "src/routes/blog/draft-week-nine-building-applications-vue-nuxt.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekNineBuildingApplicationsVueNuxt_svelte;
+  }),
+  "src/routes/blog/draft-week-ten-production-grade-vue-part-2.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekTenProductionGradeVuePart2_svelte;
+  }),
+  "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekThirteenFunctionalJsPart2_svelte;
+  }),
+  "src/routes/blog/draft-week-fourteen-functional-light-js.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekFourteenFunctionalLightJs_svelte;
+  }),
+  "src/routes/blog/draft-week-eleven-complete-intro-react.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekElevenCompleteIntroReact_svelte;
+  }),
+  "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekTwelveFunctionalJsPart1_svelte;
+  }),
+  "src/routes/blog/draft-week-nine-production-grade-vue.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekNineProductionGradeVue_svelte;
+  }),
+  "src/routes/blog/draft-week-ten-advanced-vue-features.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekTenAdvancedVueFeatures_svelte;
+  }),
+  "src/routes/blog/draft-week-ten-vuex-for-intermediate.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekTenVuexForIntermediate_svelte;
+  }),
+  "src/routes/blog/draft-week-fourteen-react-storybook.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekFourteenReactStorybook_svelte;
+  }),
+  "src/routes/blog/draft-week-twelve-web-performance.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekTwelveWebPerformance_svelte;
+  }),
+  "src/routes/blog/draft-week-thirteen-intro-gatsby.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekThirteenIntroGatsby_svelte;
+  }),
+  "src/routes/blog/draft-week-thirteen-build-game.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekThirteenBuildGame_svelte;
+  }),
   "src/routes/blog/week-three-intro-linux-command.svelte.md": () => Promise.resolve().then(function() {
     return weekThreeIntroLinuxCommand_svelte;
   }),
   "src/routes/blog/week-four-intro-to-serverless.svelte.md": () => Promise.resolve().then(function() {
     return weekFourIntroToServerless_svelte;
+  }),
+  "src/routes/blog/draft-week-eleven-full-stack.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekElevenFullStack_svelte;
+  }),
+  "src/routes/blog/draft-week-nine-intro-to-vue.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekNineIntroToVue_svelte;
+  }),
+  "src/routes/blog/draft-week-twelve-typescript.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekTwelveTypescript_svelte;
   }),
   "src/routes/blog/week-six-code-transformation.svelte.md": () => Promise.resolve().then(function() {
     return weekSixCodeTransformation_svelte;
@@ -14000,7 +14160,7 @@ var module_lookup = {
     return typeKana_svelte;
   })
 };
-var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-79e4c8a6.js", "css": ["assets/pages/__layout.svelte-df3fc26e.css"], "js": ["pages/__layout.svelte-79e4c8a6.js", "chunks/vendor-2c44c089.js", "chunks/stores-32a54f2b.js", "chunks/Logo-1cfb9048.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-a683aa11.js", "css": [], "js": ["pages/__error.svelte-a683aa11.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-a4187db2.js", "css": ["assets/pages/index.svelte-a8b03bef.css", "assets/Icon.svelte_svelte&type=style&lang-bab488b2.css"], "js": ["pages/index.svelte-a4187db2.js", "chunks/vendor-2c44c089.js", "chunks/Logo-1cfb9048.js", "chunks/Meta-2661041d.js"], "styles": [] }, "src/routes/playground.svelte": { "entry": "pages/playground.svelte-b22e1d43.js", "css": ["assets/pages/playground.svelte-50ac7720.css"], "js": ["pages/playground.svelte-b22e1d43.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/about/index.svelte": { "entry": "pages/about/index.svelte-3e5401ab.js", "css": ["assets/pages/about/index.svelte-cbd7d511.css", "assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/index.svelte-3e5401ab.js", "chunks/vendor-2c44c089.js", "pages/about/HiddenText.svelte-bea2d578.js"], "styles": [] }, "src/routes/about/HiddenText.svelte": { "entry": "pages/about/HiddenText.svelte-bea2d578.js", "css": ["assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/HiddenText.svelte-bea2d578.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-bb7708ee.js", "css": ["assets/pages/work/index.svelte-219f8bae.css"], "js": ["pages/blog/index.svelte-bb7708ee.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/blog/week-three-intro-linux-command.svelte.md": { "entry": "pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-intro-to-serverless.svelte.md": { "entry": "pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-code-transformation.svelte.md": { "entry": "pages/blog/week-six-code-transformation.svelte.md-cc118b02.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-code-transformation.svelte.md-cc118b02.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-dev-tools.svelte.md": { "entry": "pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-hard-parts-ooj.svelte.md": { "entry": "pages/blog/week-five-hard-parts-ooj.svelte.md-2743238f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-hard-parts-ooj.svelte.md-2743238f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eight-css-in-depth.svelte.md": { "entry": "pages/blog/week-eight-css-in-depth.svelte.md-efcd0118.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eight-css-in-depth.svelte.md-efcd0118.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/vue-mastery-vue3-forms.svelte.md": { "entry": "pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-js-hard-parts.svelte.md": { "entry": "pages/blog/week-six-js-hard-parts.svelte.md-4cc93065.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-js-hard-parts.svelte.md-4cc93065.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-accessibility.svelte.md": { "entry": "pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-js-functional.svelte.md": { "entry": "pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-js-testing.svelte.md": { "entry": "pages/blog/week-five-js-testing.svelte.md-36258fff.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-js-testing.svelte.md-36258fff.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-debugging.svelte.md": { "entry": "pages/blog/week-five-debugging.svelte.md-7d214faa.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-debugging.svelte.md-7d214faa.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-nodejs-v2.svelte.md": { "entry": "pages/blog/week-four-nodejs-v2.svelte.md-dd0a88ab.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-nodejs-v2.svelte.md-dd0a88ab.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-javascript.svelte.md": { "entry": "pages/blog/week-one-javascript.svelte.md-a27291ec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-javascript.svelte.md-a27291ec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-seven-deep-js.svelte.md": { "entry": "pages/blog/week-seven-deep-js.svelte.md-509677bc.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-seven-deep-js.svelte.md-509677bc.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-api-dev.svelte.md": { "entry": "pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-webdev.svelte.md": { "entry": "pages/blog/week-one-webdev.svelte.md-086e16a9.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-webdev.svelte.md-086e16a9.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-seo.svelte.md": { "entry": "pages/blog/week-three-seo.svelte.md-d64b209b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-seo.svelte.md-d64b209b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-css.svelte.md": { "entry": "pages/blog/week-one-css.svelte.md-48262997.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-css.svelte.md-48262997.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/work/index.svelte": { "entry": "pages/work/index.svelte-e7922153.js", "css": ["assets/pages/work/index.svelte-219f8bae.css"], "js": ["pages/work/index.svelte-e7922153.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/portfolio-site.svelte.md": { "entry": "pages/work/portfolio-site.svelte.md-e065602b.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/portfolio-site.svelte.md-e065602b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/type-kana.svelte.md": { "entry": "pages/work/type-kana.svelte.md-74b86795.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/type-kana.svelte.md-74b86795.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] } };
+var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-79e4c8a6.js", "css": ["assets/pages/__layout.svelte-df3fc26e.css"], "js": ["pages/__layout.svelte-79e4c8a6.js", "chunks/vendor-2c44c089.js", "chunks/stores-32a54f2b.js", "chunks/Logo-1cfb9048.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-a683aa11.js", "css": [], "js": ["pages/__error.svelte-a683aa11.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-a4187db2.js", "css": ["assets/pages/index.svelte-a8b03bef.css", "assets/Icon.svelte_svelte&type=style&lang-bab488b2.css"], "js": ["pages/index.svelte-a4187db2.js", "chunks/vendor-2c44c089.js", "chunks/Logo-1cfb9048.js", "chunks/Meta-2661041d.js"], "styles": [] }, "src/routes/playground.svelte": { "entry": "pages/playground.svelte-b22e1d43.js", "css": ["assets/pages/playground.svelte-50ac7720.css"], "js": ["pages/playground.svelte-b22e1d43.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/about/index.svelte": { "entry": "pages/about/index.svelte-3e5401ab.js", "css": ["assets/pages/about/index.svelte-cbd7d511.css", "assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/index.svelte-3e5401ab.js", "chunks/vendor-2c44c089.js", "pages/about/HiddenText.svelte-bea2d578.js"], "styles": [] }, "src/routes/about/HiddenText.svelte": { "entry": "pages/about/HiddenText.svelte-bea2d578.js", "css": ["assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/HiddenText.svelte-bea2d578.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-bb7708ee.js", "css": ["assets/pages/blog/index.svelte-ad438cd3.css"], "js": ["pages/blog/index.svelte-bb7708ee.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/blog/draft-week-nine-building-applications-vue-nuxt.svelte.md": { "entry": "pages/blog/draft-week-nine-building-applications-vue-nuxt.svelte.md-7cd4be7f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-nine-building-applications-vue-nuxt.svelte.md-7cd4be7f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-ten-production-grade-vue-part-2.svelte.md": { "entry": "pages/blog/draft-week-ten-production-grade-vue-part-2.svelte.md-d2e4a84f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-ten-production-grade-vue-part-2.svelte.md-d2e4a84f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md": { "entry": "pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-functional-light-js.svelte.md": { "entry": "pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-eleven-complete-intro-react.svelte.md": { "entry": "pages/blog/draft-week-eleven-complete-intro-react.svelte.md-e318b896.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-eleven-complete-intro-react.svelte.md-e318b896.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md": { "entry": "pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-nine-production-grade-vue.svelte.md": { "entry": "pages/blog/draft-week-nine-production-grade-vue.svelte.md-d34e366c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-nine-production-grade-vue.svelte.md-d34e366c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-ten-advanced-vue-features.svelte.md": { "entry": "pages/blog/draft-week-ten-advanced-vue-features.svelte.md-5193ecec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-ten-advanced-vue-features.svelte.md-5193ecec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-ten-vuex-for-intermediate.svelte.md": { "entry": "pages/blog/draft-week-ten-vuex-for-intermediate.svelte.md-536561cf.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-ten-vuex-for-intermediate.svelte.md-536561cf.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-react-storybook.svelte.md": { "entry": "pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-web-performance.svelte.md": { "entry": "pages/blog/draft-week-twelve-web-performance.svelte.md-4e3aa2de.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-web-performance.svelte.md-4e3aa2de.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-intro-gatsby.svelte.md": { "entry": "pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-build-game.svelte.md": { "entry": "pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-linux-command.svelte.md": { "entry": "pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-intro-to-serverless.svelte.md": { "entry": "pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-eleven-full-stack.svelte.md": { "entry": "pages/blog/draft-week-eleven-full-stack.svelte.md-0699e294.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-eleven-full-stack.svelte.md-0699e294.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-nine-intro-to-vue.svelte.md": { "entry": "pages/blog/draft-week-nine-intro-to-vue.svelte.md-e28e280f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-nine-intro-to-vue.svelte.md-e28e280f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-typescript.svelte.md": { "entry": "pages/blog/draft-week-twelve-typescript.svelte.md-de6e6a2c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-typescript.svelte.md-de6e6a2c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-code-transformation.svelte.md": { "entry": "pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-dev-tools.svelte.md": { "entry": "pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-hard-parts-ooj.svelte.md": { "entry": "pages/blog/week-five-hard-parts-ooj.svelte.md-1cdda76c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-hard-parts-ooj.svelte.md-1cdda76c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eight-css-in-depth.svelte.md": { "entry": "pages/blog/week-eight-css-in-depth.svelte.md-b26e1acc.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eight-css-in-depth.svelte.md-b26e1acc.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/vue-mastery-vue3-forms.svelte.md": { "entry": "pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-js-hard-parts.svelte.md": { "entry": "pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-accessibility.svelte.md": { "entry": "pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-js-functional.svelte.md": { "entry": "pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-js-testing.svelte.md": { "entry": "pages/blog/week-five-js-testing.svelte.md-36258fff.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-js-testing.svelte.md-36258fff.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-debugging.svelte.md": { "entry": "pages/blog/week-five-debugging.svelte.md-ce7c6b84.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-debugging.svelte.md-ce7c6b84.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-nodejs-v2.svelte.md": { "entry": "pages/blog/week-four-nodejs-v2.svelte.md-a443d728.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-nodejs-v2.svelte.md-a443d728.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-javascript.svelte.md": { "entry": "pages/blog/week-one-javascript.svelte.md-a27291ec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-javascript.svelte.md-a27291ec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-seven-deep-js.svelte.md": { "entry": "pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-api-dev.svelte.md": { "entry": "pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-webdev.svelte.md": { "entry": "pages/blog/week-one-webdev.svelte.md-086e16a9.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-webdev.svelte.md-086e16a9.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-seo.svelte.md": { "entry": "pages/blog/week-three-seo.svelte.md-d64b209b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-seo.svelte.md-d64b209b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-css.svelte.md": { "entry": "pages/blog/week-one-css.svelte.md-48262997.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-css.svelte.md-48262997.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/work/index.svelte": { "entry": "pages/work/index.svelte-e7922153.js", "css": ["assets/pages/blog/index.svelte-ad438cd3.css"], "js": ["pages/work/index.svelte-e7922153.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/portfolio-site.svelte.md": { "entry": "pages/work/portfolio-site.svelte.md-e065602b.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/portfolio-site.svelte.md-e065602b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/type-kana.svelte.md": { "entry": "pages/work/type-kana.svelte.md-74b86795.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/type-kana.svelte.md-74b86795.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] } };
 async function load_component(file) {
   const { entry, css: css2, js, styles } = metadata_lookup[file];
   return {
@@ -14114,7 +14274,39 @@ var cipher = /* @__PURE__ */ Object.freeze({
   ceasar
 });
 var get$3 = async () => {
-  const modules = Object.entries({ "./vue-mastery-vue3-forms.svelte.md": () => Promise.resolve().then(function() {
+  const modules = Object.entries({ "./draft-week-eleven-complete-intro-react.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekElevenCompleteIntroReact_svelte;
+  }), "./draft-week-eleven-full-stack.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekElevenFullStack_svelte;
+  }), "./draft-week-fourteen-functional-light-js.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekFourteenFunctionalLightJs_svelte;
+  }), "./draft-week-fourteen-react-storybook.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekFourteenReactStorybook_svelte;
+  }), "./draft-week-nine-building-applications-vue-nuxt.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekNineBuildingApplicationsVueNuxt_svelte;
+  }), "./draft-week-nine-intro-to-vue.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekNineIntroToVue_svelte;
+  }), "./draft-week-nine-production-grade-vue.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekNineProductionGradeVue_svelte;
+  }), "./draft-week-ten-advanced-vue-features.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekTenAdvancedVueFeatures_svelte;
+  }), "./draft-week-ten-production-grade-vue-part-2.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekTenProductionGradeVuePart2_svelte;
+  }), "./draft-week-ten-vuex-for-intermediate.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekTenVuexForIntermediate_svelte;
+  }), "./draft-week-thirteen-build-game.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekThirteenBuildGame_svelte;
+  }), "./draft-week-thirteen-functional-js-part-2.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekThirteenFunctionalJsPart2_svelte;
+  }), "./draft-week-thirteen-intro-gatsby.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekThirteenIntroGatsby_svelte;
+  }), "./draft-week-twelve-functional-js-part-1.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekTwelveFunctionalJsPart1_svelte;
+  }), "./draft-week-twelve-typescript.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekTwelveTypescript_svelte;
+  }), "./draft-week-twelve-web-performance.svelte.md": () => Promise.resolve().then(function() {
+    return draftWeekTwelveWebPerformance_svelte;
+  }), "./vue-mastery-vue3-forms.svelte.md": () => Promise.resolve().then(function() {
     return vueMasteryVue3Forms_svelte;
   }), "./week-eight-css-in-depth.svelte.md": () => Promise.resolve().then(function() {
     return weekEightCssInDepth_svelte;
@@ -15002,14 +15194,222 @@ var Layout$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 				</li>`)}</ul>` : ``}
 </article>`;
 });
-var metadata$k = {
+var metadata$A = {
+  "title": "DRAFT Week Nine - Building Apps with Vue & Nuxt",
+  "created": "2021-12-21T00:00:00.000Z",
+  "summary": "Building Applications with Vue & Nuxt",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_nine_building_applications_vue_nuxt_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$A), {}, {})}`;
+});
+var draftWeekNineBuildingApplicationsVueNuxt_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_nine_building_applications_vue_nuxt_svelte,
+  metadata: metadata$A,
+  load: load$2
+});
+var metadata$z = {
+  "title": "DRAFT Week Ten - Production Grade Vue",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Production-Grade Vue (Part 2)",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_ten_production_grade_vue_part_2_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$z), {}, {})}`;
+});
+var draftWeekTenProductionGradeVuePart2_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_ten_production_grade_vue_part_2_svelte,
+  metadata: metadata$z,
+  load: load$2
+});
+var metadata$y = {
+  "title": "Week Thirteen - Functional JS Part 2",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Functional JavaScript First Steps (Part 2)",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_thirteen_functional_js_part_2_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$y), {}, {})}`;
+});
+var draftWeekThirteenFunctionalJsPart2_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_thirteen_functional_js_part_2_svelte,
+  metadata: metadata$y,
+  load: load$2
+});
+var metadata$x = {
+  "title": "DRAFT Week Eleven - React",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Complete Intro to React",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_fourteen_functional_light_js_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$x), {}, {})}`;
+});
+var draftWeekFourteenFunctionalLightJs_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_fourteen_functional_light_js_svelte,
+  metadata: metadata$x,
+  load: load$2
+});
+var metadata$w = {
+  "title": "DRAFT Week Eleven - React",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Complete Intro to React",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_eleven_complete_intro_react_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$w), {}, {})}`;
+});
+var draftWeekElevenCompleteIntroReact_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_eleven_complete_intro_react_svelte,
+  metadata: metadata$w,
+  load: load$2
+});
+var metadata$v = {
+  "title": "DRAFT Week Twelve - Functional JS Part 1",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Functional JavaScript First Steps (Part 1)",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_twelve_functional_js_part_1_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$v), {}, {})}`;
+});
+var draftWeekTwelveFunctionalJsPart1_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_twelve_functional_js_part_1_svelte,
+  metadata: metadata$v,
+  load: load$2
+});
+var metadata$u = {
+  "title": "DRAFT Week Nine - Production Grade Vue",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Production-Grade Vue (Part 1)",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_nine_production_grade_vue_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$u), {}, {})}`;
+});
+var draftWeekNineProductionGradeVue_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_nine_production_grade_vue_svelte,
+  metadata: metadata$u,
+  load: load$2
+});
+var metadata$t = {
+  "title": "DRAFT Week Ten - Advanced Vue",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Advanced Vue.js Features from the Ground Up",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_ten_advanced_vue_features_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$t), {}, {})}`;
+});
+var draftWeekTenAdvancedVueFeatures_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_ten_advanced_vue_features_svelte,
+  metadata: metadata$t,
+  load: load$2
+});
+var metadata$s = {
+  "title": "DRAFT Week Nine - Intro to Vue",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Introduction to Vue 3",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_ten_vuex_for_intermediate_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$s), {}, {})}`;
+});
+var draftWeekTenVuexForIntermediate_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_ten_vuex_for_intermediate_svelte,
+  metadata: metadata$s,
+  load: load$2
+});
+var metadata$r = {
+  "title": "DRAFT Week Fourteen - React & Storybook",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Design Systems with React & Storybook",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_fourteen_react_storybook_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$r), {}, {})}`;
+});
+var draftWeekFourteenReactStorybook_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_fourteen_react_storybook_svelte,
+  metadata: metadata$r,
+  load: load$2
+});
+var metadata$q = {
+  "title": "DRAFT Week Twelve - Web Performance",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Web Performance Fundamentals",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_twelve_web_performance_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$q), {}, {})}`;
+});
+var draftWeekTwelveWebPerformance_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_twelve_web_performance_svelte,
+  metadata: metadata$q,
+  load: load$2
+});
+var metadata$p = {
+  "title": "DRAFT Week Thirteen - Intro to Gatsby",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Introduction to Gatsby, v2",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_thirteen_intro_gatsby_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$p), {}, {})}`;
+});
+var draftWeekThirteenIntroGatsby_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_thirteen_intro_gatsby_svelte,
+  metadata: metadata$p,
+  load: load$2
+});
+var metadata$o = {
+  "title": "DRAFT Week Thirteen - Build a game",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Complete Front-End Project -  Build a Game",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_thirteen_build_game_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$o), {}, {})}`;
+});
+var draftWeekThirteenBuildGame_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_thirteen_build_game_svelte,
+  metadata: metadata$o,
+  load: load$2
+});
+var metadata$n = {
   "title": "Week Three - Intro to Linux and Command Line",
   "created": "2021-11-07T00:00:00.000Z",
   "summary": "Complete Intro to Linux and the Command-Line",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_three_intro_linux_command_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$k), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$n), {}, {
     default: () => `<p><a href="${"https://btholt.github.io/complete-intro-to-linux-and-the-cli/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://btholt.github.io/complete-intro-to-linux-and-the-cli/</a></p>
 <h2 id="${"the-cli"}"><a href="${"#the-cli"}">The CLI</a></h2>
 <p><strong>WHICH</strong>
@@ -15154,17 +15554,17 @@ var weekThreeIntroLinuxCommand_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_three_intro_linux_command_svelte,
-  metadata: metadata$k,
+  metadata: metadata$n,
   load: load$2
 });
-var metadata$j = {
+var metadata$m = {
   "title": "Week Four - Intro to Serverless",
   "created": "2021-11-22T00:00:00.000Z",
   "summary": "Modern Search Engine Optimization (SEO)",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_four_intro_to_serverless_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$j), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$m), {}, {
     default: () => `<h2 id="${"serverless-functions"}"><a href="${"#serverless-functions"}">Serverless Functions</a></h2>
 <p>Install netlify @ v2.58.0
 <code>npm i -g netlify-cli@latest</code></p>
@@ -15676,17 +16076,142 @@ var weekFourIntroToServerless_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_four_intro_to_serverless_svelte,
+  metadata: metadata$m,
+  load: load$2
+});
+var metadata$l = {
+  "title": "DRAFT Week Eleven - Full Stack",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Full Stack for Front-end Engineers, V2",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_eleven_full_stack_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$l), {}, {})}`;
+});
+var draftWeekElevenFullStack_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_eleven_full_stack_svelte,
+  metadata: metadata$l,
+  load: load$2
+});
+var metadata$k = {
+  "title": "DRAFT Week Nine - Intro to Vue",
+  "created": "2021-12-21T00:00:00.000Z",
+  "summary": "Introduction to Vue 3",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_nine_intro_to_vue_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$k), {}, {})}`;
+});
+var draftWeekNineIntroToVue_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_nine_intro_to_vue_svelte,
+  metadata: metadata$k,
+  load: load$2
+});
+var metadata$j = {
+  "title": "DRAFT Week Twelve - Typescript",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "TypeScript Fundamentals, v3",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_twelve_typescript_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$j), {}, {})}`;
+});
+var draftWeekTwelveTypescript_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_twelve_typescript_svelte,
   metadata: metadata$j,
   load: load$2
 });
 var metadata$i = {
-  "title": "DRAFT Week Six - Code Transformation",
-  "created": "2020-12-01T00:00:00.000Z",
+  "title": "Week Six - Code Transformation with ASTs",
+  "created": "2021-12-05T00:00:00.000Z",
   "summary": "Javascript Code Transformation and Linting with ASTs",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_six_code_transformation_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$i), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$i), {}, {
+    default: () => `<h2 id="${"what-is-it"}"><a href="${"#what-is-it"}">What is it</a></h2>
+<p>Abstract Syntax Trees. </p>
+<blockquote><p>An AST is the result of parsing code. For JavaScript, an AST is a JavaScript object containing a tree representation of your source. Before we use it, we have to create it. Depending on the code we are parsing, we choose the appropriate parser.</p></blockquote>
+<p>Honestly, it would be easier to read this to get a better picture:
+<a href="${"https://www.digitalocean.com/community/tutorials/js-traversing-ast"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.digitalocean.com/community/tutorials/js-traversing-ast</a></p>
+<p>And Kent C. Dodd\u2019s course is more when you\u2019re ready to get your hands dirty with making some AST rules.</p>
+<p>Github: <a href="${"https://github.com/kentcdodds/asts-workshop"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/kentcdodds/asts-workshop</a>
+Slides: <a href="${"https://frontendmasters.com/courses/linting-asts/examples-of-abstract-syntax-trees/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/linting-asts/examples-of-abstract-syntax-trees/</a></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">git clone https://github.com/kentcdodds/asts-workshop.git
+cd asts-workshop
+yarn run setup --silent
+node scripts/autofill-feedback-email.js YOUR_EMAIL@DOMAIN.COM
+git commit -am &quot;ready to go&quot;</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"abstract-syntax-trees"}"><a href="${"#abstract-syntax-trees"}">Abstract Syntax Trees</a></h2>
+<p>If you\u2019re using Babel: </p>
+<p>It\u2019s how we use ESNext -&gt; BABEL -&gt; ES Now</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> add <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'lodash/fp'</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Codemods better than find/replace</p>
+<p>There\u2019s a bunch of codemods  (react-codemod, jest-codemod, etc)</p>
+<p>Check out this visual Javascript AST Visualizer</p>
+<figure><img src="${"https://resources.jointjs.com/demos/javascript-ast"}"></figure>
+<p>Another tool:
+<a href="${"https://astexplorer.net/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://astexplorer.net/</a></p>
+<figure><img src="${"https://i.imgur.com/rjstvCE.png"}"></figure>
+<p>AST doesn\u2019t run code. It just analyses it. </p>
+<h2 id="${"eslint-plugin-and-ast"}"><a href="${"#eslint-plugin-and-ast"}">ESlint Plugin and AST</a></h2>
+<blockquote><p>ESLint is really good at identifying patterns that are not the kind of patterns you want in your code base, and that includes stylistic issues, but also actual logical problems or domain specific things.</p></blockquote>
+<p>So to do a linting example:</p>
+<figure><img src="${"https://i.imgur.com/h9eTahx.png"}"></figure>
+<ol class="${"list"}"><li><p>You write a valid and a invalid version.</p></li>
+<li><p>This has a <code>meta</code> for generating docs. And a it has a <code>creator</code></p></li>
+<li><p>The final arrow is the AST explorer.</p></li></ol>
+<figure><img src="${"https://i.imgur.com/xJsMJca.png"}"></figure>
+<p>So to work with this description:
+<code>dissallow If Statements without blocks</code></p>
+<p>In the yellow, it\u2019s checking the nodes, and navigates through each block that fits.
+If there\u2019s another if statement, it moves to that node. </p>
+<figure><img src="${"https://i.imgur.com/B6AZUML.png"}"></figure>
+<p>Things has a <code>consequent</code> and in the block statement.</p>
+<p>The <code>create</code> method returns a \`context.report()
+so you can return a message.</p>
+<p>AST are just javascript objects.</p>
+<p>Essentially, you\u2019re opening up the object in console.log, and finding the patterns of the (invalid) versus (valid) things, and writing the code to match it.</p>
+<h3 id="${"things-to-consider"}"><a href="${"#things-to-consider"}">Things to consider</a></h3>
+<p>Overall, it\u2019s just Javascript. You\u2019re writing a javascript function to check things, and it returns some true/false.
+It\u2019s just traversing the nodes and turning things into objects so it can check.</p>
+<p>Performance doesn\u2019t matter in this context.</p>
+<p>He had to pass all the results to <code>consoleUsages</code> array, because he had to wait for:</p>
+<ol class="${"list"}"><li>The entire tree to be traversed so the parent is connected to the child node.</li></ol>
+<h3 id="${"rockys-specific-notes-in-this-section"}"><a href="${"#rockys-specific-notes-in-this-section"}">Rocky\u2019s specific notes in this section.</a></h3>
+<ul class="${"list"}"><li><p>He\u2019s writing it very much like jQuery-ish, where it\u2019s slicing the object as much as he can until he gets the object\u2019s key/value that he wants, and then checks for that. </p></li>
+<li><p>He constantly creates helpers for himself. He finds a opportunity to shorten a 3-4 lines into a function, he will.</p></li></ul>
+<p>More plugin links:
+<a href="${"https://eslint.org/docs/developer-guide/working-with-plugins"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://eslint.org/docs/developer-guide/working-with-plugins</a></p>
+<h2 id="${"babel-plugin-an-ast"}"><a href="${"#babel-plugin-an-ast"}">Babel Plugin an AST</a></h2>
+<blockquote><p>This module contains methods for building ASTs manually and for checking the types of AST nodes.</p></blockquote>
+<p>Check out Babel Types: <a href="${"https://babeljs.io/docs/en/babel-types"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://babeljs.io/docs/en/babel-types</a></p>
+<p>So Babel\u2019s have a lot of methods. So things like replacing the strings.</p>
+<h3 id="${"rockys-specific-notes-about-this-section"}"><a href="${"#rockys-specific-notes-about-this-section"}">Rocky\u2019s specific notes about this section</a></h3>
+<p>This is just like the other one. </p>
+<p>Babel builds it\u2019s ast by doing <code>start: 32 end: 44</code> so you check between the two. </p>
+<h2 id="${"codemods-and-ast"}"><a href="${"#codemods-and-ast"}">Codemods and AST</a></h2>
+<p><a href="${"https://github.com/codemod-js/codemod"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/codemod-js/codemod</a></p>
+<p>Codemods are often domain-specific \u2014 </p>
+<p>Use-cases:</p>
+<ul class="${"list"}"><li>This tool changed from version 1 to version 2 and all the apis changed. So now you have to do all these fixes.</li>
+<li>You want to do something better than a find/replace</li></ul>
+<p>The use-case they used is jQuery to Javascript.</p>
+<p><a href="${"https://github.com/codemod-js/codemod"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/codemod-js/codemod</a></p>
+<blockquote><p>Codemods are intended to change the source code so that you can migrate away from an old API, or something like that, old testing framework, whatever. And they\u2019re super duper cool. And because it uses babel, or because we can use Babel to do this, you pretty much know every thing you need to know about building this, it\u2019s just taking the time getting used to the APIs and that kinda thing.</p></blockquote>
+<blockquote><p>[00:02:49]
+And what happens is for each file in the source directory, it will run your plug-in on it and take the output of that and save it to the file, and so where Babel plug-ins are generally for compile time. They don\u2019t actually finish the source, they just change what you\u2019re shipping.</p></blockquote>
+<blockquote><p>[00:03:12]
+Codemods are intended to change the source code so that you can migrate away from an old API, or something like that, old testing framework, whatever. And they\u2019re super duper cool. And because it uses babel, or because we can use Babel to do this, you pretty much know every thing you need to know about building this, it\u2019s just taking the time getting used to the APIs and that kinda thing.</p></blockquote>
+<h3 id="${"rockys-specific-notes-about-this-section-1"}"><a href="${"#rockys-specific-notes-about-this-section-1"}">Rocky\u2019s specific notes about this section</a></h3>`
+  })}`;
 });
 var weekSixCodeTransformation_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
@@ -15792,7 +16317,7 @@ var weekThreeIntroDevTools_svelte = /* @__PURE__ */ Object.freeze({
   load: load$2
 });
 var metadata$g = {
-  "title": "Week Six - JS Object Oriented",
+  "title": "Week Five - JS Object Oriented",
   "created": "2021-11-27T00:00:00.000Z",
   "summary": "The Hard Parts of Object Oriented JavaScript",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
@@ -16387,13 +16912,156 @@ var weekFiveHardPartsOoj_svelte = /* @__PURE__ */ Object.freeze({
   load: load$2
 });
 var metadata$f = {
-  "title": "DRAFT Week Eight - CSS In Depth",
-  "created": "2020-12-01T00:00:00.000Z",
+  "title": "Week Eight - CSS In Depth",
+  "created": "2021-12-21T00:00:00.000Z",
   "summary": "CSS In-Depth, v2",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_eight_css_in_depth_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$f), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$f), {}, {
+    default: () => `<p>Separation of Concerns</p>
+<p>Content - HTML
+Behavior - JS
+Presentation - CSS</p>
+<p>Prefixes is specifically for edge-cases. For example android devices that can\u2019t generate gradients, so they have their special way. </p>
+<h2 id="${"selectors"}"><a href="${"#selectors"}">Selectors</a></h2>
+<p>All the selectors, ever (so far):
+<a href="${"https://estelle.github.io/selectors/selectors.html"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://estelle.github.io/selectors/selectors.html</a></p>
+<figure><img src="${"https://i.imgur.com/ub0cqG1.png"}"></figure>
+<figure><img src="${"https://i.imgur.com/FDJX5dq.png"}"></figure>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css"><span class="token selector">// E[attr^=val]
+// Element E whose attribute attr starts with the value val.
+
+a[href^=mailto]</span> <span class="token punctuation">&#123;</span><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>emailicon.gif<span class="token punctuation">)</span></span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+<span class="token selector">a[href^=http]:after</span> <span class="token punctuation">&#123;</span><span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">" ("</span> <span class="token function">attr</span><span class="token punctuation">(</span>href<span class="token punctuation">)</span> <span class="token string">")"</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+
+<span class="token selector">// E[attr$=val]
+// Element E whose attribute attr ends in val . 
+
+a[href$=pdf]</span> <span class="token punctuation">&#123;</span><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>pdficon.gif<span class="token punctuation">)</span></span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+<span class="token selector">a[href$=pdf]:after</span> <span class="token punctuation">&#123;</span><span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">" (PDF)"</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+
+// E[attr*=val]
+// Element E whose attribute attr matches val anywhere within the attribute. Similar to E[attr~=val] above<span class="token punctuation">,</span> except the val can be part of a word.
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>States</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">:default
+:valid
+:invalid
+
+:required
+:optional
+
+:in-range
+:out-of-range
+
+:read-only
+:read-write
+
+:placeholder-shown
+
+:user-invalid</code>`}<!-- HTML_TAG_END --></pre>
+<p>Additional Pseudo-elements
+Highlight Pseudo-elements:</p>
+<p>::selection
+::inactive-selection
+::spelling-error
+::grammar-error
+Other Pseudo-elements:</p>
+<p>::marker
+::placeholder
+::content</p>
+<h2 id="${"psuedo-elements"}"><a href="${"#psuedo-elements"}">Psuedo-elements</a></h2>
+<p>last-child vs last-of-type</p>
+<p>root, empty, and blank</p>
+<p><strong>empty elements</strong></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">&lt;E/&gt;
+&lt;E&gt;&lt;/E&gt;
+&lt;E&gt;&lt;!-- this is a comment --&gt;&lt;/E&gt;
+&lt;E title=&quot;this is an empty element&quot;/&gt;</code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Drag and Drop targetting</strong></p>
+<p>Drag and Drop Pseudo Classes
+<code>:drop</code>
+drop targets while the user is \u201Cdragging\u201D.
+Unfortunately, dropzone attribute is not yet supported
+<code>:drop(active)</code>
+current drop target for the drag operation.
+<code>:drop(valid)</code>
+drop target is valid for the object currently being dragged, like correct filetype.
+<code>:drop(invalid)</code>
+drop target is invalid for the object currently being dragged, i.e. doesn\u2019t except the filetype of object being dragged.
+<code>:drop(valid active)</code>
+matches active drop target if it\u2019s valid</p>
+<h2 id="${"generated-content"}"><a href="${"#generated-content"}">Generated Content</a></h2>
+<p>Adding custom tags based on css selectors</p>
+<figure><img src="${"https://i.imgur.com/b8dfYbx.png"}"></figure>
+<p>You can\u2019t use transform tools (like rotate) on a static element. </p>
+<p>You can put attribute content into the content tag!</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">a[href^=http]:hover &#123;
+   position: relative;
+&#125;
+a[href^=http]:hover:after &#123;
+   content: attr(href);
+   position: absolute;
+   top: 1em;
+   left: 0;
+   background-color: black;
+   color: white;
+   padding: 3px 5px;
+   line-height:1;
+&#125; </code>`}<!-- HTML_TAG_END --></pre>
+<p>Generated Content (like <code>after</code> content) is not accessibility. </p>
+<h2 id="${"media-query"}"><a href="${"#media-query"}">Media query</a></h2>
+<p>Resolution Units
+dpi: dots per inch (72, 96)</p>
+<p>dpcm: dots per centimeter (1dpcm \u2248 2.54dpi)</p>
+<p>dppx: dots per pixel
+1dppx = 96dpi (default resolution of images)
+Note: 0 is invalid.</p>
+<p>For a mobile-optimized site, you want this:</p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<p>The only time you want to disable zoom or resizing is if it\u2019s a game.</p>
+<p>MDN: <a href="${"https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag</a></p>
+<h2 id="${"supports"}"><a href="${"#supports"}">Supports</a></h2>
+<p>@supports is the way to apply a new CSS feature.</p>
+<h2 id="${"colors-and-appearance"}"><a href="${"#colors-and-appearance"}">Colors and Appearance</a></h2>
+<p><strong>Differences between opacity and transparency</strong>
+When you have opacity, it\u2019s actually the whole element that is becoming transparent. So here, the top one is opacity 1.</p>
+<p>Here you still have the white, because only the color of the shadow, it should be shadow color. And the color of the text became transparent. But you still have the shadow on that text and you still have the background that is fully opaque. Here the text, the shadow, the background, all of it became transparent, because the opacity was set on the element.</p>
+<p>And everything went to transparent. So that\u2019s the difference between AlphaTransparency and opacity. Which really doesn\u2019t make it that much of a difference in your life, until you get stuck on explaining to someone, basically. So AlphaTransparency tips, transparent shadows are awesome. </p>
+<p><strong>buttons</strong></p>
+<p>Please don\u2019t use <code>spans</code> or <code>divs</code> as button.
+How do you tab to it? How do you keyboard focus to it? How do you deal with all the accessibility issues? Use <code>button</code>. </p>
+<h2 id="${"flexbox"}"><a href="${"#flexbox"}">Flexbox</a></h2>
+<p>What are flex items:</p>
+<ul class="${"list"}"><li>All non-absolute positioned child nodes</li>
+<li>generated content (psuedo elements like before &amp; after)</li>
+<li>anonymous flex items =&gt; non-empty text nodes</li></ul>
+<p>What are NOT flex items:</p>
+<ol class="${"list"}"><li>::first-line &amp; ::first-letter</li>
+<li>white space</li></ol>
+<p>What are kinda: </p>
+<ol class="${"list"}"><li>absolute/fixed positioned items</li></ol>
+<p>Changes Properties:</p>
+<ol class="${"list"}"><li><code>min-height/min-width</code> are switched to default auto. (instead of 0)</li>
+<li><code>visibility: collapse</code></li>
+<li><code>margin:</code> Adjacent flex item margins do not collapse</li></ol>
+<p>Ignored Properties:</p>
+<ol class="${"list"}"><li>column-* properties</li>
+<li>Float</li>
+<li>Clear</li>
+<li>Vertical-align</li></ol>
+<h2 id="${"tables"}"><a href="${"#tables"}">Tables</a></h2>
+<p>tfooter - it\u2019s where you put something like calculations. Such as all the calories in an ice cream list.</p>
+<p>Captions - specifies the title of the table. </p>
+<h2 id="${"grid"}"><a href="${"#grid"}">Grid</a></h2>
+<h2 id="${"background--borders"}"><a href="${"#background--borders"}">Background &amp; Borders</a></h2>
+<h2 id="${"gradience"}"><a href="${"#gradience"}">Gradience</a></h2>
+<h2 id="${"transforms"}"><a href="${"#transforms"}">Transforms</a></h2>
+<h2 id="${"transitions"}"><a href="${"#transitions"}">Transitions</a></h2>
+<h2 id="${"animations"}"><a href="${"#animations"}">Animations</a></h2>
+<h2 id="${"other-features"}"><a href="${"#other-features"}">Other Features</a></h2>`
+  })}`;
 });
 var weekEightCssInDepth_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
@@ -16455,13 +17123,269 @@ var vueMasteryVue3Forms_svelte = /* @__PURE__ */ Object.freeze({
   load: load$2
 });
 var metadata$d = {
-  "title": "DRAFT Week Six - Javascript The Hard Parts",
-  "created": "2020-12-01T00:00:00.000Z",
+  "title": "Week Six - Javascript The Hard Parts",
+  "created": "2021-12-05T00:00:00.000Z",
   "summary": "JavaScript The Hard Parts, v2",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_six_js_hard_parts_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$d), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$d), {}, {
+    default: () => `<p><a href="${"https://frontendmasters.com/courses/javascript-hard-parts-v2/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/javascript-hard-parts-v2/</a>
+Will Sentance</p>
+<h2 id="${"javascript-intro"}"><a href="${"#javascript-intro"}">Javascript Intro</a></h2>
+<blockquote><p>[00:01:04]
+Now, I also argue that not only does it make you a great senior engineer, in fact, here\u2019s my claim. Junior engineer takes any feature they\u2019re given to build. And if they\u2019ve seen technology or maybe the solution before, they can solve it. Mid-level engineer takes any feature they\u2019re given to build.</p></blockquote>
+<blockquote><p>[00:01:20]
+And even if they\u2019ve not seen the technology or solution before, they can figure it out because they\u2019ve learned how to learn, they\u2019re problem solving strong. A senior engineer is somebody who can take any given feature, and not only just figure out for themselves, but enable the rest of their team to figure it out.</p></blockquote>
+<blockquote><p>[00:01:37]
+Because they have technical communication, the ability to explain what their code is doing to somebody else in their team, in a clear and cordial manner. But I\u2019d also say even for junior mid-level developers, technical communication is gonna make your own mindset clearer. So the purpose of Hard Parts is gonna differ depending maybe on your background in JavaScript.</p></blockquote>
+<blockquote><p>[00:01:59]
+If you\u2019re someone who\u2019s a mid-senior developer, you\u2019ve seen many of these principles before, maybe you\u2019ve come from a computer science background. Then think of especially the earlier parts of JavaScript, the Hard Parts, as more about building up your technical communication. The ability for you to verbally work through exactly what\u2019s happening on the blackboard here, verbally talk through your JavaScript and your code with clarity and precision.</p></blockquote>
+<h3 id="${"thread-of-execution"}"><a href="${"#thread-of-execution"}">Thread of Execution</a></h3>
+<p>When Javascript code runs, it:</p>
+<ol class="${"list"}"><li>Goes through line-by-line The thread of execution</li>
+<li>Saves data like strings and arrays in memory</li></ol>
+<p>Identifier - a fancy label that computers give to data</p>
+<p>We can only do one Thread of Execution once!</p>
+<p>It weaves in, and weaves out.</p>
+<h3 id="${"functions"}"><a href="${"#functions"}">Functions</a></h3>
+<p>Function saves a process.</p>
+<h3 id="${"call-stack"}"><a href="${"#call-stack"}">Call Stack</a></h3>
+<p>It keeps track of what functions is running.</p>
+<p>Whatever is at the top of the call is currently running.</p>
+<p>As soon as you run Javascript,
+global() is added to the bottom.
+Things get added to the stack, and JS handles it.
+But when it\u2019s finish, it goes back to global().</p>
+<figure><img src="${"https://i.imgur.com/6803OJz.png"}"></figure>
+<h3 id="${"pair-programming"}"><a href="${"#pair-programming"}">Pair Programming:</a></h3>
+<blockquote><p>What makes pair programming so powerful:
+They can\u2019t get off, they can\u2019t do it their way they have to take my explanation and implement it and if they\u2019re not understanding my explanation, that\u2019s all in me. I can\u2019t say, hey, actually, let me just show you how to do it, I\u2019ve got to be able to verbalize with such clarity and precision intuitive style, that my partner can actually turn it into real code.</p></blockquote>
+<blockquote><p>That is remarkable, it\u2019s gonna refine my technical communication beyond measure. Why pair programming is so important as a team doing these industry reviews with, you know, engineering managers and folks in industry for our curriculum. This new curriculum is what makes us do it, but whatever they make us review the new curriculum, because it\u2019s government agency that we\u2019re doing it with.</p></blockquote>
+<hr>
+<p>The two types of people and Pair programming: </p>
+<blockquote><p>One is the researcher and one is the Stack Overflower, both are avoiding what it really is to be an engineer, which I\u2019ll tell you in a second.</p></blockquote>
+<blockquote><p>The \u201Cresearcher\u201D avoids what it is to be an engineer, which is to be able to hit a whole block and somehow resolve through it, that is all it is to be an engineer, how do we actually do that? I should have figured out, here\u2019s how we do it, here\u2019s how we actually resolve hitting a whole block we go through the code. It\u2019s hitting a block and assuming the code, and then console logging essential using some other debugging tool, the data as you go through, line by line. And we spend the following three days reading every last thing about the new keyword, and about all aspects of the prototype chain, and wonderful. And yet we don\u2019t write a single line of code, we avoid the block.</p></blockquote>
+<blockquote><p>The other approach is to grab snippets of code to fix a bug from Stack Overflow \u201CThe Stack Overflower\u201D.
+And when that one when we plug it in, doesn\u2019t work, take that snippet plus the bit we added. Put it in the Stack Overflow, and say, how do these bits, stick together? </p></blockquote>
+<p>Why Pair programming is important: </p>
+<blockquote><p>Neither is effective in its own isolation, both are necessary to being an engineer, you\u2019ve done this in the first year of your careers, both of these.</p></blockquote>
+<h3 id="${"the-state"}"><a href="${"#the-state"}">The state</a></h3>
+<p>it\u2019s just memory at the current time.</p>
+<h2 id="${"functions--callbacks"}"><a href="${"#functions--callbacks"}">Functions &amp; Callbacks</a></h2>
+<h3 id="${"higher-order-functions"}"><a href="${"#higher-order-functions"}">Higher Order Functions</a></h3>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">squareNum</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> num <span class="token operator">*</span> num<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>So this is using <code>num</code> as a param that we can fill in.
+A TBD.</p>
+<p>What if it weren\u2019t just the data that we could leave TBD in our function that isn\u2019t a string, object, etc. What if we could also leave inside a function to be TBD? </p>
+<p>And when we run the function, fill that functionality in? That would make our functions super reusable, super general. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">copyArrayAndMultiplyBy2</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> output <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      output<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>array<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token keyword">return</span> output<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> myArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">copyArrayAndMultiplyBy2</span><span class="token punctuation">(</span>myArray<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// you'll have to recreate this if:</span>
+<span class="token comment">// function copyArrayAndAdd3</span>
+<span class="token comment">// function copyArrayAndDivideBy4</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Higher order Functions to the rescue!</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">copyArrayAndManipulate</span><span class="token punctuation">(</span><span class="token parameter">array<span class="token punctuation">,</span> instructions</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> output <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token comment">// now we're just pushing the function!</span>
+      output<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token function">instructions</span><span class="token punctuation">(</span>array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token keyword">return</span> output<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">function</span> <span class="token function">multiplyBy2</span><span class="token punctuation">(</span><span class="token parameter">input</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> input <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">&#125;</span>
+<span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">copyArrayAndManipulate</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> multiplyBy2<span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>How do we bottle up a javascript it?</p>
+<p>Any function tha takes a function is a <strong>Higher Order Function</strong>
+The function we insert is considered the <strong>Callback function</strong></p>
+<p>Keeps it more dry. Because the code is profoundly more reusable. </p>
+<p>Declarative Programming - I declare what I want to happen!</p>
+<h2 id="${"closures"}"><a href="${"#closures"}">Closures</a></h2>
+<p>Benefit: </p>
+<ul class="${"list"}"><li>Esoteric of Javascript concepts</li>
+<li>We can achieve pro-level functions like <code>once</code> and <code>memoize</code></li>
+<li>Many JS design patterns include the mdule pattern use closure</li>
+<li>Build iterators, handle partial application and maintain state in a async world</li></ul>
+<p>What is Closure</p>
+<p>What if it had a memory of what happened before?</p>
+<p>It starts with us <code>returning a function from another function</code></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token keyword">function</span> <span class="token function">createFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">function</span> <span class="token function">multiplyBy2</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> num <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token keyword">return</span> multiplyBy2<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> generateFunc <span class="token operator">=</span> <span class="token function">createFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token function">generateFunc</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/C9DuMAk.png"}"></figure>
+<ol class="${"list"}"><li>generateFunc\u2019s value is the return statement, which is <code>multiplyBy2</code>.</li>
+<li>Now we\u2019re at the <code>result</code> variable.</li>
+<li>That variable gets the value of <code>multiplyBy2(3)</code></li></ol>
+<p>Javascript is a \u2018do the line, the move on\u2019. It does not think about the labels of things after it\u2019s finished.
+So <code>result</code> has NO relation to createFunction()! </p>
+<p>All that matters is that <code>result</code> GAVE YOU THE RESULT of <code>createFunction()</code>, which is <code>multiplyBy2</code></p>
+<p>A KEY ISSUE: DEVS DISTRACT THEMSELVES WITH THE LABEL.
+Javascript does not do that under the hood.
+We\u2019re doing it with or eyes. </p>
+<blockquote><p>Is gonna turn out people. That, saving a function, declaring storing a function inside the execution. Context of running another functions of saving inside its local memory inside another function. When that function gets returned out, it gets the most powerful property bonus feature of JavaScript that we can ask for.</p></blockquote>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">outer</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+  <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token keyword">function</span> <span class="token function">incrementCounter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    counter <span class="token operator">++</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+  <span class="token function">incrementCounter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/CjQqYuN.png"}"></figure>
+<p>What does <code>myNewFunc()</code> have?</p>
+<p>If you run it, it runs <code>counter++</code>.</p>
+<p>Functions return their outputs. That\u2019s kinda their thing.</p>
+<p>So where does the variable counter come from?</p>
+<p>Well, if you check the outer scope, or the global scope, there is no counter variable.</p>
+<h3 id="${"the-backpack-concept"}"><a href="${"#the-backpack-concept"}">The backpack concept:</a></h3>
+<p>Functions actually return their <code>local scope, and their result</code>. </p>
+<p>So sequence of events:</p>
+<ol class="${"list"}"><li>It checks the local scope.</li>
+<li>Then it checks the backpack.</li>
+<li>Finally it checks the Global Memory. </li></ol>
+<p>If it exists in the function \u2018store\u2019, the permenant storage, the \u201Cbackpack\u201D, then it incremenets it there!</p>
+<p>It\u2019s located in </p>
+<p>[[]] means hidden data. </p>
+<p>[[scope]] \u2014 it pulls this <code>backpack</code>. It\u2019s still attached when you pull the function.</p>
+<h3 id="${"caveats"}"><a href="${"#caveats"}">Caveats</a></h3>
+<p>You can only mess with </p>
+<p>You can\u2019t access myNewFunc().scope.counter\u2026 that\u2019s illegal - doesn\u2019t work.
+The only way to access is to write a function that messes with it.</p>
+<p>It\u2019s private data!
+It\u2019s presistent data.</p>
+<h3 id="${"what-they-call-it"}"><a href="${"#what-they-call-it"}">What they call it</a></h3>
+<p>The backpack \u2014 which is inaccurate. Because they call the function, variable\u2026 whole thing something else.</p>
+<p>Devs call it:
+Variable environment
+Closed Over Variable Environement. (Cove)
+Function\u2019s closure. </p>
+<p>Scope is the data that i have access to me right now.</p>
+<figure><img src="${"https://i.imgur.com/JM9xxmm.png"}"></figure>
+<p>Sequence of events:
+<code>const anotherFunction = outer()</code></p>
+<ol class="${"list"}"><li>anotherFunction gets the results of the <code>incrementCounter()</code></li>
+<li>That result is <code>counter++</code></li>
+<li>It then gets the <code>local scope</code> of that function as well, getting shoved into [[scope]]</li>
+<li></li></ol>
+<h3 id="${"use-cases"}"><a href="${"#use-cases"}">Use-cases</a></h3>
+<p><code>once</code> -&gt; set a lookup so that if the function once
+useful for say, a video game where you complete it, try to run the funciton again\u2026 nah dude.</p>
+<p><code>memorization</code></p>
+<p>If you have a 100^, it\u2019ll give you a massive calculation.
+Well, why do this hard calculation multiple times?
+Just store the data in the backpack!</p>
+<p>Module pattern:
+Data that exists in the </p>
+<h2 id="${"async-functions"}"><a href="${"#async-functions"}">Async Functions</a></h2>
+<figure><img src="${"https://i.imgur.com/ilx63E5.png"}"></figure>
+<h3 id="${"web-api"}"><a href="${"#web-api"}">Web API</a></h3>
+<p>So web apis are things that aren\u2019t native to javascript.
+Javascript console is not a real thing. Nor is fetch. nor is setTimeout.</p>
+<figure><img src="${"https://i.imgur.com/rpvh0Qa.png"}"></figure>
+<p>Assume the waitfor1sec() is a expensive 1-sec add a billion items to an array.</p>
+<ol class="${"list"}"><li>the <code>waitfor1sec()</code> function fires</li>
+<li>The <code>console.log</code> fires</li>
+<li>THEN the set timeout?</li></ol>
+<p>Because how it gets added on the call stack.</p>
+<p>First, it setsTimeout(), putting a callback to come back once it\u2019s finished.
+But we have to keep going while we\u2019re waiting. So we add the <code>waitfor1sec()</code> function.
+The console.log fires.
+The setTimeout() callback has been waiting very eagerly, but we can\u2019t get to it until we run everything else! Because it gets added to the Callstack Queue.</p>
+<p>Because that\u2019s how Javascript is made.</p>
+<p>Javascript MUST run every single line of code in the call stack.
+When that is completely finished, then it checks the Callstack Queue.</p>
+<p>That\u2019s the event loop.</p>
+<h3 id="${"promises"}"><a href="${"#promises"}">Promises</a></h3>
+<figure><img src="${"https://i.imgur.com/qS16ejW.png"}"></figure>
+<p>Future data.
+fetch is a very very powerful command.
+It:</p>
+<ol class="${"list"}"><li>goes out into the internet to grab data.</li>
+<li>It creates a empty object.</li>
+<li>It watches that object.</li>
+<li>When data is finally returned, it fills that object.</li>
+<li>If the object is filled, it then lets you know.</li>
+<li>using <code>.then(randoFunction)</code>, you can then pass a function into that array that gets manipulated.</li>
+<li>The thens manipulate that data even more!</li></ol>
+<p>That object looks something like this:</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">&#123;
+    header: ...
+    response: null,
+    specialFunctions: [...whateverThenFunctionsYouAdd],
+    onRejection: ... (for try/catch errors)
+&#125;</code>`}<!-- HTML_TAG_END --></pre>
+<p>And once that response hits\u2026 it hits.</p>
+<h3 id="${"async-code"}"><a href="${"#async-code"}">Async code</a></h3>
+<p>So by default\u2026 Javascript goes up and down. Read it, execute, move on.</p>
+<p>Well, if you have a function that needs to wait\u2026 TOO BAD. We\u2019re moving on without you.</p>
+<h3 id="${"fetch-promises-more-queues"}"><a href="${"#fetch-promises-more-queues"}">Fetch, promises, more queues!</a></h3>
+<p>So if you have a <code>fetch</code> and a <code>setTimeout</code>, and a <code>waitfor300ms()</code> function.</p>
+<figure><img src="${"https://i.imgur.com/Wh13Pnp.png"}"></figure>
+<ol class="${"list"}"><li><p>Code goes up and down. </p></li>
+<li><p>It goes and setTimeout().</p></li>
+<li><p>setTimeout() goes to live in the browser task as it\u2019s going to do that.</p></li>
+<li><p>It goes out and <code>fetch</code></p>
+<ul class="${"list"}"><li>In the middle of that, SetTimeOut is finished! So it goes into the Event Queue.</li></ul></li>
+<li><p><code>fetch</code> is finished! That also goes into a queue. (But not the event queue, we\u2019re coming to it)</p></li>
+<li><p>It continues to read the code and output console.log.</p></li></ol>
+<p>The Event loop realizes that the event stack is empty now!
+So it\u2019ll dig into\u2026 the queue! (queues really!)</p>
+<ol start="${"7"}" class="${"list"}"><li><p>Hey, fetch actually put the data in the <code>microtask queue</code>.
+While the setTimeout() put it in the <code>event queue</code>
+WTF?</p></li>
+<li><p>Well, microtasks have priority! So there it goes!</p></li></ol>
+<h3 id="${"the-event-stack-and-the-two-queues"}"><a href="${"#the-event-stack-and-the-two-queues"}">The event stack and the two queues</a></h3>
+<ol class="${"list"}"><li>Event stack</li></ol>
+<p>Anything that is ready to execute goes on the stack.</p>
+<ol start="${"2"}" class="${"list"}"><li>Microtask Queue</li></ol>
+<p>Anything resolved with promises.
+The Event Loop will check this place FIRST. So, if you make a promise that keeps adding new microtasks queues,
+in node, you can \u201Cstarve\u201D the <code>event queue</code>. </p>
+<p>It\u2019ll keep executing the microtask queue, because new things keep getting added.</p>
+<ol start="${"3"}" class="${"list"}"><li>Event Queue</li></ol>
+<p>Anything with callbacks. </p>
+<h2 id="${"classes-and-what-the-new-keyword-does-under-the-hood"}"><a href="${"#classes-and-what-the-new-keyword-does-under-the-hood"}">Classes and what the new keyword does under the hood</a></h2>
+<h3 id="${"factory-function"}"><a href="${"#factory-function"}">Factory Function</a></h3>
+<p>So a factory function creates objects.</p>
+<p>something like</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">makeNewMage</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// ... &#125;;</span>
+
+<span class="token keyword">const</span> JakeTheMage <span class="token operator">=</span> <span class="token function">makeNewMage</span><span class="token punctuation">(</span><span class="token string">'Jake'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> SarahtheMage <span class="token operator">=</span> <span class="token function">makeNewMage</span><span class="token punctuation">(</span><span class="token string">'Sarah'</span><span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>NOTE: He covers this whole hour in Javascript OOP the hard parts. </p>`
+  })}`;
 });
 var weekSixJsHardParts_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
@@ -17134,14 +18058,15 @@ var weekFiveJsTesting_svelte = /* @__PURE__ */ Object.freeze({
 });
 var metadata$9 = {
   "title": "Week Five - Debugging",
-  "created": "2020-12-04T00:00:00.000Z",
+  "created": "2021-12-04T00:00:00.000Z",
   "summary": "Javascript Debugging and Fixing Common JavaScript Errors",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_five_debugging_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$9), {}, {
     default: () => `<h2 id="${"debugging-javascript"}"><a href="${"#debugging-javascript"}">Debugging Javascript</a></h2>
-<p>Random shit:</p>
+<p>Github: <a href="${"https://github.com/toddhgardner/getRANTR"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/toddhgardner/getRANTR</a></p>
+<p>Random trivia:</p>
 <pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
 <span class="token string">'\u{1F4A9}'</span><span class="token punctuation">.</span>length <span class="token comment">// 2 because it's unicode counting</span>
 
@@ -17152,6 +18077,24 @@ var Week_five_debugging_svelte = create_ssr_component(($$result, $$props, $$bind
 <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token function">Array</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [0, 1, [undefined, undefined]]</span>
 
 <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [1, 10, 5] because it treats it as strings</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>part 2</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// -Infinity</span>
+
+<span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length <span class="token comment">// 2 -- it actually calls Function.prototype.length which returns the num of arguments.</span>
+
+<span class="token operator">+</span><span class="token string">"42"</span><span class="token punctuation">;</span> <span class="token comment">// 42 -- because the + is not preceded by a string, it stays a string. </span>
+
+<span class="token string">'\u{1F4A9}'</span> <span class="token operator">-</span> <span class="token string">'\u{1F4A9}'</span> <span class="token comment">// NaN - '\u{1F4A9}' does not have a corresponding number</span>
+
+<span class="token operator">!</span><span class="token operator">!</span><span class="token string">""</span> <span class="token comment">// false</span>
+
+<span class="token number">1</span> <span class="token operator">/</span> <span class="token number">0</span> <span class="token comment">// Infinity</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Very few things in JS throw through a <code>&lt;Error&gt;</code></p>
+<p>Something to be aware:</p>
+<p>This is applicable to completely vanilla JS or jQuery.
+There\u2019s a bit of different debugging done with frameworks. </p>
 <h2 id="${"how-to-fix-bugs"}"><a href="${"#how-to-fix-bugs"}">How to fix Bugs</a></h2>
 <p>A generic tool:
 Identify, Isolate, Resolve, Prevent.</p>
@@ -17160,7 +18103,72 @@ Identify, Isolate, Resolve, Prevent.</p>
 <p><strong>Resolve:</strong></p>
 <p><strong>Prevent:</strong>
 Regression Tests</p>
-<h2 id="${"design-for-debuggability"}"><a href="${"#design-for-debuggability"}">Design for Debuggability</a></h2>`
+<h3 id="${"cant-delete-a-tweet"}"><a href="${"#cant-delete-a-tweet"}">Can\u2019t delete a tweet</a></h3>
+<p>GOAL: The issue is that when the user clicks the delete button, it doesn\u2019t actually fire the JS code correctly.</p>
+<p><strong>Issue 1: There\u2019s no console.log error.</strong></p>
+<p>He notices that the button redirects. </p>
+<p>console.log -&gt; press gear -&gt; Preserve log </p>
+<p>He now notices that there\u2019s a uncaught error, and it automatically redirects. </p>
+<p>Because it\u2019s <code>&lt;button&gt;</code> in a form, which automatically submits a get/post request. </p>
+<p><strong>Issue 2: How to stop the redirect</strong></p>
+<p>He found the element\u2019s event handler, then opened up where it was located in JS.</p>
+<p>He added this in the file.</p>
+<p><code>evt.preventDefault()</code></p>
+<p><strong>Issue 3: It\u2019s still not fixed</strong></p>
+<p>He was losing the context of <code>this</code>.
+His initial fix was a old fashion ES5 method.</p>
+<p><code>this.model.destroy()</code></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token function-variable function">onDelete</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>model<span class="token punctuation">.</span><span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">.</span>bind<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"text-stays-in-the-text-field"}"><a href="${"#text-stays-in-the-text-field"}">Text stays in the text field</a></h3>
+<ol class="${"list"}"><li>He finds the onChange event. </li></ol>
+<p>He discovers that the data is saved on localStorage.</p>
+<ol start="${"2"}" class="${"list"}"><li>In the code, he says that there\u2019s a conditional that adds that localStorage.</li></ol>
+<figure><img src="${"https://i.imgur.com/HBNwLeD.png"}"></figure>
+<p>The solution is to instead just check if that variable type is a string.
+<code>if (typeof text === &#39;string&#39;)</code></p>
+<h3 id="${"server-giving-a-400-bad-request"}"><a href="${"#server-giving-a-400-bad-request"}">Server giving a 400 bad request</a></h3>
+<p>The error he discovered was that the message being submitted must have a length greater than 0. </p>
+<h3 id="${"a-single-user-has-2124-errors"}"><a href="${"#a-single-user-has-2124-errors"}">A single User has 2124 errors</a></h3>
+<p>His solution: return the error back to the user.</p>
+<h2 id="${"more-advanced-bug-tracking"}"><a href="${"#more-advanced-bug-tracking"}">More Advanced Bug Tracking</a></h2>
+<h3 id="${"unexpected-high-memory-usage"}"><a href="${"#unexpected-high-memory-usage"}">Unexpected High Memory Usage</a></h3>
+<p>SKIP: Fifth Bug</p>
+<p>Yikes, I think this is really outdated.</p>
+<p>Note: his screenshot is using a old version of Chrome Profiles.</p>
+<h3 id="${"networkproxy-bug"}"><a href="${"#networkproxy-bug"}">Network/Proxy Bug</a></h3>
+<p>The issue:
+It\u2019s making a call to another JS file that the user blocked with adblocker.</p>
+<p>We shouldn\u2019t stop the user just because it.</p>
+<p>This is fixed by wrapping the call to check if it exists, THEN fire it.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>window<span class="token punctuation">.</span>analytics<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  analytics<span class="token punctuation">.</span><span class="token function">trackUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>But what about say Javascript?</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>window<span class="token punctuation">.</span>$<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'jQuery failed to load'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">"&lt;h1>Well that didn't work are you in a elevator?&lt;/h1>&lt;p>Reach out to help@site.com&lt;/p>"</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"design-for-debuggability"}"><a href="${"#design-for-debuggability"}">Design for Debuggability</a></h2>
+<figure><img src="${"https://i.imgur.com/ash4oJX.png"}"></figure>
+<p>jQuery builds a lot of abstraction to make it easier for the end user.
+But it makes it complicated.</p>
+<p>There\u2019s a lot of complication under the hood. </p>
+<p>It\u2019s a see-saw.</p>
+<h3 id="${"rule-of-3"}"><a href="${"#rule-of-3"}">Rule of 3</a></h3>
+<p>ADD TO TIL:
+Refactoring: Improving the Design for</p>
+<p>The first time you run into a problem, solve it.
+The second time, just copy it.
+The third time, then you make that consideration.</p>
+<h3 id="${"adding-a-secret-debug-mode"}"><a href="${"#adding-a-secret-debug-mode"}">Adding a secret debug mode</a></h3>
+<p><code>site.com?debug</code></p>`
   })}`;
 });
 var weekFiveDebugging_svelte = /* @__PURE__ */ Object.freeze({
@@ -17178,7 +18186,9 @@ var metadata$8 = {
 };
 var Week_four_nodejs_v2_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$8), {}, {
-    default: () => `<h1 id="${"introduction-to-nodejs-v2"}"><a href="${"#introduction-to-nodejs-v2"}">Introduction to Node.js, V2</a></h1>
+    default: () => `<p><a href="${"https://frontendmasters.com/courses/node-js-v2/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/node-js-v2/</a></p>
+<p>Scott Moss</p>
+<h1 id="${"introduction-to-nodejs-v2"}"><a href="${"#introduction-to-nodejs-v2"}">Introduction to Node.js, V2</a></h1>
 <p><a href="${"https://intro-to-nodejs-v2-site.vercel.app/lesson/00-welcome"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://intro-to-nodejs-v2-site.vercel.app/lesson/00-welcome</a></p>
 <p><strong>Use-cases</strong></p>
 <ul class="${"list"}"><li>API\u2019s and servers</li>
@@ -17744,12 +18754,494 @@ var weekOneJavascript_svelte = /* @__PURE__ */ Object.freeze({
 });
 var metadata$6 = {
   "title": "Week Seven - Deep JS",
-  "created": "2020-12-01T00:00:00.000Z",
+  "created": "2021-12-12T00:00:00.000Z",
   "summary": "Deep JavaScript Foundations, v3",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_seven_deep_js_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$6), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$6), {}, {
+    default: () => `<p>Hey It\u2019s Kyle Simpson!</p>
+<p>Slides: <a href="${"https://static.frontendmasters.com/resources/2019-03-07-deep-javascript-v2/deep-js-foundations-v2.pdf"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://static.frontendmasters.com/resources/2019-03-07-deep-javascript-v2/deep-js-foundations-v2.pdf</a></p>
+<h2 id="${"introduction"}"><a href="${"#introduction"}">Introduction</a></h2>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">/* It started with this question */</span>
+x<span class="token operator">++</span><span class="token punctuation">;</span>
+<span class="token operator">++</span>x<span class="token punctuation">;</span>
+
+<span class="token comment">// It's supposed to be the same as this, correct?</span>
+x <span class="token operator">=</span> x <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">/* The funky catch-all */</span>
+
+<span class="token comment">// What actually happens </span>
+
+<span class="token keyword">var</span> x <span class="token operator">=</span> <span class="token string">"5"</span><span class="token punctuation">;</span> 
+x <span class="token operator">=</span> x <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// "51"</span>
+
+<span class="token keyword">var</span> y <span class="token operator">=</span> <span class="token string">"5"</span><span class="token punctuation">;</span>
+y<span class="token operator">++</span><span class="token punctuation">;</span>  <span class="token comment">// 5</span>
+y<span class="token punctuation">;</span>    <span class="token comment">// 6</span>
+
+</code>`}<!-- HTML_TAG_END --></pre>
+<blockquote><p>[00:05:20]
+We blame the language. JavaScript clearly must have been designed poorly because this happened. </p></blockquote>
+<blockquote><p>[00:05:56]
+If you ask a room of C++ developers, have you ever read any part of the specification for C++? Most hands will go up, same for Java. But if I ask that same question, and I do, all over the world I ask this question almost every time, how many of you have read any part of the JavaScript spec?</p></blockquote>
+<blockquote><p>[00:06:12]
+And I hardly ever get any hands. And I think part of what I\u2019m getting at here is that many developers in the JavaScript community seem to think that JavaScript with its low barrier to entry, should be so automatically understandable, so intuitive, that if it\u2019s not immediately intuitive, therefore it was poorly designed.</p></blockquote>
+<blockquote><p>[00:06:53]
+And then when we get bitten by it we shift the blame to someone else. Instead of most developers in other communities saying, well, the fault is my own. I didn\u2019t understand it enough, okay? So here, when I experienced it coming back as the number 5 instead of the string 5, I didn\u2019t say, stupid JavaScript, how could you be so poorly designed?</p></blockquote>
+<blockquote><p>[00:07:30]
+I actually had this argument recently where somebody said, I don\u2019t know, the JavaScript engine is the source of authority. No, it isn\u2019t. The specification is the source of authority. And if you\u2019re wondering why does something do it, why am I seeing this behavior? Why does it seem weird or mysterious or black box or buggy or whatever?</p></blockquote>
+<p>tl;dr: Have you ever read any part of the JS specification? </p>
+<figure><img src="${"https://i.imgur.com/F7qjORD.png"}"></figure>
+<p>The 3 pillars to describe \u2014 </p>
+<ul class="${"list"}"><li>Types</li></ul>
+<p>Primitive Types, Abstract Operations, Coercion, Equality, TypeScript, flow, etc.</p>
+<ul class="${"list"}"><li>Scope</li></ul>
+<p>Nested Scope, hoisting, Closures, and Modules</p>
+<ul class="${"list"}"><li>Objects (oriented)</li></ul>
+<p>Different from OOP, which is about the class-oriented.</p>
+<p><code>this</code>, <code>class{}</code>, Prototypes, OO vs OLOO</p>
+<h2 id="${"types"}"><a href="${"#types"}">Types</a></h2>
+<p>\u201CIn JavaScript, everything is an object.\u201D</p>
+<blockquote><blockquote><blockquote><p>Kyle Simpson: There is a reason for this statement, but this statement is a misconception, this is false. And that\u2019s a joke, by the way. [LAUGH] because false is not an object. False is an example of one of those values that is not an object. The reason behind why people say everything is an object, is because most of the values in JavaScript can behave as objects.</p></blockquote></blockquote></blockquote>
+<p>The Primitive Types: </p>
+<ul class="${"list"}"><li>undefined</li>
+<li>string</li>
+<li>number</li>
+<li>boolean</li>
+<li>object</li>
+<li>Symbol</li></ul>
+<blockquote><p>[00:04:04]
+There is also add it recently a few years back in years six, a lesser none type but the primitives of types on the less call simple, symbols don\u2019t get use to often a lot of white for JavaScript that use basically you create suto private keys on objects. Not really private, but kinda obscure.</p></blockquote>
+<blockquote><p>[00:04:23]
+So you don\u2019t see those used a lot, more probably used in frameworks than you\u2019re gonna see in your general JavaScript code, but it is a primitive type nonetheless. </p></blockquote>
+<h3 id="${"kyle-simpsons-subtypes"}"><a href="${"#kyle-simpsons-subtypes"}">Kyle Simpson\u2019s \u2018subtypes\u2019</a></h3>
+<ul class="${"list"}"><li><p>undeclared</p></li>
+<li><p>null</p></li>
+<li><p>function?</p>
+<blockquote><p>Kyle Simpson: And what about functions though? JavaScript didn\u2019t even list out function. If you look closely in that previous list, it didn\u2019t list out function and yet we know intuitively, that values which are functions have a very specific behavior, that is different from values that are numbers for say for example, so isn\u2019t it a type.</p></blockquote></li></ul>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token function-variable function">v</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">typeof</span> v<span class="token punctuation">;</span> <span class="token comment">// "function"</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<ul class="${"list"}"><li>array?</li></ul>
+<blockquote><p>Arrays, we use this all the time, and it seems like they definitely have a specific behavior.</p></blockquote>
+<blockquote><p>They\u2019re numerically indexed, and they have a length property that automatically updates. And they have various methods to them. So, are they a type? Again, the best way to think about them, the best mental model I\u2019ve come up with is that it\u2019s a subtype of the object type. It\u2019s a special kinda object with this numeric indexing.</p></blockquote>
+<ul class="${"list"}"><li>bigint</li></ul>
+<figure><img src="${"https://i.imgur.com/Hq8lgU5.png"}"></figure>
+<p>You can determine what the primitive with the keyword <code>typeof</code></p>
+<p>Historical record: </p>
+<p>If you wanted to remove a value, use undefined.
+If you wanted to remove a object, use null.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">var</span> number <span class="token operator">=</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> theObject <span class="token operator">=</span> <span class="token keyword">null</span>
+
+<span class="token keyword">typeof</span> theObject<span class="token punctuation">;</span> <span class="token comment">// object?!</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>This is historical. Goofy stuff that\u2019s a bug. </p>
+<h3 id="${"temporal-dead-zone-tdz"}"><a href="${"#temporal-dead-zone-tdz"}">Temporal Dead Zone (TDZ)</a></h3>
+<figure><img src="${"https://i.imgur.com/xF7NcbP.png"}"></figure>
+<p>And undefined means there\u2019s definitely a variable, and at the moment, it has no value.</p>
+<p>But there\u2019s another concept of emptiness in the language that was introduced with, essentially, ES6. And the best way to describe this is uninitialized. Another way of referring to this particular condition that a variable can be in is called the TDZ, the temporal dead zone. We\u2019re gonna get much more into this in our next unit of discussion when we talk about scopes.</p>
+<h3 id="${"nan-is-not-a-number"}"><a href="${"#nan-is-not-a-number"}">NaN, is Not a Number</a></h3>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">myCatsAge <span class="token operator">=</span> <span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">"n/a"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// NaN</span>
+
+myCatsAge <span class="token operator">===</span> myCatsAge<span class="token punctuation">;</span> <span class="token comment">// false!!! WOAH</span>
+<span class="token keyword">undefined</span> <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+
+Number<span class="token punctuation">.</span><span class="token function">isNan</span><span class="token punctuation">(</span>myCatsAge<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
+Number<span class="token punctuation">.</span><span class="token function">isNan</span><span class="token punctuation">(</span><span class="token string">"words"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// false</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>NaN is a thing that doesn\u2019t equal itself.</p>
+<figure><img src="${"https://i.imgur.com/0VgIfod.png"}"></figure>
+<h3 id="${"negative-0"}"><a href="${"#negative-0"}">Negative 0</a></h3>
+<p><code>(-0)</code></p>
+<p>It\u2019s a real thing.</p>
+<p>Good usecase \u2014
+Kyle built an app and wanted the car to continue pointing in the same spot, instead of the default.</p>
+<p>So when the car was not moving, it would go to <code>-0</code>.
+<code>0</code> would go to default.</p>
+<h3 id="${"when-to-use-new"}"><a href="${"#when-to-use-new"}">When to use new</a></h3>
+<figure><img src="${"https://i.imgur.com/zuSZWEa.png"}"></figure>
+<h2 id="${"coercion"}"><a href="${"#coercion"}">Coercion</a></h2>
+<p>toPrimitive(hints)</p>
+<p><a href="${"https://262.ecma-international.org/9.0/#sec-abstract-operations"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://262.ecma-international.org/9.0/#sec-abstract-operations</a></p>
+<p><a href="${"https://262.ecma-international.org/9.0/#sec-toprimitive"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://262.ecma-international.org/9.0/#sec-toprimitive</a></p>
+<p>toString</p>
+<p>toNumber</p>
+<p>toBoolean
+It uses a lookup table! It\u2019s either on or not.</p>
+<h3 id="${"cases-of-cohecision"}"><a href="${"#cases-of-cohecision"}">Cases of Cohecision</a></h3>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">var</span> numStudents <span class="token operator">=</span> <span class="token number">16</span><span class="token punctuation">;</span>
+
+<span class="token comment">// this is coercison</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">There are </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>numStudents<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> students.</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// There are 16 students</span>
+
+<span class="token comment">// this is explicit</span>
+
+<span class="token comment">// 'join' forces things to become strings. Don't do this.</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">There are </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span><span class="token punctuation">[</span>numStudents<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> students.</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// There are 16 students</span>
+
+<span class="token comment">// A function on a primitive? wtf?</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">There are </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>numStudents<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> students.</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// There are 16 students</span>
+
+<span class="token comment">// A clearer way </span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">There are </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span><span class="token function">String</span><span class="token punctuation">(</span>numStudents<span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string"> students.</span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// There are 16 students</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<blockquote><p>[00:09:45]
+Except what happens when it\u2019s NaN.
+Kyle Simpson: Okay, there\u2019s all kinds of corner cases in all of these coercions. So if you\u2019re in the habit of using some of these and not using others, I mean I hate to call this out but it sort of hypocritical to say, I used this form or magic but I don\u2019t like that form of magic.</p></blockquote>
+<blockquote><p>[00:10:06]
+I don\u2019t know if we should use the magic at all, I think we should learn it, use it, and then it\u2019s not magical at all. Once you learn it, you\u2019re doing something intentional, and you\u2019re communicating your intent to other people. That does not mean that implicitness is always bad.</p></blockquote>
+<h2 id="${"philosophy-of-coercion"}"><a href="${"#philosophy-of-coercion"}">Philosophy of Coercion</a></h2>
+<figure><img src="${"https://i.imgur.com/vN0RHLG.png"}"></figure>
+<p>[00:00:40]
+I make the claim that a quality JavaScript program is going to have to embrace coercion. You have to make sure that the types involved in every operation are clear. And by the way that means that you shouldn\u2019t be designing all these polymorphic functions that can take any sort of value and do 15 different things based upon the value.</p>
+<p>[00:01:00]
+You\u2019re asking for coercion problems when you do that and then papering over them, but I used the triple, I used the triple equals. Why not just design a function that only takes numbers and then make another function that only takes strings? Or make a function that takes numbers and strings, and it\u2019s very clear it can only be those two types, and I know what corner cases I have to worry about between numbers and strings.</p>
+<p>[00:01:23]
+We can choose to be more obvious about how we manage our types, how much we overload, how polymorphic we make our code. We can opt in to more problems or opt out of problems as a result.</p>
+<figure><img src="${"https://i.imgur.com/BK1LDNo.png"}"></figure>
+<blockquote><p>What I\u2019m actually saying is that your code is a form of communication, and there is an effective way to communicate that understands and uses the tool well. If you ask the reader of a code to understand something about the tool so that they can understand that line of code, that is an investment on their part.</p></blockquote>
+<blockquote><p>Yeah, the junior devs gonna need to learn some stuff, but that\u2019s what happens in every job and in every industry, you have to learn some stuff. You don\u2019t see an architect saying, well we\u2019re not gonna design that building well cuz we\u2019ve got an intern on the job. You teach the intern how to build the building well.</p></blockquote>
+<h3 id="${"kyle-rant"}"><a href="${"#kyle-rant"}">Kyle Rant!!</a></h3>
+<figure><img src="${"https://i.imgur.com/2g1xB14.png"}"></figure>
+<p>Kyle believes this is wrong.
+Who decides what is working and what is dangerous?</p>
+<figure><img src="${"https://i.imgur.com/movePjO.png"}"></figure>
+<p>Cohesion test:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token keyword">function</span> <span class="token function">isValidName</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>
+		<span class="token keyword">typeof</span> name <span class="token operator">==</span> <span class="token string">"string"</span> <span class="token operator">&amp;&amp;</span>
+		name<span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length <span class="token operator">>=</span> <span class="token number">3</span>
+	<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+		<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+
+	<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">function</span> <span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token parameter">attended<span class="token punctuation">,</span>length</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>
+		<span class="token keyword">typeof</span> attended <span class="token operator">==</span> <span class="token string">"string"</span> <span class="token operator">&amp;&amp;</span>
+		attended<span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token string">""</span>
+	<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+		attended <span class="token operator">=</span> <span class="token function">Number</span><span class="token punctuation">(</span>attended<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>
+		<span class="token keyword">typeof</span> length <span class="token operator">==</span> <span class="token string">"string"</span> <span class="token operator">&amp;&amp;</span>
+		length<span class="token punctuation">.</span><span class="token function">trim</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> <span class="token string">""</span>
+	<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+		length <span class="token operator">=</span> <span class="token function">Number</span><span class="token punctuation">(</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>
+		<span class="token keyword">typeof</span> attended <span class="token operator">==</span> <span class="token string">"number"</span> <span class="token operator">&amp;&amp;</span>
+		<span class="token keyword">typeof</span> length <span class="token operator">==</span> <span class="token string">"number"</span> <span class="token operator">&amp;&amp;</span>
+		attended <span class="token operator">&lt;=</span> length <span class="token operator">&amp;&amp;</span>
+		attended <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span>
+		length <span class="token operator">>=</span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span>
+		Number<span class="token punctuation">.</span><span class="token function">isInteger</span><span class="token punctuation">(</span>attended<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
+		Number<span class="token punctuation">.</span><span class="token function">isInteger</span><span class="token punctuation">(</span>length<span class="token punctuation">)</span>
+	<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+		<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+
+	<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+
+<span class="token comment">// tests:</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">isValidName</span><span class="token punctuation">(</span><span class="token string">"Frank"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token string">"10"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token string">"6"</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token string">"6"</span><span class="token punctuation">,</span><span class="token string">"10"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">isValidName</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">isValidName</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">isValidName</span><span class="token punctuation">(</span><span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">isValidName</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">isValidName</span><span class="token punctuation">(</span><span class="token string">"  &#92;t&#92;n"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">isValidName</span><span class="token punctuation">(</span><span class="token string">"X"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token string">""</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">,</span><span class="token string">""</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token string">"foo"</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token string">"foo"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token string">"foo"</span><span class="token punctuation">,</span><span class="token string">"bar"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span><span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token keyword">undefined</span><span class="token punctuation">,</span><span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token keyword">undefined</span><span class="token punctuation">,</span><span class="token keyword">undefined</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span><span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token string">"6"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token string">"10"</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token string">"10"</span><span class="token punctuation">,</span><span class="token string">"6"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">10.1</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token number">6.1</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token string">"10.1"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token string">"6.1"</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">hoursAttended</span><span class="token punctuation">(</span><span class="token string">"6.1"</span><span class="token punctuation">,</span><span class="token string">"10.1"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"equality"}"><a href="${"#equality"}">Equality</a></h2>
+<p>KYLE RANT!</p>
+<p>He really spends an hour complaining about (===) and (==)</p>
+<p>A HOUR.</p>
+<h2 id="${"scope-and-types"}"><a href="${"#scope-and-types"}">Scope and Types</a></h2>
+<p>Difference between Typescript and Flow
+<a href="${"https://github.com/niieani/typescript-vs-flowtype"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/niieani/typescript-vs-flowtype</a></p>
+<h2 id="${"scope-and-typing"}"><a href="${"#scope-and-typing"}">Scope and Typing</a></h2>
+<h3 id="${"static-typing"}"><a href="${"#static-typing"}">Static Typing</a></h3>
+<h2 id="${"scope"}"><a href="${"#scope"}">Scope</a></h2>
+<p>How does Javascript go, \u201CYour Line 10 variable is undefined\u201D</p>
+<p>The 4 stages of compiling.</p>
+<p>In bash, if there\u2019s an error in line 4, lines 1, 2, &amp; 3 runs.</p>
+<p>Javascript is a compile language.
+The computer compiles the code before running. </p>
+<p>Some say something like Java, it compiles, then it runs. </p>
+<p>Javascript does it too. It interpret\u2019s the code, then fires it to the Javascript Engine.</p>
+<h3 id="${"compile--run"}"><a href="${"#compile--run"}">Compile &amp; Run</a></h3>
+<p>Javascript is a TWO-PASS system.</p>
+<ol class="${"list"}"><li>Compile Time (Processing or Parsing)</li>
+<li>Run time (Executing)</li></ol>
+<p>THe first pass:
+It doesn\u2019t ACTUALLY create it.
+It\u2019s actually \u2018planning the idea\u2019 of creating it.
+It creates a \u2018treasure map\u2019. </p>
+<p>The second pass:
+When it runs!
+That\u2019s where things get assigned.
+So now it follows the treasure map, and does it.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token keyword">function</span> <span class="token function">otherClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// ... &#125;</span>
+
+<span class="token function">otherClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Remember, functions don\u2019t really exist. They exist \u2018symbolically.\u2019</p>
+<p>A bad part of Javascript</p>
+<p><strong>Dynamic Global Variables</strong></p>
+<p>If you declare a variable without declaring it\u2026 it automatically creates a auto-global.</p>
+<p><strong>NOTE: This does not work in strict mode</strong></p>
+<p>NEVER EVER auto-create them.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">var</span> teacher <span class="token operator">=</span> <span class="token string">"Kyle"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">otherClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    teacher <span class="token operator">=</span> <span class="token string">"Suzy"</span><span class="token punctuation">;</span>
+    topic <span class="token operator">=</span> <span class="token string">"React"</span><span class="token punctuation">;</span> <span class="token comment">// automatically made and thrown in global </span>
+
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Type Error: It means that the type is wrong. Like passing a object into a string the wrong way.</p>
+<p>Ref error: I cannot find the variable! There was no reference!</p>
+<p>Strict mode is not always on. If you\u2019re compiling, it always uses Strict Mode.</p>
+<h3 id="${"diff-between-undefined-vs-undeclared"}"><a href="${"#diff-between-undefined-vs-undeclared"}">Diff between undefined vs undeclared</a></h3>
+<p>undefined \u2014 It doesn\u2019t have a value yet.</p>
+<p>undeclared \u2014 Never been formally declared.</p>
+<h3 id="${"arrow-functions"}"><a href="${"#arrow-functions"}">Arrow functions</a></h3>
+<p>KYLE\u2019S OPINION
+(Named) Function Declaration </p>
+<p>is better than</p>
+<p>Named Function Expression</p>
+<p>is better than </p>
+<p>Anonymous Function Expression</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// function declarion</span>
+<span class="token keyword">function</span> <span class="token function">getId</span><span class="token punctuation">(</span><span class="token parameter">id</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// ... &#125;</span>
+
+<span class="token comment">// named function expression</span>
+<span class="token keyword">const</span> <span class="token function-variable function">studentId</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token function">getId</span><span class="token punctuation">(</span><span class="token parameter">id</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// ... &#125;</span>
+
+
+<span class="token comment">// anon function express</span>
+<span class="token keyword">const</span> <span class="token function-variable function">studentId</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">id</span><span class="token punctuation">)</span> <span class="token operator">=></span> studentBody<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"scope-and-function-expressions"}"><a href="${"#scope-and-function-expressions"}">Scope and Function Expressions</a></h3>
+<h3 id="${"advanced-scope"}"><a href="${"#advanced-scope"}">Advanced Scope</a></h3>
+<p><strong>Lexical scope</strong></p>
+<p>Almost every language with compilers use lexical scope. Bash is not lexical scope.</p>
+<p>It\u2019s figured out in author time. When you\u2019re writing it. </p>
+<p>It\u2019s not figured out in run time.</p>
+<p><strong>Dynamic Scope</strong></p>
+<p>It does NOT exist in Javascript!</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token keyword">function</span> <span class="token function">ask</span><span class="token punctuation">(</span><span class="token parameter">question</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>teacher<span class="token punctuation">,</span> question<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// will get teacher from otherAsk();</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">function</span> <span class="token function">otherAsk</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">var</span> teacher <span class="token operator">=</span> <span class="token string">"Suzy"</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>The Principle of Least Privilege (least exposure)</p>
+<ol class="${"list"}"><li><p>Keep everything private. Sets up a defensive posture.</p></li>
+<li><p>Reduces surface area. Hide it, and you prevent them from access it.</p></li>
+<li><p>You protect yourself from future refactoring. If you use it, my changes will break your code. </p></li></ol>
+<p><strong>IIFE Pattern</strong> &amp; <strong>Block Scoping</strong></p>
+<p>It runs because <code>()()</code></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// IIFE</span>
+<span class="token punctuation">(</span> <span class="token keyword">function</span> <span class="token function">sayTeacher</span><span class="token punctuation">(</span><span class="token parameter">teacher</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>teacher<span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">"suzy"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// Blocks Scope</span>
+<span class="token comment">// It's only a block scope with let/const</span>
+<span class="token punctuation">&#123;</span>
+    <span class="token keyword">let</span> teacher <span class="token operator">=</span> <span class="token string">"Suzy"</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>teacher<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>KYLE\u2019S HOT TAKE: <code>var</code> has a place.</p>
+<p>He believes <code>let</code> should only be used in a few lines of the function.</p>
+<p>Where <code>var</code> represents a function\u2019s variable. </p>
+<p>You can create a \u2018symantic signal\u2019. </p>
+<p><strong>Block scoping</strong></p>
+<p>Kyle\u2019s idea: </p>
+<p>If using a variable for a few lines, use a block statement.</p>
+<figure><img src="${"https://i.imgur.com/w3xvKeH.png"}"></figure>
+<p><strong>const problem</strong></p>
+<p>Kyle\u2019s take: </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token keyword">const</span> teachers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'kyle'</span><span class="token punctuation">,</span> <span class="token string">'suzy'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+teachers<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"brian"</span><span class="token punctuation">;</span> <span class="token comment">// ALLOWED</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Kyle only uses const only for primitives. Like strings, booleans, numbers. </p>
+<p><strong>Hoisting</strong></p>
+<p>It\u2019s not actually a real thing. It does not move things. It\u2019s a metaphor. </p>
+<p>Kyle\u2019s take \u2014 </p>
+<p>It\u2019s because people don\u2019t want to think about the two-pass process. </p>
+<p><strong>TDZ</strong></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">teacher <span class="token operator">=</span> <span class="token string">'Kyle'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> teacher <span class="token operator">=</span> <span class="token string">"Suzy"</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>So right now, <code>teacher</code> is in the dead zone. </p>
+<p>Assignment is a run-time thing. (Stage 2)</p>
+<h3 id="${"closure"}"><a href="${"#closure"}">Closure</a></h3>
+<p>[00:00:46]</p>
+<blockquote><p>Doug Crawford, has had a lot of really great things that he\u2019s done for our industry and a lot of things that he said.</p></blockquote>
+<blockquote><p>And when he says something brilliant, he deserves credit for it. Years ago, he had a conference talk that he was giving about computer science things that have been created over the course of the history of computer science. And he was making a point that, essentially, all great ideas take a whole generation of programmers before they get implemented, before they become popular.</p></blockquote>
+<blockquote><p>And he gave a variety of examples. And when he went to explain why that phenomenon exists, it was sort of a tongue in cheek kind of response or explanation, which is kind of half-true and half-funny. He said, well, the reason why it takes a full generation is because we\u2019re so stubborn.</p></blockquote>
+<blockquote><p>We\u2019re stuck in our ways. So we have to wait around for all of the current generation to die or retire llll before the new great idea picks up. [LAUGH] Again, it\u2019s like half-true and half-funny.</p></blockquote>
+<blockquote><p>But he went on to say we know that closure must be truly great cuz it took two full generations to catch on.</p></blockquote>
+<p>It\u2019s so powerful that every modern language has closure.</p>
+<p>Closure is: </p>
+<ol class="${"list"}"><li>It\u2019s when it\u2019s able to remember it\u2019s access it\u2019s lexical scope. </li>
+<li>Even when it\u2019s executed outside that lexical scope.</li></ol>
+<p>Closure \u2014 it\u2019s \u201Cclosed over\u201D the function. </p>
+<p>Closure doesn\u2019t \u2018close over\u2019 a value.
+It closes over a variable. </p>
+<p>It takes the snapshot of the variable.
+It \u201Ccloses over\u201D the variable. </p>
+<p>It\u2019s preserving access to variables. </p>
+<h3 id="${"module-pattern"}"><a href="${"#module-pattern"}">Module Pattern</a></h3>
+<p>It requires lexical scope.
+And Closure. </p>
+<p>It\u2019s a functions and data and putting them into a object.</p>
+<p>The module pattern requires a <code>encapsulation</code>. Which is a fancy word of hiding data. The idea of visibility. It\u2019s public and private data. </p>
+<p>To have a module, you have to hide data. </p>
+<p>So take take the same idea</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token comment">// Not a module pattern</span>
+<span class="token keyword">const</span> workshop <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+    teacher<span class="token operator">:</span> <span class="token string">"Kyle"</span><span class="token punctuation">,</span> 
+    <span class="token function">ask</span><span class="token punctuation">(</span><span class="token parameter">question</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>teacher<span class="token punctuation">,</span> question<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span>l
+
+<span class="token comment">// Classic Module pattern</span>
+<span class="token keyword">const</span> workshop <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token function">Module</span><span class="token punctuation">(</span><span class="token parameter">teacher</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">var</span> publicAPI <span class="token operator">=</span> <span class="token punctuation">&#123;</span> ask<span class="token punctuation">,</span> <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function">ask</span><span class="token punctuation">(</span><span class="token parameter">question</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>teacher<span class="token punctuation">,</span> question<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token keyword">return</span> publicAPI<span class="token punctuation">;</span>
+
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">"Kyle"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+
+<span class="token comment">// factory function Module Pattern</span>
+<span class="token keyword">function</span> <span class="token function">WorkshopModule</span><span class="token punctuation">(</span><span class="token parameter">teacher</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">var</span> publicAPI <span class="token operator">=</span> <span class="token punctuation">&#123;</span> ask <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">function</span> <span class="token function">ask</span><span class="token punctuation">(</span><span class="token parameter">question</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>teacher<span class="token punctuation">,</span> question<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token keyword">return</span> publicAPI<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">var</span> workshop <span class="token operator">=</span> <span class="token function">WorkshopModule</span><span class="token punctuation">(</span><span class="token string">"Kyle"</span><span class="token punctuation">)</span><span class="token operator">:</span>
+
+<span class="token comment">// ES6 Modules</span>
+ 
+
+<span class="token comment">// THE ACTION</span>
+workshop<span class="token punctuation">.</span><span class="token function">ask</span><span class="token punctuation">(</span><span class="token string">"It's a module, right?"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Kyle It's a module, right?</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>We can also create a factory function.</p>
+<h3 id="${"modules"}"><a href="${"#modules"}">Modules</a></h3>
+<figure><img src="${"https://i.imgur.com/GBfj3wH.png"}"></figure>
+<p>Top: Newer ES6 module
+Bottom: old school way. </p>
+<h3 id="${"objects"}"><a href="${"#objects"}">Objects</a></h3>
+<p><strong>this</strong></p>
+<p>Whatever the target is.</p>
+<p><strong>Implicit and explicit binding</strong>
+using <code>workshop.ask.bind(workshop)</code></p>
+<p>bind does a hardcoded linkage. </p>
+<p>Isn\u2019t is better to just write a module and use closure?</p>
+<p><strong>new keyword</strong></p>
+<p>The third way to call a function.</p>
+<p>It\u2019s to invoke and create a whole new functioning object.</p>
+<p>FOUR THINGS IT DOES:</p>
+<ol class="${"list"}"><li>Creates a brand new empty object</li>
+<li>Links that object to another object. (Link?)</li>
+<li>Invokes the function with <code>this</code> set to the new object.</li>
+<li>Then if it doesn\u2019t return an object, assume return of this.</li></ol>
+<p><strong>Default Binding</strong></p>
+<p>The fallback, default to the global. </p>
+<p><strong>CLasses</strong></p>
+<p>Super</p>
+<blockquote><p>[00:02:11]
+As a matter of fact, the class system also now has a super keyword in it, which allows you to do relative polymorphism. </p></blockquote>
+<blockquote><p>If you have a child class that defines a method of the same name as a parent class, so called shadowing. If you have one that defines the same method name in a child as in the parent.</p></blockquote>
+<blockquote><p>You can refer to the parent from the child by saying super dot, like you see on line 12.</p></blockquote>
+<p>Classes and Prototypes</p>
+<p>The Lexical module system which we had for 20 years. Instead, people want to use the class system like other languages.</p>
+<blockquote><p>The entire class system is built upon this idea that your methods don\u2019t exist on your instances, they exist on your prototypes and guess what happens when you say this.ask and you assign it a function? It\u2019s no longer on the prototype anymore, it\u2019s on your instance.</p></blockquote>
+<blockquote><p>[00:05:43]
+So every single time you instantiate a function, you\u2019re getting a whole separate copy of all those functions added to every single instance.</p></blockquote>
+<h3 id="${"prototypes"}"><a href="${"#prototypes"}">Prototypes</a></h3>
+<blockquote><p>You might remember in our discussion of this keyword that I said that new in front of a function call is a constructor call. That is not the same thing as saying there\u2019s a constructor, it is to simply say that that is basically for lack of a better term when you use new in front of a function call it\u2019s constructing an object to be used for this binding of that function call.</p></blockquote>
+<blockquote><p>So that\u2019s where objects come from. They come via new from these constructor calls. And it is often said that in that process of constructing these new objects that it\u2019s making that object based on the constructor\u2019s prototype.</p></blockquote>
+<p>A \u201Cconstructor call\u201D makes an object \u2018based-on\u2019 it\u2019s own prototype. It\u2019s making a \u2018copy\u2019 of the prototype. </p>
+<p>In most langauges, classes are just a blueprint. Kyle\u2019s son is a blueprint of him, a copy of him. </p>
+<p>Changing a window in the blueprint does not magically affect the building.</p>
+<p>Javascript DOES NOT MAKE A COPY. It makes a LINK to it\u2019s own prototype. </p>
+<p>Prototype system:</p>
+<figure><img src="${"https://i.imgur.com/h0YpbrW.png"}"></figure>
+<p>So that ask function is NOT copied to the object. It goes up the prototype chain, to the original instance.</p>
+<p>Dunder Prototype
+<strong>prototype</strong></p>
+<blockquote><p>Speaker 2: What happens when you set dunder proto?</p></blockquote>
+<blockquote><p>Kyle Simpson: Good question. It is not very common for you to use the Dunder Proto as a setter. It is technically both a getter and a setter. It is almost always used just to reference it. And I would say generally speaking, it\u2019s sort of an anti-pattern to rewire the prototype chain of an object.</p></blockquote>
+<blockquote><p>[00:02:54]
+But as of ES6, dunder proto is officially also something that can set the proto linkage from one object to a different object. So if you have an object A that\u2019s linked over here and then later you decide, I want that object prototype linked over here, you can use dunder proto as a setter to change it.</p></blockquote>
+<p>Classical Vs Prototypal Inheritance</p>
+<p>CLassical Classes</p>
+<p>When you\u2019re instantiating, you\u2019re copying.</p>
+<p>Prototypal Classes</p>
+<p>Things are LINKED to, not copying.</p>
+<p>Javascript\u2019s Behavior Delegation (Not inheritance)</p>
+<p><strong>OLOO Pattern</strong></p>
+<p>Objects Linked to Other Objects</p>
+<p>Lua and Javascript.</p>
+<p>Delegation-oriented design \u2014</p>
+<p>Stop thinking of parent/child relationships, and think about peer to peer. </p>
+<figure><img src="${"https://i.imgur.com/cyq1xUH.png"}"></figure>`
+  })}`;
 });
 var weekSevenDeepJs_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,

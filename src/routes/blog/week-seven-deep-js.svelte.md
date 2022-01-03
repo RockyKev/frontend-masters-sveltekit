@@ -74,7 +74,7 @@ Nested Scope, hoisting, Closures, and Modules
 
 Different from OOP, which is about the class-oriented.
 
-this, class{}, Prototypes, OO vs OLOO
+`this`, `class{}`, Prototypes, OO vs OLOO
 
 ## Types
 
