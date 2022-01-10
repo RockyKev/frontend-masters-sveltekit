@@ -13622,9 +13622,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-ad03516a.js",
+      file: assets + "/_app/start-b47cfb87.js",
       css: [assets + "/_app/assets/start-c446e5f0.css"],
-      js: [assets + "/_app/start-ad03516a.js", assets + "/_app/chunks/vendor-2c44c089.js"]
+      js: [assets + "/_app/start-b47cfb87.js", assets + "/_app/chunks/vendor-2c44c089.js"]
     },
     fetched: void 0,
     floc: false,
@@ -13727,13 +13727,6 @@ var manifest = {
     },
     {
       type: "page",
-      pattern: /^\/blog\/draft-week-nine-building-applications-vue-nuxt\/?$/,
-      params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-nine-building-applications-vue-nuxt.svelte.md"],
-      b: ["src/routes/__error.svelte"]
-    },
-    {
-      type: "page",
       pattern: /^\/blog\/draft-week-ten-production-grade-vue-part-2\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-ten-production-grade-vue-part-2.svelte.md"],
@@ -13744,6 +13737,13 @@ var manifest = {
       pattern: /^\/blog\/draft-week-thirteen-functional-js-part-2\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-nine-building-applications-vue-nuxt\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-nine-building-applications-vue-nuxt.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
@@ -13765,13 +13765,6 @@ var manifest = {
       pattern: /^\/blog\/draft-week-twelve-functional-js-part-1\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md"],
-      b: ["src/routes/__error.svelte"]
-    },
-    {
-      type: "page",
-      pattern: /^\/blog\/draft-week-nine-production-grade-vue\/?$/,
-      params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-nine-production-grade-vue.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
@@ -13818,6 +13811,13 @@ var manifest = {
     },
     {
       type: "page",
+      pattern: /^\/blog\/week-nine-production-grade-vue\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-nine-production-grade-vue.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
       pattern: /^\/blog\/week-three-intro-linux-command\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/week-three-intro-linux-command.svelte.md"],
@@ -13835,13 +13835,6 @@ var manifest = {
       pattern: /^\/blog\/draft-week-eleven-full-stack\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-eleven-full-stack.svelte.md"],
-      b: ["src/routes/__error.svelte"]
-    },
-    {
-      type: "page",
-      pattern: /^\/blog\/draft-week-nine-intro-to-vue\/?$/,
-      params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-nine-intro-to-vue.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
@@ -13884,6 +13877,13 @@ var manifest = {
       pattern: /^\/blog\/vue-mastery-vue3-forms\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/vue-mastery-vue3-forms.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-nine-intro-to-vue\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-nine-intro-to-vue.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
@@ -14045,14 +14045,14 @@ var module_lookup = {
   "src/routes/blog/index.svelte": () => Promise.resolve().then(function() {
     return index$1;
   }),
-  "src/routes/blog/draft-week-nine-building-applications-vue-nuxt.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekNineBuildingApplicationsVueNuxt_svelte;
-  }),
   "src/routes/blog/draft-week-ten-production-grade-vue-part-2.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekTenProductionGradeVuePart2_svelte;
   }),
   "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekThirteenFunctionalJsPart2_svelte;
+  }),
+  "src/routes/blog/week-nine-building-applications-vue-nuxt.svelte.md": () => Promise.resolve().then(function() {
+    return weekNineBuildingApplicationsVueNuxt_svelte;
   }),
   "src/routes/blog/draft-week-fourteen-functional-light-js.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekFourteenFunctionalLightJs_svelte;
@@ -14062,9 +14062,6 @@ var module_lookup = {
   }),
   "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekTwelveFunctionalJsPart1_svelte;
-  }),
-  "src/routes/blog/draft-week-nine-production-grade-vue.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekNineProductionGradeVue_svelte;
   }),
   "src/routes/blog/draft-week-ten-advanced-vue-features.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekTenAdvancedVueFeatures_svelte;
@@ -14084,6 +14081,9 @@ var module_lookup = {
   "src/routes/blog/draft-week-thirteen-build-game.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekThirteenBuildGame_svelte;
   }),
+  "src/routes/blog/week-nine-production-grade-vue.svelte.md": () => Promise.resolve().then(function() {
+    return weekNineProductionGradeVue_svelte;
+  }),
   "src/routes/blog/week-three-intro-linux-command.svelte.md": () => Promise.resolve().then(function() {
     return weekThreeIntroLinuxCommand_svelte;
   }),
@@ -14092,9 +14092,6 @@ var module_lookup = {
   }),
   "src/routes/blog/draft-week-eleven-full-stack.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekElevenFullStack_svelte;
-  }),
-  "src/routes/blog/draft-week-nine-intro-to-vue.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekNineIntroToVue_svelte;
   }),
   "src/routes/blog/draft-week-twelve-typescript.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekTwelveTypescript_svelte;
@@ -14113,6 +14110,9 @@ var module_lookup = {
   }),
   "src/routes/blog/vue-mastery-vue3-forms.svelte.md": () => Promise.resolve().then(function() {
     return vueMasteryVue3Forms_svelte;
+  }),
+  "src/routes/blog/week-nine-intro-to-vue.svelte.md": () => Promise.resolve().then(function() {
+    return weekNineIntroToVue_svelte;
   }),
   "src/routes/blog/week-six-js-hard-parts.svelte.md": () => Promise.resolve().then(function() {
     return weekSixJsHardParts_svelte;
@@ -14160,7 +14160,7 @@ var module_lookup = {
     return typeKana_svelte;
   })
 };
-var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-79e4c8a6.js", "css": ["assets/pages/__layout.svelte-df3fc26e.css"], "js": ["pages/__layout.svelte-79e4c8a6.js", "chunks/vendor-2c44c089.js", "chunks/stores-32a54f2b.js", "chunks/Logo-1cfb9048.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-a683aa11.js", "css": [], "js": ["pages/__error.svelte-a683aa11.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-a4187db2.js", "css": ["assets/pages/index.svelte-a8b03bef.css", "assets/Icon.svelte_svelte&type=style&lang-bab488b2.css"], "js": ["pages/index.svelte-a4187db2.js", "chunks/vendor-2c44c089.js", "chunks/Logo-1cfb9048.js", "chunks/Meta-2661041d.js"], "styles": [] }, "src/routes/playground.svelte": { "entry": "pages/playground.svelte-b22e1d43.js", "css": ["assets/pages/playground.svelte-50ac7720.css"], "js": ["pages/playground.svelte-b22e1d43.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/about/index.svelte": { "entry": "pages/about/index.svelte-3e5401ab.js", "css": ["assets/pages/about/index.svelte-cbd7d511.css", "assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/index.svelte-3e5401ab.js", "chunks/vendor-2c44c089.js", "pages/about/HiddenText.svelte-bea2d578.js"], "styles": [] }, "src/routes/about/HiddenText.svelte": { "entry": "pages/about/HiddenText.svelte-bea2d578.js", "css": ["assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/HiddenText.svelte-bea2d578.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-bb7708ee.js", "css": ["assets/pages/blog/index.svelte-ad438cd3.css"], "js": ["pages/blog/index.svelte-bb7708ee.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/blog/draft-week-nine-building-applications-vue-nuxt.svelte.md": { "entry": "pages/blog/draft-week-nine-building-applications-vue-nuxt.svelte.md-7cd4be7f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-nine-building-applications-vue-nuxt.svelte.md-7cd4be7f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-ten-production-grade-vue-part-2.svelte.md": { "entry": "pages/blog/draft-week-ten-production-grade-vue-part-2.svelte.md-d2e4a84f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-ten-production-grade-vue-part-2.svelte.md-d2e4a84f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md": { "entry": "pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-functional-light-js.svelte.md": { "entry": "pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-eleven-complete-intro-react.svelte.md": { "entry": "pages/blog/draft-week-eleven-complete-intro-react.svelte.md-e318b896.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-eleven-complete-intro-react.svelte.md-e318b896.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md": { "entry": "pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-nine-production-grade-vue.svelte.md": { "entry": "pages/blog/draft-week-nine-production-grade-vue.svelte.md-d34e366c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-nine-production-grade-vue.svelte.md-d34e366c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-ten-advanced-vue-features.svelte.md": { "entry": "pages/blog/draft-week-ten-advanced-vue-features.svelte.md-5193ecec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-ten-advanced-vue-features.svelte.md-5193ecec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-ten-vuex-for-intermediate.svelte.md": { "entry": "pages/blog/draft-week-ten-vuex-for-intermediate.svelte.md-536561cf.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-ten-vuex-for-intermediate.svelte.md-536561cf.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-react-storybook.svelte.md": { "entry": "pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-web-performance.svelte.md": { "entry": "pages/blog/draft-week-twelve-web-performance.svelte.md-4e3aa2de.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-web-performance.svelte.md-4e3aa2de.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-intro-gatsby.svelte.md": { "entry": "pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-build-game.svelte.md": { "entry": "pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-linux-command.svelte.md": { "entry": "pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-intro-to-serverless.svelte.md": { "entry": "pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-eleven-full-stack.svelte.md": { "entry": "pages/blog/draft-week-eleven-full-stack.svelte.md-0699e294.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-eleven-full-stack.svelte.md-0699e294.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-nine-intro-to-vue.svelte.md": { "entry": "pages/blog/draft-week-nine-intro-to-vue.svelte.md-e28e280f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-nine-intro-to-vue.svelte.md-e28e280f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-typescript.svelte.md": { "entry": "pages/blog/draft-week-twelve-typescript.svelte.md-de6e6a2c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-typescript.svelte.md-de6e6a2c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-code-transformation.svelte.md": { "entry": "pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-dev-tools.svelte.md": { "entry": "pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-hard-parts-ooj.svelte.md": { "entry": "pages/blog/week-five-hard-parts-ooj.svelte.md-1cdda76c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-hard-parts-ooj.svelte.md-1cdda76c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eight-css-in-depth.svelte.md": { "entry": "pages/blog/week-eight-css-in-depth.svelte.md-b26e1acc.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eight-css-in-depth.svelte.md-b26e1acc.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/vue-mastery-vue3-forms.svelte.md": { "entry": "pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-js-hard-parts.svelte.md": { "entry": "pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-accessibility.svelte.md": { "entry": "pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-js-functional.svelte.md": { "entry": "pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-js-testing.svelte.md": { "entry": "pages/blog/week-five-js-testing.svelte.md-36258fff.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-js-testing.svelte.md-36258fff.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-debugging.svelte.md": { "entry": "pages/blog/week-five-debugging.svelte.md-ce7c6b84.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-debugging.svelte.md-ce7c6b84.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-nodejs-v2.svelte.md": { "entry": "pages/blog/week-four-nodejs-v2.svelte.md-a443d728.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-nodejs-v2.svelte.md-a443d728.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-javascript.svelte.md": { "entry": "pages/blog/week-one-javascript.svelte.md-a27291ec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-javascript.svelte.md-a27291ec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-seven-deep-js.svelte.md": { "entry": "pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-api-dev.svelte.md": { "entry": "pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-webdev.svelte.md": { "entry": "pages/blog/week-one-webdev.svelte.md-086e16a9.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-webdev.svelte.md-086e16a9.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-seo.svelte.md": { "entry": "pages/blog/week-three-seo.svelte.md-d64b209b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-seo.svelte.md-d64b209b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-css.svelte.md": { "entry": "pages/blog/week-one-css.svelte.md-48262997.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-css.svelte.md-48262997.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/work/index.svelte": { "entry": "pages/work/index.svelte-e7922153.js", "css": ["assets/pages/blog/index.svelte-ad438cd3.css"], "js": ["pages/work/index.svelte-e7922153.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/portfolio-site.svelte.md": { "entry": "pages/work/portfolio-site.svelte.md-e065602b.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/portfolio-site.svelte.md-e065602b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/type-kana.svelte.md": { "entry": "pages/work/type-kana.svelte.md-74b86795.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/type-kana.svelte.md-74b86795.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] } };
+var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-79e4c8a6.js", "css": ["assets/pages/__layout.svelte-df3fc26e.css"], "js": ["pages/__layout.svelte-79e4c8a6.js", "chunks/vendor-2c44c089.js", "chunks/stores-32a54f2b.js", "chunks/Logo-1cfb9048.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-a683aa11.js", "css": [], "js": ["pages/__error.svelte-a683aa11.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-a4187db2.js", "css": ["assets/pages/index.svelte-a8b03bef.css", "assets/Icon.svelte_svelte&type=style&lang-bab488b2.css"], "js": ["pages/index.svelte-a4187db2.js", "chunks/vendor-2c44c089.js", "chunks/Logo-1cfb9048.js", "chunks/Meta-2661041d.js"], "styles": [] }, "src/routes/playground.svelte": { "entry": "pages/playground.svelte-b22e1d43.js", "css": ["assets/pages/playground.svelte-50ac7720.css"], "js": ["pages/playground.svelte-b22e1d43.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/about/index.svelte": { "entry": "pages/about/index.svelte-3e5401ab.js", "css": ["assets/pages/about/index.svelte-cbd7d511.css", "assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/index.svelte-3e5401ab.js", "chunks/vendor-2c44c089.js", "pages/about/HiddenText.svelte-bea2d578.js"], "styles": [] }, "src/routes/about/HiddenText.svelte": { "entry": "pages/about/HiddenText.svelte-bea2d578.js", "css": ["assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/HiddenText.svelte-bea2d578.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-bb7708ee.js", "css": ["assets/pages/work/index.svelte-219f8bae.css"], "js": ["pages/blog/index.svelte-bb7708ee.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/blog/draft-week-ten-production-grade-vue-part-2.svelte.md": { "entry": "pages/blog/draft-week-ten-production-grade-vue-part-2.svelte.md-ed877757.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-ten-production-grade-vue-part-2.svelte.md-ed877757.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md": { "entry": "pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-building-applications-vue-nuxt.svelte.md": { "entry": "pages/blog/week-nine-building-applications-vue-nuxt.svelte.md-044132df.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-building-applications-vue-nuxt.svelte.md-044132df.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-functional-light-js.svelte.md": { "entry": "pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-eleven-complete-intro-react.svelte.md": { "entry": "pages/blog/draft-week-eleven-complete-intro-react.svelte.md-e318b896.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-eleven-complete-intro-react.svelte.md-e318b896.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md": { "entry": "pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-ten-advanced-vue-features.svelte.md": { "entry": "pages/blog/draft-week-ten-advanced-vue-features.svelte.md-5193ecec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-ten-advanced-vue-features.svelte.md-5193ecec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-ten-vuex-for-intermediate.svelte.md": { "entry": "pages/blog/draft-week-ten-vuex-for-intermediate.svelte.md-536561cf.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-ten-vuex-for-intermediate.svelte.md-536561cf.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-react-storybook.svelte.md": { "entry": "pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-web-performance.svelte.md": { "entry": "pages/blog/draft-week-twelve-web-performance.svelte.md-4e3aa2de.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-web-performance.svelte.md-4e3aa2de.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-intro-gatsby.svelte.md": { "entry": "pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-build-game.svelte.md": { "entry": "pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-production-grade-vue.svelte.md": { "entry": "pages/blog/week-nine-production-grade-vue.svelte.md-6cc7825a.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-production-grade-vue.svelte.md-6cc7825a.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-linux-command.svelte.md": { "entry": "pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-intro-to-serverless.svelte.md": { "entry": "pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-eleven-full-stack.svelte.md": { "entry": "pages/blog/draft-week-eleven-full-stack.svelte.md-0699e294.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-eleven-full-stack.svelte.md-0699e294.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-typescript.svelte.md": { "entry": "pages/blog/draft-week-twelve-typescript.svelte.md-de6e6a2c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-typescript.svelte.md-de6e6a2c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-code-transformation.svelte.md": { "entry": "pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-dev-tools.svelte.md": { "entry": "pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-hard-parts-ooj.svelte.md": { "entry": "pages/blog/week-five-hard-parts-ooj.svelte.md-1cdda76c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-hard-parts-ooj.svelte.md-1cdda76c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eight-css-in-depth.svelte.md": { "entry": "pages/blog/week-eight-css-in-depth.svelte.md-81595579.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eight-css-in-depth.svelte.md-81595579.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/vue-mastery-vue3-forms.svelte.md": { "entry": "pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-intro-to-vue.svelte.md": { "entry": "pages/blog/week-nine-intro-to-vue.svelte.md-a840bc7f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-intro-to-vue.svelte.md-a840bc7f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-js-hard-parts.svelte.md": { "entry": "pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-accessibility.svelte.md": { "entry": "pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-js-functional.svelte.md": { "entry": "pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-js-testing.svelte.md": { "entry": "pages/blog/week-five-js-testing.svelte.md-36258fff.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-js-testing.svelte.md-36258fff.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-debugging.svelte.md": { "entry": "pages/blog/week-five-debugging.svelte.md-ce7c6b84.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-debugging.svelte.md-ce7c6b84.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-nodejs-v2.svelte.md": { "entry": "pages/blog/week-four-nodejs-v2.svelte.md-a443d728.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-nodejs-v2.svelte.md-a443d728.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-javascript.svelte.md": { "entry": "pages/blog/week-one-javascript.svelte.md-a27291ec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-javascript.svelte.md-a27291ec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-seven-deep-js.svelte.md": { "entry": "pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-api-dev.svelte.md": { "entry": "pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-webdev.svelte.md": { "entry": "pages/blog/week-one-webdev.svelte.md-086e16a9.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-webdev.svelte.md-086e16a9.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-seo.svelte.md": { "entry": "pages/blog/week-three-seo.svelte.md-d64b209b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-seo.svelte.md-d64b209b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-css.svelte.md": { "entry": "pages/blog/week-one-css.svelte.md-48262997.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-css.svelte.md-48262997.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/work/index.svelte": { "entry": "pages/work/index.svelte-e7922153.js", "css": ["assets/pages/work/index.svelte-219f8bae.css"], "js": ["pages/work/index.svelte-e7922153.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/portfolio-site.svelte.md": { "entry": "pages/work/portfolio-site.svelte.md-e065602b.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/portfolio-site.svelte.md-e065602b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/type-kana.svelte.md": { "entry": "pages/work/type-kana.svelte.md-74b86795.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/type-kana.svelte.md-74b86795.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] } };
 async function load_component(file) {
   const { entry, css: css2, js, styles } = metadata_lookup[file];
   return {
@@ -14282,12 +14282,6 @@ var get$3 = async () => {
     return draftWeekFourteenFunctionalLightJs_svelte;
   }), "./draft-week-fourteen-react-storybook.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekFourteenReactStorybook_svelte;
-  }), "./draft-week-nine-building-applications-vue-nuxt.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekNineBuildingApplicationsVueNuxt_svelte;
-  }), "./draft-week-nine-intro-to-vue.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekNineIntroToVue_svelte;
-  }), "./draft-week-nine-production-grade-vue.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekNineProductionGradeVue_svelte;
   }), "./draft-week-ten-advanced-vue-features.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekTenAdvancedVueFeatures_svelte;
   }), "./draft-week-ten-production-grade-vue-part-2.svelte.md": () => Promise.resolve().then(function() {
@@ -14322,6 +14316,12 @@ var get$3 = async () => {
     return weekFourIntroToServerless_svelte;
   }), "./week-four-nodejs-v2.svelte.md": () => Promise.resolve().then(function() {
     return weekFourNodejsV2_svelte;
+  }), "./week-nine-building-applications-vue-nuxt.svelte.md": () => Promise.resolve().then(function() {
+    return weekNineBuildingApplicationsVueNuxt_svelte;
+  }), "./week-nine-intro-to-vue.svelte.md": () => Promise.resolve().then(function() {
+    return weekNineIntroToVue_svelte;
+  }), "./week-nine-production-grade-vue.svelte.md": () => Promise.resolve().then(function() {
+    return weekNineProductionGradeVue_svelte;
   }), "./week-one-css.svelte.md": () => Promise.resolve().then(function() {
     return weekOneCss_svelte;
   }), "./week-one-javascript.svelte.md": () => Promise.resolve().then(function() {
@@ -15195,50 +15195,437 @@ var Layout$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 </article>`;
 });
 var metadata$A = {
-  "title": "DRAFT Week Nine - Building Apps with Vue & Nuxt",
-  "created": "2021-12-21T00:00:00.000Z",
-  "summary": "Building Applications with Vue & Nuxt",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_nine_building_applications_vue_nuxt_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$A), {}, {})}`;
-});
-var draftWeekNineBuildingApplicationsVueNuxt_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_nine_building_applications_vue_nuxt_svelte,
-  metadata: metadata$A,
-  load: load$2
-});
-var metadata$z = {
-  "title": "DRAFT Week Ten - Production Grade Vue",
-  "created": "2020-12-21T00:00:00.000Z",
+  "title": "Week Ten - Production Grade Vue",
+  "created": "2022-01-08T00:00:00.000Z",
   "summary": "Production-Grade Vue (Part 2)",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_ten_production_grade_vue_part_2_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$z), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$A), {}, {
+    default: () => `<p>Ben Hong
+Netlify
+<a href="${"https://frontendmasters.com/courses/production-vue/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/production-vue/</a></p>
+<h2 id="${"composition-api"}"><a href="${"#composition-api"}">Composition API</a></h2>
+<p>There\u2019s a Vue 2 Plugin for this as well. </p>
+<p>The key problem Composition API is solving is reducing the cons that Mixins and Provide/Inject API does.</p>
+<p>Currently:
+Object API
+Composition API</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token operator">&lt;</span>template<span class="token operator">></span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"hello"</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>h1<span class="token operator">></span><span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span> currentCount <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>    <span class="token operator">&lt;</span>h2<span class="token operator">></span>Current Count <span class="token number">2</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span> currentCount2 <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span> <span class="token operator">--</span><span class="token operator">></span>
+
+        <span class="token operator">&lt;</span>h2<span class="token operator">></span>Current Count <span class="token number">2</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span> state<span class="token punctuation">.</span>currentCount2 <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
+        
+        <span class="token operator">&lt;</span>h2<span class="token operator">></span>Current Count <span class="token number">3</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span> currentCount3 <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
+    <span class="token operator">&lt;</span>button @click<span class="token operator">=</span><span class="token string">"incrementCount"</span><span class="token operator">></span>Click<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">></span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> reactive<span class="token punctuation">,</span> ref<span class="token punctuation">,</span> toRefs <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"vue"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+    name<span class="token operator">:</span> <span class="token string">"HelloWorld"</span><span class="token punctuation">,</span>
+    props<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        msg<span class="token operator">:</span> String
+    <span class="token punctuation">&#125;</span>
+    <span class="token comment">// OPTIONS API</span>
+    <span class="token function-variable function">data</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+        currentCount<span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    methods<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token function">incrementCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>currentCount<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+    <span class="token comment">// COMPOSITION API - PART 1 </span>
+    <span class="token comment">// Note: similar to data, but not reactive.</span>
+    <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token comment">// declare it</span>
+        <span class="token keyword">const</span> currentCount2 <span class="token operator">=</span> <span class="token number">12</span>
+        
+        <span class="token comment">// return it</span>
+        <span class="token keyword">return</span> <span class="token punctuation">&#123;</span> 
+            currentCount2
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token comment">// COMPOSITION API - PART 2</span>
+    <span class="token comment">// Note: similar to data, but not reactive.</span>
+    <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token comment">// declare it</span>
+        <span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+            currentCount2<span class="token operator">:</span> <span class="token number">12</span>        
+        <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+        <span class="token comment">// if you declare it outside, you need ref</span>
+        
+        <span class="token keyword">const</span> currentCount3 <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">const</span> <span class="token function-variable function">incrementCount2</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+            state<span class="token punctuation">.</span>currentCount2<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+        
+         <span class="token keyword">const</span> <span class="token function-variable function">incrementCount3</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+            currentCount2<span class="token punctuation">.</span>value<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+        
+        <span class="token comment">// return it</span>
+        <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+            <span class="token comment">// notice it's not ...state</span>
+            <span class="token comment">// toRefs(state),</span>
+            state<span class="token punctuation">,</span>
+            incrementCount2<span class="token punctuation">,</span> 
+            currentCount3
+        <span class="token punctuation">&#125;</span>    
+    
+<span class="token punctuation">&#125;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>The idea is that it starts to act closer to Javascript.</p>
+<p>QUESTION: Should I use ref or reactive?
+Use reactive as it\u2019s closer to Options API as a mental model. </p>
+<h3 id="${"composition-modules"}"><a href="${"#composition-modules"}">Composition Modules</a></h3>
+<p><code>composeables</code> is a common use. </p>
+<p>But it\u2019s a bad term.
+Composable, is just utility funcitons.
+It\u2019s like calling Lodash \u2018doubles\u2019, the doubles folder. </p>
+<p>You can instead move the data to a separate file, imported int othe setup.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function-variable function">userCounterMethod</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+    <span class="token comment">// declare it</span>
+    <span class="token keyword">const</span> state <span class="token operator">=</span> <span class="token function">reactive</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+    currentCount2<span class="token operator">:</span> <span class="token number">12</span>        
+    <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// if you declare it outside, you need ref</span>
+
+    <span class="token keyword">const</span> currentCount3 <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> <span class="token function-variable function">incrementCount2</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    state<span class="token punctuation">.</span>currentCount2<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token keyword">const</span> <span class="token function-variable function">incrementCount3</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    currentCount2<span class="token punctuation">.</span>value<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+
+    <span class="token comment">// return it</span>
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">// notice it's not ...state</span>
+    <span class="token comment">// toRefs(state),</span>
+    state<span class="token punctuation">,</span>
+    incrementCount2<span class="token punctuation">,</span> 
+    currentCount3
+    <span class="token punctuation">&#125;</span>    
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>You have a explicit path to this method.
+It\u2019s crystal clear where things are coming from, over mixins &amp; provide/inject.</p>
+<p>Let\u2019s you pull out what you want, and expose it.
+It\u2019s more clearer to read.</p>
+<p>QUESTIONS:
+In composition API:</p>
+<ol class="${"list"}"><li>What is a ref? (reactive reference)</li>
+<li>What is reactive?</li></ol>
+<h2 id="${"state-management"}"><a href="${"#state-management"}">State Management</a></h2>
+<p>Vuex Best practices</p>
+<p>What data should go into Vuex?</p>
+<ul class="${"list"}"><li>Data shared between components that might not be in direct parent-child relation</li>
+<li>Data taht you want to keep between router views
+** route params are more important thought</li></ul>
+<p>What to avoid putting in</p>
+<ul class="${"list"}"><li>User Interface Variables<ul class="${"list"}"><li>isDrowntownOpen, isInputFocused, isModalVisible</li></ul></li>
+<li>Forms data</li>
+<li>Validation Results</li>
+<li>Single records from teh API</li></ul>
+<p>QUESTION: Do I always need a getter to return a simple fragment of a state?</p>
+<p>No. </p>
+<figure><img src="${"https://i.imgur.com/a8HOpvc.png"}"></figure>
+<p>Treat it like a computered property.
+If you need to share derived vuex state between components, make a getter.</p>
+<p>PROTIP: (debatable)
+Avoid calling mutations directly in components.</p>
+<p>Seems like using excess boilerplate to use actions to mutate.</p>
+<blockquote><p>[00:07:29] And so what this means is you can just call your actions and then basically programmatic, like the algorithm will know which things you\u2019re trying to mutate in the state.</p></blockquote>
+<blockquote><p>I would recommend sticking with actions in this particular case. Because the moment you have an actual mutation linked together, it\u2019s like the provide inject example. You\u2019ve created a fixed relationship where if in the future like over here in shopping list, we change either I don\u2019t know call it the mutation and how it works.</p></blockquote>
+<blockquote><p>[00:02:02] This can actually break what\u2019s going on over here. Whereas if you have an action you still need to update if things renamed and things. But you allow sort of a better, sort of a more declarative way of saying what you wanna do and then the implementation details can be taken care of later.</p></blockquote>
+<blockquote><p>[00:02:17] As opposed to doing the mutation directly from module to module. So, hopefully that helps answer your question. [LAUGH] So the statement made in the chat is that they enjoy the declarative nature or the more explicit nature of using this dot store, dot state, or dot dispatch, in order to be very explicit as far as what you\u2019re accessing rather than conflicting it with the component namespace, right?</p></blockquote>
+<blockquote><p>[00:02:43] So in this regard, it\u2019s related to the first question regarding weather map state or accessing the disk dollar store makes more sense. And so this is a perfect example of I think it\u2019s important to define what makes the most sense for your team long term. And so you\u2019re right if you feel that over time either the the local data instance is started getting muddled up with the map functions.</p></blockquote>
+<p>Question - Multiple mutations per Action</p>
+<blockquote><p>[00:05:32] So the other question we have here is regarding whether. A single action should only commit one mutation. Or I think the other one was whether a mutation should update multiple pieces of state. So I\u2019m gonna answer this formula question, if I\u2019m wrong, please, please clarify for me. So when it comes to actions, there really is no call it best practice, for how many mutations you should be committing.</p></blockquote>
+<blockquote><p>[00:05:57] After all, especially when you have things as complex as fetching an API and then breaking it out. A lot of times there are multiple things you\u2019re committing, because the API might give you one large response. Then you want to chunk out into different modules or different methods. There are definite reasons to commit more than once in an action and there\u2019s absolutely nothing wrong with that.</p></blockquote>
+<blockquote><p>[00:06:16] As far as mutating state, this is a more nuanced question, because the idea here is that, do you want a single mutation to update multiple pieces of state versus one? And so I think this is, call it a gut feeling. Unfortunately with this one, in the sense that think of it data-driven refactoring from.</p></blockquote>
+<blockquote><p>[00:06:36] I would probably start with atomic pieces only because atomic pieces can be composed into action. And so unless you\u2019re really sure about the architecture of this one mutation should update three pieces of state. And this is always the case and it should never change. Then there\u2019s an argument to impacting multiple pieces of state with a single mutation.</p></blockquote>
+<p>PROTIP:
+Use built-in map helpers </p>
+<figure><img src="${"https://i.imgur.com/dPj5PHf.png"}"></figure>
+<p>BEST PRACTICES:
+Always use namespace modules. </p>
+<p>DISCUSSION:
+With the Composition API, do we even need Vuex?</p>
+<p>Vuex still has a lot of help with debugging. Time travel, seeing where things break.</p>
+<p>Composition API is great for sharing data. It does alleviate a lot.</p>
+<h3 id="${"routing"}"><a href="${"#routing"}">Routing</a></h3>
+<figure><img src="${"https://i.imgur.com/kSUFRi1.png"}"></figure>
+<h2 id="${"testing"}"><a href="${"#testing"}">Testing</a></h2>
+<p>Pareto Principle - 80/20 rule.
+20% effort -&gt; 80% results.</p>
+<p>Jest is he standard for component testing.
+Cypress is working on component testing.</p>
+<p>Testing library is recommended by the Vue Testing team. (testing-library.com)</p>
+<p>Vue Test Utils is useful at the lower level testing. </p>
+<p>BEST PRACTICES</p>
+<ol class="${"list"}"><li><p>Don\u2019t test that vue works. Test that things are showing what is expecting.</p></li>
+<li><p>Primarily stick with shallow rendering. So instead of testing a collection of components, test the most shallowest level. </p>
+<ul class="${"list"}"><li>A common component can break many tests.</li></ul></li>
+<li><p>Build unit tests into generators</p></li></ol>
+<p>Unit tests aren\u2019t the best 20% to focus on.</p>
+<p>The man goals of the core business test:
+#1. Can the user login?
+#2. Can the user pay us?</p>
+<p>If any of those tests break, then it\u2019s super critical.</p>
+<p>If I take out one feature \u2014 that super critical level, will it work?</p>
+<p>End-to-end testing
+Cypress, TestCafe</p>
+<p>Best Practice E2E Testing</p>
+<ol class="${"list"}"><li><p>Don\u2019t maintain state between tests</p>
+<p>\u201CIn test 1, grab a token.\u201D
+\u201CIn test 2, use that token to do something else.\u201D</p>
+<p>That will break down a chain.</p>
+<p>Achieve one thing without breaking anything else.</p></li>
+<li><p>Don\u2019t select elements with classes. It\u2019s fragile beacuse classes change. A popular solution is <code>data-test=&#39;thing&#39;</code></p></li></ol>
+<p>Another idea, using user intent. A submit button, or a link. </p>
+<p>REACH OUT TO FE_MASTERS
+<a href="${"https://frontendmasters.com/courses/production-vue/testing-libraries/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/production-vue/testing-libraries/</a>
+<a href="${"https://i.imgur.com/avGnCb2.png"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://i.imgur.com/avGnCb2.png</a></p>
+<h2 id="${"code-maintenance"}"><a href="${"#code-maintenance"}">Code Maintenance</a></h2>
+<blockquote><p>[00:00:40] Because as we know, as I mentioned earlier, I\u2019ve worked on teams where like the contractors are working on the other side of the world. And so this makes timezone overlap like near impossible. And so if you can imagine if someone writes something in a way that breaks convention, and they\u2019re allowed to, and then that enters the code base, but then they\u2019re the only ones who know understand or how to fix it.</p></blockquote>
+<blockquote><p>[00:01:00] This means now you\u2019re gonna basically lose a whole day of development over like these bugs. </p></blockquote>
+<h3 id="${"why-are-best-practices-important"}"><a href="${"#why-are-best-practices-important"}">Why are \u201Cbest practices\u201D important</a></h3>
+<p>What we want at the end of the day?</p>
+<ul class="${"list"}"><li>faster dev</li>
+<li>Fewer bugs</li>
+<li>More opportunity </li></ul>
+<p>Think of it as \u2018chosen conventions\u2019.</p>
+<h3 id="${"what-makes-a-convention-good"}"><a href="${"#what-makes-a-convention-good"}">What makes a convention Good?</a></h3>
+<p>Two primary factors: </p>
+<ol class="${"list"}"><li>They enable devs to write great code with a low barrier of entry</li>
+<li>They are easy to refactor and/or abandon</li></ol>
+<p>Generators and automate shit</p>
+<p><a href="${"https://github.com/bencodezen/vue-enterprise-boilerplate/tree/main/generators/new"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/bencodezen/vue-enterprise-boilerplate/tree/main/generators/new</a></p>
+<p>Implementation
+STAGE 1 - Pre-commit -
+\u2014 add testing to the pre-commit
+STAGE 2 - Pull request
+\u2014 </p>
+<p>STAGE 3 - commiting code - linting
+\u2014 </p>
+<p>Look into ESLint A11y plugin</p>
+<p>I hate that Production-Grade Vue.js
+Vue or not, I think this is \u2014
+Code Maintenance section is really good. </p>`
+  })}`;
 });
 var draftWeekTenProductionGradeVuePart2_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_ten_production_grade_vue_part_2_svelte,
-  metadata: metadata$z,
+  metadata: metadata$A,
   load: load$2
 });
-var metadata$y = {
+var metadata$z = {
   "title": "Week Thirteen - Functional JS Part 2",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Functional JavaScript First Steps (Part 2)",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_thirteen_functional_js_part_2_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$y), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$z), {}, {})}`;
 });
 var draftWeekThirteenFunctionalJsPart2_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_thirteen_functional_js_part_2_svelte,
+  metadata: metadata$z,
+  load: load$2
+});
+var metadata$y = {
+  "title": "Week Nine - Building Apps with Vue & Nuxt",
+  "created": "2022-01-03T00:00:00.000Z",
+  "summary": "Building Applications with Vue & Nuxt",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_nine_building_applications_vue_nuxt_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$y), {}, {
+    default: () => `<p>Source: <a href="${"https://frontendmasters.com/courses/vue-nuxt-apps/introduction/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/vue-nuxt-apps/introduction/</a>
+Sarah Drasner </p>
+<h2 id="${"introduction"}"><a href="${"#introduction"}">Introduction</a></h2>
+<ul class="${"list"}"><li><p>I like games because there\u2019s a lot of state management in games. </p></li>
+<li><p>Then a food ordering application. </p>
+<ul class="${"list"}"><li>Slots </li>
+<li>Dynamic Pages</li>
+<li>Car logic</li>
+<li>Validation </li></ul></li>
+<li><p>Composition API</p></li></ul>
+<p>Link to resource:
+<a href="${"https://github.com/sdras/building-web-apps-with-vue"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/building-web-apps-with-vue</a></p>
+<p>SLIDES: <a href="${"https://slides.com/sdrasner/building-vue-apps-3-foodapp?token=DiquCMbB"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/sdrasner/building-vue-apps-3-foodapp?token=DiquCMbB</a></p>
+<p>VSCODE Snippets: <a href="${"https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets</a></p>
+<p>TODO: How to read API.  <a href="${"https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/</a></p>
+<p>Working with SVG Graphics in Vue:</p>
+<figure><img src="${"https://i.imgur.com/guhYfyI.png"}"></figure>
+<p>She made a single svg in Photoshop.
+She labeled them correctly, put them into folders\u2026
+Then she exported it as a SVG.
+That puts them into IDs.
+Then she can target them directly.</p>
+<p>The other option is she\u2019s just puting the SVG directly into a Vue Component.</p>
+<h2 id="${"quiz-game-app"}"><a href="${"#quiz-game-app"}">Quiz Game App</a></h2>
+<p>SLIDES: <a href="${"https://slides.com/sdrasner/vueapps2?token=oePuyn8o"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/sdrasner/vueapps2?token=oePuyn8o</a></p>
+<p>Repo: <a href="${"https://github.com/sdras/building-web-apps-with-vue/tree/main/game-problem"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/building-web-apps-with-vue/tree/main/game-problem</a></p>
+<p>You might have to <code>npm i node-sass sass-loader</code></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+state<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+	uiState<span class="token operator">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
+	<span class="token comment">// ...</span>
+
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>I like writing strings in <code>uiState</code> instead of booleans because you can then manage your state with a specific \u2018state\u2019, rather than a bunch of booleans checking it. </p>
+<p>Things she did: </p>
+<ol class="${"list"}"><li>She put the data directly into the Vuex store. </li>
+<li>In the computed properties, she\u2019s using <code>mapState[]</code> to bring data from the store/index.js\` </li></ol>
+<p>She creates a GamestateStart.vue, which changes based on the uiState. </p>
+<p><code>gsap</code> Greensock is stable with every browser. Using transform is different for every browser. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
+<span class="token keyword">import</span> gsap <span class="token keyword">from</span> <span class="token string">"gsap"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> mapState <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"vuex"</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+
+	computed<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">"score"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+	watch<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token function">score</span><span class="token punctuation">(</span><span class="token parameter">newValue<span class="token punctuation">,</span> oldValue</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+			gsap<span class="token punctuation">.</span><span class="token function">to</span><span class="token punctuation">(</span><span class="token string">'#needle'</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+				duration<span class="token operator">:</span> <span class="token number">0.3</span><span class="token punctuation">,</span> 
+				rotation<span class="token operator">:</span> newValue<span class="token punctuation">,</span> 
+				transformOrigin<span class="token operator">:</span> <span class="token string">"50% 100%"</span> <span class="token comment">// she changed it to 50% 87%		</span>
+		<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// She also adjust the size of the score to fudge the numbers. // https://github.com/sdras/building-web-apps-with-vue/blob/main/game-solution/src/store/index.js#L61</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code>`}<!-- HTML_TAG_END --></pre>
+<p><code>Math.sign(state.score)</code> to safely convert a number into a -1 or +1.
+<a href="${"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign</a></p>
+<p>Fisher-Yates is the shuffle that lodash does.
+More info: <a href="${"https://bost.ocks.org/mike/shuffle/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://bost.ocks.org/mike/shuffle/</a>
+Her snippet: <a href="${"https://github.com/sdras/building-web-apps-with-vue/blob/main/game-solution/src/App.vue#L153"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/building-web-apps-with-vue/blob/main/game-solution/src/App.vue#L153</a></p>
+<p>In a SVG:
+Think of <code>defs</code>, think of them as a staging area. </p>
+<p>masking vs clipping:
+<a href="${"https://css-tricks.com/masking-vs-clipping-use/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://css-tricks.com/masking-vs-clipping-use/</a></p>
+<p>Look at this amazing code:
+codepen - xray skeleeton:
+<a href="${"https://codepen.io/noeldelgado/pen/ByxQjL"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/noeldelgado/pen/ByxQjL</a></p>
+<h2 id="${"the-food-app"}"><a href="${"#the-food-app"}">The Food App</a></h2>
+<h3 id="${"building-a-food-app-with-nuxt"}"><a href="${"#building-a-food-app-with-nuxt"}">Building a Food App with Nuxt</a></h3>
+<p>The project: nuxtfoodapp.netlify.app</p>
+<p>Nuxt -
+it\u2019s a meta-framework</p>
+<ul class="${"list"}"><li>Excellent performance<ul class="${"list"}"><li>Tree shaking</li></ul></li>
+<li>Automatic generated Dynamic Routes </li>
+<li>Automatic Routing</li>
+<li>SSR / Jamstack / SPA rendering </li>
+<li>Elegant defaults &amp; great organization </li></ul>
+<p>Nuxt comes with the vuex store by default. </p>
+<p>Folder structure:
+Layout - We can put it in this layouts default, and then it will persist on every page. And that\u2019s really nice because we can also create different types of layouts as we work middle ware is, you\u2019re gonna see in a second, we\u2019re gonna make pages by simply putting a view file in a pages directory.</p>
+<p>Hero generator:
+<a href="${"https://hero-generator.netlify.app/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://hero-generator.netlify.app/</a></p>
+<p>Middleware -
+[00:05:31]
+So in middle ware, you have access to those routes, and that\u2019s where you can apply some logic. So middle ware is a great place to do things like auth. Middle ware is a great place to do things like tell the store about the route changing or something like that.</p>
+<p>[00:05:45]
+That would be done in middleware. And I mentioned this about the pages directory, we have an index page. And we have this kind of defaults container. You see this logo being brought in, just like we did with the view CLI and we are able to have this kind of defaults, but what\u2019s really nice about it Is that we have, a base index file and all of a sudden we have a page.</p>
+<p>plugin - it\u2019s like mounting in the main JS folder. </p>
+<p>static - any static files. </p>
+<p>in nuxt.config.js:
+head, global css, plugins
+<a href="${"https://nuxtjs.org/docs/directory-structure/nuxt-config/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://nuxtjs.org/docs/directory-structure/nuxt-config/</a></p>
+<h3 id="${"vuex-store"}"><a href="${"#vuex-store"}">Vuex Store</a></h3>
+<p>Actions. Actions can\u2019t change the state, actions can commit mutations that change the state. But actions are good for asynchronous logic.</p>
+<p>Mutations are the only thing that can change the state. So in our game application, they\u2019re synchronous.</p>
+<p>So in this case, what we\u2019re going to do is we\u2019re going to use an action to do that kind of async stuff, and that action will call a commit in the mutation.</p>
+<h3 id="${"how-to-make-a-api"}"><a href="${"#how-to-make-a-api"}">How to make a API:</a></h3>
+<p><a href="${"https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/</a></p>
+<p>The endpoint:
+<a href="${"https://dva9vm8f1h.execute-api.us-east-2.amazonaws.com/production/restaurants"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://dva9vm8f1h.execute-api.us-east-2.amazonaws.com/production/restaurants</a></p>
+<p>There\u2019s a api key and you also need to set up stuff</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
+
+	<span class="token comment">// check if the data is already there or not</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>state<span class="token punctuation">.</span>fooddata<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token keyword">return</span>
+
+	<span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token constant">URLHERE</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+	headers<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token string">'Content-Type'</span> <span class="token operator">:</span> <span class="token string">'application/json'</span><span class="token punctuation">,</span> 
+		<span class="token string">'x-api-key'</span> <span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">AWS_API_KEY</span>
+		<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+		<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">response</span> <span class="token operator">=></span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+		<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">data</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+	<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">&#123;</span>
+		<span class="token comment">// errors here</span>
+	<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>For local vs server: </p>
+<p>she created a <code>getfood.server.js</code> in the plugins folder.
+So she can get the API code. </p>
+<p>NOTES:
+for props arrays -
+YOU MUST return an return value. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">type: Array, 
+default: () =&gt; [&quot;tacos&quot;, &quot;pizza&quot;, &quot;dim sum&quot;]</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"filtering-data--adding-dynamic-pages"}"><a href="${"#filtering-data--adding-dynamic-pages"}">Filtering Data &amp; Adding Dynamic Pages</a></h2>
+<p>Performance thoughts </p>
+<p>Using a for loop to filter, rather than <code>filter</code>. </p>
+<h2 id="${"vuex"}"><a href="${"#vuex"}">Vuex</a></h2>
+<h3 id="${"getters"}"><a href="${"#getters"}">Getters</a></h3>
+<p>[00:05:14]
+But don\u2019t overuse getters. In other words, if one component Is just thinking about itself. You don\u2019t necessarily have to put it in the store in as a getter in order to do so. The reason why I caution against that is for big enterprise apps at scale. What can happen is people are using that Vuex Store not just a place to keep the centralized state data.</p>
+<p>[00:05:37]
+They\u2019re also using it as a self documenting place to understand the brains of the application. So if you put tons of getter information in that store. You\u2019re causing people to kind of look through a ton of information to understand what\u2019s going on for the application for the whole, for that full application.</p>
+<p>[00:05:56]
+It doesn\u2019t matter too much with a small application, but you\u2019ll start to see this that Vuex enterprise apps at scale that we need to kind of keep the Vuex Store a little bit more modularized. And Divya has a great course that shows how to use Vuex modules and goes into more depth there as well.</p>
+<h2 id="${"forms--composition-api"}"><a href="${"#forms--composition-api"}">Forms &amp; Composition API</a></h2>
+<p>SLIDES: <a href="${"https://slides.com/sdrasner/building-vue-apps-4-compositionapi?token=IAnBmcyn"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/sdrasner/building-vue-apps-4-compositionapi?token=IAnBmcyn</a></p>
+<h2 id="${"validation"}"><a href="${"#validation"}">Validation</a></h2>
+<p>It gives you a few things to check and hide things.</p>
+<p>Vue validate blog: <a href="${"https://css-tricks.com/form-validation-in-under-an-hour-with-vuelidate/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://css-tricks.com/form-validation-in-under-an-hour-with-vuelidate/</a></p>
+<h2 id="${"migration-to-v3-composition-api"}"><a href="${"#migration-to-v3-composition-api"}">Migration to V3 Composition API</a></h2>
+<p>It\u2019s about reuable components or logic
+to remove mixins
+It\u2019s about encapsulation</p>
+<p>Clear what\u2019s being exported. Within mixins, it\u2019s not clear what is given. </p>
+<p>inspired by React Hooks</p>
+<p><a href="${"https://v3.vuejs.org/guide/migration/introduction.html"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://v3.vuejs.org/guide/migration/introduction.html</a></p>
+<p>Also library of recipes
+<a href="${"https://vueuse.org/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://vueuse.org/</a></p>
+<p>TIPS:
+Reducer - <a href="${"https://css-tricks.com/understanding-the-almighty-reducer/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://css-tricks.com/understanding-the-almighty-reducer/</a></p>`
+  })}`;
+});
+var weekNineBuildingApplicationsVueNuxt_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_nine_building_applications_vue_nuxt_svelte,
   metadata: metadata$y,
   load: load$2
 });
@@ -15291,114 +15678,321 @@ var draftWeekTwelveFunctionalJsPart1_svelte = /* @__PURE__ */ Object.freeze({
   load: load$2
 });
 var metadata$u = {
-  "title": "DRAFT Week Nine - Production Grade Vue",
-  "created": "2020-12-21T00:00:00.000Z",
-  "summary": "Production-Grade Vue (Part 1)",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_nine_production_grade_vue_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$u), {}, {})}`;
-});
-var draftWeekNineProductionGradeVue_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_nine_production_grade_vue_svelte,
-  metadata: metadata$u,
-  load: load$2
-});
-var metadata$t = {
   "title": "DRAFT Week Ten - Advanced Vue",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Advanced Vue.js Features from the Ground Up",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_ten_advanced_vue_features_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$t), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$u), {}, {})}`;
 });
 var draftWeekTenAdvancedVueFeatures_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_ten_advanced_vue_features_svelte,
-  metadata: metadata$t,
+  metadata: metadata$u,
   load: load$2
 });
-var metadata$s = {
+var metadata$t = {
   "title": "DRAFT Week Nine - Intro to Vue",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Introduction to Vue 3",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_ten_vuex_for_intermediate_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$s), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$t), {}, {})}`;
 });
 var draftWeekTenVuexForIntermediate_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_ten_vuex_for_intermediate_svelte,
-  metadata: metadata$s,
+  metadata: metadata$t,
   load: load$2
 });
-var metadata$r = {
+var metadata$s = {
   "title": "DRAFT Week Fourteen - React & Storybook",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Design Systems with React & Storybook",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_fourteen_react_storybook_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$r), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$s), {}, {})}`;
 });
 var draftWeekFourteenReactStorybook_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_fourteen_react_storybook_svelte,
-  metadata: metadata$r,
+  metadata: metadata$s,
   load: load$2
 });
-var metadata$q = {
+var metadata$r = {
   "title": "DRAFT Week Twelve - Web Performance",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Web Performance Fundamentals",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_twelve_web_performance_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$q), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$r), {}, {})}`;
 });
 var draftWeekTwelveWebPerformance_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_twelve_web_performance_svelte,
-  metadata: metadata$q,
+  metadata: metadata$r,
   load: load$2
 });
-var metadata$p = {
+var metadata$q = {
   "title": "DRAFT Week Thirteen - Intro to Gatsby",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Introduction to Gatsby, v2",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_thirteen_intro_gatsby_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$p), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$q), {}, {})}`;
 });
 var draftWeekThirteenIntroGatsby_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_thirteen_intro_gatsby_svelte,
-  metadata: metadata$p,
+  metadata: metadata$q,
   load: load$2
 });
-var metadata$o = {
+var metadata$p = {
   "title": "DRAFT Week Thirteen - Build a game",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Complete Front-End Project -  Build a Game",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_thirteen_build_game_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$o), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$p), {}, {})}`;
 });
 var draftWeekThirteenBuildGame_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_thirteen_build_game_svelte,
+  metadata: metadata$p,
+  load: load$2
+});
+var metadata$o = {
+  "title": "Week Nine - Production Grade Vue",
+  "created": "2022-01-05T00:00:00.000Z",
+  "summary": "Production-Grade Vue (Part 1)",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_nine_production_grade_vue_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$o), {}, {
+    default: () => `<p>Ben Hong
+Netlify
+<a href="${"https://frontendmasters.com/courses/production-vue/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/production-vue/</a></p>
+<h2 id="${"best-practices"}"><a href="${"#best-practices"}">Best Practices</a></h2>
+<p>SFC - single file components
+The (template, script, styles) pattern.</p>
+<p>JAVASCRIPT
+<strong>Javascript vs TypeScripts</strong></p>
+<ul class="${"list"}"><li><p>Most issues are not from type violations.</p></li>
+<li><p>Typescript does inherently guarentee type safely. It requires discipline</p></li>
+<li><p>Full type safety in a codebase can affect productivity.</p></li>
+<li><p>Most applications can do better testing strategys and code reviews</p></li>
+<li><p>You can also add codebase with JSDoc comments. </p></li></ul>
+<p>If Vue.js 2, not worth it.</p>
+<p>If Vue.js 3, and interested\u2026 go for it!</p>
+<p>Why export default
+versus
+export default NAMED</p>
+<p>HTML
+html should exist in <code>template</code> or render function.</p>
+<p>The render block
+Rarely used.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span> 
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">createElement</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">return</span> <span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">,</span> <span class="token string">'Hello Frontend Masters!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// import mode</span>
+<span class="token comment">// hyper script</span>
+<span class="token comment">// it's another name for createElement</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> h <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span> 
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">return</span> <span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">,</span> <span class="token string">'Hello Frontend Masters!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>This is helpful to create dynamically.
+But it\u2019s better to just use template, because there\u2019s a whole list of other API to create bindings.</p>
+<div><figure><img src="${"https://i.imgur.com/V9q9slj.png"}"></figure><figure><img src="${"https://i.imgur.com/IyrXlnG.png"}"></figure><figure><img src="${"https://i.imgur.com/dGgQVxY.png"}"></figure><figure><img src="${"https://i.imgur.com/8Xa8lNZ.png"}"></figure></div>
+<p>Of course, the more you abstract it, the harder it is to know what\u2019s being passed. </p>
+<p>CSS</p>
+<p>Instead of using scoped\u2026</p>
+<p>you can use the module.</p>
+<p>This creates completely scoped components. </p>
+<p>Another bonus is CSS Module Exports.</p>
+<div><figure><img src="${"https://i.imgur.com/AHGDx1U.png"}"></figure><figure><img src="${"https://i.imgur.com/gnRkKIR.png"}"></figure></div>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>$style.red<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+This should be red
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span>
+
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+
+
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<p>CSS module is done at the compile level. </p>
+<p>Ben prefers to put ternaries in the <code>&lt;script&gt;</code> portion.</p>
+<figure><img src="${"https://i.imgur.com/Klpz2HI.png"}"></figure>
+<p>EXERCISE:
+The Dynamic heading issue and how to solve it. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+    props<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+        level<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+            type<span class="token operator">:</span> String<span class="token punctuation">,</span> 
+            <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'1'</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span>&#96;h$<span class="token punctuation">&#123;</span><span class="token keyword">this</span><span class="token punctuation">.</span>level<span class="token punctuation">)</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">, </span><span class="token template-punctuation string">&#96;</span></span>Hello it works<span class="token operator">!</span>&#96;<span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>TIL - Render function
+<a href="${"https://v3.vuejs.org/guide/render-function.html"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://v3.vuejs.org/guide/render-function.html</a></p>
+<h2 id="${"cli"}"><a href="${"#cli"}">CLI</a></h2>
+<p>The CLI has a UI that lets you:</p>
+<ol class="${"list"}"><li>analyze the project deeper</li>
+<li>Know about dependencies and optimize</li>
+<li>Even kill things. </li></ol>
+<p>It also lets you create ES module version, and a legacy module. WOW!</p>
+<figure><img src="${"https://i.imgur.com/MoDwiIG.png"}"></figure>
+<p>With CLI, you can also add a bunch of libraries. Say you need TypeScript, you also need to get all the configurations and files are in the right place. Like the shim file.</p>
+<p>Valid Alternatives to Vue CLI</p>
+<p>Micro-frontends is kinda overkill.
+Legacy migration.
+Server-side rendering.</p>
+<p>Question: Vite
+Stick with webpack because production apps need stability, and webpack has years of packages that are stable. </p>
+<p>Vite has a lot of features that can handle things. FOr new projects, it\u2019s fine.</p>
+<p>QUESTION: Can you extend CLI?</p>
+<p>It\u2019s open source so yes. </p>
+<h2 id="${"component"}"><a href="${"#component"}">Component</a></h2>
+<p>Naming Conventions</p>
+<p>1) Avoid single name components
+Header, Button, Container</p>
+<p>We want to avoid collision with HTML5 spec. Vue wants to </p>
+<p>filter pipe in Vue2 was depreciated because HTML5 was thinking about using it. </p>
+<figure><img src="${"https://i.imgur.com/CflGpVy.png"}"></figure>
+<p>If the <code>the</code> element is weird and you\u2019re seeing it too frequently, that\u2019s a sign that you may want to generic things some more.</p>
+<figure><img src="${"https://i.imgur.com/Rp46OrP.png"}"></figure>
+<figure><img src="${"https://i.imgur.com/BOl9oD9.png"}"></figure>
+<p>Premature Optimization is the root of all evil. </p>
+<p>PRINCIPLE:
+Data Driven Refactor
+SIgns you need more components</p>
+<ul class="${"list"}"><li>When your components are hard to understand</li>
+<li>You feel a fragment of a component could use its own state</li>
+<li>Hard to describe what the component is actually responsible for. </li></ul>
+<p>How to find reusable components</p>
+<ol class="${"list"}"><li><p>Look for v-for loops</p></li>
+<li><p>Look for large components</p></li>
+<li><p>Look for simular visual designs</p></li>
+<li><p>Look for repeating interface fragments</p></li>
+<li><p>Look for muptiple/mixed responsibilities</p></li>
+<li><p>Look for complicated data paths. </p></li></ol>
+<p>If you follow too hard on Presentational VS stateful components, it can lead you into knots.</p>
+<h3 id="${"file-structure"}"><a href="${"#file-structure"}">File Structure</a></h3>
+<figure><img src="${"https://i.imgur.com/QGzyvXi.png"}"></figure>
+<p>Instead of saying Page/Header.vue
+Change it to PageHeader.vue</p>
+<p>A hybrid level - using page level components. </p>
+<p>For Global imports that use the same thing:
+Chris Fritz
+<a href="${"https://www.youtube.com/watch?v=7lpemgMhi0k"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.youtube.com/watch?v=7lpemgMhi0k</a></p>
+<p>Vue global component registration - import all files in directory, taken from Chris Fritz\u2019s talk
+<a href="${"https://gist.github.com/lnufnu/ad72070b2855b7be082c685a4a1b4d5d"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://gist.github.com/lnufnu/ad72070b2855b7be082c685a4a1b4d5d</a></p>
+<p>Enterprise level:
+<a href="${"https://github.com/bencodezen/vue-enterprise-boilerplate"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/bencodezen/vue-enterprise-boilerplate</a></p>
+<h3 id="${"component-props"}"><a href="${"#component-props"}">Component Props</a></h3>
+<figure><img src="${"https://i.imgur.com/hWM3uQd.png"}"></figure>
+<p>no need to have \u2018required\u2019 if you have a default. It\u2019s redundant.</p>
+<figure><img src="${"https://i.imgur.com/yUNU8Hn.png"}"></figure>
+<h3 id="${"prop-complexity-with-slot"}"><a href="${"#prop-complexity-with-slot"}">Prop complexity with Slot</a></h3>
+<p>Problems</p>
+<ul class="${"list"}"><li>New requirements increase complexity</li>
+<li>If the component has too many multiple responsibilities and conditionals</li>
+<li>It becomes low flexibility and hard to maintain</li></ul>
+<p>FOR EXAMPLE:</p>
+<p>A button \u2014 What if: </p>
+<ol class="${"list"}"><li>Optional image in front</li>
+<li>Optional image in back</li>
+<li>Optional text in the center</li>
+<li>Optional Loading animation</li>
+<li>Optional front/back can be loaders too.</li></ol>
+<p>Rather than overload it with props \u2014
+use slots.</p>
+<figure><img src="${"https://i.imgur.com/KteFeGV.png"}"></figure>
+<p>Look at the top right.
+Just inject the element you want, instead of passsing data through props over and over. </p>
+<h3 id="${"dynamically-switching-components"}"><a href="${"#dynamically-switching-components"}">Dynamically Switching Components</a></h3>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">&lt;component :is=&quot;&quot;&gt;</code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/wh4upp0.png"}"></figure>
+<ol class="${"list"}"><li>It only loads the component it needs.</li>
+<li>This is literally how routerView works.</li></ol>
+<p>PROS:</p>
+<ul class="${"list"}"><li>Extremely powerful/flexible</li>
+<li>Can accept props</li>
+<li>Can accept async components</li>
+<li>Can change into different components</li></ul>
+<p>CONS:</p>
+<ul class="${"list"}"><li>Be careful with prop handling.</li></ul>
+<p>Benefits - since you bind a object as a prop, you can then tap into it.</p>
+<h3 id="${"vendor-components"}"><a href="${"#vendor-components"}">Vendor Components</a></h3>
+<figure><img src="${"https://i.imgur.com/6ZjeDX5.png"}"></figure>
+<p>When using Vendor-specific components, it\u2019ll be a nightmare to refactor, especially if you\u2019re swapping to material design or another font family.</p>
+<p>Recommended to wrap it with your own component.</p>
+<figure><img src="${"https://i.imgur.com/WDOm4OE.png"}"></figure>
+<p>Now you can add a simple if statement to switch without hundreds of lines of fixes.</p>
+<h3 id="${"transparent-component-wrapper"}"><a href="${"#transparent-component-wrapper"}">Transparent Component Wrapper</a></h3>
+<figure><img src="${"https://i.imgur.com/sTbVw1K.png"}"></figure>
+<p>Vue assigns things to the top-level element.</p>
+<p>So those click events are happening on <code>div</code>.
+Instead switch it.</p>
+<h3 id="${"mixins"}"><a href="${"#mixins"}">Mixins</a></h3>
+<p>Sharing functionality with different components.</p>
+<p>People always reach for Mixins first.</p>
+<figure><img src="${"https://i.imgur.com/O35xgbo.png"}"></figure>
+<p>PROBLEMS WITH MIXINS:</p>
+<ul class="${"list"}"><li>Possible Name Clashes</li>
+<li>Can\u2019t share template fragments</li>
+<li>Gets harder to track where things are coming from. Harder to debug because where is it coming from?</li></ul>
+<p>PROS:</p>
+<ul class="${"list"}"><li>Easy to use</li>
+<li>Good for refactoring</li></ul>
+<h3 id="${"provideinject-api"}"><a href="${"#provideinject-api"}">Provide/Inject API</a></h3>
+<p><a href="${"https://vuejs.org/v2/api/#provide-inject"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://vuejs.org/v2/api/#provide-inject</a></p>
+<p>Lightweight data store. </p>
+<p>Say your doing a parent-child prop relationship. </p>
+<p>If you do a great-great-great-grandparent relationship, it gets real messy with dependency.</p>
+<figure><img src="${"https://i.imgur.com/QUqxCxX.png"}"></figure>
+<p>PROS:</p>
+<ul class="${"list"}"><li>Easily share data and methods with descendants</li>
+<li>Helps avoid unnessary props</li>
+<li>Components can choose which properties to inject</li>
+<li>Can be used to provide default props and data</li></ul>
+<p>CONS:
+There are some reactivity caveats when it comes to usage in Vue 2</p>
+<ul class="${"list"}"><li>Create a tight relationship between two components that\u2019s not immediatelly apparent</li>
+<li>There is ambiguity where it\u2019s coming from where. </li></ul>
+<p>They are useful for advance plugin/component libraries. Not good for generic application code.</p>
+<p>Tightly coupling component names have a better alternative.</p>`
+  })}`;
+});
+var weekNineProductionGradeVue_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_nine_production_grade_vue_svelte,
   metadata: metadata$o,
   load: load$2
 });
@@ -16096,45 +16690,29 @@ var draftWeekElevenFullStack_svelte = /* @__PURE__ */ Object.freeze({
   load: load$2
 });
 var metadata$k = {
-  "title": "DRAFT Week Nine - Intro to Vue",
-  "created": "2021-12-21T00:00:00.000Z",
-  "summary": "Introduction to Vue 3",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_nine_intro_to_vue_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$k), {}, {})}`;
-});
-var draftWeekNineIntroToVue_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_nine_intro_to_vue_svelte,
-  metadata: metadata$k,
-  load: load$2
-});
-var metadata$j = {
   "title": "DRAFT Week Twelve - Typescript",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "TypeScript Fundamentals, v3",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_twelve_typescript_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$j), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$k), {}, {})}`;
 });
 var draftWeekTwelveTypescript_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_twelve_typescript_svelte,
-  metadata: metadata$j,
+  metadata: metadata$k,
   load: load$2
 });
-var metadata$i = {
+var metadata$j = {
   "title": "Week Six - Code Transformation with ASTs",
   "created": "2021-12-05T00:00:00.000Z",
   "summary": "Javascript Code Transformation and Linting with ASTs",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_six_code_transformation_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$i), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$j), {}, {
     default: () => `<h2 id="${"what-is-it"}"><a href="${"#what-is-it"}">What is it</a></h2>
 <p>Abstract Syntax Trees. </p>
 <blockquote><p>An AST is the result of parsing code. For JavaScript, an AST is a JavaScript object containing a tree representation of your source. Before we use it, we have to create it. Depending on the code we are parsing, we choose the appropriate parser.</p></blockquote>
@@ -16217,17 +16795,17 @@ var weekSixCodeTransformation_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_six_code_transformation_svelte,
-  metadata: metadata$i,
+  metadata: metadata$j,
   load: load$2
 });
-var metadata$h = {
+var metadata$i = {
   "title": "Week Three - Intro to Dev Tools",
   "created": "2021-11-06T00:00:00.000Z",
   "summary": "Introduction to Dev Tools, v3",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_three_intro_dev_tools_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$h), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$i), {}, {
     default: () => `<p><a href="${"https://github.com/jkup/mastering-chrome-devtools"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/jkup/mastering-chrome-devtools</a></p>
 <h2 id="${"elements-tab"}"><a href="${"#elements-tab"}">Elements tab</a></h2>
 <figure><img src="${"https://i.imgur.com/lck2C4c.png"}"></figure>
@@ -16313,17 +16891,17 @@ var weekThreeIntroDevTools_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_three_intro_dev_tools_svelte,
-  metadata: metadata$h,
+  metadata: metadata$i,
   load: load$2
 });
-var metadata$g = {
+var metadata$h = {
   "title": "Week Five - JS Object Oriented",
   "created": "2021-11-27T00:00:00.000Z",
   "summary": "The Hard Parts of Object Oriented JavaScript",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_five_hard_parts_ooj_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$g), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$h), {}, {
     default: () => `<h2 id="${"intro"}"><a href="${"#intro"}">Intro</a></h2>
 <p>Slides: <a href="${"https://static.frontendmasters.com/resources/2018-10-03-javascript-hard-parts-oop/javascript-hard-parts-oop.pdf"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://static.frontendmasters.com/resources/2018-10-03-javascript-hard-parts-oop/javascript-hard-parts-oop.pdf</a></p>
 <p>OOJ is a way to organize our code as it gets more complex, so it\u2019s not procedure.</p>
@@ -16908,18 +17486,21 @@ var weekFiveHardPartsOoj_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_five_hard_parts_ooj_svelte,
-  metadata: metadata$g,
+  metadata: metadata$h,
   load: load$2
 });
-var metadata$f = {
+var metadata$g = {
   "title": "Week Eight - CSS In Depth",
   "created": "2021-12-21T00:00:00.000Z",
   "summary": "CSS In-Depth, v2",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_eight_css_in_depth_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$f), {}, {
-    default: () => `<p>Separation of Concerns</p>
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$g), {}, {
+    default: () => `<p>CSS In-Depth, v2
+Estelle Weyl
+Slides: <a href="${"https://estelle.github.io/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://estelle.github.io/</a></p>
+<p>Separation of Concerns</p>
 <p>Content - HTML
 Behavior - JS
 Presentation - CSS</p>
@@ -17052,32 +17633,161 @@ How do you tab to it? How do you keyboard focus to it? How do you deal with all 
 <li>Clear</li>
 <li>Vertical-align</li></ol>
 <h2 id="${"tables"}"><a href="${"#tables"}">Tables</a></h2>
-<p>tfooter - it\u2019s where you put something like calculations. Such as all the calories in an ice cream list.</p>
+<p>thead - Place to put the title.
+tfooter - it\u2019s where you put something like calculations. Such as all the calories in an ice cream list.</p>
 <p>Captions - specifies the title of the table. </p>
+<p>if you add border to your tables - it adds a bit of spacing.
+border-collapse - the default behavior is <code>seperate</code> of the cell borders. <code>collapse</code> will make it like Excel.
+border-spacing - how much space between. </p>
+<p>You can hide shells</p>
+<p>empty-cell: show | hide
+it\u2019s similar to:</p>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css"><span class="token selector">td:empty, th:empty</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">visibility</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>table-layout: auto | fixed (fixed renders faster)</p>
+<p>vertical-align - in tables</p>
 <h2 id="${"grid"}"><a href="${"#grid"}">Grid</a></h2>
+<p>Flexbox (Oct 2009. Last call working draft is May 14, 2015)
+Grid. (March 2017 fully released) </p>
+<p><code>fr</code> is a relative unit - a fraction. </p>
+<p>It auto-assumes you want 1 fr per row.</p>
+<p>The <code>tracklist</code> is the layout. </p>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css"><span class="token selector">div</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
+  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token function">repeat</span><span class="token punctuation">(</span>4<span class="token punctuation">,</span> 1fr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">/* grid-template-columns: &lt;track-list> */</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>gap</strong></p>
+<p><code>grid-column-gap</code> - gap between col
+<code>grid-row-gap</code> - gap between rows
+<code>grid-gap</code> - shorthand</p>
+<p><strong>Naming</strong></p>
+<p>Columns and rows are ordered starting with 1. </p>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css"><span class="token selector">div</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 1fr [start] <span class="token function">repeat</span><span class="token punctuation">(</span>3<span class="token punctuation">,</span> 1fr<span class="token punctuation">)</span> [mid] <span class="token function">repeat</span><span class="token punctuation">(</span>8<span class="token punctuation">,</span> 1fr<span class="token punctuation">)</span> [end]<span class="token punctuation">;</span>
+    <span class="token property">grid-area</span><span class="token punctuation">:</span> 2 / start / 4 / mid<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Difference between items/content</strong></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// Containers ---&gt; content
+justify-content: 
+align-content: 
+
+It&#39;s aligning the whole row/column. 
+
+// Containers ---&gt; items
+justify-items:
+align-items: 
+
+It&#39;s aligning each item within itself. Globally</code>`}<!-- HTML_TAG_END --></pre>
+<p>What about itself?</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// flex &amp; grid items 
+justify-self:
+align-self:</code>`}<!-- HTML_TAG_END --></pre>
 <h2 id="${"background--borders"}"><a href="${"#background--borders"}">Background &amp; Borders</a></h2>
-<h2 id="${"gradience"}"><a href="${"#gradience"}">Gradience</a></h2>
-<h2 id="${"transforms"}"><a href="${"#transforms"}">Transforms</a></h2>
-<h2 id="${"transitions"}"><a href="${"#transitions"}">Transitions</a></h2>
-<h2 id="${"animations"}"><a href="${"#animations"}">Animations</a></h2>
-<h2 id="${"other-features"}"><a href="${"#other-features"}">Other Features</a></h2>`
+<p>background is shorthand.</p>
+<p>It actually has</p>
+<ul class="${"list"}"><li>background-repeat</li>
+<li>background-attachment</li>
+<li>background-position</li>
+<li>background-color</li></ul>
+<p><strong>background-clip:</strong>
+border-box - The background extends to the outside edge of the border (but underneath the border in z-ordering).
+padding-box - The background extends to the outside edge of the padding. No background is drawn beneath the border.
+content-box - The background is painted within (clipped to) the content box.
+text - The background is painted within (clipped to) the foreground text.</p>
+<figure><img src="${"https://i.imgur.com/FIpPB2b.png"}"></figure>
+<p><strong>background-origin</strong>
+border-box - The background is positioned relative to the border box.
+padding-box -  The background is positioned relative to the padding box.
+content-box - The background is positioned relative to the content box.</p>
+<figure><img src="${"https://i.imgur.com/WivA9HX.png"}"></figure>
+<h2 id="${"gradient"}"><a href="${"#gradient"}">Gradient</a></h2>
+<p><a href="${"https://estelle.github.io/CSS/gradients/index.html#slide2"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://estelle.github.io/CSS/gradients/index.html#slide2</a></p>
+<figure><img src="${"https://i.imgur.com/6AXwBiK.png"}"></figure>
+<p>Color stops and Length units</p>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css"><span class="token selector">.slide</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span>
+    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>
+      red 0%<span class="token punctuation">,</span>
+      orange 20%<span class="token punctuation">,</span>
+      yellow 40%<span class="token punctuation">,</span>
+      green 60%<span class="token punctuation">,</span>
+      blue 80%<span class="token punctuation">,</span>
+      purple 100%
+    <span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/iCLbP2S.png"}"></figure>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css"><span class="token selector">.slide</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span>
+    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>
+      orange 20vh<span class="token punctuation">,</span>
+      yellow 40vh<span class="token punctuation">,</span>
+      green 60vh<span class="token punctuation">,</span>
+      blue 80vh
+    <span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/4OljjBj.png"}"></figure>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css">  <span class="token selector">.slide</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span>
+      <span class="token function">conic-gradient</span><span class="token punctuation">(</span>
+        orange .20turn<span class="token punctuation">,</span>
+        yellow .40turn<span class="token punctuation">,</span>
+        green .60turn<span class="token punctuation">,</span>
+        blue .80turn
+      <span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/KuU0IuE.png"}"></figure>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css"><span class="token selector">.slide</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span>
+    <span class="token function">linear-gradient</span><span class="token punctuation">(</span>
+      red 20vh<span class="token punctuation">,</span>
+      orange 20vh<span class="token punctuation">,</span>
+      yellow 40vh<span class="token punctuation">,</span>
+      green 60vh<span class="token punctuation">,</span>
+      blue 80vh<span class="token punctuation">,</span>
+      purple 80vh
+    <span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/enGQfcr.png"}"></figure>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css"><span class="token selector">#conic11</span> <span class="token punctuation">&#123;</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span>
+    <span class="token function">repeating-conic-gradient</span><span class="token punctuation">(</span>
+      magenta 0 4deg<span class="token punctuation">,</span>
+      orange 4deg 8deg
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/Et7UYzu.png"}"></figure>
+<h2 id="${"transforms--transitions--animations"}"><a href="${"#transforms--transitions--animations"}">Transforms &amp; Transitions &amp; Animations</a></h2>
+<div><figure><img src="${"https://i.imgur.com/WYSinJB.png"}"></figure><figure><img src="${"https://i.imgur.com/EQVvK9G.png"}"></figure></div>
+<h2 id="${"other-features"}"><a href="${"#other-features"}">Other Features</a></h2>
+<p>clip-path
+shape-outside</p>
+<p>You can stack clip-path/shape-outside to keep curving a shape.</p>
+<p>You can also clip-path a URL. </p>
+<p>How to add a placeholder cursor in an input</p>
+<pre class="${"language-css"}"><!-- HTML_TAG_START -->${`<code class="language-css">  <span class="token selector">li</span> <span class="token punctuation">&#123;</span><span class="token property">line-height</span><span class="token punctuation">:</span> 2<span class="token punctuation">;</span> <span class="token property">clear</span><span class="token punctuation">:</span> both<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+  <span class="token selector">label</span> <span class="token punctuation">&#123;</span><span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span> <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+  <span class="token selector">.shell span</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span> pink<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+  <span class="token selector">li</span> <span class="token punctuation">&#123;</span><span class="token property">font-family</span><span class="token punctuation">:</span> helvetica<span class="token punctuation">;</span> <span class="token property">font-size</span><span class="token punctuation">:</span> 0.93rem<span class="token punctuation">;</span><span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/ZYoJMKY.png"}"></figure>`
   })}`;
 });
 var weekEightCssInDepth_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_eight_css_in_depth_svelte,
-  metadata: metadata$f,
+  metadata: metadata$g,
   load: load$2
 });
-var metadata$e = {
+var metadata$f = {
   "title": "Vue Mastery - Vue 3 Forms",
   "created": "2021-11-14T00:00:00.000Z",
   "summary": "Vue Mastery Vue 3 Forms",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Vue_mastery_vue3_forms_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$e), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$f), {}, {
     default: () => `<h2 id="${"vue-3-forms"}"><a href="${"#vue-3-forms"}">Vue 3 Forms</a></h2>
 <p>Source: <a href="${"https://www.vuemastery.com/courses/vue3-forms/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.vuemastery.com/courses/vue3-forms/</a></p>
 <h3 id><a href="${"#"}"></a></h3>
@@ -17119,6 +17829,576 @@ var vueMasteryVue3Forms_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Vue_mastery_vue3_forms_svelte,
+  metadata: metadata$f,
+  load: load$2
+});
+var metadata$e = {
+  "title": "Week Nine - Intro to Vue",
+  "created": "2022-01-02T00:00:00.000Z",
+  "summary": "Introduction to Vue 3",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_nine_intro_to_vue_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$e), {}, {
+    default: () => `<p>Intro to Vue.js
+Sarah Drasner
+<a href="${"https://github.com/sdras/intro-to-vue"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/intro-to-vue</a></p>
+<h2 id="${"intro"}"><a href="${"#intro"}">Intro</a></h2>
+<p>VanillaJS vs Vue</p>
+<blockquote><p>The other thing about it that I really like is we\u2019re holding a state. Unlike in olden days where the DOM would hold the state and you\u2019re kind of always pinging the DOM like, hey, what\u2019s going on?</p></blockquote>
+<blockquote><p>Did you change this? Hey, what\u2019s going on? Did this update? We\u2019re holding a state instead. And we\u2019re telling the DOM what to do with that. So we really have better finite control over what\u2019s going on with the state of our application and where that is getting added to.</p></blockquote>
+<blockquote><p>It\u2019s also reactive. We\u2019re gonna go into this whole section about what reactivity means and why that\u2019s different in Vue 3. But what you need to know for now is reactivity is really helpful because a lot of premises and reactivity is responding to changes. And that\u2019s what a lot of application development is.</p></blockquote>
+<h2 id="${"directives-modifiers--data-rendering"}"><a href="${"#directives-modifiers--data-rendering"}">Directives, Modifiers &amp; Data Rendering</a></h2>
+<p>v-model - two-way binding</p>
+<p>v-if/v-else - mounting is expensive. So showing/hiding, rather than re-mounting is a option.</p>
+<p>v-bind - </p>
+<p>v-for - </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">(value, key, index) in jokes :key=&quot;value&quot;</code>`}<!-- HTML_TAG_END --></pre>
+<p>v-once &amp; v-pre - </p>
+<p>v-pre is like <code>&lt;pre&gt;</code>, in that it doesn\u2019t render vue itself. THat\u2019s useful for documentation. </p>
+<p>v-on - binding to events.</p>
+<p>v-html &amp; v-text -</p>
+<p>v-html renders html.
+v-text is like mustashe templates, in case you have a use-case where you can\u2019t use mustashes. Mustashe templates render them faster though, so use that. </p>
+<p><strong>v-model Modifiers</strong></p>
+<p>v-model.trim will strip any leading &amp; trailing whitespace from bound string</p>
+<p>v-model.number - change strings to number </p>
+<p>v-model.lazy - waits for data after the user finishes. </p>
+<p>When i\u2019m using .lazy, i use it with form validation. Anything which deals with a lot of data. Because it\u2019s annoying to fill out a form and constantly get validation over and over again as you\u2019re typing.</p>
+<p><strong>event modifiers</strong></p>
+<p>@mousemove.stop - compare to e.stopPropagation()</p>
+<p>@mousemove.prevent - this is e.preventDefault()</p>
+<p>@submit.prevent - will no longer reload the page on submit</p>
+<p>@click.once - click event fire once
+@click.native - so you can listen to native events</p>
+<p>EXERCISE:</p>
+<p><a href="${"https://codepen.io/sdras/pen/685454ccb793ad59193a369c58b8747b"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/685454ccb793ad59193a369c58b8747b</a></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">    &lt;input v-model.number=&quot;num2&quot; type=&quot;number&quot; /&gt;</code>`}<!-- HTML_TAG_END --></pre>
+<p>TIL: You can force type. Take a look -&gt; v-model.number </p>
+<h2 id="${"methods-computed-properties--watchers"}"><a href="${"#methods-computed-properties--watchers"}">Methods, Computed Properties &amp; Watchers</a></h2>
+<p>Codepen - Rainbow mouse
+<a href="${"https://codepen.io/sdras/pen/75205908c2189487ca91f9b49c1c978a"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/75205908c2189487ca91f9b49c1c978a</a></p>
+<blockquote><p>I get really frustrated with JavaScript and I wanna scream, this is bullshit, but I keep forgetting what this refers to.</p></blockquote>
+<p>Codepen - Vue Form </p>
+<p><a href="${"https://codepen.io/sdras/pen/1e3443b570d2bf072d87ac96cb150f3f"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/1e3443b570d2bf072d87ac96cb150f3f</a></p>
+<p>Codepen - Sorting Table Data
+<a href="${"https://codepen.io/sdras/pen/d53df955e0918d9437424cf5eee82fe8"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/d53df955e0918d9437424cf5eee82fe8</a></p>
+<p>Reminder - this is bound to the component. so you should not use a arrow function in methods. </p>
+<h3 id="${"computed-property-vs-methods"}"><a href="${"#computed-property-vs-methods"}">Computed Property vs Methods</a></h3>
+<figure><img src="${"https://i.imgur.com/9AqZLeU.png"}"></figure>
+<p>Codepen - Computed Properties in place of that array
+<a href="${"https://codepen.io/sdras/pen/eb5416266e86fdd45195c3974c7898f6"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/eb5416266e86fdd45195c3974c7898f6</a></p>
+<p>codepen - Filtering blog post Exercise Solution
+<a href="${"https://codepen.io/sdras/pen/9405ba833415572d34ec7c3ba13b1608"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/9405ba833415572d34ec7c3ba13b1608</a></p>
+<p>Filters were dropped, because you can do everything with computed properties. </p>
+<p>Codepen - Filter Version
+<a href="${"https://codepen.io/sdras/pen/1b9e273a1d27f64a99b94d8754a3b693"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/1b9e273a1d27f64a99b94d8754a3b693</a></p>
+<p>Codepen - Computed Properties
+<a href="${"https://codepen.io/sdras/pen/21f82be7b6afe10d89738db184bafb89"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/21f82be7b6afe10d89738db184bafb89</a></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// Filters Version </span>
+<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+      customer1total<span class="token operator">:</span> <span class="token number">35.43</span>    
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  filters<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token function">tip20</span><span class="token punctuation">(</span><span class="token parameter">value</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span>value<span class="token operator">*</span><span class="token number">.2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">// Computed Properties Version </span>
+<span class="token keyword">const</span> App <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+      customer1total<span class="token operator">:</span> <span class="token number">35.43</span>    
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token function">tip20</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>customer1total<span class="token operator">*</span><span class="token number">.2</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toFixed</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"reactivity--proxies"}"><a href="${"#reactivity--proxies"}">Reactivity &amp; Proxies</a></h3>
+<p>Sarah explains that reactive programming is programming with asynchronous data streams, adds that a stream is a sequence of ongoing events ordered in time that offer some hooks with which to observe it, and walks through the various steps that Vue 3 goes through to make an object reactive. Proxies, which are objects that encase other objects or functions that allow engineers to intercept it, are also explored in this section.</p>
+<p>Most of what we\u2019re doing with application development is reacting to state changes.</p>
+<blockquote><p>So what is reactive? We\u2019ve heard reactive programming and people talk about reactive programming a lot lately and sometimes people think, well reactive programming is RXJs. And they\u2019re not wrong. RxJs is reactive programming. But reactive programming is a type of programming it\u2019s a large umbrella and RxJs is one library that uses reactive premises.</p></blockquote>
+<p>WHAT IS REACTIVE?
+Reactive programming is programming with asynchronous data streams.</p>
+<p>A stream is a sequence of ongoing events ordered in time that offer some hooks with which to observe it.</p>
+<p>Andre Staltz\u2019 post - <a href="${"https://gist.github.com/staltz/868e7e9bc2a7b8c1f754"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://gist.github.com/staltz/868e7e9bc2a7b8c1f754</a></p>
+<p>When we use reactive premises for building applications, this means it\u2019s very easy to update state in reaction to events.</p>
+<p>HOW DOES VUE 3 DO REACTIVITY?</p>
+<ul class="${"list"}"><li>Detect when there\u2019s a change in one of the values</li>
+<li>Track the function that changes it</li>
+<li>Trigger the function so it can update the final value</li></ul>
+<p>Proxies - </p>
+<blockquote><p>(Detect)\u2026 Because proxies are already doing that for us automatically. We can \u2018track\u2019 the function that changes it using track and we can \u2018trigger\u2019 a function that updates the final value in trigger.</p></blockquote>
+<figure><img src="${"https://i.imgur.com/ndEUOkc.png"}"></figure>
+<figure><img src="${"https://i.imgur.com/3qQQodx.png"}"></figure>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token comment">//the data that's being used</span>
+<span class="token keyword">const</span> dinner <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> 
+
+<span class="token comment">// What happens to the data.</span>
+<span class="token comment">// this sets a get/set </span>
+<span class="token keyword">const</span> handler <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> 
+
+<span class="token keyword">const</span> proxy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Proxy</span><span class="token punctuation">(</span>dinner<span class="token punctuation">,</span> handler<span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Codepen - Proxy explainer in Codepen (sweet animations)
+<a href="${"https://codepen.io/team/Vue/pen/wvgqyJK"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/team/Vue/pen/wvgqyJK</a></p>
+<p><strong>Set(), Map() &amp; WeakMap()</strong></p>
+<p>Set()</p>
+<p>Map() is a series of key &amp; values, similar to object
+remember explicit ordering
+Like Set(), which is only uniques </p>
+<p>Weakmap()</p>
+<p>The main two things \u2014 one can be garbage collected. </p>
+<p>Why does this matter?
+Because this is what Vue is doing under the hood. </p>
+<h3 id="${"watchers"}"><a href="${"#watchers"}">Watchers</a></h3>
+<p>Codepen - Watchers
+<a href="${"https://codepen.io/sdras/pen/2f082def935abf0dab372893f0efac1d"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/2f082def935abf0dab372893f0efac1d</a></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> App <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+      counter<span class="token operator">:</span> <span class="token number">0</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  watch<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token function">counter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'The counter has changed!'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+	<span class="token function">watchedProperty</span><span class="token punctuation">(</span><span class="token parameter">newValue<span class="token punctuation">,</span> oldValue</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">It was </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>oldValue<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">, now it's </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>newValue<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Codepen - Punk Beers
+(It watches for scroll and when it reaches the bottom, it gets more data.)</p>
+<p><a href="${"https://codepen.io/sdras/pen/dRqZOy"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/dRqZOy</a></p>
+<p>Instead of building the new one:
+<a href="${"https://github.com/tangbc/vue-virtual-scroll-list"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/tangbc/vue-virtual-scroll-list</a></p>
+<p>built by Vue Core Team . </p>
+<p><strong>Codepen - Graph with SVG</strong>
+<a href="${"https://codepen.io/sdras/pen/OWZRZL"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/OWZRZL</a>
+Transitioning state with watchers</p>
+<p>The graph is built with Vue! (not a JS lib)</p>
+<p>Watchers only watch one property.
+But it\u2019s flexible that you can set it to watch your one property, and then change another property.</p>
+<p>That\u2019s can be a side-effect, where you change things that someone else doesn\u2019t know about it. </p>
+<blockquote><p>And so there are kind of purists in this area who will say don\u2019t do something like that because you\u2019re now changing something that you didn\u2019t know that you are changing. So that is something to watch out for, to watch out for. What I would recommend is that you\u2019re always encapsulating thing and methods and calling them so that it\u2019s a little bit more explicit and not doing everything directly in the watcher in order to kind of change things around.</p></blockquote>
+<blockquote><p>But it\u2019s a little bit different from a computer property in that sense, that computer properties are really like giving you another view from that one piece. Watchers allow you to affect multiple pieces.</p></blockquote>
+<h2 id="${"components-and-props"}"><a href="${"#components-and-props"}">Components and Props</a></h2>
+<p>Templates</p>
+<ul class="${"list"}"><li>You can also use render functions (<a href="${"https://vuejs.org/v2/guide/render-function.html"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://vuejs.org/v2/guide/render-function.html</a>)</li>
+<li>You can also use JSX</li></ul>
+<p>Each component has it\u2019s own isolated scope. </p>
+<p>If you don\u2019t, it retains the scope for all instances of that component.</p>
+<p>camelCasing converts to kebab-case. </p>
+<p>Codepen - Comment app -
+<a href="${"https://codepen.io/sdras/pen/422d5ce1f61d93ca253e06132b83c598"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/422d5ce1f61d93ca253e06132b83c598</a></p>
+<p>\u2018dumb\u2019 components - components that are only used to render things. It\u2019s only responsible is to show pretty shit. It might even capture events. But it passes that data back to it. </p>
+<p>Codepen - Wine Label maker - SLOTs
+<a href="${"https://codepen.io/sdras/pen/BpjQzE"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/BpjQzE</a>
+Review this? It\u2019s really good.
+<code>&lt;component :is=&quot;selected&quot;&gt;</code></p>
+<p>Codepen - Tabs with Keep Alive</p>
+<p>with <code>keep-alive</code>
+<a href="${"https://codepen.io/sdras/pen/bd394c76a0aa9e44abc37e3d061aef1b"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/bd394c76a0aa9e44abc37e3d061aef1b</a></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> Inactive components will be cached<span class="token operator">!</span> <span class="token operator">--</span><span class="token operator">></span>
+<span class="token operator">&lt;</span>keep<span class="token operator">-</span>alive<span class="token operator">></span>
+<span class="token operator">&lt;</span>component <span class="token operator">:</span>is<span class="token operator">=</span><span class="token string">"currentTabComponent"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>component<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>keep<span class="token operator">-</span>alive<span class="token operator">></span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"app-development"}"><a href="${"#app-development"}">App Development</a></h2>
+<p>Benefits of a CLI</p>
+<ul class="${"list"}"><li>Build processes</li>
+<li>Lots of features</li>
+<li>Libraries</li></ul>
+<h3 id="${"lifecycle-hooks"}"><a href="${"#lifecycle-hooks"}">Lifecycle hooks</a></h3>
+<figure><img src="${"https://i.imgur.com/0AMKEVu.png"}"></figure>
+<p>created - great place to call APIs
+mounted - great place to work on DOM operations
+activated - associated for keep-alive</p>
+<p>renderTracked - (new! v3) - when vDOM is rerendered, good for debugging
+renderTriggered - (new! v3) - similar, but tells you what triggered the rerendering</p>
+<p>Codepen - Lifecycle hooks example
+<a href="${"https://codepen.io/sdras/pen/28d3a5b277ada8f9d1b0b34a2d73831c"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/28d3a5b277ada8f9d1b0b34a2d73831c</a></p>
+<p>Lifecycle hook image for V2 <a href="${"https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram</a></p>
+<h3 id="${"nuxt"}"><a href="${"#nuxt"}">Nuxt</a></h3>
+<ul class="${"list"}"><li>Automatic Code Splitting</li>
+<li>Server-side rendering /STatic/Jamstack/SPA</li>
+<li>Powerful Routing System with Asynchronous Data</li>
+<li>Lighthouse scores out of the gate</li>
+<li>Automatic dynamic routes</li>
+<li>Transplitation</li>
+<li>Hot reloading </li>
+<li>Pre-procesing: SASS, LESS</li>
+<li>Write vue files </li></ul>
+<p>In nuxt.config.js </p>
+<p>You can add all these globals, like your <code>&lt;head&gt;</code>, type of mode, font imports. </p>
+<h3 id="${"rendering-in-nuxt"}"><a href="${"#rendering-in-nuxt"}">Rendering in Nuxt</a></h3>
+<p>When vue takes up anything that is dynamic, it\u2019s called hydration when it re-hydrates the data.</p>
+<blockquote><p>Stephanie Walter did this great pen that shows, CSS transitions versus CSS animations, and what CSS transitions do is they interpolate two states, you go from one state to another state, but you\u2019re not allowed to create loops or other processes in between them.</p></blockquote>
+<blockquote><p>In terms of CSS animations, we have the ability to access keyframes. So keyframes can gives us the ability to go from one state to another, just like transitions does, but it also has a lot more power, so we\u2019re able to do loops, we\u2019re able to put many different things, at different points in time.</p></blockquote>
+<figure><img src="${"https://i.imgur.com/YIVcIRO.png"}"></figure>
+<p>The transition component:
+<a href="${"https://v3.vuejs.org/guide/transitions-enterleave.html"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://v3.vuejs.org/guide/transitions-enterleave.html</a></p>
+<p>animate.css
+<a href="${"https://animate.style/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://animate.style/</a></p>
+<h2 id="${"animations"}"><a href="${"#animations"}">Animations</a></h2>
+<p>Codepen - the difference between transitions and animations
+<a href="${"https://codepen.io/stephaniewalter/pen/xxVgReM"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/stephaniewalter/pen/xxVgReM</a></p>
+<p>The Transition Component: </p>
+<blockquote><p>The transition component is really good for coordinating entrances and exits, of a component that has a conditional statement. So if you wrap that transition component, it\u2019s not a component that\u2019s mounting and unmounting, it won\u2019t really work. For anything else, any other thing, we can hook into our CSS and JavaScript the regular way.</p></blockquote>
+<figure><img src="${"https://i.imgur.com/qdmVlbw.png"}"></figure>
+<p><strong>Animating with CSS Classes</strong></p>
+<p>codepen: <a href="${"https://codepen.io/sdras/pen/GRZyVQL"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/GRZyVQL</a></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">enter<span class="token operator">-</span>active<span class="token operator">-</span><span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"toasty"</span>
+leave<span class="token operator">-</span>active<span class="token operator">-</span><span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"bounceOut"</span>
+<span class="token punctuation">.</span>toasty <span class="token punctuation">&#123;</span>
+  toasty <span class="token number">1</span>s ease both<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Still <code>&lt;transition /&gt;</code> component, but</p>
+<p>(Simplest example)</p>
+<p>Can also hook into CSS animation libraries this way</p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>transition</span>
+    <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ballmove<span class="token punctuation">"</span></span>
+    <span class="token attr-name">enter-active-class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bouncein<span class="token punctuation">"</span></span>
+    <span class="token attr-name">leave-active-class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rollout<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Without using <code>&lt;transition /&gt;</code></p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>&#123; shake: noActivated &#125;<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>noActivated = true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Click me<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>noActivated<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Oh no!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Codepen: Flip cards Animation:
+<a href="${"https://codepen.io/team/Vue/pen/76e344bf057bd58b5936bba260b787a8"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/team/Vue/pen/76e344bf057bd58b5936bba260b787a8</a></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">&lt;transition name=&quot;flip&quot; mode=&quot;out-in&quot;&gt;
+  &lt;slot v-if=&quot;!isShowing&quot;&gt;&lt;/slot&gt;
+  &lt;img v-else src=&quot;https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/cartoonvideo14.jpeg&quot; /&gt;
+&lt;/transition&gt;</code>`}<!-- HTML_TAG_END --></pre>
+<p>Example: <a href="${"https://slides.com/sdrasner/intro-to-vue-3-5?token=YXhIwtpW#/26"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/sdrasner/intro-to-vue-3-5?token=YXhIwtpW#/26</a></p>
+<p><strong>Animating with Javascript hooks</strong></p>
+<p>Codepen: <a href="${"https://codepen.io/sdras/pen/vYGVbxy"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/vYGVbxy</a></p>
+<p>Using the <code>beforeEnter()</code> hook gives people a heads up that she is making a animation. </p>
+<p>BASIC EXAMPLE: </p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"> <span class="token comment">&lt;!-- basic version --></span> 
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>transition</span> 
+  <span class="token attr-name">@enter</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>enterEl<span class="token punctuation">"</span></span>
+  <span class="token attr-name">@leave</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>leaveEl<span class="token punctuation">"</span></span>
+  <span class="token attr-name">:css</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+ <span class="token comment">&lt;!-- put element here--></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>transition</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">methods<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+   <span class="token function">enterEl</span><span class="token punctuation">(</span><span class="token parameter">el<span class="token punctuation">,</span> done</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+     <span class="token comment">//entrance animation</span>
+     <span class="token function">done</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token function">leaveEl</span><span class="token punctuation">(</span><span class="token parameter">el<span class="token punctuation">,</span> done</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">//exit animation</span>
+    <span class="token function">done</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>COMPLEX EXAMPLE:</p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>transition</span> 
+  <span class="token attr-name">@before-enter</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>beforeEnter<span class="token punctuation">"</span></span>
+  <span class="token attr-name">@enter</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>enter<span class="token punctuation">"</span></span>
+  <span class="token attr-name">@after-enter</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>afterEnter<span class="token punctuation">"</span></span>
+  <span class="token attr-name">@enter-cancelled</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>enterCancelled<span class="token punctuation">"</span></span>
+
+  <span class="token attr-name">@before-leave</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>beforeLeave<span class="token punctuation">"</span></span>
+  <span class="token attr-name">@leave</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>leave<span class="token punctuation">"</span></span>
+  <span class="token attr-name">@after-leave</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>afterLeave<span class="token punctuation">"</span></span>
+  <span class="token attr-name">@leave-cancelled</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>leaveCancelled<span class="token punctuation">"</span></span>
+  <span class="token attr-name">:css</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+ 
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>transition</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"> methods<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token function">beforeEnter</span><span class="token punctuation">(</span><span class="token parameter">el</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      gsap<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>el<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+        transformPerspective<span class="token operator">:</span> <span class="token number">600</span><span class="token punctuation">,</span>
+        perspective<span class="token operator">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
+        transformStyle<span class="token operator">:</span> <span class="token string">"preserve-3d"</span><span class="token punctuation">,</span>
+        autoAlpha<span class="token operator">:</span> <span class="token number">1</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token function">enter</span><span class="token punctuation">(</span><span class="token parameter">el<span class="token punctuation">,</span> done</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      <span class="token operator">...</span>
+      gsap<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"drop"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> wordCount<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        tl<span class="token punctuation">.</span><span class="token function">from</span><span class="token punctuation">(</span>split<span class="token punctuation">.</span>words<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+          duration<span class="token operator">:</span> <span class="token number">1.5</span><span class="token punctuation">,</span>
+          z<span class="token operator">:</span> Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">150</span> <span class="token operator">-</span> <span class="token operator">-</span><span class="token number">150</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token operator">-</span><span class="token number">150</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+          ease<span class="token operator">:</span> <span class="token string">'bounce'</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token string">"drop+=0."</span> <span class="token operator">+</span> <span class="token punctuation">(</span>i<span class="token operator">/</span> <span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token operator">...</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>This fucking animation is so great:
+<a href="${"https://github.com/sdras/page-transitions-travelapp"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/page-transitions-travelapp</a></p>
+<h2 id="${"composition-api--custom-directives"}"><a href="${"#composition-api--custom-directives"}">Composition API &amp; Custom Directives</a></h2>
+<p>Slides: <a href="${"https://slides.com/sdrasner/intro-to-vue-3-6?token=yidUZcRL#/9"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/sdrasner/intro-to-vue-3-6?token=yidUZcRL#/9</a></p>
+<p>Why we moved to Composition API. </p>
+<p>Timeline of Evan You\u2019s \u201CWhy\u201D?
+<a href="${"https://www.youtube.com/watch?v=Vp5ANvd88x0"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.youtube.com/watch?v=Vp5ANvd88x0</a></p>
+<blockquote><p>Before we move on into that, I do wanna mention that Evan has a keynote about some of the key differences that he kind of goes through in this keynote, for all of the things that happened when he was kind of going from Vue 2 to Vue 3. And at one point we wrote everything in classes.</p></blockquote>
+<blockquote><p>At one point we were thinking about moving in a direction and then we changed gears, and he reflects on all of those changes and what occurred. So you can see a timeline of all of those events. So, if you\u2019re interested in some of those changes and what made things go into that, especially things like how RFC review process worked, he goes into a lot of detail.</p></blockquote>
+<blockquote><p>One of the things I wanted to share with you is that this took 2years, it\u2019s a whole rewrite, Vue 2 to Vue 3, even though the surface API is the same. There was 37 RFCs, [LAUGH] 2,000 commits, and a tremendous amount of work in sub-projects too. So this is just in the new repo, and then there\u2019s also new versions of other projects as well.</p></blockquote>
+<h3 id="${"what-is-composition-api-trying-to-solve"}"><a href="${"#what-is-composition-api-trying-to-solve"}">What is Composition API trying to solve?</a></h3>
+<p>It\u2019s a common situation: you have two components that are pretty similar, they share the same basic functionality, but there\u2019s enough that\u2019s different about each of them that you come to a crossroads: do I split this component into two different components? Or do I keep one component, but create enough variance with props that I can alter each one?</p>
+<figure><img src="${"https://i.imgur.com/B4qlm07.png"}"></figure>
+<p>This was a Vue solution with Functional Programming.</p>
+<p>It\u2019s called the composition API because we compose with it. </p>
+<blockquote><p>Composition API allows you to encapsulate one piece of functionality so that you can use it in different components throughout the application.</p></blockquote>
+<blockquote><p>If written correctly, they are pure- they don\u2019t modify or change things outside of the function\u2019s scope, so you will reliably always receive the same value with the same inputs on multiple executions.</p></blockquote>
+<p>Codepen versions \u2014  <a href="${"https://codepen.io/sdras/pen/ed762c954ff67f56c47de955b754805c"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/ed762c954ff67f56c47de955b754805c</a></p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>app<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">></span></span>Do you like tacos?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>yes<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>yes<span class="token punctuation">"</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tacos<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> yes<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span> <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tacos<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> no<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span>
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tacos<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tacos === <span class="token punctuation">'</span>yes<span class="token punctuation">'</span><span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>thumbs<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>\u{1F44D}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">v-else</span><span class="token punctuation">></span></span>you're a monster<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">const</span> App <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+      tacos<span class="token operator">:</span> <span class="token string">''</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">createApp</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Vue 3 with Composition API:
+<a href="${"https://codepen.io/sdras/pen/45492786305a158d50f5264867959343"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/sdras/pen/45492786305a158d50f5264867959343</a></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"app"</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span>h3<span class="token operator">></span>Do you like tacos<span class="token operator">?</span><span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">></span>
+  <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"radio"</span> id<span class="token operator">=</span><span class="token string">"yes"</span> value<span class="token operator">=</span><span class="token string">"yes"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"tacos"</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span>label <span class="token keyword">for</span><span class="token operator">=</span><span class="token string">"no"</span><span class="token operator">></span> yes<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">></span>
+  <span class="token operator">&lt;</span>br<span class="token operator">></span>
+  <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"radio"</span> id<span class="token operator">=</span><span class="token string">"no"</span> value<span class="token operator">=</span><span class="token string">"no"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"tacos"</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span>label <span class="token keyword">for</span><span class="token operator">=</span><span class="token string">"no"</span><span class="token operator">></span> no<span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">></span>
+
+  <span class="token operator">&lt;</span>br<span class="token operator">></span>
+    <span class="token operator">&lt;</span>p v<span class="token operator">-</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">"tacos === 'yes'"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"thumbs"</span><span class="token operator">></span>\u{1F44D}<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+    <span class="token operator">&lt;</span>p v<span class="token operator">-</span><span class="token keyword">else</span><span class="token operator">-</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">"tacos === 'no'"</span><span class="token operator">></span>you're a monster<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">></span>
+<span class="token keyword">const</span> <span class="token punctuation">&#123;</span> ref <span class="token punctuation">&#125;</span> <span class="token operator">=</span> Vue<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> App <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">const</span> tacos <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>
+      tacos
+    <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">createApp</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"comparison-of-options-api-vs-composition-api"}"><a href="${"#comparison-of-options-api-vs-composition-api"}">Comparison of Options API vs Composition API</a></h3>
+<p>Sandbox
+<a href="${"https://codesandbox.io/s/simple-options-api-importing-composition-api-yfhpv?from-embed"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codesandbox.io/s/simple-options-api-importing-composition-api-yfhpv?from-embed</a></p>
+<p>The new script Setup &amp; Composition Resources</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">&lt;script setup&gt;
+  const state = reactive(&#123;
+    count: 0
+  &#125;)
+
+  onMounted(() =&gt; &#123;
+    console.log(state.count)
+  &#125;)
+
+  return &#123;
+    state
+  &#125;
+&lt;/script&gt;
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Links:
+<a href="${"https://v3.vuejs.org/guide/composition-api-introduction.html"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://v3.vuejs.org/guide/composition-api-introduction.html</a></p>
+<p>Usecases - <a href="${"https://github.com/antfu/vueuse"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/antfu/vueuse</a></p>
+<h2 id="${"vuex"}"><a href="${"#vuex"}">Vuex</a></h2>
+<p>LAST PAGE: <a href="${"https://frontendmasters.com/courses/vue-3/vuex/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/vue-3/vuex/</a></p>
+<p><a href="${"https://slides.com/sdrasner/intro-to-vue-3-7?token=YvT8ZUzV#/1/0/3"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/sdrasner/intro-to-vue-3-7?token=YvT8ZUzV#/1/0/3</a></p>
+<p>What is it: </p>
+<ul class="${"list"}"><li>It\u2019s a centralized store for sharing data and logic, and even shared methods, or async. You can think about it a little bit like it\u2019s the brains of the application. </li>
+<li>It\u2019s really good for unidirectional data flow. So we\u2019re not throwing things up and down and around.</li>
+<li>We have all of that state in one place. Remember, we talked a little bit before about making sure that we\u2019re not changing things in multiple spots, and we know who truly owns the state of something. </li></ul>
+<p>Origin:
+It\u2019s built off of the concept of Redux, a lot of the kind of flux application architecture.
+So flux application architecture came first. Then Redux worked off of that. And then Vue worked off of Redux, and kind of simplified the API just a little bit, so it\u2019s similar to Redux. You could still use Redux, if you like. But Vuex is really what I recommend for Vue applications.</p>
+<p>Why: </p>
+<blockquote><p>So why? In a complex single page application, passing state between many different components, and especially deeply nested, or sibling components can get complicated very quickly. Having one centralized place to access your data can help you stay organized. Before when we were doing those amid examples, you could see that were passing things down, passing things back up.</p></blockquote>
+<blockquote><p>But what if you\u2019re in the state where you have to pass it up two times, or you have to pass it down two times, or if you have to pass it up and back down? Or what if there\u2019s something that many, many components need to know about all at the same time?</p></blockquote>
+<blockquote><p>So having all of that in one place, and then giving it to the components as they need, it makes a lot of sense. It keeps everything really organized. And that can be really, really helpful for working with applications. When would you use it? Sometimes people just say you just know.</p></blockquote>
+<p><strong>When to use it?</strong></p>
+<p>1 - When you have multiple instances of children/siblings communicating
+2 - When you want to see the entire satte organized in one place.</p>
+<p>*<em>When not to use it:</em></p>
+<p>1 - You have, like I just mentioned, multiple pieces of people kind of talking around the application. I would still use emit for examples like a select that I need to use over and over again, because I wanna keep that select kind of state encapsulated, even if I want the parent component of the select to know about something.</p>
+<p>2 - I don\u2019t necessarily wanna hold that in the store, because, again, I don\u2019t want it to be brittle.</p>
+<p>3 - If you put too much things into the store, it becomes too much.</p>
+<p><strong>Keywords:</strong></p>
+<ul class="${"list"}"><li><code>State</code> is what you might expect: the state of the application. Similar to how we use data in the components.</li></ul>
+<p>(read)
+this.$store.state.nameofthing</p>
+<ul class="${"list"}"><li><code>Getters</code> will make values able to show statically in our templates. In other words, getters can read the value, but not mutate the state.</li></ul>
+<p>(read)
+this.$store.getters.nameofthing</p>
+<ul class="${"list"}"><li><code>Mutations</code> will allow us to update the state, but they will always be synchronous. Mutations are the only way to change data in the state in the store.</li></ul>
+<p>(write)
+this.$store.commit.nameofthing</p>
+<ul class="${"list"}"><li><code>Actions</code> will allow us to update the state, asynchronously, but will use an existing mutation. This can be very helpful if you need to perform a few different mutations at once in a particular order, or reach out to a server.</li></ul>
+<p>(write)
+this.$store.dispatch.nameofthing</p>
+<p>store pattern:
+v-store </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  state<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  mutations<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  actions<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  modules<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>v-store 2 (nuxt)</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">export</span> <span class="token keyword">const</span> <span class="token function-variable function">state</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  value<span class="token operator">:</span> <span class="token string">'myvalue'</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> getters <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token function-variable function">getterValue</span><span class="token operator">:</span> <span class="token parameter">state</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> state<span class="token punctuation">.</span>value
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> mutations <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token function-variable function">updateValue</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> payload</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+    state<span class="token punctuation">.</span>value <span class="token operator">=</span> payload
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> actions <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  <span class="token function">updateActionValue</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> commit <span class="token punctuation">&#125;</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'updateValue'</span><span class="token punctuation">,</span> payload<span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// abstract example: </span>
+Basic Abstract Example
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  state<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    counter<span class="token operator">:</span> <span class="token number">0</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token comment">//showing things, not mutating state</span>
+  getters<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token function-variable function">tripleCounter</span><span class="token operator">:</span> <span class="token parameter">state</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+      <span class="token keyword">return</span> state<span class="token punctuation">.</span>counter <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token comment">//mutating the state</span>
+  <span class="token comment">//mutations are always synchronous</span>
+  mutations<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">//showing passed with payload, represented as num</span>
+    <span class="token function-variable function">increment</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">state<span class="token punctuation">,</span> num</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+      state<span class="token punctuation">.</span>counter <span class="token operator">+=</span> num<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> 
+  <span class="token comment">//commits the mutation, it's asynchronous</span>
+  actions<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token comment">// showing passed with payload, represented as asynchNum (an object)</span>
+    <span class="token function-variable function">asyncIncrement</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> commit <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> asyncNum</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+      <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+        <span class="token comment">//the asyncNum objects could also just be static amounts</span>
+        <span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'increment'</span><span class="token punctuation">,</span> asyncNum<span class="token punctuation">.</span>by<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> asyncNum<span class="token punctuation">.</span>duration<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>In main.js</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./App.vue'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> store <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'./store/index'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  el<span class="token operator">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+  store<span class="token operator">:</span> store<span class="token punctuation">,</span>
+  template<span class="token operator">:</span> <span class="token string">'&lt;App/>'</span><span class="token punctuation">,</span>
+  components<span class="token operator">:</span> <span class="token punctuation">&#123;</span> App <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>getting all the state from the store: </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// you can use a spread operator, useful when you have to work with a lot of state/getters/mutations/actions:</span>
+
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> mapState <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// ...</span>
+  computed<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+      <span class="token comment">// map this.count to this.$store.state.count</span>
+      <span class="token string">'count'</span><span class="token punctuation">,</span> 
+      <span class="token string">'posts'</span><span class="token punctuation">,</span>
+      <span class="token string">'items'</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>A vuex store example:
+<a href="${"https://github.com/sdras/ecommerce-netlify/blob/main/store/index.js"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/ecommerce-netlify/blob/main/store/index.js</a></p>
+<p>RANDOM NOTES: </p>
+<p>Tip 1 - key
+:key needs to be unique to the entire dom. </p>
+<p>Tip 2 - keycode
+TIL: keycodes for keyboard stuff is being depreciated.
+<a href="${"https://v3.vuejs.org/guide/migration/keycode-modifiers.html#_3-x-syntax"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://v3.vuejs.org/guide/migration/keycode-modifiers.html#_3-x-syntax</a></p>
+<p>The actual notes: <a href="${"https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode</a></p>
+<p>tip 3 - hsl
+hsl, hue is a big circle and great for color generation. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">backgroundColor: &#96;hsl($&#123;x&#125;, 80%, 50%)&#96; </code>`}<!-- HTML_TAG_END --></pre>
+<p>tip 4 - Vue is now tree-shaking.
+Say if you\u2019re not using animation, then it gets removed.
+Compared to Vue2, which compiles it regardless. </p>
+<p>tip 5 - animation
+PROTIP: It\u2019s the opposite with animation: ease-out is better for easing in. ease-in is better for easing out.</p>
+<p>tip 6 - animations with margin is bad.
+Use translate, which is hardware accelleration. </p>`
+  })}`;
+});
+var weekNineIntroToVue_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_nine_intro_to_vue_svelte,
   metadata: metadata$e,
   load: load$2
 });
