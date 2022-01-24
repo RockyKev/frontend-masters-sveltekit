@@ -13622,9 +13622,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-b47cfb87.js",
+      file: assets + "/_app/start-f9a736ea.js",
       css: [assets + "/_app/assets/start-c446e5f0.css"],
-      js: [assets + "/_app/start-b47cfb87.js", assets + "/_app/chunks/vendor-2c44c089.js"]
+      js: [assets + "/_app/start-f9a736ea.js", assets + "/_app/chunks/vendor-2c44c089.js"]
     },
     fetched: void 0,
     floc: false,
@@ -13727,13 +13727,6 @@ var manifest = {
     },
     {
       type: "page",
-      pattern: /^\/blog\/draft-week-ten-production-grade-vue-part-2\/?$/,
-      params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-ten-production-grade-vue-part-2.svelte.md"],
-      b: ["src/routes/__error.svelte"]
-    },
-    {
-      type: "page",
       pattern: /^\/blog\/draft-week-thirteen-functional-js-part-2\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md"],
@@ -13769,16 +13762,9 @@ var manifest = {
     },
     {
       type: "page",
-      pattern: /^\/blog\/draft-week-ten-advanced-vue-features\/?$/,
+      pattern: /^\/blog\/week-ten-production-grade-vue-part-2\/?$/,
       params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-ten-advanced-vue-features.svelte.md"],
-      b: ["src/routes/__error.svelte"]
-    },
-    {
-      type: "page",
-      pattern: /^\/blog\/draft-week-ten-vuex-for-intermediate\/?$/,
-      params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-ten-vuex-for-intermediate.svelte.md"],
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-ten-production-grade-vue-part-2.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
@@ -13818,6 +13804,20 @@ var manifest = {
     },
     {
       type: "page",
+      pattern: /^\/blog\/week-ten-advanced-vue-features\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-ten-advanced-vue-features.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-ten-vuex-for-intermediate\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-ten-vuex-for-intermediate.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
       pattern: /^\/blog\/week-three-intro-linux-command\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/week-three-intro-linux-command.svelte.md"],
@@ -13828,13 +13828,6 @@ var manifest = {
       pattern: /^\/blog\/week-four-intro-to-serverless\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/week-four-intro-to-serverless.svelte.md"],
-      b: ["src/routes/__error.svelte"]
-    },
-    {
-      type: "page",
-      pattern: /^\/blog\/draft-week-eleven-full-stack\/?$/,
-      params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-eleven-full-stack.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
@@ -13877,6 +13870,13 @@ var manifest = {
       pattern: /^\/blog\/vue-mastery-vue3-forms\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/vue-mastery-vue3-forms.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-eleven-full-stack\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-eleven-full-stack.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
@@ -14045,9 +14045,6 @@ var module_lookup = {
   "src/routes/blog/index.svelte": () => Promise.resolve().then(function() {
     return index$1;
   }),
-  "src/routes/blog/draft-week-ten-production-grade-vue-part-2.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekTenProductionGradeVuePart2_svelte;
-  }),
   "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekThirteenFunctionalJsPart2_svelte;
   }),
@@ -14063,11 +14060,8 @@ var module_lookup = {
   "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekTwelveFunctionalJsPart1_svelte;
   }),
-  "src/routes/blog/draft-week-ten-advanced-vue-features.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekTenAdvancedVueFeatures_svelte;
-  }),
-  "src/routes/blog/draft-week-ten-vuex-for-intermediate.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekTenVuexForIntermediate_svelte;
+  "src/routes/blog/week-ten-production-grade-vue-part-2.svelte.md": () => Promise.resolve().then(function() {
+    return weekTenProductionGradeVuePart2_svelte;
   }),
   "src/routes/blog/draft-week-fourteen-react-storybook.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekFourteenReactStorybook_svelte;
@@ -14084,14 +14078,17 @@ var module_lookup = {
   "src/routes/blog/week-nine-production-grade-vue.svelte.md": () => Promise.resolve().then(function() {
     return weekNineProductionGradeVue_svelte;
   }),
+  "src/routes/blog/week-ten-advanced-vue-features.svelte.md": () => Promise.resolve().then(function() {
+    return weekTenAdvancedVueFeatures_svelte;
+  }),
+  "src/routes/blog/week-ten-vuex-for-intermediate.svelte.md": () => Promise.resolve().then(function() {
+    return weekTenVuexForIntermediate_svelte;
+  }),
   "src/routes/blog/week-three-intro-linux-command.svelte.md": () => Promise.resolve().then(function() {
     return weekThreeIntroLinuxCommand_svelte;
   }),
   "src/routes/blog/week-four-intro-to-serverless.svelte.md": () => Promise.resolve().then(function() {
     return weekFourIntroToServerless_svelte;
-  }),
-  "src/routes/blog/draft-week-eleven-full-stack.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekElevenFullStack_svelte;
   }),
   "src/routes/blog/draft-week-twelve-typescript.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekTwelveTypescript_svelte;
@@ -14110,6 +14107,9 @@ var module_lookup = {
   }),
   "src/routes/blog/vue-mastery-vue3-forms.svelte.md": () => Promise.resolve().then(function() {
     return vueMasteryVue3Forms_svelte;
+  }),
+  "src/routes/blog/week-eleven-full-stack.svelte.md": () => Promise.resolve().then(function() {
+    return weekElevenFullStack_svelte;
   }),
   "src/routes/blog/week-nine-intro-to-vue.svelte.md": () => Promise.resolve().then(function() {
     return weekNineIntroToVue_svelte;
@@ -14160,7 +14160,7 @@ var module_lookup = {
     return typeKana_svelte;
   })
 };
-var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-79e4c8a6.js", "css": ["assets/pages/__layout.svelte-df3fc26e.css"], "js": ["pages/__layout.svelte-79e4c8a6.js", "chunks/vendor-2c44c089.js", "chunks/stores-32a54f2b.js", "chunks/Logo-1cfb9048.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-a683aa11.js", "css": [], "js": ["pages/__error.svelte-a683aa11.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-a4187db2.js", "css": ["assets/pages/index.svelte-a8b03bef.css", "assets/Icon.svelte_svelte&type=style&lang-bab488b2.css"], "js": ["pages/index.svelte-a4187db2.js", "chunks/vendor-2c44c089.js", "chunks/Logo-1cfb9048.js", "chunks/Meta-2661041d.js"], "styles": [] }, "src/routes/playground.svelte": { "entry": "pages/playground.svelte-b22e1d43.js", "css": ["assets/pages/playground.svelte-50ac7720.css"], "js": ["pages/playground.svelte-b22e1d43.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/about/index.svelte": { "entry": "pages/about/index.svelte-3e5401ab.js", "css": ["assets/pages/about/index.svelte-cbd7d511.css", "assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/index.svelte-3e5401ab.js", "chunks/vendor-2c44c089.js", "pages/about/HiddenText.svelte-bea2d578.js"], "styles": [] }, "src/routes/about/HiddenText.svelte": { "entry": "pages/about/HiddenText.svelte-bea2d578.js", "css": ["assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/HiddenText.svelte-bea2d578.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-bb7708ee.js", "css": ["assets/pages/work/index.svelte-219f8bae.css"], "js": ["pages/blog/index.svelte-bb7708ee.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/blog/draft-week-ten-production-grade-vue-part-2.svelte.md": { "entry": "pages/blog/draft-week-ten-production-grade-vue-part-2.svelte.md-ed877757.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-ten-production-grade-vue-part-2.svelte.md-ed877757.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md": { "entry": "pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-building-applications-vue-nuxt.svelte.md": { "entry": "pages/blog/week-nine-building-applications-vue-nuxt.svelte.md-044132df.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-building-applications-vue-nuxt.svelte.md-044132df.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-functional-light-js.svelte.md": { "entry": "pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-eleven-complete-intro-react.svelte.md": { "entry": "pages/blog/draft-week-eleven-complete-intro-react.svelte.md-e318b896.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-eleven-complete-intro-react.svelte.md-e318b896.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md": { "entry": "pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-ten-advanced-vue-features.svelte.md": { "entry": "pages/blog/draft-week-ten-advanced-vue-features.svelte.md-5193ecec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-ten-advanced-vue-features.svelte.md-5193ecec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-ten-vuex-for-intermediate.svelte.md": { "entry": "pages/blog/draft-week-ten-vuex-for-intermediate.svelte.md-536561cf.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-ten-vuex-for-intermediate.svelte.md-536561cf.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-react-storybook.svelte.md": { "entry": "pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-web-performance.svelte.md": { "entry": "pages/blog/draft-week-twelve-web-performance.svelte.md-4e3aa2de.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-web-performance.svelte.md-4e3aa2de.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-intro-gatsby.svelte.md": { "entry": "pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-build-game.svelte.md": { "entry": "pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-production-grade-vue.svelte.md": { "entry": "pages/blog/week-nine-production-grade-vue.svelte.md-6cc7825a.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-production-grade-vue.svelte.md-6cc7825a.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-linux-command.svelte.md": { "entry": "pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-intro-to-serverless.svelte.md": { "entry": "pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-eleven-full-stack.svelte.md": { "entry": "pages/blog/draft-week-eleven-full-stack.svelte.md-0699e294.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-eleven-full-stack.svelte.md-0699e294.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-typescript.svelte.md": { "entry": "pages/blog/draft-week-twelve-typescript.svelte.md-de6e6a2c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-typescript.svelte.md-de6e6a2c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-code-transformation.svelte.md": { "entry": "pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-dev-tools.svelte.md": { "entry": "pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-hard-parts-ooj.svelte.md": { "entry": "pages/blog/week-five-hard-parts-ooj.svelte.md-1cdda76c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-hard-parts-ooj.svelte.md-1cdda76c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eight-css-in-depth.svelte.md": { "entry": "pages/blog/week-eight-css-in-depth.svelte.md-81595579.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eight-css-in-depth.svelte.md-81595579.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/vue-mastery-vue3-forms.svelte.md": { "entry": "pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-intro-to-vue.svelte.md": { "entry": "pages/blog/week-nine-intro-to-vue.svelte.md-a840bc7f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-intro-to-vue.svelte.md-a840bc7f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-js-hard-parts.svelte.md": { "entry": "pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-accessibility.svelte.md": { "entry": "pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-js-functional.svelte.md": { "entry": "pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-js-testing.svelte.md": { "entry": "pages/blog/week-five-js-testing.svelte.md-36258fff.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-js-testing.svelte.md-36258fff.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-debugging.svelte.md": { "entry": "pages/blog/week-five-debugging.svelte.md-ce7c6b84.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-debugging.svelte.md-ce7c6b84.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-nodejs-v2.svelte.md": { "entry": "pages/blog/week-four-nodejs-v2.svelte.md-a443d728.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-nodejs-v2.svelte.md-a443d728.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-javascript.svelte.md": { "entry": "pages/blog/week-one-javascript.svelte.md-a27291ec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-javascript.svelte.md-a27291ec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-seven-deep-js.svelte.md": { "entry": "pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-api-dev.svelte.md": { "entry": "pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-webdev.svelte.md": { "entry": "pages/blog/week-one-webdev.svelte.md-086e16a9.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-webdev.svelte.md-086e16a9.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-seo.svelte.md": { "entry": "pages/blog/week-three-seo.svelte.md-d64b209b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-seo.svelte.md-d64b209b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-css.svelte.md": { "entry": "pages/blog/week-one-css.svelte.md-48262997.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-css.svelte.md-48262997.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/work/index.svelte": { "entry": "pages/work/index.svelte-e7922153.js", "css": ["assets/pages/work/index.svelte-219f8bae.css"], "js": ["pages/work/index.svelte-e7922153.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/portfolio-site.svelte.md": { "entry": "pages/work/portfolio-site.svelte.md-e065602b.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/portfolio-site.svelte.md-e065602b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/type-kana.svelte.md": { "entry": "pages/work/type-kana.svelte.md-74b86795.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/type-kana.svelte.md-74b86795.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] } };
+var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-79e4c8a6.js", "css": ["assets/pages/__layout.svelte-df3fc26e.css"], "js": ["pages/__layout.svelte-79e4c8a6.js", "chunks/vendor-2c44c089.js", "chunks/stores-32a54f2b.js", "chunks/Logo-1cfb9048.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-a683aa11.js", "css": [], "js": ["pages/__error.svelte-a683aa11.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-a4187db2.js", "css": ["assets/pages/index.svelte-a8b03bef.css", "assets/Icon.svelte_svelte&type=style&lang-bab488b2.css"], "js": ["pages/index.svelte-a4187db2.js", "chunks/vendor-2c44c089.js", "chunks/Logo-1cfb9048.js", "chunks/Meta-2661041d.js"], "styles": [] }, "src/routes/playground.svelte": { "entry": "pages/playground.svelte-b22e1d43.js", "css": ["assets/pages/playground.svelte-50ac7720.css"], "js": ["pages/playground.svelte-b22e1d43.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/about/index.svelte": { "entry": "pages/about/index.svelte-3e5401ab.js", "css": ["assets/pages/about/index.svelte-cbd7d511.css", "assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/index.svelte-3e5401ab.js", "chunks/vendor-2c44c089.js", "pages/about/HiddenText.svelte-bea2d578.js"], "styles": [] }, "src/routes/about/HiddenText.svelte": { "entry": "pages/about/HiddenText.svelte-bea2d578.js", "css": ["assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/HiddenText.svelte-bea2d578.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-bb7708ee.js", "css": ["assets/pages/blog/index.svelte-ad438cd3.css"], "js": ["pages/blog/index.svelte-bb7708ee.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md": { "entry": "pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-building-applications-vue-nuxt.svelte.md": { "entry": "pages/blog/week-nine-building-applications-vue-nuxt.svelte.md-044132df.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-building-applications-vue-nuxt.svelte.md-044132df.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-functional-light-js.svelte.md": { "entry": "pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-eleven-complete-intro-react.svelte.md": { "entry": "pages/blog/draft-week-eleven-complete-intro-react.svelte.md-e318b896.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-eleven-complete-intro-react.svelte.md-e318b896.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md": { "entry": "pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-ten-production-grade-vue-part-2.svelte.md": { "entry": "pages/blog/week-ten-production-grade-vue-part-2.svelte.md-6b51f2a6.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-ten-production-grade-vue-part-2.svelte.md-6b51f2a6.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-react-storybook.svelte.md": { "entry": "pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-web-performance.svelte.md": { "entry": "pages/blog/draft-week-twelve-web-performance.svelte.md-4e3aa2de.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-web-performance.svelte.md-4e3aa2de.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-intro-gatsby.svelte.md": { "entry": "pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-build-game.svelte.md": { "entry": "pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-production-grade-vue.svelte.md": { "entry": "pages/blog/week-nine-production-grade-vue.svelte.md-6cc7825a.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-production-grade-vue.svelte.md-6cc7825a.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-ten-advanced-vue-features.svelte.md": { "entry": "pages/blog/week-ten-advanced-vue-features.svelte.md-84d8ae57.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-ten-advanced-vue-features.svelte.md-84d8ae57.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-ten-vuex-for-intermediate.svelte.md": { "entry": "pages/blog/week-ten-vuex-for-intermediate.svelte.md-18068083.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-ten-vuex-for-intermediate.svelte.md-18068083.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-linux-command.svelte.md": { "entry": "pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-intro-to-serverless.svelte.md": { "entry": "pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-typescript.svelte.md": { "entry": "pages/blog/draft-week-twelve-typescript.svelte.md-de6e6a2c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-typescript.svelte.md-de6e6a2c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-code-transformation.svelte.md": { "entry": "pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-dev-tools.svelte.md": { "entry": "pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-hard-parts-ooj.svelte.md": { "entry": "pages/blog/week-five-hard-parts-ooj.svelte.md-1cdda76c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-hard-parts-ooj.svelte.md-1cdda76c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eight-css-in-depth.svelte.md": { "entry": "pages/blog/week-eight-css-in-depth.svelte.md-81595579.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eight-css-in-depth.svelte.md-81595579.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/vue-mastery-vue3-forms.svelte.md": { "entry": "pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eleven-full-stack.svelte.md": { "entry": "pages/blog/week-eleven-full-stack.svelte.md-6ff2ca78.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eleven-full-stack.svelte.md-6ff2ca78.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-intro-to-vue.svelte.md": { "entry": "pages/blog/week-nine-intro-to-vue.svelte.md-a840bc7f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-intro-to-vue.svelte.md-a840bc7f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-js-hard-parts.svelte.md": { "entry": "pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-accessibility.svelte.md": { "entry": "pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-js-functional.svelte.md": { "entry": "pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-js-testing.svelte.md": { "entry": "pages/blog/week-five-js-testing.svelte.md-36258fff.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-js-testing.svelte.md-36258fff.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-debugging.svelte.md": { "entry": "pages/blog/week-five-debugging.svelte.md-ce7c6b84.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-debugging.svelte.md-ce7c6b84.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-nodejs-v2.svelte.md": { "entry": "pages/blog/week-four-nodejs-v2.svelte.md-a443d728.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-nodejs-v2.svelte.md-a443d728.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-javascript.svelte.md": { "entry": "pages/blog/week-one-javascript.svelte.md-a27291ec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-javascript.svelte.md-a27291ec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-seven-deep-js.svelte.md": { "entry": "pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-api-dev.svelte.md": { "entry": "pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-webdev.svelte.md": { "entry": "pages/blog/week-one-webdev.svelte.md-086e16a9.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-webdev.svelte.md-086e16a9.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-seo.svelte.md": { "entry": "pages/blog/week-three-seo.svelte.md-d64b209b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-seo.svelte.md-d64b209b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-css.svelte.md": { "entry": "pages/blog/week-one-css.svelte.md-48262997.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-css.svelte.md-48262997.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/work/index.svelte": { "entry": "pages/work/index.svelte-e7922153.js", "css": ["assets/pages/blog/index.svelte-ad438cd3.css"], "js": ["pages/work/index.svelte-e7922153.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/portfolio-site.svelte.md": { "entry": "pages/work/portfolio-site.svelte.md-e065602b.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/portfolio-site.svelte.md-e065602b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/type-kana.svelte.md": { "entry": "pages/work/type-kana.svelte.md-74b86795.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/type-kana.svelte.md-74b86795.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] } };
 async function load_component(file) {
   const { entry, css: css2, js, styles } = metadata_lookup[file];
   return {
@@ -14276,18 +14276,10 @@ var cipher = /* @__PURE__ */ Object.freeze({
 var get$3 = async () => {
   const modules = Object.entries({ "./draft-week-eleven-complete-intro-react.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekElevenCompleteIntroReact_svelte;
-  }), "./draft-week-eleven-full-stack.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekElevenFullStack_svelte;
   }), "./draft-week-fourteen-functional-light-js.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekFourteenFunctionalLightJs_svelte;
   }), "./draft-week-fourteen-react-storybook.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekFourteenReactStorybook_svelte;
-  }), "./draft-week-ten-advanced-vue-features.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekTenAdvancedVueFeatures_svelte;
-  }), "./draft-week-ten-production-grade-vue-part-2.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekTenProductionGradeVuePart2_svelte;
-  }), "./draft-week-ten-vuex-for-intermediate.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekTenVuexForIntermediate_svelte;
   }), "./draft-week-thirteen-build-game.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekThirteenBuildGame_svelte;
   }), "./draft-week-thirteen-functional-js-part-2.svelte.md": () => Promise.resolve().then(function() {
@@ -14304,6 +14296,8 @@ var get$3 = async () => {
     return vueMasteryVue3Forms_svelte;
   }), "./week-eight-css-in-depth.svelte.md": () => Promise.resolve().then(function() {
     return weekEightCssInDepth_svelte;
+  }), "./week-eleven-full-stack.svelte.md": () => Promise.resolve().then(function() {
+    return weekElevenFullStack_svelte;
   }), "./week-five-debugging.svelte.md": () => Promise.resolve().then(function() {
     return weekFiveDebugging_svelte;
   }), "./week-five-hard-parts-ooj.svelte.md": () => Promise.resolve().then(function() {
@@ -14334,6 +14328,12 @@ var get$3 = async () => {
     return weekSixCodeTransformation_svelte;
   }), "./week-six-js-hard-parts.svelte.md": () => Promise.resolve().then(function() {
     return weekSixJsHardParts_svelte;
+  }), "./week-ten-advanced-vue-features.svelte.md": () => Promise.resolve().then(function() {
+    return weekTenAdvancedVueFeatures_svelte;
+  }), "./week-ten-production-grade-vue-part-2.svelte.md": () => Promise.resolve().then(function() {
+    return weekTenProductionGradeVuePart2_svelte;
+  }), "./week-ten-vuex-for-intermediate.svelte.md": () => Promise.resolve().then(function() {
+    return weekTenVuexForIntermediate_svelte;
   }), "./week-three-intro-dev-tools.svelte.md": () => Promise.resolve().then(function() {
     return weekThreeIntroDevTools_svelte;
   }), "./week-three-intro-linux-command.svelte.md": () => Promise.resolve().then(function() {
@@ -15195,13 +15195,255 @@ var Layout$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 </article>`;
 });
 var metadata$A = {
+  "title": "Week Thirteen - Functional JS Part 2",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Functional JavaScript First Steps (Part 2)",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_thirteen_functional_js_part_2_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$A), {}, {})}`;
+});
+var draftWeekThirteenFunctionalJsPart2_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_thirteen_functional_js_part_2_svelte,
+  metadata: metadata$A,
+  load: load$2
+});
+var metadata$z = {
+  "title": "Week Nine - Building Apps with Vue & Nuxt",
+  "created": "2022-01-03T00:00:00.000Z",
+  "summary": "Building Applications with Vue & Nuxt",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_nine_building_applications_vue_nuxt_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$z), {}, {
+    default: () => `<p>Source: <a href="${"https://frontendmasters.com/courses/vue-nuxt-apps/introduction/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/vue-nuxt-apps/introduction/</a>
+Sarah Drasner </p>
+<h2 id="${"introduction"}"><a href="${"#introduction"}">Introduction</a></h2>
+<ul class="${"list"}"><li><p>I like games because there\u2019s a lot of state management in games. </p></li>
+<li><p>Then a food ordering application. </p>
+<ul class="${"list"}"><li>Slots </li>
+<li>Dynamic Pages</li>
+<li>Car logic</li>
+<li>Validation </li></ul></li>
+<li><p>Composition API</p></li></ul>
+<p>Link to resource:
+<a href="${"https://github.com/sdras/building-web-apps-with-vue"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/building-web-apps-with-vue</a></p>
+<p>SLIDES: <a href="${"https://slides.com/sdrasner/building-vue-apps-3-foodapp?token=DiquCMbB"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/sdrasner/building-vue-apps-3-foodapp?token=DiquCMbB</a></p>
+<p>VSCODE Snippets: <a href="${"https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets</a></p>
+<p>TODO: How to read API.  <a href="${"https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/</a></p>
+<p>Working with SVG Graphics in Vue:</p>
+<figure><img src="${"https://i.imgur.com/guhYfyI.png"}"></figure>
+<p>She made a single svg in Photoshop.
+She labeled them correctly, put them into folders\u2026
+Then she exported it as a SVG.
+That puts them into IDs.
+Then she can target them directly.</p>
+<p>The other option is she\u2019s just puting the SVG directly into a Vue Component.</p>
+<h2 id="${"quiz-game-app"}"><a href="${"#quiz-game-app"}">Quiz Game App</a></h2>
+<p>SLIDES: <a href="${"https://slides.com/sdrasner/vueapps2?token=oePuyn8o"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/sdrasner/vueapps2?token=oePuyn8o</a></p>
+<p>Repo: <a href="${"https://github.com/sdras/building-web-apps-with-vue/tree/main/game-problem"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/building-web-apps-with-vue/tree/main/game-problem</a></p>
+<p>You might have to <code>npm i node-sass sass-loader</code></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+state<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+	uiState<span class="token operator">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
+	<span class="token comment">// ...</span>
+
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>I like writing strings in <code>uiState</code> instead of booleans because you can then manage your state with a specific \u2018state\u2019, rather than a bunch of booleans checking it. </p>
+<p>Things she did: </p>
+<ol class="${"list"}"><li>She put the data directly into the Vuex store. </li>
+<li>In the computed properties, she\u2019s using <code>mapState[]</code> to bring data from the store/index.js\` </li></ol>
+<p>She creates a GamestateStart.vue, which changes based on the uiState. </p>
+<p><code>gsap</code> Greensock is stable with every browser. Using transform is different for every browser. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
+<span class="token keyword">import</span> gsap <span class="token keyword">from</span> <span class="token string">"gsap"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> mapState <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"vuex"</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+
+	computed<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">"score"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+	watch<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token function">score</span><span class="token punctuation">(</span><span class="token parameter">newValue<span class="token punctuation">,</span> oldValue</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+			gsap<span class="token punctuation">.</span><span class="token function">to</span><span class="token punctuation">(</span><span class="token string">'#needle'</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+				duration<span class="token operator">:</span> <span class="token number">0.3</span><span class="token punctuation">,</span> 
+				rotation<span class="token operator">:</span> newValue<span class="token punctuation">,</span> 
+				transformOrigin<span class="token operator">:</span> <span class="token string">"50% 100%"</span> <span class="token comment">// she changed it to 50% 87%		</span>
+		<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// She also adjust the size of the score to fudge the numbers. // https://github.com/sdras/building-web-apps-with-vue/blob/main/game-solution/src/store/index.js#L61</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code>`}<!-- HTML_TAG_END --></pre>
+<p><code>Math.sign(state.score)</code> to safely convert a number into a -1 or +1.
+<a href="${"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign</a></p>
+<p>Fisher-Yates is the shuffle that lodash does.
+More info: <a href="${"https://bost.ocks.org/mike/shuffle/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://bost.ocks.org/mike/shuffle/</a>
+Her snippet: <a href="${"https://github.com/sdras/building-web-apps-with-vue/blob/main/game-solution/src/App.vue#L153"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/building-web-apps-with-vue/blob/main/game-solution/src/App.vue#L153</a></p>
+<p>In a SVG:
+Think of <code>defs</code>, think of them as a staging area. </p>
+<p>masking vs clipping:
+<a href="${"https://css-tricks.com/masking-vs-clipping-use/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://css-tricks.com/masking-vs-clipping-use/</a></p>
+<p>Look at this amazing code:
+codepen - xray skeleeton:
+<a href="${"https://codepen.io/noeldelgado/pen/ByxQjL"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/noeldelgado/pen/ByxQjL</a></p>
+<h2 id="${"the-food-app"}"><a href="${"#the-food-app"}">The Food App</a></h2>
+<h3 id="${"building-a-food-app-with-nuxt"}"><a href="${"#building-a-food-app-with-nuxt"}">Building a Food App with Nuxt</a></h3>
+<p>The project: nuxtfoodapp.netlify.app</p>
+<p>Nuxt -
+it\u2019s a meta-framework</p>
+<ul class="${"list"}"><li>Excellent performance<ul class="${"list"}"><li>Tree shaking</li></ul></li>
+<li>Automatic generated Dynamic Routes </li>
+<li>Automatic Routing</li>
+<li>SSR / Jamstack / SPA rendering </li>
+<li>Elegant defaults &amp; great organization </li></ul>
+<p>Nuxt comes with the vuex store by default. </p>
+<p>Folder structure:
+Layout - We can put it in this layouts default, and then it will persist on every page. And that\u2019s really nice because we can also create different types of layouts as we work middle ware is, you\u2019re gonna see in a second, we\u2019re gonna make pages by simply putting a view file in a pages directory.</p>
+<p>Hero generator:
+<a href="${"https://hero-generator.netlify.app/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://hero-generator.netlify.app/</a></p>
+<p>Middleware -
+[00:05:31]
+So in middle ware, you have access to those routes, and that\u2019s where you can apply some logic. So middle ware is a great place to do things like auth. Middle ware is a great place to do things like tell the store about the route changing or something like that.</p>
+<p>[00:05:45]
+That would be done in middleware. And I mentioned this about the pages directory, we have an index page. And we have this kind of defaults container. You see this logo being brought in, just like we did with the view CLI and we are able to have this kind of defaults, but what\u2019s really nice about it Is that we have, a base index file and all of a sudden we have a page.</p>
+<p>plugin - it\u2019s like mounting in the main JS folder. </p>
+<p>static - any static files. </p>
+<p>in nuxt.config.js:
+head, global css, plugins
+<a href="${"https://nuxtjs.org/docs/directory-structure/nuxt-config/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://nuxtjs.org/docs/directory-structure/nuxt-config/</a></p>
+<h3 id="${"vuex-store"}"><a href="${"#vuex-store"}">Vuex Store</a></h3>
+<p>Actions. Actions can\u2019t change the state, actions can commit mutations that change the state. But actions are good for asynchronous logic.</p>
+<p>Mutations are the only thing that can change the state. So in our game application, they\u2019re synchronous.</p>
+<p>So in this case, what we\u2019re going to do is we\u2019re going to use an action to do that kind of async stuff, and that action will call a commit in the mutation.</p>
+<h3 id="${"how-to-make-a-api"}"><a href="${"#how-to-make-a-api"}">How to make a API:</a></h3>
+<p><a href="${"https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/</a></p>
+<p>The endpoint:
+<a href="${"https://dva9vm8f1h.execute-api.us-east-2.amazonaws.com/production/restaurants"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://dva9vm8f1h.execute-api.us-east-2.amazonaws.com/production/restaurants</a></p>
+<p>There\u2019s a api key and you also need to set up stuff</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
+
+	<span class="token comment">// check if the data is already there or not</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>state<span class="token punctuation">.</span>fooddata<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token keyword">return</span>
+
+	<span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token constant">URLHERE</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
+	headers<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token string">'Content-Type'</span> <span class="token operator">:</span> <span class="token string">'application/json'</span><span class="token punctuation">,</span> 
+		<span class="token string">'x-api-key'</span> <span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">AWS_API_KEY</span>
+		<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+		<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">response</span> <span class="token operator">=></span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+		<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">data</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	
+	<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">&#123;</span>
+		<span class="token comment">// errors here</span>
+	<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>For local vs server: </p>
+<p>she created a <code>getfood.server.js</code> in the plugins folder.
+So she can get the API code. </p>
+<p>NOTES:
+for props arrays -
+YOU MUST return an return value. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">type: Array, 
+default: () =&gt; [&quot;tacos&quot;, &quot;pizza&quot;, &quot;dim sum&quot;]</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"filtering-data--adding-dynamic-pages"}"><a href="${"#filtering-data--adding-dynamic-pages"}">Filtering Data &amp; Adding Dynamic Pages</a></h2>
+<p>Performance thoughts </p>
+<p>Using a for loop to filter, rather than <code>filter</code>. </p>
+<h2 id="${"vuex"}"><a href="${"#vuex"}">Vuex</a></h2>
+<h3 id="${"getters"}"><a href="${"#getters"}">Getters</a></h3>
+<p>[00:05:14]
+But don\u2019t overuse getters. In other words, if one component Is just thinking about itself. You don\u2019t necessarily have to put it in the store in as a getter in order to do so. The reason why I caution against that is for big enterprise apps at scale. What can happen is people are using that Vuex Store not just a place to keep the centralized state data.</p>
+<p>[00:05:37]
+They\u2019re also using it as a self documenting place to understand the brains of the application. So if you put tons of getter information in that store. You\u2019re causing people to kind of look through a ton of information to understand what\u2019s going on for the application for the whole, for that full application.</p>
+<p>[00:05:56]
+It doesn\u2019t matter too much with a small application, but you\u2019ll start to see this that Vuex enterprise apps at scale that we need to kind of keep the Vuex Store a little bit more modularized. And Divya has a great course that shows how to use Vuex modules and goes into more depth there as well.</p>
+<h2 id="${"forms--composition-api"}"><a href="${"#forms--composition-api"}">Forms &amp; Composition API</a></h2>
+<p>SLIDES: <a href="${"https://slides.com/sdrasner/building-vue-apps-4-compositionapi?token=IAnBmcyn"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/sdrasner/building-vue-apps-4-compositionapi?token=IAnBmcyn</a></p>
+<h2 id="${"validation"}"><a href="${"#validation"}">Validation</a></h2>
+<p>It gives you a few things to check and hide things.</p>
+<p>Vue validate blog: <a href="${"https://css-tricks.com/form-validation-in-under-an-hour-with-vuelidate/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://css-tricks.com/form-validation-in-under-an-hour-with-vuelidate/</a></p>
+<h2 id="${"migration-to-v3-composition-api"}"><a href="${"#migration-to-v3-composition-api"}">Migration to V3 Composition API</a></h2>
+<p>It\u2019s about reuable components or logic
+to remove mixins
+It\u2019s about encapsulation</p>
+<p>Clear what\u2019s being exported. Within mixins, it\u2019s not clear what is given. </p>
+<p>inspired by React Hooks</p>
+<p><a href="${"https://v3.vuejs.org/guide/migration/introduction.html"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://v3.vuejs.org/guide/migration/introduction.html</a></p>
+<p>Also library of recipes
+<a href="${"https://vueuse.org/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://vueuse.org/</a></p>
+<p>TIPS:
+Reducer - <a href="${"https://css-tricks.com/understanding-the-almighty-reducer/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://css-tricks.com/understanding-the-almighty-reducer/</a></p>`
+  })}`;
+});
+var weekNineBuildingApplicationsVueNuxt_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_nine_building_applications_vue_nuxt_svelte,
+  metadata: metadata$z,
+  load: load$2
+});
+var metadata$y = {
+  "title": "DRAFT Week Eleven - React",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Complete Intro to React",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_fourteen_functional_light_js_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$y), {}, {})}`;
+});
+var draftWeekFourteenFunctionalLightJs_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_fourteen_functional_light_js_svelte,
+  metadata: metadata$y,
+  load: load$2
+});
+var metadata$x = {
+  "title": "DRAFT Week Eleven - React",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Complete Intro to React",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_eleven_complete_intro_react_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$x), {}, {})}`;
+});
+var draftWeekElevenCompleteIntroReact_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_eleven_complete_intro_react_svelte,
+  metadata: metadata$x,
+  load: load$2
+});
+var metadata$w = {
+  "title": "DRAFT Week Twelve - Functional JS Part 1",
+  "created": "2020-12-21T00:00:00.000Z",
+  "summary": "Functional JavaScript First Steps (Part 1)",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Draft_week_twelve_functional_js_part_1_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$w), {}, {})}`;
+});
+var draftWeekTwelveFunctionalJsPart1_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Draft_week_twelve_functional_js_part_1_svelte,
+  metadata: metadata$w,
+  load: load$2
+});
+var metadata$v = {
   "title": "Week Ten - Production Grade Vue",
   "created": "2022-01-08T00:00:00.000Z",
   "summary": "Production-Grade Vue (Part 2)",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
-var Draft_week_ten_production_grade_vue_part_2_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$A), {}, {
+var Week_ten_production_grade_vue_part_2_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$v), {}, {
     default: () => `<p>Ben Hong
 Netlify
 <a href="${"https://frontendmasters.com/courses/production-vue/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/production-vue/</a></p>
@@ -15425,362 +15667,92 @@ STAGE 2 - Pull request
 <p>Look into ESLint A11y plugin</p>
 <p>I hate that Production-Grade Vue.js
 Vue or not, I think this is \u2014
-Code Maintenance section is really good. </p>`
+Code Maintenance section is really good. </p>
+<p>Check out this:
+creates a live style guide
+<a href="${"https://vue-styleguidist.github.io/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://vue-styleguidist.github.io/</a></p>
+<p>Another is storybook vue</p>`
   })}`;
 });
-var draftWeekTenProductionGradeVuePart2_svelte = /* @__PURE__ */ Object.freeze({
+var weekTenProductionGradeVuePart2_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
-  "default": Draft_week_ten_production_grade_vue_part_2_svelte,
-  metadata: metadata$A,
-  load: load$2
-});
-var metadata$z = {
-  "title": "Week Thirteen - Functional JS Part 2",
-  "created": "2020-12-21T00:00:00.000Z",
-  "summary": "Functional JavaScript First Steps (Part 2)",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_thirteen_functional_js_part_2_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$z), {}, {})}`;
-});
-var draftWeekThirteenFunctionalJsPart2_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_thirteen_functional_js_part_2_svelte,
-  metadata: metadata$z,
-  load: load$2
-});
-var metadata$y = {
-  "title": "Week Nine - Building Apps with Vue & Nuxt",
-  "created": "2022-01-03T00:00:00.000Z",
-  "summary": "Building Applications with Vue & Nuxt",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Week_nine_building_applications_vue_nuxt_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$y), {}, {
-    default: () => `<p>Source: <a href="${"https://frontendmasters.com/courses/vue-nuxt-apps/introduction/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/vue-nuxt-apps/introduction/</a>
-Sarah Drasner </p>
-<h2 id="${"introduction"}"><a href="${"#introduction"}">Introduction</a></h2>
-<ul class="${"list"}"><li><p>I like games because there\u2019s a lot of state management in games. </p></li>
-<li><p>Then a food ordering application. </p>
-<ul class="${"list"}"><li>Slots </li>
-<li>Dynamic Pages</li>
-<li>Car logic</li>
-<li>Validation </li></ul></li>
-<li><p>Composition API</p></li></ul>
-<p>Link to resource:
-<a href="${"https://github.com/sdras/building-web-apps-with-vue"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/building-web-apps-with-vue</a></p>
-<p>SLIDES: <a href="${"https://slides.com/sdrasner/building-vue-apps-3-foodapp?token=DiquCMbB"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/sdrasner/building-vue-apps-3-foodapp?token=DiquCMbB</a></p>
-<p>VSCODE Snippets: <a href="${"https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets</a></p>
-<p>TODO: How to read API.  <a href="${"https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/</a></p>
-<p>Working with SVG Graphics in Vue:</p>
-<figure><img src="${"https://i.imgur.com/guhYfyI.png"}"></figure>
-<p>She made a single svg in Photoshop.
-She labeled them correctly, put them into folders\u2026
-Then she exported it as a SVG.
-That puts them into IDs.
-Then she can target them directly.</p>
-<p>The other option is she\u2019s just puting the SVG directly into a Vue Component.</p>
-<h2 id="${"quiz-game-app"}"><a href="${"#quiz-game-app"}">Quiz Game App</a></h2>
-<p>SLIDES: <a href="${"https://slides.com/sdrasner/vueapps2?token=oePuyn8o"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/sdrasner/vueapps2?token=oePuyn8o</a></p>
-<p>Repo: <a href="${"https://github.com/sdras/building-web-apps-with-vue/tree/main/game-problem"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/building-web-apps-with-vue/tree/main/game-problem</a></p>
-<p>You might have to <code>npm i node-sass sass-loader</code></p>
-<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
-state<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-	uiState<span class="token operator">:</span> <span class="token string">'start'</span><span class="token punctuation">,</span>
-	<span class="token comment">// ...</span>
-
-<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
-<p>I like writing strings in <code>uiState</code> instead of booleans because you can then manage your state with a specific \u2018state\u2019, rather than a bunch of booleans checking it. </p>
-<p>Things she did: </p>
-<ol class="${"list"}"><li>She put the data directly into the Vuex store. </li>
-<li>In the computed properties, she\u2019s using <code>mapState[]</code> to bring data from the store/index.js\` </li></ol>
-<p>She creates a GamestateStart.vue, which changes based on the uiState. </p>
-<p><code>gsap</code> Greensock is stable with every browser. Using transform is different for every browser. </p>
-<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token operator">&lt;</span>script<span class="token operator">></span>
-<span class="token keyword">import</span> gsap <span class="token keyword">from</span> <span class="token string">"gsap"</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> mapState <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"vuex"</span><span class="token punctuation">;</span>
-
-
-<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
-
-	computed<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-		<span class="token operator">...</span><span class="token function">mapState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">"score"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
-	watch<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-		<span class="token function">score</span><span class="token punctuation">(</span><span class="token parameter">newValue<span class="token punctuation">,</span> oldValue</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-			gsap<span class="token punctuation">.</span><span class="token function">to</span><span class="token punctuation">(</span><span class="token string">'#needle'</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
-				duration<span class="token operator">:</span> <span class="token number">0.3</span><span class="token punctuation">,</span> 
-				rotation<span class="token operator">:</span> newValue<span class="token punctuation">,</span> 
-				transformOrigin<span class="token operator">:</span> <span class="token string">"50% 100%"</span> <span class="token comment">// she changed it to 50% 87%		</span>
-		<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-	<span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span>
-
-<span class="token comment">// She also adjust the size of the score to fudge the numbers. // https://github.com/sdras/building-web-apps-with-vue/blob/main/game-solution/src/store/index.js#L61</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></code>`}<!-- HTML_TAG_END --></pre>
-<p><code>Math.sign(state.score)</code> to safely convert a number into a -1 or +1.
-<a href="${"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign</a></p>
-<p>Fisher-Yates is the shuffle that lodash does.
-More info: <a href="${"https://bost.ocks.org/mike/shuffle/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://bost.ocks.org/mike/shuffle/</a>
-Her snippet: <a href="${"https://github.com/sdras/building-web-apps-with-vue/blob/main/game-solution/src/App.vue#L153"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/building-web-apps-with-vue/blob/main/game-solution/src/App.vue#L153</a></p>
-<p>In a SVG:
-Think of <code>defs</code>, think of them as a staging area. </p>
-<p>masking vs clipping:
-<a href="${"https://css-tricks.com/masking-vs-clipping-use/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://css-tricks.com/masking-vs-clipping-use/</a></p>
-<p>Look at this amazing code:
-codepen - xray skeleeton:
-<a href="${"https://codepen.io/noeldelgado/pen/ByxQjL"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/noeldelgado/pen/ByxQjL</a></p>
-<h2 id="${"the-food-app"}"><a href="${"#the-food-app"}">The Food App</a></h2>
-<h3 id="${"building-a-food-app-with-nuxt"}"><a href="${"#building-a-food-app-with-nuxt"}">Building a Food App with Nuxt</a></h3>
-<p>The project: nuxtfoodapp.netlify.app</p>
-<p>Nuxt -
-it\u2019s a meta-framework</p>
-<ul class="${"list"}"><li>Excellent performance<ul class="${"list"}"><li>Tree shaking</li></ul></li>
-<li>Automatic generated Dynamic Routes </li>
-<li>Automatic Routing</li>
-<li>SSR / Jamstack / SPA rendering </li>
-<li>Elegant defaults &amp; great organization </li></ul>
-<p>Nuxt comes with the vuex store by default. </p>
-<p>Folder structure:
-Layout - We can put it in this layouts default, and then it will persist on every page. And that\u2019s really nice because we can also create different types of layouts as we work middle ware is, you\u2019re gonna see in a second, we\u2019re gonna make pages by simply putting a view file in a pages directory.</p>
-<p>Hero generator:
-<a href="${"https://hero-generator.netlify.app/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://hero-generator.netlify.app/</a></p>
-<p>Middleware -
-[00:05:31]
-So in middle ware, you have access to those routes, and that\u2019s where you can apply some logic. So middle ware is a great place to do things like auth. Middle ware is a great place to do things like tell the store about the route changing or something like that.</p>
-<p>[00:05:45]
-That would be done in middleware. And I mentioned this about the pages directory, we have an index page. And we have this kind of defaults container. You see this logo being brought in, just like we did with the view CLI and we are able to have this kind of defaults, but what\u2019s really nice about it Is that we have, a base index file and all of a sudden we have a page.</p>
-<p>plugin - it\u2019s like mounting in the main JS folder. </p>
-<p>static - any static files. </p>
-<p>in nuxt.config.js:
-head, global css, plugins
-<a href="${"https://nuxtjs.org/docs/directory-structure/nuxt-config/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://nuxtjs.org/docs/directory-structure/nuxt-config/</a></p>
-<h3 id="${"vuex-store"}"><a href="${"#vuex-store"}">Vuex Store</a></h3>
-<p>Actions. Actions can\u2019t change the state, actions can commit mutations that change the state. But actions are good for asynchronous logic.</p>
-<p>Mutations are the only thing that can change the state. So in our game application, they\u2019re synchronous.</p>
-<p>So in this case, what we\u2019re going to do is we\u2019re going to use an action to do that kind of async stuff, and that action will call a commit in the mutation.</p>
-<h3 id="${"how-to-make-a-api"}"><a href="${"#how-to-make-a-api"}">How to make a API:</a></h3>
-<p><a href="${"https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.netlify.com/guides/creating-an-api-with-aws-lambda-dynamodb-and-api-gateway/api-gateway/</a></p>
-<p>The endpoint:
-<a href="${"https://dva9vm8f1h.execute-api.us-east-2.amazonaws.com/production/restaurants"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://dva9vm8f1h.execute-api.us-east-2.amazonaws.com/production/restaurants</a></p>
-<p>There\u2019s a api key and you also need to set up stuff</p>
-<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
-
-	<span class="token comment">// check if the data is already there or not</span>
-	<span class="token keyword">if</span> <span class="token punctuation">(</span>state<span class="token punctuation">.</span>fooddata<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token keyword">return</span>
-
-	<span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token constant">URLHERE</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>
-	headers<span class="token operator">:</span> <span class="token punctuation">&#123;</span>
-		<span class="token string">'Content-Type'</span> <span class="token operator">:</span> <span class="token string">'application/json'</span><span class="token punctuation">,</span> 
-		<span class="token string">'x-api-key'</span> <span class="token operator">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">AWS_API_KEY</span>
-		<span class="token punctuation">&#125;</span>
-	<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
-		<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">response</span> <span class="token operator">=></span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-		<span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">data</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
-		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	
-	<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">&#123;</span>
-		<span class="token comment">// errors here</span>
-	<span class="token punctuation">&#125;</span>
-</code>`}<!-- HTML_TAG_END --></pre>
-<p>For local vs server: </p>
-<p>she created a <code>getfood.server.js</code> in the plugins folder.
-So she can get the API code. </p>
-<p>NOTES:
-for props arrays -
-YOU MUST return an return value. </p>
-<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">type: Array, 
-default: () =&gt; [&quot;tacos&quot;, &quot;pizza&quot;, &quot;dim sum&quot;]</code>`}<!-- HTML_TAG_END --></pre>
-<h2 id="${"filtering-data--adding-dynamic-pages"}"><a href="${"#filtering-data--adding-dynamic-pages"}">Filtering Data &amp; Adding Dynamic Pages</a></h2>
-<p>Performance thoughts </p>
-<p>Using a for loop to filter, rather than <code>filter</code>. </p>
-<h2 id="${"vuex"}"><a href="${"#vuex"}">Vuex</a></h2>
-<h3 id="${"getters"}"><a href="${"#getters"}">Getters</a></h3>
-<p>[00:05:14]
-But don\u2019t overuse getters. In other words, if one component Is just thinking about itself. You don\u2019t necessarily have to put it in the store in as a getter in order to do so. The reason why I caution against that is for big enterprise apps at scale. What can happen is people are using that Vuex Store not just a place to keep the centralized state data.</p>
-<p>[00:05:37]
-They\u2019re also using it as a self documenting place to understand the brains of the application. So if you put tons of getter information in that store. You\u2019re causing people to kind of look through a ton of information to understand what\u2019s going on for the application for the whole, for that full application.</p>
-<p>[00:05:56]
-It doesn\u2019t matter too much with a small application, but you\u2019ll start to see this that Vuex enterprise apps at scale that we need to kind of keep the Vuex Store a little bit more modularized. And Divya has a great course that shows how to use Vuex modules and goes into more depth there as well.</p>
-<h2 id="${"forms--composition-api"}"><a href="${"#forms--composition-api"}">Forms &amp; Composition API</a></h2>
-<p>SLIDES: <a href="${"https://slides.com/sdrasner/building-vue-apps-4-compositionapi?token=IAnBmcyn"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/sdrasner/building-vue-apps-4-compositionapi?token=IAnBmcyn</a></p>
-<h2 id="${"validation"}"><a href="${"#validation"}">Validation</a></h2>
-<p>It gives you a few things to check and hide things.</p>
-<p>Vue validate blog: <a href="${"https://css-tricks.com/form-validation-in-under-an-hour-with-vuelidate/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://css-tricks.com/form-validation-in-under-an-hour-with-vuelidate/</a></p>
-<h2 id="${"migration-to-v3-composition-api"}"><a href="${"#migration-to-v3-composition-api"}">Migration to V3 Composition API</a></h2>
-<p>It\u2019s about reuable components or logic
-to remove mixins
-It\u2019s about encapsulation</p>
-<p>Clear what\u2019s being exported. Within mixins, it\u2019s not clear what is given. </p>
-<p>inspired by React Hooks</p>
-<p><a href="${"https://v3.vuejs.org/guide/migration/introduction.html"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://v3.vuejs.org/guide/migration/introduction.html</a></p>
-<p>Also library of recipes
-<a href="${"https://vueuse.org/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://vueuse.org/</a></p>
-<p>TIPS:
-Reducer - <a href="${"https://css-tricks.com/understanding-the-almighty-reducer/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://css-tricks.com/understanding-the-almighty-reducer/</a></p>`
-  })}`;
-});
-var weekNineBuildingApplicationsVueNuxt_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Week_nine_building_applications_vue_nuxt_svelte,
-  metadata: metadata$y,
-  load: load$2
-});
-var metadata$x = {
-  "title": "DRAFT Week Eleven - React",
-  "created": "2020-12-21T00:00:00.000Z",
-  "summary": "Complete Intro to React",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_fourteen_functional_light_js_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$x), {}, {})}`;
-});
-var draftWeekFourteenFunctionalLightJs_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_fourteen_functional_light_js_svelte,
-  metadata: metadata$x,
-  load: load$2
-});
-var metadata$w = {
-  "title": "DRAFT Week Eleven - React",
-  "created": "2020-12-21T00:00:00.000Z",
-  "summary": "Complete Intro to React",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_eleven_complete_intro_react_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$w), {}, {})}`;
-});
-var draftWeekElevenCompleteIntroReact_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_eleven_complete_intro_react_svelte,
-  metadata: metadata$w,
-  load: load$2
-});
-var metadata$v = {
-  "title": "DRAFT Week Twelve - Functional JS Part 1",
-  "created": "2020-12-21T00:00:00.000Z",
-  "summary": "Functional JavaScript First Steps (Part 1)",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_twelve_functional_js_part_1_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$v), {}, {})}`;
-});
-var draftWeekTwelveFunctionalJsPart1_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_twelve_functional_js_part_1_svelte,
+  "default": Week_ten_production_grade_vue_part_2_svelte,
   metadata: metadata$v,
   load: load$2
 });
 var metadata$u = {
-  "title": "DRAFT Week Ten - Advanced Vue",
-  "created": "2020-12-21T00:00:00.000Z",
-  "summary": "Advanced Vue.js Features from the Ground Up",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_ten_advanced_vue_features_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$u), {}, {})}`;
-});
-var draftWeekTenAdvancedVueFeatures_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_ten_advanced_vue_features_svelte,
-  metadata: metadata$u,
-  load: load$2
-});
-var metadata$t = {
-  "title": "DRAFT Week Nine - Intro to Vue",
-  "created": "2020-12-21T00:00:00.000Z",
-  "summary": "Introduction to Vue 3",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_ten_vuex_for_intermediate_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$t), {}, {})}`;
-});
-var draftWeekTenVuexForIntermediate_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_ten_vuex_for_intermediate_svelte,
-  metadata: metadata$t,
-  load: load$2
-});
-var metadata$s = {
   "title": "DRAFT Week Fourteen - React & Storybook",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Design Systems with React & Storybook",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_fourteen_react_storybook_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$s), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$u), {}, {})}`;
 });
 var draftWeekFourteenReactStorybook_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_fourteen_react_storybook_svelte,
-  metadata: metadata$s,
+  metadata: metadata$u,
   load: load$2
 });
-var metadata$r = {
+var metadata$t = {
   "title": "DRAFT Week Twelve - Web Performance",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Web Performance Fundamentals",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_twelve_web_performance_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$r), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$t), {}, {})}`;
 });
 var draftWeekTwelveWebPerformance_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_twelve_web_performance_svelte,
-  metadata: metadata$r,
+  metadata: metadata$t,
   load: load$2
 });
-var metadata$q = {
+var metadata$s = {
   "title": "DRAFT Week Thirteen - Intro to Gatsby",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Introduction to Gatsby, v2",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_thirteen_intro_gatsby_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$q), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$s), {}, {})}`;
 });
 var draftWeekThirteenIntroGatsby_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_thirteen_intro_gatsby_svelte,
-  metadata: metadata$q,
+  metadata: metadata$s,
   load: load$2
 });
-var metadata$p = {
+var metadata$r = {
   "title": "DRAFT Week Thirteen - Build a game",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Complete Front-End Project -  Build a Game",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_thirteen_build_game_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$p), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$r), {}, {})}`;
 });
 var draftWeekThirteenBuildGame_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_thirteen_build_game_svelte,
-  metadata: metadata$p,
+  metadata: metadata$r,
   load: load$2
 });
-var metadata$o = {
+var metadata$q = {
   "title": "Week Nine - Production Grade Vue",
   "created": "2022-01-05T00:00:00.000Z",
   "summary": "Production-Grade Vue (Part 1)",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_nine_production_grade_vue_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$o), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$q), {}, {
     default: () => `<p>Ben Hong
 Netlify
 <a href="${"https://frontendmasters.com/courses/production-vue/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/production-vue/</a></p>
@@ -15993,6 +15965,353 @@ var weekNineProductionGradeVue_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_nine_production_grade_vue_svelte,
+  metadata: metadata$q,
+  load: load$2
+});
+var metadata$p = {
+  "title": "Week Ten - Advanced Vue",
+  "created": "2022-01-10T00:00:00.000Z",
+  "summary": "Advanced Vue.js Features from the Ground Up",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_ten_advanced_vue_features_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$p), {}, {
+    default: () => `<p>Vue.js Features from the Ground Up</p>
+<p>COURSE: <a href="${"https://frontendmasters.com/courses/advanced-vue/introduction/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/advanced-vue/introduction/</a>
+Evan You</p>
+<p>SLIDES: <a href="${"https://docs.google.com/presentation/d/1TgDx4DN8YqfdndYWMovBcQVPWyKLTNcbo1YS8XlLo9o/edit"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://docs.google.com/presentation/d/1TgDx4DN8YqfdndYWMovBcQVPWyKLTNcbo1YS8XlLo9o/edit</a></p>
+<h2 id="${"react"}"><a href="${"#react"}">React</a></h2>
+<p>What does reactivity mean?
+How changing state reflects changing in the DOM. </p>
+<p>We have 2 variables: </p>
+<p>How do we keep variable A and variable B stay together?</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">a = 2
+b = a * 10</code>`}<!-- HTML_TAG_END --></pre>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">onStateChanged() =&gt; &#123;
+	view = render(state)
+&#125;)</code>`}<!-- HTML_TAG_END --></pre>
+<blockquote><p>[00:03:53] And that function is called a set state. Set state simply takes the new state, and replaces the old state, and then calls update function again. Right and if you\u2019ve used React you will find this extremely familiar because React forces you to trigger on state changes of your setState.</p></blockquote>
+<blockquote><p>[00:04:12] And this is essentially what React is all about. Not all about but this is in a nutshell how React works, right? So we\u2019ve noticed something different in the view context or in the angular context that we can, in fact, directly manipulate the state without having to call set state.</p></blockquote>
+<p>Task:
+Create Getters &amp; Setters </p>
+<p><a href="${"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty</a></p>
+<p>WTF?
+<code>enumerable</code> ?</p>
+<p>Yikes, this is so over my head: </p>
+<p>So what I gathered from it\u2026</p>
+<ol class="${"list"}"><li>You create a function that has getters and setters. </li>
+<li>Then you create an observer, to watch for changes. </li></ol>
+<h2 id="${"writing-plugins"}"><a href="${"#writing-plugins"}">Writing Plugins</a></h2>
+<p><code>Vue.use(plugin)</code></p>
+<p>A plugin is something that just takes Vue, and does something with the Vue itself.</p>
+<p>Mixin is a global API that applies to every instance. </p>
+<p>It\u2019s a better idea to wrap global mixins in a plugin interface. </p>
+<p>Another common use-case is the $options property. </p>
+<p>What\u2019s the value of a plugin?</p>
+<figure><img src="${"https://i.imgur.com/RhPvGhX.png"}"></figure>
+<p><code>rules</code> is not a real method in vue. </p>
+<p>But to call it, you\u2019ll have to write </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$options<span class="token punctuation">.</span>rules<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+		<span class="token comment">// we can do something </span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>But you\u2019ll have to do that with every single component.</p>
+<p>Instead, it\u2019ll be better do to this:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">myPlugin</span> <span class="token operator">=</span> <span class="token parameter">Vue</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	Vue<span class="token punctuation">.</span><span class="token function">mixin</span><span class="token punctuation">(</span> <span class="token punctuation">&#123;</span>
+		<span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$options<span class="token punctuation">.</span>rules<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+				<span class="token comment">// we can do something </span>
+			<span class="token punctuation">&#125;</span>
+		<span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">&#125;</span>
+
+
+</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"render-functions"}"><a href="${"#render-functions"}">Render Functions</a></h2>
+<blockquote><blockquote><p>Evan You: So we talked about reactivity in the first section, and now we\u2019re talking about random functions, and random functions are essentially the other half of the puzzle that completes the whole reactivity rendering system in view itself. And in case you don\u2019t know render functions, view templates are in fact compiled into render functions under the hood.</p></blockquote></blockquote>
+<figure><img src="${"https://i.imgur.com/m90J4sd.png"}"></figure>
+<p>This is how Vue works under the hood. </p>
+<ol class="${"list"}"><li>Your jsx compiles into JS code. </li>
+<li>It returns that JS code, creating a virtual dom behind the scene.</li>
+<li>While generating a actual dom. </li></ol>
+<p>When things start getting \u2018reactive\u2019, that\u2019s the virtual dom moving around.</p>
+<figure><img src="${"https://i.imgur.com/DeSIXBc.png"}"></figure>
+<p>So this is how it moves so fast.
+Virtual dom compares diffs from old virtual dom.
+then reapplies it. We apply the minimal amount of changes. </p>
+<p>ACTUAL DOM
+<code>document.createELement(&#39;div&#39;)</code></p>
+<p>VIRTUAL DOM
+<code>vm.$createElement(&#39;div&#39;)</code></p>
+<p>A real div node is very heavy, with lots of features behind it.</p>
+<p>When we say, \u201CTouching th dom is slower.\u201D</p>
+<figure><img src="${"https://i.imgur.com/klLV4Vo.png"}"></figure>
+<p>It literally looks like a object. </p>
+<p>Creating a 1000 cheap virtual dom elements is way faster. </p>
+<blockquote><p>Virtual DOM:
+(Essentially) A lightweight JavaScript data format to represent what the actual DOM should look like at a given point in time</p></blockquote>
+<p>If we, say, use inner HTML to update our app, we\u2019re essentially throwing away all the previous DOM nodes, real DOM nodes, regenerating all the real DOM nodes again. So this cost is much much more expensive than, say, just generating a new virtual DOM snapshot. And inner HTML also has a problem.</p>
+<p>The Virtual DOM isn\u2019t just because it\u2019s faster, but because </p>
+<blockquote><p>But a common misunderstanding is virtual DOM is what makes a lot of these frameworks fast. It does not. Virtual DOM is just a way to get around the limitations of the original DOM so that it enables this paradigm of declaratively composing what you want the DOM to look like.</p></blockquote>
+<blockquote><p>Virtual DOM:
+Decouples rendering logic from the actual DOM - enables rendering capabilities in non-browser environments, e.g. server-side and native mobile rendering.</p></blockquote>
+<p>For all these JS frameworks \u2014 </p>
+<blockquote><p>It doesn\u2019t need to ever touch the DOM. And in fact, if we abstract out these eventual connecting points, API\u2019s that touch the DOM and then sort of redirect them to other places.</p></blockquote>
+<blockquote><p>We can create the same app running virtually in any environment that supports JavaScript, but it doesn\u2019t necessarily have to touch the DOM. Instead, it can talk to a native rendering engine, for example, iOS or Android. Or on the server side, we can turn the virtual DOM into strings or a string finder.</p></blockquote>
+<figure><img src="${"https://i.imgur.com/z6RvzgH.png"}"></figure>
+<p><strong>JSX vs Templates</strong></p>
+<p>In Evan\u2019s opinion - they\u2019re the same thing.
+People compare the two. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span>
+	<span class="token function">render</span> <span class="token punctuation">(</span><span class="token parameter">h</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+		<span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'div'</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token operator">...</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>We start with template API as the default.
+But you can drop down to the Render Function API if you want. </p>
+<p>Hyper Script is a script that creates HyperText, which is HTML.</p>
+<p>Which is by convention, we shorten it to <code>h</code>. (As seen in the example above) </p>
+<figure><img src="${"https://i.imgur.com/x7ZJbZQ.png"}"></figure>
+<ol class="${"list"}"><li><p>Creating a div with some inner text. </p></li>
+<li><p>Creating a div with a class on it, then inner text. </p></li>
+<li><p>This is a div, with some children element, and some other stuff. </p></li></ol>
+<p><code>h</code> can also directly render a component. </p>
+<p>WTF:
+Functional components versus stateful components?</p>
+<p><strong>Stateful Components (normal components)</strong>
+Stateful components are </p>
+<p><strong>Functional Components</strong>
+Functional components don\u2019t hold any state of their own. So it\u2019s kind of expended in line which makes it extremely cheap because there\u2019s no overhead of creating a backing instance, holding all these data properties in place and everything</p>
+<p>Use case are when you have a lot of leaf nodes (a list), but inside they have don\u2019t much need for state \u2014 presentational components. or example, you\u2019re just rendering a button, or just rendering a static avatar or something.</p>
+<p>If you have these presentational components which simply takes some data, takes some props in and renders some output depending on their props then this seems a perfect candidate for functional components.</p>
+<p>And if these components are repeated in many places in your app, turning them into functional ones should boost the performance of an app. </p>
+<figure><img src="${"https://i.imgur.com/Vgp1tG1.png"}"></figure>
+<p>this render function creates the following: </p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>0<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>	
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">></span></span>2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<p>The goal is to create a div that a dynamic component. </p>
+<p><strong>Higher Order Components</strong></p>
+<p>A react thing. But let\u2019s go into it.</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// Dynamic Component 
+
+Vue.component(&#39;example&#39;, &#123;
+	props; [&#39;ok&#39;], 
+	render(h) &#123;
+		return this.ok ? h(Foo) : h(Bar)
+	&#125;
+&#125;)
+
+// Higher Order Components 
+function withAvatarURL (InnerComponent) &#123;
+	// you can create a cache so it&#39;s not always fetching here
+
+	return &#123;
+		props: [&#39;username&#39;],
+		data () &#123;
+			return &#123; url: &#96;http://via.placeholder.com/200x200&#96; &#125;
+		&#125;,
+		created() &#123;
+			fetchURL(this.username, url =&gt; &#123;
+				this.url = url
+			&#125;)
+		&#125;,
+		render (h) &#123;
+			return h(Avatar, &#123;
+				props: &#123;
+					src: this.url,
+				&#125;
+			&#125;
+		&#125;
+	&#125;
+&#125;
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Provides a higher level of reusability. Easier to test, since there\u2019s no business logic. If you use a conditional Mixin, you\u2019re testing it twice.</p>
+<blockquote><p>[00:05:26] So this is good, because it shows that it is a good encapsulation mechanism. The only interface we\u2019re using to talk between the parent and the child is view props. Because the way we communicate is so constrained. This make ensures that change in the inter implementation of this enhancer doesn\u2019t affect other parts in your code.</p></blockquote>
+<blockquote><p>[00:05:49] This is critical, if you have a large team, a large project. And you want to make sure when you are changing things, you\u2019re not stepping on other people\u2019s toes, not accidentally breaking other things. The trick to that is, make sure this piece of code, finding contracts with other parts of the code base, is minimal.</p></blockquote>
+<h2 id="${"state-management"}"><a href="${"#state-management"}">State Management</a></h2>
+<p>State management didn\u2019t exist until Facebook and Flex. </p>
+<p><strong>Why Vuex?</strong></p>
+<blockquote><p>[00:06:26] For example, you grab some data from the backend API, and your page A needs that data, your page B also needs that data. And even worse, there could be two different components nested in very different, deeply nested component trees, but they still need to access the same piece of data.</p></blockquote>
+<blockquote><p>[00:06:46] So the question becomes unclear which component should own the data, right, and eventually, you realize neither of them should own the data. The data should be hoisted out to be managed in a centralized place if the data is meant to be shared by multiple components across your app.</p></blockquote>
+<p><strong>Difference between mutation and actions</strong></p>
+<p><strong>Mutation</strong></p>
+<ul class="${"list"}"><li>Must be synchron. Because devtools! </li>
+<li>mutation is what changes the code. mutations\u2019 focus is just on dealing just with the state.</li>
+<li>you know there\u2019s the time travel feature and we have snapshots of your state whenever a mutation happens. If you want to take snapshots then it is critical that the mutations be synchronous because you can compare the before and after immediately after the function is called</li>
+<li>If a mutation can contain arbitrary asynchronous operations, then after you call the mutation you don\u2019t really know how long you have to wait until your state has actually changed.</li></ul>
+<p><strong>Actions: </strong></p>
+<ul class="${"list"}"><li>Async</li>
+<li>Also inside actions you can do a lot of things like calling to external APIs, whereas your </li></ul>
+<h2 id="${"routing"}"><a href="${"#routing"}">Routing</a></h2>
+<p>hash API vs
+HTML History API? </p>
+<blockquote><p>So, we all know that in the browser there are two ways to do routing you can use a hash or you can use the HTML5 History API. HTML5 History API is better in the sense, it supports pop state and you get better looking URLs but it requires some sort of server configuration, so that when you directly visit a deep link, the server still renders the same static HTML page for your client-side router to pick up.</p></blockquote>
+<h2 id="${"form-validation"}"><a href="${"#form-validation"}">Form Validation</a></h2>
+<p>Two schools of thought.
+Markup-based - Vee-validate
+This is about declaring your rules inside the markup.</p>
+<p>Model-based \u2014 Vuelidate
+This is about declaring your rules inside of Javascript.</p>
+<figure><img src="${"https://i.imgur.com/WrEKKXt.png"}"></figure>
+<p>You can also set up an array of functions in JS land.
+<code>validate: compose(greaterThan(5), allCaps())</code></p>
+<p>You can set up watches</p>
+<p>In <code>beforeCreate()</code>
+The reactivity system hasn\u2019t been initialized.</p>
+<blockquote><p>Evan You: So how do we implement that?
+Evan You: Let\u2019s go back to the master branch and try to implement that. So remember for any plugin, we should have an install method which takes Vue as the argument.
+Evan You: And, let\u2019s think about what we need to do for this plug-in.</p></blockquote>
+<blockquote><p>[00:06:05] We need to be able to process this custom validation\u2019s object. So, that means we need to have a global mixing that injects the created hook into every component. And then we check if (this.$options.validations), this is where we need to do work, right?
+Evan You: So some of the, let\u2019s see if we actually should use the created hook, right?</p></blockquote>
+<blockquote><p>[00:06:42]
+There\u2019s really, so some of you might start to think you can set up watchers in the created hook. Each of the properties run through the validations, and then set the data onto the $v right, that works. That could, indeed, work. But that feels very imperative. Is there a more declarative way to think about this?</p></blockquote>
+<blockquote><p>[00:07:08]
+The fact is, there is. So, let\u2019s look at this $v thing. What should it be? Should it be just an object on the instance that we can mutate? Or could it just be some declarative mapping from our current form state? So if we take that approach, let\u2019s actually mix it in as a computed property, right?</p></blockquote>
+<figure><img src="${"https://i.imgur.com/ikUdCqI.png"}"></figure>
+<p>You can do something like this to test if the value even exists:</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">Object.keys(rules || &#123;&#125;).forEach(key =&gt; &#123; // ... &#125;
+</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"internationalization"}"><a href="${"#internationalization"}">Internationalization</a></h2>
+<p>vue-i18n \u2014 It comes with performance cost. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">&lt;h1&gt; &#123;&#123; $t(&#39;welcome-message&#39;]&#125;&lt;/h1&gt;
+&lt;button @click=&quot;changeLanguage(&#39;en&#39;)&quot;&gt;English&lt;/button&gt;</code>`}<!-- HTML_TAG_END --></pre>
+<p>So this is not very performant since it has to run through the entire app to switch content, and can do it over again. You don\u2019t have to save all the JSON in one spot.</p>
+<p>An alternative is to instead have multiple apps and just do it at compile time.
+Essentially - 2+ versions with different languages, set at differnt URLs?</p>
+<p>If performance gain is needed, do it.</p>
+<figure><img src="${"https://i.imgur.com/MPEXSgt.png"}"></figure>
+<p>Then wire it up using prototypical inheritance (Evan\u2019s recommended): </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">const i18nPlugin = &#123;
+	install (Vue, locales) &#123;
+		Vue.prototype.$t = function(id) &#123;
+			return locales[this.$root.lang][id]
+		&#125;	
+	&#125;
+&#125;
+</code>`}<!-- HTML_TAG_END --></pre>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">this.$root.lang // this starts the reactivity process </code>`}<!-- HTML_TAG_END --></pre>
+<p>(Or you can do the mixin way)
+There\u2019s no performance issue because it doesn\u2019t have to wire it up.</p>
+<h2 id="${"wrapping-up-advanced-vuejs"}"><a href="${"#wrapping-up-advanced-vuejs"}">Wrapping up Advanced Vue.JS</a></h2>
+<p>Web Components? </p>
+<p>angular 2.04 uses web components, and the other falls back.</p>
+<p>interop - what does that mean?</p>
+<p>The Future: </p>
+<blockquote><p>Evan You: Upcoming? One of the things we are gonna do is, the next big thing in you is probably a rewrite a build that only runs on latest modern browsers. Currently we have a lot of code that\u2019s dealing with legacy browsers, IE9 or stuff. Which sort of [COUGH][INAUDIBLE] Library itself and places a lot of restrictions, because we cannot use any of the latest ES features.</p></blockquote>
+<blockquote><p>And it\u2019s kind of a pain, because when you know ESS set on map would be better suited for this case, but you cannot use it, so you have to [INAUDIBLE] Yourself, or use a less capable alternative in the library. So, I am pretty looking forward to the day where IE is just completely dead, so that I can drop everything about them.</p></blockquote>
+<blockquote><p>And then we\u2019ll rewrite the reactivity system using ES 2015 proxies, which will be able to get rid of some of the gotchas we currently have in Vue, for example, adding new properties. I\u2019m gonna have to call vue.set if you were using properties, and you can also directly assign to indices into arrays without having to use Vue set again and you can delete properties.</p></blockquote>
+<blockquote><p>And observation will be lazy by default, so there will be a lot of benefits if we are able to sort of both drop a lot of weight, and also improve the current system even more.</p></blockquote>`
+  })}`;
+});
+var weekTenAdvancedVueFeatures_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_ten_advanced_vue_features_svelte,
+  metadata: metadata$p,
+  load: load$2
+});
+var metadata$o = {
+  "title": "Week Ten - Vuex",
+  "created": "2022-01-10T00:00:00.000Z",
+  "summary": "Introduction to Vue 3",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_ten_vuex_for_intermediate_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$o), {}, {
+    default: () => `<p>Divya Tagtachian</p>
+<p>REPO: <a href="${"https://github.com/shortdiv/frontend-masters-vuex"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/shortdiv/frontend-masters-vuex</a></p>
+<p><a href="${"https://frontendmasters.com/courses/vuex/introduction/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/vuex/introduction/</a></p>
+<p>SLIDES:
+Vuex 1: Introduction to State Management
+<a href="${"https://slides.com/shortdiv/vuex-1"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/shortdiv/vuex-1</a></p>
+<p>Vuex 2: Vuex; The Good Parts\u2014State, Getters, Actions, Mutations
+<a href="${"https://slides.com/shortdiv/vuex-2"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/shortdiv/vuex-2</a></p>
+<p>Vuex 3: Getting Vuex State into SFCs
+<a href="${"https://slides.com/shortdiv/vuex-3"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/shortdiv/vuex-3</a></p>
+<p>Vuex 4: Composing Vuex Actions
+<a href="${"https://slides.com/shortdiv/vuex-4"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/shortdiv/vuex-4</a></p>
+<p>Vuex 5: Vuex Modules
+<a href="${"https://slides.com/shortdiv/vuex-5"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/shortdiv/vuex-5</a></p>
+<p>Vuex 6: Vuex Plugins
+<a href="${"https://slides.com/shortdiv/vuex-6"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/shortdiv/vuex-6</a></p>
+<p>Vuex 7: Vuex + Vue Router
+<a href="${"https://slides.com/shortdiv/vuex-7"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://slides.com/shortdiv/vuex-7</a></p>
+<p>Fundamentals of Vuex
+Vuex + Vue (SFCs)
+Vuex + Vue Router
+Composing Vuex
+Vuex Modules
+Vuex Plugins
+Normalizing State</p>
+<figure><img src="${"https://i.imgur.com/983sTeQ.png"}"></figure>
+<p>What is Vuex?</p>
+<p>Centralized data store for shared data, logic, and methods, with rules ensuring that the state can only be mutated in a predictable fashion.</p>
+<figure><img src="${"https://i.imgur.com/cLgbUyC.png"}"></figure>
+<p>State - Single source of truth for store state
+Actions - Similar to mutations, but it commits mutations
+Mutations - The only way to change store state
+Getters - Computer derived state based on store state</p>
+<blockquote><p>[00:01:32]
+And so, the action is what? Is how the application decides or how the store decides what to do with that particular event. This is also a way back in APIs, can come in handy. It\u2019s where you\u2019re essentially calling to a database, or reading from a data base. And that\u2019s what happens within actions itself.</p></blockquote>
+<p>Codepen:
+<a href="${"https://codepen.io/shortdiv/pen/zYGoVwe"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://codepen.io/shortdiv/pen/zYGoVwe</a></p>
+<p>Moving state to Vuex</p>
+<figure><img src="${"https://i.imgur.com/hIcrOsU.png"}"></figure>
+<figure><img src="${"https://i.imgur.com/FvqJtFp.png"}"></figure>
+<h2 id="${"state--getters"}"><a href="${"#state--getters"}">State &amp; Getters</a></h2>
+<p>Responsibilities &amp; Statement management system</p>
+<p>State - centralize state exist</p>
+<p>Actions - Make db calls, fetch APIs
+Async</p>
+<p>mutation - where state is mutated
+It\u2019s strictly sync. </p>
+<p>getters - And then, getters is sort of this sense of checking over the state or updating how the state renders on the front end. Getter is cached if nothing changed. It doesn\u2019t change.</p>
+<p>Components never change the state directly. Only the store. </p>
+<figure><img src="${"https://i.imgur.com/13UyJvL.png"}"></figure>
+<figure><img src="${"https://i.imgur.com/pNEx3LH.png"}"></figure>
+<p>It\u2019s the name of the mutation, and a payload. </p>
+<p>You want to know if something is async for the frontend. The user might click multiple times. </p>
+<figure><img src="${"https://i.imgur.com/0P8ymnf.png"}"></figure>
+<p>Notice - in Line 23 - It sets the state in the frontend.
+Then it does the line 26 commit - to pass the data.
+Finally, it turns off the loading. </p>
+<figure><img src="${"https://i.imgur.com/owo1Hpo.png"}"></figure>
+<figure><img src="${"https://i.imgur.com/n7W2ePU.png"}"></figure>
+<h2 id="${"store"}"><a href="${"#store"}">Store</a></h2>
+<p>Repo: <a href="${"https://github.com/shortdiv/vuex-sfc"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/shortdiv/vuex-sfc</a>
+<code>npm i</code></p>
+<p>The idea is to move the store out of the component and into the store.
+<a href="${"https://github.com/shortdiv/vuex-sfc/blob/step-0/src/components/VendingMachineAdmin.vue"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/shortdiv/vuex-sfc/blob/step-0/src/components/VendingMachineAdmin.vue</a></p>
+<figure><img src="${"https://i.imgur.com/rl0XkNk.png"}"></figure>
+<p>commit
+getter
+state
+dispatch</p>
+<h2 id="${"helpers--actions"}"><a href="${"#helpers--actions"}">Helpers &amp; Actions</a></h2>
+<figure><img src="${"https://i.imgur.com/bE4epir.png"}"></figure>
+<p>It\u2019s grabbing the commit. </p>
+<p>Destructuring context
+<a href="${"https://github.com/shortdiv/vuex-sfc/blob/step-1/src/store/index.js"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/shortdiv/vuex-sfc/blob/step-1/src/store/index.js</a></p>
+<p>You have helpers like:</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span>
+	mapState<span class="token punctuation">,</span>
+	mapActions<span class="token punctuation">,</span> 
+	mapGetters<span class="token punctuation">,</span>
+	mapMutations
+<span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"vuex"</span></code>`}<!-- HTML_TAG_END --></pre>`
+  })}`;
+});
+var weekTenVuexForIntermediate_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_ten_vuex_for_intermediate_svelte,
   metadata: metadata$o,
   load: load$2
 });
@@ -16674,45 +16993,29 @@ var weekFourIntroToServerless_svelte = /* @__PURE__ */ Object.freeze({
   load: load$2
 });
 var metadata$l = {
-  "title": "DRAFT Week Eleven - Full Stack",
-  "created": "2020-12-21T00:00:00.000Z",
-  "summary": "Full Stack for Front-end Engineers, V2",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_eleven_full_stack_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$l), {}, {})}`;
-});
-var draftWeekElevenFullStack_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_eleven_full_stack_svelte,
-  metadata: metadata$l,
-  load: load$2
-});
-var metadata$k = {
   "title": "DRAFT Week Twelve - Typescript",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "TypeScript Fundamentals, v3",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_twelve_typescript_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$k), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$l), {}, {})}`;
 });
 var draftWeekTwelveTypescript_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_twelve_typescript_svelte,
-  metadata: metadata$k,
+  metadata: metadata$l,
   load: load$2
 });
-var metadata$j = {
+var metadata$k = {
   "title": "Week Six - Code Transformation with ASTs",
   "created": "2021-12-05T00:00:00.000Z",
   "summary": "Javascript Code Transformation and Linting with ASTs",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_six_code_transformation_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$j), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$k), {}, {
     default: () => `<h2 id="${"what-is-it"}"><a href="${"#what-is-it"}">What is it</a></h2>
 <p>Abstract Syntax Trees. </p>
 <blockquote><p>An AST is the result of parsing code. For JavaScript, an AST is a JavaScript object containing a tree representation of your source. Before we use it, we have to create it. Depending on the code we are parsing, we choose the appropriate parser.</p></blockquote>
@@ -16795,17 +17098,17 @@ var weekSixCodeTransformation_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_six_code_transformation_svelte,
-  metadata: metadata$j,
+  metadata: metadata$k,
   load: load$2
 });
-var metadata$i = {
+var metadata$j = {
   "title": "Week Three - Intro to Dev Tools",
   "created": "2021-11-06T00:00:00.000Z",
   "summary": "Introduction to Dev Tools, v3",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_three_intro_dev_tools_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$i), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$j), {}, {
     default: () => `<p><a href="${"https://github.com/jkup/mastering-chrome-devtools"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/jkup/mastering-chrome-devtools</a></p>
 <h2 id="${"elements-tab"}"><a href="${"#elements-tab"}">Elements tab</a></h2>
 <figure><img src="${"https://i.imgur.com/lck2C4c.png"}"></figure>
@@ -16891,17 +17194,17 @@ var weekThreeIntroDevTools_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_three_intro_dev_tools_svelte,
-  metadata: metadata$i,
+  metadata: metadata$j,
   load: load$2
 });
-var metadata$h = {
+var metadata$i = {
   "title": "Week Five - JS Object Oriented",
   "created": "2021-11-27T00:00:00.000Z",
   "summary": "The Hard Parts of Object Oriented JavaScript",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_five_hard_parts_ooj_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$h), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$i), {}, {
     default: () => `<h2 id="${"intro"}"><a href="${"#intro"}">Intro</a></h2>
 <p>Slides: <a href="${"https://static.frontendmasters.com/resources/2018-10-03-javascript-hard-parts-oop/javascript-hard-parts-oop.pdf"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://static.frontendmasters.com/resources/2018-10-03-javascript-hard-parts-oop/javascript-hard-parts-oop.pdf</a></p>
 <p>OOJ is a way to organize our code as it gets more complex, so it\u2019s not procedure.</p>
@@ -17486,17 +17789,17 @@ var weekFiveHardPartsOoj_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_five_hard_parts_ooj_svelte,
-  metadata: metadata$h,
+  metadata: metadata$i,
   load: load$2
 });
-var metadata$g = {
+var metadata$h = {
   "title": "Week Eight - CSS In Depth",
   "created": "2021-12-21T00:00:00.000Z",
   "summary": "CSS In-Depth, v2",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_eight_css_in_depth_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$g), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$h), {}, {
     default: () => `<p>CSS In-Depth, v2
 Estelle Weyl
 Slides: <a href="${"https://estelle.github.io/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://estelle.github.io/</a></p>
@@ -17777,17 +18080,17 @@ var weekEightCssInDepth_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_eight_css_in_depth_svelte,
-  metadata: metadata$g,
+  metadata: metadata$h,
   load: load$2
 });
-var metadata$f = {
+var metadata$g = {
   "title": "Vue Mastery - Vue 3 Forms",
   "created": "2021-11-14T00:00:00.000Z",
   "summary": "Vue Mastery Vue 3 Forms",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Vue_mastery_vue3_forms_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$f), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$g), {}, {
     default: () => `<h2 id="${"vue-3-forms"}"><a href="${"#vue-3-forms"}">Vue 3 Forms</a></h2>
 <p>Source: <a href="${"https://www.vuemastery.com/courses/vue3-forms/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.vuemastery.com/courses/vue3-forms/</a></p>
 <h3 id><a href="${"#"}"></a></h3>
@@ -17829,6 +18132,126 @@ var vueMasteryVue3Forms_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Vue_mastery_vue3_forms_svelte,
+  metadata: metadata$g,
+  load: load$2
+});
+var metadata$f = {
+  "title": "Week Eleven - Full Stack",
+  "created": "2022-01-22T00:00:00.000Z",
+  "summary": "Full Stack for Front-end Engineers, V2",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_eleven_full_stack_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$f), {}, {
+    default: () => `<p>Jem Young
+<a href="${"https://frontendmasters.com/courses/fullstack-v2/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/fullstack-v2/</a></p>
+<h2 id="${"server-setup"}"><a href="${"#server-setup"}">Server Setup</a></h2>
+<p>Make sure you key is avtive</p>
+<p>Make sure key is active
+<code>$vi ~/.ssh/config</code></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">Host *
+AddKeysTAgent yes
+UseKeychain yes</code>`}<!-- HTML_TAG_END --></pre>
+<p>Add private key
+<code>ssh-add -K ~/.ssh/fsfe</code></p>
+<p>You don\u2019t want to</p>
+<p><code>sudo su</code> because that will give you superpowers and not warn you. Which means you can destroy roots.</p>
+<p><code>whoami</code></p>
+<p>root</p>
+<p>CNAME = Canonical name</p>
+<h2 id="${"server-setup-1"}"><a href="${"#server-setup-1"}">Server setup</a></h2>
+<p>To set up a user that has root-like powers, but isn\u2019t root.</p>
+<ol class="${"list"}"><li><p><code>apt update</code> // Update software</p></li>
+<li><p><code>apt upgrade</code></p></li>
+<li><p><code>addUser $USERNAME</code> // Create user</p></li>
+<li><p><code>usermod -aG sudo $USERNAME</code> // add to sudo group</p></li>
+<li><p><code>su $USERNAME</code> // switch user</p></li>
+<li><p><code>sudo cat /var/log/auth.log</code> // check if successful</p></li></ol>
+<p>It\u2019s people who are trying to log into the server.</p>
+<ol start="${"7"}" class="${"list"}"><li><p><code>vi ~/.ssh/authorized_key</code>
+// create authorized_key file and paste the PUBLIC key</p></li>
+<li><p><code>chmod 644 ~/.ssh/authorized_keys</code> // change file permissions. </p></li>
+<li><p><code>sudo vi /etc/ssh/sshd_config</code> disable root login</p></li></ol>
+<p><code>head</code> gives you the top 10 lines of the file
+<code>tail</code> gives you the last 10 lines of the file</p>
+<p>Security above Security
+It\u2019s like making your door smaller. It doesn\u2019t actually protect you. </p>
+<h2 id="${"application-architecture"}"><a href="${"#application-architecture"}">Application Architecture</a></h2>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">ui
+    css
+    js
+    html</code>`}<!-- HTML_TAG_END --></pre>
+<blockquote><p>[00:00:23] Let\u2019s talk about, briefly, application architecture. If you ask me what the difference is between a senior engineer and a junior engineer, I\u2019d say it\u2019s about architecture. It\u2019s not about code, it\u2019s about the architecture. Cuz in the long run, it\u2019s the architecture and application that will get you. It\u2019s how you arrange your files, how you arrange your code.</p></blockquote>
+<blockquote><p>[00:00:42] That sort of thing is we\u2019re thinking about long-term maintainability versus just, I\u2019m a hacker who solves bugs every day. That\u2019s more like a junior engineer, senior engineers think long-term. So when we set up an application architecture, remember, it will live for a long time, maybe years. So you want to make sure it\u2019s set up in a way that makes sense to you and everybody can agree on.</p></blockquote>
+<h3 id="${"when-to-install-globally"}"><a href="${"#when-to-install-globally"}">When to install globally?</a></h3>
+<p><code>npm -g stuff</code></p>
+<p>Speaker 2: What are the exceptions? When is it safe to use a global install?</p>
+<blockquote><p>Jem Young: When you need to run it globally from any directory. Because this isn\u2019t, let\u2019s say I had four or five other node applications running, I want pm2 to access all of that. So installing and locally wouldn\u2019t make as much sense because we didn\u2019t then we have to pipe everything into node modules, things like that.</p></blockquote>
+<blockquote><p>But that\u2019s an excellent point. You generally don\u2019t want to do things globally unless you have to. If you wanna run things globally but from the local directory you can use something called MPX. Which will look at first in your local and then move up. But in this case, we wanna run globally because its a process manager.</p></blockquote>
+<h3 id="${"mercurial"}"><a href="${"#mercurial"}">Mercurial</a></h3>
+<p>ADD TO TIL
+Everybody just knows Git? Fun fact, what does GitHub or not GitHub, I think Facebook uses SVN, Subversion, or is it Mercurial? Facebook uses a monorepo, they have one repository for all of their code at Facebook. Because Git literally can\u2019t handle as much code as they have. There\u2019s like a maximum limit on it.</p>
+<p>[00:00:55]
+And I think Google has their own custom repo version control as well. </p>
+<h2 id="${"server-security"}"><a href="${"#server-security"}">Server Security</a></h2>
+<p>Install Fail2Ban and ExpressJS scritpts</p>
+<h2 id="${"bash-commands"}"><a href="${"#bash-commands"}">Bash Commands</a></h2>
+<p>standard output, input, error
+stdout
+stdin
+stinerr </p>
+<p>Unix agreement</p>
+<p><code>/var/log</code> is typically where every software writes their log file.</p>
+<figure><img src="${"https://i.imgur.com/ZqVRHPc.png"}"></figure>
+<h2 id="${"nginx-config-basics"}"><a href="${"#nginx-config-basics"}">nginx config basics</a></h2>
+<blockquote><p>And we can set our compression levels to 1 through 9 I believe it is, I wouldn\u2019t mess too much with the compression levels. It\u2019s tempting to go all the way up to 9 or 11, if it were, [LAUGH] if anybody understands that joke.</p></blockquote>
+<blockquote><p>[00:07:43] But honestly, at this point you\u2019re trading off CPU power because it takes time to compress these things and run through the compression algorithms versus the amount of bytes you\u2019re saving. And 6 4 is a pretty good level where you\u2019re trading off speed for performance. Going any higher it\u2019s really tempting but you\u2019re honestly not saving that much.</p></blockquote>
+<blockquote><p>[00:08:02] There\u2019s more optimizations you can do down the line.</p></blockquote>
+<h2 id="${"why-is-security-so-important"}"><a href="${"#why-is-security-so-important"}">Why is security so important</a></h2>
+<blockquote><p>people wanna get in anyways just because they use it to build lots of nefarious things or just try to steal passwords, credit card information, things like that.</p></blockquote>
+<blockquote><blockquote><blockquote><p>Speaker 2: If you do the horrible thing of reusing your password, they have your password for other things.</p></blockquote></blockquote></blockquote>
+<p>We use SSH keys because you while you can reuse those, you can\u2019t steal unless you physically take someone\u2019s computer or their device.</p>
+<blockquote><blockquote><blockquote><p>Speaker 3: Redirect your site to them. Nefarious sites.
+Jem Young: Yeah, they can absolutely. They can say, I want to bankofusa.com. But it\u2019s actually not actually bankofusa.com to site that looks exactly like it because they can just copy your HTML and CSS and JS.</p></blockquote></blockquote></blockquote>
+<blockquote><p>Even better if you weren\u2019t using HTTPS, they can actually forward everything to the actual real site. So that the the people running the site don\u2019t know that it\u2019s broken and they\u2019re just stealing all the traffic in between.</p></blockquote>
+<p>[00:02:28]
+That is actually it\u2019s called a man in the middle attack.</p>
+<blockquote><blockquote><p>Speaker 2: They can kind of run their own server on your server and until you get banned.
+And then all of a sudden, your legit stuff is not working cuz your IPs are banned from services like a mailbot or something like that. Like when people\u2019s bridges were spamming the world.
+Jem Young: Yeah, they can lock you out of your own server. So that like all that data and all that time and code you put in, they can steal it and lock you out of it and you can\u2019t get it back.</p></blockquote></blockquote>
+<blockquote><blockquote><p>Jem Young: They can scrape your database, they can take all that credit card information or unencrypted passwords which today, people still leave unencrypted password in database.</p></blockquote></blockquote>
+<p>I\u2019ll use an MD5 hash.</p>
+<p>[00:03:45]
+But I\u2019ll just do it five times and I\u2019ll hash a password using MD5 which is a very breakable hashing mechanism. And I\u2019ll save that and it looks secure. But because the database wasn\u2019t locked down and the permission weren\u2019t locked down. They got into the database and you are like, it\u2019s okay because everything is still safe cuz it\u2019s encrypted and then they decrypted that.</p>
+<blockquote><blockquote><p>Speaker 2: Overloaded with requests.
+Jem Young: Yeah, so that\u2019s the end result, what they do is they could turn into what\u2019s known as a botnet. And that\u2019s just a program that they install a backdoor. They won\u2019t do anything. And in fact, if you\u2019re really good in Unix, you can delete all the logs.</p></blockquote></blockquote>
+<p>[00:05:06]
+So someone could break in, do a bunch of stuff, delete the logs that show that they ever were there which is pretty common. There\u2019s a script that will do it for you. And then they just turn into like a silent botnet and they might not do anything for months or even years.</p>
+<p>completely. The more nefarious ones, we\u2019re starting to see a lot more, is what is called cryptojacking or ransoming. So what they\u2019ll do is, Mark like you\u2019re saying earlier, they\u2019ll steal your database credentials, they\u2019ll encrypt all of them.</p>
+<p>[00:05:56]
+They\u2019ll encrypt your entire database which is, invaluable information and then they\u2019ll sell it back to you for money. Because they encrypted </p>
+<h2 id="${"security-checklist"}"><a href="${"#security-checklist"}">Security Checklist</a></h2>
+<blockquote><blockquote><p>Speaker 3: One of the most famous zero day things was Stuxnet, where our government or whoever attacked the Iran radioactive program or whatever, nuclear program. And then they used four zero day things as a worm to spread this worm into the facility, it\u2019s just crazy.
+Jem Young: Stuxnet is fascinating.
+[00:03:37]
+If you look at your auth log you see that there\u2019s people trying to break in your server right now. Stuxnet is a really interesting example. And it goes back to, what can someone do if they gain access to your server? So what Stuxnet did was they chained a bunch of zero day, so that is unpatched, unknown bugs.</p></blockquote></blockquote>
+<p>[00:03:54]
+And they usually start with some sort of a stack overflow or something like that, something innocuous. But if you can make a computer stack overflow, you can make it throw an error, and that error, you can control. And then once you start chaining those together, you can actually start doing something.</p>
+<p>[00:04:07]
+So even the most minor vulnerability can turn into something major if someone knows what they\u2019re doing. And what Stuxnet did was they planted software into, I wanna say it was the USB drives, that\u2019s how it started. Because this was a nuclear facility that refined uranium, or plutonium, probably uranium.</p>
+<p>[00:04:24]
+And they\u2019re like, okay, we know we\u2019re dealing with things that are really dangerous. We\u2019re not gonna connect to the Internet at all. So what Stuxnet did was they hooked up to someone\u2019s USB drive. So I don\u2019t know, a secretary or someone, so whenever they hacked their computer. So whenever they plugged in the USB drive, they dumped the software into that.</p>
+<p>[00:04:45]
+So when that person went to work and they plugged in that USB to, I don\u2019t know, watch movies or something, whatever people at nuclear facilities do, that now got on to their server. So even though that computer wasn\u2019t connected at all to the Internet, they now managed to infiltrate the entire network, which honestly is next level hacking.</p>
+<p>[00:05:03]
+If you can hack someone\u2019s server without actually being connected to it, that\u2019s like only something governments can achieve, or really, really, really big funded companies. But what they did was really subtle. They just turned off the controls for the things that refined uranium. So they just made them spin out of control.</p>
+<p>Certbot -&gt; it\u2019s a wrapper for Let\u2019s Encrypt, built by the EFF Free software foundation. </p>`
+  })}`;
+});
+var weekElevenFullStack_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_eleven_full_stack_svelte,
   metadata: metadata$f,
   load: load$2
 });
