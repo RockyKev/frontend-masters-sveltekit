@@ -1,6 +1,6 @@
 ---
-title: DRAFT Week Eleven - React
-created: 2020-12-21T00:00:00
+title: Week Eleven - React
+created: 2022-01-27T00:00:00
 summary: Complete Intro to React
 coverImageUrl: /media/projects/type-kana/session.jpg
 ---
