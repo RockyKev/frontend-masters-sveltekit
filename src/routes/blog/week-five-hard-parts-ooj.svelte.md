@@ -659,8 +659,6 @@ The `call()` function changes what this is pointed to.
 
 `otherObj.num++`
 
-
-ADD TO TIL:
 And if passes params to it if there's anything past the comma
 
 ```

@@ -101,7 +101,6 @@ Speaker 2: What are the exceptions? When is it safe to use a global install?
 > But that's an excellent point. You generally don't want to do things globally unless you have to. If you wanna run things globally but from the local directory you can use something called MPX. Which will look at first in your local and then move up. But in this case, we wanna run globally because its a process manager.
 
 ### Mercurial
-ADD TO TIL
 Everybody just knows Git? Fun fact, what does GitHub or not GitHub, I think Facebook uses SVN, Subversion, or is it Mercurial? Facebook uses a monorepo, they have one repository for all of their code at Facebook. Because Git literally can't handle as much code as they have. There's like a maximum limit on it.
 
 [00:00:55]

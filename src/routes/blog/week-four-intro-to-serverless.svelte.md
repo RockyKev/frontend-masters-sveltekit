@@ -567,7 +567,7 @@ async function handleSubmit(event) {
 
 ```
 
-Add to TIL:
+
 How to parse a JWT: https://jwt.io/
 
 Grab that bearer token. 
@@ -621,7 +621,6 @@ exports.handler = async (event, context) => {
 
 ## Use Cases & Q&A
 
-ADD TO TIL
 `killall node` - a sure fire way to kill everything.
 
 

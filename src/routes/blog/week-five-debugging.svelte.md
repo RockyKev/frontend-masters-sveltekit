@@ -185,7 +185,6 @@ It's a see-saw.
 
 ### Rule of 3
 
-ADD TO TIL:
 Refactoring: Improving the Design for
 
 The first time you run into a problem, solve it.

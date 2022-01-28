@@ -34,7 +34,6 @@ ls -l -a
 **BASH HISTORY**
 Your bash history is saved with up/down arrow keys. Which means you shouldn't save your passwords on it. 
 
-ADD TO TIL: 
 Ctrl+R - reverse-search history
 (left and right drops you back into your terminal)
 

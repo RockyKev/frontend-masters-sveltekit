@@ -138,7 +138,6 @@ _. will always respond with a object
 ## .map() Function
 
 
-HOT TIP add to TIL: 
 Very often the docs is running the code they are promoting,
 most libs have the lib live on their own site, so you can open up console.log and test it.
 `$[h1]`

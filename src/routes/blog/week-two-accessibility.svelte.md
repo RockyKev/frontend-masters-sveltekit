@@ -151,7 +151,6 @@ CSS Selectors
 
 **live regions**
 
-Add to TIL:
 If you had dynamic content that changes, and you want the screen reader to re-read things if it changes.
 
 `<div aria-live="assertive">Waiting for a ride</div>`
