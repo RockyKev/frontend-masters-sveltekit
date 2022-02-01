@@ -407,7 +407,7 @@ It can be described using the Pipe operator.
 
 OR, or AND -- 
 
-> In the same diagram above, if we wanted fruits that are also sour (Fruit AND Sour) we’d end up only getting { Lemon, Lime, Grapefruit }.
+> In the same diagram above, if we wanted fruits that are also sour (Fruit AND Sour) we’d end up only getting `{ Lemon, Lime, Grapefruit }`.
 
 
 ```

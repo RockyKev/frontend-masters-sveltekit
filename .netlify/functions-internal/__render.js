@@ -13622,9 +13622,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-f9a736ea.js",
+      file: assets + "/_app/start-eb40ff36.js",
       css: [assets + "/_app/assets/start-c446e5f0.css"],
-      js: [assets + "/_app/start-f9a736ea.js", assets + "/_app/chunks/vendor-2c44c089.js"]
+      js: [assets + "/_app/start-eb40ff36.js", assets + "/_app/chunks/vendor-2c44c089.js"]
     },
     fetched: void 0,
     floc: false,
@@ -13748,13 +13748,6 @@ var manifest = {
     },
     {
       type: "page",
-      pattern: /^\/blog\/draft-week-eleven-complete-intro-react\/?$/,
-      params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-eleven-complete-intro-react.svelte.md"],
-      b: ["src/routes/__error.svelte"]
-    },
-    {
-      type: "page",
       pattern: /^\/blog\/draft-week-twelve-functional-js-part-1\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md"],
@@ -13776,16 +13769,16 @@ var manifest = {
     },
     {
       type: "page",
-      pattern: /^\/blog\/draft-week-twelve-web-performance\/?$/,
+      pattern: /^\/blog\/draft-week-thirteen-intro-gatsby\/?$/,
       params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-twelve-web-performance.svelte.md"],
+      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-thirteen-intro-gatsby.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
       type: "page",
-      pattern: /^\/blog\/draft-week-thirteen-intro-gatsby\/?$/,
+      pattern: /^\/blog\/week-eleven-complete-intro-react\/?$/,
       params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-thirteen-intro-gatsby.svelte.md"],
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-eleven-complete-intro-react.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
@@ -13832,16 +13825,16 @@ var manifest = {
     },
     {
       type: "page",
-      pattern: /^\/blog\/draft-week-twelve-typescript\/?$/,
+      pattern: /^\/blog\/week-six-code-transformation\/?$/,
       params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/draft-week-twelve-typescript.svelte.md"],
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-six-code-transformation.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
       type: "page",
-      pattern: /^\/blog\/week-six-code-transformation\/?$/,
+      pattern: /^\/blog\/week-twelve-web-performance\/?$/,
       params: empty,
-      a: ["src/routes/__layout.svelte", "src/routes/blog/week-six-code-transformation.svelte.md"],
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-twelve-web-performance.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
@@ -13891,6 +13884,13 @@ var manifest = {
       pattern: /^\/blog\/week-six-js-hard-parts\/?$/,
       params: empty,
       a: ["src/routes/__layout.svelte", "src/routes/blog/week-six-js-hard-parts.svelte.md"],
+      b: ["src/routes/__error.svelte"]
+    },
+    {
+      type: "page",
+      pattern: /^\/blog\/week-twelve-typescript\/?$/,
+      params: empty,
+      a: ["src/routes/__layout.svelte", "src/routes/blog/week-twelve-typescript.svelte.md"],
       b: ["src/routes/__error.svelte"]
     },
     {
@@ -14054,9 +14054,6 @@ var module_lookup = {
   "src/routes/blog/draft-week-fourteen-functional-light-js.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekFourteenFunctionalLightJs_svelte;
   }),
-  "src/routes/blog/draft-week-eleven-complete-intro-react.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekElevenCompleteIntroReact_svelte;
-  }),
   "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekTwelveFunctionalJsPart1_svelte;
   }),
@@ -14066,11 +14063,11 @@ var module_lookup = {
   "src/routes/blog/draft-week-fourteen-react-storybook.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekFourteenReactStorybook_svelte;
   }),
-  "src/routes/blog/draft-week-twelve-web-performance.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekTwelveWebPerformance_svelte;
-  }),
   "src/routes/blog/draft-week-thirteen-intro-gatsby.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekThirteenIntroGatsby_svelte;
+  }),
+  "src/routes/blog/week-eleven-complete-intro-react.svelte.md": () => Promise.resolve().then(function() {
+    return weekElevenCompleteIntroReact_svelte;
   }),
   "src/routes/blog/draft-week-thirteen-build-game.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekThirteenBuildGame_svelte;
@@ -14090,11 +14087,11 @@ var module_lookup = {
   "src/routes/blog/week-four-intro-to-serverless.svelte.md": () => Promise.resolve().then(function() {
     return weekFourIntroToServerless_svelte;
   }),
-  "src/routes/blog/draft-week-twelve-typescript.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekTwelveTypescript_svelte;
-  }),
   "src/routes/blog/week-six-code-transformation.svelte.md": () => Promise.resolve().then(function() {
     return weekSixCodeTransformation_svelte;
+  }),
+  "src/routes/blog/week-twelve-web-performance.svelte.md": () => Promise.resolve().then(function() {
+    return weekTwelveWebPerformance_svelte;
   }),
   "src/routes/blog/week-three-intro-dev-tools.svelte.md": () => Promise.resolve().then(function() {
     return weekThreeIntroDevTools_svelte;
@@ -14116,6 +14113,9 @@ var module_lookup = {
   }),
   "src/routes/blog/week-six-js-hard-parts.svelte.md": () => Promise.resolve().then(function() {
     return weekSixJsHardParts_svelte;
+  }),
+  "src/routes/blog/week-twelve-typescript.svelte.md": () => Promise.resolve().then(function() {
+    return weekTwelveTypescript_svelte;
   }),
   "src/routes/blog/week-two-accessibility.svelte.md": () => Promise.resolve().then(function() {
     return weekTwoAccessibility_svelte;
@@ -14160,7 +14160,7 @@ var module_lookup = {
     return typeKana_svelte;
   })
 };
-var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-79e4c8a6.js", "css": ["assets/pages/__layout.svelte-df3fc26e.css"], "js": ["pages/__layout.svelte-79e4c8a6.js", "chunks/vendor-2c44c089.js", "chunks/stores-32a54f2b.js", "chunks/Logo-1cfb9048.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-a683aa11.js", "css": [], "js": ["pages/__error.svelte-a683aa11.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-a4187db2.js", "css": ["assets/pages/index.svelte-a8b03bef.css", "assets/Icon.svelte_svelte&type=style&lang-bab488b2.css"], "js": ["pages/index.svelte-a4187db2.js", "chunks/vendor-2c44c089.js", "chunks/Logo-1cfb9048.js", "chunks/Meta-2661041d.js"], "styles": [] }, "src/routes/playground.svelte": { "entry": "pages/playground.svelte-b22e1d43.js", "css": ["assets/pages/playground.svelte-50ac7720.css"], "js": ["pages/playground.svelte-b22e1d43.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/about/index.svelte": { "entry": "pages/about/index.svelte-3e5401ab.js", "css": ["assets/pages/about/index.svelte-cbd7d511.css", "assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/index.svelte-3e5401ab.js", "chunks/vendor-2c44c089.js", "pages/about/HiddenText.svelte-bea2d578.js"], "styles": [] }, "src/routes/about/HiddenText.svelte": { "entry": "pages/about/HiddenText.svelte-bea2d578.js", "css": ["assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/HiddenText.svelte-bea2d578.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-bb7708ee.js", "css": ["assets/pages/blog/index.svelte-ad438cd3.css"], "js": ["pages/blog/index.svelte-bb7708ee.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md": { "entry": "pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-building-applications-vue-nuxt.svelte.md": { "entry": "pages/blog/week-nine-building-applications-vue-nuxt.svelte.md-044132df.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-building-applications-vue-nuxt.svelte.md-044132df.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-functional-light-js.svelte.md": { "entry": "pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-eleven-complete-intro-react.svelte.md": { "entry": "pages/blog/draft-week-eleven-complete-intro-react.svelte.md-e318b896.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-eleven-complete-intro-react.svelte.md-e318b896.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md": { "entry": "pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-ten-production-grade-vue-part-2.svelte.md": { "entry": "pages/blog/week-ten-production-grade-vue-part-2.svelte.md-6b51f2a6.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-ten-production-grade-vue-part-2.svelte.md-6b51f2a6.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-react-storybook.svelte.md": { "entry": "pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-web-performance.svelte.md": { "entry": "pages/blog/draft-week-twelve-web-performance.svelte.md-4e3aa2de.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-web-performance.svelte.md-4e3aa2de.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-intro-gatsby.svelte.md": { "entry": "pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-build-game.svelte.md": { "entry": "pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-production-grade-vue.svelte.md": { "entry": "pages/blog/week-nine-production-grade-vue.svelte.md-6cc7825a.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-production-grade-vue.svelte.md-6cc7825a.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-ten-advanced-vue-features.svelte.md": { "entry": "pages/blog/week-ten-advanced-vue-features.svelte.md-84d8ae57.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-ten-advanced-vue-features.svelte.md-84d8ae57.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-ten-vuex-for-intermediate.svelte.md": { "entry": "pages/blog/week-ten-vuex-for-intermediate.svelte.md-18068083.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-ten-vuex-for-intermediate.svelte.md-18068083.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-linux-command.svelte.md": { "entry": "pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-linux-command.svelte.md-0b11dffc.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-intro-to-serverless.svelte.md": { "entry": "pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-intro-to-serverless.svelte.md-eb62cad1.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-typescript.svelte.md": { "entry": "pages/blog/draft-week-twelve-typescript.svelte.md-de6e6a2c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-typescript.svelte.md-de6e6a2c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-code-transformation.svelte.md": { "entry": "pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-dev-tools.svelte.md": { "entry": "pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-hard-parts-ooj.svelte.md": { "entry": "pages/blog/week-five-hard-parts-ooj.svelte.md-1cdda76c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-hard-parts-ooj.svelte.md-1cdda76c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eight-css-in-depth.svelte.md": { "entry": "pages/blog/week-eight-css-in-depth.svelte.md-81595579.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eight-css-in-depth.svelte.md-81595579.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/vue-mastery-vue3-forms.svelte.md": { "entry": "pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eleven-full-stack.svelte.md": { "entry": "pages/blog/week-eleven-full-stack.svelte.md-6ff2ca78.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eleven-full-stack.svelte.md-6ff2ca78.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-intro-to-vue.svelte.md": { "entry": "pages/blog/week-nine-intro-to-vue.svelte.md-a840bc7f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-intro-to-vue.svelte.md-a840bc7f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-js-hard-parts.svelte.md": { "entry": "pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-accessibility.svelte.md": { "entry": "pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-accessibility.svelte.md-82052fbd.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-js-functional.svelte.md": { "entry": "pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-js-functional.svelte.md-9ccc637c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-js-testing.svelte.md": { "entry": "pages/blog/week-five-js-testing.svelte.md-36258fff.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-js-testing.svelte.md-36258fff.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-debugging.svelte.md": { "entry": "pages/blog/week-five-debugging.svelte.md-ce7c6b84.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-debugging.svelte.md-ce7c6b84.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-nodejs-v2.svelte.md": { "entry": "pages/blog/week-four-nodejs-v2.svelte.md-a443d728.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-nodejs-v2.svelte.md-a443d728.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-javascript.svelte.md": { "entry": "pages/blog/week-one-javascript.svelte.md-a27291ec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-javascript.svelte.md-a27291ec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-seven-deep-js.svelte.md": { "entry": "pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-api-dev.svelte.md": { "entry": "pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-webdev.svelte.md": { "entry": "pages/blog/week-one-webdev.svelte.md-086e16a9.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-webdev.svelte.md-086e16a9.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-seo.svelte.md": { "entry": "pages/blog/week-three-seo.svelte.md-d64b209b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-seo.svelte.md-d64b209b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-css.svelte.md": { "entry": "pages/blog/week-one-css.svelte.md-48262997.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-css.svelte.md-48262997.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/work/index.svelte": { "entry": "pages/work/index.svelte-e7922153.js", "css": ["assets/pages/blog/index.svelte-ad438cd3.css"], "js": ["pages/work/index.svelte-e7922153.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/portfolio-site.svelte.md": { "entry": "pages/work/portfolio-site.svelte.md-e065602b.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/portfolio-site.svelte.md-e065602b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/type-kana.svelte.md": { "entry": "pages/work/type-kana.svelte.md-74b86795.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/type-kana.svelte.md-74b86795.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] } };
+var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-79e4c8a6.js", "css": ["assets/pages/__layout.svelte-df3fc26e.css"], "js": ["pages/__layout.svelte-79e4c8a6.js", "chunks/vendor-2c44c089.js", "chunks/stores-32a54f2b.js", "chunks/Logo-1cfb9048.js"], "styles": [] }, "src/routes/__error.svelte": { "entry": "pages/__error.svelte-a683aa11.js", "css": [], "js": ["pages/__error.svelte-a683aa11.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-a4187db2.js", "css": ["assets/pages/index.svelte-a8b03bef.css", "assets/Icon.svelte_svelte&type=style&lang-bab488b2.css"], "js": ["pages/index.svelte-a4187db2.js", "chunks/vendor-2c44c089.js", "chunks/Logo-1cfb9048.js", "chunks/Meta-2661041d.js"], "styles": [] }, "src/routes/playground.svelte": { "entry": "pages/playground.svelte-b22e1d43.js", "css": ["assets/pages/playground.svelte-50ac7720.css"], "js": ["pages/playground.svelte-b22e1d43.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/about/index.svelte": { "entry": "pages/about/index.svelte-3e5401ab.js", "css": ["assets/pages/about/index.svelte-cbd7d511.css", "assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/index.svelte-3e5401ab.js", "chunks/vendor-2c44c089.js", "pages/about/HiddenText.svelte-bea2d578.js"], "styles": [] }, "src/routes/about/HiddenText.svelte": { "entry": "pages/about/HiddenText.svelte-bea2d578.js", "css": ["assets/pages/about/HiddenText.svelte-d84c5211.css"], "js": ["pages/about/HiddenText.svelte-bea2d578.js", "chunks/vendor-2c44c089.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-bb7708ee.js", "css": ["assets/pages/blog/index.svelte-ad438cd3.css"], "js": ["pages/blog/index.svelte-bb7708ee.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-functional-js-part-2.svelte.md": { "entry": "pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-functional-js-part-2.svelte.md-8ded8cfa.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-building-applications-vue-nuxt.svelte.md": { "entry": "pages/blog/week-nine-building-applications-vue-nuxt.svelte.md-044132df.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-building-applications-vue-nuxt.svelte.md-044132df.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-functional-light-js.svelte.md": { "entry": "pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-functional-light-js.svelte.md-6c1adf4a.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-twelve-functional-js-part-1.svelte.md": { "entry": "pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-twelve-functional-js-part-1.svelte.md-98436f17.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-ten-production-grade-vue-part-2.svelte.md": { "entry": "pages/blog/week-ten-production-grade-vue-part-2.svelte.md-6b51f2a6.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-ten-production-grade-vue-part-2.svelte.md-6b51f2a6.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-fourteen-react-storybook.svelte.md": { "entry": "pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-fourteen-react-storybook.svelte.md-ca3f3a09.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-intro-gatsby.svelte.md": { "entry": "pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-intro-gatsby.svelte.md-502bfbea.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eleven-complete-intro-react.svelte.md": { "entry": "pages/blog/week-eleven-complete-intro-react.svelte.md-4be52785.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eleven-complete-intro-react.svelte.md-4be52785.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/draft-week-thirteen-build-game.svelte.md": { "entry": "pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/draft-week-thirteen-build-game.svelte.md-54746c24.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-production-grade-vue.svelte.md": { "entry": "pages/blog/week-nine-production-grade-vue.svelte.md-6cc7825a.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-production-grade-vue.svelte.md-6cc7825a.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-ten-advanced-vue-features.svelte.md": { "entry": "pages/blog/week-ten-advanced-vue-features.svelte.md-84d8ae57.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-ten-advanced-vue-features.svelte.md-84d8ae57.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-ten-vuex-for-intermediate.svelte.md": { "entry": "pages/blog/week-ten-vuex-for-intermediate.svelte.md-18068083.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-ten-vuex-for-intermediate.svelte.md-18068083.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-linux-command.svelte.md": { "entry": "pages/blog/week-three-intro-linux-command.svelte.md-7947a68c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-linux-command.svelte.md-7947a68c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-intro-to-serverless.svelte.md": { "entry": "pages/blog/week-four-intro-to-serverless.svelte.md-5d36a4e8.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-intro-to-serverless.svelte.md-5d36a4e8.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-code-transformation.svelte.md": { "entry": "pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-code-transformation.svelte.md-047709c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-twelve-web-performance.svelte.md": { "entry": "pages/blog/week-twelve-web-performance.svelte.md-1d27f5fe.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-twelve-web-performance.svelte.md-1d27f5fe.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-intro-dev-tools.svelte.md": { "entry": "pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-intro-dev-tools.svelte.md-4a7cd88f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-hard-parts-ooj.svelte.md": { "entry": "pages/blog/week-five-hard-parts-ooj.svelte.md-03738c49.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-hard-parts-ooj.svelte.md-03738c49.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eight-css-in-depth.svelte.md": { "entry": "pages/blog/week-eight-css-in-depth.svelte.md-81595579.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eight-css-in-depth.svelte.md-81595579.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/vue-mastery-vue3-forms.svelte.md": { "entry": "pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/vue-mastery-vue3-forms.svelte.md-fdbd0414.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-eleven-full-stack.svelte.md": { "entry": "pages/blog/week-eleven-full-stack.svelte.md-6c699692.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-eleven-full-stack.svelte.md-6c699692.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-nine-intro-to-vue.svelte.md": { "entry": "pages/blog/week-nine-intro-to-vue.svelte.md-a840bc7f.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-nine-intro-to-vue.svelte.md-a840bc7f.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-six-js-hard-parts.svelte.md": { "entry": "pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-six-js-hard-parts.svelte.md-6a02a349.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-twelve-typescript.svelte.md": { "entry": "pages/blog/week-twelve-typescript.svelte.md-70a2371b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-twelve-typescript.svelte.md-70a2371b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-accessibility.svelte.md": { "entry": "pages/blog/week-two-accessibility.svelte.md-5f0adc26.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-accessibility.svelte.md-5f0adc26.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-two-js-functional.svelte.md": { "entry": "pages/blog/week-two-js-functional.svelte.md-562e5617.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-two-js-functional.svelte.md-562e5617.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-js-testing.svelte.md": { "entry": "pages/blog/week-five-js-testing.svelte.md-36258fff.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-js-testing.svelte.md-36258fff.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-five-debugging.svelte.md": { "entry": "pages/blog/week-five-debugging.svelte.md-0033031c.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-five-debugging.svelte.md-0033031c.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-nodejs-v2.svelte.md": { "entry": "pages/blog/week-four-nodejs-v2.svelte.md-e5dad8e5.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-nodejs-v2.svelte.md-e5dad8e5.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-javascript.svelte.md": { "entry": "pages/blog/week-one-javascript.svelte.md-a27291ec.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-javascript.svelte.md-a27291ec.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-seven-deep-js.svelte.md": { "entry": "pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-seven-deep-js.svelte.md-d425528b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-four-api-dev.svelte.md": { "entry": "pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-four-api-dev.svelte.md-d48191c7.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-webdev.svelte.md": { "entry": "pages/blog/week-one-webdev.svelte.md-086e16a9.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-webdev.svelte.md-086e16a9.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-three-seo.svelte.md": { "entry": "pages/blog/week-three-seo.svelte.md-d64b209b.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-three-seo.svelte.md-d64b209b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/blog/week-one-css.svelte.md": { "entry": "pages/blog/week-one-css.svelte.md-48262997.js", "css": ["assets/_layout-7fb6e131.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/blog/week-one-css.svelte.md-48262997.js", "chunks/vendor-2c44c089.js", "chunks/_layout-94eccfc9.js", "chunks/dateTime-524e104e.js", "chunks/Meta-2661041d.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js"], "styles": [] }, "src/routes/work/index.svelte": { "entry": "pages/work/index.svelte-e7922153.js", "css": ["assets/pages/blog/index.svelte-ad438cd3.css"], "js": ["pages/work/index.svelte-e7922153.js", "chunks/vendor-2c44c089.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/portfolio-site.svelte.md": { "entry": "pages/work/portfolio-site.svelte.md-e065602b.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/portfolio-site.svelte.md-e065602b.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] }, "src/routes/work/type-kana.svelte.md": { "entry": "pages/work/type-kana.svelte.md-74b86795.js", "css": ["assets/Icon.svelte_svelte&type=style&lang-bab488b2.css", "assets/_layout-0e692698.css", "assets/Breadcrumbs-e5322790.css"], "js": ["pages/work/type-kana.svelte.md-74b86795.js", "chunks/vendor-2c44c089.js", "chunks/_layout-35f5b876.js", "chunks/Breadcrumbs-6e0091a4.js", "chunks/stores-32a54f2b.js", "chunks/dateTime-524e104e.js"], "styles": [] } };
 async function load_component(file) {
   const { entry, css: css2, js, styles } = metadata_lookup[file];
   return {
@@ -14274,9 +14274,7 @@ var cipher = /* @__PURE__ */ Object.freeze({
   ceasar
 });
 var get$3 = async () => {
-  const modules = Object.entries({ "./draft-week-eleven-complete-intro-react.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekElevenCompleteIntroReact_svelte;
-  }), "./draft-week-fourteen-functional-light-js.svelte.md": () => Promise.resolve().then(function() {
+  const modules = Object.entries({ "./draft-week-fourteen-functional-light-js.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekFourteenFunctionalLightJs_svelte;
   }), "./draft-week-fourteen-react-storybook.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekFourteenReactStorybook_svelte;
@@ -14288,14 +14286,12 @@ var get$3 = async () => {
     return draftWeekThirteenIntroGatsby_svelte;
   }), "./draft-week-twelve-functional-js-part-1.svelte.md": () => Promise.resolve().then(function() {
     return draftWeekTwelveFunctionalJsPart1_svelte;
-  }), "./draft-week-twelve-typescript.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekTwelveTypescript_svelte;
-  }), "./draft-week-twelve-web-performance.svelte.md": () => Promise.resolve().then(function() {
-    return draftWeekTwelveWebPerformance_svelte;
   }), "./vue-mastery-vue3-forms.svelte.md": () => Promise.resolve().then(function() {
     return vueMasteryVue3Forms_svelte;
   }), "./week-eight-css-in-depth.svelte.md": () => Promise.resolve().then(function() {
     return weekEightCssInDepth_svelte;
+  }), "./week-eleven-complete-intro-react.svelte.md": () => Promise.resolve().then(function() {
+    return weekElevenCompleteIntroReact_svelte;
   }), "./week-eleven-full-stack.svelte.md": () => Promise.resolve().then(function() {
     return weekElevenFullStack_svelte;
   }), "./week-five-debugging.svelte.md": () => Promise.resolve().then(function() {
@@ -14340,6 +14336,10 @@ var get$3 = async () => {
     return weekThreeIntroLinuxCommand_svelte;
   }), "./week-three-seo.svelte.md": () => Promise.resolve().then(function() {
     return weekThreeSeo_svelte;
+  }), "./week-twelve-typescript.svelte.md": () => Promise.resolve().then(function() {
+    return weekTwelveTypescript_svelte;
+  }), "./week-twelve-web-performance.svelte.md": () => Promise.resolve().then(function() {
+    return weekTwelveWebPerformance_svelte;
   }), "./week-two-accessibility.svelte.md": () => Promise.resolve().then(function() {
     return weekTwoAccessibility_svelte;
   }), "./week-two-js-functional.svelte.md": () => Promise.resolve().then(function() {
@@ -15405,45 +15405,29 @@ var draftWeekFourteenFunctionalLightJs_svelte = /* @__PURE__ */ Object.freeze({
   load: load$2
 });
 var metadata$x = {
-  "title": "DRAFT Week Eleven - React",
-  "created": "2020-12-21T00:00:00.000Z",
-  "summary": "Complete Intro to React",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_eleven_complete_intro_react_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$x), {}, {})}`;
-});
-var draftWeekElevenCompleteIntroReact_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_eleven_complete_intro_react_svelte,
-  metadata: metadata$x,
-  load: load$2
-});
-var metadata$w = {
   "title": "DRAFT Week Twelve - Functional JS Part 1",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Functional JavaScript First Steps (Part 1)",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_twelve_functional_js_part_1_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$w), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$x), {}, {})}`;
 });
 var draftWeekTwelveFunctionalJsPart1_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_twelve_functional_js_part_1_svelte,
-  metadata: metadata$w,
+  metadata: metadata$x,
   load: load$2
 });
-var metadata$v = {
+var metadata$w = {
   "title": "Week Ten - Production Grade Vue",
   "created": "2022-01-08T00:00:00.000Z",
   "summary": "Production-Grade Vue (Part 2)",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_ten_production_grade_vue_part_2_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$v), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$w), {}, {
     default: () => `<p>Ben Hong
 Netlify
 <a href="${"https://frontendmasters.com/courses/production-vue/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/production-vue/</a></p>
@@ -15678,81 +15662,605 @@ var weekTenProductionGradeVuePart2_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_ten_production_grade_vue_part_2_svelte,
-  metadata: metadata$v,
+  metadata: metadata$w,
   load: load$2
 });
-var metadata$u = {
+var metadata$v = {
   "title": "DRAFT Week Fourteen - React & Storybook",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Design Systems with React & Storybook",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_fourteen_react_storybook_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$u), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$v), {}, {})}`;
 });
 var draftWeekFourteenReactStorybook_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_fourteen_react_storybook_svelte,
-  metadata: metadata$u,
+  metadata: metadata$v,
   load: load$2
 });
-var metadata$t = {
-  "title": "DRAFT Week Twelve - Web Performance",
-  "created": "2020-12-21T00:00:00.000Z",
-  "summary": "Web Performance Fundamentals",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_twelve_web_performance_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$t), {}, {})}`;
-});
-var draftWeekTwelveWebPerformance_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_twelve_web_performance_svelte,
-  metadata: metadata$t,
-  load: load$2
-});
-var metadata$s = {
+var metadata$u = {
   "title": "DRAFT Week Thirteen - Intro to Gatsby",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Introduction to Gatsby, v2",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_thirteen_intro_gatsby_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$s), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$u), {}, {})}`;
 });
 var draftWeekThirteenIntroGatsby_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_thirteen_intro_gatsby_svelte,
-  metadata: metadata$s,
+  metadata: metadata$u,
   load: load$2
 });
-var metadata$r = {
+var metadata$t = {
+  "title": "Week Eleven - React",
+  "created": "2022-01-27T00:00:00.000Z",
+  "summary": "Complete Intro to React",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_eleven_complete_intro_react_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$t), {}, {
+    default: () => `<h2 id="${"no-frills-react"}"><a href="${"#no-frills-react"}">No Frills React</a></h2>
+<p>Dan Abramov </p>
+<p>SLIDES: <a href="${"https://btholt.github.io/complete-intro-to-react-v6/pure-react"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://btholt.github.io/complete-intro-to-react-v6/pure-react</a></p>
+<p>REPO: <a href="${"https://github.com/btholt/complete-intro-to-react-v6"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/btholt/complete-intro-to-react-v6</a></p>
+<p>In VS code, you can <code>html.5</code> in a html file to scaffold the page automatically.</p>
+<p>The goal of this course. Before we go into the tools, let\u2019s go into the details. So how <code>create-react-app</code> works.</p>
+<p>When importing react scripts:
+You need both <code>react</code> and <code>react-dom</code>.</p>
+<blockquote><p>You need both packages because react requires two packages to render. React is like the high level API all react works relatively the same way. And then react DOM is actually the underlying line library that interacts with the DOM right? I\u2019m sure many of you have heard of React Native, right? So React Native uses both React and React Native, that\u2019s why you need both of those.</p></blockquote>
+<figure><img src="${"https://i.imgur.com/gz6ZDJh.png"}"></figure>
+<blockquote><p>I guess the story for that people wanna know is there\u2019s internals that React has and the React team previously had directly used those. So Facebook.com was using private APIs, and so they made this thing here that they said, do not use it or you will be fired at Facebook.</p></blockquote>
+<p>SLIDES: <a href="${"https://btholt.github.io/complete-intro-to-react-v6/components"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://btholt.github.io/complete-intro-to-react-v6/components</a></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>
+    <span class="token string">"div"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> 
+    React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"h1"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> id<span class="token operator">:</span> <span class="token string">"logo"</span> <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token string">"Adopt Me!"</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>This is the default React instance. </p>
+<p>In JSX, it\u2019s actually required to capitalize your component names. </p>
+<p><code>React.createElement(ELEMENT NAME, ELEMENT ATTRIBUTES/PROPS, DATA)</code></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// const Pet = () => &#123;</span>
+<span class="token comment">//   return </span>
+<span class="token comment">//     React.createElement("div", &#123;&#125;, [</span>
+<span class="token comment">//       React.createElement("h2", &#123;&#125;, "Luna"),</span>
+<span class="token comment">//       React.createElement("h3", &#123;&#125;, "Dog"),</span>
+<span class="token comment">//       React.createElement("h3", &#123;&#125;, "Havanese"),</span>
+<span class="token comment">//     ])</span>
+<span class="token comment">// &#125;</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">Pet</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> 
+    React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+      React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"h2"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> props<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"h3"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> props<span class="token punctuation">.</span>animal<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"h3"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> props<span class="token punctuation">.</span>breed<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+
+
+<span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>
+    <span class="token string">"div"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> 
+    React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"h1"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> id<span class="token operator">:</span> <span class="token string">"logo"</span> <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token string">"Adopt Me!"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>Pet<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> name<span class="token operator">:</span> <span class="token string">"Luna"</span><span class="token punctuation">,</span> animal<span class="token operator">:</span> <span class="token string">"Dog"</span><span class="token punctuation">,</span> breed<span class="token operator">:</span> <span class="token string">"Havanese"</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>Pet<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span>name<span class="token operator">:</span> <span class="token string">"Pepper"</span><span class="token punctuation">,</span> animal<span class="token operator">:</span> <span class="token string">"Bird"</span><span class="token punctuation">,</span> breed<span class="token operator">:</span> <span class="token string">"Cockatiel"</span> <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>Pet<span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> name<span class="token operator">:</span> <span class="token string">"Sudo"</span><span class="token punctuation">,</span> animal<span class="token operator">:</span> <span class="token string">"Dog"</span><span class="token punctuation">,</span> breed<span class="token operator">:</span> <span class="token string">"Terrier"</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span><span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"javascript-tools"}"><a href="${"#javascript-tools"}">JavaScript Tools</a></h2>
+<h3 id="${"prettier"}"><a href="${"#prettier"}">PRETTIER</a></h3>
+<p>To add Prettier:</p>
+<ol class="${"list"}"><li><p><code>npm i -D prettier</code></p></li>
+<li><p>create <code>.prettierrc</code>  file</p></li></ol>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// .prettierrc</span>
+<span class="token comment">// just a empty object</span>
+<span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<ol start="${"3"}" class="${"list"}"><li>Update your scripts</li></ol>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
+<span class="token string">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+  <span class="token string">"format"</span><span class="token operator">:</span> <span class="token string">"prettier --write "src/**/*.&#123;js,jsx&#125;""</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>If you want prettier to work within a project, you\u2019ll have to install it there. Not use VScode\u2019s default.</p>
+<p>VS Code way - get the extention then change the prettier settings.</p>
+<h3 id="${"eslint"}"><a href="${"#eslint"}">ESLINT</a></h3>
+<ol class="${"list"}"><li><code>npm install -D eslint@7.18.0 eslint-config-prettier@8.1.0</code></li></ol>
+<p>You\u2019ll also need to add these:
+<code>npm install -D eslint-plugin-import@2.22.1 eslint-plugin-jsx-a11y@6.4.1 eslint-plugin-react@7.22.0</code></p>
+<p>And finally here:
+<code>npm install -D eslint-plugin-react-hooks@4.2.0</code></p>
+<ol start="${"2"}" class="${"list"}"><li>create a <code>eslintrc.json</code></li></ol>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// .eslintrc.json</span>
+<span class="token punctuation">&#123;</span>
+  <span class="token string">"extends"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"eslint:recommended"</span><span class="token punctuation">,</span>
+    <span class="token string">"plugin:import/errors"</span><span class="token punctuation">,</span>
+    <span class="token string">"plugin:react/recommended"</span><span class="token punctuation">,</span>
+    <span class="token string">"plugin:jsx-a11y/recommended"</span><span class="token punctuation">,</span>
+    <span class="token string">"plugin:react-hooks/recommended"</span><span class="token punctuation">,</span>    
+    <span class="token string">"prettier"</span><span class="token punctuation">,</span> <span class="token comment">// has to go last</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">"rules"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token string">"react/prop-types"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token string">"react/react-in-jsx-scope"</span><span class="token operator">:</span> <span class="token number">0</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token string">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"react"</span><span class="token punctuation">,</span> <span class="token string">"import"</span><span class="token punctuation">,</span> <span class="token string">"jsx-ally"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">"parserOptions"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token string">"ecmaVersion"</span><span class="token operator">:</span> <span class="token number">2021</span><span class="token punctuation">,</span>
+    <span class="token string">"sourceType"</span><span class="token operator">:</span> <span class="token string">"module"</span><span class="token punctuation">,</span>
+    <span class="token string">"ecmaFeatures"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token string">"jsx"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token string">"env"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token string">"es6"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">"browser"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">"node"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token string">"settings"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token string">"react"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token string">"version"</span><span class="token operator">:</span> <span class="token string">"detect"</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<ol start="${"3"}" class="${"list"}"><li>Add a script</li></ol>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token string">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+  <span class="token string">"format"</span><span class="token operator">:</span> <span class="token string">"prettier --write "src/**/*.&#123;js,jsx&#125;""</span>
+  <span class="token string">"lint"</span><span class="token operator">:</span> <span class="token string">"eslint "src/**/*.&#123;js,jsx&#125;" --quiet"</span>  
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<ol start="${"4"}" class="${"list"}"><li>If you got a errors from the linter, put this on top of your react files</li></ol>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">/* global React ReactDOM */</span></code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"npm"}"><a href="${"#npm"}">NPM</a></h3>
+<p><code>package-lock.json</code> is to share libs with a project and ensure it\u2019s exactly the same with everyone.</p>
+<p>So remember that devDependencies are only for things your project needs.
+Where dependencies are built into the project.</p>
+<h3 id="${"parcel"}"><a href="${"#parcel"}">Parcel</a></h3>
+<p>Bundler for Javascript, like Webpack.</p>
+<p>Parcel is kinda smart and can do a lot of defaults. </p>
+<p><code>npm install -D parcel@1.12.3</code></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token string">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span>
+  <span class="token string">"format"</span><span class="token operator">:</span> <span class="token string">"prettier --write "src/**/*.&#123;js,jsx&#125;""</span>
+  <span class="token string">"lint"</span><span class="token operator">:</span> <span class="token string">"eslint "src/**/*.&#123;js,jsx&#125;" --quiet"</span><span class="token punctuation">,</span>
+  <span class="token string">"build"</span><span class="token operator">:</span> <span class="token string">"parcel src/index.html"</span>  
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>It just knows to dig through index.html and get everything.</p>
+<p>It even comes with hot module reload.</p>
+<h3 id="${"babel"}"><a href="${"#babel"}">Babel</a></h3>
+<p>TIL - the diff between compile vs translation</p>
+<blockquote><p>One of my favorite tools again being an infrastructure is Babel. I just like it. Probably a glutton for punishment, I suppose. But it\u2019s a transpiler tool. It takes code that looks one way and it makes it look a different way. And that\u2019s really the some of the store it\u2019s not a compiler, right?.</p></blockquote>
+<blockquote><p>You\u2019re not taking like a C++ source code and compiling it to a binary. That\u2019s compilation translation is, I have a set of source code and I\u2019m making it just different source code. So, Babel is already working for us underneath the hood. One of the things that it does for us, you can write things in es 2021, and it\u2019ll transpile Harder for you to IES 2015.</p></blockquote>
+<ol class="${"list"}"><li><p><code>npm install -D @babel/core@7.12.16 @babel/preset-react@7.12.13</code></p></li>
+<li><p><code>.babelrc</code></p></li></ol>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token punctuation">&#123;</span>
+  <span class="token string">"presets"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">"@babel/preset-react"</span><span class="token punctuation">,</span>
+      <span class="token punctuation">&#123;</span>
+        <span class="token string">"runtime"</span><span class="token operator">:</span> <span class="token string">"automatic"</span>
+      <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">"browserslist"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token comment">// " > 25%", </span>
+    <span class="token comment">// "IE11",</span>
+    <span class="token string">"last 2 Chrome versions"</span><span class="token punctuation">,</span> <span class="token comment">// you can also do last 2 Firefox versions</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>TIL:
+<a href="${"https://browserslist.dev/?q=bGFzdCA0IHZlcnNpb25z"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://browserslist.dev/?q=bGFzdCA0IHZlcnNpb25z</a></p>
+<ol start="${"3"}" class="${"list"}"><li>You shouldn\u2019t ship your map stuff to production.</li></ol>
+<h2 id="${"core-react-concepts"}"><a href="${"#core-react-concepts"}">Core React Concepts</a></h2>
+<h3 id="${"jsx"}"><a href="${"#jsx"}">JSX</a></h3>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// JS version</span>
+<span class="token keyword">const</span> <span class="token function-variable function">Pet</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">props</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> 
+    React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+      React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"h2"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> props<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"h3"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> props<span class="token punctuation">.</span>animal<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      React<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"h3"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span> props<span class="token punctuation">.</span>breed<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+
+
+<span class="token comment">// JSX version</span>
+<span class="token keyword">const</span> <span class="token function-variable function">Pet</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span>h2<span class="token operator">></span><span class="token punctuation">&#123;</span>props<span class="token punctuation">.</span>name<span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
+      <span class="token operator">&lt;</span>h2<span class="token operator">></span><span class="token punctuation">&#123;</span>props<span class="token punctuation">.</span>animal<span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
+      <span class="token operator">&lt;</span>h2<span class="token operator">></span><span class="token punctuation">&#123;</span>props<span class="token punctuation">.</span>breed<span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>      
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+
+  <span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"hooks"}"><a href="${"#hooks"}">Hooks</a></h3>
+<p>SLIDES: <a href="${"https://btholt.github.io/complete-intro-to-react-v6/hooks"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://btholt.github.io/complete-intro-to-react-v6/hooks</a></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> useState <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">const</span> <span class="token constant">ANIMALS</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"bird"</span><span class="token punctuation">,</span> <span class="token string">"cat"</span><span class="token punctuation">,</span> <span class="token string">"dog"</span><span class="token punctuation">,</span> <span class="token string">"fish"</span><span class="token punctuation">,</span> <span class="token string">"horse"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// SearchParams.js</span>
+<span class="token keyword">const</span> <span class="token function-variable function">SearchParams</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+  <span class="token comment">// this won't work. It's always rendering this, without a onChange.</span>
+  <span class="token comment">// const location = "Seattle, WA";</span>
+
+  <span class="token comment">// instead, switch to hooks</span>
+    <span class="token keyword">const</span> locationTuple <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Seattle, WA"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> location <span class="token operator">=</span> locationTuple<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    <span class="token keyword">const</span> setLocation <span class="token operator">=</span> locationTuple<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+
+    <span class="token comment">// Destructured</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span> location<span class="token punctuation">,</span> setLocation <span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Seattle, WA"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span> animal<span class="token punctuation">,</span> setAnimal <span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"search-params"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>form<span class="token operator">></span>
+        <span class="token operator">&lt;</span>label htmlFor<span class="token operator">=</span><span class="token string">"location"</span><span class="token operator">></span>
+          Location 
+                  <span class="token operator">&lt;</span>input id<span class="token operator">=</span><span class="token string">"location"</span> 
+                    onChange<span class="token operator">=</span><span class="token punctuation">&#123;</span> <span class="token parameter">e</span> <span class="token operator">=></span> <span class="token function">setLocation</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token punctuation">&#125;</span> 
+                    value<span class="token operator">=</span><span class="token punctuation">&#123;</span>location<span class="token punctuation">.</span><span class="token function">toUppercase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span> placeholder<span class="token operator">=</span><span class="token string">"Location"</span> <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">></span>
+
+
+        <span class="token operator">&lt;</span>label htmlFor<span class="token operator">=</span><span class="token string">"animal"</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>select
+            id<span class="token operator">=</span><span class="token string">"animal"</span>
+            value<span class="token operator">=</span><span class="token punctuation">&#123;</span>animal<span class="token punctuation">&#125;</span>
+            onChange<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token parameter">e</span> <span class="token operator">=></span> <span class="token function">setAnimal</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">&#125;</span>
+            onBlue<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token parameter">e</span> <span class="token operator">=></span> <span class="token function">setAnimal</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">&#125;</span>          
+            <span class="token operator">></span>
+
+            <span class="token punctuation">&#123;</span> <span class="token constant">ANIMALS</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">animal</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+                <span class="token keyword">return</span> <span class="token punctuation">(</span>
+                  <span class="token operator">&lt;</span>option value<span class="token operator">=</span><span class="token punctuation">&#123;</span>animal<span class="token punctuation">&#125;</span> key<span class="token operator">=</span><span class="token punctuation">&#123;</span>animal<span class="token punctuation">&#125;</span><span class="token operator">></span>
+                    <span class="token punctuation">&#123;</span>animal<span class="token punctuation">&#125;</span>
+                  <span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">></span>
+                <span class="token punctuation">)</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">)</span> 
+            <span class="token punctuation">&#125;</span>
+
+
+          <span class="token operator">&lt;</span><span class="token operator">/</span>select<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">></span>
+
+        <span class="token operator">&lt;</span>button<span class="token operator">></span>Submit<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>form<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/fvF9tQT.png"}"></figure>
+<p>Never ever do this.
+Never put hooks inside of conditionals like ifs, or for loops.</p>
+<p>It\u2019s called hooks because the </p>
+<figure><img src="${"https://i.imgur.com/XCZ3jqP.png"}"></figure>
+<h3 id="${"useeffect--fetching-api-data"}"><a href="${"#useeffect--fetching-api-data"}">useEffect &amp; Fetching API data</a></h3>
+<p><a href="${"https://btholt.github.io/complete-intro-to-react-v6/useeffect"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://btholt.github.io/complete-intro-to-react-v6/useeffect</a></p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> useState<span class="token punctuation">,</span> useEffect <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> Pet <span class="token keyword">from</span> <span class="token string">"./Pet"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token constant">ANIMALS</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"bird"</span><span class="token punctuation">,</span> <span class="token string">"cat"</span><span class="token punctuation">,</span> <span class="token string">"dog"</span><span class="token punctuation">,</span> <span class="token string">"fish"</span><span class="token punctuation">,</span> <span class="token string">"horse"</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">// SearchParams.js</span>
+<span class="token keyword">const</span> <span class="token function-variable function">SearchParams</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+    <span class="token comment">// Destructured</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span> location<span class="token punctuation">,</span> setLocation <span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">"Seattle, WA"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span> animal<span class="token punctuation">,</span> setAnimal <span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token punctuation">[</span>pets<span class="token punctuation">,</span> setPets<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+  <span class="token comment">// if you didn't add the [], it'll run every single render. By adding a [], which is once. </span>
+  <span class="token comment">// Or you can do [animal], if animal changes.</span>
+  <span class="token function">useEffect</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+      <span class="token function">requestPets</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+
+  <span class="token comment">// </span>
+  <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">requestPets</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>
+      <span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">http://pets-v2.dev-apis.com/pets?=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>animal<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">&amp;location=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>location<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token string">&amp;breed=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>breed<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span>
+    <span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> json <span class="token operator">=</span> <span class="token keyword">await</span> res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// once json exists, it'll then pass it to setPets, which updates the state.</span>
+    <span class="token function">setPets</span><span class="token punctuation">(</span>json<span class="token punctuation">.</span>pets<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"search-params"</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>form<span class="token operator">></span>
+        <span class="token operator">&lt;</span>label htmlFor<span class="token operator">=</span><span class="token string">"location"</span><span class="token operator">></span>
+          Location 
+                  <span class="token operator">&lt;</span>input id<span class="token operator">=</span><span class="token string">"location"</span> 
+                    onChange<span class="token operator">=</span><span class="token punctuation">&#123;</span> <span class="token parameter">e</span> <span class="token operator">=></span> <span class="token function">setLocation</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span> <span class="token punctuation">&#125;</span> 
+                    value<span class="token operator">=</span><span class="token punctuation">&#123;</span>location<span class="token punctuation">.</span><span class="token function">toUppercase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span> placeholder<span class="token operator">=</span><span class="token string">"Location"</span> <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">></span>
+
+
+        <span class="token operator">&lt;</span>label htmlFor<span class="token operator">=</span><span class="token string">"animal"</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>select
+            id<span class="token operator">=</span><span class="token string">"animal"</span>
+            value<span class="token operator">=</span><span class="token punctuation">&#123;</span>animal<span class="token punctuation">&#125;</span>
+            onChange<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token parameter">e</span> <span class="token operator">=></span> <span class="token function">setAnimal</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">&#125;</span>
+            onBlue<span class="token operator">=</span><span class="token punctuation">&#123;</span><span class="token parameter">e</span> <span class="token operator">=></span> <span class="token function">setAnimal</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">&#125;</span>          
+            <span class="token operator">></span>
+
+            <span class="token punctuation">&#123;</span> <span class="token constant">ANIMALS</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">animal</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+                <span class="token keyword">return</span> <span class="token punctuation">(</span>
+                  <span class="token operator">&lt;</span>option value<span class="token operator">=</span><span class="token punctuation">&#123;</span>animal<span class="token punctuation">&#125;</span> key<span class="token operator">=</span><span class="token punctuation">&#123;</span>animal<span class="token punctuation">&#125;</span><span class="token operator">></span>
+                    <span class="token punctuation">&#123;</span>animal<span class="token punctuation">&#125;</span>
+                  <span class="token operator">&lt;</span><span class="token operator">/</span>option<span class="token operator">></span>
+                <span class="token punctuation">)</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">)</span> 
+            <span class="token punctuation">&#125;</span>
+
+          <span class="token operator">&lt;</span><span class="token operator">/</span>select<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">></span>
+
+        <span class="token operator">&lt;</span>button<span class="token operator">></span>Submit<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>form<span class="token operator">></span>
+
+
+<span class="token punctuation">&#123;</span>
+  pets<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">pet</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>Pet
+        name<span class="token operator">=</span><span class="token punctuation">&#123;</span>pet<span class="token punctuation">.</span>name<span class="token punctuation">&#125;</span>
+        animal<span class="token operator">=</span><span class="token punctuation">&#123;</span>pet<span class="token punctuation">.</span>breed<span class="token punctuation">&#125;</span><span class="token operator">></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+
+  
+<span class="token punctuation">&#125;</span>
+
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>If you use <code>setTimeout</code> in <code>useEffect</code>, you should also clean up.</p>
+<figure><img src="${"https://i.imgur.com/O5nX5Wk.png"}"></figure>
+<h3 id="${"custom-hook"}"><a href="${"#custom-hook"}">Custom Hook</a></h3>
+<p>Say before you make a API call, you want to check if the data already exists.
+If it does, then it returns it.</p>
+<p>There\u2019s no specialness that happens. </p>
+<p>You shouldn\u2019t actually make a custom hook too frequently.
+But this becomes a black box. And it might be better to be search params.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> useState<span class="token punctuation">,</span> useEffect <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">"react"</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">useBreedList</span><span class="token punctuation">(</span><span class="token parameter">animal</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">const</span> <span class="token punctuation">[</span> breedList<span class="token punctuation">,</span> setBreedList <span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// default empty	</span>
+	<span class="token keyword">const</span> <span class="token punctuation">[</span> status<span class="token punctuation">,</span> setStatus <span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">useState</span><span class="token punctuation">(</span><span class="token string">'unloaded'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// enum state</span>
+
+
+	<span class="token comment">// this will run every time the animal changes. </span>
+	<span class="token function">useEffect</span><span class="token punctuation">(</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+	
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>animal<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+			<span class="token function">setBreedList</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>localCache<span class="token punctuation">[</span>animal<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+			<span class="token function">setBreedList</span><span class="token punctuation">(</span>localCache<span class="token punctuation">[</span>animal<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+			<span class="token function">requestBreedList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+	
+	
+		<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">requestBreedList</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+
+			<span class="token comment">// reset breedlist </span>
+			<span class="token function">setBreedList</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			
+			<span class="token function">setStatus</span><span class="token punctuation">(</span><span class="token string">'loading'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			
+			<span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>
+				<span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">http://pets-v2.dev-apis.com/breeds?animal=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>animal<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span>
+			<span class="token punctuation">)</span>
+			
+			<span class="token keyword">const</span> json <span class="token operator">=</span> <span class="token keyword">await</span> res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			localCache<span class="token punctuation">[</span>animal<span class="token punctuation">]</span> <span class="token operator">=</span> json<span class="token punctuation">.</span>breeds <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+		
+			<span class="token function">setBreedList</span><span class="token punctuation">(</span>localCache<span class="token punctuation">[</span>animal<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token function">setStatus</span><span class="token punctuation">(</span><span class="token string">'loaded'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">&#125;</span>
+	
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>animal<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+	<span class="token keyword">return</span> <span class="token punctuation">[</span> breedlist<span class="token punctuation">,</span> status<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Handling User Input
+Event Handler: <a href="${"https://reactjs.org/docs/events.html#supported-events"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://reactjs.org/docs/events.html#supported-events</a></p>
+<p>Animation, touch events, copy events, UI events</p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html">&lt;form onSubmit=&#123; (e) => &#123;
+		e.preventDefault()
+		requestPets()
+	&#125;&#125; ></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/IVjvUnk.png"}"></figure>
+<p>It \u201Clooks\u201D like a native DOM event? Well no, it\u2019s a React Event. </p>
+<figure><img src="${"https://i.imgur.com/J9VOJ1c.png"}"></figure>
+<p>The <code>key</code> is keeping track of react changes.
+React does not allow you to create a prop called <code>key</code></p>
+<p>ADD TO TIL:
+<strong>Don\u2019t be clever with your props!</strong></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// BAD
+&lt;Pet &#123;...pet&#125; key=&#123;pet.id&#125;&gt;
+
+
+// GOOD
+&lt;Pet
+	animal=&#123;pet.animal&#125;
+	key=&#123;pet.id&#125;
+	name=&#123;pet.name&#125;
+	breed=&#123;pet.breed&#125;
+	images=&#123;pet.images&#125;
+/&gt;
+</code>`}<!-- HTML_TAG_END --></pre>
+<blockquote><p>[00:08:36] And let me tell you from deep experience with this problem, it makes us so much harder to read later. Because I\u2019ll come back here is like what the hell is pep getting? I don\u2019t know, right you become unable to understand. How the parent is interacting with the child by reading the code.</p></blockquote>
+<blockquote><p>So this is exactly what I\u2019m talking about is like the waters become very murky of what\u2019s going where and are we getting the right things in the right locations. So I wanted to show you because you\u2019re never really going to run into this because this looks so nice and so easy to type. But just don\u2019t do it believe me, having worked on a code base that did this a lot. It was incredibly frustrating to work with. Just stick to this, I know it\u2019s verbose and takes so many keystrokes in my fingers are so tired and please help me, but don\u2019t just, don\u2019t do it.</p></blockquote>
+<h3 id="${"dev-environment"}"><a href="${"#dev-environment"}">Dev Environment</a></h3>
+<p><code>NODE_ENV=development</code></p>
+<p>ADD TO TIL:
+Slack was shipping development mode for years, and saw a massive speed boost. </p>
+<p>RESEARCH: <a href="${"https://twitter.com/pankowecki/status/892294002040594434"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://twitter.com/pankowecki/status/892294002040594434</a>
+<a href="${"https://news.ycombinator.com/item?id=14899482"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://news.ycombinator.com/item?id=14899482</a></p>
+<p>Higher Order Component in React
+in the sense that it itself doesn\u2019t do anything, but it offers functionality to its children components.</p>
+<h2 id="${"react-capabilities"}"><a href="${"#react-capabilities"}">React Capabilities</a></h2>
+<p>React Router V3 -&gt; V4 -&gt; V5 is WILDLY different.
+But each new version is very powerful.</p>
+<h3 id="${"class-components"}"><a href="${"#class-components"}">Class Components</a></h3>
+<p>Hook vs class components
+class has lifecycle hooks </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> Component <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">&#123;</span> withRouter <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'react-router-dom'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// const Details = () => &#123;</span>
+<span class="token comment">//	return &lt;h2>hi lololol omg &lt;/h2></span>
+<span class="token comment">// &#125; </span>
+
+<span class="token keyword">class</span> <span class="token class-name">Details</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">&#123;</span>
+	<span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+		<span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// has to do it. Calls the Component Constructor</span>
+		
+		<span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">&#123;</span> loading<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">&#125;</span>
+	<span class="token punctuation">&#125;</span>
+
+	<span class="token comment">// it's kinda like useEffect </span>
+	<span class="token comment">// fetch all the data </span>
+	<span class="token keyword">async</span> <span class="token function">componentDidMount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+		<span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>	<span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">http://pets-v2.dev-apis.com/pets?id=&#123;this.props.match.params.id&#125;</span><span class="token template-punctuation string">&#96;</span></span>
+		<span class="token punctuation">)</span>
+	
+		<span class="token keyword">const</span> json <span class="token operator">=</span> <span class="token keyword">await</span> res<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		<span class="token comment">// this merges with your state</span>
+		<span class="token comment">// it ONLY overrides what you have. So it won't change things. </span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+			loading<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+			name<span class="token operator">:</span> json<span class="token punctuation">.</span>pets<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>name<span class="token punctuation">,</span> 
+			breed<span class="token operator">:</span> json<span class="token punctuation">.</span>pets<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>breed<span class="token punctuation">,</span>
+			<span class="token comment">// .. other stuff</span>
+	
+		<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		
+		<span class="token comment">// Or you can merge two objects together</span>
+		<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span>
+			Object<span class="token punctuation">.</span><span class="token function">Assign</span><span class="token punctuation">(</span>
+			<span class="token punctuation">&#123;</span>
+				loading<span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+			<span class="token punctuation">&#125;</span><span class="token punctuation">,</span> json<span class="token punctuation">.</span>pets<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>		
+			<span class="token punctuation">)</span>		
+		<span class="token punctuation">)</span>
+	
+	<span class="token punctuation">&#125;</span>
+
+	<span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>loading<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+			<span class="token keyword">return</span> <span class="token operator">&lt;</span>h2<span class="token operator">></span> Loading<span class="token operator">...</span><span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span><span class="token punctuation">;</span>
+	
+		<span class="token punctuation">&#125;</span>
+
+		<span class="token comment">// let's destructure the API </span>
+		<span class="token keyword">const</span> <span class="token punctuation">&#123;</span> animal<span class="token punctuation">,</span> breed<span class="token punctuation">,</span> city<span class="token punctuation">,</span> state<span class="token punctuation">,</span> description<span class="token punctuation">,</span> name <span class="token punctuation">&#125;</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">;</span>
+
+		<span class="token keyword">return</span> <span class="token punctuation">(</span>
+		
+		<span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"details"</span><span class="token operator">></span>
+
+			<span class="token operator">&lt;</span>div<span class="token operator">></span>
+				<span class="token operator">&lt;</span>h1<span class="token operator">></span><span class="token punctuation">&#123;</span>name<span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span>
+				<span class="token operator">&lt;</span>h2<span class="token operator">></span><span class="token punctuation">&#123;</span>&#96;$<span class="token punctuation">&#123;</span>animal<span class="token punctuation">&#125;</span> <span class="token operator">-</span> $<span class="token punctuation">&#123;</span>breed<span class="token punctuation">]</span><span class="token operator">...</span><span class="token punctuation">.</span><span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
+		
+		<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>		
+		<span class="token punctuation">)</span>
+	<span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">withRouter</span><span class="token punctuation">(</span>Details<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"class-properties"}"><a href="${"#class-properties"}">Class Properties</a></h3>
+<p>Follow this:
+<a href="${"https://btholt.github.io/complete-intro-to-react-v6/class-properties"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://btholt.github.io/complete-intro-to-react-v6/class-properties</a></p>
+<p>Configure your babel configs for this: </p>
+<p><code>npm i -D @babel/plugin-proposal-class-properties@7.13.0 @babel/preset-env@7.13.5 @babel/eslint-parser@7.13.4</code></p>
+<p>a quick way to clean out all of your cache.
+<code>rm -rf .cache dist</code></p>
+<p>ADD TO TIL
+By adding a + in front of a variable, it will coercion it into a number. </p>
+<figure><img src="${"https://i.imgur.com/PHEGAHc.png"}"></figure>
+<h2 id="${"special-case-react-tools"}"><a href="${"#special-case-react-tools"}">Special Case React Tools</a></h2>
+<h3 id="${"errors"}"><a href="${"#errors"}">Errors</a></h3>
+<p>So you can only do error boundries in React Component Classes.</p>
+<p>For example:
+If you fail grabbing an API, you can </p>
+<ol class="${"list"}"><li><p>do a error component that sends it to your error tracking tool.</p></li>
+<li><p>You can have it redirect back to your main page. </p></li></ol>
+<p>More info here: <a href="${"https://btholt.github.io/complete-intro-to-react-v6/error-boundaries"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://btholt.github.io/complete-intro-to-react-v6/error-boundaries</a></p>
+<h3 id="${"context"}"><a href="${"#context"}">Context</a></h3>
+<blockquote><p>So here we go. What is context? Context is like state, but instead of being confined to a component, it\u2019s global to your application. It\u2019s application-level state. This is dangerous. Avoid using context until you have to use it. One of React\u2019s primary benefit is it makes the flow of data obvious by being explicit. This can make it cumbersome at times but it\u2019s worth it because your code stays legible and understandable. Things like context obscure it.</p></blockquote>
+<blockquote><p>Context (mostly) replaces Redux. Well, typically. It fills the same need as Redux. I really can\u2019t see why you would need to use both. Use one or the other.</p></blockquote>
+<p>notes: <a href="${"https://btholt.github.io/complete-intro-to-react-v6/context"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://btholt.github.io/complete-intro-to-react-v6/context</a></p>
+<h3 id="${"portals-refs"}"><a href="${"#portals-refs"}">Portals, Refs</a></h3>
+<p>Portals have to show in front of you. </p>
+<p>In your root <code>html</code> file.</p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>modal<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Now modal can live ABOVE your file.</p>
+<figure><img src="${"https://i.imgur.com/fbB1FZz.png"}"></figure>`
+  })}`;
+});
+var weekElevenCompleteIntroReact_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_eleven_complete_intro_react_svelte,
+  metadata: metadata$t,
+  load: load$2
+});
+var metadata$s = {
   "title": "DRAFT Week Thirteen - Build a game",
   "created": "2020-12-21T00:00:00.000Z",
   "summary": "Complete Front-End Project -  Build a Game",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Draft_week_thirteen_build_game_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$r), {}, {})}`;
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$s), {}, {})}`;
 });
 var draftWeekThirteenBuildGame_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Draft_week_thirteen_build_game_svelte,
-  metadata: metadata$r,
+  metadata: metadata$s,
   load: load$2
 });
-var metadata$q = {
+var metadata$r = {
   "title": "Week Nine - Production Grade Vue",
   "created": "2022-01-05T00:00:00.000Z",
   "summary": "Production-Grade Vue (Part 1)",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_nine_production_grade_vue_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$q), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$r), {}, {
     default: () => `<p>Ben Hong
 Netlify
 <a href="${"https://frontendmasters.com/courses/production-vue/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/production-vue/</a></p>
@@ -15965,17 +16473,17 @@ var weekNineProductionGradeVue_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_nine_production_grade_vue_svelte,
-  metadata: metadata$q,
+  metadata: metadata$r,
   load: load$2
 });
-var metadata$p = {
+var metadata$q = {
   "title": "Week Ten - Advanced Vue",
   "created": "2022-01-10T00:00:00.000Z",
   "summary": "Advanced Vue.js Features from the Ground Up",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_ten_advanced_vue_features_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$p), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$q), {}, {
     default: () => `<p>Vue.js Features from the Ground Up</p>
 <p>COURSE: <a href="${"https://frontendmasters.com/courses/advanced-vue/introduction/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/advanced-vue/introduction/</a>
 Evan You</p>
@@ -16214,17 +16722,17 @@ var weekTenAdvancedVueFeatures_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_ten_advanced_vue_features_svelte,
-  metadata: metadata$p,
+  metadata: metadata$q,
   load: load$2
 });
-var metadata$o = {
+var metadata$p = {
   "title": "Week Ten - Vuex",
   "created": "2022-01-10T00:00:00.000Z",
   "summary": "Introduction to Vue 3",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_ten_vuex_for_intermediate_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$o), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$p), {}, {
     default: () => `<p>Divya Tagtachian</p>
 <p>REPO: <a href="${"https://github.com/shortdiv/frontend-masters-vuex"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/shortdiv/frontend-masters-vuex</a></p>
 <p><a href="${"https://frontendmasters.com/courses/vuex/introduction/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/vuex/introduction/</a></p>
@@ -16312,17 +16820,17 @@ var weekTenVuexForIntermediate_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_ten_vuex_for_intermediate_svelte,
-  metadata: metadata$o,
+  metadata: metadata$p,
   load: load$2
 });
-var metadata$n = {
+var metadata$o = {
   "title": "Week Three - Intro to Linux and Command Line",
   "created": "2021-11-07T00:00:00.000Z",
   "summary": "Complete Intro to Linux and the Command-Line",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_three_intro_linux_command_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$n), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$o), {}, {
     default: () => `<p><a href="${"https://btholt.github.io/complete-intro-to-linux-and-the-cli/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://btholt.github.io/complete-intro-to-linux-and-the-cli/</a></p>
 <h2 id="${"the-cli"}"><a href="${"#the-cli"}">The CLI</a></h2>
 <p><strong>WHICH</strong>
@@ -16336,8 +16844,7 @@ var Week_three_intro_linux_command_svelte = create_ssr_component(($$result, $$pr
 <code>ls lsah</code> - show everything and permissions</p>
 <p><strong>BASH HISTORY</strong>
 Your bash history is saved with up/down arrow keys. Which means you shouldn\u2019t save your passwords on it. </p>
-<p>ADD TO TIL:
-Ctrl+R - reverse-search history
+<p>Ctrl+R - reverse-search history
 (left and right drops you back into your terminal)</p>
 <p><code>tail ~/.bash_history</code></p>
 <p>It adds it to the bash history when you log out.
@@ -16467,17 +16974,17 @@ var weekThreeIntroLinuxCommand_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_three_intro_linux_command_svelte,
-  metadata: metadata$n,
+  metadata: metadata$o,
   load: load$2
 });
-var metadata$m = {
+var metadata$n = {
   "title": "Week Four - Intro to Serverless",
   "created": "2021-11-22T00:00:00.000Z",
   "summary": "Modern Search Engine Optimization (SEO)",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_four_intro_to_serverless_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$m), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$n), {}, {
     default: () => `<h2 id="${"serverless-functions"}"><a href="${"#serverless-functions"}">Serverless Functions</a></h2>
 <p>Install netlify @ v2.58.0
 <code>npm i -g netlify-cli@latest</code></p>
@@ -16918,8 +17425,7 @@ Have somebody was being mischievous, they could figure out what our serverless f
       poster<span class="token operator">:</span> data<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'poster'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
     <span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
 </code>`}<!-- HTML_TAG_END --></pre>
-<p>Add to TIL:
-How to parse a JWT: <a href="${"https://jwt.io/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://jwt.io/</a></p>
+<p>How to parse a JWT: <a href="${"https://jwt.io/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://jwt.io/</a></p>
 <figure><img src="${"https://i.imgur.com/71JYAfx.png"}"></figure>
 <p>Netlify handles it for you using the <code>context</code> param.</p>
 <p>We now update the serverless function.</p>
@@ -16964,8 +17470,7 @@ exports<span class="token punctuation">.</span><span class="token function-varia
 <span class="token punctuation">&#125;</span>
 </code>`}<!-- HTML_TAG_END --></pre>
 <h2 id="${"use-cases--qa"}"><a href="${"#use-cases--qa"}">Use Cases &amp; Q&amp;A</a></h2>
-<p>ADD TO TIL
-<code>killall node</code> - a sure fire way to kill everything.</p>
+<p><code>killall node</code> - a sure fire way to kill everything.</p>
 <p>Good user cases:</p>
 <ol class="${"list"}"><li>Contact Us and Newsletter is managed by serverless functions.</li></ol>
 <p>Jason does: <a href="${"https://github.com/jlengstorf/jason.af/blob/main/functions/subscribe.js"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/jlengstorf/jason.af/blob/main/functions/subscribe.js</a></p>
@@ -16989,33 +17494,17 @@ var weekFourIntroToServerless_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_four_intro_to_serverless_svelte,
-  metadata: metadata$m,
+  metadata: metadata$n,
   load: load$2
 });
-var metadata$l = {
-  "title": "DRAFT Week Twelve - Typescript",
-  "created": "2020-12-21T00:00:00.000Z",
-  "summary": "TypeScript Fundamentals, v3",
-  "coverImageUrl": "/media/projects/type-kana/session.jpg"
-};
-var Draft_week_twelve_typescript_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$l), {}, {})}`;
-});
-var draftWeekTwelveTypescript_svelte = /* @__PURE__ */ Object.freeze({
-  __proto__: null,
-  [Symbol.toStringTag]: "Module",
-  "default": Draft_week_twelve_typescript_svelte,
-  metadata: metadata$l,
-  load: load$2
-});
-var metadata$k = {
+var metadata$m = {
   "title": "Week Six - Code Transformation with ASTs",
   "created": "2021-12-05T00:00:00.000Z",
   "summary": "Javascript Code Transformation and Linting with ASTs",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_six_code_transformation_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$k), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$m), {}, {
     default: () => `<h2 id="${"what-is-it"}"><a href="${"#what-is-it"}">What is it</a></h2>
 <p>Abstract Syntax Trees. </p>
 <blockquote><p>An AST is the result of parsing code. For JavaScript, an AST is a JavaScript object containing a tree representation of your source. Before we use it, we have to create it. Depending on the code we are parsing, we choose the appropriate parser.</p></blockquote>
@@ -17098,17 +17587,250 @@ var weekSixCodeTransformation_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_six_code_transformation_svelte,
-  metadata: metadata$k,
+  metadata: metadata$m,
   load: load$2
 });
-var metadata$j = {
+var metadata$l = {
+  "title": "Week Twelve - Web Performance",
+  "created": "2021-01-28T00:00:00.000Z",
+  "summary": "Web Performance Fundamentals",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_twelve_web_performance_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$l), {}, {
+    default: () => `<figure><img src="${"https://i.imgur.com/MktPSlV.png"}"></figure>
+<p>Todd Gardner
+@toddHGardner
+<a href="${"https://frontendmasters.com/courses/web-perf/introduction/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/web-perf/introduction/</a></p>
+<p>He manages TrackJS and RequestMetrics</p>
+<h2 id="${"elements-of-performance"}"><a href="${"#elements-of-performance"}">Elements of Performance</a></h2>
+<h3 id="${"do-a-feeler-test"}"><a href="${"#do-a-feeler-test"}">Do a feeler test</a></h3>
+<figure><img src="${"https://i.imgur.com/Z1NyPoS.png"}"></figure>
+<p>GOOGLE SHEET WITH EXERCISE: <a href="${"https://docs.google.com/spreadsheets/d/10QlmdN4A1mtJFc2fLACjVftN2SOjsDuwgZ35slFKwG4/edit#gid=828938081"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://docs.google.com/spreadsheets/d/10QlmdN4A1mtJFc2fLACjVftN2SOjsDuwgZ35slFKwG4/edit#gid=828938081</a></p>
+<figure><img src="${"https://i.imgur.com/78n6B6L.png"}"></figure>
+<h3 id="${"psychology-of-waiting"}"><a href="${"#psychology-of-waiting"}">Psychology of waiting</a></h3>
+<ol class="${"list"}"><li>People want to start</li>
+<li>Bored waiting feels slower</li>
+<li>Anxious waits feel slower</li>
+<li>Unexplained waits feel slower</li>
+<li>Uncertain waits feel slower</li>
+<li>People will wait for value</li></ol>
+<h3 id="${"web-vitals"}"><a href="${"#web-vitals"}">Web Vitals</a></h3>
+<figure><img src="${"https://i.imgur.com/jey5GWK.png"}"></figure>
+<p>Page load metric lost it\u2019s value because people were gaming the system.
+A div would load a white screen, then Javascript builds it, and then a couple seconds later it ACTUALLY loads.</p>
+<figure><img src="${"https://i.imgur.com/en3Z9ia.png"}"></figure>
+<p>Web vitals become the next thing.</p>
+<h3 id="${"first-contentful-paint-fcp"}"><a href="${"#first-contentful-paint-fcp"}">First Contentful Paint (FCP)</a></h3>
+<p>The time until the user sees an indication that the page is loading.</p>
+<h3 id="${"largest-contentful-paint-lcp"}"><a href="${"#largest-contentful-paint-lcp"}">Largest Contentful Paint (LCP)</a></h3>
+<p>THe time is when the largest amount of content comes in. This is a proxy of when the user thinks the page is mostly there. </p>
+<figure><img src="${"https://i.imgur.com/vMBkGIW.png"}"></figure>
+<h3 id="${"cumulative-layout-shift-cls"}"><a href="${"#cumulative-layout-shift-cls"}">Cumulative Layout Shift (CLS)</a></h3>
+<figure><img src="${"https://i.imgur.com/CzhwFoD.png"}"></figure>
+<p>This check on the lifetime of the page!
+The movement distance and impact of page elements during the entire lifetime of the document the user sees. </p>
+<ul class="${"list"}"><li>DONT MOVE STUFF</li></ul>
+<p>SPAs were penalized the most by this, because if the react app is deploying and doing all sorts of movements. </p>
+<h3 id="${"first-input-delay-fid"}"><a href="${"#first-input-delay-fid"}">First Input Delay (FID)</a></h3>
+<figure><img src="${"https://i.imgur.com/lbrNx4v.png"}"></figure>
+<p>This is about the browser, not the user.</p>
+<p>If an article is loaded, and you went to click on it\u2026 there\u2019s a delay? It\u2019s the time that the browser is still rendering &amp; executing your JS.</p>
+<p>The browser time delay between the user\u2019s first click and execution of application code.</p>
+<p>First Contentful Paint FCP - Response quick
+Largest Contentful Paint LCP - Get to the point
+Cumulative Layout Shift CLS - Dont move stuff
+First Input Delay FID - dont load too much</p>
+<h3 id="${"lighthouse"}"><a href="${"#lighthouse"}">Lighthouse</a></h3>
+<p>Rules of thumb: </p>
+<ol class="${"list"}"><li>Devtools - detach lighthouse.</li>
+<li>Throttle it by a mobile device.</li></ol>
+<p>Things to know:
+Relative to YOUR machine, network
+The chrome window size
+Chrome application priority</p>
+<p>Because it renders the browser size itself. If you shrink it, it will give you a different performance stat.
+Make sure chrome is in the foreground, because if it\u2019s in the background, it\u2019ll defer things. </p>
+<p>Exercise: <a href="${"https://docs.google.com/spreadsheets/d/10QlmdN4A1mtJFc2fLACjVftN2SOjsDuwgZ35slFKwG4/edit#gid=492748406"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://docs.google.com/spreadsheets/d/10QlmdN4A1mtJFc2fLACjVftN2SOjsDuwgZ35slFKwG4/edit#gid=492748406</a></p>
+<p>Extensitions matter too, because they inject code to the page.
+Remember that 100px will obviously render way faster. </p>
+<p>Lab data is what lighthouse gives you - your local computer, or a server.
+Crux data is what real users on the internet are getting.</p>
+<h2 id="${"metrics"}"><a href="${"#metrics"}">Metrics</a></h2>
+<p>This is about interpreting data.
+And it\u2019s kinda \u201Cmeh\u201D. Like, it\u2019s more about the marketing side. </p>
+<h3 id="${"intepreting-data"}"><a href="${"#intepreting-data"}">Intepreting data</a></h3>
+<figure><img src="${"https://i.imgur.com/g6W4Oll.png"}"></figure>
+<p>Safari doesn\u2019t report. Firefox doesn\u2019t report. </p>
+<figure><img src="${"https://i.imgur.com/A07cLJk.png"}"></figure>
+<p>P50% of users \u2014&gt;  is the median.
+P75% of users \u2014&gt; is what google looks at
+P95% of users \u2014&gt; this is like phones in mongolia. It\u2019s often lobbed off. We don\u2019t think about that. </p>
+<figure><img src="${"https://i.imgur.com/Q4sq0kO.png"}"></figure>
+<p>So looking at this \u2014 there\u2019s kinda a problem here. Because within the P75 - you notice there\u2019s a weird bump around that 75% mark.</p>
+<h2 id="${"performance"}"><a href="${"#performance"}">Performance</a></h2>
+<p>Compare with other site.
+<a href="${"https://www.lightest.app/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.lightest.app/</a></p>
+<figure><img src="${"https://i.imgur.com/qGajCIz.png"}"></figure>
+<p>The project folder: <a href="${"https://github.com/toddhgardner/perf-training-website"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/toddhgardner/perf-training-website</a>
+It\u2019s a node project, with a single HTML file.
+It\u2019s not that optimized. </p>
+<p>We need to capture real field data. </p>
+<p><code>window.performance</code>
+<a href="${"https://developer.mozilla.org/en-US/docs/Web/API/performance_property"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://developer.mozilla.org/en-US/docs/Web/API/performance_property</a></p>
+<p>Questions:</p>
+<ul class="${"list"}"><li>How long did it download this image</li>
+<li>How long did it take to run this event. </li></ul>
+<p>You can run this in the console in Devtools.
+That\u2019s how you get the raw data.</p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">performance<span class="token punctuation">.</span><span class="token function">getEntries</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+performance<span class="token punctuation">.</span><span class="token function">getEntriesByType</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+performance<span class="token punctuation">.</span><span class="token function">getEntriesByName</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/o3N14eD.png"}"></figure>
+<figure><img src="${"https://i.imgur.com/mty93Q1.png"}"></figure>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">new</span> <span class="token class-name">PerformanceObserver</span><span class="token punctuation">(</span>
+	<span class="token punctuation">(</span><span class="token parameter">entryList</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+		<span class="token keyword">var</span> entries <span class="token operator">=</span> entryList<span class="token punctuation">.</span><span class="token function">getEntries</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">observe</span><span class="token punctuation">(</span>opts<span class="token punctuation">)</span><span class="token punctuation">;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>Performance timing is one type of entry
+Performance observer is a different type of entry </p>
+<p>Check out this:
+<a href="${"https://github.com/toddhgardner/perf-training-website/blob/main/public/assets/js/util/perf.js"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/toddhgardner/perf-training-website/blob/main/public/assets/js/util/perf.js</a></p>
+<p>Google has a version that\u2019s official! But this code is what\u2019s under the hood. </p>
+<figure><img src="${"https://i.imgur.com/mCxRTRH.png"}"></figure>
+<h2 id="${"optimizing-metrics"}"><a href="${"#optimizing-metrics"}">Optimizing Metrics</a></h2>
+<h3 id="${"improve-fcp-practice"}"><a href="${"#improve-fcp-practice"}">Improve FCP Practice</a></h3>
+<p>The time until the user sees an indication. </p>
+<p>METHOD 1: Improve the server </p>
+<ul class="${"list"}"><li>Size it correctly</li>
+<li>Minimize the processing on your sizer. </li>
+<li>Network bandwidth.</li></ul>
+<p>METHOD 2: Small documents</p>
+<ul class="${"list"}"><li>Your content size.
+Can you deliver smaller versions.
+HTML -&gt; 80-100kb is kinda big.
+Image -&gt; Can you make it smaller? </li></ul>
+<p>GZIP or brotli? </p>
+<p>METHOD 3: Short Transmission</p>
+<ul class="${"list"}"><li>Reduce delivery hops. </li></ul>
+<figure><img src="${"https://i.imgur.com/qEJGhsp.png"}"></figure>
+<p>Wher we can place the hops.
+For example: East Coast server takes 200-300ms to deliver to West coast. </p>
+<p>CDN it to make it a bit easier. It can be 50ms. Pop it at a specific spot so they connect there faster. </p>
+<h3 id="${"largest-contentful-paint"}"><a href="${"#largest-contentful-paint"}">Largest Contentful Paint</a></h3>
+<p>The time until the user sees most of the page (or believes it\u2019s almost read)</p>
+<figure><img src="${"https://i.imgur.com/QMXI0js.png"}"></figure>
+<p>Your HTML is loaded, and identify what chained elements to bring out. </p>
+<p>So the space between FCP and LCP is what is loading.</p>
+<p>METHOD 1: Defer resources until later</p>
+<p>FOR JAVASCRIPT:
+When you add a <code>async</code> to your script. Do it later. It\u2019ll download, BUT will still execute. If the script finishes downloading, it\u2019ll still block your cache because it\u2019s being fired. </p>
+<p>Instead \u2014
+Move scripts to bottom (footer)\u2026
+When you add a <code>defer</code> to your script. Do it later. It\u2019ll download, AND it won\u2019t execute until it\u2019s go time. If the script finishes downloading, it\u2019ll wait until the event is ready to go. </p>
+<p>METHOD 2: Optimize Images
+FOR IMAGES:
+Check out the Lazyloader code:  <a href="${"https://github.com/toddhgardner/perf-training-website/blob/main/public/assets/js/util/lazyloader.js"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/toddhgardner/perf-training-website/blob/main/public/assets/js/util/lazyloader.js</a></p>
+<p>In your html \u2014 you can add:</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">&lt;img src=&quot;picture-1200.jpg&quot; loading=&quot;lazy&quot;&gt;</code>`}<!-- HTML_TAG_END --></pre>
+<p><code>loading=&quot;lazy&quot;</code>. That will defer the image for much later. Except, it doesn\u2019t work with safari/ios. </p>
+<p>It can also lazyload anything.</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">&lt;iframe src=&quot;&quot; data-src=&quot;&quot;...&gt;</code>`}<!-- HTML_TAG_END --></pre>
+<p>It\u2019ll load when you reach that spot, by moving <code>data-src</code> into <code>src</code>. </p>
+<p>Lazyloader: <a href="${"https://github.com/toddhgardner/perf-training-website/blob/main/public/assets/js/util/lazyloader.js"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/toddhgardner/perf-training-website/blob/main/public/assets/js/util/lazyloader.js</a></p>
+<p>Adding Responsive image: </p>
+<figure><img src="${"https://i.imgur.com/dXhjvmG.png"}"></figure>
+<p>using <code>src</code> &amp; <code>srcset</code></p>
+<p>Using Optimizing Images:
+<a href="${"https://tinypng.com/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://tinypng.com/</a></p>
+<p>imageOptimizer webpack:
+The code -
+<a href="${"https://github.com/toddhgardner/perf-training-website/blob/main/tools/imageOptimizer.js"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/toddhgardner/perf-training-website/blob/main/tools/imageOptimizer.js</a></p>
+<p>What\u2019s neat is that he named them with <code>image.min.jpg</code></p>
+<pre class="${"language-html"}"><!-- HTML_TAG_START -->${`<code class="language-html">&lt;img src="button.png"
+	data-srcset="button-600.min.png 600w, 
+	button-900.min.png 900w,
+	"
+	sizes="(max-width: 600px) 600w,
+	(max-width: 900px) 900w,
+	"
+</code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/XgubDcX.png"}"></figure>
+<p>METHOD 3: Reduce request overhead</p>
+<p>Implement http/2: </p>
+<p>Pros: fast
+Pros: reuse connections
+Cons: server setup &amp; compatibility
+Cons: No SSL </p>
+<p>So it won\u2019t work on local.</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">cache-control: max-age=600
+expires: Weds, 20 Jan 2021
+etag: &quot;55230-230123badsb&quot;</code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/ypA1yOg.png"}"></figure>
+<p>Preloading:
+<code>rel=&quot;preconnect&quot;</code> tag.
+That will allow us to get that google font asap.</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">&lt;link rel=&quot;preconnect&quot; 
+	href=&quot;https://fonts.gstatic.com&quot;&gt;</code>`}<!-- HTML_TAG_END --></pre>
+<p><code>rel=&quot;preload&quot;</code> tag.
+Say you have a depenency that needs the item, and you need it earlier/faster. (For example, icons.css)</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">&lt;link rel=&quot;preconnect&quot; 
+	href=&quot;/icons.css&quot;&gt;</code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/X7vYbRp.png"}"></figure>
+<p>He\u2019s preconnecting gstatic fonts
+He also preconnecting his chat program.
+He then preloaded all the css elements. </p>
+<h3 id="${"cumulative-layout-shift"}"><a href="${"#cumulative-layout-shift"}">Cumulative Layout shift</a></h3>
+<p>It\u2019s the movement distance and impact of page elements during the ENTIRE LIFETIME of the document the user sees. </p>
+<p>LCP -&gt; \u201CHey I\u2019m ready\u201D</p>
+<p>It\u2019s saying \u201Ckeep this empty space here\u201D. </p>
+<p>The browser is remembering the aspect-ratio for that image. </p>
+<p>How to fix it:
+The design choice of moving it to the bottom of the page.</p>
+<p>CSS - And then:: </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">position: relative;</code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"first-input-delay"}"><a href="${"#first-input-delay"}">First Input Delay</a></h3>
+<p>the browser time delay between the user\u2019s first click and the execution of application code. </p>
+<p>Don\u2019t load too much. </p>
+<p>If you are having this problem, then you are pushing WAAAY too much Javascript. </p>
+<p>[00:00:00]</p>
+<blockquote><blockquote><p>Before we get started on part three, I wanna give an opportunity for us to talk about some questions. There was a great question in chat just before we left about whether or not the first input delay is different than another metric called time to interactivity. Time to interactivity is another metric that you\u2019ll see in the Google lighthouse report.</p></blockquote></blockquote>
+<p>[00:00:20]
+But it\u2019s not usually considered one of the core web vitals. It\u2019s not something that Google is gonna rank you on. They\u2019re different things. Time to interactivity is a milestone that happens sometime after largest contentful paint. And it\u2019s the milestone at which your document is all kind of built together and Google thinks it is fully ready to accept user input.</p>
+<p>[00:00:43]
+Whereas first input delay is that from the time when the user actually interacts with your site, until when your code is able to respond to an event, that delay is first input delay. The first is a milestone in the loading process. It\u2019s something else taking consider between first contentful paint, largest contentful paint, time to interactive.</p>
+<p>[00:01:10]
+Whereas first input delay is more measuring whether or not you\u2019re loading too much stuff. But it\u2019s a good question. So the question from zoom was not fully understanding what the performance and, was it the Performance tab or the Network tab?</p>
+<h2 id="${"planning"}"><a href="${"#planning"}">PLanning</a></h2>
+<p>Check his slides \u2014
+<a href="${"https://docs.google.com/presentation/d/13p5x-QtqlJDluu1-hMILmWrsnSmg87G-DC2aqoKzwxc/edit#slide=id.gb774a1a237_0_396"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://docs.google.com/presentation/d/13p5x-QtqlJDluu1-hMILmWrsnSmg87G-DC2aqoKzwxc/edit#slide=id.gb774a1a237_0_396</a></p>
+<p>This program is super sweet:
+<a href="${"https://www.performancebudget.io/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.performancebudget.io/</a></p>
+<p>Setting your goals:
+How can you be 20% faster than your competitor?</p>
+<h3 id="${"marketing-about-third-party-pixel-service"}"><a href="${"#marketing-about-third-party-pixel-service"}">Marketing about third-party pixel service</a></h3>
+<p>You need data to convince marketing. </p>
+<figure><img src="${"https://i.imgur.com/KMx9l3S.png"}"></figure>
+<p>They care about costs, revenue, price. </p>
+<p>Did things go down? Now you can talk about it.
+Sometimes, speed is down but revenue is up. Maybe that\u2019s okay. You can\u2019t over-perform everything. </p>`
+  })}`;
+});
+var weekTwelveWebPerformance_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_twelve_web_performance_svelte,
+  metadata: metadata$l,
+  load: load$2
+});
+var metadata$k = {
   "title": "Week Three - Intro to Dev Tools",
   "created": "2021-11-06T00:00:00.000Z",
   "summary": "Introduction to Dev Tools, v3",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_three_intro_dev_tools_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$j), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$k), {}, {
     default: () => `<p><a href="${"https://github.com/jkup/mastering-chrome-devtools"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/jkup/mastering-chrome-devtools</a></p>
 <h2 id="${"elements-tab"}"><a href="${"#elements-tab"}">Elements tab</a></h2>
 <figure><img src="${"https://i.imgur.com/lck2C4c.png"}"></figure>
@@ -17194,17 +17916,17 @@ var weekThreeIntroDevTools_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_three_intro_dev_tools_svelte,
-  metadata: metadata$j,
+  metadata: metadata$k,
   load: load$2
 });
-var metadata$i = {
+var metadata$j = {
   "title": "Week Five - JS Object Oriented",
   "created": "2021-11-27T00:00:00.000Z",
   "summary": "The Hard Parts of Object Oriented JavaScript",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_five_hard_parts_ooj_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$i), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$j), {}, {
     default: () => `<h2 id="${"intro"}"><a href="${"#intro"}">Intro</a></h2>
 <p>Slides: <a href="${"https://static.frontendmasters.com/resources/2018-10-03-javascript-hard-parts-oop/javascript-hard-parts-oop.pdf"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://static.frontendmasters.com/resources/2018-10-03-javascript-hard-parts-oop/javascript-hard-parts-oop.pdf</a></p>
 <p>OOJ is a way to organize our code as it gets more complex, so it\u2019s not procedure.</p>
@@ -17632,8 +18354,7 @@ The <code>call()</code> function changes what this is pointed to.</p>
 <ol start="${"4"}" class="${"list"}"><li><p>We move over and we see that <code>obj.increment</code> is a reference of <code>this.num++</code>. </p></li>
 <li><p><code>call()</code> says <code>this</code> is actually <code>otherObj</code>. So it\u2019s really saying:</p></li></ol>
 <p><code>otherObj.num++</code></p>
-<p>ADD TO TIL:
-And if passes params to it if there\u2019s anything past the comma</p>
+<p>And if passes params to it if there\u2019s anything past the comma</p>
 <pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">  userCreator.call(this, paidName, paidScore);
   // userCreator.apply(this, [paidName, paidScore])
 </code>`}<!-- HTML_TAG_END --></pre>
@@ -17789,17 +18510,17 @@ var weekFiveHardPartsOoj_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_five_hard_parts_ooj_svelte,
-  metadata: metadata$i,
+  metadata: metadata$j,
   load: load$2
 });
-var metadata$h = {
+var metadata$i = {
   "title": "Week Eight - CSS In Depth",
   "created": "2021-12-21T00:00:00.000Z",
   "summary": "CSS In-Depth, v2",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_eight_css_in_depth_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$h), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$i), {}, {
     default: () => `<p>CSS In-Depth, v2
 Estelle Weyl
 Slides: <a href="${"https://estelle.github.io/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://estelle.github.io/</a></p>
@@ -18080,17 +18801,17 @@ var weekEightCssInDepth_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_eight_css_in_depth_svelte,
-  metadata: metadata$h,
+  metadata: metadata$i,
   load: load$2
 });
-var metadata$g = {
+var metadata$h = {
   "title": "Vue Mastery - Vue 3 Forms",
   "created": "2021-11-14T00:00:00.000Z",
   "summary": "Vue Mastery Vue 3 Forms",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Vue_mastery_vue3_forms_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$g), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$h), {}, {
     default: () => `<h2 id="${"vue-3-forms"}"><a href="${"#vue-3-forms"}">Vue 3 Forms</a></h2>
 <p>Source: <a href="${"https://www.vuemastery.com/courses/vue3-forms/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.vuemastery.com/courses/vue3-forms/</a></p>
 <h3 id><a href="${"#"}"></a></h3>
@@ -18132,17 +18853,17 @@ var vueMasteryVue3Forms_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Vue_mastery_vue3_forms_svelte,
-  metadata: metadata$g,
+  metadata: metadata$h,
   load: load$2
 });
-var metadata$f = {
+var metadata$g = {
   "title": "Week Eleven - Full Stack",
   "created": "2022-01-22T00:00:00.000Z",
   "summary": "Full Stack for Front-end Engineers, V2",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_eleven_full_stack_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$f), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$g), {}, {
     default: () => `<p>Jem Young
 <a href="${"https://frontendmasters.com/courses/fullstack-v2/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/fullstack-v2/</a></p>
 <h2 id="${"server-setup"}"><a href="${"#server-setup"}">Server Setup</a></h2>
@@ -18189,8 +18910,7 @@ It\u2019s like making your door smaller. It doesn\u2019t actually protect you. <
 <blockquote><p>Jem Young: When you need to run it globally from any directory. Because this isn\u2019t, let\u2019s say I had four or five other node applications running, I want pm2 to access all of that. So installing and locally wouldn\u2019t make as much sense because we didn\u2019t then we have to pipe everything into node modules, things like that.</p></blockquote>
 <blockquote><p>But that\u2019s an excellent point. You generally don\u2019t want to do things globally unless you have to. If you wanna run things globally but from the local directory you can use something called MPX. Which will look at first in your local and then move up. But in this case, we wanna run globally because its a process manager.</p></blockquote>
 <h3 id="${"mercurial"}"><a href="${"#mercurial"}">Mercurial</a></h3>
-<p>ADD TO TIL
-Everybody just knows Git? Fun fact, what does GitHub or not GitHub, I think Facebook uses SVN, Subversion, or is it Mercurial? Facebook uses a monorepo, they have one repository for all of their code at Facebook. Because Git literally can\u2019t handle as much code as they have. There\u2019s like a maximum limit on it.</p>
+<p>Everybody just knows Git? Fun fact, what does GitHub or not GitHub, I think Facebook uses SVN, Subversion, or is it Mercurial? Facebook uses a monorepo, they have one repository for all of their code at Facebook. Because Git literally can\u2019t handle as much code as they have. There\u2019s like a maximum limit on it.</p>
 <p>[00:00:55]
 And I think Google has their own custom repo version control as well. </p>
 <h2 id="${"server-security"}"><a href="${"#server-security"}">Server Security</a></h2>
@@ -18252,17 +18972,17 @@ var weekElevenFullStack_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_eleven_full_stack_svelte,
-  metadata: metadata$f,
+  metadata: metadata$g,
   load: load$2
 });
-var metadata$e = {
+var metadata$f = {
   "title": "Week Nine - Intro to Vue",
   "created": "2022-01-02T00:00:00.000Z",
   "summary": "Introduction to Vue 3",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_nine_intro_to_vue_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$e), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$f), {}, {
     default: () => `<p>Intro to Vue.js
 Sarah Drasner
 <a href="${"https://github.com/sdras/intro-to-vue"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/sdras/intro-to-vue</a></p>
@@ -18822,17 +19542,17 @@ var weekNineIntroToVue_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_nine_intro_to_vue_svelte,
-  metadata: metadata$e,
+  metadata: metadata$f,
   load: load$2
 });
-var metadata$d = {
+var metadata$e = {
   "title": "Week Six - Javascript The Hard Parts",
   "created": "2021-12-05T00:00:00.000Z",
   "summary": "JavaScript The Hard Parts, v2",
   "coverImageUrl": "/media/projects/type-kana/session.jpg"
 };
 var Week_six_js_hard_parts_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$d), {}, {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$e), {}, {
     default: () => `<p><a href="${"https://frontendmasters.com/courses/javascript-hard-parts-v2/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/javascript-hard-parts-v2/</a>
 Will Sentance</p>
 <h2 id="${"javascript-intro"}"><a href="${"#javascript-intro"}">Javascript Intro</a></h2>
@@ -19094,6 +19814,705 @@ var weekSixJsHardParts_svelte = /* @__PURE__ */ Object.freeze({
   __proto__: null,
   [Symbol.toStringTag]: "Module",
   "default": Week_six_js_hard_parts_svelte,
+  metadata: metadata$e,
+  load: load$2
+});
+var metadata$d = {
+  "title": "Week Twelve - Typescript",
+  "created": "2022-01-29T00:00:00.000Z",
+  "summary": "TypeScript Fundamentals, v3",
+  "coverImageUrl": "/media/projects/type-kana/session.jpg"
+};
+var Week_twelve_typescript_svelte = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `${validate_component(Layout$1, "Layout_MDSVEX_DEFAULT").$$render($$result, Object.assign($$props, metadata$d), {}, {
+    default: () => `<p>Mike North
+<a href="${"https://frontendmasters.com/courses/typescript-v3/introduction/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://frontendmasters.com/courses/typescript-v3/introduction/</a>
+<a href="${"https://www.typescript-training.com/course/fundamentals-v3"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3</a></p>
+<p><a href="${"https://www.typescriptlang.org/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescriptlang.org/</a></p>
+<p>The repo:
+<a href="${"https://github.com/mike-north/ts-fundamentals-v3"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://github.com/mike-north/ts-fundamentals-v3</a></p>
+<h2 id="${"introduction"}"><a href="${"#introduction"}">Introduction</a></h2>
+<p>You\u2019ll have a well formed mental model of it.</p>
+<p>Why it\u2019s awesome:</p>
+<ol class="${"list"}"><li>IT allows the code author, to leave more of your intent \u201Con the page\u201D</li></ol>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c <span class="token operator">=</span> <span class="token number">0</span></span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">return</span> a <span class="token operator">+</span> b <span class="token operator">+</span> c<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span>a<span class="token operator">:</span> number<span class="token punctuation">,</span> b<span class="token operator">:</span>number0<span class="token operator">:</span> number <span class="token punctuation">&#123;</span>
+	add a <span class="token operator">+</span> b<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token function">add</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">"4"</span><span class="token punctuation">)</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<ol start="${"2"}" class="${"list"}"><li>Remove some kinds of errors from runtime to compile time. </li></ol>
+<ul class="${"list"}"><li>Values that are potentially abset (null or undefined)</li>
+<li>Incomplete refactorng</li>
+<li>Breakage around internal code contracts (an argument becomes required)</li></ul>
+<ol start="${"3"}" class="${"list"}"><li>Foundations or a code authoring experience. </li></ol>
+<p>It autofills thing.</p>
+<p>Typescript course:
+<a href="${"https://www.typescript-training.com/course/fundamentals-v3"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3</a></p>
+<p>Why to use TypeScript </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">////////////////////////////////
+// JavaScript, not TypeScript //
+////////////////////////////////
+class Car &#123;
+  constructor(make, model, year) &#123;
+    this.make = make
+    this.model = model
+          
+(property) Car.model: any
+    this.year = year
+  &#125;
+&#125;
+
+let sedan = new Car(&quot;Honda&quot;, &quot;Accord&quot;, 2017)
+sedan.activateTurnSignal(&quot;left&quot;) // not safe!
+new Car(2017, &quot;Honda&quot;, &quot;Accord&quot;) // not safe!</code>`}<!-- HTML_TAG_END --></pre>
+<p>So the two <code>not safe</code> errors won\u2019t be discovered UNTIL you run your code. </p>
+<figure><img src="${"https://i.imgur.com/W0TSVAy.png"}"></figure>
+<h2 id="${"setup"}"><a href="${"#setup"}">Setup</a></h2>
+<p><a href="${"https://www.typescript-training.com/course/fundamentals-v3/02-hello-typescript/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3/02-hello-typescript/</a></p>
+<p>Declaration files. </p>
+<blockquote><p>It\u2019s just sort of a semi colon at the end of the arguments list, right? So you can think of this almost like the types that were stripped away from our source code.</p></blockquote>
+<blockquote><p>So you start with TypeScript, which is code that runs and types, and then your compiler almost separates those out. So you get a js file that runs and you get these dts files, which contain only the type information. Why is this good? Well, it lets people who are just using JavaScript who aren\u2019t writing TypeScript.</p></blockquote>
+<blockquote><p>They can compile those js files and just call it a day. And people who are writing TypeScript, they can kind of reassemble that together and have the JavaScript that runs and the types that describe the constraints. So this is what will allow you to remain compatible with users who depend on your code regardless of whether they themselves are authoring TypeScript.</p></blockquote>
+<p>Typescript can infer variables.
+<a href="${"https://www.typescript-training.com/course/fundamentals-v3/03-variables-and-values/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3/03-variables-and-values/</a></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// if Typescript refers it
+let age = 6;
+
+// Typescript will yell at you becuse you started this with a number. 
+age = &quot;not a number&quot;;</code>`}<!-- HTML_TAG_END --></pre>
+<p>When you use const, it hardlines it. </p>
+<p>The use of <code>any</code>. </p>
+<p>It\u2019s a way to make it just work. But it doesn\u2019t use it.
+Any is dangerous!</p>
+<p>It can be anything. It compromises the well-typed code.
+It can hold, and it can masquarade/present itself as anything. </p>
+<p>We\u2019ll cover more in Top &amp; Botom Typess, in Types &amp; Values)</p>
+<h2 id="${"type-categories"}"><a href="${"#type-categories"}">Type Categories</a></h2>
+<h3 id="${"explicit-return-types"}"><a href="${"#explicit-return-types"}">Explicit Return Types</a></h3>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">function</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token operator">:</span> number<span class="token punctuation">,</span> b<span class="token operator">:</span> number</span><span class="token punctuation">)</span><span class="token operator">:</span> number <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<figure><img src="${"https://i.imgur.com/mo8ImkN.png"}"></figure>
+<p>So this is going to blow up Typescript.
+It demands that your param is a number. </p>
+<figure><img src="${"https://i.imgur.com/3RGwijf.png"}"></figure>
+<p>TODO:
+Test-driven development VS Type-driven development</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// the shape of the object you want
+&#123;
+	make: &quot;Toyota&quot;,
+	model: &quot;Corolla&#39;,
+	year: 1994
+&#125;
+
+// to make it a Typescript variable 
+let car = &#123;
+	make: string,
+	model: string,
+	year: number
+&#125;
+
+
+// to harden the function 
+function printCar(car: &#123;
+  make: string
+  model: string
+  year: number
+&#125;) &#123;
+  console.log(&#96;$&#123;car.make&#125; $&#123;car.model&#125; ($&#123;car.year&#125;)&#96;)
+&#125;
+</code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"using-typeguards"}"><a href="${"#using-typeguards"}">Using Typeguards:</a></h3>
+<p>notice that <code>chargeVoltage?</code> has a quesiton mark? It\u2019s an OR - so it\u2019s checking if the thing exists or not. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">function printCar(car: &#123;
+  make: string
+  model: string
+  year: number
+  chargeVoltage?: number
+&#125;) &#123;
+  let str = &#96;$&#123;car.make&#125; $&#123;car.model&#125; ($&#123;car.year&#125;)&#96;
+  car.chargeVoltage
+           
+(property) chargeVoltage?: number | undefined
+  if (typeof car.chargeVoltage !== &quot;undefined&quot;)
+    str += &#96;// $&#123;car.chargeVoltage&#125;v&#96;
+                          
+(property) chargeVoltage?: number
+  console.log(str)
+&#125;</code>`}<!-- HTML_TAG_END --></pre>
+<p>It\u2019s a optional product. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// works
+  chargeVoltage?: number
+  
+// doesn&#39;t work
+  chargeVoltage: number | undefined</code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"excess-property-checking"}"><a href="${"#excess-property-checking"}">Excess Property Checking:</a></h3>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">function printCar(car: &#123;
+  make: string
+  model: string
+  year: number
+  chargeVoltage?: number
+&#125;) &#123;
+  // implementation removed for simplicity
+&#125;
+
+printCar(&#123;
+  make: &quot;Tesla&quot;,
+  model: &quot;Model 3&quot;,
+  year: 2020,
+  chargeVoltage: 220,
+  color: &quot;RED&quot;, // &lt;0------ EXTRA PROPERTY
+&#125;)</code>`}<!-- HTML_TAG_END --></pre>
+<p>Method 1: add it as a optional</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">  color?: string</code>`}<!-- HTML_TAG_END --></pre>
+<p>Method 2: Move the param from a literal Object to it\u2019s own object. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">function printCar(car: &#123;
+  make: string
+  model: string
+  year: number
+  chargeVoltage?: number
+&#125;) &#123;
+  // implementation removed for simplicity
+&#125;
+
+const myCar = &#123;
+  make: &quot;Tesla&quot;,
+  model: &quot;Model 3&quot;,
+  year: 2020,
+  chargeVoltage: 220,
+  color: &quot;RED&quot;, // &lt;0------ EXTRA PROPERTY
+&#125;
+
+printCar(myCar)</code>`}<!-- HTML_TAG_END --></pre>
+<p>Why does this work?</p>
+<p>Because the original execution:
+The only way to access that color data is within the function.
+It gets thrown out, and TypeScript yells at you.</p>
+<p>But in the version where we\u2019re storing it in a variable:
+You can access that color data by doing <code>myCar.color</code>.
+The function is NOT the primary method of getting data.
+And TypeScript is okay with that. </p>
+<h3 id="${"index-signature---like-dictionaries"}"><a href="${"#index-signature---like-dictionaries"}">Index Signature - like dictionaries</a></h3>
+<p>So something like this: </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">const phones = &#123;
+  home: &#123; country: &quot;+1&quot;, area: &quot;211&quot;, number: &quot;652-4515&quot; &#125;,
+  work: &#123; country: &quot;+1&quot;, area: &quot;670&quot;, number: &quot;752-5856&quot; &#125;,
+  fax: &#123; country: &quot;+1&quot;, area: &quot;322&quot;, number: &quot;525-4357&quot; &#125;,
+&#125;</code>`}<!-- HTML_TAG_END --></pre>
+<p>To safeguard it: </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">const phones: &#123;
+  [k: string]: &#123;
+	country: string,
+	area: string,
+	number: string
+  &#125;
+&#125; = &#123;&#125; 
+</code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"array-types"}"><a href="${"#array-types"}">Array Types</a></h3>
+<p><code>const fileExtensions = [&quot;js&quot;, &quot;ts&quot;]</code></p>
+<p>So if you\u2019re doing a Tuple </p>
+<blockquote><p>Sometimes we may want to work with a multi-element, ordered data structure, where position of each item has some special meaning or convention. This kind of structure is often called a tuple.</p></blockquote>
+<p>Like a mix array of string and numbers. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">let myCar = [2002, &quot;Toyota&quot;, &quot;Corolla&quot;]</code>`}<!-- HTML_TAG_END --></pre>
+<p>Typescript may infer it being \u2014 : </p>
+<ol class="${"list"}"><li><code>[2002, &quot;Toyota&quot;, &quot;Corolla&quot;]</code> should be assumed to be a mixed array of numbers and strings</li>
+<li><code>[2002, &quot;Toyota&quot;, &quot;Corolla&quot;]</code> should be assumed to be a tuple of fixed length (3)</li></ol>
+<p>So you need to explicitly define that. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">let myCar: [number, string, string] = [
+  2002,
+  &quot;Toyota&quot;,
+  &quot;Corolla&quot;,
+]
+
+// ERROR
+myCar = [&quot;Honda&quot;, 2017, &quot;Accord&quot;]
+
+// ERROR
+myCar = [2017, &quot;Honda&quot;, &quot;Accord&quot;, &quot;Sedan&quot;]
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>EDGECASE  - As of TypeScript 4.2</p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// this will cause an error on assignment
+const numPair: [number, number] = [4, 5, 6]
+
+// but messing with it down the line will not cause an error
+const numPair: [number, number] = [4, 5]
+numPair.push(6) // [4, 5, 6]
+numPair.pop() // [4, 5]
+numPair.pop() // [4]
+numPair.pop() // []</code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"structural-vs-nominal-types"}"><a href="${"#structural-vs-nominal-types"}">Structural vs Nominal Types</a></h3>
+<p><strong>What is Type checking?</strong>
+Is the thing I\u2019m making data, is it the shape I want it to be. </p>
+<p><code>x = y</code>  // Is it equivlent to what x holds. </p>
+<p><code>() =&gt; x</code> // is it returning it </p>
+<p>TypeScript Type system is static. </p>
+<blockquote><p>Java, C#, C++ all fit into this category. Keep in mind that inferrence can still occur in static type systems \u2014 TypeScript, Scala, and Haskell all have some form of static type checking.</p></blockquote>
+<p>Other Languages: </p>
+<blockquote><p>Dynamic type systems perform their \u201Ctype equivalence\u201D evaluation at runtime. JavaScript, Python, Ruby, Perl and PHP fall into this category.</p></blockquote>
+<p><strong>Nominal vs Structural</strong></p>
+<p>Typescript is <code>Structural</code></p>
+<p><code>Nominal</code> is all about the name. </p>
+<p>This is java below: </p>
+<pre class="${"language-java"}"><!-- HTML_TAG_START -->${`<code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Car</span> <span class="token punctuation">&#123;</span>
+  <span class="token class-name">String</span> make<span class="token punctuation">;</span>
+  <span class="token class-name">String</span> model<span class="token punctuation">;</span>
+  <span class="token keyword">int</span> make<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CarChecker</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// takes a &#96;Car&#96; argument, returns a &#96;String&#96;</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">String</span> <span class="token function">printCar</span><span class="token punctuation">(</span><span class="token class-name">Car</span> car<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token class-name">Car</span> myCar <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Car</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// TYPE CHECKING</span>
+<span class="token comment">// -------------</span>
+<span class="token comment">// Is &#96;myCar&#96; type-equivalent to</span>
+<span class="token comment">//     what &#96;checkCar&#96; wants as an argument?</span>
+<span class="token class-name">CarChecker</span><span class="token punctuation">.</span><span class="token function">checkCar</span><span class="token punctuation">(</span>myCar<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>All TypeScript (which is <code>structural</code>) cares about the shape.</p>
+<p><strong>Duck Typing</strong></p>
+<p>It\u2019s another way of saying, \u201CDyanamic Typing\u201D</p>
+<blockquote><p>And this gets its name from the duck test, which means if it looks like a duck, swims like a duck, quacks like a duck, it\u2019s probably a duck.</p></blockquote>
+<blockquote><p>[00:07:58]
+And this is kind of another way of saying dynamic typing, where we kinda attempt to go ahead and use something, and if it works out, okay, and if it doesn\u2019t, we\u2019ll throw an error at runtime. That\u2019s how JavaScript works. You can think of it as having similarities to structural typing.</p></blockquote>
+<blockquote><p>[00:08:21]
+In that, you just care about having what you need, right? You don\u2019t care about who created it. It\u2019s similar to structural typing in that way, but it\u2019s also dynamic typing, in that there is no type information at build time to evaluate. So all of these errors are popping up at runtime.</p></blockquote>
+<p><strong>Strong vs Weak Types</strong></p>
+<p>There\u2019s no agreed upon technical definitions. </p>
+<p>Instead, go with:
+strong <code>-&gt;</code> static<br>
+weak <code>-&gt;</code> dynamic </p>
+<h3 id="${"union-types"}"><a href="${"#union-types"}">Union Types</a></h3>
+<p>NOTES - this is hard. </p>
+<figure><img src="${"https://i.imgur.com/xp5ynPb.png"}"></figure>
+<p>It can be described using the Pipe operator. </p>
+<p>OR, or AND \u2014 </p>
+<blockquote><p>In the same diagram above, if we wanted fruits that are also sour (Fruit AND Sour) we\u2019d end up only getting ${escape((Lemon, Lime, Grapefruit))}.</p></blockquote>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">&quot;success&quot; | &quot;error&quot;</code>`}<!-- HTML_TAG_END --></pre>
+<p>It can only be one or the other. </p>
+<p>The more advance method is to do this: </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">const outcome: [&quot;error&quot;, Error] | [&quot;success&quot;, &#123;
+    name: string;
+    email: string;
+&#125;]</code>`}<!-- HTML_TAG_END --></pre>
+<p>If <code>error</code>, then return the error function.
+if <code>success</code>, then go through the rest of the stuff. </p>
+<p>Also known as a \u2018tagged\u2019 union type. </p>
+<p><a href="${"https://www.typescriptlang.org/play?#code/GYVwdgxgLglg9mABMANjADgYTjMAKASgC5EAiACwFMBDAEwGdTEAfMqamFRxAbwChEiGMER4AstSjkAdACdqYWnAC2hRAD5EABmkBWAolmUoIWUgo0GpAYeOnz7Toz4BfPn1CRYCRMuoBPACNKAHFjAFV6SlkASTBgOEIiG1YAbVJo2ThZUgAaRABRWSzZAF0UxHT6EAgISnpGfJ5EMGplShJ6KFlcAHMAbkRKP05O7r7EF1LeG2FRVAxsXDUAXjWyKjpGA35BQSMTM0qbPbJq2vrGk73m1vaSUjEYAGtKRAA5bKk8oZGUB+UL0oAAFKAAPNroFCUaQQFRMFy5a7lQQuIZcN67PYHezHU6CDLFbJ5a6CMCUADuhSJsjwpAAKlREHDcIgUApaJRaIgfPSAIIxAAyAGVEEQ6QQkacUZNXO44WAujyQFA4e1ECtfAFgmEoJFonEEoQ+AB6E34gB6AH4gA"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">The code</a></p>
+<p><strong>Discriminated Unions</strong></p>
+<p>So </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">const outcome = maybeGetUserInfo(); 
+
+if (outcome[0] === &quot;error&quot;) &#123;
+  // In this branch of your code, second is an Error
+  outcome
+    
+&#125; else &#123;
+  // In this branch of your code, second is the user info
+  outcome
+    &#125;</code>`}<!-- HTML_TAG_END --></pre>
+<p>So you can write a bunch of code like \u2014 </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">outcome[0] === &quot;error&quot; // fire errors 
+outcome[0] === &quot;waiting&quot; // fire waiting function 
+outcome[0] === &quot;standby&quot; // fire standby function </code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"aliases"}"><a href="${"#aliases"}">Aliases</a></h3>
+<p><a href="${"https://www.typescript-training.com/course/fundamentals-v3/07-interfaces-and-type-aliases/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3/07-interfaces-and-type-aliases/</a></p>
+<p><code>{ name: string, email: string }</code> becomes complicated after a while. You\u2019ll have to change a lot of code. </p>
+<p>So you\u2019re creating a alias in a separate file, then bringing it in to define the shape. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// @filename: types.ts
+// Needs to be UpperCase. 
+export type UserContactInfo = &#123;
+  name: string
+  email: string
+&#125;
+
+
+// @filename: utilities.ts
+import &#123; UserContactInfo &#125; from &quot;./types&quot;
+               
+function printContactInfo(info: UserContactInfo) &#123;
+  console.log(info) // info // UserContactInfo 
+               
+  console.log(info.email) // email string
+                    
+&#125;</code>`}<!-- HTML_TAG_END --></pre>
+<p>FOR EXAMPLE: </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token comment">// @filename: original.ts</span>
+<span class="token comment">/**
+ * ORIGINAL version
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">maybeGetUserInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span>
+  <span class="token operator">|</span> <span class="token punctuation">[</span><span class="token string">"error"</span><span class="token punctuation">,</span> Error<span class="token punctuation">]</span>
+  <span class="token operator">|</span> <span class="token punctuation">[</span><span class="token string">"success"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span> name<span class="token operator">:</span> string<span class="token punctuation">;</span> email<span class="token operator">:</span> string <span class="token punctuation">&#125;</span><span class="token punctuation">]</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// implementation is the same in both examples</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0.5</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span>
+      <span class="token string">"success"</span><span class="token punctuation">,</span>
+      <span class="token punctuation">&#123;</span> name<span class="token operator">:</span> <span class="token string">"Mike North"</span><span class="token punctuation">,</span> email<span class="token operator">:</span> <span class="token string">"mike@example.com"</span> <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span>
+      <span class="token string">"error"</span><span class="token punctuation">,</span>
+      <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">"The coin landed on TAILS :("</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+
+
+<span class="token comment">/**
+ * CLEANED UP version
+ */</span>
+
+
+<span class="token comment">// @filename: with-aliases.ts</span>
+type UserInfoOutcomeError <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"error"</span><span class="token punctuation">,</span> Error<span class="token punctuation">]</span>
+type UserInfoOutcomeSuccess <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token string">"success"</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#123;</span> name<span class="token operator">:</span> string<span class="token punctuation">;</span> email<span class="token operator">:</span> string <span class="token punctuation">&#125;</span>
+<span class="token punctuation">]</span>
+type UserInfoOutcome <span class="token operator">=</span>
+  <span class="token operator">|</span> UserInfoOutcomeError
+  <span class="token operator">|</span> UserInfoOutcomeSuccess
+
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">maybeGetUserInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> UserInfoOutcome <span class="token punctuation">&#123;</span>
+  <span class="token comment">// implementation is the same in both examples</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0.5</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span>
+      <span class="token string">"success"</span><span class="token punctuation">,</span>
+      <span class="token punctuation">&#123;</span> name<span class="token operator">:</span> <span class="token string">"Mike North"</span><span class="token punctuation">,</span> email<span class="token operator">:</span> <span class="token string">"mike@example.com"</span> <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span>
+      <span class="token string">"error"</span><span class="token punctuation">,</span>
+      <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">"The coin landed on TAILS :("</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"interfaces"}"><a href="${"#interfaces"}">Interfaces</a></h3>
+<p>They can only be used to describe <code>object types</code>. </p>
+<p>For Javascript Classes:
+Typescript calls <code>extends</code> a heritage clause. </p>
+<blockquote><p>and that they are used to describe ancestry in an object oriented hierarchy of some sort. Extends is used to describe inheritance between like things. Implements is used to describe inheritance between unlike things.</p></blockquote>
+<figure><img src="${"https://i.imgur.com/6iOkD8Q.png"}"></figure>
+<p>You can hit some weird stuff. And just recommend using <code>implements</code>.. </p>
+<h3 id="${"alias-vs-interface"}"><a href="${"#alias-vs-interface"}">Alias Vs Interface</a></h3>
+<p>Choosing if you should use <code>type</code></p>
+<ol class="${"list"}"><li><p>If you need to define something other than an object type (e.g., use of the <code>|</code> union type operator), you must use a type alias</p></li>
+<li><p>If you need to define a type to use with the <code>implements</code> heritage term, it\u2019s best to use an interface</p></li>
+<li><p>If you need to allow consumers of your types to augment them, you must use an interface.</p></li></ol>
+<h3 id="${"exercise"}"><a href="${"#exercise"}">Exercise</a></h3>
+<p><a href="${"https://www.typescript-training.com/course/fundamentals-v3/08-exercise-json-types/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3/08-exercise-json-types/</a></p>
+<p>that exercise is really good because it helps you think through how that data is shaped, as well as going into recursive stuff. </p>
+<p>RESEARCH:
+Failure-driven development </p>
+<p>NOTES:
+tuple as a concept is used a LOT in typescript. </p>
+<h2 id="${"functions"}"><a href="${"#functions"}">Functions</a></h2>
+<p><a href="${"https://www.typescript-training.com/course/fundamentals-v3/09-functions/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3/09-functions/</a></p>
+<p><code>void</code> return type means the function doesn\u2019t return anything.</p>
+<blockquote><p>The return value of a void function is intended to be ignored</p></blockquote>
+<p>Void should only return as a function return type. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// will break 
+function invokeInFourSeconds(callback: () =&gt; undefined) &#123;
+  setTimeout(callback, 4000)
+&#125;
+
+// this will work
+function invokeInFiveSeconds(callback: () =&gt; void) &#123;
+  setTimeout(callback, 5000)
+&#125;
+</code>`}<!-- HTML_TAG_END --></pre>
+<h3 id="${"construct-signatures"}"><a href="${"#construct-signatures"}">Construct Signatures</a></h3>
+<p><a href="${"https://www.typescript-training.com/course/fundamentals-v3/09-functions/#function-overloads"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">Function overload</a></p>
+<pre class="${"language-ts"}"><!-- HTML_TAG_START -->${`<code class="language-ts"><span class="token keyword">function</span> <span class="token function">handleMainEvent</span><span class="token punctuation">(</span>
+  elem<span class="token operator">:</span> HTMLFormElement<span class="token punctuation">,</span>
+  handler<span class="token operator">:</span> FormSubmitHandler
+<span class="token punctuation">)</span>
+<span class="token keyword">function</span> <span class="token function">handleMainEvent</span><span class="token punctuation">(</span>
+  elem<span class="token operator">:</span> HTMLIFrameElement<span class="token punctuation">,</span>
+  handler<span class="token operator">:</span> MessageHandler
+<span class="token punctuation">)</span>
+<span class="token keyword">function</span> <span class="token function">handleMainEvent</span><span class="token punctuation">(</span>
+  elem<span class="token operator">:</span> HTMLFormElement <span class="token operator">|</span> HTMLIFrameElement<span class="token punctuation">,</span>
+  handler<span class="token operator">:</span> FormSubmitHandler <span class="token operator">|</span> MessageHandler
+<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span></code>`}<!-- HTML_TAG_END --></pre>
+<p>So this is saying, if you get a <code>HTMLFormElement</code>, then it ties with <code>FormSubmitHandler</code>. </p>
+<p>If you get <code>HTMLIFrameElement</code>, then it ties with <code>MessageHandler</code>. </p>
+<p>The wires won\u2019t get crossed. </p>
+<h3 id="${"this-types-and-best-practices"}"><a href="${"#this-types-and-best-practices"}"><code>this</code> types and Best Practices.</a></h3>
+<h3 id="${"best-practices"}"><a href="${"#best-practices"}">Best Practices</a></h3>
+<p>Explicit return types </p>
+<h3 id="${"classes--access-modifier-keywords"}"><a href="${"#classes--access-modifier-keywords"}">Classes &amp; Access Modifier Keywords</a></h3>
+<p>public = allowed
+private = nobody can see this
+protected = </p>
+<p>(kinda like a access modifier, is <code>readonly</code>. It\u2019s like const/frozen array). </p>
+<p>this is really about encapsulation, not security.
+It\u2019s more of a \u2018fancy linter\u2019. Using a debugger can show that data. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">////////////////////////////////
+// JavaScript, not TypeScript //
+////////////////////////////////
+class Car &#123;
+  constructor(make, model, year) &#123;
+    this.make = make
+    this.model = model
+    this.year = year
+  &#125;
+&#125;
+
+
+////////////////////////////////
+// TypeScript //
+////////////////////////////////
+class Car &#123;
+	public make: string 
+	public model: string 
+	public year: number 
+	protected vinNumber = generateVinNumber()
+	protected doorLockCode = generateDoorLockCode()
+	 
+	 
+	 constructor(make: string, model: string, year: number) &#123;
+		this.make = make
+		this.model = model
+		this.year = year
+	&#125;
+	
+	//
+	protected unlockAllDoors() &#123;
+		unlockCar(this, this.doorLockCode);
+	&#125;
+&#125;
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>A cleaner way to do this: </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// BEFORE
+class Car &#123;
+  make: string
+  model: string
+  year: number
+  constructor(make: string, model: string, year: number) &#123;
+    this.make = make
+    this.model = model
+    this.year = year
+  &#125;
+&#125;
+
+
+// AFTER 
+class Car &#123;
+  constructor(
+    public make: string,
+    public model: string,
+    public year: number
+  ) &#123;&#125;
+&#125;
+</code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"types--values"}"><a href="${"#types--values"}">Types &amp; Values</a></h2>
+<p><a href="${"https://www.typescript-training.com/course/fundamentals-v3/11-top-and-bottom-types/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3/11-top-and-bottom-types/</a></p>
+<h3 id="${"top-types"}"><a href="${"#top-types"}">Top Types</a></h3>
+<p>It\u2019s about set theory. </p>
+<p><code>any</code> and <code>unknown</code></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">const x: boolean // true or false 
+const y: number // any number in JS. 5, 6, 7. 
+
+let a: 5 | 6 | 7 // anything in &#123; 5, 6, 7 &#125;
+
+let b: null // anything in &#123; null &#125; 
+
+let c: &#123;
+	favoriteFruit?: &quot;pineapple&quot; // the choices are pineapple or undefined. 
+&#125;</code>`}<!-- HTML_TAG_END --></pre>
+<p>So TOP TYPES: <code>any</code> and <code>unknown</code>
+<code>any</code> can be anything in Javascript. </p>
+<p>When to use <code>any</code>\u2026 <code>console.log</code></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">console.log(window, Promise, setTimeout, &quot;foo&quot;&#96;</code>`}<!-- HTML_TAG_END --></pre>
+<p>The difference between <code>any</code> or <code>unknown</code></p>
+<blockquote><p>Values with an unknown type cannot be used without first applying a type guard</p></blockquote>
+<p>It\u2019s as flexibility as <code>any</code>
+but it has extra responsibility for the person who uses it. You do need to do a <code>type guard</code>.</p>
+<p>*<em>Practical uses</em>
+Top types comes in handy very often.
+When converting from JS -&gt; TS\u2026 it\u2019s good to use <code>any</code> for work-in-progress or don\u2019t know what the type. Like fetch requests. </p>
+<h3 id="${"bottom-types"}"><a href="${"#bottom-types"}">Bottom Types</a></h3>
+<p>REF: <a href="${"https://www.typescript-training.com/course/fundamentals-v3/11-top-and-bottom-types/#bottom-type-never"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3/11-top-and-bottom-types/#bottom-type-never</a></p>
+<p>Describe that can hold NO possible value.
+<code>never</code> == <code>\u22A5</code></p>
+<p>This is useful for exhaustive conditionals. Like, if it\u2019s not X, or Y, then it\u2019s neither! And you NEED that to have a exhaustive conditional. </p>
+<pre class="${"language-ts"}"><!-- HTML_TAG_START -->${`<code class="language-ts">
+<span class="token comment">// The exhaustive conditional</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>myVehicle <span class="token keyword">instanceof</span> <span class="token class-name">Truck</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  myVehicle<span class="token punctuation">.</span><span class="token function">tow</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// Truck</span>
+
+<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>myVehicle <span class="token keyword">instanceof</span> <span class="token class-name">Car</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  myVehicle<span class="token punctuation">.</span><span class="token function">drive</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// Car</span>
+
+<span class="token punctuation">&#125;</span> <span class="token keyword">else</span> <span class="token punctuation">&#123;</span>
+  <span class="token comment">// NEITHER! </span>
+  <span class="token keyword">const</span> neverValue<span class="token operator">:</span> <span class="token builtin">never</span> <span class="token operator">=</span> myVehicle
+<span class="token punctuation">&#125;</span>
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>imagine if you have a 1000 JS files.
+And you have a declaration file for your object.</p>
+<p>And someone changes this: </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// before 
+let myVehicle: Vehicle = Truck | Car 
+
+
+// after 
+let myVehicle: Vehicle = Truck | Car | Boat</code>`}<!-- HTML_TAG_END --></pre>
+<p>Now all of your conditionals with <code>never</code> are broken. Which is GOOD! You need that when doing exhaustive conditionals. </p>
+<p>Now, one of three things will happen in that final else block</p>
+<ul class="${"list"}"><li>We will have handled every case before reaching it, and thus we will never enter the final else block</li>
+<li>We will catch upstream code changes that need to be handled in this conditional at compile time (e.g., adding the Boat case)</li>
+<li>If somehow an unexpected value \u201Cslip through\u201D and is not caught until we actually run the code, we will get a meaningful error message</li></ul>
+<p>Languages like <code>rust</code> demands that all conditionals are exhausted. </p>
+<h3 id="${"type-guards--narrowing"}"><a href="${"#type-guards--narrowing"}">Type Guards &amp; Narrowing</a></h3>
+<p><a href="${"https://www.typescript-training.com/course/fundamentals-v3/12-type-guards/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3/12-type-guards/</a></p>
+<p><strong>Default Javascript Type guards</strong></p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">let value:
+  | Date
+  | null
+  | undefined
+  | &quot;pineapple&quot;
+  | [number]
+  | &#123; dateRange: [Date, Date] &#125;
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>This is too much. But this is fine if you\u2019re using type guard. </p>
+<p>But you can use JS stuff together: </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// Truthy/falsy check
+else if (!value) &#123;
+  value
+   
+let value: undefined
+&#125;
+// Some built-in functions
+else if (Array.isArray(value)) &#123;
+  value
+   
+let value: [number]
+&#125;</code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>User Defined Typeguards</strong></p>
+<p>This is where you want to check like, is it correctly the shape of the object you want. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">interface CarLike &#123;
+  make: string
+  model: string
+  year: number
+&#125;
+
+let maybeCar: unknown
+
+// the guard
+if (
+  maybeCar &amp;&amp;
+  typeof maybeCar === &quot;object&quot; &amp;&amp;
+  &quot;make&quot; in maybeCar &amp;&amp;
+  typeof maybeCar[&quot;make&quot;] === &quot;string&quot; &amp;&amp;
+  &quot;model&quot; in maybeCar &amp;&amp;
+  typeof maybeCar[&quot;model&quot;] === &quot;string&quot; &amp;&amp;
+  &quot;year&quot; in maybeCar &amp;&amp;
+  typeof maybeCar[&quot;year&quot;] === &quot;number&quot;
+) &#123;
+  maybeCar
+&#125;
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>Look at that guard. It\u2019s CRAZY!. It\u2019s so many checks. </p>
+<ol class="${"list"}"><li>Is it null or undefined </li>
+<li>Is it a object </li>
+<li>Is the values matching strings &amp; numbers </li></ol>
+<figure><img src="${"https://i.imgur.com/NGlXdJf.png"}"></figure>
+<blockquote><p>So the type car is only as good as your alignment between the actual checking logic that you implement and the claim you make, about what that logic means means in terms of the type, of what\u2019s passed in.</p></blockquote>
+<blockquote><p>[00:08:16]
+If your logic here is flawed, you\u2019re gonna run into big problems, because type scripts got to do exactly what you say. Right now I\u2019m saying everything\u2019s carlike. And so -19 apparently has a property called year on it, TypeScript doing what I\u2019m telling it to do. So just be really careful about these.</p></blockquote>
+<blockquote><p>[00:08:40]
+These are again, I said this before I want to say one more time. These type guards are the glue between compile time validation and runtime behavior, you got to make sure that your compile time validation and your runtime behavior match up. And if they don\u2019t, you\u2019re gonna be lying to yourself here, right?</p></blockquote>
+<h3 id="${"nullish-values"}"><a href="${"#nullish-values"}">Nullish Values</a></h3>
+<p><a href="${"https://www.typescript-training.com/course/fundamentals-v3/13-nullish-values/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3/13-nullish-values/</a></p>
+<p><code>null</code> means there\u2019s a value, but it means nothing. </p>
+<p><code>undefined</code> means the value is not available yet. </p>
+<p><code>void</code> for function returns should be ignored. </p>
+<pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js"><span class="token keyword">const</span> userInfo <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  name<span class="token operator">:</span> <span class="token string">"Mike"</span><span class="token punctuation">,</span>
+  email<span class="token operator">:</span> <span class="token string">"mike@example.com"</span><span class="token punctuation">,</span>
+  secondaryEmail<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token comment">// user has no secondary email</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">const</span> formInProgress <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+  createdAt<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  data<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">FormData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  completedAt<span class="token operator">:</span> <span class="token keyword">undefined</span><span class="token punctuation">,</span> <span class="token comment">// it's not here yet. </span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment">// for void, things like console errors </span></code>`}<!-- HTML_TAG_END --></pre>
+<h2 id="${"generic"}"><a href="${"#generic"}">Generic</a></h2>
+<p><a href="${"https://www.typescript-training.com/course/fundamentals-v3/14-generics/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3/14-generics/</a></p>
+<p>Types declared in other types. </p>
+<p>It\u2019s pretty abstract. </p>
+<p>so WHY?: </p>
+<p>It would be nice to transform data from one type of object into another. </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// What we have
+const phoneList = [
+  &#123; customerId: &quot;0001&quot;, areaCode: &quot;321&quot;, num: &quot;123-4566&quot; &#125;,
+  &#123; customerId: &quot;0002&quot;, areaCode: &quot;174&quot;, num: &quot;142-3626&quot; &#125;,
+  &#123; customerId: &quot;0003&quot;, areaCode: &quot;192&quot;, num: &quot;012-7190&quot; &#125;,
+  &#123; customerId: &quot;0005&quot;, areaCode: &quot;402&quot;, num: &quot;652-5782&quot; &#125;,
+  &#123; customerId: &quot;0004&quot;, areaCode: &quot;301&quot;, num: &quot;184-8501&quot; &#125;,
+]
+
+// What we want 
+const phoneDict = &#123;
+  &quot;0001&quot;: &#123;
+    customerId: &quot;0001&quot;,
+    areaCode: &quot;321&quot;,
+    num: &quot;123-4566&quot;,
+  &#125;,
+  &quot;0002&quot;: &#123;
+    customerId: &quot;0002&quot;,
+    areaCode: &quot;174&quot;,
+    num: &quot;142-3626&quot;,
+  &#125;,
+  /*... and so on */
+&#125;
+</code>`}<!-- HTML_TAG_END --></pre>
+<p>We need to produce a \u201Ckey\u201D for each object. </p>
+<p><code>&lt;T&gt;</code> is a Type Parameter T </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// before 
+function mapDict(...args: any[]): any &#123;&#125;
+
+function mapDict&lt;T&gt;(...args: any[]): any &#123;&#125;</code>`}<!-- HTML_TAG_END --></pre>
+<p><strong>Generics tl;dr</strong></p>
+<p>tbh i\u2019m not following him at all. This is pretty abstract. </p>
+<p>i don\u2019t really get it.</p>
+<p>Let\u2019s read it outload </p>
+<pre class="${"language-undefined"}"><!-- HTML_TAG_START -->${`<code class="language-undefined">// Array.prototype.map, but for Dict
+
+// BEFORE 
+function mapDict(...args: any[]): any &#123;&#125;
+
+
+// AFTER 
+
+function mapDict&lt;T, U&gt;(
+	input Dict&lt;T&gt;, 
+	mappingCb: (arg: T) =&gt; U
+	): Dict&lt;U&gt; &#123;
+		return &#123;&#125;
+	&#125;
+
+</code>`}<!-- HTML_TAG_END --></pre>
+<ol class="${"list"}"><li>declare that its\u2019 a type Parameter </li>
+<li>We did <code>T, U</code> because U comes after T. </li>
+<li>We are taking the input, and the callback, and want the return value to be a Dict. </li></ol>
+<h3 id="${"generic-scopes--restraints"}"><a href="${"#generic-scopes--restraints"}">Generic Scopes &amp; Restraints</a></h3>
+<p><a href="${"https://www.typescript-training.com/course/fundamentals-v3/16-type-param-scopes-and-constraints/"}" rel="${"noopener"}" class="${"text-link"}" target="${"_blank"}">https://www.typescript-training.com/course/fundamentals-v3/16-type-param-scopes-and-constraints/</a></p>`
+  })}`;
+});
+var weekTwelveTypescript_svelte = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": Week_twelve_typescript_svelte,
   metadata: metadata$d,
   load: load$2
 });
@@ -19194,8 +20613,7 @@ A label provides essential information about an object, while a description prov
   <span class="token punctuation">&#125;</span>
 </code>`}<!-- HTML_TAG_END --></pre>
 <p><strong>live regions</strong></p>
-<p>Add to TIL:
-If you had dynamic content that changes, and you want the screen reader to re-read things if it changes.</p>
+<p>If you had dynamic content that changes, and you want the screen reader to re-read things if it changes.</p>
 <p><code>&lt;div aria-live=&quot;assertive&quot;&gt;Waiting for a ride&lt;/div&gt;</code></p>
 <p>One of my favorite APIs, the value that you pass in to aria-live is a politeness setting. You can pass in:</p>
 <p>assertive - will interrupt whatever it\u2019s doing to announce.
@@ -19390,8 +20808,7 @@ _<span class="token punctuation">.</span><span class="token function-variable fu
 </code>`}<!-- HTML_TAG_END --></pre>
 <p>_. will always respond with a object</p>
 <h2 id="${"map-function"}"><a href="${"#map-function"}">.map() Function</a></h2>
-<p>HOT TIP add to TIL:
-Very often the docs is running the code they are promoting,
+<p>Very often the docs is running the code they are promoting,
 most libs have the lib live on their own site, so you can open up console.log and test it.
 <code>$[h1]</code></p>
 <p>Another hot tip: Test if the result of a function by wrapping it:</p>
@@ -19865,8 +21282,7 @@ But it makes it complicated.</p>
 <p>There\u2019s a lot of complication under the hood. </p>
 <p>It\u2019s a see-saw.</p>
 <h3 id="${"rule-of-3"}"><a href="${"#rule-of-3"}">Rule of 3</a></h3>
-<p>ADD TO TIL:
-Refactoring: Improving the Design for</p>
+<p>Refactoring: Improving the Design for</p>
 <p>The first time you run into a problem, solve it.
 The second time, just copy it.
 The third time, then you make that consideration.</p>
@@ -20237,7 +21653,6 @@ console<span class="token punctuation">.</span><span class="token function">log<
 
 
 </code>`}<!-- HTML_TAG_END --></pre>
-<p>ADD TO TIL:</p>
 <pre class="${"language-js"}"><!-- HTML_TAG_START -->${`<code class="language-js">
 
 <span class="token keyword">const</span> o <span class="token operator">=</span> <span class="token punctuation">&#123;</span>

@@ -1,6 +1,6 @@
 ---
 title: Week Twelve - Web Performance
-created: 2021-01-28T00:00:00
+created: 2022-01-28T00:00:00
 summary: Web Performance Fundamentals
 coverImageUrl: /media/projects/type-kana/session.jpg
 ---
