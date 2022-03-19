@@ -754,11 +754,164 @@ SIP Trunks - It's the negotiation level.
 2. then RTP deals with the actual call.
 
 
-
-
 ## Module 5: Selecting WAN Technologies (1hr)
 
+**Cellular** 
 
+```
+Smart Phone -> Cell Tower -> Service Provider's Ground Station -> Internet
+```
+
+1G - Analog Voice
+2G - Digital voice and added support for GSM, and CDMA
+25G - Packet Switching
+2.75G (EDGE) - Increase Data rates
+3G - Better data rates, UMTS and CDMA2000
+4G - 100 Mps download at least
+4G LTS - 20 Mbps-100 MBps
+5G - Higher speed, lower latecy. Like for Cars.
+  mmWave - light posts or traffic. 
+  Sub-6GHz - uses 
+
+
+**Satellite** 
+![](https://i.imgur.com/qe4tvMH.png)
+
+VSAT - 
+Very Small Aperture Terminal (VSAT)
+Wan Tech that uses small satellite dishes connected to a network and supports 2-way communication. 
+
+(Not like Sat TV, which is single direction.)
+
+* Usually the dish is less than 3 meters. 
+Great for remote locations. Or a oil rig. Or a ship that uses some VSAT technology. 
+
+* 12 Mbps to 10 Mbps.
+
+* Date experiences more delays. Thousands of miles to travel to up, then down back to the ground. And weather conditions. 
+
+**Cable**
+
+Cable Modem. 
+
+![](https://i.imgur.com/5vNHtX3.png)
+
+Hybrid Fiber-coax (HFC) Distribution Network: 
+A cable companies infrastructure for both. 
+
+Data-Over-Cable-Service Interface Specification (DOCSIS): 
+A set of standards specificying the diff feq ranges in a cable TV Network.
+
+Cable Modem termination SYstem (CMTS)
+
+Max download/upload speed. 
+
+**PPP**
+
+Point-to-point protocol Features - It's a Layer 2 Protocol.
+
+1. Authentication  -- CHAP vs PAP:
+PAP (Password Authentication Protocol) - Sends login credentials across network. (Cleartext)
+CHAP (Challegne Handshake Authen Protocol) - Encrypted version. 
+
+2. Compression - A feature. 
+
+3. Detect Errors and Correct them.
+He's not a big fan of this feature. 
+If it detects it and uses a copy. 
+
+4. Multiple Links
+
+MLP - Bundles Multiple phyiscal links into a single logical link, which improves throughput. 
+
+
+**PPPoE**
+
+![](https://i.imgur.com/hPilXWR.png)
+Layer 2 protocol (Datalink)
+
+It's ability to do authentication. Using PAP vs CHAP. 
+
+We can use PPPoE -- Over Ethernet. 
+
+DSL is data over the phone line. 
+
+
+1. Your DSL modem wants to connect to the internet.
+2. The (DSLAM) - DSL Access Multiplexer needs to confirm you have access.
+3. It needs to take user/pass data to auth server.
+4. It uses a PPPoE to get that, to send to the Auth Server.
+
+**DSL**
+
+DSL is data over the phone line. 
+
+ADSL - means asymetric. Higher and data. 18,000 feet.
+Symmetric DSL - same upload/download.  12,000 feet.
+Very High DSL - 4000 feet.
+
+DSLAM - 18000 feet between modem and DSLAM.
+To fix that, they use Load Coils, installed every 18,000 feet.
+
+
+**MPLS**
+
+Ethernet Switching is considered a Layer 2 technology.
+Layer 2 mac address.
+
+Routers make decision at Layer 3. 
+More like IP addresses. 
+
+![](https://i.imgur.com/CxLoeP9.png)
+
+MPLS isn't really a layer 2 or a layer 3. Contains layer information.
+ANd goes between both headers.
+
+it makes a forwarding based on Labels, in a `sham` header.
+It doesn't need to use lower-powered routers to make decisions based on labels, versus the massive amounts of IP addresses. The restriction is no longer (as routers are faster.)
+Good case - you can also use VPN and others.
+
+
+![](https://i.imgur.com/X50hjpJ.png)
+
+Each Thing makes it's own labels for all the others.
+And it doesn't forward based on IP, it forwards based on label.
+
+![](https://i.imgur.com/S5OZkPy.png)
+Customer Edge Routers (CER) sit on the Location itself.
+Provider Edge Routers (PER)
+
+Label Switch Routers (LSR) - They live only within the MPLS service provider and do not connect to any networks.
+
+**Metro Ethernet**
+
+Office locations in a Metro Area Network.
+
+Metro Etherent Provider.
+It uses a traditional Ethernet connection. As high as 400 GB per second.
+
+It could be: 
+* pure ethernet. 
+* Ethernet over SDH (Synchronous Digital Hierarchy) - a high-speed WAN tech that uses fiber optic cabling.
+* Ethernet over MPLS
+* Ethernet over DWDM - optical WAN tech isolating customers traffic through lambda lights.
+
+
+### QUESTIONS
+
+A T1 is a dedicated leased line that offers a speed of 1.544 Mbps. A T3 is a dedicated leased line that offers a speed of 44.736 Mbps. 
+
+An E1 is similar to a T1 line, but is used in European countries. E1 lines offer a speed of 2.048 Mbps. An E3 is a dedicated leased line that offers a speed of 34.268 Mbps.
+
+PPPoE (Point to Point Protocol over Ethernet) provides features such as authentication over Ethernet networks, which is useful for ISPs (Internet Service Providers). 
+
+PPP (Point to Point Protocol) provides the features that PPPoE uses, but only for serial links. 
+
+ATM (Asynchronous Transfer Mode) is a technology used by service providers to switch data using fixed cells of 53 bytes. 
+ 
+MPLS (Multi Protocol Label Switching) is a Service Provider technology used to switch data based on labels, instead of addresses.
+
+Circuit Switched networks have a dedicated physical circuit with dedicated bandwidth. Fast Switching and Process switching are forms of packet and frame forwarding techniques done on infrastructure devices.
 
 ## Module 6: Connecting Networks with Cables and connectors (1.25hr)
 
@@ -775,42 +928,3 @@ SIP Trunks - It's the negotiation level.
 ## Module 9: Addressing Networks with IPv4 (1hr)
 
 
-
-## Module 10: Addressing Networks with IPv6 (1hr)
-
-
-
-
-## Module 11: Explaining IP Routing (1hr)
-
-
-
-## Module 12: Streaming Voice and Video (1hr)
-
-
-
-## Module 13: Virtualizing Network Devices (.75hr)
-
-
-
-## Module 14: Securing a Network (2.5hr)
-
-
-
-## Module 15: Monitoring and Analyzing Networks (.5hr)
-
-
-
-## Module 16: Examing Best Practices for Network Admin (1hr)
-
-
-
-## Module 17: Troubleshooting Networking (1.25hr)
-
-
-
-## Module 18: Prepping or CompTIA Network+ Exam 
-
-
-
-## Module 19: Wrapup
