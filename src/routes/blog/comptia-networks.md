@@ -350,6 +350,410 @@ The RTU then let's the SCADA Master know.
 ## Module 4: Understanding Networks (1.5hr)
 
 
+ATM (Asynchronous Transfer Mode) is a technology used by service providers to switch data using fixed cells of 53 bytes. 
+
+MPLS (MultiProtocol Label Switching) is a Service Provider technology used to switch 
+data based on labels, instead of addresses. 
+
+Frame Relay is a layer 2 protocol that specifies the framing and structure of Frame Relay frames on the perspective WAN (Wide Area Network) network. 
+
+PPP (Point to Point Protocol) is a layer 2 encapsulation protocol that provides features such as authentication and compression, typically used on WAN (Wide Area Network) links.
+
+### VPNS
+
+
+Remove Access VPN
+
+![](https://i.imgur.com/jnwzfp6.png)
+
+Let's you share private stuff over the internet.
+
+What about when you want to share a local print job? You don't need that overhead.
+So you can use a Split Tunnel, which keeps local traffic flowing over the VPN.
+(Versus Full Tunnel)
+
+
+Site-to-Site VPN
+
+![](https://i.imgur.com/mo7qEmH.png)
+
+
+VPN Concentrator, let the router deal with the data encryption and etc.
+
+VPN uses GRE tunnels -> IPSec tunnels to transfer data.
+
+### VPN Protocols
+
+**GRE Tunnel**
+Generic Routing Encapsulation
+
+![](https://i.imgur.com/FbdKqzz.png)
+
+1. It does not provide security
+2. Can encapsulate nearly any type daa.
+
+**IP Security (IPSec)**
+
+![](https://i.imgur.com/gUfw0TY.png)
+
+1. Provides
+Encyprtion, hashing, Digital Signatures, Applies serial numbers to packets (So sniffers can't recreate it)
+
+2. Can encapsulate unicast IP Packets
+
+3. Two modes
+  Transport Mode: Use packets original header
+  Tunnel mode: Encapsulates entire packet
+
+4. Authentication and Encryption
+  - Authentication Header: Authenticates an entire IP packet
+  - Encapsulating Security Protocol (ESP): Can autheneticate an IP packet (not including the IP Header), and can perform encryption.
+
+5. Setup Steps
+  Step 1 - Establish an Internet Key Exchange (IKE) Phase 1 tunnel (aka internet security association and key management protocol (ISAKMP))
+  Step 2: Establish IKE Phase 2 Tunnel. 
+
+
+**GRE over Ipsec, a best of both worldd**
+
+![](https://i.imgur.com/l2Ls0ND.png)
+
+1. Take the GRE tunnel, and encapsulates that traffic type into GRE packets. 
+2. Since IPsec only takes unicast IP packets, GRE packets will work. So IPsec converts it and sends it over.
+
+
+### Dynamic Multipoint VPN 
+
+![](https://i.imgur.com/dvPfYTl.png)
+
+HUB: HQ
+SPOKE: Branch A, B, and C
+
+BEFORE: If Branch A wants to connect to Branch C, it'll have to talk back to HQ. 
+
+
+![](https://i.imgur.com/i3MCknl.png)
+
+NOW: With Dynamic Multipoint VPN. 
+It uses Multipoint GRE (mGRE): 
+and Next Hope Resolution Protocol (NHRP): Used to discover the IP address of the device at the far end of a tunnel.
+
+
+
+BUT -- how does Branch A talk to Branch B and even set up that Dynamic Tunnel?
+
+It maintains a database:
+![](https://i.imgur.com/UvV4sF7.png)
+
+It'll say, you want to reach 10.0.0.2 at their real IP -- over the public internet.
+
+NHRP Query - 
+"What's the Physical IP address of IP Address 10.0.0.2" to the hub.
+It's your message.
+
+
+DHCP
+SDN
+
+
+### Web Services & Voice Services
+
+**Web services**
+![](https://i.imgur.com/vdiUvJx.png)
+
+Ephemeral port number for the source. Like 56000+
+
+The source IP: 
+Destination IP:
+Source Port
+Destination Port: 
+
+**Voice Services**
+
+![](https://i.imgur.com/2RUcdNp.png)
+
+Before to connect phones -- they used to own a PBX (private branch exchange)
+
+PBX is like a phone version of a switch.
+EXAMPLE: 
+* 6000 phones, you don't connect it to the Phone Company. 
+* You can connect them to each other, and only 200 phones are actually outbound. 
+* And if it was in another building, it'll go over something called 'a tieline'.
+
+TODAY, what if you use PBX but with routers?
+![](https://i.imgur.com/9eQPjvy.png)
+
+
+
+What about IP Based Phones?
+![](https://i.imgur.com/622zktO.png)
+
+The PBX replacement is 'the Call Agent.
+
+SIP - session Initiative Protocol. 
+That's the data type for voip.
+
+1. So x3800 wants to talk to x1012.
+2. The Call agent will figure out all the code, and then moves that message config to x1012. 
+3. x1012 accepts and then a direct communication will occur. Call Agent doesn't need to do anything any more.
+
+RTP - Real-time transport protocol (RTP)
+
+A transport layer protocol that carries voice/video media.
+
+
+### DHCP
+
+Dynamic Host Configuration Protocol (DHCP) theory
+
+![](https://i.imgur.com/n8d7HbE.png)
+
+Computer talks to switch, that connects to a DHCP Server.
+
+4-step process:
+DORA - 
+D - Discover -- it's a broadcast. (Anyone there?)
+O - Offer. It's unicast. (Here's my IP address.)
+R - Request. It's a broadcast. (Can I have a IP Address?)
+A - Acknowledgement. It's a unicast. (Sure can!)
+
+The computer is at 0.0.0.0, before a IP address is sent.
+Well, the DHCP Server is actually talking directly to the MAC Address.
+
+
+NOTE: Router stops broadcast --
+So Laptop A cannot talk to Laptop B. 
+To avoid that, the router becomes a DHCP Relay/IP Helper. 
+That allows it.
+
+![](https://i.imgur.com/lqELsuM.png)
+
+DHCP Features:
+* MAC reservations. (like keep the printer to always assign X address)
+* Pools (aka Scopes) (different pool for diff subnets, like 192.168.100, 172.16.1.100)
+* IP Exclusions (Don't include these IPs)
+* Scope Options 
+  ( Like give the Default gateway, DNS server, or change the TTL, or Option 150.)
+* Lease Time
+  If it will expire in 8 days... to renew
+  T1 = ask on 1/2 of lease time (4 days)
+  T2 = ask again on 7/8 lease time. (7 days0)
+
+
+![](https://i.imgur.com/OX83DNJ.png)
+
+### DNS
+
+![](https://i.imgur.com/ncquOd7.png)
+
+![](https://i.imgur.com/nIIQGuG.png)
+1. Your computer wants something, so it sends `website.com` to the internet.
+2. DNS server takes that, and sends back to your computer the ip address.
+3. Your computer then pings that ip address.
+
+
+DNS Terms:
+
+Authoerative Name Server - 
+Where it will forward requests. 
+Like .com will forward it to the right data spot.
+
+DNS Zone Transfer - 
+When you send your DNS Zone updatse from a priamry to a secondary.
+
+Reverse Lookup - 
+When you query a DNS server for a domain name with a specific address.
+So it takes `www.website.com` and returns IP address.
+
+Internal DNS - 
+Like one for only internal offices and workplace.
+
+External DNS 
+This is for the intenret.
+
+VPN - How someone on the internet to connect to the internal.
+Like working from home.
+
+
+DNS Record Types:
+![](https://i.imgur.com/Hywfwji.png)
+
+A -- Address
+AAAAA - IpV6 address
+CNAME - another name for that record. Alias.
+MX - mail service account.
+PTR - Like a CNAME. Used when performing Reverse Lookout.
+SOA - Start of Authority - A informational record.
+TXT - To contain descriptive human text. Now it sends attrs/values.
+SRV - A record to point to other specific services. Like more generic MX record.
+NS - Tells a DNS zone to use specific name servers, for security reasons.
+
+### NAT Theory
+
+The most common method for ipv4.:
+
+How do you connect to other computers locally?
+What IP Address do they get?
+
+RFC1918 --
+This specifies private IPv4 Address spaces. Stuff you can routed within an org but not on public internet. 
+PRIVATE: 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16
+
+Can route them just fine in the network.
+
+![](https://i.imgur.com/LjWYyUM.png)
+NAT-Enabled Router. 
+
+![](https://i.imgur.com/xEgZ9M5.png)
+
+NAT-enabled router changes the source IP and makes a special IP to the internet.
+
+They have a table
+
+Inside local
+outside local
+inside global
+outside local
+
+![](https://i.imgur.com/j26IbU0.png)
+
+This ALSO ASSUMES that the internet service provider is giving you a POOL of addresses. Which it doesn't!
+
+Inside means... you can access.
+Inside Local -- It's IP addresses you can access from your computer directly.
+Inside Global -- It's the source IP, which again, you can access! 
+
+Outside Global - It means that it's completely outside of our network.
+
+Outside Local - Rarely will see this.
+
+QUESTION:
+How does this work int his sitaution?
+Your own home network. 1 IP address. But you also have a bunch of devices.
+
+A variant of NAT - 
+Port Address Translation (PAT) Theory
+
+You have to share the IP, but different port numbers.
+
+Client 1 pings that server, but uses a very specific IP. 
+![](https://i.imgur.com/BPs1V2y.png)
+
+Port Forwarding/Port Mapping -- It's PAT in reverse!
+![](https://i.imgur.com/aE07MR7.png)
+
+Computer wants to talk to another computer. 
+The Port Mapping Router sents it to the SSH Server.
+The SSH Server takes that number, and sends it to the correct port.
+
+### NTP
+
+Network Time Protocol (NTP) Theory
+
+Why do techies need accurate time?
+* Logging errors.
+* Digital certificates to exchange private data. Have experation dates.
+* IP phones. 
+
+Atomic clock C-133 elements, which vibrates 9mil times. That's 1-second. 
+
+So we want a router, that points to that Atomic Cloud.
+
+NTP is as easy as 123. 
+Port 123. 
+Statum number... measure the beliebability of a time source.
+
+So Router talking to Internet Atomic Clock -- Stratum = 1
+A SW1 talking to Router -- Statum = 2.
+
+It allows that info to propogate.
+BUT, if the place is a statum grater than 16, then it refuses it.
+
+### SDN
+
+BEFORE: 
+It was time consuming to spin up a network real fast. 
+Like after a major football game, traffic will flood. So you set up a bunch of networks.
+But you can't just CLI into each one manually.
+
+NOW:
+Virtual Machines, set up load balancing.
+
+SDN - three planes.
+Management Plane - In charge of access that router/switch. Like running SSL, but to your virtual machine that duplicates the commands. 
+
+
+Control Plane - In charge of figuring out protocol types.
+Populating the router to make forwarding decisions.
+
+Data Plane - It's just figuring out data. 
+
+SDN Controller talks to the Management Plane with an API.
+![](https://i.imgur.com/xHY3uVV.png)
+
+We call those devices... Southbound Interfaces. (SBI)
+
+This is called a Centralized Control Plane. 
+Using OpenFlow.
+
+We use Applications to communicate the SDN Controller, using
+Northbound Interfaces. (NBI)
+
+north of the SDN Controller is like... application, your program.
+south of the SDN controller is like... the devices themselves.
+
+
+
+
+![](https://i.imgur.com/l5IK5jv.png)
+
+### IOT
+
+Camera that talks to Phone. Microwave that talks to watch.
+Lightbulb.
+
+Drivers:
+* Thanks to High speed internet widly available
+* Wi-Fi in the devices
+* Smart phones 
+
+
+Sample Applications
+* Predictive maintence (your car telling your phone that it needs aire)
+* Self-optimization production (if factory 1 fails, it tells factory 2.)
+* Automated inventory management (The monitor tells corona how much is left on the keg. If low, it tells corona to send another one)
+* Home automation
+* Health monitoring - 
+
+Supporting Technology
+* Z-Wave - like honeywell, using a mesh topology. Using 900 mhz band (not 2.4ghz)
+* Zigbee - not compatbie. Faster. Competitor to Z-wave.
+* ANT/ANT+ - heartrate monitor
+* Bluetooth - Lowpower transfer. Speakers to phone,.
+* NFC - Near-field communication using your credit card
+* IR - Infrared (IR), direct line of sight. 
+* RFID - Radio frequency, using iPhone tags.
+* IEEE 802.11 - wifi standard.
+
+
+### SIP Trunks
+
+PSTN - Old phone world
+ITSP - to connect us to phones around the world. Using a SIP Gateway. 
+
+BEFORE: 
+You have 200 phones that you pay the phone company to create a wire for.
+
+AFTER: 
+You have 200 phones that are controlled by a Call Agent, that sends it through a SIP Gateawy, that goes to the ITSP Internet.
+
+![](https://i.imgur.com/TX7clxg.png)
+SIP Trunks - It's the negotiation level.
+
+1. Starts the negotiation, using SIP.
+2. then RTP deals with the actual call.
+
+
 
 
 ## Module 5: Selecting WAN Technologies (1hr)
