@@ -901,7 +901,7 @@ It could be:
 
 A T1 is a dedicated leased line that offers a speed of 1.544 Mbps. A T3 is a dedicated leased line that offers a speed of 44.736 Mbps. 
 
-An E1 is similar to a T1 line, but is used in European countries. E1 lines offer a speed of 2.048 Mbps. An E3 is a dedicated leased line that offers a speed of 34.268 Mbps.
+An E1 is similar to a T1 line, but is used in European countries. E1 lines offer a speed of 2.048 Mbps. An E3 is a dedicated leased line that offers a speed of 34.268 Mbps. 
 
 PPPoE (Point to Point Protocol over Ethernet) provides features such as authentication over Ethernet networks, which is useful for ISPs (Internet Service Providers). 
 
@@ -915,9 +915,403 @@ Circuit Switched networks have a dedicated physical circuit with dedicated bandw
 
 ## Module 6: Connecting Networks with Cables and connectors (1.25hr)
 
+### Cables
+
+**Copper Cables - Coax**
+
+It's braiding to avoid the EMI (electromagnetic Interface).
+
+![](https://i.imgur.com/aMr1SfH.png)
+
+Coaxial (Coax) Cables have a few - Ohms.
+Inpedance - A circuit's oppposition to traffic flow (in ohms), which can have resistive, capacitive and/or inductive components.
+
+Think of the name - 
+Coaxial means -- Two conductors at the same central point (axis)
+
+Coax isn't used much anymore.
+
+New one is Twinaxial Cable. 
+* Has 2 inner Conductors
+* Most commonly used in Data Center. (at 40Gbps or 100 GBps)
+* Limit to 7 meters
+
+**Copper Cables - Twisted Pair Cable**
+
+Unshiedled Twisted Pair (UTP)
+Shielded Twisted Pair (STP) Usually with aluminum.
+Plenum-Rated - Has insulation that won't release toxic stuff.
+
+Categories of Twisted Pair cable
+
+![](https://i.imgur.com/zGykVdt.png)
+Category - common Use - Distance Limits
+Cat 3 - 10BASE-T and 100BASE-T4 - 100m
+Cat 5 - 100BASE-TX and 1000BASE-T - 100m
+Cat 5e - same - same - but better electric defense
+Cat 6 - 1000BASE-T, 5GBASE-T, and 10GBASE-T - 55m for 10GBASE-T
+...
+
+**Fiber Cables**
+Fiber Optics is immune to EMI (electronic mode.)
+
+![](https://i.imgur.com/7IxzvdP.png)
+Light travels a bit slower than air in water. 
+Notice in the picture:
+  * the light refracts, causing the straws to be 2x size.
+  * The inner tube (Core) is the data.
+  * The outer tube (Cladding) is the padding. 
+
+![](https://i.imgur.com/rf5Id6s.png)
+2kilos of distance.
+
+Multimode Fiber - 
+* The red bouncing is slower
+* The green bouncing is fast
+But the data you receive, it's dysync and in error.
+This is called Multimode Delay Distortion. 
+When bits using one path of light (a mode) passing oup other bits using a different path of light. 
+
+Single-mode Fiber - 
+It's not bouncing. There's only 1 reliable path. 
+
+### Connectors 
+
+**Copper Connectors - RJ-11 & RJ-45**
+
+![](https://i.imgur.com/jKX5bsb.png)
+RJ-11 - it's more for phone. 6 slots.
+  Can be RJ-14 as well. Terms use interchangable. 
+
+RJ-45 - mostly for ethernets. 
+
+![](https://i.imgur.com/M5UzwRT.png)
+DB-9 & DB-25
+
+D comes from the shape.
+
+Used to be serial ports and mouse. Now modems.
+
+![](https://i.imgur.com/6UBLsFa.png)
+F-Type and BNC Connector. 
+
+F-Type is for cables.
+
+BNC - Looks like a bayonet neil consolents. 
+No longer used.
+
+
+**Copper Connectors - RJ-45 ... T568 Standards**
+![](https://i.imgur.com/Gg4Sq3i.jpg)
+
+There's 2 bodies that manage the controls.
+
+American National Standards Institute (ANSI)
+Telecommuncications Industry Association (TIA)
+
+T548B is the current standard. 
+
+STRIAGHT-THROUGH CABLE: 
+![](https://i.imgur.com/8eOiUIK.png)
+Let's say you're talking from computer to Switch.
+
+Computer (The Media Dependent Interface - MDI)
+Pin 1 & 2 is transmission.
+Pin 3 and 6 is receiving.
+
+Switch (Called the Media Dependent Interface Crossover - MDI-X) sets is the other side.
+Pin 1 & 2 is recieing.
+Pin 3 and 6 is transmissiing.
+
+There's a feature called Auto-MDI-X, to negotiate which pins to pins. 
+
+CROSSOVER CABLE: 
+To connect two multiple computers, 
+the pins are switched. 
+To connect two devices of the same type together, such as two switches or two routers. 
+![](https://i.imgur.com/YRfLkET.png)
+
+
+WHY ONLY 4 PINS?
+Notice that we were using only 4 pins. 
+You can use splitting, to use the other 4 pins! 
+
+![](https://i.imgur.com/Ed7CmQ4.png)
+
+But this fucks up on higher speeds. 
+Notice 1000BASE-T uses all 8 wires.
+
+
+
+**Fiber connectors**
+
+![](https://i.imgur.com/pmYHGyU.png)
+ST connector - Straight Tip, or a Bayonet Connector.
+The fiber is actually in that white tip.
+Two connects, one for receiving and one for transitioning.
+
+SC connector - Subscriber, Standard, Square connector. Typically used for with Multi Mode Fiber.
+
+LC connector - A luncent connector, little connector. Typically used for Single Mode Fiber.
+
+
+MTRJ - This one has TWO fiber strands. Does not have a bayonet End.
+The others have only fiber strand (and ST uses two connectors)
+
+Acronyms
+![](https://i.imgur.com/52ECtbL.png)
+
+UPC - Ultra Physical Contact 
+
+So when two fibers connect (UPC), there's a little bit of a reflection happening (notice the arrows?) goes back in the other direction. It might actually damage the transfer.
+
+![](https://i.imgur.com/JTjJN5D.png)
+Angled Physical Contact (APC)
+8-degree Angle
+When it gets transfered, when it hits that inner point (APC), the reflection bounces to the cladding.
+It will reduce the damage.
+
+### Terms
+**Media Converters**
+
+The equipment to attach all type of connectors... The media Converter.
+
+* Convert a single-mode Fiber to Ethernet.
+* Or Multimode Fiber to Ethernet (Campus to Internet)
+* Fiber to Coaxial
+* Single-Mode to Fiber to Multimode Fiber 
+
+**Transcievers**
+
+To connect a ethernet switch
+
+Use Transciver into the switch, for wahtever media type of what we need.
+GNIC (Gibabit Interface converter (GBIC)) 1GB
+SFP (Small Form-Factor Pluggable (SFP)) Transciever (In a datacenter) 1GB
+SFP+ - Does 10GB  -
+QUAD SFP - 4 GB transfer. 
+QUAD SFP+ - This will give us a 40GB transeiver.
+
+![](https://i.imgur.com/hxj22Pa.png)
+This is a full-duplex Transeiver. 
+
+![](https://i.imgur.com/w7STOkt.png)
+Bidirectional Transceiver (BiDI Transciever) Will cost more.
+This uses a single line, and a different light for transmission and receiving.  
+
+
+**Termination Points - Punch-down Blocks**
+
+66 Block - LEGACY - uses Cat3. Some Cat 5e.
+You have things on the left and right.
+You put a jumper int he middle two rows.
+
+Usually, there's a hole in the cieling of a wiring closets carrying wires to another hole closets.
+Lots of twisted pairs. Not Cat6 wires.
+But a Riser cable. (usually 25, or 100 pairs)
+Easier to drop 1 riser cable, versus 100+ cat6 wires.
+Then you can put the Riser cables onto that 66 block.
+
+![](https://i.imgur.com/Ldzmk1H.png)
+Then there's cablse left and right. 
+
+We don't use 66 blcoks because there's a lot of cross talk.
+
+110 Block - Most common. Uses Cat6a.
+
+And a punch Down tool, to use 66 or 110 Block.
+The metal cuts through the installation to make electrical contact with the wire. 
+
+Or a patch panel, which is a cleaner way to do it.
+![](https://i.imgur.com/dFAKRkG.png)
+
+You can then connect a rj-45 bit to a wire, and plug it in through here.
+That lets you cross connect and know what office goes to where. 
+
+
+ADDITIONAL: 
+![](https://i.imgur.com/5Czzc3P.png)
+Krone - German word for cornw
+Alternative to 110 block.
+Can support stranged conductors, in addition to solid conducters.
+
+
+BIX (Building Industry Cross-Connect): 
+Typically Cat5e 
+GigaBIX exceeds Cat 6 specs.
+
+
+**Termination Points - Fiber Distribution Panel**
+For Fiber: 
+You can't use a punch down tool on glass...
+![](https://i.imgur.com/9raoHn0.png)
+
+Fiber runs to different floors, and into the Fiber Distribution Panel. 
+
+
+On a WAN, a circuit to you -- 
+The responsibility is now on you.
+Demarcation Point (Dmarc) and Smart Jack
+
+When a network maintence responsibility passes from a WAN Provider to the customer.
+
+![](https://i.imgur.com/NGJCK6K.png)
+The Smart Jack - a device (commonly what they give you, the endpoint)
+
+### More stuff
+
+**Cabling Tools**
+Crimper, cuts a wire to add a RJ45 Standard. (ethernet looking guy)
+
+![](https://i.imgur.com/z48kBJD.png)
+Cable Tester, see if all pings are going correctly. verify the integrity
+
+Punch Down Tool - to hit the blades of the 60 block or the 110 blocks.
+
+![](https://i.imgur.com/wjoyPL1.png)
+OTDR - For fiber optic cables. Senda light down the cable to see where a loss/issue is.
+
+BERT Tester - Bit error rate test. 
+Check to see 1 and 0s match the patterns that we recieve on a heavy load, and rate of the error.
+Very expensive.
+
+![](https://i.imgur.com/YrrCWjd.png)
+Light Meter - For fiber optic.
+Put a light meter, attach the light to see what the strength is.
+Possible reason for loss of light is that there's a limit to how much you can spin it. If it's too bend, the cladding will block data. Degrats signall.
+
+![](https://i.imgur.com/mnaBW4e.png)
+Tone Generator, or Toner Probe - Fox and Hound. 
+For when you have hundreds of wires and you want to figure it out where it is.
+Fox on a wire. Hound test to see which cable closet wire it's in.
+A toner probe (signal tracer) is useful in locating a single ethernet cable within bundles of cabling or determining where a device is physically connected to.
+
+![](https://i.imgur.com/fplg9cy.png)
+Loopback Adapter - if you get a light back, then the wire is good.
+Marco has been receiving tickets from technicians stating a switch has failed ports. You decide to inspect the switch and need a tool to quickly inspect the integrity of the port. A loopback plug is used to verify the integrity of a port. In this case, a switch's port
+
+Multimeter - Check AC/DC, check zero resistence to see if the wire is broken.
+
+Bandwidth Speed Tester (like speedtest.net)
+
+Wire Map Tester - Like the cable tester, to see if the right wires are showing the right wire.
+
+Cable Tap - Allow you to 'tap' into pick up things. Maybe to use to check if things are flowing.
+
+Fusion Splicer - 
+To split two wires together, or merge fiber optics. 
+Melts the two strands together. 
+
+Snips/Cutters - To cut a wire. To remove the Cat6, to attach a RF-45.
+
+Cable Stripper - to strip the cable. 
+
+Port Scanner - to check ports. 
+
+Iperf - one is a client and one is a server and test the throughput between two devices.
+
+Spectrum Analyzer - 
+* Check that the wavelengths are working.  
+* used to measure frequency in relation to an input signal.
+* it can also be used in wireless networks to track interference problems
+
+![](https://i.imgur.com/IzgzdBE.png)
+
+You should describe the general reason for each tools. 
+
+**Ethernet STandards**
+
+You should need to know the ethernet standards. 
+Like what is Cat5's max speed?
+
+Copper Cabling:
+![](https://i.imgur.com/HrfVA6m.png)
+
+Fiber Optic Cabling: 
+![](https://i.imgur.com/Jtd9cxQ.png)
+
+MMF - Multimode fiber
+SMF - Single Mode Fiber 
+
+Multiplexing - Lambda 
+
+Coarse Wavelength Division Multiplexing (CWDM): 
+* Supports a max of 8 channels (or 18 channels over short distance), 
+* separated by 20nm. 
+* Max distance over 80km. 
+* No amplifiers.
+* Much more inexpensive.
+
+Dense Wavelength Division Multiplexing (DWDM):
+* Support max of 80 channels 
+* Separated by 0.20nm. 
+* Max distance is 3000 km. 
+* Support amplifiers. 
+* Much more expensive.
+
+Bidirectional Wavelength Division Multiplexing (WDM):
+* Let's a single fiber optic stand transfer and receive. (The other two two separate channels)
+* This educes fiber cost, at the expensve of fewer channels. 
+If you went with Bidirectional WDM, using DWDM -- it'll turn 80 channels into 40 channels. 
+
+
+**TEST**
+Category 8 twisted pair cable can support speeds as high as 25 Gbps or 40 Gbps, with a distance limitation of 30 – 36 meters.
+
+Plenum should be used when running an Ethernet cable through AC (Air Conditioning) or HVAC (Heating Ventilation and Cooling) systems, . Plenum cable has a jacket that has characteristics which can stop smoke and stop/slow flames if they were to occur on the cable. When normal PVC (Polyvinyl Chloride) cable burns, it releases a toxin. MMF and SMF cables are types of fiber-optic cable.
+
+The color coding for the TIA/EIA 568-B standard is 
+  * Orange/White, 
+  * Orange, 
+  * Green/White, 
+  * Blue, 
+  * Blue/White, 
+  * Green, 
+  * Brown/White, 
+  * Brown. 
+  
+To remember, think of the T568B Standard is from Mexico, where the filter is orange, and we start with orange. 
+While the A is Fallout America, which has a green filter.
+
+The color coding for the TIA/EIA 568-A standard is: 
+* Green/White, 
+* Green, 
+* Orange/White, 
+* Blue, 
+* Blue/White, 
+* Orange, 
+* Brown/White, 
+* Brown.
+
+ A TDR (Time Domain Reflectometer) is used to certify and troubleshoot cables.
+
+ A continuity tester is used to determine if an electrical path exists between two end points.
+
+Joe, a network technician, needs to connect to a router so he can set up SSH for remote administration. He is going to do this through the use of a serial cable. He will use a Connecting to an infrastructure device through a console usually requires one end having an RJ-45 connector and the other having a DB-9 connector.
+
+DB25 - they look like old-fashion serial extension printer cords. 25 pins.
+DB-9 - they're smaller with 9 pins. D shaped.
+D-SUB
+
+Which type of connector is usually found on the end of an RG-59 cable?
+These cables are used to carry TV signals, and you'd use a An F-Type connector is typically used to terminate an RG-59 cable.  They aren't used anymore.
+F-type connectors are the spinny guys. called F-type because they're fucking annoying to tighten up.
+
+A SFP (Small Form Factor Pluggable) has largely replaced a GBIC (Gigabit Interface Converter) largely due to size.
+So in Fiber, GBIC -> are fucking massive. the SFP (smaller form Pluggable). 
+
+A router does intelligent packet forwarding based on destination IP address.
+
+A hub, everyone is yelling.
+A switch is like a room that has a messenger delivering the messages.
+A router lets you talk to rooms somewhere else.
+
+A demarcation point (Demarc) is the handoff where the service provider’s network ends and the customer’s network begins. 
+
 
 
 ## Module 7: Ethernet Switches(1.5hr)
+
 
 
 
