@@ -1313,12 +1313,584 @@ A demarcation point (Demarc) is the handoff where the service provider’s netwo
 ## Module 7: Ethernet Switches(1.5hr)
 
 
+**MAC Addresses**
+48-bits, in hex, burned into the chip.
+
+The first 24 - is the vendor code (OUI)
+The last 24 - Nic Specific (Whatever the vendor wants)
+
+1. So you typically send a IP request.
+2. The ARP protocol then sends back the MAC address.
+3. The MAC address is then connected to directly.
+
+![](https://i.imgur.com/gjZ8WEb.png)
+The switch stores the mac address.
+
+**Ethernet Switch Frame Forwarding**
+
+Laptop 1 sends a message to Switch, and then it FLOODS to the other devices.
+The Printer says, "Yeah that's me."
+Now Switch knows both Mac address.
+
+![](https://i.imgur.com/TS3Ms3G.png)
+
+What a Ethernet Frame looks like
+
+18-bytes Header: 
+7 -- Preamble - 7 byte
+1 -- SFD - Start Frame Delimited - 1 bytes
+6 -- Destination - 48 bits, that's 6-bytes
+6 -- Address Mac - 48 bits, that's 6-bytes
+2 -- Type - 2 bytes. Ipv4 or IpV6.
+
+DATA: It has 1500 Bytes max. MTC
+
+4 -- Frame check Sequence (FCS) - 4-bytes
+
+Layer 2 MTU could be 1500 + 18. 
+
+![](https://i.imgur.com/ULKMHCE.png)
+Jumbo Frame is 9000 bytes.
+
+**Virtual Lans**
+
+VLAN Theory
+
+A VLAN (Virtual Local Area Network) is a layer 2 broadcast domain that provides logical isolation. VLANs can span across multiple switches through trunks. With that being said, since VLANs provide layer 2 isolation, and have the ability to span multiple switches, they can be used to assign devices a subnet based on job function.
+
+We dedicate space ports on the VLAN.
+
+These VLANs cannot talk to each other.
+Laptop cannot talk to another laptop. 
+
+To make this work, you need a Router, and the Trunk Switch.
+
+Using a Layer 2 Switch.
+
+
+![](https://i.imgur.com/8BkbYPt.png)
+
+Using an example: Laptop 1 talking to Laptop 2. 
+
+1. Laptop 1 talks to VLAN 10. 
+2. Laptop 1's data move to the Trunk.
+3. The Trunk move it to the router.
+4. The router moves it to VLAN 20.
+5. Laptop 1's datanow goes to Laptop 2. 
+
+A Layer 3 Switch, can do routing internally, without a trunk!
+
+Multilayer Switch (MLS) - 
+A multilayer switch (MLS) is a switch that can make forwarding decisions on more than just L2 addresses. Typically multilayer switches can also perform routing functions without the use of a dedicated router. 
+
+
+
+
+**Trunking Theory**
+
+![](https://i.imgur.com/QyaMDrX.png)
+
+BAD IDEA: 
+So you want your Sales PC to talk to your Sales Server.
+Bad idea is to hook your 10 Sales PC to your10 Sales Server ports.
+It doesn't scale well.
+
+BETTER IDEA: 
+Use a IEE 802.1Q Trunk. You can remember that by Q is a queen, who is the root weapon in chess matches.
+Now you can communicate from using that same Trunk port.
+
+QUESTION: How to determine which computer to return the data to?
+Easy - it Adds four tag bytes to each frame. (Except in Native VLAN)
+1500 + 18 bytes header + 4 bytes. 
+
+If the switch supports IEEE 802.1Q, and it sees a 1524-byte frame, it sees it as a 'baby giant'. That's LITERALLY THE NAME.
+
+Native VLAN: the one that is not leaves it untagged. 
+The switches need to have matching Native VLAN (default to 1)
+
+**Voice VLANs**
+TODO: Might have to watch another video about this.
+
+A voice VLAN allows an IP phone that is daisy chained to an attached PC to mark voice frames with a higher Class of Service (CoS) marking than data frames sent by the attached PC. That allows both voice and data frames to flow over the same connection into a single switch port, while distinguishing between the voice and data frames.
+
+
+![](https://i.imgur.com/8TmphOV.png)
+Usually voice, video, and data on the same LAN.
+
+for security reasons, you want to separate voice to it's own thing.
+
+TYPE 1 - Single VLAN Access Port
+* It's a daisy chain connection. 
+* Access Port. 
+* One VLAN.
+* Good for software-based 3rd party IP Phones like Jabber. 
+* Identify the voice traffic. 
+* Allows IP phone to mark an IEEE 802.1p marking. 
+
+Class of Serice - CoS - A layer 2 quality of Service marking over a trunk. Range of 0 - 7, where voice frames are set to a value of 5. Add those 4 extra bytes. 
+IEEE 802.1p - similar to a coS Marketing, sent over a non-trunking port. Four BYtes added to a Layer 2 frame, with three bits in those four bytes used as a priority marking. 12 bites int he vLAN set to all zeros. 
+
+There's no VLAN identification. 
+
+TYPE 2 - Multi-VLAN Access Port
+* Access port.
+* Let's you have a VLAN on two ports. Only if you promise that it carries Voice Traffic.
+* The Cisco IP Port knows you're using it. It Cisco IP Phone learn it's VLAN via CDP protocol.
+* Does not work with LLDP-Med
+* Looks like dot1Q trunk frames. 
+
+Cisco Discovery Portocol (CDP) - Proprietary Layer 2 discovery protocol
+Link Layer Discovery Protocol (LLDP) - An industry standard Layer 2 discovery protocol
+
+Link Layer Discovery Protocl - Media Endpoint discovery (LLDP-MED) - An extenstion of LLDP, designed to work between network endpoints (IP phones) and infrastructure devices (Ethernet Switches).
+
+You don't get separation.
+
+TYPE 3 - Trunk Port
+
+Trank point carries 
+* Multi VLANs. 
+* Compatable with both CDP and LLDP-MED
+* They are dot1Q trunk frames.
+* They are untagged.
+* Remove unneede VLANs should be pruned. 
+
+
+**Etherent Port Flow Control**
+
+How to deal with a overflow of traffic?
+Switch 2 can tell switch 1, send them a `pause` frame.
+
+* Pause Transmission for a period of time. 
+* Sent to a reserved multicast address that is not forwarded by Ethernet Switches.
+* The unit measurement is called a quanta, which equals 512 bit times.
+* Bit Time = 1 / NIC speed
+
+Example - Gigbit Ethernet NIC has a 1 nanosecond bit time. 
+It will pause for 512 nanoseconds.
+
+This is a known as a Pause Time.
+
+In IEEE 802.3x (1997)
+CAVEAT: All CoS values were subject to the same amount of delay. 
+(Like Voice can be marked with a CoS value of 5)
+
+In IEEE 802.1Qbb (2010)
+UPDATE: Each CoS value is assigned a different time to pause.
+So priority ones get through faster.
+
+
+**Power over Ethernet(PoE)**
+
+![](https://i.imgur.com/rl1992v.png)
+It's a switch that creates a PoE Switch.
+It's connected to the UPS, to a power outlet. 
+
+Power can flow over ethernet. 
+Makes the installation cleaner.
+
+Three Components: 
+* PSE - Power Source Equipment
+* PD - Powered Device, like phone or camera.
+* Ethernet Cable 
+
+
+Cisco Inline Power (7.7 Watts)
+IEEE 802.3af (15.4 Watts)
+IEEE 802.3at (30 wats)
+IEEE 802.3bt (100 Watss)
+
+
+### Spanning Tree Protocol (STP)
+
+**What is it**
+Spanning Tree Protocol (STP) is a protocol used to detect and prevent layer 2 loops through the use of BPDUs (Bridge Protocol Data Units). This protocol does this by blocking redundant paths. 
+
+![](https://i.imgur.com/f8p9ORy.png)
+
+Layer 2 switch (mac addresses)
+Frames can go on forever, that creates a broadcast storm.
+
+Using a Spanning Tree Protocol on Layer 2, to avoid looping.
+That will avoid broadcast storms. The loop can bring your network down. 
+
+Layer 3 Router has a TTL field to kill loops.
+
+
+**Before -- Bridges**
+
+![](https://i.imgur.com/S3xQtFv.png)
+Before Ethernet switches, there were Bridges. 
+They make forwarding decisions in software, based on destination MAC Addresses.
+
+IEEE 802.1D
+
+**Today -- Switches**
+![](https://i.imgur.com/FIwPtVK.png)
+A modern networking device that makes those forarding decisions in ahrdware.
+
+**STP Port States**
+
+What is the central root bridge.
+
+The Four Questions to determine - who is the central root bridge?
+1. Who is the root bridge? (Everything stems from the rout)
+2. What are the root ports? 
+3. What are the designated port. One port needs 
+4. WHat are the blocking (non-designated) Ports? (That's left)
+
+To answer this question:
+![](https://i.imgur.com/5afA8IY.png)
+
+> 1. Who is the root bridge? (Everything stems from the rout)
+
+That can be deteremined by the Bridge ID.
+
+So for this, they all have the same priority. `32768`
+Which means we have to look at the MAC Address: `1111.1111.1111`
+
+SW1 is the Root Bridge. 
+
+> 2. What are the root ports? 
+
+This is determiend by "Cost".
+A table is often used.
+
+Short Path Cost Method: (Old method)
+![](https://i.imgur.com/xMrkx9X.png)
+PORT SPEED --- STP Port Cost
+10 Mbps --- 100
+100 Mbps --- 19
+1 Gbps --- 4 
+10 Gbps --- 2
+
+Long Path Cost Method: (New method)
+![](https://i.imgur.com/ysloQB2.png)
+Math is 20tbps/Port Speed
+
+PORT SPEED --- STP Port Cost
+10 Mbps --- 2,000,000
+100 Mbps --- 200,000
+1 Gbps --- 20,000
+10 Gbps --- 2,000
+
+> 3. What are the designated port.
+![](https://i.imgur.com/xGnx6dd.png)
+
+
+> 4. WHat are the blocking (non-designated) Ports? (That's left)
+
+**STP Example**
+
+![](https://i.imgur.com/TgYMWsP.png)
+The Four Questions to determine - who is the central root bridge?
+> 1. Who is the root bridge? (Everything stems from the rout)
+
+So the root is either Switch A or Switch B because of the priority.
+Because of that tie, we look at the mac address.
+
+Switch A has a lower MAC address.
+
+
+> 2. What are the root ports? 
+
+The root bridge does not get a Root Port.
+
+So you go through each device to determine it's RP (root Port).
+
+![](https://i.imgur.com/RSA5Qyc.png)
+
+Starting with Switch B:
+Te 1/0/1 - It's a 10 Gbps link, which costs 2. 
+Gig 1/0/7 - It connects to switch C (4), which then goes to switch A (4). Total cost is 4+4
+Gig 1/0/5 - It connects to Switch D (4), and then D to A (4). Total cost is 4+4.
+
+Switch B Root Port is Te 1/0/1
+
+
+Now with Switch D: 
+Gig 1/0/2 - it connectss to B (4), and then using the `te 1/0/1`, to go to Switch A. (2). 4+2
+Gig 1/0/1 - it goes directly to switch A (4). Total 4.
+
+Switch D --> Root Port is Gig 1/0/1
+
+Finally Switch C: 
+gig 1/0/2 - It connects to switch B (4),and then using the `te 1/0/1`, to go to Switch A. (2). 4+2
+gig 1/0/11 - It connects directly to switch A. (4)
+gig 1/0/10 - It connects directly to switch A. (4)
+
+There is a tie.
+Tie breaker 1 - Do the math on the other end of the Switch.
+Tie Breaker 2 - Choose the link connected to the lowest port ID on the FAR END of the link.
+
+So gig 1/0/10 goes to SWITCH A's gig 1/0/4
+And gig 1/0/11 goes to SWITCH A's gig 1/0/3. 
+
+Switch C --> Root Port is Gig 1/0/11
+
+> 3. What are the designated port.
+> 4. WHat are the blocking (non-designated) Ports? (That's left)
+![](https://i.imgur.com/LYVIKfE.png)
+
+So Switch A: 
+It uses all the ports to become designated ports, ones that are connected.
+
+Switch B:
+Switch `B <-> C`, B is faster because of the `te 1/0/1`. So Gig 1/0/7 is the Desginated port.
+Switch `B <-> D`, B is faster because of the `te 1/0/1`. So Gig 1/0/5 is the Desginated port.
+
+Switch C: 
+All remaining ports get Blocked.
+
+Switch D: 
+All remaining ports get Blocked.
+
+
+This creates a loop free topology, and a backup path.
+
+**STP Convergence Times**
+
+BEFORE:
+![](https://i.imgur.com/6K8nCwz.png)
+
+Blocking (20 sec)
+Listening (15 second)
+Learning (15 sec)
+
+Adds up to 50 seconds of delay. 
+Then switching to Forwarding.
+
+AFTER: 
+![](https://i.imgur.com/2xInYEt.png)
+
+
+**STP Variants**
+
+Common Spanning Tree (CST):
+* Used by the IEEE 802.1D standard
+* Every VLAN topology will be using the same version of Common Spanning Tree. (CST)
+
+PVST+:
+* Per-VLAN spanning Tree (PVST)
+* Each VLAN runs its own instance of STP
+* Maybe for VLAN, better to have different Switches. 
+* Uses Cisco's propertiy stuff. Versus Dot1.q Encapsulation type. 
+
+![](https://i.imgur.com/DkU2Ljk.png)
+
+MSTP: 
+* Multiple Spanning Trees Protocol (MSTP)
+* IEEE 802.1s
+* Have multiple roots. 
+
+Instance 1, VLANS 1 to 4, go to switch A.
+Instance 2, VLANS 5 to 8, go to Switch B.
+
+RSTP - Rapid Standing Tree Procotol 
+* Typically converges between a few milliseconds about 6 seconds.
+* Sends TCN, a tpology conversion notification
+* IEEE 802.1w 
+
+CISCO uses Rapid PVST- their property STP implenmentation, with it's own instance of RSTP. 
+But overlaying using RSTP standard.
+
+**RSTP Terms**
+RSTP Port Roles 
+
+![](https://i.imgur.com/6fixoz7.png)
+
+Alternate (BLK) - Backup (Block)
+On a hub, it's Backup.
+
+Also within 6 seconds:
+![](https://i.imgur.com/0HLnOun.png)
+
+Link Types: 
+![](https://i.imgur.com/aWWJ9lZ.png)
+Point-to-point - connecting switches
+Edge port - for computer to Switch. 
+Shared link - If it's a hub to switch.
+
+RSTP Synchronization 
+![](https://i.imgur.com/EFpCtqN.png)
+Let's say it starts with the Root Bridges is on the bottom.
+But that failed!
+So if the Root Bridge switches from bottom, to top: 
+
+1. Switch Root Ports
+2. Switch block ports
+3. Propose to neighbors
+4. Switch 2 swaps from a Disgnated Port to a Root Port.
+5. It sends teh agreement, and the switch 1 Block port becomes a Designated Port.
+6... onwards, it sends a porposal to the next neighbor.
+
+### Link Aggregation
+
+Link Aggregation (LAG) Overview 
+![](https://i.imgur.com/yFyj7Dc.png)
+
+Bundle multiple physical links on together.
+In drawing, it's used as a circle. 
+
+can do 2, 4, and even 8 links.
+
+Provides load-balancing.
+Creates redundant links.
+
+If you want to turn it on: 
+* PAgP: Port Aggregation Protocl (Cisco propertariy)
+* LACP: Link Aggregation Control Protocol (Generic brand)
+
+**PAgP Channel**
+
+How to negotiate -- 
+![](https://i.imgur.com/Aa0uKod.png)
+
+Here's the 3 settings: 
+If both says On, they they will form a ether cahnnel.
+
+
+Port Mirroring
+
+Distributed Switching 
+**LACP Port Negotiation**
+![](https://i.imgur.com/pbn91eY.png)
+
+It's the same, but different names. 
+
+It has the option of redundancy.
+
+
+**Link Aggregation Load-balancing:**
+
+There's Load balancing algorithms: 
+
+![](https://i.imgur.com/XsvWsgx.png)
+
+It pays attention to the desination MAC ADDRESS' Last Hex digit.
+
+So Switch A: 
+It will send data based on: 
+* 00
+* 01
+* 10
+* 11 
+
+The Switch B's servers... lax hex digit all ends in `01`.
+
+
+> We're going to perform an exclusive or operation on each bit. That's a boolean operation and exclusive or says if we're comparing two digits and they're the same, the result is zero.
+
+> If we're comparing two digits and they're different, in other words, they're exclusively something else exclusive or if they're different, we get a binary one. So if the last digit in my PC Mac address happened to be a one and the last digit in the servers Mac address happened to be a zero, that would give me an exclusive or result of one.
+
+> A one and a zero are different.
+> If both were one, that's zero.
+> If both were zero, that would also result in a zero.
+> We get a zero.
+
+> When the two bits match, we only get a one when they're different. But by doing that, we're adding some randomness to the selection of the link that we're using.
+
+**Port Mirroring:**
+Sniffing software, how does it work by watching this Switch.
+
+You can find the port mirroring setting, and have have the Sniffer Port.
+
+![](https://i.imgur.com/ToGS2EA.png)
+So the server, will send data to both Client & Sniffer Laptop.
+
+**Distributed Switching**
+Typical settup for a Three-Tier Architecture -- 
+
+![](https://i.imgur.com/iqAkvCo.png)
+
+Access Layer - Closet Switches
+
+Distribution Layer - A room where it takes all that data and distributes it.
+if you lose a distribution layer instance, you'll still fine.
+
+Core Layer - Like in a large campus environmetn with multiple building, the Core Layer. Could be the layer to go to the Itnternet. It's concerned with speed.
+
+Internet can also be on distribution layer. No hard and fast rule.
+
+Topology is setup like this:
+![](https://i.imgur.com/tn7WfXb.png)
+
+Typical Setup for a Collapse Core Architecture --
+![](https://i.imgur.com/CikznQH.png)
+
+This is for smaller places. It collapse the distirbution and core layer.
+
+
+**Data Centers - Leaf Spine Design**
+
+Nodes connecting into (TOR - top of rack Switch) Leaf Switches.
+
+Spine Switches. Switch jumps to Spine Switch, then back to another switch.
+
+![](https://i.imgur.com/aDwr6Xs.png)
+
+
+### TEST
+A normal switch can only make forwarding decisions based on L2 addresses, not L3.
+
+An NGFW (Next Generation Firewall) is a type of firewall that does packet inspection on more information than just the application being used. This firewall can make its decisions based on information found deeper in the I
+
+An air gap is a network that is physically and logically isolated from unsecured networks, such as the internet.
+
+Port Mirroring also referred to as SPAN (Switchport Analyzer) allows a switch to copy frames sent/received on one port to be sent out a different port for traffic monitoring. A protocol analyzer is used to interpret network traffic originating from a port or another source of traffic.
+
+
 
 
 ## Module 8: Wireless Networks (.75hr)
 
 
 
+![](/media/comptia-blogpost/m8-attenna-types-1.png)
+![](/media/comptia-blogpost/m8-attenna-types-2.png)
+![](/media/comptia-blogpost/m8-attenna-types-3.png)
+![](/media/comptia-blogpost/m8-attenna-types-4.png)
+![](/media/comptia-blogpost/m8-attenna-types-5.png)
+
+
+![](/media/comptia-blogpost/m8-autonomous-vs-lightweight-aps.png)
+
+
+![](/media/comptia-blogpost/m8-channel-bonding-1.png)
+![](/media/comptia-blogpost/m8-channel-bonding-2.png)
+![](/media/comptia-blogpost/m8-extender.png)
+![](/media/comptia-blogpost/m8-infrastructure.png)
+![](/media/comptia-blogpost/m8-mu-mimo.png)
+![](/media/comptia-blogpost/m8-non-overlapping-5gh.png)
+![](/media/comptia-blogpost/m8-non-overlapping.png)
+
+![](/media/comptia-blogpost/m8-ofdma-2.png)
+![](/media/comptia-blogpost/m8-ofdma.png)
+
+![](/media/comptia-blogpost/m8-wifi-dsss.png)
+![](/media/comptia-blogpost/m8-wifi-fdm.png)
+![](/media/comptia-blogpost/m8-wifi-ortho.png)
+![](/media/comptia-blogpost/m8-wifi-qam.png)
+
+![](/media/comptia-blogpost/m8-wifi-standards.png)
+
+
+
 ## Module 9: Addressing Networks with IPv4 (1hr)
 
 
+![](/media/comptia-blogpost/m9-apipa.png)
+![](/media/comptia-blogpost/m9-ipv4-pert2.png)
+
+![](/media/comptia-blogpost/m9-ipv4-unicast.png)
+
+![](/media/comptia-blogpost/m9-ipv4.png)
+
+![](/media/comptia-blogpost/m9-subnetting-2.png)
+![](/media/comptia-blogpost/m9-subnetting-3.png)
+
+![](/media/comptia-blogpost/m9-subnetting.png)
+![](/media/comptia-blogpost/m9-subnetting-calc.png)
+
+![](/media/comptia-blogpost/m9-wifi-2.4ghz-channels.png)
+![](/media/comptia-blogpost/m9-wifi-5ghz-channels.png)
