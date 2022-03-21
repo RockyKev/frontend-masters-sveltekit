@@ -1894,3 +1894,167 @@ Port Mirroring also referred to as SPAN (Switchport Analyzer) allows a switch to
 
 ![](/media/comptia-blogpost/m9-wifi-2.4ghz-channels.png)
 ![](/media/comptia-blogpost/m9-wifi-5ghz-channels.png)
+
+
+**Subnetting Practice Exercise**
+QUESTION 1: 
+172.20.0.0/16
+
+Use subnet mask that uses 47 subnets. 
+What subnet mask should you use?
+
+> Your company has been assigned `172.20.0.0/16` network for use at one of it's sites. You need to use a subnet mask that will accommodate 47 subnets while simultanously accomodating the maximum number of hosts per subnet. What subnet mask will you use?
+
+QUESTION 1's ANSWER:
+
+
+If you just need to allocate X subnets, you add Class + borrowed bits.
+
+Step 1: Figure out how many borrow bits.
+You need 47 subnets. And 6 borrowed bits is 64 subnets.
+0011 1111 == 6 borrowed bits.
+
+Step 2: Figure out the Class. 
+The first octet is `172`, so it's a Class B address. 
+* Class B as 16 sixteen bits, 
+* plus your 6 borrowed bits
+* So it's a 22-bit subnet mask. 
+
+```
+TESTING:
+But what if you did it the other way.
+32 - 6 = 26
+
+26-bits of 1s
+1111-1111.1111-1111.1111-1111.1100-0000
+
+128 + 64
+255.255.255.192
+```
+
+Step 3: Convert it to super binary.
+Now, convert the 22-bit subnet mask to a 32-bit binary code.
+Or, twenty-two `1s`. And ten `0s`
+
+1111-1111.1111-1111.1111-1100.0000-0000
+
+Step 4: Return it back to oclets. 
+Finally, convert to octlets.
+255.255.252.0
+
+The answer is 255.255.252.0
+
+QUESTION 2: 
+172.20.0.0/16 
+
+> Your company has been assigned `172.20.0.0/16` network for use at one of it's sites. You need to calc a subnet mask that will accommodate 100 hosts per subnet, while maximizing the number of available subnets. What subnet mask will you use?
+
+use subnet mask that uses 100 subnets per subnet.
+
+QUESTION 2's ANSWER:
+
+If you need to support hosts, which is 2h - 2
+![](https://i.imgur.com/LyiPxdF.png)
+
+
+Step 1: Host Bits (aka like Borrowed Bits)
+7-bits = 128 (minus 2)
+
+Step 2: Subtrack 32-bits 
+32-bits - 7 bits equals 25 subnet mask bits.
+Or /25
+
+Step 3: Converting it to super Binary
+
+1111-1111.1111-1111.1111-1111.1000-0000
+
+Step 4: Convert it back to octets. 
+255.255.255.128
+
+
+The answer is: 255.255.255.128
+
+
+QUESTION 3:
+
+> You wish to apply a 26-bit subnet - 192.168.0.0/24 network address space. What are the subnets, and what are the usable address ranges in each subnet?
+
+
+Step 1: Get the subnet mask
+
+1111-1111.1111-1111.1111-1111.1100-0000
+
+
+Step 2: Get the interesting octet
+(It's the last octet to contain a binary 1.)
+
+MASK: 255.255.255.192
+
+Step 3: The block size. 
+256 - 192 -- block size is 64
+
+Step 4: 
+
+
+
+![](https://i.imgur.com/eJumYfP.png)
+![](https://i.imgur.com/gqN7lf1.png)
+
+**Calculating Usable Ranges of IPv4 Addresses**
+
+IPv4 - 
+
+Interesting oclet - (The last octet to contain in the subnet mask)
+
+3rd oclet
+![](https://i.imgur.com/oKtqyNa.png)
+
+Block Size (the number we count by in the interesting octet)
+Block Size = 256 - Subnet's Interesting Octet
+Block Size (1) = 256 - 255
+
+How to get different subnets:
+![](https://i.imgur.com/9a2qD1a.png)
+
+![](https://i.imgur.com/3l8V0vL.png)
+
+
+**TEST:**
+
+TEST: What is the difference between hosts & subnets in subnet mask IP.
+
+An IPv4 address contains 2 components: an IP address and a subnet mask. A subnet mask is used with an IP address to differentiate between the network and host portions of an address. A subnet mask is also used to define what addresses can be used within a given range.
+
+The Engineering department requires 100 hosts, The Sales department requires 16 hosts, and the Finance department requires 8 hosts. Following the order, which subnet masks should he best use?
+* The engineering department requires 100 hosts which can best be accommodated with a /25 mask, which provides 126 hosts. 
+* The proper mask for the sales department should be a /27, which provides up to 30 hosts. 
+* Although a /28 might seem correct, it isn’t as this subnet mask provides 14 usable hosts (2 addresses taken up by a Network ID and broadcast). The sales department should use a /28 as it provides 14 hosts. A /29 only provides 6 usable hosts.
+
+
+A subnet mask that gives you 16 subnets and 14 hosts is a /28- 11111111.11111111.11111111.11110000. Given that this is a class C address, the classful mask for this network would be a /24, and a /28 takes up 4 additional bits from the host portion providing (2^4=16 subnets). With 4 bits left over, this provides 14 hosts (2^4-2=14). 2 addresses are taken up by the Network ID and Broadcast address.
+
+
+
+With the 10.25.25.0 network being in the class A range, it can be further subnetted to have networks with 4094 hosts. 2^12-2= 4094. So in this case, we must take up 12 bits from the host portion. 32 bits- 12 host bits= 20 bits. This leaves us with 20 bits for the network portion of the address and 12 bits for the host portion.
+
+```
+NOTE: this math is wrong. It's 12 bits to get 4096. 
+4096 - 13 bits
+2048 - 12 bits
+1024 - 11 bits
+512 - 10 bits
+256 - 9 bits // supposed to be 8 bits
+
+ACTUAL CALCULATION: 
+128 - 7 bit
+64 - 6 bit 
+32 - 5 bit 
+16 - 4 bit
+8 - 3 bit
+4 - 2 bit
+2 - 1 bit
+1 - 0 bits
+```
+
+NOTE: Memorize this
+10.25.103.254 -- 
