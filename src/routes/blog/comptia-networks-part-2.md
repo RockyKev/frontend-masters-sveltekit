@@ -1168,16 +1168,894 @@ AES - Advance Encryption STandard - AES-128, AES-192, AES-256. Algorithm in mode
 
 
 
+Asymmetric Encryption. 
+Rivest, Shamir, and Adleman (RSA)
+
+![](https://i.imgur.com/D27Drg0.png)
+
+So the client talks to internet to go to Amazon
+Internet has a Certificate Authority
+Certificate Authority proves it's the right spot, and you are sent to Amazon.
+
+Certificate Authority (CA) - trusted third-party that can sign keys. digital certs.
+
+Amazon gets a X.509 v3 Digital Certificate from say, Verisign.
+They get a Public key, and a private key. 
+
+This exchange was Asymmetric:
+![](https://i.imgur.com/tYrslnH.png)
+
+1. client wants a secure connection
+2. Server sends a digital certificate. (which contains Amazon's public key)
+3. Client authenticates the certificates with the CA's public key.  (using the Certificate Authority)
+4. Client Generates a string and encrypts it with amazon.com's public key. 
+5. Client sends encrupted string to amazon.com
+6. Amazon.com decrypts the string with it's private key (a session key, only lasts a session)
+
+So now that you got this figured out, you can switch to Symmetric encryption!
+
+
+**Integrity**
+
+Hashing Algorithm. Fingerprint of the data.
+MD5 (message Digest 5) - 128-bit MD5 Hash digest. 
+SHA-1 - similar to MD5. But uses 160-bit hash digest.
+
+What happens when a malicious actor takes a file and modifies it with virus, then runs the hashing algorithm? You'll still get the malicious file, and it correctly hashes!
+
+HMAC - Hash-based message authentication Code (HMAC) - Uses a shared secret key, in conjunction with a hashing algorithm, to create a hash digest.
+
+**Availbility**
+
+The five nines. 99.999 Percent Uptime.
+Which is 5 minutes of downtime per year. 
+
+
+Sample threats:
+* Improperly formmated data
+* DoS attack - Denial of service attack
+* DDoS attack - Coordinated DoS attack (Distributed Denial - multiple)
+
+Prevention:
+* OS patches
+* IDS, IPS, and firewall appliances
+
+IDS - Intrusion detection System. THis one clones data and analyzes it, then sends rules to firewall.
+IPS - Intrusion prevention system. This one goes through traffic flows. stops traffice before it gets to the system.
+
+**Exploit vs Vulnerability**
+
+Vulnerability: A flaw in a secure system. Like weak password, or forgot something.
+
+Exploit: Taking advantage of a vulnerability
+
+Zero-day attack - new exploit that just been discovered and not patch.
+
+![](https://i.imgur.com/1gJavok.png)
+Common Vulnerabilities and Exploits (CVS)
+
+MITRE Corporation
+
+### Types of Attacks
+
+**Denial of Service Attacks**
+![](https://i.imgur.com/XRITy30.png)
+The victim is trying to deal with such a volumn of requests, it consumes resources and can't perform it's intended function. 
+
+**DDoS attacks**
+![](https://i.imgur.com/l22X2fI.png)
+
+**DoS & DDoS attacks**
+You can do a SYN Flood: Initiates multiple TCP 3-way handshakes, but never complete.
+SYN, SYN-ACK... but never follow up.
+
+UDP Flood: Sends a large volumn of UDP segments, since UDP is connectionless, the victim cannot verify the sender's IP address.
+
+HTTP Flood: Targets the web services on a server by sending a stream of HTTP instructions (GET/POST)
+
+DNS Reflected: Attacker spoof's the IP address of the victim and sends a large number of DNS queries.
+
+Spoofed Source IP = 192.0.2.123
+using the ping 198.51.100.255, which is a broadcast. then fires a message on the broadcast.
+
+**On-Path Attacks**
+METHOD 1: Man-in-the-middle attack
+
+![](https://i.imgur.com/5uuXeQG.png)
+Malicious user injects themselves between the communication flow between systems, enabling them to incept to manipulate that flow's traffic.
+
+Examples:
+* MAC Flooding: Attacker floods switch with so many fake MAC address, filling up to capcity. then the Switch acts like a HUB, which just sends out on all ports.
+* ARP Poisoning: Claims that attacker's MAc address is the victim's default gateway
+* Rogue DHCP: Attacker's DHCP server tells the victim that the IP address of the default gateway is the attacker's IP address.
+
+MAC Flooding Attack:
+![](https://i.imgur.com/e1q3Hcg.png)
+Attacker floods switch with so many mac addresses, it fills the switch's MAC address table to capacity.
+Macof - MAC Overflow 
+
+`sudo macof -i eth0`
+
+10 seconds or less. 
+TO FIX: Require it so that only a limited number of MAC addresses that can be learned off a single switchboard.
+
+METHOD 2: ARP Poisoning
+
+Unsollicitated ARP replies are sent to the victim, claiming the attacker's MAC address it eh AMC address of hte victim's default gateway.
+
+![](https://i.imgur.com/mq3fNON.png)
+
+Computer 1 asks "WHat's the MAC address to `10.1.1.1`?
+Computer 1 learns it's AAAA.AAAA.AAAA.
+
+![](https://i.imgur.com/6F4fHej.png)
+The attacker plugs into the same switch. But it sends another ARP reply.
+It says "Actually it's BBBB.BBBB.BBBB"
+
+TO FIX: depends. It can check the setting.
+
+METHOD 3: DHCP Spoofing
+
+![](https://i.imgur.com/lKv0TJg.png)
+D - Discover
+O - Offer
+R - Reply
+A - Acknowledge
+
+A DHCP Client reaches to the subnet/switch, and tries to discover.
+A rogue DHCP Server sends an offer FIRST before the Corporate DHCP server.
+
+DHCP Client will then point to the attacker's default gateway.
+
+TO FIX: Depends. Cisco has DHCP Snooping. It assigns trusted/untrusted ports. DHCP offer method can only comes from a specific port.
+
+**VLAN Hopping Attack**
+
+Where a hacker in one VLAN accesses a computer in another VLAN. 
+You're supposed to go through a Switch for that.
+
+METHOD 1: Switch Spoofing
+![](https://i.imgur.com/1gZFS8s.png)
+Attacker pretends to be an ethernet switch (using something like Yersinia) set up a trunk carrying traffic for all VLANs
+
+Attacker sends a DTP Frame to the switch, and calls itself a 'trunk'.
+
+![](https://i.imgur.com/zT3T67f.png)
+
+Then when it's time to attack, the trunk switches to say it's actually VLAN 5 frame.
+
+METHOD 2: Double Tagging: 
+![](https://i.imgur.com/vd9u8rR.png)
+Attacker adds two VLAN tags to a frame, the outer tag is a turnuk's Native VLAN, and the inner tag is the target VLAN.
+
+They're in the native VLAN, and the switches rip out each VLAN bit.
+
+It's a unidirectional attack. Like a DoS.
+
+**Social Engineering Attacks**
+
+Phishing Attack - where they say, 'login is broken. please login."
+
+Tailgating - piggybacking - an attacker walks behind someone that has legitment access.
+
+Shoulder Surfing - looking over someone's shoulder to see the credit card at a ATM. Use privacy filter.
+
+**Other Common Attacks**
+
+Insider Threat - Malicious user. Fix by having logging.
+
+Logic bomb - Code that performs some action based on an event.
+
+Rogue Access point - Wireless access poinjt installed on a network without proper authorization
+
+Evil Twin - ABC network. They might call it as ABC net2. 
+
+War driving - Drive around a geographical area in an attempt to find wi-fi hotspets that can be accessed. If they're doing something bad, they can find this weak address and use that.
+
+Malware - infect/harm a host.
+
+DNS Poison - Send false advertisement. If you go to amazon.com, but it sends you to 123amazon.com. Or a rogue DHCP server. 
+
+Randomware - Wannacry. Encrypt data on the hard drive. And you had to pay for it.
+
+Spoofing - Pretend to be a differnt MAC or IP address. That lets them flood traffic, or use the IP address to visit a specific area spot.
+
+deauthentication Frame - Deauthenticate a spoofed IP address, off a Wireless AP. well, they can set up a evil twin attack.
+
+Brute Force - Dictionary attack. Start brute force attack.
+
 ### Common Defense Strategies
+
+Change Default credentials. 
+
+Avoid Common passwords.
+
+Upgrade Firmware.
+
+Patch and Update.
+
+Perform file Hashing.
+
+Disable Unnessary Services. Don't need wifi, turn it off.
+
+use Secure Protocols. 
+
+Generate New security keys. 
+
+Disable Unused Ports. 
+like Telnet.
+
+Also Device Ports, like on switches.
+
+**Mitigating Network Threats**
+
+Signature Management - keep attack signatures current on devices, such as IDS and IPS sensors
+
+Device Hardening - Apply a collection of best practice procedures to secure network devices (disabling unnessary sevices on a device)
+
+Change the Native VLAN - Configre a trunk's untagged VLAN to a non-default value, to prevent unconfigured swithc ports from automatically beloning to the native VLAN.
+
+Define Privileged User Accounts - Define accounts. 
+
+File Integrity Monitoring 
+
+Role Separation 
+
+Set up a Honeypot - a host that's just to lure the attacker. individual system. A honeynet is a bunch more virtual stuff.
+
+Pen Tester - a thirdparty who sees what they can do.
+
+![](https://i.imgur.com/wk7RbPQ.png)
+Network segemnt in a diffeent zone. DMZ zone is for public.
+
+Defense in Depth: multiple layers of security. Not just a firewall, but like lots of security protectors.
+
+Zero Trust - don't automatically give them everything access. No permission until authetnication.
+
+Least privilege -
+
+**EAP Authentication**
+Extensible Authentication Protocol (EAP) Autentication
+
+A Authentication Server sends a authenticator (which is really just sends a session key) to all the servers.
+
+![](https://i.imgur.com/y0zeDBS.png)
+Extensible Authentication Protocol - Transport Layer Security - EAP-TLS
+
+* One of hte original auth methods specificed by the IEE 802.1X standard
+* Authenticates end users and RADIUS servers via a Message Auth Code derived from digital certs of the end users & RADIUS servers
+* Requires a Cert Authority (CA)
+* Allows clients to login using creds stored in a Microsoft Ative Directory Database
+
+
+Extensible Authentication Protocol (EAP) Autehntication via Secure Tunneling (EAP-FAST)
+1 - Client usesa a Protected Access Credential (PAC) to request access to the network
+2 - Consists of two or three phases
+* Phase 0 (optional): Clients PAC is dynamically configured
+* Phase 1: Client and the AAA server uses the PAC to establish a TLS tunnel
+* Phase 2: Client sends user info across the tunnel
+
+PEAP - Protected Extensible Authentication Protocol ()
+Developeed by Ciscco, Microsoft, and RSA
+Goal of protecting auehtnciation transaction by using a TLS connection
+
+Two main types of PEAP implementation: 
+* Version 0 (EAP-MSCHAPv2) - Mcirisoft Challenge - widely supported by Microsoft Active Deictory
+* PEAPv1/EAP-GTC (Generic Token card) - uses generic databases (LDAP and OTP) for authentication
+
+**Authetinication Servers**
+
+AAA Server, Kerberos System, or Single Sign On.
+
+
+AAA Server
+Authentication: Who are you?
+Authorization: What are you allowed to do?
+Accounting: What did you do?
+
+![](https://i.imgur.com/PdRH8Ir.png)
+
+RADIUS server has more accounting feature. And is more frequent.
+
+
+Kerberos System (Kerberos and Cerberus) -- 
+This one is hard!
+
+![](https://i.imgur.com/DI1y8LV.png)
+
+To make this work -- Client wants to talk to the File Server.
+* Client wants to communicate, by sending a 1-way hash of the key.
+* There's a KDC (Auth Server and Ticket Granting Server)
+* The Auth service takes key, checks it and then hands it over to the Ticket Granting Server with a Encrypted Ticket.
+* The Client takes the Encryupted Ticket to the Ticket Granting Server, with a ticket & session Key. 
+* The Ticket Granting Server, and gives you a key to the File Server.
+* Finally, a communication to the File Server.
+
+
+Single Sign-On:
+![](https://i.imgur.com/8lslTsc.png)
+
+Everything goes to a LDAP Server.
+LADP - A protocl ued to send info between central repo of user data (directory server) and a variety of systems which users need to authenticate.
+
+LADP example - Microsoft Active Diectory
+
+**User Authentication Methods**
+
+* Multi-factor or two-factor authentication
+
+- What the user knows. (Password)
+- What the user has. (Dongle, USB)
+- What a user IS. ()
+- WHERE a user is. (Geofrencing)
+- What a user DOES (drawing a pattern)
+
+* IEEE 802.1x 
+
+![](https://i.imgur.com/UjDMCGP.png)
+
+- Here's a key to get 
+Authenticator and a supplicant. 
+
+* Network Access Control
+Posture Validation - REquirements to the login process (like you need a specific anti-virus software version in order to join the ntework)
+
+* MAC Filtering
+
+Your home laptop doesn't automatically connect to work. But it's easy to spoof it.
+
+* Captive Portal.
+
+Connect through a login screen.
+
+
+**Physical Security**
+
+What if someone just walks off with the equipment? Take a laptop?
+Security:
+
+1. Motion detector
+2. Asset Tracking Gear. They have RFID chips that ring when you go through a door.
+3. Video Surveillance
+4. Tamper Detection
+
+Prevention:
+
+Badges that logs you.
+Biometrics. 
+Employee training. Tailgating behind someone.
+Access Control Vestibule (two doors, one door locks. Aka mantrap.)
+Locks (doors, racks, cabinets)
+Smart Lockers (like disaster recovery. Need auth.)
+
+Equipment Disposal: 
+Throw it away by --
+
+Factory Reset
+Sanitize Device. (Darik's Boot and Nuke (DBAN))
+
+
+**Network Forensics**
+
+It's when you do detective work.
+
+Like using a Laptop running wireshark in a Switch (with port mirroring enabled)
+Computer forensics. 
+
+
+Detect suspicious activity
+Incident Investigation
+
+Categories of Forensics: 
+Capture all traffic  - need lots of hard drive
+Stop, look, listen - a tool that watches things.
+
+TPCdump and wireframe.
+Any requests through the the firewall would be logged into the server.
+
+**Securing STP**
+STP - Spanning Tree Protocol
+
+![](https://i.imgur.com/RIwkK5B.png)
+
+You don't want a malicious person to become the Root Bridge. 
+
+![](https://i.imgur.com/EErJUdD.png)
+To stop them, have a BPDU Guard. 
+
+Yo can have a feature turned on called PortFast - it allows a port to be configured to connect to a end-station. 
+
+So SW4 becomesa BPDU Guard, and stays on the outside. And it also promises to only do a very specific thing.  When SW5 connets to them and tries to send them BPDU, it goes into error-disabled mode.
+
+
+Root Guard:
+![](https://i.imgur.com/5EENnoB.png)
+Some malicious actor set up SW3 to have a lower priority. 
+
+SW3 is sending a Superior BPDU. 
+
+Root guard feature -- 
+The infrastrutre is set up so you should never see a Superior BPDU.
+
+
+**IPv6 Router Advertisement (RA) Guard**
+
+![](https://i.imgur.com/CXOqvFv.png)
+SLAAC - (Stateless address auto-configuration)
+Lets a client dynamically get it's IPv6 address using EUI-64-address and Router Advertisement.
+
+R1 sends a multicast to all computers.
+
+THREAT:
+* Convince a client that the attacker is the default router
+* Send incorrect SLAAC info to client. 
+
+RA Guard:
+![](https://i.imgur.com/5z0CvVA.png)
+
+It's a policy that checks the RA against the policy. So malicious attacker has to know that too.
+
+
+**Securing DHCP**
+
+DHCP Server is awesome -- Allows new device that auto-assigned IP Address, submask, gateway.
+
+What if someone sets up their own DHCP, that gives their own DNS, that looks likea Facebook Login page?
+
+DHCP Client wants to connect to the network.
+
+The rogue DHCP server sends it's data first. 
+
+How to protect against yourself? 
+
+![](https://i.imgur.com/9UnHnjn.png)
+You can set up DHCP Snooping.
+
+Surgically set up a trusted port, and everything else is untrusted.
+
+A real situation:
+Network conference, people brought their own hardware. And DHCP servers were conflicting with others.
+So to fix, they had to hardcode/define trusted port manually.
+
+
+**IoT Security Concerns**
+
+Many IoT devices were not designed with security in mind.
+Like, conneting to cameras online.
+Many users leave default passwords.
+
+Mirai Malware Example -- scanned devices with default passwords. Infected IoT devices. Became a botneck.
+
+Then attacked a DNS Server (DNS provider).
+Twitter was offline that day.
+
+SOlutions:
+
+place IoT devices on their own VLAN. 
+Have it on their own guest network.
+
+
+
+
+**Cloud Security**
+
+![](https://i.imgur.com/daGKb8w.png)
+The responsibility of security is to the Cloud Provider.
+To access that cloud...
+
+User TLS tunnel to Internet, to Cloud Provider.
+Encrypted tunnel.
+
+Another method is a building with a VPN, into the cloud, then VPN it into the Cloud Provider.
+
+Another fast method is a Private WAN, that's connected to a dedicated Server.
+
+Another extra layer of security:
+
+CASB -- Cloud Access Security Broker.
+Sites between users & cloud resources
+Monitors traffic and sends alerts.
+
+
+**IT Risk Management**
+
+Being proactive on Security. 
+
+Five step model:
+
+1. identify Attack targets (like computers, or building access)
+2. Rank data (social security numbers, or just content)
+3. Determine Risk LEvel (Risk level = Probability of Breach * Financial Impact of Breach)
+4. Set Risk Tolerances
+5. Monitor
+
+
+Threat terms on test:
+
+Vulnerability - is a weakness
+Threat - is something someone develops to exploit that weakness.
+Posture Assessment - Check things like the version of their anti-virus or whateve.r
+Penetration Testing - Looks for vulnerabilities
+Process and Vendor Assessments - look at their weaknessses.
+
+
+TEST:
+Router Advertisement (RA) Guard is a Ethernet switch security feature that can prevent an attacker from sending RA messages into the attacker’s switch port. If the attacker were successful, they might convince a client that the attacker’s computer was the victim’s default gateway. Or, when an IPv6 endpoint was generating their IP address via SLAAC, they could receiving incorrect information about their network segment by the malicious RA messages.
+
+The identification phase is where you identify yourself, such as with a username. The Authentication phase is where you prove your identity using, for example, a password. The Authorization phase defines what access you have to a given system. The accounting phase keeps track of what you accessed and when you accessed a system or data.
+
+RADIUS (Remote Authentication Dial-in User Service) is an open standard that many devices can use to authenticate into a network. RADIUS works well with 802.1X and EAP (Extensible Authentication Protocol), which are protocols used for authenticating into wireless networks.
+
+TACACS+ (Terminal Access Controller Access Control System Plus) works on the basis of the AAA framework to provide Authentication, granular Authorization, and accounting features. Like RADIUS, but offers granulaor cauth features.
+
+Wireless encryption standards
+WEP
+WEP2
+
+WPA - uses TKIP
+WPA2 uses CCMP
+
+Protocols
+TKIP (Temporal Key Integrity Protocol) was created to quickly solve the security problems that arose with WEP. Although TKIP did solve some problems, there were still numerous problems that still existed
+CCMP (Counter Mode Cipher Block Chaining Message Authentication Code Protocol) was created. This protocol is based on AES and is used to remedy the weaknesses of WEP with TKIP.
+
+
+A DDOS (Distributed Denial of Service) amplification attack is an attack triggered by a botnet formed by computers infected with malware. When a C&C (Command and Control) sends a message to the botnet, the computers initiate a request to a server with a spoofed source IP address. Afterward, the server responds to the spoofed address thus turning a multitude of small requests into a large payload. This attack can be done with DNS (Domain Name System) or NTP (Network Time Protocol) servers. DNS poisoning involves manipulating packets containing DNS information, typically for malicious purposes.
+
+Dynamic ARP Inspection (DAI) is used to inspect an ARP to make sure it is legitimate. VLANs, Port Security, and ACLs can’t prevent ARP poisoning. ARP (Address Resolution Protocol) is a Data Link protocol used to dynamically map an IP address to a MAC address, which is vital for the IP routing process. ARP poisoning leverages the fact that ARP doesn’t have any built-in security mechanism, and with that, ARP poisoning involves giving false information when an ARP request is made.
+
+Kerberos is an authentication protocol that leverages the use of tickets to authenticate network devices over unsecured networks. Kerberos is largely used in places where hosts need access to servers.
+
+ACLs (Access Control Lists) are used to match certain qualities in traffic, such as IP addresses to then perform a configured action, such as dropping a packet. 
+* ACLs can be used for security functions. With ACLs, entries are processed in a logical order, and once an entry is matched, no further matching is done. 
+* ACLs also contain an implicit deny by default, meaning that if the traffic isn’t permitted, it will be dropped by default. 
+* There is no `implicit permit`. It's all about saying NO.
+* ACLs can be used to prevent communication between users in the accounting VLAN and marketing VLAN. 
+
+802.1X is a standard that defines port-based access control for LANs or WLANs. 802.1X defines three parties: Supplicant, Authenticator, and Authentication Server. The supplicant provides authentication credentials, and this is typically a host. An Authenticator provides communication between the supplicant and authentication server. This device can be an AP (Access Point) or Switch. Finally, the Authentication server is a server that receives and responds to request to an authenticator, allowing or denying connection requests. 
 
 
 ## Module 15: Monitoring and Analyzing Networks (.5hr)
 
+**Device Monitoring Tools**
+
+SIEM - Security Information and Event management (collection of hardware/software of services back to a single spot to examine stuff)
+
+example: Syslog
+If an event occurs, send that to a syslog.
+Interface Statistics. 
+CPu and Memory Statistics
+
+Monitoring Processes
+
+* Have someone actually do the Log Reviewing.
+* Port Scan and Velnerability Scan
+* Patch Management (Microsoft has something like Patch Tuesday.)
+* Compare with Baseline Data. 
+* Packet Analysis
+* Netflow collector
+
+Using a Syslog cisco tool:
+![](https://i.imgur.com/neztmrA.png)
+
+There's different versions of notifications/severity. 
+
+**SNMP**
+
+SNMP Manager 
+![](https://i.imgur.com/Ma4kkK9.png)
+
+SNMP Agent  - on each device is a MIB, which contains a OID.
+
+If a certain event happens, then it lets the SNMP Manager know.
+
+It's a two-way event:
+The agent sends a 'trap notification'. 
+The SNMP sends a query/response.
+
+SNMP Security Options:
+
+Version 1: used to be just read, and read/write strings. Community Strings (password)
+Version 2c: Nobody actually used the new security. Community Strings. Multiple vendors would use the same string. 
+Version 3: Encryption, Integrity checking, and Authentication Services.
+
+**Remote Access Methods**
+
+![](https://i.imgur.com/KbZHgkc.png)
+Different ways to do remote access. 
+
+SITUATION: Client1 wants to talk to the server.
+
+Method 1: Uses a site-to-site VPN.
+Method 2: Client-to-Site VPN (remote access VPN)
+
+You can use a Internet Protocl Security (IPsec)
+
+Web browsers have security built in itL SSL/TLS (tls is the next level of SSL)
+* Another version of TSL, which is Datagram Transport Layer Security
+* HTTP & HTTPS
+
+SITUATION 2: How can Client1 control a computer on SW2. 
+
+They can use a Remote Desktop Protocl (RDP)
+or Virtual network Computing (VNC)
+
+SITUATION 3: File transfers
+
+FTP. 
+FTPS. -- older version. This is using ssh.
+SFTP. -- SSL
+TFTP. -- not secure. 
+
+SITUATION 3: Out of band network.
+
+PTSN - using a modem. 
+
+Telnet or ssh to talk to a router. 
 
 
+**Environemnt Monitoring**
+
+A device to monitor equipment room.
+
+Environmental monitor - using a sms text 
+
+Power. Have a UPS -- uninterrupt power supply. It has a finite life. 
+
+**Wireless Network Monitoring**
+![](https://i.imgur.com/CARfqdh.png)
+
+Wireless Survey Sofware - which puts a heatmap/physical map to see it's radius.
+
+for 2.4ghz - 1, 6, 11 to avoid overlap.
+
+Wireless Analyzer Software - 
+![](https://i.imgur.com/2GQ2pE7.png)
+
+
+TEST:
+Syslog is a protocol that is used for message logging. Syslog, when configured, sends traps or notifications about network devices. Traps can contain information such as an interface state change or a message about a server’s CPU reaching high utilization.
+
+ SNMP (Simple Network Management Protocol) sends taps and baselines on network devices. Baselines give information about overall system health.
+
+ SIEM (Security Information and Event Management) software is used to combine security information and event management software into a single package, providing real-time statistics of security alerts viewable from a single pane of glass. Think like... semen.
+
+
+SNMP (Simple Network Management Protocol) is a protocol used to remotely manage network devices and also is used to send statistics about a device through the use of traps. Devices using SNMP have a MIB (Management Information Base) which are composed of OIDs (Object Identifiers), which are objects that correspond to a specific variable, which is then used to provide statistical information about something like an interface. 
+
+NMS (Network Management System) is used to probe information from SNMP agents (Devices that contain a MIB)
 ## Module 16: Examing Best Practices for Network Admin (1hr)
 
+**Safety Procedures**
 
+1. Remove power. 
+2. Properly grounded.
+
+Use a wrist-strap with a resistor, so power moves somewhere else.
+
+Heavy equiupment on the bottom for foundation. Secure racks to ground/wall. 
+
+Fire Supression using chemicals/gasses (NOT WATER!)
+
+Heating/ventilation, systems.
+
+**Wiring Management**
+
+![](https://i.imgur.com/Ehc0bQe.png)
+
+IDF - Intermedia Distrbution Frame (wireing closet)
+MDF - main distribution frame (wiring frame to a core place.)
+
+Fiber Optic cable if it bends too much, can bend the light cable. You need a min distance.
+
+Plenum Cabling - cabling with outer insulator that is fire retardant and minimizes release of dangerous fumes in like small walls/air fumes.
+
+Spaghetti wiring - wires tangled together.
+
+Label both ends of the cable. to avoid chaos.
+Use cable management system (separate power and regular cables, otherwise there's interference.)
+
+
+
+**Power Management**
+SPS - Standby Power Supply. It's cheaper, but it takes a few seconds to power it.
+
+Generator - this gets the generator kicks on to give some power. With gasoline, it powers the server without building power.
+
+UPS - uninterruptible Power Supply. It only has a tiny battery.
+
+PDU - Power distribution units in a data center.
+![](https://i.imgur.com/5QIgvzt.png)
+
+So there's two different outlets. And PDU is a distrbutor, like a separate electric company.
+
+**Rack Management**
+
+19-inch rack. Router/switches, you can buy stuff that have a 2-post rack. It's find for lightweight.
+
+Servers, you want a 4-post rack.
+
+Server rails, which has locks.
+
+Ventillation: 
+![](https://i.imgur.com/oNriF5z.png)
+
+create cold Aisles, hot aisles. 
+
+**Change Control/Change Management**
+
+A system to track changes/new issues.
+
+Team members should be aware of each other's changes.
+
+STORY:
+They filled out a change control form, swapped out of the switches... email was dead.
+Was those events related? Discovered that it's not related. When the email system change... someone in a California swapped a hardware and didn't include a change control form.
+
+**High Availability**
+
+The five nines of availability.
+99.999%
+That's 5 minutes of downtime.
+
+Higher cost -- 
+* Redundant compoennts, powers
+* UPS/Generator
+* provide multiple routers/gateways
+* FHRP (First-hop redundant Protocols)
+
+Fault-tolerance - the ability to continue oepration if one of it's components fail. 
+
+Having more ISP, increase throughput. 
+If a ISP goes down, switch ISP2.
+
+![](https://i.imgur.com/fmm4Del.png)
+NIC Teaming - where a server has has multiple links in switch.
+
+Load balancing. 
+
+**Cloud High Availability**
+
+Cloud Provider can also use a Virtual Firewall, and redundant Virtual Machines.
+
+The four tiers of a data-center:
+
+Tier 1: 99.671% availability - roughly 28 hours of downtime.
+Tier 2: 99.741% availability - 22 hours of downtime -- lots of power
+Tier 3: 99.982 avaialbility - 1hour 
+Tier 4: 99.995% availability - 5 minutes. 
+
+**Active-active vs active-passive**
+
+![](https://i.imgur.com/bw1wXIy.png)
+
+Active-Active Conncetion - You can use both links for data
+
+Active-Passive connection - one goes on standby.
+
+
+Active-Passive THINGS: 
+TYPE 1: Hot standby Router Protocl (HSPRP) -
+
+![](https://i.imgur.com/p565vO5.png)
+First-hop redundancy Protocl (FHRP) - Cisco-specific thing.
+
+DIFFERENT NAME: Active and Standby router. It sends Hello.
+
+If the first hop fails, then it jumps to the next one.
+here's your IP address, and default Gateway. 
+It's a virtual router. default Gateway (10.1.1.1) is a virtual router, and it's using either R1 or R2.
+
+TYPE 2: Virtual Router Redundancy Protocl (VRRP)
+
+![](https://i.imgur.com/ilMSQqs.png)
+
+The difference, Router 1 and the Virtual Router has the same IP addresses.
+
+DIFFERENT NAME: This uses Master and Backup. It sends Advertisement. 
+
+Active-Active THINGS:
+
+TYPE 1: Gateway Load Balancing Protocl (GLBP)
+![](https://i.imgur.com/csCmegR.png)
+Cisco-secific:
+
+AVG - Active Virtual Gateway - Responses to ARP queries asking for the MAC address of a default gateway
+AVF - active virtual forwarders
+
+Active Virtual Gateway gives different answers, load balancing ones. 
+When PC1 does a ARP, it says 1111.1111.1111
+When PC2 does a ARP, it says 2222.2222.2222
+
+**Diaster Recovery**
+
+Disaster recovery 
+
+Enterprise Data Center -> backup stora
+
+Types of backup:
+
+Full: all data
+differential: only changes since the last one.
+Incremental backup: Only changes since the last full/diff/incremental change.
+Snapshots: back up entire sever, including state information.
+
+Diaster Recovery Sites:
+
+Enterprise Data center
+
+Alterative sites:
+
+Cold site - has power, HVAC, floor space. There's no equipment here. It's just available.
+
+Warm site - power, hvac, floor space, and server hardware. It's ready if there's problems.
+
+Hot site - Power, hvac, floor space, service hardware, and it synchronize data. Cost more money.
+
+SLA - Service level agreement. Promise to your users about how long a system will be down in an event of a disaster.
+
+Recovery Time Objective (RTO) - max time a system will be offline.
+Recovery Point Objective - max amount of time it'll last back up.
+
+Mean Times Between failure - average time before it fails.
+Mean Time to Repair - avg time before you have ot repair a failed product.
+
+**Standards, policies, and rules**
+USE ACRONYMS
+
+Privileged User Agreement - what access a user has. 
+
+Password Policy - min requirement for passwords.
+
+On-boarding/off-boarding procedures - when people join and leave.
+
+Licensing restrictions - how a license can be used.
+
+International Export Controls - restrict exporting software to another company, because of specific encryption standard)
+
+Data Loss Prevention - a policy to not release private info
+
+Remote Access Policies - methods remote uses can accessing a company's internal network/
+
+Incident Response Policies - identifies what happens when there's a incident. steps to follow.
+
+BYOB Policy - using your own device.
+
+AUP - Acceptable Use Policy. Like, you can't use a data cloud to store your baby pics. Or can't use facebook.
+
+NDA - Non-disclosure agreement.
+
+System Life Cycle - different phases of a hardware's existence. Plan, purchase, install. maintain, dispose.
+
+Safety Procedures and Policies - guidelines for conduct, to maintain a safe working place.
+
+**Documentation**
+
+Privileged User Agreement - What permissions people have?
+
+Memorandum of Understanding - Not a legal document, documents to ensure that they can see everyone's undersatnd.
+
+**Site Survey**
+![](https://i.imgur.com/DKRcM0Z.png)
+
+**TESTING:**
+Topology diagrams are used to display the logical or physical interconnections of devices within a network or networks. Rack diagrams might display what servers reside on which rack and operating system information. Inventory management documents are used to keep track of assets within a company.
+
+MDF/IDF (Main Distribution Facility/ Intermediate Distribution Facility) documentation is used to keep track of the physical interconnections of networks.
+
+Baseline documentation is used to keep track of a system’s performance based on its stock configuration. Information in this document is then compared to the performance of a device after a modification. 
+
+NIC teaming is a technology used to logically combine Network Interface Cards (NICs) to make them appear as one or more logical interfaces. This technology provides fast performance and fault tolerance. 
+
+Port channeling isn’t a server exclusive technology and only combines links.
+
+
+Rack Diagrams provide information about devices on racks, such as servers, as well as operating system, power, and configuration information. Inventory management documents are used to keep track of inventory or assets (things worth of value to a company).
+
+
+MTTR (Mean Time To Repair) is a document that states how long it will take a certain device to repair or fix.
+
+MTBF (Mean Time Between Failures) is a document used to give information on the lifespan of a device. MTBR doesn’t exist.
 
 ## Module 17: Troubleshooting Networking (1.25hr)
 
@@ -1188,3 +2066,20 @@ AES - Advance Encryption STandard - AES-128, AES-192, AES-256. Algorithm in mode
 
 
 ## Module 19: Wrapup
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
