@@ -2055,13 +2055,294 @@ Rack Diagrams provide information about devices on racks, such as servers, as we
 
 MTTR (Mean Time To Repair) is a document that states how long it will take a certain device to repair or fix.
 
-MTBF (Mean Time Between Failures) is a document used to give information on the lifespan of a device. MTBR doesn’t exist.
+MTBF (Mean Time Between  Failures) is a document used to give information on the lifespan of a device. MTBR doesn’t exist.
 
 ## Module 17: Troubleshooting Networking (1.25hr)
 
+**7-step methodology**
+
+1. Identify the problem
+2. Establish a theory of probable cause (consider the OSI Model and work your way down.)
+3. Test the theory to determine the cause
+4. Establish a plan of action, and identify potential effects
+5. Implement the solution, or escalete if nessessary
+6. Verify Full System functinality, and implement preventative measures
+7. Document Findings, Actions, and Outcomes
+
+[TODO] THink of mnemomic
+
+**CLI Troubleshooting**
+
+Commands you should know. 
+==Linux==
+ssh - To connect to a router
+man - manual page
+arp - learn the arp cache. 
+`nslookup [uri]` - resolve IP address of a domain address. Does DNS lookup.
+`dig` - query a DNS (Domain Name System) server. gives you aliases and shit.
+host - like dig, but who handles mail, AAA, etc.
+
+ifconfig - gives more info like ipconfig. Physical address, Lease, DHCP.
+ping - check availability - verify basic network reachability that relies on ICMP (Internet Control Message Protocol) messages.
+`iptable` - set up firewall rules on host
+sudo - super user do
+`tcpdump` - requires sudo. analyze what packets are going through a computer's NIC (Network Interface Card).
+`nmap` - it tells which ports are available. is an open source tool that can be used to scan for computer’s IP addresses and can even gather more information than that.
+
+`traceroute`
+
+==windows specific==
+nbtstat - 
+`netstat` -  displays active connections a computer has to a network or to the internet.
+`nslookup` - 
+`ipconfig` -  ipconfig is used to display TCP/IP information on a Windows host, as well as Domain Name and DNS server information
+ipconfig /release to release from the default gateway
+
+`ping` - check availability
+
+route print - to see all Routing table
+tracert - see reachability & hops of a desintation. Like  like traceroute.
+`pathping` - it's ping AND tracert. 
+
+`arp -a` - To display the ARP (Address Resolution Protocol) table on a Windows host, t
+
+
+**Network Application Commands**
+
+Cisco IOS Router
+
+Commands: 
+`show config` - shows status NVRAM. The bootup one.
+
+`show running-config` - show commands that you may have changed.
+`show startup-config` - like show config
+
+`running-config star` (`copy run star`) - copies running config to startup config
+
+`show ip route`
+ 
+`show ipv4 route`
+`show ipv6 route`
+
+`show ip int brief` show the interfaces, IP addresses, 
+
+`show interface {interface_id}` - show a specific interface and stats.
+It'll show you that the hardware is up, and the protocol is up. That's `up-up` mode.
+Its in Full Duplix, and how many packets/bytes. 
+Full duplex - which means it sends & recieves at the same time.
+Cyclic Redundancy Check - see if the checksum value is the same as we calculate. Else, it'll show errors.
+giant
+
+![](https://i.imgur.com/YPnzJMN.png)
+
+Giant is that if there's any errors. Giant is greater than 1580 bytes. 
+Jumbo frames can be 9000 bytes! And also if there's a Frame Check sequence error.
+
+The opposite errro types is a runt. Where it's less than 64-bytes. 
+Any encapsulation errors. 
+
+`debug ospf hello` displays Cisco hello stuff. 
+`undebug all`
+
+**Device Metrics and Sensors**
+
+Commands to test temperature memory CPU sensors
+
+How to find it from a Cisco catalyst switch
+
+`show env temperature`
+
+`show processes memory` 
+
+![](https://i.imgur.com/g6NIYUF.png)
+
+`show processes cpu`
+
+**Environmental Metrics and Sensors**
+
+What about data centers
+
+Like temperature, humidity, power, and water.
+We can use sensors like 
+SNMP Manager, with agents and MIB.
+
+It fires a SNMP Trap. 
+
+* Temperature and Humidity Sensor. 
+* Uniterruptible Power Supply (UPS) 
+* Water Level Sensor (like in basement... flooding. Even shows depth.)
+
+**Common LAN issues**
+
+Attenuation - it's when the cable/signal is weakened from time.
+
+Latency - degrade quality. 150ms for voice.
+
+Jitter - if a voip packet, data, then voip packet... will create jitter.
+
+Crosstalk - if two electric fields happen to cross. It's why we have twist cables.
+
+Electromagnetic Interference (EMI) - like electric spike from a microwave. Fiber optics doesn't have to deal with that.
+
+Open/Short - when there's a break on cable. 
+
+Incorrect Pin-out
+Incorrect cable Type
+Bad port
+Damaged Cables 
+Bent Pins
+Bottleneck - 
+VLAN Mismatch - 
+Network Connection LED Status Indicator
+
+Transceiver Mismatch - 
+TX/RX Reverse - like 2PCs, need a crosswire.
+
+Duplex/Speed mismatch  - full duplex/half duplex.
+
+**Common Wireless Network Issues**
+
+Reflection - radio waves moving into a weird way.
+Refraction - radio wave going through watercolor or cinderblock Refraction is the bending of an RF frequency if it's passed through a different medium. 
+
+Absorption is a property in which signal can get lost by an undesired source absorbing the signal.
+Attenuation is a natural property that occurs as a reduction of signal when the distance from the source increases. This property applies to wireless signals from an AP, especially if not configured properly, or if there is something blocking the signal.
+
+EIRP - effective isotropic radiative power - how much signal power is sent from the access point's antenna
+incorrect antenna type - 
+interference - microwave
+incorrect antenna placement - like coverage area in the parking lot. You don't want that. 
+
+channel overlap - Or channels conflict. like 1, 6, 1...
+Association time - DHCP - access point isn't working right.
+Captive Portal Issues - DNS was hardcoded and it fucked up.
+AP Disassociation - session/idle timeout.
+
+Overcapcity - where too many clients on a Access Point.
+Distance Limitations - where radio power isn't working.
+
+Wrong SSID
+Wrong Passphase
+Security Type mismatch - like TKIP when it's supposed to be WEP
+Power Levels
+Signal to noise ratio - the bigger ratio, the better.
+
+**Common Network Service Issues**
+
+Name Resolution - DNS server was not doing it's job. Ping DNS server... and see if that's the case.
+ping 8.8.8.8 and if that works... then you can go out to the internet.
+
+Wrong Default Gateway IP - 
+Wrong Subnet Mask - which bits talk to network portion, and which one to host portion.
+Overlapping IP address - 
+Overlapping Mac address - this can fuck up the mac table. Instability, frames will not be delivered. You can statically configure it with malicious intent.
+
+Non expired IP address. 
+Rogue DHCP - use DHCP snooping to solve.
+
+Untrusted SSL Certificate - a Secure Sockets Layer. Which contains a trusted-third party, a CA, like Docusign. Running a local host with a self-signed certificate. So you need to make a exception.
+
+Wrong time - The device reading the time... NTP. 
+
+Exhausted DHCP scope  - maybe we're out of dhcp pool. A church that handed a class C network with 200 IPs available. All those devices exhausted the scope, and people weren't able to connect to the public wifi. Had to switch to a /24 subnet, to a /16 subnet. 
+
+Blocked ports. 
+
+Incorrect Firewall Settings or Incorrect ACL settings - need to know the exact ports
+Service not responding - restart a service.
+
+Hardware Issue 
+
+**General Networking Issues**
+
+Device Misconfiguration - is the settings correct.
+Missing Routes - routers not talking to you correct
+
+Routing loop - When a packet goes through a router, it still has a TTL, which will disappear. Versus a switch, which doesn't trigger a TTL.
+
+Interface - Giants or runts?
+
+Baselines - what's error rates of stats of things.
+
+Collision - when mostly with hubs, which collides data. Can still happen in a wireless network.
+Pre-wifi version 6.
+
+Broadcast storm - loops through Switches. You can fix with STP - spanning tree protocol setup.
+
+Multicast FLooding - flooding can impact network performaance. use PEM sparce-mode. 
+
+Asymmetrical Routing - if routing goes through 1, but data is returned to another
+
+DNS issue - you can check the DNS server
+
+NTP issues - certs expiring because time is goofy
+
+BYOB issues - BYOB policies.
+
+License issues - trial version ends. 
+
+**TEST:**
+Attenuation is a natural property that occurs as a reduction of signal when the distance from the source increase. When there is a gradual reduction in signal strength with an increased distance from a source, it's because of Attenuation.
+
+ sh arp is used on a Cisco device to display the ARP table.
+
+The commands used to verify TCP/IP information on hosts are ifconfig (for Unix and Linux hosts) and ipconfig (for Windows hosts)
+
+For wireless:
+* Variance in Delay is known as Jitter which is measured in Milliseconds. 
+* Delay is the amount of time it takes for a packet to travel from one point to the next measured in milliseconds. 
+* Latency describes the amount of time a delay takes. 
+* Absorption is a property in which signal can get lost by an undesired source absorbing the signal. 
+* Loss is a reduction in attenuation as it spreads through a space.
+
+> A technician was tasked with configuring computers to automatically receive their IP address information instead of using static addressing. When the technician carried out the migration, he noticed that many computers got an address in the 169.254.0.0/16 range instead of in the 10.1.1.0/24 range. During the previous day, all the computers were working properly. Which of the following could have caused this issue?
+
+Since the technician noticed that the computers did have proper IP addresses the previous day and now don’t suggest there may be a problem with DHCP. Not to mention that an address in the 169.254.0.0/16 range suggests APIPA addresses are being used. Automatic Private IP Addressing (APIPA) addresses suggests that a host can’t find a DHCP server, and thus assigns itself an address in the 169.254.0.0/16 range in hopes of it can be able to communicate to hosts within the broadcast domain.
+
+> You are designing a wireless network so that a technician can go out and configure the access points. At the moment, you are choosing an SSID for the network. You choose to use the SSID ‘Enterprise network’ on one AP and ‘enterprise network’ on another AP. All the other settings are configured to be the same. When you verify if the wireless network is functional, you notice once you reach some distance from the first access point corresponding to the ‘Enterprise network’ SSID, your signal drops. Which of the following most likely caused the issue?
+
+Based on the description, it can be seen that the SSIDs (Service Set Identifiers)configured on the respective access points are different, which is causing the signal to not be spread, thus causing the host to lose connectivity. Wrong antenna types and interference might cause a similar issue, but based on the description, it is seen that there are two different SSIDs, which is the real issue. Configuring the same SSID on the access points wouldn’t cause this problem to happen.
+
+> You have been tasked to move your organization’s IP addresses from static to DHCP assigned addresses. The only consideration is some hosts will still require static addressing. Later, you discover a host that got its IP address assigned by DHCP can’t communicate on the network. Which of the following could have caused this issue?
+
+Given this situation, if a host received a duplicate address, it won’t be able to communicate in the network. The solution in this case would be to give up the leased address on the host and possibly look at addresses you could exclude on the DHCP server. If the default gateway was incorrect, the host could still communicate within the subnet. A DNS server being down wouldn’t affect network communication in this case. A computer can’t have a duplicate MAC address unless explicitly you explicitly configure one. Also, there is rarely a need, if ever, to change a computer’s NIC (Network Interface
+
+
+> Which of the following might happen to a host that can’t reach the DHCP server after the specified lease time?
+
+If a host can’t contact a DHCP (Dynamic Host Configuration Protocol) server, 2 things will happen: 1. The host will assign itself an APIPA (Automatic Private IP Address) and 2. The host won’t be able to communicate with hosts outside of the subnet because the host won’t have a default gateway set as default gateway information is given up once the lease is passed. ARP (Address Resolution Protocol) is a Data Link protocol used to dynamically map an IP address to a MAC address. ARP doesn’t provide automatic address assignment.
 
 
 ## Module 18: Prepping or CompTIA Network+ Exam 
+
+
+THREE THINGS TO DO:
+1. Get objectives --
+2. Schedule study time. 
+3. Get your hands dirty. 
+
+![](https://i.imgur.com/KvC1A3M.png)
+
+The URL: https://comptiacdn.azureedge.net/webcontent/docs/default-source/exam-objectives/comptia-network-n10-008-exam-objectives-(5-0).pdf?sfvrsn=8d00a1d7_2
+
+
+EXAMPLE: Plan your schedule time -- 
+Like 8 hours per week.
+1 hr/day - M-F 
+3 hrs on Saturday.
+15 hours of hands-on
+
+
+Getting hands dirty:
+* Use non-prod computer
+* Buying a home lab
+* Hands-on Lab simulation -- bit.ly/netplussim
+
+
+**Exam Day**
+1. arrive early
+2. determine your required pace (like 90 questions, that means 90 minutes.)
+3. Begin with confidence. 
 
 
 
