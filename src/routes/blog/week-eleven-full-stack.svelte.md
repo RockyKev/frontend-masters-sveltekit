@@ -1,6 +1,6 @@
 ---
 title: Week Eleven - Full Stack
-created: 2022-01-22T00:00:00
+created: 2022-01-23T00:00:00
 summary: Full Stack for Front-end Engineers, V2
 coverImageUrl: /media/projects/type-kana/session.jpg
 ---

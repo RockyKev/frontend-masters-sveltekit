@@ -21,7 +21,6 @@ const config = {
 			entries: ["*"],
 			crawl: true
 		},
-		target: "body",
 		vite: {
 			plugins: [imagetools()],
 			json: {

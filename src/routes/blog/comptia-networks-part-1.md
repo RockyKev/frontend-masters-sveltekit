@@ -86,7 +86,7 @@ How does it know the internet? It used 0.0.0.0 and that's a default routing.
 ![](/media/comptia-blogpost/m2-collision-vs-broadcast-domains-3.png)
 ![](/media/comptia-blogpost/m2-collision-vs-broadcast-domains-4.png)
 
-Collision domains are old networks where packet colliding can hsppen
+Collision domains are old networks where packet colliding can happen
 
 Broadcast domain are where networks call out to identify their Mac addresses with each other
 
@@ -126,7 +126,7 @@ New firewalls can now look at massive datasets to block malicious packets, if th
 
 Vpn connector is useful for remote workers. It's main job is to handle all the vpn connections, as opposed to a server
 
-Proxy server isn't used much because of high speed internet. Prior, say at a university... Proxy server would fetch yahoomcom for one student. And when another student wanted to see yahoo as well, it just goes into the proxy cache. It's great for low bandwidth stuff.
+Proxy server isn't used much because of high speed internet. Prior, say at a university... Proxy server would fetch yahoo.com for one student. And when another student wanted to see yahoo as well, it just goes into the proxy cache. It's great for low bandwidth stuff.
 
 
 QUESTIONS:
@@ -150,7 +150,7 @@ PRO:
 CON: 
 * More expensive
 
-Partial Mesh - we strategeically put links between traffic
+Partial Mesh - we strategically put links between traffic
 PRO: 
 CON
 * Suboptimal
@@ -158,7 +158,7 @@ CON
 
 **Ring Topology**
 LEGACY: 
-So the prior method usiong CDMA, to avoid collision.
+So the prior method using CDMA, to avoid collision.
 
 Token Ring -- goes in a circle sending a token.
 The token takes the data, and moves through the system. 
@@ -178,7 +178,7 @@ It listens to the same bus.
 If there's a spike in the voltage, it will wait.
 uses a random back off timer. 
 
-If you thow a point a connection in the middle - it becomes a star.
+If you throw a point a connection in the middle - it becomes a star.
 
 **Point-to-Point Topology**
 
@@ -212,8 +212,6 @@ Cons is that there's no overwatch.
 
 **LAN, WAN, MAN, CAN, PAN, WLAN, SD-WAN**
 
-TODO: Memorize all those words. 
-
 ### LAN - Local Area Network
 
 In an office. 
@@ -241,9 +239,9 @@ Willis Tower
 Tribute Tower
 Chicago Board of Trade
 
-* Limited Availbility -- since it's usually in metros.
+* Limited Availability -- since it's usually in metros.
 * Very High Speed
-* Redeundant 
+* Redundant 
 
 ![](https://i.imgur.com/TqomcMt.png)
 
@@ -307,10 +305,10 @@ Modern SD-WAN Connections
 
 
 Applications are migrating to the cloud, to provide security.
-provide seucrity, QoS, and forwarding
+provide security, QoS, and forwarding
 
 
-You have the Physical Infrasture -- everything is a wire. It's called a 'Underlay Network'. 
+You have the Physical Infrastructure -- everything is a wire. It's called a 'Underlay Network'. 
 But the SD-WAN Controller, it's a Virtual Infrastructure. It's called the 'overlay network'. 
 
 Here's how SD-WAN controller --
@@ -318,7 +316,7 @@ Here's how SD-WAN controller --
 * it decouples from the router. 
 * Can use a wide variety of technology
 * The forwarding decisions is made by the SD-WAN Controller.
-* Can provide configs to provide consistent QoS, Security, and predicable contorller. 
+* Can provide configs to provide consistent QoS, Security, and predicable controller. 
 
 
 
@@ -407,14 +405,14 @@ Encyprtion, hashing, Digital Signatures, Applies serial numbers to packets (So s
 
 4. Authentication and Encryption
   - Authentication Header: Authenticates an entire IP packet
-  - Encapsulating Security Protocol (ESP): Can autheneticate an IP packet (not including the IP Header), and can perform encryption.
+  - Encapsulating Security Protocol (ESP): Can authenticate an IP packet (not including the IP Header), and can perform encryption.
 
 5. Setup Steps
   Step 1 - Establish an Internet Key Exchange (IKE) Phase 1 tunnel (aka internet security association and key management protocol (ISAKMP))
   Step 2: Establish IKE Phase 2 Tunnel. 
 
 
-**GRE over Ipsec, a best of both worldd**
+**GRE over Ipsec, a best of both worlds**
 
 ![](https://i.imgur.com/l2Ls0ND.png)
 
@@ -437,7 +435,6 @@ BEFORE: If Branch A wants to connect to Branch C, it'll have to talk back to HQ.
 NOW: With Dynamic Multipoint VPN. 
 It uses Multipoint GRE (mGRE): 
 and Next Hope Resolution Protocol (NHRP): Used to discover the IP address of the device at the far end of a tunnel.
-
 
 
 BUT -- how does Branch A talk to Branch B and even set up that Dynamic Tunnel?
@@ -587,6 +584,7 @@ SOA - Start of Authority - A informational record.
 TXT - To contain descriptive human text. Now it sends attrs/values.
 SRV - A record to point to other specific services. Like more generic MX record.
 NS - Tells a DNS zone to use specific name servers, for security reasons.
+
 
 ### NAT Theory
 
@@ -1094,6 +1092,7 @@ QUAD SFP+ - This will give us a 40GB transeiver.
 
 ![](https://i.imgur.com/hxj22Pa.png)
 This is a full-duplex Transeiver. 
+
 
 ![](https://i.imgur.com/w7STOkt.png)
 Bidirectional Transceiver (BiDI Transciever) Will cost more.
@@ -1677,6 +1676,7 @@ PVST+:
 * Uses Cisco's propertiy stuff. Versus Dot1.q Encapsulation type. 
 
 ![](https://i.imgur.com/DkU2Ljk.png)
+
 
 MSTP: 
 * Multiple Spanning Trees Protocol (MSTP)

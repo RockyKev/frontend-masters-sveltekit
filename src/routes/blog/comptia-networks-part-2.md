@@ -1,6 +1,6 @@
 ---
 title: CompTIA Networks Part 2
-created: 2022-03-18T00:00:00
+created: 2022-03-19T00:00:00
 summary: CompTia Networks Course
 coverImageUrl: /media/comptia-blogpost/
 ---
@@ -13,6 +13,8 @@ coverImageUrl: /media/comptia-blogpost/
 
 ## CompTIA Networks+
 https://www.udemy.com/course/comptia-network-plus-video-training/
+
+
 
 
 ## Module 10: Addressing Networks with IPv6 (1hr)
@@ -1032,6 +1034,8 @@ SCSI - Scuzzy (Small Computer Systme interface) - A collection of standards defi
 Network-Attached Storage (NAS)
 
 This is is using Files. 
+
+
 
 
 ![](https://i.imgur.com/tmGiqEu.png)
@@ -2347,8 +2351,6 @@ Getting hands dirty:
 
 
 ## Module 19: Wrapup
-
-
 
 
 

@@ -5,7 +5,7 @@
 
 	const compass = (pattern: RegExp) =>
 		derived([navigating, page], ([$navigating, $page]) => ({
-			isCurrent: !$navigating && pattern.test($page.path),
+			isCurrent: !$navigating && pattern.test($page.url.pathname),
 			navigatingTo: $navigating && pattern.test($navigating.to.path)
 		}))
 
