@@ -1,7 +1,7 @@
 import { c as create_ssr_component, e as escape, v as validate_component, d as add_attribute, f as each } from "./index-054dfab6.js";
 import { f as friendlyDate } from "./dateTime-524e104e.js";
 import { M as Meta } from "./Meta-049a30d4.js";
-import { B as Breadcrumbs } from "./Breadcrumbs-3d93c575.js";
+import { B as Breadcrumbs } from "./Breadcrumbs-c29f9c7c.js";
 import { B as BASE_URL } from "./url-8759b9e2.js";
 const load = async ({ fetch, page }) => {
   const url = page.path + "/related.json";

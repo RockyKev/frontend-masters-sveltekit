@@ -1,9 +1,9 @@
 import { c as create_ssr_component, v as validate_component } from "../../../chunks/index-054dfab6.js";
-import { L as Layout } from "../../../chunks/_layout-ab845620.js";
-export { l as load } from "../../../chunks/_layout-ab845620.js";
+import { L as Layout } from "../../../chunks/_layout-b8ce1441.js";
+export { l as load } from "../../../chunks/_layout-b8ce1441.js";
 import "../../../chunks/dateTime-524e104e.js";
 import "../../../chunks/Meta-049a30d4.js";
-import "../../../chunks/Breadcrumbs-3d93c575.js";
+import "../../../chunks/Breadcrumbs-c29f9c7c.js";
 import "../../../chunks/stores-2f64c591.js";
 import "../../../chunks/url-8759b9e2.js";
 const metadata = {

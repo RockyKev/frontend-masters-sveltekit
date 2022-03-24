@@ -2,13 +2,14 @@
 title: CompTIA Networks Part 2
 created: 2022-03-19T00:00:00
 summary: CompTia Networks Course
-coverImageUrl: /media/comptia-blogpost/
+coverImageUrl: /media/projects/type-kana/session.jpg
 ---
 
-<script context="module">
+<!-- <script context="module">
   import { load } from "./_load"
   export { load }
-</script>
+</script> -->
+
 
 
 ## CompTIA Networks+

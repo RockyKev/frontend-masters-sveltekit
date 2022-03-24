@@ -10,7 +10,7 @@ const Breadcrumbs = create_ssr_component(($$result, $$props, $$bindings, slots) 
   let $page, $$unsubscribe_page;
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
   $$result.css.add(css);
-  segments = $page.path.slice(1).split("/").slice(0, -1);
+  segments = $page.url.pathname.slice(1).split("/").slice(0, -1);
   $$unsubscribe_page();
   return `<nav class="${"breadcrumbs svelte-vv8rl4"}" aria-label="${"Breadcrumbs"}">${each(segments, (segment, i) => {
     return `<a${add_attribute("href", "/" + segments.slice(0, i + 1).join("/"), 0)} sveltekit:prefetch class="${"svelte-vv8rl4"}">${escape(segment)}</a>

@@ -1,5 +1,5 @@
 import { c as create_ssr_component, d as add_attribute, e as escape, v as validate_component, f as each } from "./index-054dfab6.js";
-import { B as Breadcrumbs } from "./Breadcrumbs-3d93c575.js";
+import { B as Breadcrumbs } from "./Breadcrumbs-c29f9c7c.js";
 /* empty css                                             */import { mdiLink, mdiGithub } from "@mdi/js";
 import { f as friendlyDate } from "./dateTime-524e104e.js";
 const css$2 = {

@@ -1,7 +1,7 @@
 import { c as create_ssr_component, v as validate_component } from "../../../chunks/index-054dfab6.js";
-import { L as Layout } from "../../../chunks/_layout-a2120f4e.js";
-export { l as load } from "../../../chunks/_layout-a2120f4e.js";
-import "../../../chunks/Breadcrumbs-3d93c575.js";
+import { L as Layout } from "../../../chunks/_layout-125dd2bd.js";
+export { l as load } from "../../../chunks/_layout-125dd2bd.js";
+import "../../../chunks/Breadcrumbs-c29f9c7c.js";
 import "../../../chunks/stores-2f64c591.js";
 /* empty css                                                           */import "@mdi/js";
 import "../../../chunks/dateTime-524e104e.js";

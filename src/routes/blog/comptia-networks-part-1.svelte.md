@@ -1,8 +1,8 @@
 ---
-title: CompTIA Networks
+title: CompTIA Networks Part 1
 created: 2022-03-18T00:00:00
 summary: CompTia Networks Course
-coverImageUrl: /media/comptia-blogpost/
+coverImageUrl: /media/projects/type-kana/session.jpg
 ---
 
 <script context="module">

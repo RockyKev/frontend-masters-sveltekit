@@ -5,7 +5,7 @@ export const handler = init({
 	assets: new Set(["android-chrome-192x192.png","android-chrome-512x512.png","apple-touch-icon.png","embed.png","favicon-16x16.png","favicon-32x32.png","favicon.ico","favicon.svg","logo-192.png","logo-512.png","manifest-orig.json","maskable-192.png","maskable-512.png","media/comptia-blogpost/m1-headers-1.png","media/comptia-blogpost/m1-headers-2.png","media/comptia-blogpost/m1-headers-3.png","media/comptia-blogpost/m1-headers-4.png","media/comptia-blogpost/m1-osi-model-data.png","media/comptia-blogpost/m1-osi-model-pizza.png","media/comptia-blogpost/m1-ports-and-protocols-1.png","media/comptia-blogpost/m1-ports-and-protocols-2.png","media/comptia-blogpost/m1-ports-and-protocols-3.png","media/comptia-blogpost/m2-advance-filtering.png","media/comptia-blogpost/m2-collision-vs-broadcast-domains-1.png","media/comptia-blogpost/m2-collision-vs-broadcast-domains-2.png","media/comptia-blogpost/m2-collision-vs-broadcast-domains-3.png","media/comptia-blogpost/m2-collision-vs-broadcast-domains-4.png","media/comptia-blogpost/m2-dmz.png","media/comptia-blogpost/m2-hub.png","media/comptia-blogpost/m2-intrusion1.png","media/comptia-blogpost/m2-intrusion2.png","media/comptia-blogpost/m2-proxy.png","media/comptia-blogpost/m2-router.png","media/comptia-blogpost/m2-switch.png","media/comptia-blogpost/m2-vpn.png","media/comptia-blogpost/m8-antenna-types-1.png","media/comptia-blogpost/m8-antenna-types-2.png","media/comptia-blogpost/m8-antenna-types-3.png","media/comptia-blogpost/m8-antenna-types-4.png","media/comptia-blogpost/m8-antenna-types-5.png","media/comptia-blogpost/m8-autonomous-vs-lightweight-aps.png","media/comptia-blogpost/m8-channel-bonding-1.png","media/comptia-blogpost/m8-channel-bonding-2.png","media/comptia-blogpost/m8-extender.png","media/comptia-blogpost/m8-infrastructure.png","media/comptia-blogpost/m8-mu-mimo.png","media/comptia-blogpost/m8-non-overlapping-5gh.png","media/comptia-blogpost/m8-non-overlapping.png","media/comptia-blogpost/m8-ofdma-2.png","media/comptia-blogpost/m8-ofdma.png","media/comptia-blogpost/m8-wifi-dsss.png","media/comptia-blogpost/m8-wifi-fdm.png","media/comptia-blogpost/m8-wifi-ortho.png","media/comptia-blogpost/m8-wifi-qam.png","media/comptia-blogpost/m8-wifi-standards.png","media/comptia-blogpost/m9-apipa.png","media/comptia-blogpost/m9-ipv4-pert2.png","media/comptia-blogpost/m9-ipv4-unicast.png","media/comptia-blogpost/m9-ipv4.png","media/comptia-blogpost/m9-subnetting-2.png","media/comptia-blogpost/m9-subnetting-3.png","media/comptia-blogpost/m9-subnetting-calc.png","media/comptia-blogpost/m9-subnetting.png","media/comptia-blogpost/m9-wifi-2.4ghz-channels.png","media/comptia-blogpost/m9-wifi-5ghz-channels.png","media/open-in-new.svg","media/projects/portfolio-site-2021/cover.png","media/projects/portfolio-site-2021/link-preview.png","media/projects/type-kana/select-kana.mov","media/projects/type-kana/session.jpg","media/projects/type-kana/session.mov","media/tombstone.svg","site.webmanifest"]),
 	mimeTypes: {".png":"image/png",".ico":"image/vnd.microsoft.icon",".svg":"image/svg+xml",".json":"application/json",".mov":"video/quicktime",".jpg":"image/jpeg",".webmanifest":"application/manifest+json"},
 	_: {
-		entry: {"file":"start-000ac774.js","js":["start-000ac774.js","chunks/vendor-4b328d4a.js"],"css":[]},
+		entry: {"file":"start-f6450a21.js","js":["start-f6450a21.js","chunks/vendor-4b328d4a.js"],"css":[]},
 		nodes: [
 			() => import('../server/nodes/0.js'),
 			() => import('../server/nodes/1.js'),
@@ -46,7 +46,9 @@ export const handler = init({
 			() => import('../server/nodes/36.js'),
 			() => import('../server/nodes/37.js'),
 			() => import('../server/nodes/38.js'),
-			() => import('../server/nodes/39.js')
+			() => import('../server/nodes/39.js'),
+			() => import('../server/nodes/40.js'),
+			() => import('../server/nodes/41.js')
 		],
 		routes: [
 			{
@@ -281,13 +283,35 @@ export const handler = init({
 			},
 			{
 				type: 'page',
+				id: "blog/comptia-networks-part-1",
+				pattern: /^\/blog\/comptia-networks-part-1\/?$/,
+				names: [],
+				types: [],
+				path: "/blog/comptia-networks-part-1",
+				shadow: null,
+				a: [0,20],
+				b: [1]
+			},
+			{
+				type: 'page',
+				id: "blog/comptia-networks-part-2",
+				pattern: /^\/blog\/comptia-networks-part-2\/?$/,
+				names: [],
+				types: [],
+				path: "/blog/comptia-networks-part-2",
+				shadow: null,
+				a: [0,21],
+				b: [1]
+			},
+			{
+				type: 'page',
 				id: "blog/week-eight-css-in-depth",
 				pattern: /^\/blog\/week-eight-css-in-depth\/?$/,
 				names: [],
 				types: [],
 				path: "/blog/week-eight-css-in-depth",
 				shadow: null,
-				a: [0,20],
+				a: [0,22],
 				b: [1]
 			},
 			{
@@ -298,7 +322,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/vue-mastery-vue3-forms",
 				shadow: null,
-				a: [0,21],
+				a: [0,23],
 				b: [1]
 			},
 			{
@@ -309,7 +333,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-eleven-full-stack",
 				shadow: null,
-				a: [0,22],
+				a: [0,24],
 				b: [1]
 			},
 			{
@@ -320,7 +344,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-nine-intro-to-vue",
 				shadow: null,
-				a: [0,23],
+				a: [0,25],
 				b: [1]
 			},
 			{
@@ -331,7 +355,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-six-js-hard-parts",
 				shadow: null,
-				a: [0,24],
+				a: [0,26],
 				b: [1]
 			},
 			{
@@ -342,7 +366,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-twelve-typescript",
 				shadow: null,
-				a: [0,25],
+				a: [0,27],
 				b: [1]
 			},
 			{
@@ -353,7 +377,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-two-accessibility",
 				shadow: null,
-				a: [0,26],
+				a: [0,28],
 				b: [1]
 			},
 			{
@@ -364,7 +388,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-two-js-functional",
 				shadow: null,
-				a: [0,27],
+				a: [0,29],
 				b: [1]
 			},
 			{
@@ -375,7 +399,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-five-js-testing",
 				shadow: null,
-				a: [0,28],
+				a: [0,30],
 				b: [1]
 			},
 			{
@@ -386,7 +410,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-five-debugging",
 				shadow: null,
-				a: [0,29],
+				a: [0,31],
 				b: [1]
 			},
 			{
@@ -397,7 +421,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-four-nodejs-v2",
 				shadow: null,
-				a: [0,30],
+				a: [0,32],
 				b: [1]
 			},
 			{
@@ -408,7 +432,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-one-javascript",
 				shadow: null,
-				a: [0,31],
+				a: [0,33],
 				b: [1]
 			},
 			{
@@ -419,7 +443,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-seven-deep-js",
 				shadow: null,
-				a: [0,32],
+				a: [0,34],
 				b: [1]
 			},
 			{
@@ -430,7 +454,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-four-api-dev",
 				shadow: null,
-				a: [0,33],
+				a: [0,35],
 				b: [1]
 			},
 			{
@@ -441,7 +465,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-one-webdev",
 				shadow: null,
-				a: [0,34],
+				a: [0,36],
 				b: [1]
 			},
 			{
@@ -452,7 +476,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-three-seo",
 				shadow: null,
-				a: [0,35],
+				a: [0,37],
 				b: [1]
 			},
 			{
@@ -463,7 +487,7 @@ export const handler = init({
 				types: [],
 				path: "/blog/week-one-css",
 				shadow: null,
-				a: [0,36],
+				a: [0,38],
 				b: [1]
 			},
 			{
@@ -490,7 +514,7 @@ export const handler = init({
 				types: [],
 				path: "/work",
 				shadow: null,
-				a: [0,37],
+				a: [0,39],
 				b: [1]
 			},
 			{
@@ -501,7 +525,7 @@ export const handler = init({
 				types: [],
 				path: "/work/portfolio-site",
 				shadow: null,
-				a: [0,38],
+				a: [0,40],
 				b: [1]
 			},
 			{
@@ -512,7 +536,7 @@ export const handler = init({
 				types: [],
 				path: "/work/type-kana",
 				shadow: null,
-				a: [0,39],
+				a: [0,41],
 				b: [1]
 			},
 			{
